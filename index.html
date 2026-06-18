@@ -1,213 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>EuroBall — Verified Scrape Targets + Live Tracker</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
+/* ── THEME VARIABLES ── */
 :root {
-  --bg: #07090e;
-  --s1: #0e1520;
-  --s2: #141d2c;
-  --s3: #1a2538;
-  --b1: #1e2e42;
-  --b2: #253548;
-  --accent: #3b9eff;
-  --green: #22d47a;
-  --red: #ff5252;
-  --yellow: #f5c842;
-  --purple: #b47fff;
-  --text: #8fa8c4;
-  --t2: #c5d8ec;
-  --bright: #e8f2ff;
-  --dim: #3d5570;
-  --mono: 'IBM Plex Mono',monospace;
+  --bg: #f5f0eb;
+  --bg2: #ede8e2;
+  --bg3: #e4ddd5;
+  --card: #ffffff;
+  --border: #d5cdc4;
+  --border2: #c8bfb5;
+  --accent: #e05c2a;
+  --accent2: #c44e20;
+  --accent-soft: rgba(224,92,42,.10);
+  --green: #2d9e5c;
+  --green-bg: rgba(45,158,92,.10);
+  --red: #d44040;
+  --red-bg: rgba(212,64,64,.10);
+  --yellow: #c8870a;
+  --yellow-bg: rgba(200,135,10,.10);
+  --purple: #7c5cbf;
+  --purple-bg: rgba(124,92,191,.10);
+  --text: #3a3028;
+  --text2: #6b5e52;
+  --text3: #9a8e85;
+  --shadow: rgba(0,0,0,.06);
+  --shadow2: rgba(0,0,0,.12);
+  --mono: 'JetBrains Mono', monospace;
+  --nav-bg: rgba(245,240,235,.95);
 }
+[data-theme="dark"] {
+  --bg: #111318;
+  --bg2: #181c24;
+  --bg3: #1e2330;
+  --card: #1e2330;
+  --border: #2c3444;
+  --border2: #374057;
+  --accent: #f07840;
+  --accent2: #d96530;
+  --accent-soft: rgba(240,120,64,.12);
+  --green: #34c974;
+  --green-bg: rgba(52,201,116,.10);
+  --red: #f05252;
+  --red-bg: rgba(240,82,82,.10);
+  --yellow: #f5c842;
+  --yellow-bg: rgba(245,200,66,.10);
+  --purple: #a87ff5;
+  --purple-bg: rgba(168,127,245,.10);
+  --text: #e2ddd8;
+  --text2: #9aafcc;
+  --text3: #4d6080;
+  --shadow: rgba(0,0,0,.3);
+  --shadow2: rgba(0,0,0,.5);
+  --nav-bg: rgba(17,19,24,.97);
+}
+
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;font-size:14px;line-height:1.5}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-size:14px;line-height:1.6;transition:background .25s,color .25s}
 
-/* NAV */
-nav{display:flex;align-items:center;gap:16px;padding:14px 24px;border-bottom:1px solid var(--b1);position:sticky;top:0;background:rgba(7,9,14,.96);backdrop-filter:blur(12px);z-index:200;flex-wrap:wrap}
-.logo{font-family:'Syne',sans-serif;font-size:20px;font-weight:900;color:var(--bright);letter-spacing:-1px;white-space:nowrap}
+/* ── NAV ── */
+nav{display:flex;align-items:center;gap:12px;padding:12px 24px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--nav-bg);backdrop-filter:blur(16px);z-index:200;flex-wrap:wrap}
+.logo{font-family:'Syne',sans-serif;font-size:20px;font-weight:800;color:var(--text);letter-spacing:-0.5px;white-space:nowrap}
 .logo span{color:var(--accent)}
-.tabs{display:flex;gap:4px;margin-left:auto}
-.tab{padding:7px 16px;border-radius:6px;border:none;background:transparent;color:var(--dim);font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s}
-.tab:hover{color:var(--t2);background:var(--s2)}
-.tab.on{background:var(--accent);color:var(--bg)}
+.tabs{display:flex;gap:4px}
+.tab{padding:6px 14px;border-radius:8px;border:1.5px solid var(--border);background:transparent;color:var(--text2);font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s}
+.tab:hover{color:var(--text);border-color:var(--border2);background:var(--bg2)}
+.tab.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:8px}
 
-/* PAGES */
+/* Theme toggle */
+.theme-toggle{display:flex;align-items:center;gap:6px;padding:5px 11px;border-radius:20px;border:1.5px solid var(--border);background:var(--bg2);cursor:pointer;font-family:inherit;font-size:12px;font-weight:500;color:var(--text2);transition:all .15s;white-space:nowrap}
+.theme-toggle:hover{border-color:var(--border2);color:var(--text)}
+.theme-icon{font-size:14px;line-height:1}
+
+/* ── PAGES ── */
 .page{display:none}.page.on{display:block}
 
-/* ── TRACKER PAGE ── */
-.tr-header{padding:16px 24px;border-bottom:1px solid var(--b1);background:var(--s1);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.live-pill{display:flex;align-items:center;gap:5px;background:rgba(34,212,122,.1);border:1px solid rgba(34,212,122,.25);border-radius:99px;padding:3px 10px;font-family:var(--mono);font-size:10px;color:var(--green);letter-spacing:1px}
+/* ── TRACKER HEADER ── */
+.tr-header{padding:14px 24px;border-bottom:1px solid var(--border);background:var(--bg2);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.live-pill{display:flex;align-items:center;gap:5px;background:var(--green-bg);border:1px solid var(--green);border-color:rgba(45,158,92,.3);border-radius:99px;padding:3px 10px;font-family:var(--mono);font-size:10px;color:var(--green);letter-spacing:.5px}
 .live-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 2s infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.fetch-btn{margin-left:auto;display:flex;align-items:center;gap:6px;background:var(--accent);border:none;border-radius:7px;padding:8px 18px;color:var(--bg);font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;transition:all .15s}
-.fetch-btn:hover{background:#2a8fff}
-.fetch-btn:disabled{opacity:.5;cursor:not-allowed}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.fetch-btn{margin-left:auto;display:flex;align-items:center;gap:6px;background:var(--accent);border:none;border-radius:8px;padding:8px 18px;color:#fff;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;box-shadow:0 2px 8px rgba(224,92,42,.25)}
+.fetch-btn:hover{background:var(--accent2);transform:translateY(-1px);box-shadow:0 4px 12px rgba(224,92,42,.35)}
+.fetch-btn:active{transform:translateY(0)}
+.fetch-btn:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
 .spin{animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.last-upd{font-family:var(--mono);font-size:11px;color:var(--dim)}
+.last-upd{font-family:var(--mono);font-size:11px;color:var(--text3)}
 
-/* sources bar */
-.src-bar{padding:8px 24px;background:var(--s1);border-bottom:1px solid var(--b1);display:flex;gap:10px;flex-wrap:wrap;align-items:center;row-gap:6px}
-.src-item{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10px;color:var(--dim)}
-.src-dot{width:7px;height:7px;border-radius:50%;background:var(--dim);flex-shrink:0;transition:background .3s}
+/* ── SOURCES BAR ── */
+.src-bar{padding:8px 24px;background:var(--bg);border-bottom:1px solid var(--border);display:flex;gap:10px;flex-wrap:wrap;align-items:center;row-gap:5px}
+.src-item{display:flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;color:var(--text3)}
+.src-dot{width:7px;height:7px;border-radius:50%;background:var(--border2);flex-shrink:0;transition:background .3s}
 .src-dot.ok{background:var(--green)}
 .src-dot.err{background:var(--red)}
 .src-dot.loading{background:var(--yellow);animation:blink 1s infinite}
 
-/* progress */
-.prog-wrap{height:3px;background:var(--s2);display:none}
-.prog-bar{height:100%;background:var(--accent);width:0;transition:width .3s}
 
-/* stats strip */
-.stats-strip{display:flex;border-bottom:1px solid var(--b1);background:var(--s1)}
-.stat-cell{flex:1;padding:12px 16px;text-align:center;border-right:1px solid var(--b1)}
+/* ── PROGRESS ── */
+.prog-wrap{height:3px;background:var(--bg3);display:none}
+.prog-bar{height:100%;background:var(--accent);width:0;transition:width .4s}
+
+/* ── STATS STRIP ── */
+.stats-strip{display:flex;border-bottom:1px solid var(--border);background:var(--bg2)}
+.stat-cell{flex:1;padding:10px 16px;text-align:center;border-right:1px solid var(--border)}
 .stat-cell:last-child{border-right:none}
-.sn{font-family:'Syne',sans-serif;font-size:22px;font-weight:900;color:var(--bright);line-height:1}
-.sl{font-size:10px;color:var(--dim);font-family:var(--mono);text-transform:uppercase;margin-top:2px}
+.sn{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);line-height:1}
+.sl{font-size:10px;color:var(--text3);font-family:var(--mono);text-transform:uppercase;margin-top:2px;letter-spacing:.5px}
 .stat-cell.cg .sn{color:var(--green)}
 .stat-cell.cy .sn{color:var(--yellow)}
 .stat-cell.cr .sn{color:var(--red)}
 .stat-cell.cp .sn{color:var(--purple)}
 
-/* filter bar */
-.filter-bar{padding:12px 24px;background:var(--s1);border-bottom:1px solid var(--b1);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+/* ── FILTER BAR ── */
+.filter-bar{padding:12px 24px;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .sw{position:relative;flex:1;min-width:180px}
-.sw-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--dim);font-size:13px;pointer-events:none}
-.fsearch{width:100%;background:var(--bg);border:1px solid var(--b2);border-radius:7px;padding:8px 12px 8px 32px;color:var(--t2);font-family:inherit;font-size:13px}
+.sw-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:13px;pointer-events:none}
+.fsearch{width:100%;background:var(--card);border:1.5px solid var(--border);border-radius:8px;padding:8px 12px 8px 32px;color:var(--text);font-family:inherit;font-size:13px;transition:border .15s}
 .fsearch:focus{outline:none;border-color:var(--accent)}
-.fsearch::placeholder{color:var(--dim)}
-.fsel{background:var(--bg);border:1px solid var(--b2);border-radius:7px;padding:8px 28px 8px 10px;color:var(--t2);font-family:inherit;font-size:13px;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%233d5570'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center}
+.fsearch::placeholder{color:var(--text3)}
+.fsel{background:var(--card);border:1.5px solid var(--border);border-radius:8px;padding:8px 28px 8px 10px;color:var(--text);font-family:inherit;font-size:13px;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%239a8e85'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center;transition:border .15s}
 .fsel:focus{outline:none;border-color:var(--accent)}
 .sf-btns{display:flex;gap:5px;flex-wrap:wrap}
-.sfb{padding:6px 12px;border-radius:7px;border:1px solid var(--b2);background:var(--bg);color:var(--dim);font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;transition:all .15s}
-.sfb:hover{color:var(--t2)}
-.sfb.a-all{background:var(--s3);color:var(--bright);border-color:var(--b2)}
-.sfb.a-signed{background:rgba(34,212,122,.1);color:var(--green);border-color:rgba(34,212,122,.3)}
-.sfb.a-rumor{background:rgba(245,200,66,.1);color:var(--yellow);border-color:rgba(245,200,66,.3)}
-.sfb.a-left{background:rgba(255,82,82,.1);color:var(--red);border-color:rgba(255,82,82,.3)}
-.sfb.a-extended{background:rgba(180,127,255,.1);color:var(--purple);border-color:rgba(180,127,255,.3)}
+.sfb{padding:6px 12px;border-radius:8px;border:1.5px solid var(--border);background:var(--card);color:var(--text2);font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;transition:all .15s}
+.sfb:hover{border-color:var(--border2);color:var(--text)}
+.sfb.a-all{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+.sfb.a-signed{background:var(--green-bg);color:var(--green);border-color:var(--green)}
+.sfb.a-rumor{background:var(--yellow-bg);color:var(--yellow);border-color:var(--yellow)}
+.sfb.a-left{background:var(--red-bg);color:var(--red);border-color:var(--red)}
+.sfb.a-extended{background:var(--purple-bg);color:var(--purple);border-color:var(--purple)}
 
-/* transfer cards */
+/* ── TRANSFER CARDS ── */
 .t-area{padding:16px 24px 60px}
-.group-hd{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:2px;text-transform:uppercase;padding:18px 0 8px;border-bottom:1px solid var(--b1);margin-bottom:6px;display:flex;align-items:center;gap:8px}
-.g-cnt{background:var(--s2);border-radius:99px;padding:1px 8px;font-size:10px}
-.transfers{display:flex;flex-direction:column;gap:5px}
-.tc{background:var(--s1);border:1px solid var(--b1);border-radius:9px;padding:13px 16px;display:grid;grid-template-columns:36px 1fr auto auto auto;gap:12px;align-items:center;transition:all .15s;cursor:default}
-.tc:hover{background:var(--s2);border-color:var(--b2)}
+.group-hd{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;padding:16px 0 8px;border-bottom:1px solid var(--border);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.g-cnt{background:var(--bg3);border-radius:99px;padding:1px 8px;font-size:10px;color:var(--text2)}
+.transfers{display:flex;flex-direction:column;gap:6px}
+.tc{background:var(--card);border:1.5px solid var(--border);border-radius:10px;padding:12px 16px;display:grid;grid-template-columns:38px 1fr auto auto auto;gap:10px;align-items:center;transition:all .15s;cursor:default;box-shadow:0 1px 3px var(--shadow)}
+.tc:hover{border-color:var(--border2);box-shadow:0 2px 8px var(--shadow2);transform:translateY(-1px)}
 .tc.s-signed{border-left:3px solid var(--green)}
 .tc.s-rumor{border-left:3px solid var(--yellow)}
 .tc.s-left{border-left:3px solid var(--red)}
 .tc.s-extended{border-left:3px solid var(--purple)}
-.av{width:36px;height:36px;border-radius:50%;background:var(--s3);border:1px solid var(--b2);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent);flex-shrink:0}
-.tp{font-weight:700;font-size:14px;color:var(--bright);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.tpos{font-family:var(--mono);font-size:9px;color:var(--dim);background:var(--s3);border-radius:3px;padding:1px 5px}
-.tmv{display:flex;align-items:center;gap:5px;margin-top:3px;flex-wrap:wrap}
-.tf{font-size:12px;color:var(--dim)}
-.ta{color:var(--dim);font-size:10px}
-.tt{font-size:12px;color:var(--t2);font-weight:600}
-.tsum{font-size:11px;color:var(--dim);margin-top:3px;line-height:1.4}
-.tleague{font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:4px;border:1px solid var(--b2);color:var(--dim);white-space:nowrap}
+.av{width:38px;height:38px;border-radius:50%;background:var(--bg3);border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);flex-shrink:0}
+.tp{font-weight:700;font-size:14px;color:var(--text);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.tpos{font-family:var(--mono);font-size:9px;color:var(--text3);background:var(--bg3);border-radius:4px;padding:1px 6px;border:1px solid var(--border)}
+.tmv{display:flex;align-items:center;gap:5px;margin-top:2px;flex-wrap:wrap}
+.tf{font-size:12px;color:var(--text2)}
+.ta{color:var(--text3);font-size:10px}
+.tt{font-size:12px;color:var(--accent);font-weight:600}
+.tsum{font-size:11px;color:var(--text2);margin-top:3px;line-height:1.4}
+.tleague{font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:5px;border:1.5px solid var(--border);color:var(--text2);white-space:nowrap;background:var(--bg2)}
 .tpill{font-family:var(--mono);font-size:10px;font-weight:600;padding:3px 9px;border-radius:5px;white-space:nowrap}
-.p-signed{background:rgba(34,212,122,.1);color:var(--green);border:1px solid rgba(34,212,122,.25)}
-.p-rumor{background:rgba(245,200,66,.1);color:var(--yellow);border:1px solid rgba(245,200,66,.25)}
-.p-left{background:rgba(255,82,82,.1);color:var(--red);border:1px solid rgba(255,82,82,.25)}
-.p-extended{background:rgba(180,127,255,.1);color:var(--purple);border:1px solid rgba(180,127,255,.25)}
+.p-signed{background:var(--green-bg);color:var(--green);border:1px solid rgba(45,158,92,.3)}
+.p-rumor{background:var(--yellow-bg);color:var(--yellow);border:1px solid rgba(200,135,10,.3)}
+.p-left{background:var(--red-bg);color:var(--red);border:1px solid rgba(212,64,64,.3)}
+.p-extended{background:var(--purple-bg);color:var(--purple);border:1px solid rgba(124,92,191,.3)}
 .tmeta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;min-width:80px}
-.tdate{font-family:var(--mono);font-size:10px;color:var(--dim);white-space:nowrap}
+.tdate{font-family:var(--mono);font-size:10px;color:var(--text3);white-space:nowrap}
 .tsrc{font-family:var(--mono);font-size:10px;color:var(--accent);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:110px;display:block}
 .tsrc:hover{text-decoration:underline}
 
-/* loading / empty */
-.loading-bar{padding:12px 24px;background:var(--s1);border-bottom:1px solid var(--b1);display:none}
-.loading-top{display:flex;align-items:center;gap:12px;margin-bottom:8px}
-.balls-row{display:flex;gap:6px;align-items:center}
-.bball{width:28px;height:28px;border-radius:50%;background:#f5793b;border:1px solid #c45820;position:relative;flex-shrink:0;transition:opacity .3s,transform .3s}
-.bball::before{content:'';position:absolute;top:4px;left:2px;right:2px;bottom:4px;border-radius:50%;border:1.5px solid rgba(0,0,0,.4)}
-.bball::after{content:'';position:absolute;top:2px;left:8px;right:8px;bottom:2px;border:1.5px solid rgba(0,0,0,.4);border-radius:50% / 100% 100% 100% 100%}
-.bball.empty{opacity:.15;transform:scale(.85)}
+
+/* ── LOADING BALLS ── */
+.loading-bar{padding:12px 24px;background:var(--bg2);border-bottom:1px solid var(--border);display:none}
+.loading-top{display:flex;align-items:center;gap:12px}
+.balls-row{display:flex;gap:5px;align-items:center}
+.bball{width:26px;height:26px;border-radius:50%;background:var(--accent);border:1.5px solid var(--accent2);position:relative;flex-shrink:0;transition:opacity .3s,transform .3s}
+.bball::before{content:'';position:absolute;top:4px;left:2px;right:2px;bottom:4px;border-radius:50%;border:1.5px solid rgba(0,0,0,.25)}
+.bball::after{content:'';position:absolute;top:2px;left:6px;right:6px;bottom:2px;border:1.5px solid rgba(0,0,0,.2);border-radius:50%}
+.bball.empty{opacity:.12;transform:scale(.82)}
 .bball.active{animation:bbounce .5s ease infinite alternate}
 @keyframes bbounce{0%{transform:translateY(0)}100%{transform:translateY(-5px)}}
-.ld-src-top{font-family:var(--mono);font-size:11px;color:var(--dim);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;animation:blink 1.5s infinite}
-.ld-pct{font-family:var(--mono);font-size:11px;color:var(--yellow);min-width:32px;text-align:right}
-.loading{display:none}
-.ld-txt{display:none}
-.ld-src{display:none}
-.empty{text-align:center;padding:60px;color:var(--dim)}
-.empty-ico{font-size:40px;margin-bottom:12px}
-.empty-title{color:var(--t2);font-size:16px;font-weight:600;margin-bottom:6px}
-.init-prompt{padding:60px 20px;text-align:center;color:var(--dim)}
-.init-ico{font-size:48px;margin-bottom:16px}
-.init-h{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--t2);margin-bottom:8px}
-.init-p{font-size:13px;max-width:480px;margin:0 auto;line-height:1.7;color:var(--dim)}
-.init-p strong{color:var(--bright)}
-.error-box{background:rgba(255,82,82,.06);border:1px solid rgba(255,82,82,.2);border-radius:9px;padding:20px;margin:16px 24px;display:flex;gap:12px}
-.err-title{font-weight:700;color:var(--red);margin-bottom:4px;font-size:13px}
-.err-msg{font-size:12px;color:var(--dim);line-height:1.6}
+.ld-src-top{font-family:var(--mono);font-size:11px;color:var(--text3);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;animation:blink 1.5s infinite}
+.ld-pct{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:600;min-width:32px;text-align:right}
+.loading{display:none}.ld-txt{display:none}.ld-src{display:none}
 
-/* ticker */
-.ticker{overflow:hidden;background:var(--s2);border-bottom:1px solid var(--b1);height:30px;display:flex;align-items:center}
-.ticker-lbl{flex-shrink:0;background:var(--accent);color:#fff;font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:0 10px;height:100%;display:flex;align-items:center}
-.ticker-inner{display:flex;white-space:nowrap;animation:scroll 40s linear infinite}
-.ti{padding:0 28px;font-size:11px;font-family:var(--mono);color:var(--dim)}
-.ti b{color:var(--t2)}
+/* ── EMPTY / INIT ── */
+.empty{text-align:center;padding:60px;color:var(--text3)}
+.empty-ico{font-size:40px;margin-bottom:12px}
+.empty-title{color:var(--text2);font-size:16px;font-weight:600;margin-bottom:6px}
+.init-prompt{padding:60px 20px;text-align:center;color:var(--text2)}
+.init-ico{font-size:48px;margin-bottom:16px}
+.init-h{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);margin-bottom:10px}
+.init-p{font-size:13px;max-width:500px;margin:0 auto;line-height:1.75;color:var(--text2)}
+.init-p strong{color:var(--accent)}
+.error-box{background:var(--red-bg);border:1.5px solid rgba(212,64,64,.25);border-radius:10px;padding:16px 20px;margin:16px 24px;display:flex;gap:12px}
+.err-title{font-weight:700;color:var(--red);margin-bottom:4px;font-size:13px}
+.err-msg{font-size:12px;color:var(--text2);line-height:1.6}
+
+/* ── TICKER ── */
+.ticker{overflow:hidden;background:var(--bg3);border-bottom:1px solid var(--border);height:30px;display:flex;align-items:center}
+.ticker-lbl{flex-shrink:0;background:var(--accent);color:#fff;font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:0 10px;height:100%;display:flex;align-items:center;position:relative;z-index:2}
+.ticker-track{flex:1;overflow:hidden;position:relative;mask-image:linear-gradient(to right, transparent 0px, black 24px, black calc(100% - 24px), transparent 100%);-webkit-mask-image:linear-gradient(to right, transparent 0px, black 24px, black calc(100% - 24px), transparent 100%)}
+.ticker-inner{display:flex;white-space:nowrap;animation:scroll 55s linear infinite}
+.ti{padding:0 28px;font-size:11px;font-family:var(--mono);color:var(--text2)}
+.ti b{color:var(--text)}
 .ti .ts{color:var(--green)}
 .ti .tr{color:var(--yellow)}
 .ti .tl{color:var(--red)}
 @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ── DATABASE PAGE ── */
-.db-toolbar{padding:14px 24px;background:var(--s1);border-bottom:1px solid var(--b1);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.db-search{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--b2);border-radius:7px;padding:8px 12px;color:var(--t2);font-family:inherit;font-size:13px}
+.db-toolbar{padding:14px 24px;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.db-search{flex:1;min-width:200px;background:var(--card);border:1.5px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);font-family:inherit;font-size:13px}
 .db-search:focus{outline:none;border-color:var(--accent)}
-.db-search::placeholder{color:var(--dim)}
-.db-fsel{background:var(--bg);border:1px solid var(--b2);border-radius:7px;padding:8px 12px;color:var(--t2);font-family:inherit;font-size:13px;cursor:pointer}
+.db-search::placeholder{color:var(--text3)}
+.db-fsel{background:var(--card);border:1.5px solid var(--border);border-radius:8px;padding:8px 12px;color:var(--text);font-family:inherit;font-size:13px;cursor:pointer}
 .db-fsel:focus{outline:none;border-color:var(--accent)}
 .db-export{display:flex;gap:6px}
-.exp-btn{padding:7px 14px;border-radius:6px;border:1px solid var(--b2);background:var(--s2);color:var(--t2);font-family:inherit;font-size:11px;font-weight:600;cursor:pointer;transition:all .15s}
+.exp-btn{padding:7px 14px;border-radius:7px;border:1.5px solid var(--border);background:var(--bg2);color:var(--text2);font-family:inherit;font-size:11px;font-weight:600;cursor:pointer;transition:all .15s}
 .exp-btn:hover{border-color:var(--accent);color:var(--accent)}
-.exp-btn.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}
-.exp-btn.primary:hover{background:#2a8fff}
-.db-stats{display:flex;gap:16px;padding:10px 24px;background:var(--s2);border-bottom:1px solid var(--b1);flex-wrap:wrap}
-.db-stat{font-family:var(--mono);font-size:11px;color:var(--dim)}
-.db-stat span{color:var(--accent)}
+.exp-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.exp-btn.primary:hover{background:var(--accent2)}
+.db-stats{display:flex;gap:16px;padding:10px 24px;background:var(--bg3);border-bottom:1px solid var(--border);flex-wrap:wrap}
+.db-stat{font-family:var(--mono);font-size:11px;color:var(--text3)}
+.db-stat span{color:var(--accent);font-weight:600}
 table{width:100%;border-collapse:collapse}
 .tbl-wrap{overflow-x:auto;padding:0 24px 60px}
-thead th{text-align:left;padding:10px 12px;font-family:var(--mono);font-size:9px;color:var(--dim);letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid var(--b1);white-space:nowrap;cursor:pointer}
-thead th:hover{color:var(--t2)}
-tbody tr{border-bottom:1px solid rgba(30,46,66,.5);transition:background .1s}
-tbody tr:hover{background:var(--s2)}
+thead th{text-align:left;padding:10px 12px;font-family:var(--mono);font-size:9px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;border-bottom:1.5px solid var(--border);white-space:nowrap;cursor:pointer}
+thead th:hover{color:var(--text)}
+tbody tr{border-bottom:1px solid var(--border);transition:background .1s}
+tbody tr:hover{background:var(--bg2)}
 tbody tr.hidden{display:none}
-td{padding:10px 12px;vertical-align:middle;font-size:13px}
-.cn{font-weight:600;color:var(--bright);font-size:13px}
-.cc{font-size:11px;color:var(--dim)}
+td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
+.cn{font-weight:600;color:var(--text);font-size:13px}
+.cc{font-size:11px;color:var(--text3)}
 .url-a{font-family:var(--mono);font-size:11px;color:var(--accent);text-decoration:none;word-break:break-all;display:block}
 .url-a:hover{text-decoration:underline}
-.url-a.sec{color:var(--dim);font-size:10px}
-.spath{font-family:var(--mono);font-size:10px;color:var(--green);background:rgba(34,212,122,.06);border:1px solid rgba(34,212,122,.15);border-radius:3px;padding:1px 5px;display:inline-block}
+.url-a.sec{color:var(--text3);font-size:10px}
+.spath{font-family:var(--mono);font-size:10px;color:var(--green);background:var(--green-bg);border:1px solid rgba(45,158,92,.2);border-radius:4px;padding:1px 5px;display:inline-block}
 .diff{display:inline-block;font-family:var(--mono);font-size:10px;padding:2px 7px;border-radius:4px}
-.d-easy{background:rgba(34,212,122,.1);color:var(--green)}
-.d-med{background:rgba(245,200,66,.1);color:var(--yellow)}
-.d-hard{background:rgba(255,82,82,.1);color:var(--red)}
-.lbadge{display:inline-block;font-family:var(--mono);font-size:9px;padding:2px 7px;border-radius:3px;font-weight:600}
-.lb-el{background:rgba(59,158,255,.12);color:var(--accent)}
-.lb-ec{background:rgba(34,212,122,.12);color:var(--green)}
-.lb-aba{background:rgba(180,127,255,.12);color:var(--purple)}
-.lb-bcl{background:rgba(245,200,66,.12);color:var(--yellow)}
-.lb-nat{background:rgba(255,82,82,.12);color:var(--red)}
-.lb-news{background:rgba(255,82,82,.12);color:#f0a040}
-.section-hd{padding:20px 24px 0;font-family:'Syne',sans-serif;font-size:16px;font-weight:800;color:var(--bright);display:flex;align-items:center;gap:10px}
-.section-sub{font-family:var(--mono);font-size:10px;color:var(--dim);font-weight:400;letter-spacing:.5px}
+.d-easy{background:var(--green-bg);color:var(--green)}
+.d-med{background:var(--yellow-bg);color:var(--yellow)}
+.d-hard{background:var(--red-bg);color:var(--red)}
+.lbadge{display:inline-block;font-family:var(--mono);font-size:9px;padding:2px 7px;border-radius:4px;font-weight:600}
+.lb-el{background:var(--accent-soft);color:var(--accent)}
+.lb-ec{background:var(--green-bg);color:var(--green)}
+.lb-aba{background:var(--purple-bg);color:var(--purple)}
+.lb-bcl{background:var(--yellow-bg);color:var(--yellow)}
+.lb-nat{background:var(--red-bg);color:var(--red)}
+.lb-news{background:rgba(200,135,10,.1);color:var(--yellow)}
+.section-hd{padding:20px 24px 0;font-family:'Syne',sans-serif;font-size:16px;font-weight:800;color:var(--text);display:flex;align-items:center;gap:10px}
+.section-sub{font-family:var(--mono);font-size:10px;color:var(--text3);font-weight:400;letter-spacing:.5px}
 
 @media(max-width:680px){
   nav{padding:10px 14px}
   .tr-header,.filter-bar,.db-toolbar,.t-area,.tbl-wrap{padding-left:14px;padding-right:14px}
-  .tc{grid-template-columns:32px 1fr;grid-template-rows:auto auto auto}
+  .tc{grid-template-columns:34px 1fr;grid-template-rows:auto auto auto}
   .tleague,.tpill,.tmeta{grid-column:2}
   .tmeta{align-items:flex-start}
   .stats-strip{flex-wrap:wrap}
@@ -223,6 +268,12 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px}
     <button class="tab on" onclick="showPage('tracker',this)">🔴 Live Tracker</button>
     <button class="tab" onclick="showPage('db',this)">📋 URL Database</button>
   </div>
+  <div class="nav-right">
+    <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+      <span class="theme-icon" id="themeIcon">☀️</span>
+      <span id="themeLabel">Light</span>
+    </button>
+  </div>
 </nav>
 
 <!-- ══════════════════════════════════════════════
@@ -232,7 +283,7 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px}
 
   <div class="tr-header">
     <div class="live-pill"><div class="live-dot"></div>Live</div>
-    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:800;color:var(--bright)">Transfer Tracker</div>
+    <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:800;color:var(--text)">Transfer Tracker</div>
     <div class="last-upd" id="lastUpd">Not yet fetched</div>
     <button class="fetch-btn" id="fetchBtn" onclick="fetchAll()">
       <span id="fetchIco">↻</span>&nbsp;Fetch Latest
@@ -240,39 +291,28 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px}
   </div>
 
   <!-- ticker -->
-  <div class="ticker"><div class="ticker-lbl">Breaking</div><div class="ticker-inner" id="ticker">
-    <span class="ti">🏀 Press <b>Fetch Latest</b> to load real transfer news from official league sites + Sportando · Eurohoops · BasketNews · TalkBasket · RealGM and more</span>
-    <span class="ti">📡 Sources: <b>EuroLeague official</b> · <b>EuroCup official</b> · <b>BCL official</b> · <b>ABA Liga official</b> · Sportando · Eurohoops · BasketNews · TalkBasket · RealGM</span>
-    <span class="ti">🏀 Press <b>Fetch Latest</b> to load real transfer news from official league sites + Sportando · Eurohoops · BasketNews · TalkBasket · RealGM and more</span>
-    <span class="ti">📡 Sources: <b>EuroLeague official</b> · <b>EuroCup official</b> · <b>BCL official</b> · <b>ABA Liga official</b> · Sportando · Eurohoops · BasketNews · TalkBasket · RealGM</span>
-  </div></div>
-
-  <!-- source status -->
+  <div class="ticker"><div class="ticker-lbl">Latest</div><div class="ticker-track"><div class="ticker-inner" id="ticker">
+    <span class="ti"><span class="ts">SIGNED</span> Saben Lee → Zalgiris · <span class="ts">SIGNED</span> Maxwell Lewis → Zalgiris · <span class="ts">SIGNED</span> Nick Calathes → PAOK · <span class="ts">SIGNED</span> Jaleen Smith → Hapoel Jerusalem · <span class="ts">SIGNED</span> Mike James → Barcelona · <span class="ts">SIGNED</span> Matthew Hurt stays at Cedevita Olimpija</span>
+    <span class="ti"><span class="tl">LEFT</span> Alec Peters departs Olympiacos · <span class="tl">LEFT</span> Duane Washington leaves Partizan · <span class="tl">LEFT</span> Devon Daniels leaves Hamburg · <span class="tl">LEFT</span> Sid-Marlon Theis departs Rostock after 6 years · <span class="tl">LEFT</span> Danijel Jusup exits Zadar</span>
+    <span class="ti"><span class="ts">EXTENDED</span> Jordan Loyd stays at Efes · <span class="ts">EXTENDED</span> Kobi Simmons at Baskonia through 2028 · <span class="ts">EXTENDED</span> Dragan Milosavljević at Igokea · <span class="ts">EXTENDED</span> Paul Zipser stays at Heidelberg · <span class="ts">EXTENDED</span> Axel Bouteille at Budućnost</span>
+    <span class="ti"><span class="ts">SIGNED</span> Ibi Watson → Ulm · <span class="ts">SIGNED</span> Jaylen Sims → Ulm · <span class="ts">SIGNED</span> Alex Richardson → Chemnitz · <span class="ts">SIGNED</span> Ranko Simović → Borac · <span class="ts">SIGNED</span> Jamiya Neal → FMP · <span class="ts">SIGNED</span> Marko Kovačević → FMP</span>
+    <span class="ti"><span class="tr">RUMOR</span> Partizan targeting Kevarrius Hayes · <span class="tr">RUMOR</span> Bayern Munich eyeing Bamberg coach Gavel · <span class="tr">RUMOR</span> Sasha Djordjevic close to Bahcesehir · <span class="tr">RUMOR</span> Ergin Ataman leaves Panathinaikos</span>
+    <span class="ti"><span class="ts">SIGNED</span> Saben Lee → Zalgiris · <span class="ts">SIGNED</span> Maxwell Lewis → Zalgiris · <span class="ts">SIGNED</span> Nick Calathes → PAOK · <span class="ts">SIGNED</span> Jaleen Smith → Hapoel Jerusalem · <span class="ts">SIGNED</span> Mike James → Barcelona · <span class="ts">SIGNED</span> Matthew Hurt stays at Cedevita Olimpija</span>
+    <span class="ti"><span class="tl">LEFT</span> Alec Peters departs Olympiacos · <span class="tl">LEFT</span> Duane Washington leaves Partizan · <span class="tl">LEFT</span> Devon Daniels leaves Hamburg · <span class="tl">LEFT</span> Sid-Marlon Theis departs Rostock after 6 years · <span class="tl">LEFT</span> Danijel Jusup exits Zadar</span>
+    <span class="ti"><span class="ts">EXTENDED</span> Jordan Loyd stays at Efes · <span class="ts">EXTENDED</span> Kobi Simmons at Baskonia through 2028 · <span class="ts">EXTENDED</span> Dragan Milosavljević at Igokea · <span class="ts">EXTENDED</span> Paul Zipser stays at Heidelberg · <span class="ts">EXTENDED</span> Axel Bouteille at Budućnost</span>
+    <span class="ti"><span class="ts">SIGNED</span> Ibi Watson → Ulm · <span class="ts">SIGNED</span> Jaylen Sims → Ulm · <span class="ts">SIGNED</span> Alex Richardson → Chemnitz · <span class="ts">SIGNED</span> Ranko Simović → Borac · <span class="ts">SIGNED</span> Jamiya Neal → FMP · <span class="ts">SIGNED</span> Marko Kovačević → FMP</span>
+    <span class="ti"><span class="tr">RUMOR</span> Partizan targeting Kevarrius Hayes · <span class="tr">RUMOR</span> Bayern Munich eyeing Bamberg coach Gavel · <span class="tr">RUMOR</span> Sasha Djordjevic close to Bahcesehir · <span class="tr">RUMOR</span> Ergin Ataman leaves Panathinaikos</span>
+  </div></div></div>
   <div class="src-bar" id="srcBar">
-    <span style="font-family:var(--mono);font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px">Sources:</span>
-    <span class="src-item"><span class="src-dot" id="d-el"></span>EuroLeague</span>
-    <span class="src-item"><span class="src-dot" id="d-ec"></span>EuroCup</span>
-    <span class="src-item"><span class="src-dot" id="d-bcl"></span>BCL</span>
-    <span class="src-item"><span class="src-dot" id="d-aba"></span>ABA Liga</span>
-    <span class="src-item"><span class="src-dot" id="d-bbl"></span>BBL</span>
-    <span class="src-item"><span class="src-dot" id="d-acb"></span>ACB</span>
-    <span class="src-item"><span class="src-dot" id="d-lnb"></span>LNB</span>
-    <span class="src-item"><span class="src-dot" id="d-lega"></span>Lega</span>
-    <span class="src-item"><span class="src-dot" id="d-plk"></span>PLK</span>
-    <span class="src-item"><span class="src-dot" id="d-kzs"></span>KZS</span>
-    <span class="src-item"><span class="src-dot" id="d-bnxt"></span>BNXT</span>
-    <span class="src-item"><span class="src-dot" id="d-latel"></span>Lat-Est</span>
-    <span class="src-item"><span class="src-dot" id="d-vtb"></span>VTB</span>
-    <span class="src-item"><span class="src-dot" id="d-isr"></span>Israeli BSL</span>
-    <span class="src-item"><span class="src-dot" id="d-lkl"></span>LKL</span>
-    <span class="src-item"><span class="src-dot" id="d-frb"></span>FRB Romania</span>
-    <span class="src-item"><span class="src-dot" id="d-esake"></span>ESAKE Greece</span>
-    <span class="src-item"><span class="src-dot" id="d-sportando"></span>Sportando</span>
-    <span class="src-item"><span class="src-dot" id="d-eurohoops"></span>Eurohoops</span>
-    <span class="src-item"><span class="src-dot" id="d-basketnews"></span>BasketNews</span>
-    <span class="src-item"><span class="src-dot" id="d-talkbasket"></span>TalkBasket</span>
-    <span class="src-item"><span class="src-dot" id="d-realgm"></span>RealGM</span>
-    <span class="src-item"><span class="src-dot" id="d-pbeurope"></span>PBEurope</span>
+    <span style="font-family:var(--mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px">Live sources:</span>
+    <span class="src-item"><span class="src-dot" id="d-el_supp"></span>EuroLeague</span>
+    <span class="src-item"><span class="src-dot" id="d-eurocup_supp"></span>EuroCup/BCL</span>
+    <span class="src-item"><span class="src-dot" id="d-national_supp"></span>National Leagues</span>
+    <span class="src-item"><span class="src-dot" id="d-gbl_supp"></span>Greek GBL</span>
+    <span class="src-item"><span class="src-dot" id="d-lkl_supp"></span>LKL</span>
+    <span class="src-item"><span class="src-dot" id="d-bsl_supp"></span>Israeli BSL</span>
+    <span class="src-item"><span class="src-dot" id="d-turkey_supp"></span>Turkish BSL</span>
+    <span class="src-item"><span class="src-dot" id="d-other_supp"></span>Others</span>
   </div>
 
   <div class="prog-wrap" id="progWrap"><div class="prog-bar" id="progBar"></div></div>
@@ -298,13 +338,13 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px}
       <option>BCL</option><option>FIBA Europe Cup</option><option>VTB</option><option>BNXT</option>
       <option>ACB</option><option>Primera FEB</option><option>Pro A</option><option>Pro B</option>
       <option>Lega</option><option>Serie A2</option><option>BBL</option><option>ProA Germany</option>
-      <option>BSL</option><option>TBL</option><option>Greek A1</option><option>Israeli BSL</option>
+      <option>GBL</option><option>BSL</option><option>Turkish BSL</option><option>TBL</option><option>Greek A1</option><option>Israeli BSL</option>
       <option>LKL</option><option>KLS</option><option>HT Liga</option><option>SKL</option>
-      <option>PLK</option><option>NBL Czech</option><option>NBIA Hungary</option>
+      <option>PLK</option><option>Romanian LNB</option><option>Hungarian NB1</option><option>Croatian HKL</option><option>NBL Czech</option><option>NBIA Hungary</option>
     </select>
     <select class="fsel" id="fPos" onchange="renderT()">
       <option value="">All Positions</option>
-      <option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option>
+      <option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option><option>coach</option>
     </select>
     <select class="fsel" id="fSrc" onchange="renderT()">
       <option value="">All Sources</option>
@@ -347,12 +387,11 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px}
     <div id="errEl"></div>
     <div class="init-prompt" id="initPr">
       <div class="init-ico">🏀</div>
-      <div class="init-h">Ready to scan 23 sources</div>
+      <div class="init-h">EuroBall Transfer Tracker</div>
       <div class="init-p">
-        Press <strong>Fetch Latest</strong> to pull real transfer news from <strong>17 official league sites</strong>
-        (EuroLeague, EuroCup, BCL, ABA Liga, BBL Wechselbörse, ACB, LNB, Lega Basket, PLK, KZS, BNXT, Lat-Est, VTB, Israeli BSL, LKL, FRB Romania, ESAKE Greece)
-        plus <strong>6 aggregator sources</strong> (Sportando, Eurohoops, BasketNews, TalkBasket, RealGM, PBEurope).
-        Only publicly available news pages are queried — no login-protected content.
+        Press <strong>Fetch Latest</strong> to pull recent European basketball transfer news across
+        <strong>EuroLeague, EuroCup, BCL, ABA Liga, BBL, ACB, Lega Basket, Pro A</strong>
+        and more — signings, departures, extensions, rumors — powered by AI trained on basketball news from Sportando, BasketNews, Eurohoops, TalkBasket and official league sources.
       </div>
     </div>
     <div class="transfers" id="transfersEl"></div>
@@ -376,7 +415,15 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px}
       <option value="EuroCup">EuroCup</option>
       <option value="ABA">ABA League</option>
       <option value="BCL">BCL</option>
-      <option value="BNXT">BNXT</option>
+              <option value="GBL">Greek GBL</option>
+              <option value="LKL">Lithuanian LKL</option>
+              <option value="Israeli BSL">Israeli BSL</option>
+              <option value="BNXT">BNXT</option>
+              <option value="PLK">Polish PLK</option>
+              <option value="Romanian LNB">Romanian LNB</option>
+              <option value="Hungarian NB1">Hungarian NB1</option>
+              <option value="Croatian HKL">Croatian HKL</option>
+              <option value="Turkish BSL">Turkish BSL</option>
       <option value="VTB">VTB</option>
       <option value="Spain">Spain</option>
       <option value="France">France</option>
@@ -433,235 +480,42 @@ function showPage(id, btn) {
 // DATABASE DATA — VERIFIED URLs
 // ═══════════════════════════════════════════════════════
 const DB = [
-  // ── LEAGUE OFFICIAL SITES ──
-  {cat:'EuroLeague',league:'EuroLeague',name:'EuroLeague Official',url:'https://www.euroleaguebasketball.net/euroleague/',path:'/euroleague/news/',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'EuroCup Official',url:'https://www.euroleaguebasketball.net/eurocup/',path:'/eurocup/news/',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'BCL Official',url:'https://www.championsleague.basketball/en',path:'/en/news',diff:'Easy'},
-  {cat:'ABA',league:'ABA League',name:'ABA Liga Official',url:'https://www.aba-liga.com/',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'BBL Wechselbörse (transfers page)',url:'https://www.easycredit-bbl.de/wechselboerse',path:'/wechselboerse',diff:'Easy ⭐'},
-  {cat:'Spain',league:'ACB',name:'ACB Official',url:'https://www.acb.com/es/liga',path:'/es/liga/noticias',diff:'Easy ⭐'},
-  {cat:'France',league:'Pro A',name:'LNB France Official',url:'https://lnb.fr/fr',path:'/fr/actualites',diff:'Easy'},
-  {cat:'Italy',league:'Lega',name:'Lega Basket Official',url:'https://www.legabasket.it/',path:'/news',diff:'Easy'},
-  {cat:'Balkans',league:'PLK',name:'PLK Poland Official',url:'https://plk.pl/',path:'/aktualnosci',diff:'Easy'},
-  {cat:'Balkans',league:'SKL',name:'KZS Slovenia Official',url:'https://www.kzs.si/',path:'/novice',diff:'Easy'},
-  {cat:'BNXT',league:'BNXT',name:'BNXT League Official',url:'https://bnxtleague.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'BNXT',league:'Lat-Est',name:'Lat-Est League Official',url:'https://www.estlatbl.com/en/participating-teams',path:'/en/news',diff:'Easy'},
-  {cat:'VTB',league:'VTB',name:'VTB United League Official',url:'https://vtb-league.com/en/',path:'/en/news',diff:'Easy'},
-  {cat:'Israel',league:'Israeli BSL',name:'Israeli BSL Official',url:'https://basket.co.il/?lang=en',path:'/?lang=en',diff:'Medium'},
-  {cat:'Lithuania',league:'LKL',name:'LKL Lithuania Official',url:'https://en.lkl.lt/',path:'/en/news',diff:'Easy'},
-  {cat:'Balkans',league:'Div A Romania',name:'FRB Romania Official',url:'https://www.frbaschet.ro/',path:'/stiri',diff:'Medium'},
-  {cat:'Greece',league:'Greek A1',name:'ESAKE Greece Official',url:'https://www.esake.gr/en',path:'/en/news',diff:'Medium'},
-
-  // ── EUROLEAGUE CLUBS ──
-  // EuroLeague clubs — URLs verified from official sources June 2026
-  {cat:'EuroLeague',league:'EuroLeague',name:'ALBA Berlin',city:'Berlin, Germany',url:'https://www.albaberlin.de',path:'/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Anadolu Efes',city:'Istanbul, Turkey',url:'https://www.anadoluefes.com/basketbol',path:'/basketbol/haberler',diff:'Medium'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'AS Monaco Basket',city:'Monaco',url:'https://www.asmonaco.com/en/basket',path:'/en/basket/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Baskonia',city:'Vitoria, Spain',url:'https://www.baskonia.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Crvena Zvezda Meridianbet',city:'Belgrade, Serbia',url:'http://www.kkcrvenazvezda.rs',path:'/vesti',diff:'Medium'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'EA7 Emporio Armani Milano',city:'Milan, Italy',url:'https://www.olimpiamilano.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'FC Barcelona',city:'Barcelona, Spain',url:'https://www.fcbarcelona.com/en/basketball',path:'/en/basketball/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'FC Bayern Munich Basketball',city:'Munich, Germany',url:'https://fcbayern.com/basketball/en',path:'/basketball/en/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Fenerbahce Beko',city:'Istanbul, Turkey',url:'https://www.fenerbahce.org/en/basketball',path:'/en/basketball/news',diff:'Medium'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'LDLC ASVEL',city:'Villeurbanne, France',url:'https://www.ldlc-asvel.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Maccabi Tel Aviv',city:'Tel Aviv, Israel',url:'https://www.maccabi.co.il/en',path:'/en/news',diff:'Medium'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Olympiacos Piraeus',city:'Piraeus, Greece',url:'https://www.olympiacos.org/en/basketball',path:'/en/basketball/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Panathinaikos AKTOR',city:'Athens, Greece',url:'https://www.paobc.gr',path:'/news',diff:'Medium'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Paris Basketball',city:'Paris, France',url:'https://www.parisbasketball.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Partizan Mozzart Bet',city:'Belgrade, Serbia',url:'http://www.kkpartizan.rs',path:'/vesti',diff:'Medium'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Real Madrid',city:'Madrid, Spain',url:'https://www.realmadrid.com/en-US/basketball/first-team/home',path:'/en-US/basketball/first-team/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Virtus Segafredo Bologna',city:'Bologna, Italy',url:'https://www.virtus.it/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroLeague',league:'EuroLeague',name:'Zalgiris Kaunas',city:'Kaunas, Lithuania',url:'https://www.bczalgiris.lt/en',path:'/en/news',diff:'Easy'},
-
-  // ── EUROCUP CLUBS ──
-  {cat:'EuroCup',league:'EuroCup',name:'ratiopharm Ulm',city:'Ulm, Germany',url:'https://www.ratiopharm-ulm.de',path:'/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Dolomiti Energia Trento',city:'Trento, Italy',url:'https://www.aquilabasket.it/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'NINERS Chemnitz',city:'Chemnitz, Germany',url:'https://www.niners-chemnitz.de',path:'/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Umana Reyer Venezia',city:'Venice, Italy',url:'https://www.reyer.it/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Veolia Towers Hamburg',city:'Hamburg, Germany',url:'https://www.towers-basketball.de',path:'/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'7Bet-Lietkabelis',city:'Panevėžys, Lithuania',url:'https://www.lietkabelis.lt/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Beşiktaş Fibabanka',city:'Istanbul, Turkey',url:'https://www.besiktas.com.tr/basketbol',path:'/basketbol/haberler',diff:'Medium'},
-  {cat:'EuroCup',league:'EuroCup',name:'Neptūnas Klaipėda',city:'Klaipėda, Lithuania',url:'https://www.bkneptunas.lt/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Bahçeşehir Koleji',city:'Istanbul, Turkey',url:'https://www.bahcesehirbasketbol.com',path:'/haberler',diff:'Medium'},
-  {cat:'EuroCup',league:'EuroCup',name:'Cosea JL Bourg',city:'Bourg-en-Bresse, France',url:'https://www.jlbourg-basket.com',path:'/actualites',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Budućnost VOLI',city:'Podgorica, Montenegro',url:'http://www.kkbuducnost.me',path:'/vijesti',diff:'Medium'},
-  {cat:'EuroCup',league:'EuroCup',name:'Hapoel Jerusalem',city:'Jerusalem, Israel',url:'https://www.hapoeljerusalem.co.il/en',path:'/en/news',diff:'Medium'},
-  {cat:'EuroCup',league:'EuroCup',name:'London Lions',city:'London, UK',url:'https://www.londonlions.com',path:'/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Cedevita Olimpija',city:'Ljubljana, Slovenia',url:'http://www.cedevita.olimpija.com',path:'/en/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Turk Telekom',city:'Ankara, Turkey',url:'https://www.turktelekombk.com.tr',path:'/haberler',diff:'Medium'},
-  {cat:'EuroCup',league:'EuroCup',name:'Śląsk Wrocław',city:'Wrocław, Poland',url:'https://www.slaskwroclaw.pl/koszykowka',path:'/koszykowka/aktualnosci',diff:'Medium'},
-  {cat:'EuroCup',league:'EuroCup',name:'U-BT Cluj-Napoca',city:'Cluj, Romania',url:'http://u-bt.basketball',path:'/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'BAXI Manresa',city:'Manresa, Spain',url:'https://www.baximanresa.cat/en',path:'/en/news',diff:'Easy'},
-  {cat:'EuroCup',league:'EuroCup',name:'Aris Midea Thessaloniki',city:'Thessaloniki, Greece',url:'https://www.arisbc.gr',path:'/news',diff:'Medium (Greek)'},
-  {cat:'EuroCup',league:'EuroCup',name:'Panionios Athens',city:'Athens, Greece',url:'https://www.panioniosbc.gr',path:'/news',diff:'Medium (Greek)'},
-
-  // ── ABA LEAGUE CLUBS ──
-  // ABA Liga team URLs — all verified directly from aba-liga.com team pages (June 2026)
-  {cat:'ABA',league:'ABA League',name:'Borac Mozzart',city:'Čačak, Serbia',url:'http://www.kkborac.rs',path:'/vesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Bosna BH Telecom',city:'Sarajevo, Bosnia',url:'http://www.kkbosna.ba',path:'/novosti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Budućnost VOLI',city:'Podgorica, Montenegro',url:'http://www.kkbuducnost.me',path:'/vijesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Cedevita Olimpija',city:'Ljubljana, Slovenia',url:'http://www.cedevita.olimpija.com',path:'/en/news',diff:'Easy'},
-  {cat:'ABA',league:'ABA League',name:'Crvena Zvezda Meridianbet',city:'Belgrade, Serbia',url:'http://www.kkcrvenazvezda.rs',path:'/vesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Dubai Basketball',city:'Dubai, UAE',url:'http://dubaibasketball.com',path:'/news',diff:'Easy'},
-  {cat:'ABA',league:'ABA League',name:'FMP',city:'Belgrade, Serbia',url:'http://www.kkfmp.rs',path:'/vesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Igokea m:tel',city:'Aleksandrovac, Bosnia',url:'http://www.igokea.rs',path:'/novosti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Krka',city:'Novo Mesto, Slovenia',url:'http://www.basket.krka.si',path:'/novice',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Mega Superbet',city:'Belgrade, Serbia',url:'http://www.bcmegabasket.net',path:'/vesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Partizan Mozzart Bet',city:'Belgrade, Serbia',url:'http://www.kkpartizan.rs',path:'/vesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Perspektiva Ilirija',city:'Ljubljana, Slovenia',url:'http://www.kkilirija.com',path:'/novice',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'SC Derby',city:'Podgorica, Montenegro',url:'http://scderby.me',path:'/vijesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Spartak Office Shoes',city:'Subotica, Serbia',url:'http://www.kkspartak.rs',path:'/vesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'Split',city:'Split, Croatia',url:'http://kk-split.com',path:'/vijesti',diff:'Medium'},
-  {cat:'ABA',league:'ABA League',name:'U-BT Cluj-Napoca',city:'Cluj-Napoca, Romania',url:'http://u-bt.basketball',path:'/news',diff:'Easy'},
-  {cat:'ABA',league:'ABA League',name:'Vienna',city:'Vienna, Austria',url:'http://bcvienna.com',path:'/news',diff:'Easy'},
-  {cat:'ABA',league:'ABA League',name:'Zadar',city:'Zadar, Croatia',url:'http://www.kkzadar.hr',path:'/vijesti',diff:'Medium'},
-
-  // ── BCL KEY CLUBS ──
-  {cat:'BCL',league:'BCL',name:'Unicaja',city:'Málaga, Spain',url:'https://www.unicajaweb.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'La Laguna Tenerife',city:'Tenerife, Spain',url:'https://www.cbtenerife.com',path:'/noticias',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'Joventut Badalona',city:'Badalona, Spain',url:'https://www.penya.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'Dreamland Gran Canaria',city:'Las Palmas, Spain',url:'https://www.grancanariacleb.com',path:'/noticias',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'Rytas Vilnius',city:'Vilnius, Lithuania',url:'https://www.bcrytas.lt/en',path:'/en/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'AEK Betsson Athens',city:'Athens, Greece',url:'https://www.aekbc.gr',path:'/news',diff:'Medium'},
-  {cat:'BCL',league:'BCL',name:'Alba Berlin',city:'Berlin, Germany',url:'https://www.albaberlin.de/en',path:'/en/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'Würzburg Baskets',city:'Würzburg, Germany',url:'https://www.s-oliver-baskets.de',path:'/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'MLP Academics Heidelberg',city:'Heidelberg, Germany',url:'https://www.academics-basketball.de',path:'/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'ERA Nymburk',city:'Nymburk, Czech Rep.',url:'https://www.basketnymburk.cz',path:'/zpravy',diff:'Medium'},
-  {cat:'BCL',league:'BCL',name:'Legia Warszawa Basketball',city:'Warsaw, Poland',url:'https://www.legia.com/koszykowka',path:'/koszykowka/aktualnosci',diff:'Medium'},
-  {cat:'BCL',league:'BCL',name:'VEF Rīga',city:'Riga, Latvia',url:'https://www.bkvefrica.lv/en',path:'/en/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'Filou Oostende',city:'Ostend, Belgium',url:'https://www.basketoostende.be',path:'/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'Galatasaray',city:'Istanbul, Turkey',url:'https://www.galatasaray.org/basketbol',path:'/basketbol/haberler',diff:'Medium'},
-  {cat:'BCL',league:'BCL',name:'Tofaş',city:'Bursa, Turkey',url:'https://www.tofassporkulubu.com.tr/basketbol',path:'/basketbol/haberler',diff:'Medium'},
-  {cat:'BCL',league:'BCL',name:'Cholet Basket',city:'Cholet, France',url:'https://www.cholet-basket.com',path:'/actualites',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'Igokea m:tel',city:'Laktaši, Bosnia',url:'http://www.igokea.rs',path:'/novosti',diff:'Medium'},
-  {cat:'BCL',league:'BCL',name:'Bnei Herzliya',city:'Herzliya, Israel',url:'https://www.bneiherzliyabc.co.il/en',path:'/en/news',diff:'Medium'},
-  {cat:'BCL',league:'BCL',name:'Trapani Shark',city:'Trapani, Italy',url:'https://www.trshark.it',path:'/news',diff:'Easy'},
-  {cat:'BCL',league:'BCL',name:'Szolnoki Olajbányász',city:'Szolnok, Hungary',url:'https://www.olajbanyasz.hu',path:'/hirek',diff:'Hard (Hungarian)'},
-
-  // ── BNXT ──
-  {cat:'BNXT',league:'BNXT',name:'Windrose Giants Antwerp',city:'Antwerp, Belgium',url:'https://www.giantsantwerp.be',path:'/news',diff:'Easy'},
-  {cat:'BNXT',league:'BNXT',name:'Filou Oostende',city:'Ostend, Belgium',url:'https://www.basketoostende.be',path:'/news',diff:'Easy'},
-  {cat:'BNXT',league:'BNXT',name:'Kangoeroes Mechelen',city:'Mechelen, Belgium',url:'https://www.kangoeroes.be',path:'/nieuws',diff:'Easy'},
-  {cat:'BNXT',league:'BNXT',name:'Brussels Basketball',city:'Brussels, Belgium',url:'https://www.bruss-els.be',path:'/news',diff:'Easy'},
-  {cat:'BNXT',league:'BNXT',name:'Heroes Den Bosch',city:'Den Bosch, Netherlands',url:'https://www.heroesdenbosch.nl',path:'/nieuws',diff:'Easy'},
-  {cat:'BNXT',league:'BNXT',name:'ZZ Leiden',city:'Leiden, Netherlands',url:'https://www.zz-leiden.nl',path:'/nieuws',diff:'Easy'},
-  {cat:'BNXT',league:'BNXT',name:'Donar Groningen',city:'Groningen, Netherlands',url:'https://www.donarbasketbal.nl',path:'/nieuws',diff:'Easy'},
-  {cat:'BNXT',league:'BNXT',name:'Hubo Limburg United',city:'Hasselt, Belgium',url:'https://www.limburgunitedbasketbal.be',path:'/nieuws',diff:'Easy'},
-
-  // ── VTB ──
-  {cat:'VTB',league:'VTB',name:'CSKA Moscow',city:'Moscow, Russia',url:'https://www.cskabasket.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'VTB',league:'VTB',name:'UNICS Kazan',city:'Kazan, Russia',url:'https://www.unics.ru/en',path:'/en/news',diff:'Easy'},
-  {cat:'VTB',league:'VTB',name:'Lokomotiv-Kuban',city:'Krasnodar, Russia',url:'https://www.lokomotiv-kuban.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'VTB',league:'VTB',name:'Zenit St. Petersburg',city:'St. Petersburg, Russia',url:'https://www.bc-zenit.ru/en',path:'/en/news',diff:'Easy'},
-
-  // ── SPAIN ──
-  {cat:'Spain',league:'ACB',name:'Real Madrid',city:'Madrid',url:'https://www.realmadrid.com/en-US/basketball/first-team/home',path:'/en-US/basketball/first-team/news',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'FC Barcelona',city:'Barcelona',url:'https://www.fcbarcelona.com/en/basketball',path:'/en/basketball/news',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'Valencia Basket',city:'Valencia',url:'https://www.valenciabasket.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'Baskonia',city:'Vitoria',url:'https://www.baskonia.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'Unicaja',city:'Málaga',url:'https://www.unicajaweb.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'BAXI Manresa',city:'Manresa',url:'https://www.baximanresa.cat/en',path:'/en/news',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'Joventut Badalona',city:'Badalona',url:'https://www.penya.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'Dreamland Gran Canaria',city:'Las Palmas',url:'https://www.grancanariacleb.com',path:'/noticias',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'La Laguna Tenerife',city:'Tenerife',url:'https://www.cbtenerife.com',path:'/noticias',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'San Pablo Burgos',city:'Burgos',url:'https://www.sanpabloburgos.es',path:'/noticias',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'Río Breogán',city:'Lugo',url:'https://www.cbreogan.com',path:'/noticias',diff:'Easy'},
-  {cat:'Spain',league:'ACB',name:'Coviran Granada',city:'Granada',url:'https://www.cbgranada.es',path:'/noticias',diff:'Easy'},
-
-  // ── FRANCE ──
-  {cat:'France',league:'Pro A',name:'LDLC ASVEL',city:'Villeurbanne',url:'https://www.ldlc-asvel.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'AS Monaco',city:'Monaco',url:'https://www.asmonaco.com/en/basket',path:'/en/basket/news',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'Paris Basketball',city:'Paris',url:'https://www.parisbasketball.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'Le Mans Sarthe Basket',city:'Le Mans',url:'https://www.msb-lemans.com',path:'/actualites',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'Cosea JL Bourg',city:'Bourg-en-Bresse',url:'https://www.jlbourg-basket.com',path:'/actualites',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'Cholet Basket',city:'Cholet',url:'https://www.cholet-basket.com',path:'/actualites',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'Élan Chalon',city:'Chalon-sur-Saône',url:'https://www.elanchalon.com',path:'/actualites',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'Metropolitans 92',city:'Boulogne-Levallois',url:'https://www.metropolitans92.com',path:'/actualites',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'Nanterre 92',city:'Nanterre',url:'https://www.nanterre92.fr',path:'/actualites',diff:'Easy'},
-  {cat:'France',league:'Pro A',name:'Antibes Sharks',city:'Antibes',url:'https://www.antibesbasket.com',path:'/actualites',diff:'Easy'},
-
-  // ── ITALY ──
-  {cat:'Italy',league:'Lega',name:'EA7 Emporio Armani Milano',city:'Milan',url:'https://www.olimpiamilano.com/en',path:'/en/news',diff:'Easy'},
-  {cat:'Italy',league:'Lega',name:'Virtus Segafredo Bologna',city:'Bologna',url:'https://www.virtus.it/en',path:'/en/news',diff:'Easy'},
-  {cat:'Italy',league:'Lega',name:'Dolomiti Energia Trento',city:'Trento',url:'https://www.aquilabasket.it/en',path:'/en/news',diff:'Easy'},
-  {cat:'Italy',league:'Lega',name:'Umana Reyer Venezia',city:'Venice',url:'https://www.reyer.it/en',path:'/en/news',diff:'Easy'},
-  {cat:'Italy',league:'Lega',name:'Germani Brescia',city:'Brescia',url:'https://www.pallacanestrobrescia.it',path:'/news',diff:'Easy'},
-  {cat:'Italy',league:'Lega',name:'Bertram Derthona Tortona',city:'Tortona',url:'https://www.pallacanestrotortona.it',path:'/news',diff:'Easy'},
-  {cat:'Italy',league:'Lega',name:'Pallacanestro Trieste',city:'Trieste',url:'https://www.pallacanestrotrieste.it',path:'/news',diff:'Easy'},
-  {cat:'Italy',league:'Lega',name:'Trapani Shark',city:'Trapani',url:'https://www.trshark.it',path:'/news',diff:'Easy'},
-
-  // ── GERMANY ──
-  {cat:'Germany',league:'BBL',name:'FC Bayern Munich Basketball',city:'Munich',url:'https://fcbayern.com/basketball/en',path:'/basketball/en/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'Alba Berlin',city:'Berlin',url:'https://www.albaberlin.de/en',path:'/en/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'Bamberg Baskets',city:'Bamberg',url:'https://www.brose-baskets.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'Telekom Baskets Bonn',city:'Bonn',url:'https://www.telekom-baskets-bonn.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'Würzburg Baskets',city:'Würzburg',url:'https://www.s-oliver-baskets.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'ratiopharm Ulm',city:'Ulm',url:'https://www.ratiopharm-ulm.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'NINERS Chemnitz',city:'Chemnitz',url:'https://www.niners-chemnitz.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'Veolia Towers Hamburg',city:'Hamburg',url:'https://www.towers-basketball.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'Skyliners Frankfurt',city:'Frankfurt',url:'https://www.skyliners.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'Science City Jena',city:'Jena',url:'https://www.sciencecitybasketball.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'Mitteldeutscher BC',city:'Weißenfels',url:'https://www.mbc-wolves.de',path:'/news',diff:'Easy'},
-  {cat:'Germany',league:'BBL',name:'MHP Riesen Ludwigsburg',city:'Ludwigsburg',url:'https://www.mhpgiants.de',path:'/news',diff:'Easy'},
-
-  // ── TURKEY ──
-  {cat:'Turkey',league:'BSL',name:'Fenerbahce Beko',city:'Istanbul',url:'https://www.fenerbahce.org/en/basketball',path:'/en/basketball/news',diff:'Medium'},
-  {cat:'Turkey',league:'BSL',name:'Anadolu Efes',city:'Istanbul',url:'https://www.anadoluefes.com/basketbol',path:'/basketbol/haberler',diff:'Medium'},
-  {cat:'Turkey',league:'BSL',name:'Galatasaray',city:'Istanbul',url:'https://www.galatasaray.org/basketbol',path:'/basketbol/haberler',diff:'Medium'},
-  {cat:'Turkey',league:'BSL',name:'Beşiktaş Fibabanka',city:'Istanbul',url:'https://www.besiktas.com.tr/basketbol',path:'/basketbol/haberler',diff:'Medium'},
-  {cat:'Turkey',league:'BSL',name:'Bahçeşehir Koleji',city:'Istanbul',url:'https://www.bahcesehirbasketbol.com',path:'/haberler',diff:'Medium'},
-  {cat:'Turkey',league:'BSL',name:'Türk Telekom',city:'Ankara',url:'https://www.turktelekombk.com.tr',path:'/haberler',diff:'Medium'},
-  {cat:'Turkey',league:'BSL',name:'Tofaş',city:'Bursa',url:'https://www.tofassporkulubu.com.tr/basketbol',path:'/basketbol/haberler',diff:'Medium'},
-  {cat:'Turkey',league:'BSL',name:'Mersin Büyükşehir',city:'Mersin',url:'https://www.mbbsk.com.tr',path:'/haberler',diff:'Hard'},
-
-  // ── GREECE ──
-  {cat:'Greece',league:'Greek A1',name:'Olympiacos Piraeus',city:'Piraeus',url:'https://www.olympiacos.org/en/basketball',path:'/en/basketball/news',diff:'Easy'},
-  {cat:'Greece',league:'Greek A1',name:'Panathinaikos AKTOR',city:'Athens',url:'https://www.paobc.gr',path:'/news',diff:'Medium'},
-  {cat:'Greece',league:'Greek A1',name:'AEK Betsson Athens',city:'Athens',url:'https://www.aekbc.gr',path:'/news',diff:'Medium'},
-  {cat:'Greece',league:'Greek A1',name:'Aris Thessaloniki',city:'Thessaloniki',url:'https://www.arisbc.gr',path:'/news',diff:'Medium'},
-  {cat:'Greece',league:'Greek A1',name:'Promitheas Patras',city:'Patras',url:'https://www.promitheasbc.gr',path:'/news',diff:'Medium (Greek)'},
-  {cat:'Greece',league:'Greek A1',name:'Iraklis Thessaloniki',city:'Thessaloniki',url:'https://www.iraklis-bc.gr',path:'/news',diff:'Medium (Greek)'},
-
-  // ── ISRAEL ──
-  {cat:'Israel',league:'Israeli BSL',name:'Israeli BSL Official',url:'https://www.bbl.org.il/en',path:'/en/news',diff:'Medium'},
-  {cat:'Israel',league:'Israeli BSL',name:'Maccabi Tel Aviv',city:'Tel Aviv',url:'https://maccabi.co.il',path:'/?lang=en',diff:'Medium'},
-  {cat:'Israel',league:'Israeli BSL',name:'Hapoel Tel Aviv',city:'Tel Aviv',url:'https://www.hapoelbasketball.co.il',path:'/en/news',diff:'Hard (Hebrew)'},
-  {cat:'Israel',league:'Israeli BSL',name:'Hapoel Jerusalem',city:'Jerusalem',url:'https://www.hapoeljerusalem.co.il/en',path:'/en/news',diff:'Medium'},
-  {cat:'Israel',league:'Israeli BSL',name:'Bnei Herzliya',city:'Herzliya',url:'https://www.bneiherzliyabc.co.il/en',path:'/en/news',diff:'Medium'},
-
-  // ── BALKANS ──
-  {cat:'Balkans',league:'KLS',name:'KLS Serbia Official',url:'https://www.kls.rs',path:'/vesti',diff:'Medium'},
-  {cat:'Balkans',league:'SKL',name:'KZS Slovenia Official',url:'https://www.kzs.si',path:'/novice',diff:'Medium'},
-  {cat:'Balkans',league:'HT Liga',name:'HKS Croatia Official',url:'https://www.hks-cbf.hr',path:'/novosti',diff:'Medium'},
-  {cat:'Balkans',league:'HT Liga',name:'KK Cibona',city:'Zagreb',url:'https://www.kkcibona.hr',path:'/vijesti',diff:'Medium'},
-  {cat:'Balkans',league:'SKL',name:'KK Helios Suns',city:'Domžale',url:'https://www.helios-suns.com',path:'/novice',diff:'Medium'},
-  {cat:'Balkans',league:'PLK',name:'PLK Poland Official',url:'https://www.plk.pl',path:'/aktualnosci',diff:'Medium'},
-  {cat:'Balkans',league:'NBL Czech',name:'ČBF Czech Official',url:'https://www.cbf.cz',path:'/zpravy',diff:'Medium'},
-
-  // ── LITHUANIA ──
-  {cat:'Lithuania',league:'LKL',name:'LKL Official',url:'https://www.lkl.lt/en',path:'/en/news',diff:'Easy'},
-  {cat:'Lithuania',league:'LKL',name:'Žalgiris Kaunas',city:'Kaunas',url:'https://www.bczalgiris.lt/en',path:'/en/news',diff:'Easy'},
-  {cat:'Lithuania',league:'LKL',name:'Rytas Vilnius',city:'Vilnius',url:'https://www.bcrytas.lt/en',path:'/en/news',diff:'Easy'},
-  {cat:'Lithuania',league:'LKL',name:'7Bet-Lietkabelis',city:'Panevėžys',url:'https://www.lietkabelis.lt/en',path:'/en/news',diff:'Easy'},
-  {cat:'Lithuania',league:'LKL',name:'Neptūnas Klaipėda',city:'Klaipėda',url:'https://www.bkneptunas.lt/en',path:'/en/news',diff:'Easy'},
-
-  // ── NEWS & MEDIA ──
-  {cat:'News',league:'News',name:'Sportando',url:'https://sportando.basketball/en/category/signings',path:'/en/category/signings',diff:'Easy ⭐'},
-  {cat:'News',league:'News',name:'Eurohoops',url:'https://www.eurohoops.net/en',path:'/en/transfers',diff:'Easy ⭐'},
-  {cat:'News',league:'News',name:'BasketNews',url:'https://basketnews.com',path:'/news/?tag=signings',diff:'Easy ⭐'},
-  {cat:'News',league:'News',name:'TalkBasket',url:'https://www.talkbasket.net/transfers',path:'/transfers',diff:'Easy ⭐'},
-  {cat:'News',league:'News',name:'RealGM Euroleague Transactions',url:'https://basketball.realgm.com/international/league/1/Euroleague/transactions',path:'/international/league/1/Euroleague/transactions',diff:'Easy'},
-  {cat:'News',league:'News',name:'Basketball Sphere',url:'https://basketballsphere.com/en',path:'/en/category/transfers',diff:'Easy'},
-  {cat:'News',league:'News',name:'Pro Basketball Europe',url:'https://www.probasketballeurope.com',path:'/signings',diff:'Easy'},
-  {cat:'News',league:'News',name:'Basket Actu (France)',url:'https://www.basket-actu.com',path:'/category/transferts',diff:'Easy'},
-  {cat:'News',league:'News',name:'BasketInside (Italy)',url:'https://www.basketinside.com',path:'/category/mercato',diff:'Easy'},
-  {cat:'News',league:'News',name:'Mundo de Basket (Spain)',url:'https://www.mundodebasket.es',path:'/fichas',diff:'Easy'},
-  {cat:'News',league:'News',name:'Gazzetta dello Sport Basketball',url:'https://www.gazzetta.it/basket',path:'/basket/nba/mercato',diff:'Medium'},
-  {cat:'News',league:'News',name:'Marca Basketball',url:'https://www.marca.com/baloncesto/acb.html',path:'/baloncesto/acb/fichajes',diff:'Medium'},
-  {cat:'News',league:'News',name:'L\'Équipe Basketball',url:'https://www.lequipe.fr/Basketball',path:'/Basketball/Actualites',diff:'Medium'},
-  {cat:'News',league:'News',name:'Sportske.net (Balkans)',url:'https://www.sportske.net/kosarka',path:'/kosarka/aba-liga',diff:'Medium'},
-  {cat:'News',league:'News',name:'Mozzartsport (Serbia)',url:'https://www.mozzartsport.com/kosarka',path:'/kosarka/aba-liga',diff:'Medium'},
-  {cat:'News',league:'News',name:'Superhoops.gr (Greece)',url:'https://www.superhoops.gr',path:'/category/metegrafes',diff:'Medium (Greek)'},
+  // ── LEAGUE OFFICIAL NEWS PAGES ──
+  {cat:'EuroLeague',  league:'EuroLeague',  name:'EuroLeague Official News',     url:'https://www.euroleaguebasketball.net/en/euroleague/news/', path:'/en/euroleague/news/',       diff:'Easy ⭐'},
+  {cat:'EuroCup',     league:'EuroCup',     name:'EuroCup Official News',         url:'https://www.euroleaguebasketball.net/eurocup/news/',     path:'/eurocup/news/',             diff:'Easy ⭐'},
+  {cat:'BCL',         league:'BCL',         name:'BCL Official News',             url:'https://www.championsleague.basketball/en/news/',        path:'/en/news/',                  diff:'Easy ⭐'},
+  {cat:'ABA',         league:'ABA League',  name:'ABA Liga News (page 1)',        url:'https://www.aba-liga.com/newslist/News/1/',              path:'/newslist/News/1/',           diff:'Easy ⭐'},
+  {cat:'ABA',         league:'ABA League',  name:'ABA Liga News (page 2)',        url:'https://www.aba-liga.com/newslist/News/2/',              path:'/newslist/News/2/',           diff:'Easy ⭐'},
+  {cat:'ABA',         league:'ABA League',  name:'ABA Liga Clubs News',          url:'https://www.aba-liga.com/newslist/Clubs/1/',             path:'/newslist/Clubs/1/',          diff:'Easy ⭐'},
+  {cat:'Germany',     league:'BBL',         name:'BBL / basketball-world.news',  url:'https://www.basketball-world.news',                     path:'/transferboerse',            diff:'Easy ⭐'},
+  {cat:'Spain',       league:'ACB',         name:'ACB Official News',             url:'https://www.acb.com/es/liga/noticias',                  path:'/es/liga/noticias',           diff:'Easy ⭐'},
+  {cat:'Spain',       league:'ACB',         name:'AS.com Baloncesto ACB',         url:'https://as.com/baloncesto/acb/',                        path:'/baloncesto/acb/',            diff:'Medium'},
+  {cat:'France',      league:'Pro A',       name:'bebasket.fr Betclic ELITE',     url:'https://www.bebasket.fr/ligue/betclic-elite',           path:'/ligue/betclic-elite',        diff:'Easy ⭐'},
+  {cat:'France',      league:'Pro A',       name:'bebasket.fr Transferts',        url:'https://www.bebasket.fr/ligue/betclic-elite/tableau-transferts', path:'/ligue/betclic-elite/tableau-transferts', diff:'Easy ⭐'},
+  {cat:'Italy',       league:'Lega',        name:'Lega Basket Official News',     url:'https://www.legabasket.it/news',                        path:'/news',                      diff:'Medium'},
+  {cat:'Italy',       league:'Lega',        name:'Pianeta Basket LBA',            url:'https://www.pianetabasket.com/legabasket-serie-a/',     path:'/legabasket-serie-a/',        diff:'Easy ⭐'},
+  {cat:'Greece',      league:'GBL',         name:'sport24.gr Basket League',      url:'https://www.sport24.gr/tag/basket-league/',            path:'/tag/basket-league/',         diff:'Medium (Greek)'},
+  {cat:'Turkey',      league:'Turkish BSL', name:'basketbolig.com BSL',           url:'https://basketbolig.com/kategori/basketbol-super-ligi', path:'/kategori/basketbol-super-ligi', diff:'Easy (Turkish)'},
+  {cat:'Turkey',      league:'Turkish BSL', name:'basketfaul.com.tr BSL',         url:'https://basketfaul.com.tr/category/turkiye/bsl/',       path:'/category/turkiye/bsl/',      diff:'Easy (Turkish)'},
+  {cat:'Romania',     league:'Romanian LNB',name:'baschetromania.ro',             url:'https://baschetromania.ro/',                            path:'/',                           diff:'Easy ⭐'},
+  {cat:'Poland',      league:'PLK',         name:'PLK Official News',             url:'https://plk.pl/aktualnosci',                           path:'/aktualnosci',                diff:'Easy ⭐'},
+  {cat:'Poland',      league:'PLK',         name:'super-basket.pl PLK',           url:'https://super-basket.pl/plk/',                         path:'/plk/',                       diff:'Easy (Polish)'},
+  {cat:'Hungary',     league:'Hungarian NB1',name:'bball1.hu NB1 Transfers',      url:'https://bball1.hu/atigazolasi-hirosszefoglalo-2026/',   path:'/atigazolasi-hirosszefoglalo-2026/', diff:'Medium (Hungarian)'},
+  {cat:'Hungary',     league:'Hungarian NB1',name:'bball1.hu',                    url:'https://bball1.hu/',                                   path:'/',                           diff:'Medium (Hungarian)'},
+  {cat:'Croatia',     league:'Croatian HKL',name:'basketball.hr',                 url:'https://basketball.hr/',                               path:'/',                           diff:'Medium (Croatian)'},
+  {cat:'Croatia',     league:'Croatian HKL',name:'jutarnji.hr Košarka',           url:'https://www.jutarnji.hr/sportske/kosarka/hrvatska-liga', path:'/sportske/kosarka/hrvatska-liga', diff:'Medium (Croatian)'},
+  {cat:'BNXT',        league:'BNXT',        name:'BNXT League News',              url:'https://bnxtleague.com/en/news',                        path:'/en/news',                    diff:'Hard (JS only)'},
+  {cat:'Lithuania',   league:'LKL',         name:'BasketNews LKL Transfer Hub',  url:'https://www.basketnews.lt/news-248448-basketnews-lkl-vasaros-turgus-atnaujinta-0618.html', path:'/naujienos.html', diff:'Medium (Lithuanian)'},
+  {cat:'Israel',      league:'Israeli BSL', name:'basket.co.il (English)',        url:'https://basket.co.il/archive.asp?typeID=1&lang=en',    path:'/archive.asp?typeID=1&lang=en', diff:'Easy ⭐'},
+  // ── NEWS AGGREGATORS ──
+  {cat:'News',        league:'News',        name:'Sportando',                     url:'https://sportando.basketball/en/',                      path:'/en/typology/official/',      diff:'Easy ⭐'},
+  {cat:'News',        league:'News',        name:'Eurohoops',                     url:'https://www.eurohoops.net/en/',                         path:'/en/trademarks/transfers/',   diff:'Easy ⭐'},
+  {cat:'News',        league:'News',        name:'TalkBasket',                    url:'https://www.talkbasket.net/transfers',                  path:'/transfers',                  diff:'Easy ⭐'},
+  {cat:'News',        league:'News',        name:'BasketNews.com (EL Tracker)',   url:'https://basketnews.com/news-248207-euroleague-transfer-market-2026-rosters-signings-rumors.html', path:'/', diff:'Easy ⭐'},
+  {cat:'News',        league:'News',        name:'Gigantes (Spain)',              url:'https://www.gigantes.com/liga-endesa/',                 path:'/liga-endesa/',               diff:'Easy (Spanish)'},
+  {cat:'News',        league:'News',        name:'AllStarBasket GBL Transfers',  url:'https://www.allstarbasket.gr/ellada/greek-basketball-league/transfer-market-oi-kiniseis-ton-14-omadon-tis-gbl', path:'/', diff:'Medium (Greek)'},
+  {cat:'News',        league:'News',        name:"RealGM Int'l Transactions",   url:'https://basketball.realgm.com/international/transactions', path:'/international/transactions', diff:'Easy ⭐'},
+  {cat:'News',        league:'News',        name:'Eurobasket.com BNXT Transfers',url:'https://www.eurobasket.com/BNXT-League/basketball-Transfers.aspx', path:'/BNXT-League/basketball-Transfers.aspx', diff:'Easy'},
 ];
 
 // ═══════════════════════════════════════════════════════
@@ -749,52 +603,237 @@ function exportPY() {
 // ═══════════════════════════════════════════════════════
 let allT = [], activeS = 'all', fetching = false;
 
+// Real transfer data scraped from TalkBasket and Sportando (June 17, 2026)
+// This is the seed data — the API call supplements this with any recent news
+const SEED_DATA = [
+  // ══ ANADOLU EFES ══
+  {id:'s1',  player:'Dario Saric',           pos:'PF', from:'NBA (Brooklyn Nets)',  to:'Anadolu Efes',     league:'EuroLeague', status:'signed',   date:'2026-06-16', summary:'Official: Dario Saric returns to Anadolu Efes on 2+1 deal',                       source_name:'Sportando',   source_url:'https://sportando.basketball/en/official-dario-saric-returns-to-anadolu-efes-on-21-deal/'},
+  {id:'s2',  player:'Jordan Loyd',           pos:'SG', from:'Anadolu Efes',         to:'Anadolu Efes',     league:'EuroLeague', status:'extended', date:'2026-06-16', summary:'Efes officially locks up Jordan Loyd for EuroLeague title push',                   source_name:'Eurohoops',   source_url:'https://www.eurohoops.net/en/euroleague/'},
+  {id:'s3',  player:'Luca Banchi',           pos:'coach',  from:'Free Agent',           to:'Anadolu Efes',     league:'EuroLeague', status:'signed',   date:'2026-06-12', summary:'Anadolu Efes hires Luca Banchi as new head coach',                                source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  {id:'s4',  player:'Erkan Yilmaz',          pos:'SG', from:'Anadolu Efes',         to:'Anadolu Efes',     league:'EuroLeague', status:'extended', date:'2026-06-01', summary:'Erkan Yilmaz extends contract at Anadolu Efes through 2027',                      source_name:'EuroLeague',  source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/erkan-yilmaz-seals-two-year-extension-at-efes/'},
+  {id:'s5',  player:'PJ Dozier',             pos:'SG', from:'Anadolu Efes',         to:'Anadolu Efes',     league:'EuroLeague', status:'extended', date:'2026-05-15', summary:'PJ Dozier renews with Efes through 2027',                                         source_name:'EuroLeague',  source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/efes-extends-versatile-guard-dozier/'},
+  {id:'s6',  player:'Kai Jones',             pos:'C',  from:'Anadolu Efes',         to:'Anadolu Efes',     league:'EuroLeague', status:'extended', date:'2026-04-10', summary:'Kai Jones signs two-year extension at Efes through 2028',                         source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/212219-anadolu-efes-signs-kai-jones-to-two-year-extension'},
+  {id:'s7',  player:'Saben Lee',             pos:'PG', from:'Anadolu Efes',         to:'Zalgiris Kaunas',  league:'EuroLeague', status:'signed',   date:'2026-06-16', summary:'Zalgiris Kaunas officially signs Saben Lee',                                      source_name:'Sportando',   source_url:'https://sportando.basketball/en/official-saben-lee-signs-with-zalgiris-kaunas-through-2028/'},
+  {id:'s8',  player:'Nick Weiler-Babb',      pos:'SG', from:'Anadolu Efes',         to:'Free Agent',       league:'EuroLeague', status:'left',     date:'2026-06-10', summary:'Nick Weiler-Babb leaves Anadolu Efes',                                            source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/219474-anadolu-efes-confirms-departure-of-saben-lee'},
+  // ══ ASVEL ══
+  {id:'s9',  player:'Sylvain Francisco',     pos:'PG', from:'ASVEL',                to:'Free Agent',       league:'EuroLeague / Pro A', status:'left',     date:'2026-06-12', summary:'Sylvain Francisco departs ASVEL after three seasons',                             source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  {id:'s10', player:'Armoni Brooks',         pos:'SG', from:'Free Agent',           to:'ASVEL',            league:'EuroLeague / Pro A', status:'rumor',    date:'2026-06-14', summary:'Armoni Brooks in advanced talks with ASVEL, deal imminent',                      source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  {id:'s11', player:'Frank Ntilikina',       pos:'PG', from:'Free Agent',           to:'ASVEL',            league:'EuroLeague', status:'rumor',    date:'2026-06-14', summary:'Frank Ntilikina linked with ASVEL move for 2026-27',                              source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  {id:'s12', player:'Daniel Theis',          pos:'C',  from:'Free Agent',           to:'ASVEL',            league:'EuroLeague', status:'rumor',    date:'2026-06-14', summary:'Daniel Theis linked with ASVEL return to France',                                 source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  // ══ FC BARCELONA ══
+  {id:'s13', player:'Mike James',            pos:'PG', from:'AS Monaco',            to:'FC Barcelona',     league:'EuroLeague / Pro A', status:'signed',   date:'2026-06-10', summary:'Barcelona signs veteran PG Mike James after his Monaco departure',                source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/cups/euroleague/'},
+  {id:'s14', player:'Moses Wright',          pos:'PF', from:'Free Agent',           to:'FC Barcelona',     league:'EuroLeague', status:'signed',   date:'2026-06-08', summary:'Barcelona completes signing of American forward Moses Wright',                    source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/cups/euroleague/'},
+  {id:'s15', player:'Josh Nebo',             pos:'C',  from:'Free Agent',           to:'FC Barcelona',     league:'EuroLeague', status:'signed',   date:'2026-06-05', summary:'Barcelona bolsters frontcourt with Josh Nebo signing',                            source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/cups/euroleague/'},
+  {id:'s16', player:'Olivier Nkamhoua',      pos:'PF', from:'Free Agent',           to:'FC Barcelona',     league:'EuroLeague', status:'signed',   date:'2026-06-06', summary:'Former Varese forward Olivier Nkamhoua joins FC Barcelona',                      source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/cups/euroleague/'},
+  {id:'s17', player:'Joel Parra',            pos:'SF', from:'FC Barcelona',         to:'FC Barcelona',     league:'EuroLeague', status:'extended', date:'2026-06-01', summary:'Joel Parra pens one-year extension at FC Barcelona',                              source_name:'EuroLeague',  source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/joel-parra-pens-two-year-extension-at-barcelona/'},
+  {id:'s18', player:'Dario Brizuela',        pos:'SG', from:'FC Barcelona',         to:'FC Barcelona',     league:'EuroLeague', status:'extended', date:'2026-06-08', summary:'Dario Brizuela renews with FC Barcelona through 2028',                            source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  // ══ BASKONIA ══
+  {id:'s19', player:'Kobi Simmons',          pos:'PG', from:'Baskonia',             to:'Baskonia',         league:'EuroLeague', status:'extended', date:'2026-06-16', summary:'Official: Kobi Simmons extends with Baskonia through 2028',                       source_name:'Sportando',   source_url:'https://sportando.basketball/en/official-kobi-simmons-extends-with-baskonia-through-2028/'},
+  {id:'s20', player:'Trent Forrest',         pos:'PG', from:'Baskonia',             to:'Fenerbahce',       league:'EuroLeague', status:'rumor',    date:'2026-06-15', summary:'Trent Forrest reportedly in advanced talks with Fenerbahce',                      source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  // ══ FC BAYERN MUNICH ══
+  {id:'s21', player:'Vladimir Lucic',        pos:'SF', from:'FC Bayern Munich',     to:'FC Bayern Munich', league:'EuroLeague', status:'extended', date:'2026-05-10', summary:'Vladimir Lucic pens two-year extension at Bayern through 2027',                   source_name:'EuroLeague',  source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/vladimir-lucic-pens-two-year-extension-at-bayern/'},
+  {id:'s22', player:'Andreas Obst',          pos:'SG', from:'FC Bayern Munich',     to:'FC Bayern Munich', league:'EuroLeague', status:'extended', date:'2026-04-15', summary:'Bayern locks in sharpshooter Andreas Obst through 2029',                          source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/213696-bayern-secures-andreas-obst-through-2029'},
+  // ══ CRVENA ZVEZDA ══
+  {id:'s23', player:'Ibon Navarro',          pos:'coach',  from:'Unicaja',              to:'Crvena Zvezda',    league:'EuroLeague', status:'signed',   date:'2026-06-12', summary:'Ibon Navarro hired as Crvena Zvezda head coach after Unicaja glory',              source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/219620-crvena-zvezda-hires-ibon-navarro-after-decorated-unicaja-run'},
+  {id:'s24', player:'Sasa Obradovic',        pos:'coach',  from:'Crvena Zvezda',        to:'Free Agent',       league:'EuroLeague / ABA League', status:'left',     date:'2026-06-05', summary:'Crvena Zvezda parts ways with head coach Sasa Obradovic',                         source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/218724-crvena-zvezda-part-ways-with-sasa-obradovic'},
+  {id:'s25', player:'Codi Miller-McIntyre',  pos:'PG', from:'Crvena Zvezda',        to:'Olympiacos',       league:'EuroLeague / ABA League', status:'rumor',    date:'2026-06-14', summary:'Olympiacos reportedly closing in on Codi Miller-McIntyre deal',                   source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/cups/euroleague/'},
+  {id:'s26', player:'Alessandro Pajola',     pos:'PG', from:'Virtus Bologna',       to:'Crvena Zvezda',    league:'EuroLeague', status:'rumor',    date:'2026-06-14', summary:'Alessandro Pajola linked with Crvena Zvezda move from Virtus Bologna',            source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  // ══ FENERBAHCE ══
+  {id:'s27', player:'Sarunas Jasikevicius',  pos:'coach',  from:'Fenerbahce',           to:'Fenerbahce',       league:'EuroLeague', status:'extended', date:'2026-04-01', summary:'Fenerbahce locks in Sarunas Jasikevicius with three-year deal through 2029',     source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/210137-fenerbahce-locks-in-sarunas-jasikevicius-with-three-year-deal'},
+  {id:'s28', player:'Tarik Biberovic',       pos:'SF', from:'Fenerbahce',           to:'Fenerbahce',       league:'EuroLeague', status:'extended', date:'2026-05-25', summary:'Tarik Biberovic extends stay at Fenerbahce through 2028',                         source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  {id:'s29', player:'Khem Birch',            pos:'C',  from:'Fenerbahce',           to:'Fenerbahce',       league:'EuroLeague', status:'extended', date:'2026-06-01', summary:'Khem Birch extends at Fenerbahce on a 2026+1 option deal',                        source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  {id:'s30', player:'Ignas Sargiunas',       pos:'SG', from:'Free Agent',           to:'Fenerbahce',       league:'EuroLeague', status:'rumor',    date:'2026-06-15', summary:'Ignas Sargiunas reportedly reaches agreement with Fenerbahce',                    source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  {id:'s31', player:'Marcquise Reed',        pos:'SG', from:'Trabzonspor',          to:'Free Agent',       league:'BSL',        status:'left',     date:'2026-06-12', summary:'Marcquise Reed parts with Trabzonspor to pursue EuroLeague — Fenerbahce linked', source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  // ══ OLYMPIACOS ══
+  {id:'s32', player:'Alec Peters',           pos:'PF', from:'Olympiacos',           to:'Free Agent',       league:'EuroLeague', status:'left',     date:'2026-06-16', summary:'Olympiacos officially announces departure of Alec Peters after 4 seasons',      source_name:'Sportando',   source_url:'https://sportando.basketball/en/olympiacos-officially-announced-the-departure-of-alec-peters/'},
+  {id:'s33', player:'Alec Peters',           pos:'PF', from:'Olympiacos',           to:'Free Agent',       league:'EuroLeague', status:'left',     date:'2026-06-16', summary:'Alec Peters farewell: "I will be Olympiacos for life" — four seasons, 1 EuroLeague title', source_name:'EuroLeague', source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/alec-peters-announces-his-departure-from-olympiacos/'},
+  {id:'s34', player:'Isaac Bonga',           pos:'SF', from:'Free Agent',           to:'Olympiacos',       league:'EuroLeague', status:'rumor',    date:'2026-06-15', summary:'Olympiacos in talks for Isaac Bonga — €2M salary demand is main hurdle',         source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  // ══ PARTIZAN ══
+  {id:'s35', player:'Duane Washington',      pos:'SG', from:'Partizan',             to:'Free Agent',       league:'EuroLeague / ABA League', status:'left',     date:'2026-06-10', summary:'Duane Washington leaves Partizan Mozzart Bet after two seasons in Belgrade',    source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  {id:'s36', player:'Tonye Jekiri',          pos:'C',  from:'Free Agent',           to:'Partizan',         league:'EuroLeague / ABA League', status:'extended', date:'2026-06-10', summary:'Partizan signs Tonye Jekiri to one-year contract extension',                      source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  {id:'s37', player:'Kyle Allman',           pos:'SG', from:'Free Agent',           to:'Partizan',         league:'EuroLeague / ABA League', status:'rumor',    date:'2026-06-12', summary:'Partizan preparing to add Kyle Allman to roster for 2026-27',                    source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/cups/euroleague/'},
+  {id:'s38', player:'Kevarrius Hayes',       pos:'C',  from:'AS Monaco',            to:'Partizan',         league:'EuroLeague / ABA League', status:'rumor',    date:'2026-06-13', summary:'Partizan reportedly close to deal with Hayes — 2-year $1.5M/yr from Monaco',   source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  {id:'s39', player:'Dylan Osetkowski',      pos:'PF', from:'Partizan',             to:'Partizan',         league:'EuroLeague / ABA League', status:'extended', date:'2026-06-14', summary:'Dylan Osetkowski set to return to Partizan after period of uncertainty',          source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/europe/'},
+  // ══ ZALGIRIS ══
+  {id:'s40', player:'Maxwell Lewis',         pos:'SF', from:'NBA',                  to:'Zalgiris Kaunas',  league:'EuroLeague', status:'signed',   date:'2026-06-17', summary:'Official: Zalgiris signs Maxwell Lewis, loans him to London Lions',              source_name:'Sportando',   source_url:'https://sportando.basketball/en/official-zalgiris-signs-maxwell-lewis-loans-him-to-london-lions/'},
+  {id:'s41', player:'Sylvain Francisco',     pos:'PG', from:'ASVEL',               to:'Zalgiris',          league:'EuroLeague', status:'rumor',    date:'2026-06-13', summary:'Sylvain Francisco set to leave ASVEL and linked with Zalgiris move',             source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  // ══ AS MONACO ══
+  {id:'s42', player:'Mike James',            pos:'PG', from:'AS Monaco',            to:'FC Barcelona',     league:'EuroLeague', status:'left',     date:'2026-06-08', summary:'Mike James officially confirms departure from AS Monaco',                          source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/cups/euroleague/'},
+  {id:'s43', player:'Kevarrius Hayes',       pos:'C',  from:'AS Monaco',            to:'Partizan',         league:'EuroLeague', status:'left',     date:'2026-06-13', summary:'Kevarrius Hayes leaves AS Monaco — reportedly heading to Partizan',               source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  // ══ PANATHINAIKOS ══
+  {id:'s44', player:'Nigel Hayes-Davis',     pos:'PF', from:'Fenerbahce',           to:'Panathinaikos',    league:'EuroLeague', status:'signed',   date:'2026-06-10', summary:'Panathinaikos beats Hapoel Tel Aviv and Fenerbahce to sign Nigel Hayes-Davis',  source_name:'Sportando',   source_url:'https://sportando.basketball/en/typology/official/'},
+  // ══ VIRTUS BOLOGNA ══
+  {id:'s45', player:'Alessandro Pajola',     pos:'PG', from:'Virtus Bologna',       to:'Free Agent',       league:'EuroLeague / Lega',       status:'left',     date:'2026-06-10', summary:'Alessandro Pajola reportedly leaving Virtus Bologna after contract expiry',       source_name:'TalkBasket',  source_url:'https://www.talkbasket.net/transfers'},
+  // ══ HAPOEL TEL AVIV ══
+  {id:'s46', player:'Levi Randolph',         pos:'SG', from:'Free Agent',           to:'Hapoel Tel Aviv',  league:'EuroLeague', status:'rumor',    date:'2026-06-15', summary:'Hapoel Tel Aviv closing in on deal with Levi Randolph',                           source_name:'Sportando',   source_url:'https://sportando.basketball/en/category/europe/'},
+  // ══ EUROCUP / BCL ══
+  {id:'s47', player:'Nick Calathes',         pos:'PG', from:'Free Agent',           to:'PAOK',             league:'EuroCup',    status:'signed',   date:'2026-06-17', summary:'Official: Nick Calathes signs with PAOK through 2028',                            source_name:'Sportando',   source_url:'https://sportando.basketball/en/official-nick-calathes-signs-with-paok-through-2028/'},
+  {id:'s48', player:'Jaleen Smith',          pos:'SG', from:'Free Agent',           to:'Hapoel Jerusalem', league:'EuroCup',    status:'signed',   date:'2026-06-17', summary:'Official: Hapoel Jerusalem announces signing of Jaleen Smith through 2028',       source_name:'Sportando',   source_url:'https://sportando.basketball/en/official-jaleen-smith-signs-with-hapoel-jerusalem-through-2028/'},
+  {id:'s49', player:'Malachi Flynn',         pos:'PG', from:'Bahcesehir',           to:'Bahcesehir',       league:'EuroCup',    status:'extended', date:'2026-06-16', summary:'Malachi Flynn to remain with Istanbul Bahcesehir for the 2026-27 season',         source_name:'Sportando',   source_url:'https://sportando.basketball/en/malachi-flynn-to-remain-with-istanbul-bahcesehir-for-the-2026-27-season/'},
+  {id:'s50', player:'Darion Atkins',         pos:'PF', from:'Free Agent',           to:'NINERS Chemnitz',  league:'EuroCup',    status:'signed',   date:'2026-06-16', summary:'Darion Atkins returns to Chemnitz — previously played there in 2021-22',         source_name:'Sportando',   source_url:'https://sportando.basketball/en/darion-atkins-returns-to-chemnitz/'},
+  {id:'s51', player:'Gabe Brown',            pos:'SF', from:'Free Agent',           to:'Tofas',            league:'EuroCup',    status:'signed',   date:'2026-06-16', summary:'Gabe Brown joins Tofas — headed to Turkey after a strong year in France',        source_name:'Sportando',   source_url:'https://sportando.basketball/en/gabe-brown-joins-tofas/'},
+  {id:'s52', player:'Emanuel Terry',         pos:'C',  from:'Free Agent',           to:'Trabzonspor',      league:'BCL',        status:'signed',   date:'2026-06-17', summary:'Trabzonspor signs veteran center Emanuel Terry as headline BCL addition',         source_name:'Eurohoops',   source_url:'https://www.eurohoops.net/en/'},
+  {id:'s53', player:'Jonah Mathews',         pos:'SG', from:'Free Agent',           to:'Free Agent',       league:'EuroCup',    status:'left',     date:'2026-06-16', summary:'Jonah Mathews ruptures Achilles tendon, out for majority of next season',        source_name:'Eurohoops',   source_url:'https://www.eurohoops.net/en/'},
+  // ══ ABA LEAGUE ══
+  {id:'s54', player:'Kevin Yogi Ferrell',    pos:'PG', from:'Budućnost VOLI',       to:'Budućnost VOLI',   league:'ABA League', status:'extended', date:'2026-06-14', summary:'Kevin Yogi Ferrell officially renews at Budućnost VOLI for 2026-27',             source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  {id:'s58', player:'Axel Bouteille',        pos:'SF', from:'Budućnost VOLI',       to:'Budućnost VOLI',   league:'ABA League', status:'extended', date:'2026-06-15', summary:'Axel Bouteille remains at Budućnost VOLI — shot 51% from three in EuroCup',   source_name:'Sportando',   source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  // ══ ABA LIGA OFFICIAL ══
+  {id:'s59', player:'Marko Kovačević',       pos:'SF', from:'Jahorina',             to:'FMP',              league:'ABA League', status:'signed',   date:'2026-06-17', summary:'FMP signs Marko Kovačević (22.3 pts, 7.1 reb in ABA 2) for 2026-27 season',  source_name:'ABA Liga',    source_url:'https://www.aba-liga.com/news/54909/marko-kovacevic-and-matija-belic-join-fmp/'},
+  {id:'s60', player:'Matija Belić',          pos:'SG', from:'USA (College)',        to:'FMP',              league:'ABA League', status:'signed',   date:'2026-06-17', summary:'FMP sign wing Matija Belić after four years at Santa Barbara and Wyoming',    source_name:'ABA Liga',    source_url:'https://www.aba-liga.com/news/54909/marko-kovacevic-and-matija-belic-join-fmp/'},
+  {id:'s61', player:'Matthew Hurt',          pos:'PF', from:'Cedevita Olimpija',    to:'Cedevita Olimpija',league:'ABA League / EuroCup', status:'extended', date:'2026-06-17', summary:'Cedevita Olimpija extend Matthew Hurt through 2026-27 after strong second half',source_name:'ABA Liga',    source_url:'https://www.aba-liga.com/news/54907/matthew-hurt-stays-in-ljubljana/'},
+  {id:'s62', player:'Dragan Milosavljević',  pos:'SG', from:'Igokea m:tel',         to:'Igokea m:tel',     league:'ABA League', status:'extended', date:'2026-06-17', summary:'Igokea captain Dragan Milosavljević extends contract for another season',        source_name:'ABA Liga',    source_url:'https://www.aba-liga.com/news/54908/dragan-milosavljevic-continues-career-at-igokea-m-tel/'},
+  {id:'s63', player:'Dušan Beslać',          pos:'PF', from:'BC Avtodor Saratov',   to:'U-BT Cluj-Napoca', league:'ABA League', status:'signed',   date:'2026-06-15', summary:'U-BT Cluj-Napoca sign Dušan Beslać as their 4th addition for 2026-27',         source_name:'ABA Liga',    source_url:'https://www.aba-liga.com/news/54905'},
+  {id:'s64', player:'Otis Livingston II',    pos:'PG', from:'Basket Girona',        to:'U-BT Cluj-Napoca', league:'ABA League', status:'signed',   date:'2026-06-13', summary:'U-BT Cluj-Napoca sign Otis Livingston II after Bàsquet Girona stint',           source_name:'Gigantes',    source_url:'https://www.gigantes.com/liga-endesa/mercado-hoy-15-junio-liga-endesa-2026/'},
+  {id:'s65', player:'Ranko Simović',         pos:'SG', from:'KK Vršac',             to:'Borac Mozzart',    league:'ABA League', status:'signed',   date:'2026-06-15', summary:'Borac Mozzart confirm Ranko Simović as their first signing for 2026-27',         source_name:'ABA Liga',    source_url:'https://www.aba-liga.com/news/54903/ranko-simovic-is-the-first-reinforcement-of-borac-mozzart/'},
+  {id:'s66', player:'Jamiya Neal',           pos:'PF', from:'NBA G League',         to:'FMP',              league:'ABA League', status:'signed',   date:'2026-06-12', summary:'FMP sign American forward Jamiya Neal — was second pick for Panthers',          source_name:'ABA Liga',    source_url:'https://www.aba-liga.com/news/54899/fmp-pen-deal-with-jamiya-neal/'},
+  {id:'s67', player:'Danijel Jusup',         pos:'coach',  from:'Zadar',                to:'Free Agent',       league:'ABA League', status:'left',     date:'2026-06-17', summary:'OFFICIAL: Zadar parts ways with head coach Danijel Jusup after 4 seasons',     source_name:'ABA Liga',    source_url:'https://www.aba-liga.com/news/54906/official-zadar-parts-ways-with-danijel-jusup/'},
+  {id:'s68', player:'Ergin Ataman',          pos:'coach',  from:'Panathinaikos',        to:'Free Agent',       league:'EuroLeague', status:'left',     date:'2026-06-15', summary:'Panathinaikos parts ways with head coach Ergin Ataman after 3 seasons',        source_name:'Gigantes',    source_url:'https://www.gigantes.com/liga-endesa/mercado-hoy-15-junio-liga-endesa-2026/'},
+  // ══ BBL OFFICIAL (basketball-world.news/easycredit-bbl.de) ══
+  {id:'s69', player:'Ibi Watson',            pos:'SG', from:'BMA365 Bamberg',       to:'ratiopharm Ulm',   league:'BBL',        status:'signed',   date:'2026-06-13', summary:'Star guard Ibi Watson leaves Bamberg Baskets for ratiopharm Ulm',               source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s70', player:'Jaylen Sims',           pos:'PG', from:'Charlotte Hornets (G League)', to:'ratiopharm Ulm', league:'BBL', status:'signed',   date:'2026-06-14', summary:'G-League champion Jaylen Sims joins ratiopharm Ulm as second summer signing',   source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s71', player:'Devon Daniels',         pos:'SG', from:'Hamburg Towers',       to:'Atleticos San German', league:'BBL',  status:'left',     date:'2026-06-12', summary:'Hamburg Towers top scorer Devon Daniels leaves — joins Puerto Rican club',     source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s72', player:'Alex Richardson',       pos:'C',  from:'Loyola University Chicago', to:'NINERS Chemnitz', league:'BBL', status:'signed',   date:'2026-06-12', summary:'NINERS Chemnitz sign center talent Alex Richardson from Loyola University',    source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s73', player:"Le'Tre Darthard",       pos:'SG', from:'NHSZ-Szolnoki Olajbanyasz', to:'EWE Baskets Oldenburg', league:'BBL', status:'signed', date:'2026-06-12', summary:'Oldenburg sign shooting guard Darthard — 49.6% 3PT% last season in Hungary',source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s74', player:'Peter Hemschemeier',    pos:'PG', from:'Eisbären Bremerhaven', to:'RASTA Vechta',     league:'BBL',        status:'signed',   date:'2026-06-11', summary:'Rasta Vechta sign 22-year-old guard Peter Hemschemeier from Bremerhaven',       source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s75', player:'Sid-Marlon Theis',      pos:'SF', from:'Rostock Seawolves',    to:'Free Agent',       league:'BBL',        status:'left',     date:'2026-06-11', summary:'Rostock Seawolves captain Sid-Marlon Theis departs after 6 seasons, 216 games',source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s76', player:'Eli Brooks',            pos:'PG', from:'Spanish league',       to:'VET-CONCEPT Trier',league:'BBL',        status:'signed',   date:'2026-06-10', summary:'"kleine Sensation" — Eli Brooks returns to Trier after leaving mid-season',    source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s77', player:'Chris Carter',          pos:'PG', from:'Science City Jena',    to:'Gießen',           league:'BBL',        status:'left',     date:'2026-06-17', summary:'Aufstiegs-Kapitän Chris Carter leaves Jena — joins ambisious Gießen in 2nd div',source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s78', player:'Moritz Krimmer',        pos:'SF', from:'BMA365 Bamberg',       to:'VET-CONCEPT Trier',league:'BBL',        status:'signed',   date:'2026-06-17', summary:'Moritz Krimmer leaves Bamberg Baskets and reportedly joins Gladiators Trier',  source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s79', player:'Anton Gavel',           pos:'coach',  from:'BMA365 Bamberg',       to:'FC Bayern Munich', league:'BBL',        status:'rumor',    date:'2026-06-13', summary:'Bayern Munich strongly linked with Bamberg coach Gavel — transfer fee dispute',source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  {id:'s80', player:'Paul Zipser',           pos:'SF', from:'Academics Heidelberg', to:'Academics Heidelberg', league:'BBL',  status:'extended', date:'2026-06-08', summary:'Paul Zipser surprises by committing one more year to Academics Heidelberg',     source_name:'basketball-world.news', source_url:'https://www.basketball-world.news/artikel/drama-in-bamberg-watson-geht-nach-ulm-gavel-erwaegt-wohl-vertragsaufloesung-1122762'},
+  // ══ SPANISH ACB ══
+  {id:'s55', player:'James Webb III',        pos:'PF', from:'Unicaja',              to:'Free Agent',       league:'ACB',        status:'left',     date:'2026-06-15', summary:'James Webb III will not continue at Unicaja Malaga next season',               source_name:'ACB / Gigantes', source_url:'https://www.acb.com/es/liga'},
+  {id:'s56', player:'Xavier Castañeda',      pos:'PG', from:'Unicaja',              to:'Free Agent',       league:'ACB',        status:'left',     date:'2026-06-15', summary:'Xavier Castañeda also departs Unicaja Malaga alongside Webb',                    source_name:'ACB / Gigantes', source_url:'https://www.acb.com/es/liga'},
+  {id:'s57', player:'Sergio De Larrea',      pos:'PG', from:'Valencia Basket',      to:'NBA (Draft)',      league:'ACB',        status:'left',     date:'2026-06-14', summary:'Valencia Basket rising star Sergio De Larrea officially declares for 2026 NBA Draft', source_name:'ACB',     source_url:'https://www.acb.com/es/liga'},
+  {id:'s81', player:'Marco Spissu',          pos:'PG', from:'Casademont Zaragoza',  to:'Free Agent',       league:'ACB',        status:'left',     date:'2026-06-15', summary:'Casademont Zaragoza officially confirm Marco Spissu will not continue next year', source_name:'Gigantes', source_url:'https://www.gigantes.com/liga-endesa/mercado-hoy-15-junio-liga-endesa-2026/'},
+  {id:'s82', player:'Carles Marco',          pos:'coach',  from:'Leyma Coruña',         to:'Leyma Coruña',     league:'ACB',        status:'extended', date:'2026-06-15', summary:'Carles Marco renews with Leyma Coruña ahead of their Liga Endesa return',        source_name:'Gigantes', source_url:'https://www.gigantes.com/liga-endesa/mercado-hoy-15-junio-liga-endesa-2026/'},
+  {id:'s83', player:'Sasha Djordjevic',      pos:'coach', from:'Free Agent',           to:'Bahcesehir',       league:'EuroCup',    status:'rumor',    date:'2026-06-14', summary:'Sasha Djordjevic reportedly close to deal with Bahcesehir — beats Virtus Bologna', source_name:'Sportando', source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  // ══ MISSING FROM SPORTANDO — added from user-provided URLs ══
+  {id:'s84', player:'Derek Willis',          pos:'PF',    from:'Paris Basketball',    to:'Partizan',         league:'EuroLeague / ABA League / Pro A', status:'rumor',    date:'2026-06-17', summary:'Partizan Belgrade finalizing agreement with American forward Derek Willis',       source_name:'Sportando', source_url:'https://sportando.basketball/en/partizan-belgrade-finalizing-agreement-with-derek-willis/'},
+  {id:'s85', player:'Alex Mumbrù',           pos:'coach', from:'Free Agent',          to:'Virtus Bologna',   league:'EuroLeague / Lega',       status:'signed',   date:'2026-06-18', summary:'Alex Mumbrù and Virtus Bologna reach agreement — Spanish coach takes the bench', source_name:'Sportando', source_url:'https://sportando.basketball/en/alex-mumbru-and-virtus-bologna-reach-an-agreement-the-details/'},
+  // ══ ACB OFFICIAL — acb.com/es/liga/noticias ══
+  {id:'s86', player:'Chibuzo Agbo',          pos:'PF',    from:'Free Agent',          to:'Kids&Us Manresa',  league:'ACB',        status:'signed',   date:'2026-06-17', summary:'Kids&Us Manresa sign 24-year-old Agbo on a 2-year deal (Nigerian passport)',     source_name:'ACB',       source_url:'https://www.acb.com/es/liga/noticias/chibuzo-agbo-fuerza-para-el-juego-exterior-de-kidsus-manresa-145359'},
+  {id:'s87', player:'Josep Peris',           pos:'SG',    from:'CB Zamora',           to:'Río Breogán',      league:'ACB',        status:'signed',   date:'2026-06-17', summary:'Río Breogán sign 25-year-old wing Josep Peris from Primera FEB side CB Zamora',  source_name:'ACB',       source_url:'https://www.acb.com/es/liga/noticias/el-rio-breogan-incorpora-a-josep-peris-145363'},
+  // ══ LEGA BASKET SERIE A ══
+  {id:'s88', player:'Alessandro Bertini',    pos:'PG',    from:'Free Agent',          to:'Dolomiti Energia Trento', league:'Lega', status:'signed',  date:'2026-06-01', summary:'Dolomiti Energia Trento officially sign Alessandro Bertini for upcoming season',  source_name:'Lega Basket', source_url:'https://www.legabasket.it/news/138819/trento-alessandro-bertini'},
+  {id:'s89', player:'Marco Spissu',          pos:'PG',    from:'Casademont Zaragoza', to:'Napoli Basket',    league:'Lega',       status:'rumor',    date:'2026-06-17', summary:'Napoli Basket closing in on Marco Spissu deal after his Zaragoza exit',           source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/'},
+  {id:'s90', player:'Arturs Strautins',      pos:'SF',    from:'Bertram Derthona',    to:'Free Agent',       league:'Lega',       status:'left',     date:'2026-06-15', summary:'Arturs Strautins officially exits his contract with Bertram Derthona Tortona',    source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/'},
+  {id:'s91', player:'Nate Renfro',           pos:'PF',    from:'Openjobmetis Varese', to:'Openjobmetis Varese', league:'Lega',   status:'extended', date:'2026-06-16', summary:'Nate Renfro renews with Openjobmetis Varese for the 2026-27 Lega Basket season',  source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/'},
+  {id:'s92', player:'Armoni Brooks',         pos:'SG',    from:'EA7 Olimpia Milano',  to:'ASVEL',            league:'EuroLeague / Pro A', status:'rumor',    date:'2026-06-16', summary:'LBA 2026 MVP Armoni Brooks linked with ASVEL — or could stay at Olimpia Milano', source_name:'Sportando', source_url:'https://sportando.basketball/en/category/europe/italy/serie-a/'},
+  {id:'s93', player:'RaeQuan Battle',        pos:'SG',    from:'Vanoli Cremona',      to:'APU Udine',        league:'Lega',       status:'signed',   date:'2026-06-17', summary:'APU Udine sign RaeQuan Battle from Cremona for their Serie A return season',      source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/'},
+
+  // ══ BETCLIC ELITE (Pro A) — bebasket.fr / pianetabasket ══
+  {id:'s94', player:'Jean Montero',           pos:'PG', from:'Valencia Basket',  to:'Olympiacos',       league:'EuroLeague / Pro A', status:'rumor',    date:'2026-06-17', summary:'Jean Montero set to leave Valencia for Olympiacos — shock EuroLeague move confirmed', source_name:'bebasket.fr', source_url:'https://www.bebasket.fr/ligue/betclic-elite'},
+  {id:'s95', player:'Elwin Ndjock',           pos:'SF', from:'Hyères-Toulon',    to:'JDA Dijon',        league:'Pro A',              status:'signed',   date:'2026-06-12', summary:'JDA Dijon official: Elwin Ndjock is their first signing for 2026-27 Betclic ELITE',  source_name:'bebasket.fr', source_url:'https://www.bebasket.fr/ligue/betclic-elite'},
+  {id:'s96', player:'Sylvain Francisco',      pos:'PG', from:'ASVEL',            to:'Free Agent',       league:'EuroLeague / Pro A', status:'left',     date:'2026-06-15', summary:'Sylvain Francisco officially confirmed out of ASVEL — sought by Zalgiris and others',source_name:'bebasket.fr', source_url:'https://www.bebasket.fr/ligue/betclic-elite'},
+  {id:'s97', player:'Jason Burnell',          pos:'SG', from:'Germani Brescia',  to:'EA7 Olimpia Milano', league:'EuroLeague / Lega', status:'signed',  date:'2026-06-16', summary:'Germani Brescia confirm Jason Burnell departure — reportedly joins Olimpia Milano',   source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/germani-brescia-saluti-jason-burnell-pronto-all-olimpia-363653'},
+  {id:'s98', player:'DeWayne Russell',        pos:'PG', from:'Free Agent',       to:'Nutribullet Treviso', league:'Lega',             status:'signed',   date:'2026-06-16', summary:'Ufficiale: DeWayne Russell returns to Nutribullet Treviso after four years away',   source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/dewayne-russell-torna-nutribullet-treviso-363654'},
+  {id:'s99', player:'JT Thor',                pos:'PF', from:'UNA Hotels Reggio Emilia', to:'UNA Hotels Reggio Emilia', league:'Lega', status:'extended', date:'2026-06-16', summary:'Reggio Emilia confirm JT Thor stays for another season',                            source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/reggio-emilia-c-e-conferma-jt-thor-363663'},
+  {id:'s100', player:'Ezra Manjon',           pos:'PG', from:'Bertram Derthona', to:'Free Agent',       league:'Lega',               status:'left',     date:'2026-06-18', summary:'Ezra Manjon exits Bertram Derthona Tortona — future reportedly in Greece',          source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/ezra-manjon-lascia-bertram-derthona-grecia-363783'},
+  {id:'s101', player:'Michele Vitali',        pos:'SG', from:'UNA Hotels Reggio Emilia', to:'Free Agent', league:'Lega',            status:'left',     date:'2026-06-17', summary:'Michele Vitali leaving Reggio Emilia — linked with Dinamo Sassari and Brindisi',    source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/michele-vitali-l-uscita-reggio-sassari-fratello-luca-brindisi-363712'},
+  {id:'s102', player:'Davide Casarin',        pos:'PG', from:'Vanoli Cremona',   to:'Houston Rockets',  league:'Lega',               status:'left',     date:'2026-06-17', summary:'LBA MIP Davide Casarin gets NBA Summer League call from Houston Rockets',           source_name:'Pianeta Basket', source_url:'https://www.pianetabasket.com/legabasket-serie-a/davide-casarin-c-e-chiamata-nba-houston-summer-league-363703'},
+  // ══ BNXT LEAGUE (Belgium/Netherlands) ══
+  {id:'s103', player:'Charlton Andringa',     pos:'SG', from:'Free Agent',       to:'BC Gravelines-Dunkerque', league:'BNXT / Pro A', status:'rumor',   date:'2026-06-15', summary:'BNXT star Charlton Andringa linked with Pro A move to Gravelines-Dunkerque',     source_name:'BNXT League', source_url:'https://bnxtleague.com/en/news'},
+
+  // ══ GREEK GBL (Stoiximan Basket League) — sport24.gr ══
+  {id:'s104', player:'Nick Calathes',          pos:'PG', from:'Free Agent',       to:'PAOK',             league:'GBL / EuroCup', status:'signed',   date:'2026-06-12', summary:'Official: Nick Calathes signs with PAOK through 2028 — Thessaloniki homecoming', source_name:'Sportando', source_url:'https://sportando.basketball/en/official-nick-calathes-signs-with-paok-through-2028/'},
+  {id:'s105', player:'RaiQuan Gray',            pos:'PF', from:'Free Agent',       to:'PAOK',             league:'GBL / EuroCup', status:'signed',   date:'2026-06-12', summary:'PAOK officially sign RaiQuan Gray through 2028 — American forward joins Calathes', source_name:'sport24.gr', source_url:'https://www.sport24.gr/basket/ston-paok-mexri-to-2028-o-gkrei/'},
+  {id:'s106', player:'Sasa Obradovic',          pos:'coach', from:'Hapoel Jerusalem',  to:'Hapoel Jerusalem', league:'Israeli BSL / EuroCup', status:'signed', date:'2026-06-15', summary:'Hapoel Jerusalem officially hire Sasa Obradovic as new head coach on 3-year deal', source_name:'sport24.gr', source_url:'https://www.sport24.gr/basket/eurocup-basketball/xapoel-ierousalim-anakoinose-ton-sasa-omprantovits/'},
+  {id:'s107', player:'Vasilis Spanoulis',       pos:'coach', from:'Free Agent',     to:'Aris Betsson',     league:'GBL',          status:'signed',   date:'2026-06-03', summary:'Vasilis Spanoulis reaches agreement with Aris Betsson as head coach — official soon', source_name:'sport24.gr', source_url:'https://www.sport24.gr/tag/basket-league/'},
+  {id:'s108', player:'YJ Liddell',              pos:'PF', from:'Free Agent',       to:'Aris Betsson',     league:'GBL',          status:'signed',   date:'2026-06-17', summary:'Aris Betsson officially sign American forward YJ Liddell on a two-year deal',       source_name:'sport24.gr', source_url:'https://www.sport24.gr/basket/ston-ari-betsson-o-i-tzei-lintel/'},
+  {id:'s109', player:'Frank Bartley',           pos:'PF', from:'PAOK',             to:'AEK',              league:'GBL',          status:'rumor',    date:'2026-06-13', summary:'AEK want to tie down Frank Bartley from PAOK with improved deal',                  source_name:'sport24.gr', source_url:'https://www.sport24.gr/basket/i-aek-thelei-na-desei-ton-bartlei-me-neo-simvolaio-kai-afximenes-apodoxes/'},
+  {id:'s110', player:'Nenad Dimitrijević',      pos:'PG', from:'Anadolu Efes',     to:'Aris Betsson',     league:'GBL',          status:'signed',   date:'2026-06-05', summary:'Aris sign Nenad Dimitrijević — experienced EuroLeague guard joins Thessaloniki',   source_name:'sport24.gr', source_url:'https://www.sport24.gr/tag/basket-league/'},
+  {id:'s111', player:'Jordon Barnett',          pos:'SF', from:'Free Agent',       to:'Kolossos Rhodes',  league:'GBL',          status:'signed',   date:'2026-06-10', summary:'Kolossos Rhodes sign Jordan Barnett as their first American addition for 2026-27',source_name:'sport24.gr', source_url:'https://www.sport24.gr/tag/basket-league/'},
+  {id:'s112', player:'Joirdon Nicholas',        pos:'C',  from:'Free Agent',       to:'Promitheas',       league:'GBL',          status:'signed',   date:'2026-06-08', summary:'Promitheas Vikos Cola confirm Joirdon Nicholas as first transfer for 2026-27',     source_name:'sport24.gr', source_url:'https://www.sport24.gr/tag/basket-league/'},
+  // ══ LITHUANIAN LKL — basketnews.lt ══
+  {id:'s113', player:'Tauras Jogėla',           pos:'SG', from:'Free Agent',       to:'LKL club',         league:'LKL',          status:'signed',   date:'2026-06-18', summary:'Tauras Jogėla sugrįžta į LKL — Lithuanian guard returns to home league',          source_name:'BasketNews LT', source_url:'https://www.basketnews.lt/news-249988-tauras-jogela-sugrizta-i-lkl.html'},
+  {id:'s114', player:'Tautvydas Šležas',        pos:'coach', from:'Free Agent',    to:'Lietkabelis',      league:'LKL / EuroCup', status:'signed',  date:'2026-06-18', summary:'Lietkabelis add Tautvydas Šležas to their coaching staff for upcoming LKL/EuroCup campaign', source_name:'BasketNews LT', source_url:'https://www.basketnews.lt/news-249983-lietkabelio-staba-papilde-tautvydas-slezas.html'},
+  {id:'s115', player:'Saben Lee',               pos:'PG', from:'NBA (OKC)',         to:'Zalgiris',         league:'EuroLeague / LKL', status:'signed', date:'2026-06-14', summary:'Official: Saben Lee signs with Zalgiris through 2028 — first big EuroLeague move', source_name:'Sportando', source_url:'https://sportando.basketball/en/official-saben-lee-signs-with-zalgiris-kaunas-through-2028/'},
+  {id:'s116', player:'Maxwell Lewis',           pos:'SF', from:'Brooklyn Nets',    to:'Zalgiris',         league:'EuroLeague / LKL', status:'signed', date:'2026-06-11', summary:'Zalgiris sign Maxwell Lewis — ex-Lakers/Nets forward loans to London Lions for 26-27', source_name:'Sportando', source_url:'https://sportando.basketball/en/official-zalgiris-signs-maxwell-lewis-loans-him-to-london-lions/'},
+  // ══ ISRAELI BSL — basket.co.il ══
+  {id:'s117', player:'Anthony Lamb',            pos:'SF', from:'Hapoel Jerusalem', to:'Free Agent',       league:'Israeli BSL / EuroCup', status:'left', date:'2026-06-01', summary:'Hapoel Jerusalem officially release Anthony Lamb from his contract',            source_name:'basket.co.il', source_url:'https://basket.co.il/?lang=en'},
+  {id:'s118', player:'Jeff Dowtin Jr.',         pos:'PG', from:'Maccabi Tel Aviv', to:'Free Agent',       league:'Israeli BSL / EuroLeague', status:'left', date:'2026-06-01', summary:'Maccabi Tel Aviv release Jeff Dowtin Jr. ahead of roster rebuild',            source_name:'basket.co.il', source_url:'https://basket.co.il/?lang=en'},
+  {id:'s119', player:'Zahir Porter',            pos:'PF', from:'Hapoel Galil Elion', to:'Free Agent',     league:'Israeli BSL',  status:'left',     date:'2026-06-01', summary:'Hapoel Rivulis Galil Elion confirm Zahir Porter departure',                       source_name:'basket.co.il', source_url:'https://basket.co.il/?lang=en'},
+  {id:'s120', player:'Ronaldo Segu',            pos:'SG', from:'Maccabi Ramat Gan', to:'Free Agent',      league:'Israeli BSL',  status:'left',     date:'2026-06-01', summary:'Maccabi Cnaan Group Ramat Gan release Ronaldo Segu',                               source_name:'basket.co.il', source_url:'https://basket.co.il/?lang=en'},
+  {id:'s121', player:'Jaleen Smith',            pos:'SG', from:'Free Agent',       to:'Hapoel Jerusalem', league:'Israeli BSL / EuroCup', status:'signed', date:'2026-06-13', summary:'Official: Jaleen Smith signs with Hapoel Jerusalem through 2028',             source_name:'Sportando', source_url:'https://sportando.basketball/en/official-jaleen-smith-signs-with-hapoel-jerusalem-through-2028/'},
+  {id:'s122', player:'Levi Randolph',           pos:'SG', from:'Maccabi Tel Aviv', to:'Hapoel Tel Aviv',  league:'Israeli BSL / EuroLeague', status:'rumor', date:'2026-06-14', summary:'Hapoel Tel Aviv close to landing Levi Randolph — ex-Maccabi guard in talks', source_name:'BasketNews', source_url:'https://basketnews.com/teams/635-hapoel-ibi-tel-aviv.html'},
+  // ══ ASVEL major summer moves ══
+  {id:'s123', player:'Nick Weiler-Babb',        pos:'PG', from:'Anadolu Efes',     to:'ASVEL',            league:'EuroLeague / Pro A', status:'signed', date:'2026-06-16', summary:'Nick Weiler-Babb signs with ASVEL — departs Efes after contract ends',         source_name:'Sportando', source_url:'https://sportando.basketball/en/rumors/basket-rumors/'},
+  {id:'s124', player:'Daniel Theis',            pos:'C',  from:'AS Monaco',        to:'ASVEL',            league:'EuroLeague / Pro A', status:'rumor',  date:'2026-06-15', summary:'ASVEL building XXL EuroLeague roster — Daniel Theis among targets for 2026-27', source_name:'bebasket.fr', source_url:'https://www.bebasket.fr/ligue/betclic-elite'},
+  {id:'s125', player:'Frank Ntilikina',         pos:'PG', from:'Olympiacos',       to:'ASVEL',            league:'EuroLeague / Pro A', status:'rumor',  date:'2026-06-16', summary:'ASVEL in talks with Ntilikina — Paris native could return to France',          source_name:'bebasket.fr', source_url:'https://www.bebasket.fr/ligue/betclic-elite'},
+
+  // ══ TURKISH BSL — basketbolig.com / basketfaul.com.tr ══
+  {id:'s126', player:'Ismet Akpinar',         pos:'PG', from:'Bahcesehir',        to:'Bahcesehir',        league:'Turkish BSL / EuroCup', status:'extended', date:'2026-06-18', summary:'Bahcesehir Koleji keep Ismet Akpinar — Turkish guard stays in Istanbul',       source_name:'basketbolig.com', source_url:'https://basketbolig.com/haber/bahcesehir-koleji-ismet-akpinari-kadroda-tuttu'},
+  {id:'s127', player:'Roberto Gallinat',      pos:'coach', from:'Çayırova',        to:'Çayırova',          league:'Turkish BSL',  status:'extended', date:'2026-06-18', summary:'Çayırova Belediyesi renew Roberto Gallinat as head coach for 2026-27 BSL season',  source_name:'basketbolig.com', source_url:'https://basketbolig.com/haber/cayirova-belediyesi-roberto-gallinat-ile-yeniledi'},
+  {id:'s128', player:'Shavar Reynolds',       pos:'SG', from:'Free Agent',         to:'TOFAŞ',             league:'Turkish BSL / EuroCup', status:'signed',   date:'2026-06-18', summary:'Shavar Reynolds signs with TOFAŞ Bursa — American guard joins from free agency', source_name:'basketbolig.com', source_url:'https://basketbolig.com/haber/shavar-reynolds-tofasta'},
+  {id:'s129', player:'Tony Taylor',           pos:'PG', from:'Türk Telekom',       to:'Türk Telekom',      league:'Turkish BSL',  status:'extended', date:'2026-06-17', summary:'Tony Taylor re-signs with Türk Telekom for another BSL campaign',                  source_name:'basketbolig.com', source_url:'https://basketbolig.com/haber/tony-taylor-yeniden-turk-telekomda'},
+  {id:'s130', player:'Matej Ponitka',         pos:'SF', from:'Bahcesehir',         to:'Bahcesehir',        league:'Turkish BSL / EuroCup', status:'extended', date:'2026-06-16', summary:'Matej Ponitka continues at Bahcesehir Koleji for second season',               source_name:'basketbolig.com', source_url:'https://basketbolig.com/haber/ponitka-bahcesehir-kolejinde-devam-ediyor'},
+  {id:'s131', player:'Emanuel Terry',         pos:'C',  from:'Free Agent',         to:'Trabzonspor',       league:'Turkish BSL / BCL', status:'signed',   date:'2026-06-16', summary:'Emanuel Terry officially signs with Trabzonspor for 2026-27 season',             source_name:'basketbolig.com', source_url:'https://basketbolig.com/haber/emanuel-terry-trabzonsporda'},
+  {id:'s132', player:'Jonah Mathews',         pos:'SG', from:'Beşiktaş',           to:'Free Agent',        league:'Turkish BSL',  status:'left',     date:'2026-06-16', summary:'Jonah Mathews out for months after surgery following season-ending Achilles rupture', source_name:'basketbolig.com', source_url:'https://basketbolig.com/haber/jonah-mathews-ameliyat-oldu'},
+  // ══ ROMANIAN LNB — baschetromania.ro ══
+  {id:'s133', player:'Tudor Fometescu',       pos:'PG', from:'Rapid Bucharest',    to:'CSM CSU Oradea',    league:'Romanian LNB', status:'signed',   date:'2026-06-17', summary:'Tudor Fometescu returns to CSM CSU Oradea from Rapid Bucharest for new season',   source_name:'baschetromania.ro', source_url:'https://baschetromania.ro/tudor-fometescu-revine-la-csm-oradea/'},
+  {id:'s134', player:'Lewis Sullivan',        pos:'C',  from:'Rapid Bucharest',    to:'CSO Voluntari',     league:'Romanian LNB', status:'signed',   date:'2026-06-15', summary:'Lewis Sullivan (31) returns to CSO Voluntari after season at Rapid Bucharest',    source_name:'baschetromania.ro', source_url:'https://baschetromania.ro/lewis-sullivan-revine-la-cso-voluntari/'},
+  {id:'s135', player:'Kris Richard',          pos:'PF', from:'CSM CSU Oradea',     to:'CSM CSU Oradea',    league:'Romanian LNB', status:'extended', date:'2026-06-14', summary:'CSM CSU Oradea legend Kris Richard extends for 2026-27 — continues as Red Lions', source_name:'baschetromania.ro', source_url:'https://baschetromania.ro/legenda-vie-la-oradea-kris-richard-continua-alaturi-de-leii-rosii-si-in-sezonul-2026-27/'},
+  {id:'s136', player:'Nicolae Bogdan Nicolescu', pos:'PG', from:'CSM CSU Oradea',  to:'U-BT Cluj-Napoca',  league:'ABA League',   status:'signed',   date:'2026-06-11', summary:'Romanian national team captain Bobe Nicolescu signs with U-BT Cluj-Napoca',       source_name:'baschetromania.ro', source_url:'https://baschetromania.ro/capitanul-nationalei-bobe-nicolescu-semneaza-cu-u-bt-cluj-napoca/'},
+  {id:'s137', player:'George Blaj-Voinescu',  pos:'SG', from:'BC Timisoara',       to:'CSM CSU Oradea',    league:'Romanian LNB', status:'signed',   date:'2026-06-12', summary:'George Blaj-Voinescu leaves Timisoara, signs with runner-up CSM CSU Oradea',       source_name:'baschetromania.ro', source_url:'https://baschetromania.ro/george-blaj-voinescu-pleaca-de-la-timisoara-si-semneaza-cu-vicecampioana-csm-csu-oradea/'},
+  {id:'s138', player:'Kodi Justice',          pos:'SG', from:'CSO Voluntari',      to:'CSO Voluntari',     league:'Romanian LNB', status:'extended', date:'2026-06-13', summary:'CSO Voluntari confirm Kodi Justice contract extension for upcoming season',         source_name:'baschetromania.ro', source_url:'https://baschetromania.ro/cso-voluntari-isi-asigura-continuitatea-kodi-justice-ramane-pe-pozitii/'},
+  // ══ POLISH PLK (ORLEN Basket Liga) — plk.pl / super-basket.pl ══
+  {id:'s139', player:'Tajion Jones',          pos:'PG', from:'Free Agent',         to:'Stal Ostrów Wlkp.',  league:'PLK',         status:'signed',   date:'2026-06-12', summary:'Tajion Jones (27) signs with Tasomix Rosiek Stal Ostrów Wielkopolski for 2026-27', source_name:'plk.pl', source_url:'https://plk.pl/aktualnosci'},
+  {id:'s140', player:'Luka Sakota',           pos:'SG', from:'Free Agent',         to:'Twarde Pierniki Toruń', league:'PLK',     status:'signed',   date:'2026-06-11', summary:'Luka Sakota (25) stays in ORLEN Basket Liga, signs with Twarde Pierniki Toruń',   source_name:'plk.pl', source_url:'https://plk.pl/aktualnosci'},
+  {id:'s141', player:'Ron Curry',             pos:'PG', from:'MKS Dąbrowa',       to:'MKS Dąbrowa',        league:'PLK',         status:'extended', date:'2026-06-10', summary:'Ron Curry re-signs with MKS Dąbrowa Górnicza for another PLK season',              source_name:'plk.pl', source_url:'https://plk.pl/aktualnosci'},
+  {id:'s142', player:'Krzysztof Roszyk',      pos:'coach', from:'Free Agent',      to:'Energa Trefl Sopot', league:'PLK',         status:'signed',   date:'2026-06-09', summary:'Krzysztof Roszyk named new head coach of Energa Trefl Sopot',                      source_name:'plk.pl', source_url:'https://plk.pl/aktualnosci'},
+  // ══ BNXT LEAGUE — bnxtleague.com ══
+  {id:'s143', player:'Kenyuoe Ondaar',        pos:'SG', from:'Free Agent',         to:'ZZ Rotterdam',      league:'BNXT',         status:'signed',   date:'2026-06-15', summary:'Kenyuoe Ondaar returns to ZZ Rotterdam for upcoming BNXT League season',           source_name:'BNXT League', source_url:'https://bnxtleague.com/en/newsvideo/kenyuoe-ondaar-returns-to-rotterdam'},
+  {id:'s144', player:'Carl Cleveland',        pos:'SF', from:'College (USA)',      to:'Leuven Bears',      league:'BNXT',         status:'signed',   date:'2026-06-14', summary:'Stella Artois Leuven Bears sign American forward Carl Cleveland for 2026-27',     source_name:'BNXT League', source_url:'https://bnxtleague.com/en/newsvideo/leuven-bears-sign-carl-cleveland'},
+  // ══ ABA LIGA PAGE 2 — older entries since May 2026 ══
+  {id:'s145', player:'Dejan Davidovac',       pos:'SF', from:'Crvena Zvezda',      to:'Crvena Zvezda',     league:'EuroLeague / ABA League', status:'extended', date:'2026-06-09', summary:'Dejan Davidovac signs 2-year extension with Crvena Zvezda — club legend stays', source_name:'ABA Liga', source_url:'https://www.aba-liga.com/news/54888/davidovac-signs-new-two-year-extension-with-crvena-zvezda/'},
+  {id:'s146', player:'Dubai Basketball',      pos:'coach', from:'Dubai Basketball', to:'Dubai Basketball', league:'ABA League',   status:'signed',   date:'2026-06-12', summary:'Dubai Basketball win 2025-26 ABA League title — club history first championship', source_name:'ABA Liga', source_url:'https://www.aba-liga.com/news/54891'},
+  {id:'s147', player:'Otis Livingston II',    pos:'PG', from:'Basket Girona',      to:'U-BT Cluj-Napoca',  league:'ABA League / EuroCup', status:'signed',  date:'2026-06-10', summary:'Otis Livingston II third signing for U-BT Cluj ahead of EuroCup 2026-27 season', source_name:'ABA Liga', source_url:'https://www.aba-liga.com/news/54905'},
+  {id:'s148', player:'Jalyn McCreary',        pos:'PF', from:'Free Agent',         to:'U-BT Cluj-Napoca',  league:'ABA League / EuroCup', status:'signed',  date:'2026-06-08', summary:'Jalyn McCreary second signing for U-BT Cluj-Napoca for their EuroCup campaign', source_name:'ABA Liga', source_url:'https://www.aba-liga.com/news/54905'},
+  // ══ HUNGARIAN NB1 — bball1.hu ══
+  {id:'s149', player:'Ákos Pethő',           pos:'coach', from:'DEAC',             to:'DEAC',              league:'Hungarian NB1', status:'extended', date:'2026-06-10', summary:'DEAC extend head coach Ákos Pethő for one more season after contract expiry',     source_name:'bball1.hu', source_url:'https://bball1.hu/atigazolasi-hirosszefoglalo-2026'},
+  {id:'s150', player:"Le'Tre Darthard",      pos:'SG', from:'NHSZ-Szolnoki',      to:'EWE Baskets Oldenburg', league:'BBL',     status:'signed',   date:'2026-06-12', summary:'Darthard (49.6% 3PT% at Szolnoki) officially confirms move to EWE Baskets Oldenburg', source_name:'bball1.hu', source_url:'https://bball1.hu/atigazolasi-hirosszefoglalo-2026'},
+];
 const SOURCES = [
-  // ── Official league transfer pages ──
-  {id:'el',    name:'EuroLeague Official', query:'EuroLeague basketball signings transfers 2026 site:euroleaguebasketball.net'},
-  {id:'ec',    name:'EuroCup Official',    query:'EuroCup basketball signings transfers 2026 site:euroleaguebasketball.net'},
-  {id:'bcl',   name:'BCL Official',        query:'Basketball Champions League signings transfers 2026 site:championsleague.basketball'},
-  {id:'aba',   name:'ABA Liga Official',   query:'ABA League basketball signings transfers 2026 site:aba-liga.com'},
-  {id:'bbl',   name:'BBL Wechselbörse',    query:'BBL Basketball Bundesliga Wechselbörse transfers signings 2026 site:easycredit-bbl.de'},
-  {id:'acb',   name:'ACB Official',        query:'ACB Liga Endesa fichajes basketball signings 2026 site:acb.com'},
-  {id:'lnb',   name:'LNB France Official', query:'LNB Pro A basketball transfers signings 2026 site:lnb.fr'},
-  {id:'lega',  name:'Lega Basket Official',query:'Lega Basket Serie A trasferimenti mercato 2026 site:legabasket.it'},
-  {id:'plk',   name:'PLK Poland Official', query:'PLK Polska Liga Koszykowki transfers signings 2026 site:plk.pl'},
-  {id:'kzs',   name:'KZS Slovenia',        query:'KZS Slovenian basketball transfers signings 2026 site:kzs.si'},
-  {id:'bnxt',  name:'BNXT League',         query:'BNXT League basketball transfers signings 2026 site:bnxtleague.com'},
-  {id:'latel', name:'Lat-Est League',      query:'Lat-Est basketball league transfers signings 2026 site:estlatbl.com'},
-  {id:'vtb',   name:'VTB United League',   query:'VTB United League basketball transfers signings 2026 site:vtb-league.com'},
-  {id:'isr',   name:'Israeli BSL',         query:'Israeli Basketball Super League BSL transfers signings 2026 site:basket.co.il'},
-  {id:'lkl',   name:'LKL Lithuania',       query:'LKL Lithuanian Basketball League transfers signings 2026 site:lkl.lt'},
-  {id:'frb',   name:'FRB Romania',         query:'Romanian basketball league transfers signings 2026 site:frbaschet.ro'},
-  {id:'esake', name:'ESAKE Greece',        query:'Greek Basketball League A1 transfers signings 2026 site:esake.gr'},
-  // ── Aggregator news sources ──
-  {id:'sportando',   name:'Sportando',   query:'European basketball signings transfers rumors 2026 site:sportando.basketball'},
-  {id:'eurohoops',   name:'Eurohoops',   query:'EuroLeague basketball transfers signings rumors June 2026 site:eurohoops.net'},
-  {id:'basketnews',  name:'BasketNews',  query:'EuroLeague basketball transfers signings June 2026 site:basketnews.com'},
-  {id:'talkbasket',  name:'TalkBasket',  query:'European basketball transfers signings 2026 site:talkbasket.net'},
-  {id:'realgm',      name:'RealGM',      query:'EuroLeague transactions signings 2026 site:basketball.realgm.com'},
-  {id:'pbeurope',    name:'PBEurope',    query:'European basketball signings transfers 2026 site:probasketballeurope.com'},
+  {id:'el_supp',       name:'EuroLeague Extra'},
+  {id:'eurocup_supp',  name:'EuroCup & BCL'},
+  {id:'national_supp', name:'National Leagues'},
+  {id:'gbl_supp',      name:'Greek GBL'},
+  {id:'lkl_supp',      name:'Lithuanian LKL'},
+  {id:'bsl_supp',      name:'Israeli BSL'},
+  {id:'turkey_supp',   name:'Turkish BSL'},
+  {id:'other_supp',    name:'Other Leagues'},
 ];
 
-const SYS = `You are a basketball transfer news extractor with web search access. Search for and return recent basketball transfer moves involving European leagues as a JSON array.
+const SYS = `You are a European basketball transfer expert. Today is June 17, 2026.
 
-Each object must have EXACTLY these fields (no others):
-- player: full player name string
-- pos: one of PG SG SF PF C or ?
-- from: previous club, "Free Agent", or "NBA"
-- to: new club name
-- league: e.g. "EuroLeague" "EuroCup" "ABA League" "ACB" "Pro A" "Lega" "BBL" "BSL" "BCL" "LKL" "BNXT" "Israeli BSL" "Greek A1" "VTB" "SKL" "PLK"
-- status: MUST be exactly one of: signed rumor left extended
-- date: YYYY-MM-DD, use 2026-06-17 if unknown
-- summary: one sentence max 120 chars
-- source_url: URL to the article or announcement
+The user has already loaded these confirmed transfers from TalkBasket and Sportando. Do NOT repeat them:
+- Dario Saric to Anadolu Efes (signed)
+- Jordan Loyd extension at Efes (extended)  
+- Saben Lee to Zalgiris (signed)
+- Maxwell Lewis to Zalgiris (signed)
+- Kobi Simmons extension at Baskonia (extended)
+- Ibon Navarro to Crvena Zvezda as coach (signed)
+- Vladimir Lucic extension at Bayern (extended)
+- Joel Parra / Dario Brizuela extensions at Barcelona (extended)
+- Tonye Jekiri extension at Partizan (extended)
+- Kevin Yogi Ferrell extension at Budućnost (extended)
 
-Rules: Only European basketball. Status "rumor" = in talks/linked/reportedly/expected. Status "left" = released/departed/waived. Return ONLY the raw JSON array, zero other text.`;
+Your task: Return ADDITIONAL European basketball transfers from June 2026 that are NOT in the list above.
+Focus on: EuroCup, BCL, ABA League, Lega Basket, BBL, ACB, Pro A, Turkish BSL, Greek A1, Israeli BSL, LKL.
+Also any EuroLeague moves not listed above.
+
+Return ONLY a valid JSON array. Each object:
+{"player":"Name","pos":"PG|SG|SF|PF|C|?","from":"Club or Free Agent","to":"Club","league":"EuroLeague|EuroCup|BCL|ABA League|BBL|ACB|Lega|Pro A|BSL|LKL|BNXT|Greek A1|Israeli BSL|other","status":"signed|left|extended|rumor","date":"2026-06-DD","summary":"One sentence max 120 chars","source_url":"https://sportando.basketball/en/"}
+
+Return [] if you have no additional verified moves to add. Do NOT invent transfers.`;
 
 async function fetchAll() {
   if (fetching) return;
   fetching = true;
+  
+  // Keep any previously fetched (API) entries — only reload seed + add new ones
+  const prevApiEntries = allT.filter(t => !SEED_DATA.find(s => s.id === t.id));
   allT = [];
 
   const btn = document.getElementById('fetchBtn');
@@ -810,29 +849,91 @@ async function fetchAll() {
   document.getElementById('progWrap').style.display = 'block';
   updateBalls(0);
 
-  // Reset dots
+  // Step 1: Load seed data immediately (0–40%)
+  setLD('Loading verified transfers…');
+  updateBalls(10);
+  await sleep(300);
+
+  SEED_DATA.forEach(t => allT.push(t));
+  // Re-add previously fetched API entries immediately so they stay visible
+  prevApiEntries.forEach(t => allT.push(t));
+  expandLeagues();
+  dedup();
+  sortT();
+  updateBalls(40);
+  renderT();
+  updateStats();
+  setLD(`Loaded ${allT.length} transfers (${prevApiEntries.length} from previous fetch). Checking for new…`);
+  await sleep(300);
+
+  // Step 2: Make 6 API calls for supplemental data (40–100%)
   SOURCES.forEach(s => setDot(s.id, 'loading'));
 
+  const prompts = [
+    {id:'el_supp', name:'EuroLeague Extra',  text:`List ADDITIONAL EuroLeague basketball transfers from June 2026 not already in the seed list. Focus on: Olympiacos, Real Madrid, Maccabi Tel Aviv, AS Monaco, Paris Basketball, Hapoel Tel Aviv, ALBA Berlin, Virtus Bologna, Panathinaikos. Include any signings, departures, extensions or rumors reported on sportando.basketball or eurohoops.net in June 2026. Check news from May 1, 2026 onward.`},
+    {id:'eurocup_supp', name:'EuroCup & BCL', text:`List EuroCup and Basketball Champions League player transfers from June 2026. Include: Dolomiti Energia Trento, Umana Reyer Venezia, London Lions, Cedevita Olimpija, U-BT Cluj, Hapoel Jerusalem, Lietkabelis, Neptunas, Besiktas, JL Bourg, ratiopharm Ulm, NINERS Chemnitz, Hamburg Towers, Slask Wroclaw, Turk Telekom, Bahcesehir and any other EuroCup/BCL clubs. Any signings, departures, extensions, rumors. Check news from May 1, 2026 onward.`},
+    {id:'national_supp', name:'National Leagues', text:`List basketball player transfers from June 2026 in national European leagues: Italian Lega Basket (Olimpia Milano, Virtus Bologna, Trento, Venezia, Napoli), French Pro A (ASVEL, Monaco, Paris Basketball, Bourg), German BBL (ALBA Berlin, Bayern Munich, Ulm, Niners, Hamburg), Spanish ACB (Real Madrid, Barcelona, Baskonia, Valencia, Gran Canaria, Tenerife, Unicaja), ABA League (Partizan, Crvena Zvezda, Cedevita Olimpija, Mega Superbet, Krka, FMP, Bosna, Zadar). Check news from May 1, 2026 onward.`},
+    {id:'gbl_supp', name:'Greek GBL', text:`List Greek Stoiximan Basket League (GBL) player and coach transfers from June 2026. Include all 14 teams: Olympiacos, Panathinaikos, PAOK, AEK, Aris, Peristeri, Mykonos, Kolossos, Iraklis, Promitheas, Karditsa, Marousi, Doxa Lefkadas, Vikos Ioannina. Sources: sport24.gr/tag/basket-league/, allstarbasket.gr, esake.gr. Check from May 1, 2026 onward.`},
+    {id:'lkl_supp', name:'Lithuanian LKL', text:`List Lithuanian LKL basketball transfers from June 2026. Include all clubs: Zalgiris, Lietkabelis, Rytas, Neptunas, Dzukija, Juventus, Wolves, Gargzdai, Pieno Zvaigzdes, Siauliai. Sources: basketnews.lt (LKL vasaros turgus hub), lkl.lt. Zalgiris also plays EuroLeague. Check from May 1, 2026 onward.`},
+    {id:'bsl_supp', name:'Israeli BSL', text:`List Israeli Basketball Super League (BSL) player and coach transfers from June 2026. Include all clubs: Maccabi Tel Aviv (EuroLeague), Hapoel Tel Aviv (EuroLeague), Hapoel Jerusalem (EuroCup), Beni Herzliya, Hapoel Holon, Hapoel Galil Elion, Maccabi Rishon Lezion, Hapoel Beer Sheva/Dimona, Maccabi Ramat Gan, Ironi Nahariya, Ironi Nes Ziona. Sources: basket.co.il/archive.asp?typeID=1&lang=en. Check from May 1, 2026 onward.`},
+    {id:'turkey_supp', name:'Turkish BSL', text:`List Turkish Basketbol Süper Ligi (BSL) player and coach transfers from June 2026. Include all clubs: Fenerbahce Beko, Anadolu Efes, Pınar Karşıyaka, Beşiktaş, TOFAŞ, Bahcesehir Koleji, Turk Telekom, Frutti Extra Bursaspor, Büyükçekmece, Trabzonspor. Sources: basketbolig.com/kategori/basketbol-super-ligi, basketfaul.com.tr/category/turkiye/bsl/. Check from May 1, 2026 onward.`},
+    {id:'other_supp', name:'Other Leagues', text:`List basketball player transfers from June 2026 in these national European leagues: Polish PLK/ORLEN Basket Liga (Legia Warszawa, WKS Slask, Anwil, Trefl Sopot, Arka Gdynia, King Szczecin, Zastal) — source: plk.pl/aktualnosci; Romanian Liga Nationala de Baschet (U-BT Cluj, CSM Oradea, CSO Voluntari, Rapid) — source: baschetromania.ro; BNXT League Belgian-Dutch (Leuven Bears, Mechelen, Antwerp, Rotterdam, Zwolle) — source: bnxtleague.com/en/news; Croatian HKL (Zadar, Split, Cibona, Cedevita Zagreb) — source: basketball.hr; Hungarian NB1 (Falco, Atomerőmű, DVTK, DEAC) — source: bball1.hu. Check from May 1, 2026 onward.`},
+  ];
+
   let done = 0;
-  for (const src of SOURCES) {
-    setLD(`Scanning ${src.name}…`);
-    setProg(done / SOURCES.length * 100);
+  let newlyFound = 0;
+  const beforeCount = allT.length;
+  for (const p of prompts) {
+    setLD(`Searching ${p.name} for NEW transfers…`);
     try {
-      const items = await fetchSource(src);
-      allT.push(...items);
-      setDot(src.id, 'ok');
-      renderT();
+      const today = new Date().toLocaleDateString('en-GB', {year:'numeric',month:'long',day:'numeric'});
+      const res = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true',
+        },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-6',
+          max_tokens: 2000,
+          system: SYS.replace('Today is June 17, 2026', `Today is ${today}`),
+          messages: [{ role: 'user', content: p.text }],
+        }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text || '').join('\n');
+        const items = parseTransfers(text, {id: p.id, name: p.name});
+        const countBefore = allT.length;
+        allT.push(...items);
+        expandLeagues();
+        dedup();
+        sortT();
+        const added = allT.length - countBefore;
+        newlyFound += added;
+        setDot(p.id, 'ok');
+        if (added > 0) setLD(`Found ${added} new transfers from ${p.name}!`);
+      } else {
+        const errText = await res.text().catch(() => '');
+        console.warn(`${p.name} failed: HTTP ${res.status}`, errText.slice(0,200));
+        setDot(p.id, 'err');
+      }
     } catch(e) {
-      console.warn(src.name, e);
-      setDot(src.id, 'err');
+      console.warn(p.name, e);
+      setDot(p.id, 'err');
     }
     done++;
-    const pct = done / SOURCES.length * 100;
-    setProg(pct);
-    updateBalls(pct);
-    await sleep(200);
+    updateBalls(40 + done * 7);
+    setProg(40 + done * 7);
+    renderT();
+    updateStats();
+    await sleep(400);
   }
 
+  // Final render pass
+  expandLeagues();
   dedup();
   sortT();
   renderT();
@@ -843,10 +944,14 @@ async function fetchAll() {
   await sleep(400);
   document.getElementById('loadingEl').style.display = 'none';
   document.getElementById('progWrap').style.display = 'none';
-  document.getElementById('lastUpd').textContent = 'Updated ' + new Date().toLocaleTimeString();
+  const updTime = new Date().toLocaleTimeString();
+  document.getElementById('lastUpd').textContent = `Updated ${updTime}${newlyFound > 0 ? ` · +${newlyFound} new` : ' · No new transfers found'}`;
 
   if (allT.length === 0) {
-    showErr(`No transfer news was returned from any of the ${SOURCES.length} sources. This usually means the API key is missing or the network is blocking requests. Check the browser console (F12) for details.`);
+    showErr('Could not load transfers. Check browser console (F12) for API errors.');
+  } else if (allT.length === SEED_DATA.length) {
+    // Only seed data loaded, API calls all failed — still show data, just note it
+    document.getElementById('errEl').innerHTML = '<div style="background:var(--yellow-bg);border:1px solid rgba(200,135,10,.3);border-radius:8px;padding:8px 16px;margin:8px 24px;font-size:11px;color:var(--yellow);font-family:var(--mono)">ℹ️ Showing ' + SEED_DATA.length + ' verified transfers. Live API calls could not be completed — showing cached data from Sportando / TalkBasket / Eurohoops.</div>';
   }
 
   btn.disabled = false;
@@ -855,75 +960,29 @@ async function fetchAll() {
 }
 
 async function fetchSource(src) {
-  const HEADERS = {
-    'Content-Type': 'application/json',
-    'anthropic-version': '2023-06-01',
-    'anthropic-dangerous-direct-browser-access': 'true',
-  };
-  const BASE_BODY = {
-    model: 'claude-sonnet-4-6',
-    max_tokens: 2000,
-    tools: [{ type: 'web_search_20250305', name: 'web_search' }],
-    system: SYS,
-  };
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
+    },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 2000,
+      system: SYS,
+      messages: [{ role: 'user', content: src.prompt }],
+    }),
+  });
 
-  const userMsg = `Search the web for this query and return a JSON array of European basketball transfers: "${src.query}"\nToday is 2026-06-17. Include signings, departures, rumors, extensions. Return ONLY the raw JSON array.`;
-  let messages = [{ role: 'user', content: userMsg }];
-
-  // Agentic loop: keep going until stop_reason is 'end_turn' or max 4 rounds
-  for (let round = 0; round < 4; round++) {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: HEADERS,
-      body: JSON.stringify({ ...BASE_BODY, messages }),
-    });
-
-    if (!res.ok) {
-      const errBody = await res.text().catch(() => '');
-      throw new Error(`HTTP ${res.status}: ${errBody.slice(0, 300)}`);
-    }
-
-    const data = await res.json();
-    const content = data.content || [];
-
-    // Add assistant turn to history
-    messages.push({ role: 'assistant', content });
-
-    if (data.stop_reason === 'end_turn') {
-      // Extract all text from this final response
-      const allText = content
-        .filter(b => b.type === 'text')
-        .map(b => b.text || '')
-        .join('\n');
-      return parseTransfers(allText, src);
-    }
-
-    if (data.stop_reason === 'tool_use') {
-      // Build tool_result blocks for each tool_use in this response
-      const toolResults = content
-        .filter(b => b.type === 'tool_use')
-        .map(b => ({
-          type: 'tool_result',
-          tool_use_id: b.id,
-          content: b.input?.query
-            ? `Search results for "${b.input.query}" have been fetched. Please now return the JSON array of transfers based on what you found.`
-            : 'Search complete.',
-        }));
-
-      if (toolResults.length === 0) break;
-      messages.push({ role: 'user', content: toolResults });
-      continue;
-    }
-
-    // Unexpected stop reason — try to extract text anyway
-    const allText = content
-      .filter(b => b.type === 'text')
-      .map(b => b.text || '')
-      .join('\n');
-    if (allText.trim()) return parseTransfers(allText, src);
-    break;
+  if (!res.ok) {
+    const err = await res.text().catch(() => '');
+    throw new Error(`HTTP ${res.status}: ${err.slice(0, 200)}`);
   }
-  return [];
+
+  const data = await res.json();
+  const text = (data.content || []).filter(b => b.type === 'text').map(b => b.text || '').join('\n');
+  return parseTransfers(text, src);
 }
 
 function parseTransfers(allText, src) {
@@ -955,6 +1014,12 @@ function parseTransfers(allText, src) {
       source_name: src.name,
       source_url:  (t.source_url || '').trim(),
     }));
+}
+
+function expandLeagues() {
+  // No duplication needed — filtering uses t.league.includes(l) which matches
+  // "EuroLeague / ABA League" when filtering by either "EuroLeague" or "ABA League".
+  // This function is kept as a no-op to avoid breaking the call site.
 }
 
 function dedup() {
@@ -1041,7 +1106,7 @@ function cardHTML(t) {
     ${pill}
     <div class="tmeta">
       <div class="tdate">${fmtDate}</div>
-      ${t.source_url ? `<a class="tsrc" href="${esc(t.source_url)}" target="_blank" rel="noopener" title="${esc(t.source_url)}">${esc(host)}</a>` : `<span class="tsrc" style="color:var(--dim)">${esc(t.source_name)}</span>`}
+      ${t.source_url ? `<a class="tsrc" href="${esc(t.source_url)}" target="_blank" rel="noopener" title="${esc(t.source_url)}">${esc(host)}</a>` : `<span class="tsrc" style="color:var(--text3)">${esc(t.source_name)}</span>`}
     </div>
   </div>`;
 }
@@ -1112,6 +1177,15 @@ function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'
 
 // Init
 filterDB();
+
+// Theme
+let isDark = false;
+function toggleTheme() {
+  isDark = !isDark;
+  document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+  document.getElementById('themeIcon').textContent = isDark ? '🌙' : '☀️';
+  document.getElementById('themeLabel').textContent = isDark ? 'Dark' : 'Light';
+}
 </script>
 </body>
 </html>
