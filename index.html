@@ -347,13 +347,6 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
       <option value="">All Positions</option>
       <option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option><option>coach</option>
     </select>
-    <select class="fsel" id="fSrc" onchange="renderT()">
-      <option value="">All Sources</option>
-      <option>EuroLeague Official</option><option>EuroCup Official</option>
-      <option>BCL Official</option><option>ABA Liga Official</option>
-      <option>Sportando</option><option>Eurohoops</option><option>BasketNews</option>
-      <option>TalkBasket</option><option>RealGM</option><option>PBEurope</option>
-    </select>
     <div class="sf-btns">
       <button class="sfb a-all"  id="b-all"      onclick="setS('all')">All</button>
       <button class="sfb"        id="b-signed"   onclick="setS('signed')">✅ Signed</button>
@@ -1201,12 +1194,10 @@ function getF() {
   const q = normStr(document.getElementById('fSearch').value);
   const l = document.getElementById('fLeague').value;
   const p = document.getElementById('fPos').value;
-  const s = document.getElementById('fSrc').value;
   return allT.filter(t => {
     if (activeS !== 'all' && t.status !== activeS) return false;
     if (l && !t.league.toLowerCase().includes(l.toLowerCase())) return false;
     if (p && t.pos !== p) return false;
-    if (s && t.source_name !== s) return false;
     if (q) {
       const h = normStr(`${t.player} ${t.from} ${t.to} ${t.league} ${t.summary}`);
       if (!h.includes(q)) return false;
