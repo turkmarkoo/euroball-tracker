@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-19T12:02:14.078498+00:00",
-  "count": 188,
+  "generated_at": "2026-06-19T12:38:05.331111+00:00",
+  "count": 190,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -2086,6 +2086,34 @@
       "summary": "Ređaju se potpisi u ABA ligi: Cluj-Napoca ozvaničio četiri pojačanja",
       "source_name": "Basketball Sphere ABA",
       "source_url": "https://basketballsphere.com/redjaju-se-potpisi-u-aba-ligi-cluj-napoca-ozvanicio-cetiri-pojacanja/",
+      "_isNew": true
+    },
+    {
+      "id": "gen-real-madrid-update-euroleague",
+      "player": "Real Madrid faces financial hit over EuroLeague franchise deal",
+      "pos": "?",
+      "from": "?",
+      "to": "?",
+      "league": "Europe",
+      "status": "signed",
+      "date": "2026-06-19",
+      "summary": "Real Madrid faces financial hit over EuroLeague franchise deal",
+      "source_name": "Eurohoops",
+      "source_url": "https://www.eurohoops.net/en/euroleague/1981510/real-madrid-update-euroleague/",
+      "_isNew": true
+    },
+    {
+      "id": "gen-zaccharie-risacher-talks-atlanta-hawks-n",
+      "player": "Zaccharie Risacher revisits sophomore benchings: “I belong on an NBA court”",
+      "pos": "?",
+      "from": "?",
+      "to": "?",
+      "league": "Europe",
+      "status": "signed",
+      "date": "2026-06-19",
+      "summary": "Zaccharie Risacher revisits sophomore benchings: “I belong on an NBA court”",
+      "source_name": "Eurohoops",
+      "source_url": "https://www.eurohoops.net/en/nba-news/1981470/zaccharie-risacher-talks-atlanta-hawks-nba-france-fiba/",
       "_isNew": true
     },
     {
