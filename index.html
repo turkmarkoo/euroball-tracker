@@ -600,6 +600,33 @@ function exportPY() {
 // ═══════════════════════════════════════════════════════
 let allT = [], activeS = 'all', fetching = false;
 
+// ── API KEY MANAGEMENT ──────────────────────────────────────────────────────
+const API_KEY_STORAGE = 'euroball_anthropic_key';
+
+function getApiKey() {
+  return localStorage.getItem(API_KEY_STORAGE) || '';
+}
+
+function saveApiKey(val) {
+  const key = val.trim();
+  if (key) {
+    localStorage.setItem(API_KEY_STORAGE, key);
+    document.getElementById('apiKeyStatus').textContent = '✓ saved';
+    document.getElementById('apiKeyStatus').style.color = '#22c55e';
+  } else {
+    localStorage.removeItem(API_KEY_STORAGE);
+    document.getElementById('apiKeyStatus').textContent = '';
+  }
+}
+
+function initApiKeyUI() {
+  const key = getApiKey();
+  if (key) {
+    const inp = document.getElementById('apiKeyInput');
+    if (inp) { inp.value = key; document.getElementById('apiKeyStatus').textContent = '✓ saved'; document.getElementById('apiKeyStatus').style.color = '#22c55e'; }
+  }
+}
+
 // Real transfer data scraped from TalkBasket and Sportando (June 17, 2026)
 // This is the seed data — the API call supplements this with any recent news
 const SEED_DATA = [
@@ -900,6 +927,9 @@ const SEED_DATA = [
   {id:'s230', player:'Marek Blažević',           pos:'PG', from:'Free Agent',        to:'Zalgiris Kaunas',   league:'EuroLeague / LKL', status:'signed',  date:'2026-06-19', summary:'Marek Blažević rejoins Zalgiris Kaunas after four years away — returns to Kaunas',      source_name:'EuroLeague Official', source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/marek-blazevic-rejoins-zalgiris-after-four-years-away/'},
   {id:'s231', player:'Moses Wright',             pos:'PF', from:'Zalgiris Kaunas',   to:'Free Agent',        league:'EuroLeague / LKL', status:'left',    date:'2026-06-18', summary:'Moses Wright headlines trio of Zalgiris exits ahead of 2026-27 rebuild',               source_name:'EuroLeague Official', source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/moses-wright-headlines-trio-of-zalgiris-exits/'},
   {id:'s232', player:'Alex Mumbrù',              pos:'coach', from:'Free Agent',     to:'Virtus Bologna',    league:'EuroLeague / Lega', status:'signed',  date:'2026-06-19', summary:'Virtus Bologna officially appoint Alex Mumbrù as new head coach for 2026-27',           source_name:'EuroLeague Official', source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/virtus-appoints-alex-mumbru-as-its-new-head-coach/'},
+
+  // ══ SPORTANDO June 19 — scraped directly ══
+  {id:'s233', player:'Demetre Rivers',           pos:'SF', from:'Pallacanestro Brescia', to:'Free Agent', league:'Lega',         status:'left',     date:'2026-06-19', summary:'Pallacanestro Brescia part ways with Demetre Rivers after two seasons — helped team reach 2024-25 Finals', source_name:'Sportando', source_url:'https://sportando.basketball/en/pallacanestro-brescia-part-ways-with-demetre-rivers-after-two-seasons/'},
 ];
 const SOURCES = [
   {id:'national_supp', name:'Lega+BBL+ACB'},
@@ -964,7 +994,7 @@ async function fetchAll() {
   // Raw GitHub files allow CORS — works directly from browser
   setLD('Fetching latest from scraper…');
   try {
-    const RAW = 'https://raw.githubusercontent.com/blazerculj-max/EB-scrape/main/transfers_new.json';
+    const RAW = 'https://raw.githubusercontent.com/turkmarkoo/euroball-tracker/main/transfers_new.json';
     const r = await fetch(RAW + '?t=' + Date.now()); // cache-bust
     if (r.ok) {
       const data = await r.json();
@@ -1094,6 +1124,7 @@ async function fetchAll() {
         'Content-Type': 'application/json',
         'anthropic-version': '2023-06-01',
         'anthropic-dangerous-direct-browser-access': 'true',
+        'x-api-key': getApiKey(),
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-6',
@@ -1119,7 +1150,7 @@ async function fetchAll() {
       msgs.push({ role: 'user', content: toolBlocks.map(b => ({ type: 'tool_result', tool_use_id: b.id, content: b.content || b.output || '' })) });
       const next = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
+        headers: { 'Content-Type': 'application/json', 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true', 'x-api-key': getApiKey() },
         body: JSON.stringify({ model: 'claude-sonnet-4-6', max_tokens: 8000, tools: [{ type: 'web_search_20250305', name: 'web_search' }], system: 'Return the raw HTML content you fetched. Nothing else.', messages: msgs }),
       });
       if (!next.ok) break;
@@ -1178,6 +1209,7 @@ async function fetchAll() {
           'Content-Type': 'application/json',
           'anthropic-version': '2023-06-01',
           'anthropic-dangerous-direct-browser-access': 'true',
+          'x-api-key': getApiKey(),
         },
         body: JSON.stringify({
           model: 'claude-sonnet-4-6',
@@ -1233,6 +1265,7 @@ async function fetchAll() {
                 'Content-Type': 'application/json',
                 'anthropic-version': '2023-06-01',
                 'anthropic-dangerous-direct-browser-access': 'true',
+                'x-api-key': getApiKey(),
               },
               body: JSON.stringify({
                 model: 'claude-sonnet-4-6',
@@ -1311,6 +1344,7 @@ async function fetchSource(src) {
       'Content-Type': 'application/json',
       'anthropic-version': '2023-06-01',
       'anthropic-dangerous-direct-browser-access': 'true',
+          'x-api-key': getApiKey(),
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
@@ -1499,6 +1533,7 @@ function markVisibleAsSeen() {
 }
 
 loadSeen();
+initApiKeyUI();
 
 function renderT() {
   const f = getF();
