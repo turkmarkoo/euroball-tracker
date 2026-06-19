@@ -305,15 +305,11 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
   </div></div></div>
   <div class="src-bar" id="srcBar">
     <span style="font-family:var(--mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px">Live sources:</span>
-    <span class="src-item"><span class="src-dot" id="d-el_supp"></span>EuroLeague</span>
-    <span class="src-item"><span class="src-dot" id="d-eurocup_supp"></span>EuroCup/BCL</span>
-    <span class="src-item"><span class="src-dot" id="d-national_supp"></span>National Leagues</span>
-    <span class="src-item"><span class="src-dot" id="d-gbl_supp"></span>Greek GBL</span>
-    <span class="src-item"><span class="src-dot" id="d-lkl_supp"></span>LKL</span>
-    <span class="src-item"><span class="src-dot" id="d-bsl_supp"></span>Israeli BSL</span>
-    <span class="src-item"><span class="src-dot" id="d-turkey_supp"></span>Turkish BSL</span>
-    <span class="src-item"><span class="src-dot" id="d-other_supp"></span>Others</span>
-    <span class="src-item"><span class="src-dot" id="d-bnxt_supp"></span>BNXT</span>
+    <span id="scrapeStatus" style="font-family:var(--mono);font-size:10px;color:var(--text3)">Scraping URL database…</span>
+    <span class="src-item"><span class="src-dot" id="d-national_supp"></span>Lega+BBL+ACB</span>
+    <span class="src-item"><span class="src-dot" id="d-gbl_supp"></span>Greek+Israeli</span>
+    <span class="src-item"><span class="src-dot" id="d-turkey_supp"></span>Turkish+BNXT</span>
+    <span class="src-item"><span class="src-dot" id="d-other_supp"></span>PLK+LKL+More</span>
   </div>
 
   <div class="prog-wrap" id="progWrap"><div class="prog-bar" id="progBar"></div></div>
@@ -333,6 +329,11 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
       <span class="sw-icon">🔍</span>
       <input class="fsearch" id="fSearch" placeholder="Search player, club, league…" oninput="renderT()"/>
     </div>
+    <div class="sw">
+      <span class="sw-icon">🏀</span>
+      <input class="fsearch" id="fClub" placeholder="Filter by club…" oninput="updateClubDropdown();renderT()" list="clubList" style="padding-left:28px"/>
+    </div>
+    <datalist id="clubList"></datalist>
     <select class="fsel" id="fLeague" onchange="renderT()">
       <option value="">All Leagues</option>
       <option>EuroLeague</option><option>EuroCup</option><option>ABA League</option>
@@ -510,6 +511,8 @@ const DB = [
   {cat:'News',        league:'News',        name:'AllStarBasket GBL Transfers',  url:'https://www.allstarbasket.gr/ellada/greek-basketball-league/transfer-market-oi-kiniseis-ton-14-omadon-tis-gbl', path:'/', diff:'Medium (Greek)'},
   {cat:'News',        league:'News',        name:"RealGM Int'l Transactions",   url:'https://basketball.realgm.com/international/transactions', path:'/international/transactions', diff:'Easy ⭐'},
   {cat:'News',        league:'News',        name:'Eurobasket.com BNXT Transfers',url:'https://www.eurobasket.com/BNXT-League/basketball-Transfers.aspx', path:'/BNXT-League/basketball-Transfers.aspx', diff:'Easy'},
+  {cat:'News',        league:'News',        name:'Basketball Sphere (transferi)', url:'https://basketballsphere.com/evroliga/transferi/', path:'/evroliga/transferi/', diff:'Easy (Serbian)'},
+  {cat:'News',        league:'News',        name:'Basketball Sphere (ABA)',       url:'https://basketballsphere.com/aba-liga/', path:'/aba-liga/', diff:'Easy (Serbian)'},
 ];
 
 // ═══════════════════════════════════════════════════════
@@ -870,40 +873,52 @@ const SEED_DATA = [
   {id:'s214', player:'Ben Burnham',               pos:'SG', from:'Free Agent',          to:'NINERS Chemnitz',   league:'BBL / EuroCup', status:'signed',   date:'2026-06-17', summary:'NINERS Chemnitz capture Ben Burnham — American guard joins for EuroCup 2026-27 season',           source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/chemnitz-captures-ben-burnham/'},
   {id:'s215', player:'Chibuzo Agbo',              pos:'PF', from:'Cholet Basket',       to:'Kids&Us Manresa',   league:'ACB / BCL',     status:'signed',   date:'2026-06-17', summary:'Manresa reel in Chibuzo Agbo from BCL club Cholet Basket — two-year deal for Nigerian guard',      source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/manresa-reels-in-chibuzo-agbo/'},
   {id:'s216', player:'Shavar Reynolds',           pos:'PG', from:'London Lions',        to:'TOFAŞ',             league:'Turkish BSL / EuroCup', status:'signed', date:'2026-06-17', summary:'Shavar Reynolds joins Tofas and reunites with Coach Cancellieri after London Lions season',    source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/shavar-reynolds-joins-tofas-reunites-with-coach-cancellieri/'},
+
+  // ══ ABA LIGA — June 18, 2026 (scraped via browser) ══
+  {id:'s216a', player:'Lazar Stefanović',        pos:'SF', from:'FMP',                 to:'Igokea m:tel',      league:'ABA League',   status:'signed',   date:'2026-06-18', summary:'Igokea m:tel sign 201cm guard/forward Lazar Stefanović (2002) from FMP on multi-year deal',      source_name:'ABA Liga', source_url:'https://www.aba-liga.com/news/54911/lazar-stefanovic-moves-from-fmp-to-igokea-m-tel/'},
+  {id:'s217', player:'Vladimir Kontić',          pos:'PG', from:'Free Agent',          to:'Mega Superbet',     league:'ABA League',   status:'signed',   date:'2026-06-18', summary:'Mega Superbet sign 20-year-old Vladimir Kontić for upcoming ABA League season',                   source_name:'ABA Liga', source_url:'https://www.aba-liga.com/news/54912/mega-superbet-ink-contract-with-vladimir-kontic/'},
+
+  // ══ SPORTANDO June 18 — missed by scraper (non-official category) ══
+  {id:'s219', player:'Tony Snell',               pos:'SG', from:'Boulazac',           to:'Cholet Basket',     league:'Pro A',        status:'signed',   date:'2026-06-18', summary:'Former NBA veteran Tony Snell signs with Cholet — made French league debut at Boulazac last season', source_name:'Sportando', source_url:'https://sportando.basketball/en/cholet-signs-former-nba-veteran-tony-snell-retains-noah-locke/'},
+  {id:'s220', player:'Noah Locke',               pos:'SG', from:'Cholet Basket',      to:'Cholet Basket',     league:'Pro A',        status:'extended', date:'2026-06-18', summary:'Cholet retain guard Noah Locke alongside new signing Tony Snell for 2026-27 Betclic ELITE season',   source_name:'Sportando', source_url:'https://sportando.basketball/en/cholet-signs-former-nba-veteran-tony-snell-retains-noah-locke/'},
+
+  // ══ SPORTANDO June 18 — fetched directly ══
+  {id:'s221', player:'Ezra Manjon',              pos:'PG', from:'Bertram Derthona',   to:'Kolossos Rhodes',   league:'GBL',          status:'signed',   date:'2026-06-18', summary:'Kolossos Rhodes officially sign Ezra Manjon — PG joins from Tortona alongside Payton Willis',     source_name:'Sportando', source_url:'https://sportando.basketball/en/kolossos-rhodes-sign-ezra-manjon-payton-willis/'},
+  {id:'s222', player:'Tyler Dorsey',             pos:'SG', from:'Olympiacos',         to:'Olympiacos',        league:'EuroLeague',   status:'rumor',    date:'2026-06-18', summary:'Olympiacos reportedly working to extend Tyler Dorsey — player pushing for new multi-year deal',    source_name:'Sportando', source_url:'https://sportando.basketball/en/olympiacos-reportedly-working-to-extend-tyler-dorseys-deal/'},
+
+  // ══ EUROCUP OFFICIAL June 19, 2026 — scraped today ══
+  {id:'s223', player:'Brandon Murray',           pos:'PG', from:'Free Agent',        to:'Cedevita Olimpija',  league:'ABA League / EuroCup', status:'signed',  date:'2026-06-19', summary:'Cedevita Olimpija sign guard Brandon Murray for 2026-27 EuroCup campaign',              source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/cedevita-olimpija-signs-guard-brandon-murray/'},
+  {id:'s224', player:'Jamuni McNeace',           pos:'C',  from:'Free Agent',        to:'TOFAŞ',              league:'Turkish BSL / EuroCup', status:'signed',  date:'2026-06-19', summary:'TOFAŞ add size with center Jamuni McNeace signing for 2026-27 season',                 source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/tofas-adds-size-with-jamuni-mcneace/'},
+  {id:'s225', player:'Kyle Alexander',           pos:'C',  from:'Free Agent',        to:'PAOK',               league:'GBL / EuroCup',        status:'signed',  date:'2026-06-19', summary:'PAOK reel in experienced center Kyle Alexander — joins Calathes and Murray in Thessaloniki', source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/paok-reels-in-experienced-center-kyle-alexander/'},
+  {id:'s226', player:'Lukasz Kolenda',           pos:'PG', from:'Free Agent',        to:'Kids&Us Manresa',    league:'ACB / EuroCup',        status:'signed',  date:'2026-06-19', summary:'Kids&Us Manresa add Polish point guard Lukasz Kolenda for upcoming EuroCup campaign',   source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/manresa-adds-point-guard-lukasz-kolenda/'},
+  {id:'s227', player:'Dovydas Romančenko',       pos:'SF', from:'BC Siauliai',       to:'BC Siauliai',        league:'LKL / EuroCup',        status:'extended', date:'2026-06-19', summary:'Siauliai keep forward Dovydas Romančenko — stays for EuroCup debut season',            source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/siauliai-keeps-forward-dovydas-romancenko/'},
+  {id:'s228', player:'Iverson Molinar',          pos:'PG', from:'Free Agent',        to:'Budućnost VOLI',     league:'ABA League / EuroCup', status:'signed',  date:'2026-06-19', summary:'Budućnost VOLI tab scoring guard Iverson Molinar — high-octane PG joins Podgorica',    source_name:'EuroCup Official', source_url:'https://www.euroleaguebasketball.net/en/eurocup/news/buducnost-tabs-scoring-guard-iverson-molinar/'},
+  // ══ SPORTANDO June 19, 2026 ══
+  {id:'s229', player:'Stefan Lazarević',         pos:'C',  from:'Surne Bilbao',      to:'Free Agent',         league:'ACB',                  status:'left',    date:'2026-06-19', summary:'Stefan Lazarević will not continue with Surne Bilbao Basket next season',             source_name:'Sportando', source_url:'https://sportando.basketball/en/surne-bilbao-stefan-lazarevic-leaves-the-club/'},
+
+  // ══ EUROLEAGUE June 19 — missed by filter ══
+  {id:'s230', player:'Marek Blažević',           pos:'PG', from:'Free Agent',        to:'Zalgiris Kaunas',   league:'EuroLeague / LKL', status:'signed',  date:'2026-06-19', summary:'Marek Blažević rejoins Zalgiris Kaunas after four years away — returns to Kaunas',      source_name:'EuroLeague Official', source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/marek-blazevic-rejoins-zalgiris-after-four-years-away/'},
+  {id:'s231', player:'Moses Wright',             pos:'PF', from:'Zalgiris Kaunas',   to:'Free Agent',        league:'EuroLeague / LKL', status:'left',    date:'2026-06-18', summary:'Moses Wright headlines trio of Zalgiris exits ahead of 2026-27 rebuild',               source_name:'EuroLeague Official', source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/moses-wright-headlines-trio-of-zalgiris-exits/'},
+  {id:'s232', player:'Alex Mumbrù',              pos:'coach', from:'Free Agent',     to:'Virtus Bologna',    league:'EuroLeague / Lega', status:'signed',  date:'2026-06-19', summary:'Virtus Bologna officially appoint Alex Mumbrù as new head coach for 2026-27',           source_name:'EuroLeague Official', source_url:'https://www.euroleaguebasketball.net/en/euroleague/news/virtus-appoints-alex-mumbru-as-its-new-head-coach/'},
 ];
 const SOURCES = [
-  {id:'el_supp',       name:'EuroLeague Extra'},
-  {id:'eurocup_supp',  name:'EuroCup & BCL'},
-  {id:'national_supp', name:'National Leagues'},
-  {id:'gbl_supp',      name:'Greek GBL'},
-  {id:'lkl_supp',      name:'Lithuanian LKL'},
-  {id:'bsl_supp',      name:'Israeli BSL'},
-  {id:'turkey_supp',   name:'Turkish BSL'},
-  {id:'other_supp',    name:'Other Leagues'},
-  {id:'bnxt_supp',     name:'BNXT League'},
+  {id:'national_supp', name:'Lega+BBL+ACB'},
+  {id:'gbl_supp',      name:'Greek+Israeli'},
+  {id:'turkey_supp',   name:'Turkish+BNXT'},
+  {id:'other_supp',    name:'PLK+LKL+More'},
 ];
 
-const SYS = `You are a European basketball transfer expert assistant. Today is ${new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})}.
+const SYS = `You are a European basketball transfer tracker. Use web_search to find the very latest European basketball transfer news.
 
-IMPORTANT: Your goal is to find the MOST RECENT European basketball transfers and signings — especially any announced in the last few days that may not be widely reported yet. Focus on news from April 1, 2026 onward.
+STATUS VALUES (use exactly one):
+- "signed" = joins, arrives, new contract
+- "extended" = stays, renews, retained, kept, exit option unused
+- "left" = departs, released, parts ways
+- "rumor" = reportedly, expected, linked, close to
 
-The tracker already has ~178 confirmed transfers. Do NOT repeat transfers involving these players (already tracked):
-Dario Saric, Jordan Loyd, Saben Lee, Maxwell Lewis, Kobi Simmons, Ibon Navarro, Vladimir Lucic, Joel Parra, Dario Brizuela, Tonye Jekiri, Kevin Yogi Ferrell, Alec Peters, Mike James, Nigel Hayes-Davis, Nick Calathes, Jaleen Smith, Matej Ponitka, Ismet Akpinar, Jerry Boutsiele, Andrej Zakelj, Fletcher Magee, Brandon Rush, Dejan Davidovac, Matthew Hurt, Dragan Milosavljevic, Marko Kovacevic, Matija Belic, Ranko Simovic, Jamiya Neal, Derek Willis, Alex Mumbru, Chibuzo Agbo, Josep Peris, Alessandro Bertini, Marco Spissu, DeWayne Russell, JT Thor, RaeQuan Battle, Ezra Manjon, Jabari Parker, Cameron Payne, Cory Joseph, Tyrique Jones, Nenad Dimitrijevic, Ismael Bako, Kostas Antetokounmpo, Adam Mokoka, Both Gach, Chris Silva, Trevor Hudgins, Payton Willis, Nazareth Mitrou-Long, Martynas Echodas, Warren Washington, Aleksa Radanov, Joseph Girard III, Nikos Chougkaz.
+OUTPUT: Respond with ONLY a valid JSON array — no markdown, no explanation, no preamble.
+Format: [{"player":"Full Name","pos":"PG|SG|SF|PF|C|coach","from":"Previous Club or Free Agent","to":"New Club","league":"EuroLeague|EuroCup|BCL|ABA League|BBL|ACB|Lega|Pro A|Turkish BSL|GBL|Israeli BSL|LKL|BNXT|PLK|Romanian LNB|other","status":"signed|left|extended|rumor","date":"2026-MM-DD","summary":"Max 120 chars with key facts","source_url":"https://article-url/"}]
 
-IMPORTANT STATUS RULES — use exactly these values:
-- "signed" = new signing, joins, arrives
-- "extended" = renews, stays, kept, keeps, remains, exit option unused, contract extension, "will continue"  
-- "left" = departs, released, free agent, parts ways
-- "rumor" = linked, reportedly, close to, targeting
-
-
-{"player":"Full Name","pos":"PG|SG|SF|PF|C|coach","from":"Club or Free Agent","to":"Club","league":"EuroLeague|EuroCup|BCL|ABA League|BBL|ACB|Lega|Pro A|Turkish BSL|Greek GBL|Israeli BSL|LKL|BNXT|PLK|Romanian LNB|other","status":"signed|left|extended|rumor","date":"2026-MM-DD","summary":"One sentence, max 120 chars. Include key detail (years, contract length, stats).","source_url":"https://exact-article-url-if-known/"}
-
-CRITICAL OUTPUT FORMAT: Respond with ONLY a JSON array — no preamble, no explanation. Use web_search to find latest news, then output JSON immediately.
-
-Each item: {"player":"Name","pos":"PG|SG|SF|PF|C|coach","from":"Club","to":"Club","league":"EuroLeague|EuroCup|BCL|ABA League|BBL|ACB|Lega|Pro A|Turkish BSL|Greek GBL|Israeli BSL|LKL|BNXT|PLK|Romanian LNB|other","status":"signed|left|extended|rumor","date":"2026-MM-DD","summary":"max 120 chars","source_url":"https://url/"}
-
-Status: signed=joins/arrives, extended=stays/renews/keeps/retained, left=departs/released, rumor=reportedly/expected/linked
 Return [] if nothing new. Never invent.`;
 
 async function fetchAll() {
@@ -944,91 +959,216 @@ async function fetchAll() {
   setLD(`Loaded ${allT.length} transfers (${prevApiEntries.length} from previous fetch). Checking for new…`);
   await sleep(300);
 
-  // Step 1b: Scrape EuroCup news directly from euroleaguebasketball.net/__NEXT_DATA__
-  setLD('Scraping EuroCup official news…');
+  // Step 1b: Fetch live data from GitHub-hosted scraper output (transfers_new.json)
+  // This is updated every 30 minutes by GitHub Actions running scrape.py
+  // Raw GitHub files allow CORS — works directly from browser
+  setLD('Fetching latest from scraper…');
   try {
-    const ecResp = await fetch('https://www.euroleaguebasketball.net/eurocup/news/');
-    const ecHtml = await ecResp.text();
-    const ndMatch = ecHtml.match(/<script id="__NEXT_DATA__"[^>]*>(.*?)<\/script>/s);
-    if (ndMatch) {
-      const nd = JSON.parse(ndMatch[1]);
-      const feed = nd?.props?.pageProps?.feed?.data || [];
-      const ecItems = feed
-        .filter(a => /sign|join|extend|keep|renew|return|stay|land|add|acqui|depart|left|reload|reunit|ink|pen|captur/i.test(a.heroMedia?.title || ''))
-        .map(a => ({
-          id: 'eurocup-' + (a.slug||'').slice(0,20),
-          player: (a.heroMedia?.title || a.slug).replace(/^(.*?)(sign|join|extend|keep|renew|return|stay|land|add|acqui|depart|left|reload|reunit|ink|pen|captur).*/i, '$1').trim().replace(/^(.*?)\s+(signs?|joins?|extends?|keeps?|returns?|stays?|lands?|reunites?|inks?|pens?|captures?).*$/i, '$1').trim() || 'Unknown',
-          pos: '?',
-          from: 'Unknown',
-          to: (a.heroMedia?.title || '').match(/(?:at|with|for)\s+([A-Z][^,\.]+)/)?.[1]?.trim() || 'Unknown',
-          league: 'EuroCup',
-          status: /extend|keep|renew|stay|return|reload|reunit/i.test(a.heroMedia?.title||'') ? 'extended' : /depart|left|leave/i.test(a.heroMedia?.title||'') ? 'left' : 'signed',
-          date: (a.publishDate||'').slice(0,10),
-          summary: (a.content?.teaser || a.articleMetadata?.description || a.heroMedia?.title || '').slice(0,120),
-          source_name: 'EuroCup Official',
-          source_url: 'https://www.euroleaguebasketball.net' + (a.generatedUrl||'/en/eurocup/news/'+a.slug+'/'),
-        }));
+    const RAW = 'https://raw.githubusercontent.com/blazerculj-max/EB-scrape/main/transfers_new.json';
+    const r = await fetch(RAW + '?t=' + Date.now()); // cache-bust
+    if (r.ok) {
+      const data = await r.json();
+      const items = (data.items || []).map(t => ({...t, _isNew: true}));
       const before = allT.length;
-      allT.push(...ecItems);
-      dedup();
-      sortT();
+      allT.push(...items);
+      dedup(); sortT();
       const added = allT.length - before;
-      if (added > 0) { renderT(); setLD(`Found ${added} new EuroCup moves!`); }
+      if (added > 0) {
+        renderT(); updateStats();
+        setLD(`✓ Scraper: +${added} new (generated ${(data.generated_at||'').slice(0,16).replace('T',' ')} UTC)`);
+        await sleep(500);
+      }
     }
-  } catch(e) { console.warn('EuroCup scrape failed:', e); }
+  } catch(e) { console.warn('Scraper JSON fetch failed:', e.message); }
+  updateBalls(45);
 
-  // Step 1c: Scrape EuroLeague news directly from euroleaguebasketball.net/__NEXT_DATA__
-  setLD('Scraping EuroLeague official news…');
-  try {
-    const elResp = await fetch('https://www.euroleaguebasketball.net/euroleague/news/');
-    const elHtml = await elResp.text();
-    const ndMatch2 = elHtml.match(/<script id="__NEXT_DATA__"[^>]*>(.*?)<\/script>/s);
-    if (ndMatch2) {
-      const nd2 = JSON.parse(ndMatch2[1]);
-      const feed2 = nd2?.props?.pageProps?.feed?.data || [];
-      const elItems = feed2
-        .filter(a => /sign|join|extend|keep|renew|return|stay|land|add|acqui|depart|left|reload|reunit|ink|pen|captur/i.test(a.heroMedia?.title || ''))
+  // Step 2: Scrape every site in the URL Database (DB array)
+  // Groups DB entries into batches and fetches each one via Anthropic API proxy
+  // which runs server-side — no CORS restrictions.
+
+  // Parser functions keyed by hostname pattern
+  function parseNextData(html, league, sourceName, sourceUrl) {
+    const m = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+    if (!m) return [];
+    try {
+      const nd = JSON.parse(m[1]);
+      const feed = nd?.props?.pageProps?.feed?.data || [];
+      return feed
+        .filter(a => /sign|join|extend|keep|renew|return|stay|land|add|acqui|depart|exit|left|reload|reunit|ink|pen|captur|tab|reel|appoint|part.way|trio|duo|head.coach|coach|bid.farewell|farewell|wave|goodbye|complet|confirm|unveil|announc|lock|secur|seal|immers|bring|lure|back|pens|new.deal|new.contract|swap|trade|mutual/i.test(a.heroMedia?.title || ''))
         .map(a => ({
-          id: 'euroleague-' + (a.slug||'').slice(0,20),
-          player: (a.heroMedia?.title || a.slug),
-          pos: '?',
-          from: 'Unknown',
-          to: 'Unknown',
-          league: 'EuroLeague',
-          status: /extend|keep|renew|stay|return|reload|reunit/i.test(a.heroMedia?.title||'') ? 'extended' : /depart|left|leave/i.test(a.heroMedia?.title||'') ? 'left' : 'signed',
-          date: (a.publishDate||'').slice(0,10),
+          id: 'nd-' + a.slug,
+          player: a.heroMedia?.title || a.slug,
+          pos: '?', from: '?', to: '?',
+          league,
+          status: /extend|keep|renew|stay|reload|reunit/i.test(a.heroMedia?.title||'') ? 'extended'
+                : /depart|left|leave/i.test(a.heroMedia?.title||'') ? 'left' : 'signed',
+          date: (a.publishDate||'').slice(0,10) || new Date().toISOString().slice(0,10),
           summary: (a.content?.teaser || a.articleMetadata?.description || a.heroMedia?.title || '').slice(0,120),
-          source_name: 'EuroLeague Official',
-          source_url: 'https://www.euroleaguebasketball.net' + (a.generatedUrl||'/en/euroleague/news/'+a.slug+'/'),
+          source_name: sourceName,
+          source_url: 'https://www.euroleaguebasketball.net' + (a.generatedUrl || ''),
+          _isNew: true,
         }));
-      const before2 = allT.length;
-      allT.push(...elItems);
-      dedup();
-      sortT();
-      const added2 = allT.length - before2;
-      if (added2 > 0) { renderT(); setLD(`Found ${added2} new EuroLeague moves!`); }
+    } catch(e) { return []; }
+  }
+
+  function parseAbaLiga(html, league, sourceName) {
+    const results = [], seen = new Set();
+    const re = /href="(https:\/\/www\.aba-liga\.com\/news\/(\d+)\/([^"]+))"[^>]*>\s*([^<]{5,120})/g;
+    let m;
+    while ((m = re.exec(html)) !== null) {
+      const [, url, id, , rawTitle] = m;
+      const title = rawTitle.replace(/\s+/g,' ').trim();
+      if (!seen.has(id) && title.length > 5) {
+        seen.add(id);
+        results.push({
+          id: 'aba-' + id, player: title, pos: '?', from: '?', to: '?', league,
+          status: /extend|renew|stay|kept|keep|continu/i.test(title) ? 'extended'
+                : /depart|left|leav|exit|part/i.test(title) ? 'left' : 'signed',
+          date: new Date().toISOString().slice(0,10),
+          summary: title.slice(0,120), source_name: sourceName, source_url: url, _isNew: true,
+        });
+      }
     }
-  } catch(e) { console.warn('EuroLeague scrape failed:', e); }
+    return results;
+  }
 
-  // Step 2: Make API calls for supplemental data (40–100%)
+  function parseGenericLinks(html, league, sourceName, baseUrl) {
+    // Generic parser: finds <h2>/<h3> article links and extracts titles + dates
+    // Also handles Serbian/multilingual sites by using slug-based status inference
+    const results = [], seen = new Set();
+    // Match h2/h3 links AND standalone links with title text (covers WordPress article cards)
+    const re = /<(?:h[23]|div)[^>]*>\s*<a\s+href="(https?:\/\/[^"#]+)"[^>]*>\s*([^<]{5,200})\s*<\/a>/g;
+    let m;
+    // Skip patterns: navigation, categories, pagination
+    const skipSlugs = new Set(['home','news','about','contact','results','stats','teams','players','video',
+      'najnovije','evroliga','aba-liga','transferi','kladionica','slotovi','category','page','tag']);
+    while ((m = re.exec(html)) !== null) {
+      const [, url, rawTitle] = m;
+      const title = rawTitle.replace(/\s+/g,' ').trim();
+      if (title.length < 5 || title.length > 200) continue;
+      const slug = url.split('/').filter(Boolean).pop()?.slice(0,60) || '';
+      if (!slug || seen.has(slug) || skipSlugs.has(slug.toLowerCase())) continue;
+      // Skip pure category/nav URLs (no hyphen = likely a category page)
+      if (!slug.includes('-')) continue;
+      seen.add(slug);
+      // Date: look for DD/MM/YYYY or YYYY-MM-DD near the match
+      const before = html.slice(Math.max(0, m.index-800), m.index);
+      const after = html.slice(m.index, m.index+300);
+      const ctx = before + after;
+      const d1 = ctx.match(/(\d{2})\/(\d{2})\/(\d{4})/g);
+      const d2 = ctx.match(/(\d{4}-\d{2}-\d{2})/g);
+      const rawDate = (d1 ? d1[d1.length-1] : '') || (d2 ? d2[0] : '');
+      const date = rawDate.includes('/')
+        ? rawDate.replace(/(\d{2})\/(\d{2})\/(\d{4})/, '$3-$2-$1')
+        : rawDate || new Date().toISOString().slice(0,10);
+      // Status inference — English AND Serbian keywords
+      const t = (title + ' ' + slug).toLowerCase();
+      const status = /extend|renew|stay|kept|keep|continu|remain|unused|retain|ostaje|produz|ostao|nastav/i.test(t) ? 'extended'
+                   : /depart|left|leav|part.way|exit|releas|napustio|napusta|odlazi|otisao|raskinuo/i.test(t) ? 'left'
+                   : /report|rumor|expect|close.to|target|link|reportedly|zainteresov|pregovara|blizu|navodno/i.test(t) ? 'rumor'
+                   : 'signed';
+      results.push({
+        id: 'gen-' + slug.slice(0,40), player: title, pos: '?', from: '?', to: '?', league,
+        status, date, summary: title.slice(0,120),
+        source_name: sourceName, source_url: url, _isNew: true,
+      });
+    }
+    return results;
+  }
+
+  function parseHtml(html, dbEntry) {
+    const url = dbEntry.url;
+    const league = dbEntry.league;
+    const name = dbEntry.name;
+    // Route to correct parser based on URL
+    if (url.includes('euroleaguebasketball.net')) return parseNextData(html, league, name, url);
+    if (url.includes('aba-liga.com'))             return parseAbaLiga(html, league, name);
+    return parseGenericLinks(html, league, name, url);
+  }
+
+  // Fetch each DB entry via Anthropic API (server-side, no CORS)
+  async function scrapeUrl(dbEntry) {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'anthropic-version': '2023-06-01',
+        'anthropic-dangerous-direct-browser-access': 'true',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 8000,
+        tools: [{ type: 'web_search_20250305', name: 'web_search' }],
+        system: 'You are a web page fetcher. Fetch the URL given and return its FULL raw HTML content verbatim, with no commentary, no summary, no JSON wrapping. Just the raw HTML text of the page.',
+        messages: [{ role: 'user', content: `Fetch this URL and return the raw HTML: ${dbEntry.url}` }],
+      }),
+    });
+    if (!res.ok) return [];
+    let curData = await res.json();
+    let msgs = [{ role: 'user', content: `Fetch this URL and return the raw HTML: ${dbEntry.url}` }];
+    let html = '';
+    let turns = 0;
+    while (turns < 5) {
+      const blocks = curData.content || [];
+      const text = blocks.filter(b => b.type === 'text').map(b => b.text).join('');
+      if (text.length > 200) { html = text; break; }
+      if (curData.stop_reason !== 'tool_use') break;
+      const toolBlocks = blocks.filter(b => b.type === 'tool_use');
+      if (!toolBlocks.length) break;
+      msgs.push({ role: 'assistant', content: blocks });
+      msgs.push({ role: 'user', content: toolBlocks.map(b => ({ type: 'tool_result', tool_use_id: b.id, content: b.content || b.output || '' })) });
+      const next = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
+        body: JSON.stringify({ model: 'claude-sonnet-4-6', max_tokens: 8000, tools: [{ type: 'web_search_20250305', name: 'web_search' }], system: 'Return the raw HTML content you fetched. Nothing else.', messages: msgs }),
+      });
+      if (!next.ok) break;
+      curData = await next.json();
+      turns++;
+    }
+    return html.length > 100 ? parseHtml(html, dbEntry) : [];
+  }
+
   SOURCES.forEach(s => setDot(s.id, 'loading'));
-
-  const fetchDate = new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
-  const prompts = [
-    {id:'el_supp', name:'EuroLeague Extra',  text:`Today is ${fetchDate}. Use web_search to fetch https://sportando.basketball/en/typology/official/ and https://euroleaguebasketball.net/en/euroleague/news/ — then list every EuroLeague basketball transfer announced today or this week (especially June 2026). Teams: Olympiacos, Real Madrid, Maccabi Tel Aviv, Monaco, Paris Basketball, Hapoel Tel Aviv, ALBA Berlin, Virtus Bologna, Panathinaikos, Crvena Zvezda, Fenerbahce, Efes, Barcelona, Bayern, Partizan, Zalgiris. Focus on June 2026 news.`},
-    {id:'eurocup_supp', name:'EuroCup & BCL', text:`Today is ${fetchDate}. Use web_search to fetch https://sportando.basketball/en/typology/official/ then list every EuroCup and BCL transfer from June 2026. Teams: Budućnost VOLI, Cedevita Olimpija, U-BT Cluj, Hapoel Jerusalem, Lietkabelis, Neptunas, Bahcesehir, JL Bourg, ratiopharm Ulm, NINERS Chemnitz, PAOK, Trabzonspor, Tofas, London Lions, Slask Wroclaw. Focus on new signings, departures, extensions from June 2026.`},
-    {id:'national_supp', name:'National Leagues', text:`Today is ${fetchDate}. Use web_search to fetch https://sportando.basketball/en/ and https://www.aba-liga.com/newslist/News/1/ — then list every transfer from national European leagues in June 2026. Lega Basket, Betclic ELITE, BBL, ACB, ABA League. For ABA Liga also search https://www.aba-liga.com/newslist/News/2/ for older news. Focus on June 2026 announcements.`},
-    {id:'gbl_supp', name:'Greek GBL', text:`Today is ${fetchDate}. Use web_search to search 'Greek GBL basket league transfers June 2026 site:sport24.gr OR site:allstarbasket.gr' — then list every GBL transfer. Teams: Olympiacos, Panathinaikos, PAOK, AEK, Aris, Peristeri, Mykonos, Kolossos, Iraklis, Promitheas, Karditsa, Marousi, Doxa Lefkadas, Vikos Ioannina. Focus on June 2026.`},
-    {id:'lkl_supp', name:'Lithuanian LKL', text:`Today is ${fetchDate}. List the MOST RECENT Lithuanian LKL transfers — especially from this week. Teams: Zalgiris, Lietkabelis, Rytas, Neptunas, Dzukija, Juventus, Wolves, Nevezis, Siauliai. Sources: basketnews.lt, lkl.lt. From April 1, 2026.`},
-    {id:'bsl_supp', name:'Israeli BSL', text:`Today is ${fetchDate}. List the MOST RECENT Israeli BSL transfers — especially from this week. Teams: Maccabi Tel Aviv, Hapoel Tel Aviv, Hapoel Jerusalem, Beni Herzliya, Hapoel Holon, Hapoel Galil Elion, Maccabi Rishon Lezion, Maccabi Ramat Gan, Ironi Nahariya. Sources: basket.co.il. From April 1, 2026.`},
-    {id:'turkey_supp', name:'Turkish BSL', text:`Today is ${fetchDate}. Use web_search to fetch https://basketbolig.com/kategori/basketbol-super-ligi — then list every Turkish BSL transfer/signing from June 2026. Teams: Fenerbahce, Anadolu Efes, Galatasaray, Beşiktaş, TOFAŞ, Bahcesehir, Türk Telekom, Trabzonspor, Bursaspor, Petkim, Çayırova, Erokspor. Focus on June 2026 news.`},
-    {id:'bnxt_supp', name:'BNXT League', text:`Today is ${fetchDate}. Use web_search to search for 'bnxtleague.com/en/newsvideo signing signs extends 2026' — then list every BNXT League transfer, signing or coach change from June 2026. Teams: Leuven Bears, Spirou Charleroi, Brussels Basketball, Antwerp Giants, Filou Oostende, Kortrijk Spurs, Rotterdam, ZZ Leiden, Heroes Den Bosch, Zwolle, Kangoeroes Mechelen, Landstede. Focus on June 2026 news.`},
-    {id:'other_supp', name:'Other Leagues', text:`Today is ${fetchDate}. Use web_search to fetch https://plk.pl/aktualnosci and https://baschetromania.ro/ — then list every basketball transfer from June 2026 in: Polish PLK (Legia, Slask, Anwil, Trefl, Arka, King, Zastal), Romanian LNB (U-BT Cluj, CSM Oradea, CSO Voluntari, Rapid, Valcea), BNXT (Leuven, Mechelen, Antwerp, Rotterdam), Croatian HKL (Zadar, Split, Cibona), Hungarian NB1 (Falco, Atomerőmű, DVTK, DEAC). Focus on June 2026.`},
-  ];
-
   let done = 0;
   let newlyFound = 0;
-  const beforeCount = allT.length;
+
+  // Group DB entries: prioritise EuroCup/EuroLeague/ABA/Sportando first, then others
+  const priority = ['EuroLeague','EuroCup','ABA','News'];
+  const sortedDB = [...DB].sort((a,b) => {
+    const ai = priority.indexOf(a.cat), bi = priority.indexOf(b.cat);
+    return (ai===-1?99:ai) - (bi===-1?99:bi);
+  });
+
+  for (const dbEntry of sortedDB) {
+    setLD(`Scraping ${dbEntry.name}…`);
+    const statusEl = document.getElementById('scrapeStatus'); if(statusEl) statusEl.textContent = `${done+1}/${sortedDB.length} · ${dbEntry.name}`;
+    try {
+      const items = await scrapeUrl(dbEntry);
+      if (items.length > 0) {
+        const before = allT.length;
+        allT.push(...items);
+        dedup(); sortT();
+        const added = allT.length - before;
+        newlyFound += added;
+        if (added > 0) { renderT(); updateStats(); setLD(`✓ ${dbEntry.name}: +${added} new`); }
+      }
+    } catch(e) { console.warn(`Scrape failed: ${dbEntry.name}`, e.message); }
+    done++;
+    updateBalls(40 + Math.round(done / sortedDB.length * 55));
+    await sleep(100);
+  }
+
+  // Supplemental prompts for sites that need AI interpretation
+  const fetchDate = new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'});
+  const prompts = [
+    {id:'national_supp', name:'Lega+BBL+ACB',    text:`Search sportando.basketball for new Italian Lega Basket, German BBL, and Spanish ACB transfers published in the last 3 days. Return ONLY a JSON array.`},
+    {id:'gbl_supp',      name:'Greek+Israeli',   text:`Search sportando.basketball for new Greek GBL and Israeli BSL transfers published in the last 3 days. Return ONLY a JSON array.`},
+    {id:'turkey_supp',   name:'Turkish+BNXT',    text:`Search sportando.basketball for new Turkish BSL and BNXT League transfers published in the last 3 days. Return ONLY a JSON array.`},
+    {id:'other_supp',    name:'PLK+LKL+More',    text:`Search sportando.basketball, plk.pl, basketnews.lt for new Polish PLK, Lithuanian LKL, Romanian LNB transfers published in the last 3 days. Return ONLY a JSON array.`},
+  ];
+
+  let done2 = 0;
   for (const p of prompts) {
     setLD(`Searching ${p.name} for NEW transfers…`);
     try {
@@ -1051,44 +1191,63 @@ async function fetchAll() {
       if (res.ok) {
         const data = await res.json();
 
+        // web_search_20250305 is a hosted tool — Anthropic runs searches server-side.
+        // The API may need multiple turns: tool_use → tool_result → final text.
+        // We keep looping until we get stop_reason='end_turn' with text content.
         let finalText = '';
+        let currentData = data;
+        let messages = [{ role: 'user', content: p.text }];
+        let turns = 0;
 
-        // If the model used web_search, we need to do a second turn with tool results
-        if (data.stop_reason === 'tool_use') {
-          const toolUseBlocks = (data.content || []).filter(b => b.type === 'tool_use');
-          const toolResults = toolUseBlocks.map(b => ({
-            type: 'tool_result',
-            tool_use_id: b.id,
-            content: b.input?.query ? `Search results for: ${b.input.query}` : 'Search completed',
-          }));
+        while (turns < 5) {
+          const stopReason = currentData.stop_reason;
+          const contentBlocks = currentData.content || [];
 
-          // Second turn: send back tool results to get final answer
-          const res2 = await fetch('https://api.anthropic.com/v1/messages', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'anthropic-version': '2023-06-01',
-              'anthropic-dangerous-direct-browser-access': 'true',
-            },
-            body: JSON.stringify({
-              model: 'claude-sonnet-4-6',
-              max_tokens: 3000,
-              tools: [{ type: 'web_search_20250305', name: 'web_search' }],
-              system: SYS,
-              messages: [
-                { role: 'user', content: p.text },
-                { role: 'assistant', content: data.content },
-                { role: 'user', content: toolResults },
-              ],
-            }),
-          });
-          if (res2.ok) {
-            const data2 = await res2.json();
-            finalText = (data2.content || []).filter(b => b.type === 'text').map(b => b.text || '').join('\n');
+          // Collect any text from this response
+          const textNow = contentBlocks.filter(b => b.type === 'text').map(b => b.text || '').join('\n');
+          if (textNow) finalText += textNow;
+
+          if (stopReason === 'end_turn' || stopReason === 'stop_sequence') break;
+
+          if (stopReason === 'tool_use') {
+            // Build tool_result blocks for each tool_use block
+            const toolUseBlocks = contentBlocks.filter(b => b.type === 'tool_use');
+            if (toolUseBlocks.length === 0) break;
+
+            // Add assistant message with tool_use to history
+            messages.push({ role: 'assistant', content: contentBlocks });
+
+            // Build tool_result content — for web_search the results come back
+            // as content within the tool_use block itself (Anthropic hosted tool)
+            const toolResultContent = toolUseBlocks.map(b => ({
+              type: 'tool_result',
+              tool_use_id: b.id,
+              content: b.content || b.output || '[]',
+            }));
+            messages.push({ role: 'user', content: toolResultContent });
+
+            // Make next turn
+            const resN = await fetch('https://api.anthropic.com/v1/messages', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'anthropic-version': '2023-06-01',
+                'anthropic-dangerous-direct-browser-access': 'true',
+              },
+              body: JSON.stringify({
+                model: 'claude-sonnet-4-6',
+                max_tokens: 3000,
+                tools: [{ type: 'web_search_20250305', name: 'web_search' }],
+                system: SYS,
+                messages,
+              }),
+            });
+            if (!resN.ok) break;
+            currentData = await resN.json();
+            turns++;
+          } else {
+            break;
           }
-        } else {
-          // No tool use — extract text directly
-          finalText = (data.content || []).filter(b => b.type === 'text').map(b => b.text || '').join('\n');
         }
 
         const items = parseTransfers(finalText, {id: p.id, name: p.name});
@@ -1110,9 +1269,9 @@ async function fetchAll() {
       console.warn(p.name, e);
       setDot(p.id, 'err');
     }
-    done++;
-    updateBalls(40 + done * 6.6);
-    setProg(40 + done * 7);
+    done2++;
+    updateBalls(95 + done2);
+    setProg(95 + done2);
     renderT();
     updateStats();
     await sleep(400);
@@ -1269,10 +1428,15 @@ function getF() {
   const q = normStr(document.getElementById('fSearch').value);
   const l = document.getElementById('fLeague').value;
   const p = document.getElementById('fPos').value;
+  const c = normStr((document.getElementById('fClub') || {value:''}).value);
   return allT.filter(t => {
     if (activeS !== 'all' && t.status !== activeS) return false;
     if (l && !t.league.toLowerCase().includes(l.toLowerCase())) return false;
     if (p && t.pos !== p) return false;
+    if (c) {
+      const clubH = normStr(`${t.from} ${t.to}`);
+      if (!clubH.includes(c)) return false;
+    }
     if (q) {
       const h = normStr(`${t.player} ${t.from} ${t.to} ${t.league} ${t.summary}`);
       if (!h.includes(q)) return false;
@@ -1280,6 +1444,61 @@ function getF() {
     return true;
   });
 }
+
+function updateClubDropdown() {
+  const q = normStr(document.getElementById('fClub').value);
+  if (q.length < 2) return;
+  const clubs = new Set();
+  allT.forEach(t => {
+    if (t.from && t.from !== 'Free Agent' && t.from !== 'Unknown') clubs.add(t.from);
+    if (t.to && t.to !== 'Free Agent' && t.to !== 'Unknown') clubs.add(t.to);
+  });
+  const filtered = [...clubs].filter(c => normStr(c).includes(q)).sort().slice(0, 20);
+  const dl = document.getElementById('clubList');
+  dl.innerHTML = filtered.map(c => `<option value="${c}">`).join('');
+}
+
+// ── SEEN TRACKING ──────────────────────────────────────────────────────────
+// Stores entry IDs the user has seen so NEW badge is removed on next refresh.
+// Uses localStorage so it persists across page opens.
+const SEEN_KEY = 'euroball_seen_ids';
+let seenIds = new Set();
+
+function loadSeen() {
+  try { seenIds = new Set(JSON.parse(localStorage.getItem(SEEN_KEY) || '[]')); }
+  catch { seenIds = new Set(); }
+}
+
+function markSeen(id) {
+  seenIds.add(id);
+  try { localStorage.setItem(SEEN_KEY, JSON.stringify([...seenIds])); }
+  catch {}
+}
+
+function isNew(t) {
+  // Show NEW only if: entry was fetched this session AND user hasn't seen it yet
+  const today = new Date().toISOString().slice(0,10);
+  return (t._isNew || t.date === today) && !seenIds.has(t.id);
+}
+
+// Mark all currently visible entries as seen after a short delay
+function markVisibleAsSeen() {
+  const f = getF();
+  // Mark entries seen after 3 seconds of viewing — gives user time to read
+  setTimeout(() => {
+    let anyNew = false;
+    f.forEach(t => {
+      if (isNew(t) && !seenIds.has(t.id)) {
+        markSeen(t.id);
+        anyNew = true;
+      }
+    });
+    // Re-render to remove NEW badges (silently — no loading state)
+    if (anyNew) renderT();
+  }, 3000);
+}
+
+loadSeen();
 
 function renderT() {
   const f = getF();
@@ -1300,6 +1519,7 @@ function renderT() {
   }).join('');
 
   updateStats(f);
+  markVisibleAsSeen();
 }
 
 function fmtGroupDate(d) {
@@ -1319,10 +1539,12 @@ function cardHTML(t) {
   const pill = {signed:'<span class="tpill p-signed">✓ SIGNED</span>',rumor:'<span class="tpill p-rumor">💬 RUMOR</span>',left:'<span class="tpill p-left">↩ LEFT</span>',extended:'<span class="tpill p-extended">⟳ EXTENDED</span>'}[t.status];
   const host = (() => { try { return new URL(t.source_url).hostname.replace('www.',''); } catch { return t.source_name; } })();
   const fmtDate = (() => { try { return new Date(t.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short'}); } catch { return t.date||''; } })();
+  const isToday = t.date === new Date().toISOString().slice(0,10);
+  const newBadge = isNew(t) ? '<span style="background:#e53;color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;letter-spacing:.5px;margin-left:5px;vertical-align:middle">NEW</span>' : '';
   return `<div class="tc s-${t.status}">
     <div class="av">${esc(ini)}</div>
     <div>
-      <div class="tp">${esc(t.player)} <span class="tpos">${esc(t.pos)}</span></div>
+      <div class="tp">${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${newBadge}</div>
       <div class="tmv"><span class="tf">${esc(t.from)}</span><span class="ta">→</span><span class="tt">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
     </div>
