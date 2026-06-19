@@ -67,17 +67,32 @@ SOURCES = [
 ]
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; EuroBallMovesScraper/1.0; +https://github.com/blazerculj-max/EB-scrape)",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Cache-Control": "max-age=0",
 }
 
 TRANSFER_KW = re.compile(
-    r"sign|join|extend|keep|renew|return|stay|land|add|acqui|depart|exit|left|reload|"
-    r"reunit|ink|pen|captur|tab|reel|appoint|part.way|trio|duo|head.coach|coach|"
-    r"farewell|wave|goodbye|confirm|unveil|lock|seal|bring|lure|pens|new.deal|"
-    r"swap|trade|mutual|ostaje|potpisuje|potpisao|napustio|napusta|odlazi|produz|"
-    r"headline|announce|complet|secur|immers|arriv|bolster|reinforce|add|reload",
+    r"sign|join|extend|keep|renew|return|stay|land|acqui|depart|exit|left|reload|"
+    r"reunit|ink|pen|captur|reel|appoint|part.way|coach|farewell|goodbye|confirm|"
+    r"seal|bring|lure|new.deal|swap|trade|ostaje|potpisuje|potpisao|napustio|"
+    r"napusta|odlazi|produz|bolster|reinforce|arriv",
+    re.I,
+)
+
+# Articles matching these patterns are NOT transfers — skip them
+SKIP_KW = re.compile(
+    r"financial|franchise.deal|recap|preview|interview|suspend|facing.ban|"
+    r"faces.fine|award|mvp|all.star|draft.combine|scouting.report|power.rank|"
+    r"salary.dispute|legal.dispute|faces.financial|sophomore|benchmark|"
+    r"college.season|nba.summer.league(?!.*europ)|g.league.season(?!.*europ)",
     re.I,
 )
 
@@ -143,7 +158,7 @@ def parse_nextdata(html: str, source: dict) -> list[dict]:
     results = []
     for art in feed:
         title = (art.get("heroMedia") or {}).get("title") or art.get("slug", "")
-        if not title or not TRANSFER_KW.search(title):
+        if not title or not TRANSFER_KW.search(title) or SKIP_KW.search(title):
             continue
         pub = (art.get("publishDate") or "")[:10] or datetime.now(timezone.utc).strftime("%Y-%m-%d")
         teaser = ((art.get("content") or {}).get("teaser")
@@ -212,6 +227,8 @@ def parse_sportando(html: str, source: dict) -> list[dict]:
         url, slug, raw_title = m.group(1), m.group(2), m.group(3)
         if slug in skip or slug in seen:
             continue
+        if SKIP_KW.search(title):
+            continue  # non-transfer article
         title = re.sub(r"\s+", " ", raw_title).strip()
         if len(title) < 5:
             continue
@@ -257,6 +274,8 @@ def parse_generic(html: str, source: dict) -> list[dict]:
         slug = url.rstrip("/").rsplit("/", 1)[-1][:60]
         if not slug or not "-" in slug:
             continue                         # likely a category page
+        if not TRANSFER_KW.search(title) or SKIP_KW.search(title):
+            continue                         # not a transfer article
         if slug in seen or slug.lower() in skip_slugs:
             continue
         seen.add(slug)
