@@ -80,7 +80,7 @@ HEADERS = {
 }
 
 TRANSFER_KW = re.compile(
-    r"sign|join|extend|keep|renew|return|stay|land|acqui|depart|exit|left|reload|"
+    r"sign|join|extend|keep|renew|return|stay|land|acqui|depart|exit|left|reload|salut|lascia|firma|rinnov|accordo|biennale|nowy|podpisał|przenosi|zostaje|wraca|trener|verpflichtet|verlängert|wechselt|potpisuje|ostaje|napustio|imzaladı|"
     r"reunit|ink|pen|captur|reel|appoint|part.way|coach|farewell|goodbye|confirm|"
     r"seal|bring|lure|new.deal|swap|trade|ostaje|potpisuje|potpisao|napustio|"
     r"napusta|odlazi|produz|bolster|reinforce|arriv",

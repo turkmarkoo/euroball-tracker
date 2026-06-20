@@ -1044,6 +1044,80 @@ async function fetchAll() {
     } catch(e) { return []; }
   }
 
+  function parsePlk(html, league, sourceName) {
+    // PLK: articles have pattern: "Title DD.MM.YYYY" then "[Przeczytaj artykul](url)"
+    const results = [], seen = new Set();
+    // Match article blocks: title text + date + PLK article URL
+    const blockRe = /([^\n]{5,150})\s+(\d{2}\.\d{2}\.\d{4})\s*[^\n]*\n[^\n]*\[(?:Przeczytaj artykuł|Czytaj więcej|See article)\]\((https:\/\/plk\.pl\/aktualnosci\/(\d+)[^)]*)\)/g;
+    let m;
+    while ((m = blockRe.exec(html)) !== null) {
+      const [, rawTitle, rawDate, url, id] = m;
+      const title = rawTitle.replace(/\s+/g,' ').replace(/^#+\s*/,'').trim();
+      if (!title || title.length < 5 || seen.has(id)) continue;
+      // Also apply transfer filter
+      const TRANSFER_RE_PLK = /sign|join|nowy|podpisał|przedłuż|transfer|trener|zawodnik|przenosi|zostaje|wraca|odchodzi|extend|coach|appoint|arriv|depart|left|renew/i;
+      const SKIP_RE_PLK = /wyniki|mecz nr|powiedzieli po meczu|wideo:|finał mecz|terminarz|playoff|powiedzieli/i;
+      if (!TRANSFER_RE_PLK.test(title) || SKIP_RE_PLK.test(title)) continue;
+      seen.add(id);
+      const [d,mo,y] = rawDate.split('.');
+      const date = `${y}-${mo}-${d}`;
+      const t = title.toLowerCase();
+      results.push({
+        id: 'plk-' + id,
+        player: title, pos:'?', from:'?', to:'?', league,
+        status: /zostaje|wraca|przedłuż|renew|extend|remain/i.test(t) ? 'extended'
+               : /odchodzi|transfer|left|depart|przenosi/i.test(t) ? 'left' : 'signed',
+        date, summary: title.slice(0,120),
+        source_name: sourceName,
+        source_url: url,
+        _isNew: true,
+      });
+    }
+    return results;
+  }
+
+  function parsePianetaBasket(html, league, sourceName) {
+    // PianetaBasket: #### [Title](url) markdown-rendered to <h4><a href="url">Title</a></h4>
+    // Also catches direct article card structure
+    const results = [], seen = new Set();
+    // Match h3, h4, h5 with nested <a>
+    const re = /<h[3-5][^>]*>\s*<a\s+href="(https:\/\/www\.pianetabasket\.com\/[^"]+)"[^>]*>\s*([^<]{5,200})\s*<\/a>/g;
+    let m;
+    const TRANSFER_RE_IT = /salut|lascia|firma|rinnov|ufficiale|accordo|ingaggi|proroga|vest|nuovo allenator|cedut|trasferim|mercato|biennale|annunci|resciss|conferm|vicin[ao]|sign|join|extend|depart|coach|appoint|arriv|left|renew/i;
+    const SKIP_RE_IT = /risultat|classifica|calendario|playoff|coppa|finale scudetto|taliercio|tribun|tifo|media|sponsor|bilanci/i;
+    while ((m = re.exec(html)) !== null) {
+      const [, url, rawTitle] = m;
+      const title = rawTitle.replace(/\s+/g,' ').trim();
+      const slug = url.split('/').filter(Boolean).pop()?.slice(0,60) || '';
+      if (!slug || seen.has(slug) || title.length < 5) continue;
+      if (!TRANSFER_RE_IT.test(title) || SKIP_RE_IT.test(title)) continue;
+      seen.add(slug);
+      // Date from context
+      const ctx = html.slice(Math.max(0, m.index-300), m.index+200);
+      const d1 = ctx.match(/giu|lug|ago|set|ott|nov|dic|gen|feb|mar|apr|mag/i);
+      const dateMatch = ctx.match(/(\d{1,2})\s+(?:giugno|luglio|agosto|settembre|ottobre|novembre|dicembre|gennaio|febbraio|marzo|aprile|maggio)\s+(\d{4})/i);
+      const months = {giugno:'06',luglio:'07',agosto:'08',settembre:'09',ottobre:'10',novembre:'11',dicembre:'12',gennaio:'01',febbraio:'02',marzo:'03',aprile:'04',maggio:'05'};
+      let date = new Date().toISOString().slice(0,10);
+      if (dateMatch) {
+        const mo = months[dateMatch[0].split(' ')[1]?.toLowerCase()] || '06';
+        date = `${dateMatch[2]}-${mo}-${dateMatch[1].padStart(2,'0')}`;
+      }
+      const t = title.toLowerCase();
+      results.push({
+        id: 'pb-' + slug.slice(0,40),
+        player: title, pos:'?', from:'?', to:'?', league,
+        status: /rinnov|conferm|vicin|biennale|resta|extend|renew|stay/i.test(t) ? 'extended'
+               : /lascia|salut|resciss|cedut|depart|left/i.test(t) ? 'left'
+               : /si tratt|vicin|rumor|reportedly|potrebbe/i.test(t) ? 'rumor' : 'signed',
+        date, summary: title.slice(0,120),
+        source_name: sourceName,
+        source_url: url,
+        _isNew: true,
+      });
+    }
+    return results;
+  }
+
   function parseAbaLiga(html, league, sourceName) {
     const results = [], seen = new Set();
     const re = /href="(https:\/\/www\.aba-liga\.com\/news\/(\d+)\/([^"]+))"[^>]*>\s*([^<]{5,120})/g;
@@ -1066,11 +1140,11 @@ async function fetchAll() {
   }
 
   function parseGenericLinks(html, league, sourceName, baseUrl) {
-    // Generic parser: finds <h2>/<h3> article links and extracts titles + dates
-    // Also handles Serbian/multilingual sites by using slug-based status inference
+    // Generic parser: handles multiple HTML structures across all sites
     const results = [], seen = new Set();
-    // Match h2/h3 links AND standalone links with title text (covers WordPress article cards)
-    const re = /<(?:h[23]|div)[^>]*>\s*<a\s+href="(https?:\/\/[^"#]+)"[^>]*>\s*([^<]{5,200})\s*<\/a>/g;
+    // Pattern 1: heading tags h2-h5 wrapping an <a> link (most sites)
+    // Pattern 2: <a> tags with title text inside any block element (div, li, article)
+    const re = /<(?:h[2-5]|li|article|div)[^>]*>\s*<a\s+href="(https?:\/\/[^"#]+)"[^>]*>\s*([^<]{5,200})\s*<\/a>/g;
     let m;
     // Skip patterns: navigation, categories, pagination
     const skipSlugs = new Set(['home','news','about','contact','results','stats','teams','players','video',
@@ -1081,13 +1155,15 @@ async function fetchAll() {
       if (title.length < 5 || title.length > 200) continue;
       const slug = url.split('/').filter(Boolean).pop()?.slice(0,60) || '';
       if (!slug || seen.has(slug) || skipSlugs.has(slug.toLowerCase())) continue;
-      // Skip pure category/nav URLs (no hyphen = likely a category page)
-      if (!slug.includes('-')) continue;
+      // Skip pure category/nav URLs (no hyphen = likely a category page, or numeric-only = PLK article IDs ok)
+      const isNumericSlug = /^\d+$/.test(slug);
+      if (!slug.includes('-') && !isNumericSlug) continue;
 
       // ── TRANSFER FILTER ─────────────────────────────────────────────────
       // Must match transfer vocabulary — skip news, recaps, financial, injury articles
-      const TRANSFER_RE = /sign|join|extend|keep|renew|return|stay|land|acqui|depart|exit|left|reload|reunit|ink|pen|captur|reel|appoint|part.way|coach|farewell|goodbye|confirm|seal|bring|lure|swap|trade|ostaje|potpisuje|potpisao|napustio|napusta|odlazi|produz|new.deal|bolster|reinforce|arriv/i;
-      const SKIP_RE = /financial|franchise|recap|result|preview|preview|interview|injury|injur|suspend|ban|award|mvp|best.of|all-star|all star|draft.combine|scouting|analysis|report card|ranking|power.rank|trade.rumor.nba|salary|contract.dispute|legal|court.case|investigat|faces.fine|faces.ban|benchmark|sophomore|junior|college|high.school|nba.draft(?!.*europe)|summer.league(?!.*europe)|g.league(?!.*europe)/i;
+      // Transfer keywords — English + Italian + Polish + French + Serbian + Croatian + Turkish + Greek
+      const TRANSFER_RE = /sign|join|extend|keep|renew|return|stay|land|acqui|depart|exit|left|reload|reunit|ink|pen|captur|reel|appoint|part.way|coach|farewell|goodbye|confirm|seal|bring|lure|swap|trade|new.deal|bolster|reinforce|arriv|salut|lascia|firma|rinnov|ufficiale|accordo|ingaggi|proroga|vest|nuovo|allenator|cedut|trasferim|mercato|biennale|annunci|resciss|vicin|tratt|conferm|nowy|podpisał|przedłuż|trener|zawodnik|przenosi|zostaje|wraca|odchodzi|nouvel|signe|prolonge|recrut|entra.neur|transfert|accord|officiel|quitte|rejoint|verpflichtet|verlängert|wechselt|neuer|trainer|unterschreibt|bleibt|ficha|renueva|entrenador|acuerdo|llega|presenta|incorpora|contrato|potpisuje|ostaje|napustio|odlazi|produz|dolazi|pregovara|navodno|raskinuo|imzaladı|imzala|yeni|hoca|ayrıldı|kaldı|katıldı|anlaşma/i;
+      const SKIP_RE = /(?:^|\b)(?:financial hit|franchise deal|recap|match report|game recap|play.by.play|box score|interview|injury update|injur(?:y|ies)(?! clause)|suspended for|ban(?:ned)? for|best of|all-star vote|draft combine|scouting report|power ranking|salary dispute|legal dispute|faces fine|faces ban|benchmark|high school|nba draft(?!.*europ)|g-league season(?!.*europ)|summer league.*nba|serie finale|playoff recap|finals? recap|championship game|standings update|schedule release|calendario|tabella|classifica|risultat[io]|calendario|wyniki|tabela|terminarz|mecz nr|finał mecz|powiedzieli po meczu|wideo:|ergebnisse|spielbericht|resultat|compte-rendu)(?:\b|$)/i;
 
       if (!TRANSFER_RE.test(title) || SKIP_RE.test(title)) continue;
       // ─────────────────────────────────────────────────────────────────────
@@ -1125,6 +1201,8 @@ async function fetchAll() {
     // Route to correct parser based on URL
     if (url.includes('euroleaguebasketball.net')) return parseNextData(html, league, name, url);
     if (url.includes('aba-liga.com'))             return parseAbaLiga(html, league, name);
+    if (url.includes('plk.pl'))                   return parsePlk(html, league, name);
+    if (url.includes('pianetabasket.com'))         return parsePianetaBasket(html, league, name);
     return parseGenericLinks(html, league, name, url);
   }
 
@@ -1445,9 +1523,23 @@ function expandLeagues() {
   // This function is kept as a no-op to avoid breaking the call site.
 }
 
+// Titles that are definitively not transfers (game recaps, financial news etc.)
+const NON_TRANSFER_TITLES = new Set([
+  'Real Madrid faces financial hit over EuroLeague franchise deal',
+  'Zaccharie Risacher revisits sophomore benchings: “I belong on an NBA court”',
+  'Zaccharie Risacher revisits sophomore benchings: "I belong on an NBA court"',
+]);
+
 function dedup() {
   const seen = new Set();
   allT = allT.filter(t => {
+    // Remove known non-transfer articles
+    if (NON_TRANSFER_TITLES.has(t.player)) return false;
+    // Remove entries where player = to = '?' (nothing parsed)
+    if (t.player === t.summary && t.from === '?' && t.to === '?') {
+      // Only keep if it's from a known-good source and has a meaningful title
+      if (t.player.length < 10) return false;
+    }
     const k = `${t.player.toLowerCase().trim()}-${t.to.toLowerCase().trim()}`;
     if (seen.has(k)) return false;
     seen.add(k); return true;
