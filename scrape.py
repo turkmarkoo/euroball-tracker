@@ -9,7 +9,7 @@ Output: transfers_new.json, transfers_all.json
 """
 
 import json, re, sys, time, hashlib, os
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from urllib.request import urlopen, Request
 from urllib.error import URLError, HTTPError
 
@@ -333,12 +333,19 @@ def save_archive(archive: dict[str, dict]) -> None:
         }, f, ensure_ascii=False, indent=2)
 
 
-def save_new(new_items: list[dict]) -> None:
+def save_new(new_items: list[dict], archive: dict | None = None) -> None:
+    # Always write the last 14 days from archive so Fetch Latest shows
+    # content even after all articles are already archived.
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=14)).strftime("%Y-%m-%d")
+    recent = [item for item in (archive or {}).values() if item.get("date", "") >= cutoff]
+    merged = {item["id"]: item for item in recent}
+    merged.update({item["id"]: item for item in new_items})
+    items = sorted(merged.values(), key=lambda x: x.get("date", ""), reverse=True)
     with open(NEW_FILE, "w", encoding="utf-8") as f:
         json.dump({
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "count": len(new_items),
-            "items": new_items,
+            "count": len(items),
+            "items": items,
         }, f, ensure_ascii=False, indent=2)
 
 
@@ -379,7 +386,7 @@ def main():
     print(f"Total new: {total_found} | Archive size: {len(archive)}")
 
     save_archive(archive)
-    save_new(new_items)
+    save_new(new_items, archive)
     print(f"✓ Written {NEW_FILE} ({len(new_items)} items)")
     print(f"✓ Written {ARCHIVE_FILE} ({len(archive)} items total)")
 
