@@ -1509,7 +1509,7 @@ const NON_TRANSFER_TITLES = new Set([
 function dedup() {
   const seen = new Set();
   // Strip article headlines and entries with no transfer data
-  allT = allT.filter(t => t.league !== 'News');
+  allT = allT.filter(t => t.league !== 'News' && !(t.pos==='?'&&t.from==='?'&&t.to==='?'));
   allT = allT.filter(t => {
     // Remove known non-transfer articles
     if (NON_TRANSFER_TITLES.has(t.player)) return false;
