@@ -349,6 +349,50 @@ def save_new(new_items: list[dict], archive: dict | None = None) -> None:
         }, f, ensure_ascii=False, indent=2)
 
 
+# ── AI ENRICHMENT ───────────────────────────────────────────────────────────
+
+def ai_extract(headline: str, url: str, api_key: str) -> dict:
+    """Call Claude Haiku to extract structured transfer data from an article headline."""
+    prompt = (
+        "Extract European basketball transfer data from this headline.\n"
+        "Return ONLY a JSON object with exactly these keys:\n"
+        "  player: full player name (or coach name), or \"?\"\n"
+        "  pos: PG | SG | SF | PF | C | coach | \"?\"\n"
+        "  from: club leaving, or \"Free Agent\", or \"?\"\n"
+        "  to: club joining, or \"Free Agent\", or \"?\"\n"
+        "  status: signed | rumor | left | extended | \"?\"\n"
+        "  league: EuroLeague | EuroCup | ACB | ABA League | Lega Basket | "
+        "BSL | BCL | LKL | or other European league, or \"?\"\n\n"
+        f"Headline: {headline}\nURL: {url}\n\n"
+        "Return only the JSON object — no markdown, no explanation."
+    )
+    body = json.dumps({
+        "model": "claude-haiku-4-5-20251001",
+        "max_tokens": 150,
+        "messages": [{"role": "user", "content": prompt}],
+    }).encode()
+    req = Request(
+        "https://api.anthropic.com/v1/messages",
+        data=body,
+        headers={
+            "Content-Type": "application/json",
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01",
+        },
+    )
+    try:
+        with urlopen(req, timeout=15) as resp:
+            raw = json.loads(resp.read())["content"][0]["text"].strip()
+            if raw.startswith("```"):
+                raw = raw.split("```")[1].lstrip("json").strip()
+            data = json.loads(raw)
+            if data.get("player", "?") not in ("?", "", None):
+                return {k: v for k, v in data.items() if v and v not in ("?", "")}
+    except Exception:
+        pass
+    return {}
+
+
 # ── MAIN ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -384,6 +428,23 @@ def main():
 
     print(f"\n{'='*50}")
     print(f"Total new: {total_found} | Archive size: {len(archive)}")
+
+    # ── AI Enrichment ────────────────────────────────────────────────────────
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if new_items and api_key:
+        need_enrich = [it for it in new_items
+                       if it.get("pos") == "?" and it.get("from") == "?" and it.get("to") == "?"]
+        if need_enrich:
+            print(f"\nEnriching {len(need_enrich)} new items with Claude Haiku…")
+            enriched_count = 0
+            for item in need_enrich:
+                result = ai_extract(item.get("player", ""), item.get("source_url", ""), api_key)
+                if result:
+                    item.update(result)
+                    archive[item["id"]].update(result)
+                    enriched_count += 1
+                time.sleep(0.3)
+            print(f"  → {enriched_count}/{len(need_enrich)} items enriched")
 
     save_archive(archive)
     save_new(new_items, archive)
