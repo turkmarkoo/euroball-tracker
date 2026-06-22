@@ -349,6 +349,60 @@ def save_new(new_items: list[dict], archive: dict | None = None) -> None:
         }, f, ensure_ascii=False, indent=2)
 
 
+# ── AI WEB SEARCH ───────────────────────────────────────────────────────────
+
+def ai_web_search_transfers(api_key: str) -> list[dict]:
+    """Use Anthropic web_search to find recent European basketball transfers.
+    Bypasses IP blocking that prevents direct site scraping on GitHub Actions."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    prompt = (
+        f"Today is {today}. Search the web for European basketball player transfers, "
+        "signings, and departures from the past 7 days.\n\n"
+        "Search sites like: sportando.basketball, aba-liga.com, euroleaguebasketball.net, "
+        "acb.com, legabasket.it, talkbasket.net, eurohoops.net, basketnews.com, "
+        "plk.pl, sport24.gr, baschetromania.ro, bebasket.fr, basketball-world.news\n\n"
+        "For each transfer found return a JSON array. Each item must have:\n"
+        '  {"player":"Full Name","pos":"PG|SG|SF|PF|C|coach|?",'
+        '"from":"Club or Free Agent or ?","to":"Club or Free Agent or ?",'
+        '"status":"signed|rumor|left|extended",'
+        '"league":"EuroLeague|EuroCup|ACB|ABA League|Lega Basket|BSL|LKL|BCL|?","date":"YYYY-MM-DD",'
+        '"source_url":"https://...","source_name":"Site Name"}\n\n'
+        "Rules: only real player/coach names; date as YYYY-MM-DD; no duplicates; "
+        "return ONLY the JSON array with no markdown or explanation."
+    )
+    body = json.dumps({
+        "model": "claude-sonnet-4-6",
+        "max_tokens": 8000,
+        "tools": [{"type": "web_search_20250305", "name": "web_search"}],
+        "messages": [{"role": "user", "content": prompt}],
+    }).encode()
+    req = Request(
+        "https://api.anthropic.com/v1/messages",
+        data=body,
+        headers={
+            "Content-Type": "application/json",
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01",
+        },
+    )
+    try:
+        with urlopen(req, timeout=120) as resp:
+            result = json.loads(resp.read())
+            texts = [c["text"] for c in result.get("content", []) if c.get("type") == "text"]
+            raw = " ".join(texts).strip()
+            if not raw:
+                return []
+            if "```" in raw:
+                raw = raw.split("```")[1].lstrip("json").strip()
+            start, end = raw.find("["), raw.rfind("]") + 1
+            if start < 0 or end <= start:
+                return []
+            return json.loads(raw[start:end])
+    except Exception as e:
+        print(f"  AI web search error: {e}")
+        return []
+
+
 # ── AI ENRICHMENT ───────────────────────────────────────────────────────────
 
 def ai_extract(headline: str, url: str, api_key: str) -> dict:
@@ -427,7 +481,26 @@ def main():
         time.sleep(0.5)   # be polite between requests
 
     print(f"\n{'='*50}")
-    print(f"Total new: {total_found} | Archive size: {len(archive)}")
+    print(f"Total new from scraper: {total_found} | Archive size: {len(archive)}")
+
+    # ── AI web_search: find transfers Anthropic-side (bypasses GitHub Actions IP blocks)
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if api_key:
+        print("\nRunning AI web search for recent transfers…")
+        ai_items = ai_web_search_transfers(api_key)
+        print(f"  AI found {len(ai_items)} transfer entries")
+        ai_added = 0
+        for item in ai_items:
+            if not item.get("player") or item["player"] == "?":
+                continue
+            id_key = f"{item.get('player','').lower().strip()}-{item.get('to','').lower().strip()}-{item.get('date','')}"
+            item["id"] = "ai-" + hashlib.md5(id_key.encode()).hexdigest()[:12]
+            if item["id"] not in archive:
+                archive[item["id"]] = item
+                new_items.append(item)
+                ai_added += 1
+                total_found += 1
+        print(f"  → {ai_added} new AI-discovered transfers added to archive")
 
     # ── AI Enrichment ────────────────────────────────────────────────────────
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
