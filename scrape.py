@@ -102,7 +102,7 @@ STATUS_MAP = {
     "rumor":    re.compile(r"report|rumor|expect|close.to|target|link|reportedly|zainteresov|pregovara|blizu|navodno|could|might|mulling|considering", re.I),
 }
 
-DATE_RE = re.compile(r"(\d{2})/(\d{2})/(\d{4})")
+DATE_RE = re.compile(r"(\d{2})/(\d{2})/(202[0-9])")
 ISO_DATE_RE = re.compile(r'"publishDate"\s*:\s*"(\d{4}-\d{2}-\d{2})')
 ARCHIVE_FILE = "transfers_all.json"
 NEW_FILE = "transfers_new.json"
