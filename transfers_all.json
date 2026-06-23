@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23T14:10:04.557670+00:00",
-  "count": 212,
+  "generated_at": "2026-06-23T19:07:21.269Z",
+  "count": 215,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -127,6 +127,42 @@
       "source_name": "Eurohoops",
       "source_url": "https://www.eurohoops.net/en/euroleague/1981544/barca-and-baskonia-forced-to-reach-an-understanding-regarding-xevi-pujol-and-mike-james/",
       "_isNew": true
+    },
+    {
+      "id": "ai-00001e83ee30",
+      "player": "Malcolm Hill",
+      "pos": "SF",
+      "from": "Delaware Blue Coats",
+      "to": "U-BT Cluj-Napoca",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-23",
+      "source_url": "https://www.euroleaguebasketball.net/eurocup/news/malcolm-hill-set-for-eurocup-debut-with-cluj/",
+      "source_name": "EuroCup Official"
+    },
+    {
+      "id": "ai-000071b5acf3",
+      "player": "Noah Kirkwood",
+      "pos": "SF",
+      "from": "Śląsk Wrocław",
+      "to": "Cedevita Olimpija",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-23",
+      "source_url": "https://www.euroleaguebasketball.net/eurocup/news/noah-kirkwood-joins-cedevita-olimpija/",
+      "source_name": "EuroCup Official"
+    },
+    {
+      "id": "ai-00005d955797",
+      "player": "DeVante Jones",
+      "pos": "PG",
+      "from": "Dolomiti Energia Trento",
+      "to": "London Lions",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-22",
+      "source_url": "https://www.euroleaguebasketball.net/eurocup/news/all-eurocup-guard-devante-jones-brings-his-talents-to-london-lions/",
+      "source_name": "EuroCup Official"
     },
     {
       "player": "Zeljko Obradovic",
