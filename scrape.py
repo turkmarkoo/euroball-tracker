@@ -366,8 +366,12 @@ def ai_web_search_transfers(api_key: str) -> list[dict]:
          "Search site:aba-liga.com for player signings, transfers and departures "
          "announced in the past 7 days."),
         ("BNXT League Official",
-         "Search site:bnxtleague.com for player signings, transfers and departures "
-         "announced in the past 7 days. BNXT covers Belgium and the Netherlands."),
+         "Search for BNXT League basketball player signings and transfers announced in "
+         "the past 7 days. The BNXT League covers Belgium and the Netherlands. "
+         "Search: site:bnxtleague.com signings OR transfers. Also search BeBasket.fr "
+         "and basketbal.nl for BNXT transfer news. Look for club announcements from "
+         "teams like Donar Groningen, Heroes Den Bosch, ZZ Leiden, Spirou Basket, "
+         "Leuven Bears, Okapi Aalst, Limburg United, CB Liège, Filou Oostende."),
         ("ACB / Lega Basket / BSL",
          "Search acb.com, legabasket.it and bsl.com.tr for player signings, transfers "
          "and departures announced in the past 7 days."),
