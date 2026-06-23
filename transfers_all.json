@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23T19:39:30.839Z",
-  "count": 269,
+  "generated_at": "2026-06-23T19:52:06.219Z",
+  "count": 278,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -273,6 +273,30 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "ec-000017ded061",
+      "player": "Zac Seljaas",
+      "pos": "PF",
+      "from": "LDLC ASVEL Villeurbanne",
+      "to": "Napoli Basket",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-23",
+      "source_url": "https://www.euroleaguebasketball.net/en/eurocup/news/napoli-nets-sharp-shooting-big-zac-seljaas/",
+      "source_name": "EuroCup Official"
+    },
+    {
+      "id": "aba-0000646ec54e",
+      "player": "Matt Coleman",
+      "pos": "PG",
+      "from": "Enisey Krasnoyarsk",
+      "to": "Spartak Office Shoes",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-23",
+      "source_url": "https://www.aba-liga.com/news/54926/matt-coleman-is-coming-to-spartak-office-shoes/",
+      "source_name": "ABA Liga Official"
+    },
+    {
       "id": "ai-00005d955797",
       "player": "DeVante Jones",
       "pos": "PG",
@@ -319,6 +343,90 @@
       "source_url": "https://www.anadoluefessk.org/tr",
       "source_name": "anadoluefessk.org",
       "id": "ai-38837a2aaf00"
+    },
+    {
+      "id": "el-000015ff85ac",
+      "player": "Bruno Caboclo",
+      "pos": "PF",
+      "from": "Dubai Basketball",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-22",
+      "source_url": "https://www.euroleaguebasketball.net/euroleague/news/dubai-quintet-depart-the-club/",
+      "source_name": "EuroLeague Official"
+    },
+    {
+      "id": "el-000002cb5e10",
+      "player": "Taran Armstrong",
+      "pos": "SG",
+      "from": "Dubai Basketball",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-22",
+      "source_url": "https://www.euroleaguebasketball.net/euroleague/news/dubai-quintet-depart-the-club/",
+      "source_name": "EuroLeague Official"
+    },
+    {
+      "id": "el-00004d750dc5",
+      "player": "Boogie Ellis",
+      "pos": "SG",
+      "from": "Dubai Basketball",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-22",
+      "source_url": "https://www.euroleaguebasketball.net/euroleague/news/dubai-quintet-depart-the-club/",
+      "source_name": "EuroLeague Official"
+    },
+    {
+      "id": "el-00006d1251f5",
+      "player": "Matt Ryan",
+      "pos": "SF",
+      "from": "Dubai Basketball",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-22",
+      "source_url": "https://www.euroleaguebasketball.net/euroleague/news/dubai-quintet-depart-the-club/",
+      "source_name": "EuroLeague Official"
+    },
+    {
+      "id": "el-000079cccdf3",
+      "player": "Nate Mason",
+      "pos": "PG",
+      "from": "Dubai Basketball",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-22",
+      "source_url": "https://www.euroleaguebasketball.net/euroleague/news/dubai-quintet-depart-the-club/",
+      "source_name": "EuroLeague Official"
+    },
+    {
+      "id": "aba-00000bb6af7f",
+      "player": "Aleksandar Lazić",
+      "pos": "PF",
+      "from": "Igokea m:tel",
+      "to": "Igokea m:tel",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-22",
+      "source_url": "https://www.aba-liga.com/news/54922/lazic-stays-kovacevic-arrives-as-igokea-m-tel-strengthen-frontcourt/",
+      "source_name": "ABA Liga Official"
+    },
+    {
+      "id": "aba-00000b634275",
+      "player": "Petar Kovačević",
+      "pos": "PF",
+      "from": "Bosna",
+      "to": "Igokea m:tel",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-22",
+      "source_url": "https://www.aba-liga.com/news/54922/lazic-stays-kovacevic-arrives-as-igokea-m-tel-strengthen-frontcourt/",
+      "source_name": "ABA Liga Official"
     },
     {
       "player": "Zeljko Obradovic",
