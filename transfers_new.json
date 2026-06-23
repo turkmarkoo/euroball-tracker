@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-22T16:40:14.296261+00:00",
-  "count": 173,
+  "generated_at": "2026-06-23T14:10:04.560313+00:00",
+  "count": 195,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -127,6 +127,102 @@
       "source_name": "Eurohoops",
       "source_url": "https://www.eurohoops.net/en/euroleague/1981544/barca-and-baskonia-forced-to-reach-an-understanding-regarding-xevi-pujol-and-mike-james/",
       "_isNew": true
+    },
+    {
+      "player": "Zeljko Obradovic",
+      "pos": "coach",
+      "from": "Free Agent",
+      "to": "Panathinaikos AKTOR Athens",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-21",
+      "source_url": "https://www.talkbasket.net/220018-zeljko-obradovic-returns-to-panathinaikos-on-record-deal",
+      "source_name": "TalkBasket.net",
+      "id": "ai-b661cf31ecd9"
+    },
+    {
+      "player": "Matthew Strazel",
+      "pos": "PG",
+      "from": "AS Monaco",
+      "to": "Anadolu Efes",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-21",
+      "source_url": "https://www.eurohoops.net/en/euroleague/1982946/matthew-strazel-reaching-agreement-with-anadolu-efes/",
+      "source_name": "Eurohoops",
+      "id": "ai-cc23c7f8652e"
+    },
+    {
+      "player": "Sitraka Raharimanantoanina",
+      "pos": "PF",
+      "from": "Elan Bearnais Pau-Lacq-Orthez",
+      "to": "Cholet Basket",
+      "status": "signed",
+      "league": "BCL",
+      "date": "2026-06-21",
+      "source_url": "https://www.bebasket.fr/sitraka-raharimanantoanina-signe-a-cholet-pour-deux-saisons-un-joueur-jfl-en-pleine-progression",
+      "source_name": "BeBasket",
+      "id": "ai-f6207f052b7a"
+    },
+    {
+      "player": "Matt Morgan",
+      "pos": "SG",
+      "from": "Virtus Bologna",
+      "to": "Aris Thessaloniki",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-21",
+      "source_url": "https://sportando.basketball/en/matt-morgan-set-to-join-aris-bc/",
+      "source_name": "Sportando",
+      "id": "ai-72683547da96"
+    },
+    {
+      "player": "Shavon Shields",
+      "pos": "SF",
+      "from": "EA7 Emporio Armani Milan",
+      "to": "Aris Thessaloniki",
+      "status": "rumor",
+      "league": "EuroCup",
+      "date": "2026-06-21",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1982773/aris-has-reportedly-targeted-shavon-shields-and-matt-morgan/",
+      "source_name": "Eurohoops",
+      "id": "ai-95eb324c195d"
+    },
+    {
+      "player": "Bogdan Bogdanovic",
+      "pos": "SG",
+      "from": "Free Agent",
+      "to": "Panathinaikos AKTOR Athens",
+      "status": "rumor",
+      "league": "EuroLeague",
+      "date": "2026-06-21",
+      "source_url": "https://sportando.basketball/en/obradovic-bogdanovic-reunion-panathinaikos-exploring-major-move/",
+      "source_name": "Sportando",
+      "id": "ai-9a8ee7ee4281"
+    },
+    {
+      "player": "Ezra Manjon",
+      "pos": "PG",
+      "from": "Bertram Derthona",
+      "to": "Kolossos Rhodes",
+      "status": "signed",
+      "league": "BCL",
+      "date": "2026-06-20",
+      "source_url": "https://sportando.basketball/en/rumors/basket-rumors/",
+      "source_name": "Sportando",
+      "id": "ai-3d5c6351f27e"
+    },
+    {
+      "player": "Tyler Dorsey",
+      "pos": "SG",
+      "from": "Olympiacos",
+      "to": "Olympiacos",
+      "status": "rumor",
+      "league": "EuroLeague",
+      "date": "2026-06-20",
+      "source_url": "https://sportando.basketball/en/rumors/basket-rumors/",
+      "source_name": "Sportando",
+      "id": "ai-2ff2e0cff4b9"
     },
     {
       "id": "aba-54914",
@@ -2117,6 +2213,54 @@
       "_isNew": true
     },
     {
+      "player": "Alex Mumbru",
+      "pos": "coach",
+      "from": "Free Agent",
+      "to": "Virtus Bologna",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-19",
+      "source_url": "https://www.euroleaguebasketball.net/en/euroleague/news/virtus-appoints-alex-mumbru-as-its-new-head-coach/",
+      "source_name": "EuroLeague Basketball",
+      "id": "ai-9c91feee98fa"
+    },
+    {
+      "player": "Tony Snell",
+      "pos": "SF",
+      "from": "Boulazac Basket Dordogne",
+      "to": "Cholet Basket",
+      "status": "signed",
+      "league": "BCL",
+      "date": "2026-06-19",
+      "source_url": "https://sportando.basketball/en/rumors/basket-rumors/",
+      "source_name": "Sportando",
+      "id": "ai-25009de6b1dd"
+    },
+    {
+      "player": "Noah Locke",
+      "pos": "SG",
+      "from": "Free Agent",
+      "to": "Cholet Basket",
+      "status": "signed",
+      "league": "BCL",
+      "date": "2026-06-19",
+      "source_url": "https://www.bebasket.fr/comme-une-evidence-a-cholet-le-sniper-noah-locke-revient-enflammer-la-meilleraie",
+      "source_name": "BeBasket",
+      "id": "ai-6e57d9ae7d52"
+    },
+    {
+      "player": "Justin Robinson",
+      "pos": "PG",
+      "from": "Paris Basketball",
+      "to": "FC Barcelona",
+      "status": "rumor",
+      "league": "EuroLeague",
+      "date": "2026-06-19",
+      "source_url": "https://sportando.basketball/en/barcelona-target-justin-robinson-after-mike-james-setback/",
+      "source_name": "Sportando",
+      "id": "ai-2b2cb87eebf9"
+    },
+    {
       "id": "sp-kolossos-rhodes-sign-ezra-manjon-payton-",
       "player": "Kolossos Rhodes Sign Ezra Manjon, Payton Willis",
       "pos": "?",
@@ -2313,6 +2457,78 @@
       "_isNew": true
     },
     {
+      "player": "Moses Wright",
+      "pos": "C",
+      "from": "Zalgiris Kaunas",
+      "to": "FC Barcelona",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-18",
+      "source_url": "https://www.euroleaguebasketball.net/es/euroleague/news/moses-wright-headlines-trio-of-zalgiris-exits/",
+      "source_name": "EuroLeague Basketball",
+      "id": "ai-d716727a098d"
+    },
+    {
+      "player": "Ignas Brazdeikis",
+      "pos": "SF",
+      "from": "Zalgiris Kaunas",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-18",
+      "source_url": "https://www.euroleaguebasketball.net/es/euroleague/news/moses-wright-headlines-trio-of-zalgiris-exits/",
+      "source_name": "EuroLeague Basketball",
+      "id": "ai-a1b7121ee1f5"
+    },
+    {
+      "player": "Laurynas Birutis",
+      "pos": "C",
+      "from": "Zalgiris Kaunas",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-18",
+      "source_url": "https://zalgiris.lt/en/naujienos/zalgiris-parts-ways-with-three-players",
+      "source_name": "Zalgiris.lt",
+      "id": "ai-498763398d43"
+    },
+    {
+      "player": "Selom Mawugbe",
+      "pos": "C",
+      "from": "Dolomiti Energia Trentino",
+      "to": "Dolomiti Energia Trentino",
+      "status": "extended",
+      "league": "EuroCup",
+      "date": "2026-06-18",
+      "source_url": "https://sportando.basketball/en/selom-mawugbe-signs-new-deal-with-dolomiti-energia-trentino/",
+      "source_name": "Sportando",
+      "id": "ai-b7c4c8b00a2a"
+    },
+    {
+      "player": "Sylvain Francisco",
+      "pos": "SG",
+      "from": "Zalgiris Kaunas",
+      "to": "LDLC ASVEL Villeurbanne",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-18",
+      "source_url": "https://basketball.realgm.com/international/league/1/Euroleague/transactions",
+      "source_name": "RealGM",
+      "id": "ai-cad0cb0cba41"
+    },
+    {
+      "player": "Nick Weiler-Babb",
+      "pos": "SG",
+      "from": "Zalgiris Kaunas",
+      "to": "LDLC ASVEL Villeurbanne",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-18",
+      "source_url": "https://basketball.realgm.com/international/league/1/Euroleague/transactions",
+      "source_name": "RealGM",
+      "id": "ai-f2262afefe21"
+    },
+    {
       "id": "sp-new-york-knicks-keeping-close-eye-on-ser",
       "player": "New York Knicks keeping close eye on Sergio De Larrea ahead of NBA Draft",
       "pos": "?",
@@ -2409,6 +2625,54 @@
       "source_name": "Sportando",
       "source_url": "https://sportando.basketball/en/official-nick-calathes-signs-with-paok-through-2028/",
       "_isNew": true
+    },
+    {
+      "player": "Kevarrius Hayes",
+      "pos": "C",
+      "from": "AS Monaco",
+      "to": "Partizan Mozzart Bet Belgrade",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-17",
+      "source_url": "https://sportando.basketball/en/partizan-reaches-agreement-with-kevarrius-hayes-on-two-year-deal/",
+      "source_name": "Sportando",
+      "id": "ai-aa7469bd1c33"
+    },
+    {
+      "player": "Derek Willis",
+      "pos": "PF",
+      "from": "Paris Basketball",
+      "to": "Partizan Mozzart Bet Belgrade",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-17",
+      "source_url": "https://sportando.basketball/en/partizan-belgrade-finalizing-agreement-with-derek-willis/",
+      "source_name": "Sportando",
+      "id": "ai-1900fbeed94d"
+    },
+    {
+      "player": "Dario Saric",
+      "pos": "PF",
+      "from": "Free Agent",
+      "to": "Anadolu Efes",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-16",
+      "source_url": "https://www.talkbasket.net/219784-anadolu-efes-brings-back-dario-saric",
+      "source_name": "TalkBasket.net",
+      "id": "ai-f4fb9dbe421b"
+    },
+    {
+      "player": "Jordan Loyd",
+      "pos": "SG",
+      "from": "Anadolu Efes",
+      "to": "Anadolu Efes",
+      "status": "extended",
+      "league": "EuroLeague",
+      "date": "2026-06-16",
+      "source_url": "https://www.talkbasket.net/219784-anadolu-efes-brings-back-dario-saric",
+      "source_name": "TalkBasket.net",
+      "id": "ai-53ec0290e324"
     },
     {
       "id": "sp-virtus-bologna-sasha-djordjevic-ready-to",
