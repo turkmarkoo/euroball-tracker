@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23T19:23:05.587677+00:00",
-  "count": 243,
+  "generated_at": "2026-06-23T19:39:30.839Z",
+  "count": 252,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -163,6 +163,114 @@
       "source_url": "https://www.acb.com/jugador/noticias/id/20212190",
       "source_name": "acb.com",
       "id": "ai-7e08fd46b641"
+    },
+    {
+      "id": "bnxt-00004e6b4dfc",
+      "player": "Joris Metz",
+      "pos": "SG",
+      "from": "Apollo Amsterdam",
+      "to": "Heroes Den Bosch",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/heroes-den-bosch-signs-youth-international",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-0000126039ea",
+      "player": "Julius Mims",
+      "pos": "C",
+      "from": "Free Agent",
+      "to": "Hubo Limburg United",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/american-center-joins-hubo-limburg-united",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-000026f652cc",
+      "player": "Sai Witt",
+      "pos": "C",
+      "from": "Free Agent",
+      "to": "CB Liège",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/cb-liege-signs-sai-witt",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-000076f89bee",
+      "player": "Ali Sow",
+      "pos": "PG",
+      "from": "Free Agent",
+      "to": "CB Liège",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/cb-liege-adds-ali-sow-to-its-roster",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-0000323800c5",
+      "player": "Jason Dourisseau",
+      "pos": "coach",
+      "from": "Donar Groningen",
+      "to": "Donar Groningen",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/dourisseau-signs-two-year-contract-extension-with-donar-groningen",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-00002d950ebd",
+      "player": "Lucas Kruithof",
+      "pos": "SF",
+      "from": "ZZ Leiden",
+      "to": "Val-Dieu Spirou Basket",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/lucas-kruithof-signs-with-spirou-basket",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-000031d73393",
+      "player": "Jonathan Beagle",
+      "pos": "C",
+      "from": "Free Agent",
+      "to": "Zorg en Zekerheid Leiden",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/zorg-en-zekerheid-leiden-signs-jonathan-beagle",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-0000045ef9f7",
+      "player": "Carl Cleveland",
+      "pos": "SF",
+      "from": "Free Agent",
+      "to": "Leuven Bears",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/leuven-bears-sign-carl-cleveland",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-00006e6b396c",
+      "player": "Grant Anticevich",
+      "pos": "PF",
+      "from": "KK Split",
+      "to": "Okapi Aalst",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-23",
+      "source_url": "https://bnxtleague.com/en/newsvideo/okapi-aalst-signs-grant-anticevich",
+      "source_name": "BNXT League Official"
     },
     {
       "id": "ai-00005d955797",
