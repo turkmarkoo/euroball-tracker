@@ -353,56 +353,101 @@ def save_new(new_items: list[dict], archive: dict | None = None) -> None:
 
 def ai_web_search_transfers(api_key: str) -> list[dict]:
     """Use Anthropic web_search to find recent European basketball transfers.
-    Bypasses IP blocking that prevents direct site scraping on GitHub Actions."""
+    Runs 6 targeted searches — one per official league/site group — so
+    official announcements on euroleaguebasketball.net, aba-liga.com,
+    bnxtleague.com, etc. are never missed."""
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    prompt = (
-        f"Today is {today}. Search the web for European basketball player transfers, "
-        "signings, and departures from the past 7 days.\n\n"
-        "Search sites like: sportando.basketball, aba-liga.com, euroleaguebasketball.net, "
-        "acb.com, legabasket.it, talkbasket.net, eurohoops.net, basketnews.com, "
-        "plk.pl, sport24.gr, baschetromania.ro, bebasket.fr, basketball-world.news\n\n"
-        "For each transfer found return a JSON array. Each item must have:\n"
-        '  {"player":"Full Name","pos":"PG|SG|SF|PF|C|coach|?",'
-        '"from":"Club or Free Agent or ?","to":"Club or Free Agent or ?",'
+
+    SEARCH_TARGETS = [
+        ("EuroLeague/EuroCup Official",
+         "Search site:euroleaguebasketball.net for player signings, transfers and "
+         "departures announced in the past 7 days. Cover both EuroLeague and EuroCup."),
+        ("ABA League Official",
+         "Search site:aba-liga.com for player signings, transfers and departures "
+         "announced in the past 7 days."),
+        ("BNXT League Official",
+         "Search site:bnxtleague.com for player signings, transfers and departures "
+         "announced in the past 7 days. BNXT covers Belgium and the Netherlands."),
+        ("ACB / Lega Basket / BSL",
+         "Search acb.com, legabasket.it and bsl.com.tr for player signings, transfers "
+         "and departures announced in the past 7 days."),
+        ("Sportando / Eurohoops / TalkBasket",
+         "Search sportando.basketball, eurohoops.net and talkbasket.net for European "
+         "basketball player transfers and signings from the past 7 days."),
+        ("Other European leagues",
+         "Search for player transfers and signings in the past 7 days across: "
+         "LKL (Lithuania, basketnews.com), PLK (Poland, plk.pl), BCL Basketball "
+         "Champions League, Greek Basket League (sport24.gr), Israeli BSL, "
+         "Romanian LNB (baschetromania.ro), Hungarian NB1, Croatian HKL."),
+    ]
+
+    OUTPUT_SCHEMA = (
+        "Return a JSON array. Each element: "
+        '{"player":"Full Name","pos":"PG|SG|SF|PF|C|coach|?",'
+        '"from":"Previous club or Free Agent or ?","to":"New club or Free Agent or ?",'
         '"status":"signed|rumor|left|extended",'
-        '"league":"EuroLeague|EuroCup|ACB|ABA League|Lega Basket|BSL|LKL|BCL|?","date":"YYYY-MM-DD",'
-        '"source_url":"https://...","source_name":"Site Name"}\n\n'
-        "Rules: only real player/coach names; date as YYYY-MM-DD; no duplicates; "
-        "return ONLY the JSON array with no markdown or explanation."
+        '"league":"EuroLeague|EuroCup|ACB|ABA League|Lega Basket|BSL|BNXT|LKL|BCL|?","date":"YYYY-MM-DD",'
+        '"source_url":"https://...","source_name":"Site Name"} '
+        "Rules: real player/coach names only; YYYY-MM-DD dates; no duplicates; "
+        "return ONLY the JSON array, no markdown, no explanation."
     )
-    body = json.dumps({
-        "model": "claude-sonnet-4-6",
-        "max_tokens": 8000,
-        "tools": [{"type": "web_search_20250305", "name": "web_search"}],
-        "messages": [{"role": "user", "content": prompt}],
-    }).encode()
-    req = Request(
-        "https://api.anthropic.com/v1/messages",
-        data=body,
-        headers={
-            "Content-Type": "application/json",
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
-        },
-    )
-    try:
-        with urlopen(req, timeout=120) as resp:
-            result = json.loads(resp.read())
-            texts = [c["text"] for c in result.get("content", []) if c.get("type") == "text"]
-            raw = " ".join(texts).strip()
-            if not raw:
-                return []
-            if "```" in raw:
-                raw = raw.split("```")[1].lstrip("json").strip()
-            start, end = raw.find("["), raw.rfind("]") + 1
-            if start < 0 or end <= start:
-                return []
-            return json.loads(raw[start:end])
-    except Exception as e:
-        print(f"  AI web search error: {e}")
-        return []
 
+    all_results: list[dict] = []
+    seen_keys: set[str] = set()
 
+    for label, instruction in SEARCH_TARGETS:
+        prompt = (
+            f"Today is {today}.\n\n"
+            f"{instruction}\n\n"
+            f"{OUTPUT_SCHEMA}"
+        )
+        body = json.dumps({
+            "model": "claude-sonnet-4-6",
+            "max_tokens": 4000,
+            "tools": [{"type": "web_search_20250305", "name": "web_search"}],
+            "messages": [{"role": "user", "content": prompt}],
+        }).encode()
+        req = Request(
+            "https://api.anthropic.com/v1/messages",
+            data=body,
+            headers={
+                "Content-Type": "application/json",
+                "x-api-key": api_key,
+                "anthropic-version": "2023-06-01",
+            },
+        )
+        try:
+            with urlopen(req, timeout=120) as resp:
+                result = json.loads(resp.read())
+                texts = [c["text"] for c in result.get("content", []) if c.get("type") == "text"]
+                raw = " ".join(texts).strip()
+                if not raw:
+                    print(f"  [{label}] no text response")
+                    continue
+                if "```" in raw:
+                    raw = raw.split("```")[1].lstrip("json").strip()
+                start, end = raw.find("["), raw.rfind("]") + 1
+                if start < 0 or end <= start:
+                    print(f"  [{label}] no JSON array found")
+                    continue
+                batch = json.loads(raw[start:end])
+                added = 0
+                for item in batch:
+                    p = item.get("player", "").strip()
+                    t = item.get("to", "").strip()
+                    dt = item.get("date", "")
+                    key = f"{p.lower()}-{t.lower()}-{dt}"
+                    if p and p != "?" and key not in seen_keys:
+                        seen_keys.add(key)
+                        all_results.append(item)
+                        added += 1
+                print(f"  [{label}] {added} transfers found")
+        except Exception as e:
+            print(f"  [{label}] error: {e}")
+        time.sleep(1)
+
+    print(f"  Total from AI web search: {len(all_results)}")
+    return all_results
 # ── AI ENRICHMENT ───────────────────────────────────────────────────────────
 
 def ai_extract(headline: str, url: str, api_key: str) -> dict:
