@@ -1648,7 +1648,9 @@ sortT();
 document.getElementById('initPr').style.display='none';
 loadSeen();
 initApiKeyUI();
-renderT();
+renderT();        // Auto-load latest scraped transfers on every page open
+        fetchAll();
+
 renderT();
 renderT();
 
