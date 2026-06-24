@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T08:49:21.395382+00:00",
-  "count": 373,
+  "generated_at": "2026-06-24T10:40:17.654946+00:00",
+  "count": 388,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -616,6 +616,90 @@
       "id": "ai-6b5c14d8ceb4"
     },
     {
+      "player": "Zac Seljaas",
+      "pos": "SF",
+      "from": "ASVEL Villeurbanne",
+      "to": "Napoli Basket",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-23",
+      "source_url": "https://sportando.basketball/en/napoli-basketball-officially-sign-zac-seljaas/",
+      "source_name": "Sportando",
+      "id": "ai-fa9c2cc696f6"
+    },
+    {
+      "player": "Marco Spissu",
+      "pos": "PG",
+      "from": "Casademont Zaragoza",
+      "to": "Napoli Basket",
+      "status": "rumor",
+      "league": "Lega Basket",
+      "date": "2026-06-23",
+      "source_url": "https://sportando.basketball/en/marco-spissu-to-join-napoli-basketball/",
+      "source_name": "Sportando",
+      "id": "ai-4cee1d9e3786"
+    },
+    {
+      "player": "Andrej Jakimovski",
+      "pos": "SF",
+      "from": "Dolomiti Energia Trentino",
+      "to": "Napoli Basket",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-23",
+      "source_url": "https://sportando.basketball/andrej-jakimovski-napoli-basketball-biennale/",
+      "source_name": "Sportando",
+      "id": "ai-20228d412be1"
+    },
+    {
+      "player": "Shaquille Harrison",
+      "pos": "SG",
+      "from": "ASVEL Villeurbanne",
+      "to": "Trabzonspor Basketbol",
+      "status": "signed",
+      "league": "BSL",
+      "date": "2026-06-23",
+      "source_url": "https://sportando.basketball/en/trabzonspor-officially-sign-shaquille-harrison/",
+      "source_name": "Sportando",
+      "id": "ai-2859fde1c91d"
+    },
+    {
+      "player": "Andrzej Pluta",
+      "pos": "SG",
+      "from": "Legia Warszawa",
+      "to": "Basquet Girona",
+      "status": "signed",
+      "league": "ACB",
+      "date": "2026-06-23",
+      "source_url": "https://plk.pl/aktualnosci/27224/andrzej-pluta-przenosi-sie-do-hiszpanii",
+      "source_name": "plk.pl",
+      "id": "ai-0965d5ac820c"
+    },
+    {
+      "player": "Anthony Wrzeszcz",
+      "pos": "SG",
+      "from": "Free Agent",
+      "to": "WKS Śląsk Wrocław",
+      "status": "signed",
+      "league": "PLK",
+      "date": "2026-06-23",
+      "source_url": "https://plk.pl/aktualnosci/27225/wrzeszcz-zagra-w-wks-slasku",
+      "source_name": "plk.pl",
+      "id": "ai-1cea950dae81"
+    },
+    {
+      "player": "Conley Garrison",
+      "pos": "PG",
+      "from": "ORLEN Zastal Zielona Góra",
+      "to": "ORLEN Zastal Zielona Góra",
+      "status": "extended",
+      "league": "PLK",
+      "date": "2026-06-23",
+      "source_url": "https://plk.pl/aktualnosci/27228/garrison-zostaje-w-zielonej-gorze",
+      "source_name": "plk.pl",
+      "id": "ai-5d5f65c197d5"
+    },
+    {
       "id": "ai-00005d955797",
       "player": "DeVante Jones",
       "pos": "PG",
@@ -830,6 +914,30 @@
       "source_url": "https://www.eurohoops.net/en/eurocup/1983338/berk-ugurlu-stays-with-besiktas-adam-atamna-to-ulm-eurocup/",
       "source_name": "Eurohoops",
       "id": "ai-174b1d7fd797"
+    },
+    {
+      "player": "Yiğit Arslan",
+      "pos": "SG",
+      "from": "Beşiktaş GAİN",
+      "to": "Trabzonspor Basketbol",
+      "status": "signed",
+      "league": "BSL",
+      "date": "2026-06-22",
+      "source_url": "https://www.sabah.com.tr/spor/basketbol/2026/06/23/trabzonspor-basketbol-takimi-shaquille-harrison-ile-yigit-arslan-transferlerini-duyurdu",
+      "source_name": "Sabah",
+      "id": "ai-8c4c9be87a26"
+    },
+    {
+      "player": "Martynas Pocius",
+      "pos": "coach",
+      "from": "Real Madrid",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "?",
+      "date": "2026-06-22",
+      "source_url": "https://www.eurohoops.net/en/euroleague/1983425/martynas-pocius-announces-his-departure-from-real-madrid-an-incredible-learning-experience/",
+      "source_name": "Eurohoops",
+      "id": "ai-a9ad8229bbd1"
     },
     {
       "player": "Zeljko Obradovic",
@@ -1070,6 +1178,18 @@
       "source_url": "https://sportando.basketball/en/rumors/basket-rumors/",
       "source_name": "Sportando",
       "id": "ai-f9877304e433"
+    },
+    {
+      "player": "Marius Grigonis",
+      "pos": "PG",
+      "from": "Panathinaikos",
+      "to": "Zalgiris Kaunas",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-20",
+      "source_url": "https://www.eurohoops.net/en/euroleague/1982556/marius-grigonis-signs-with-zalgiris-euroleague/",
+      "source_name": "Eurohoops",
+      "id": "ai-0867bdbd7c25"
     },
     {
       "id": "aba-54914",
@@ -4158,6 +4278,42 @@
       "id": "ai-2504c29b12d3"
     },
     {
+      "player": "Matthew Hurt",
+      "pos": "SF",
+      "from": "Cedevita Olimpija",
+      "to": "Cedevita Olimpija",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-17",
+      "source_url": "https://www.aba-liga.com/news/54907/matthew-hurt-stays-in-ljubljana/",
+      "source_name": "ABA League",
+      "id": "ai-7e781cb229b0"
+    },
+    {
+      "player": "Dragan Milosavljević",
+      "pos": "SF",
+      "from": "Igokea m:tel",
+      "to": "Igokea m:tel",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-17",
+      "source_url": "https://www.aba-liga.com/news/54908/dragan-milosavljevic-continues-career-at-igokea-m-tel/",
+      "source_name": "ABA League",
+      "id": "ai-1f3fd7876dbb"
+    },
+    {
+      "player": "Danijel Jusup",
+      "pos": "coach",
+      "from": "Zadar",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "ABA League",
+      "date": "2026-06-17",
+      "source_url": "https://www.aba-liga.com/news/54906/official-zadar-parts-ways-with-danijel-jusup/",
+      "source_name": "ABA League",
+      "id": "ai-ce79d35e3176"
+    },
+    {
       "player": "Dario Saric",
       "pos": "PF",
       "from": "Free Agent",
@@ -4228,6 +4384,18 @@
       "source_url": "https://www.eurobasket.com/Belgium/news/994649/Charleroi-welcomes-back-Heath",
       "source_name": "Eurobasket.com",
       "id": "ai-8cb40cf88814"
+    },
+    {
+      "player": "Saben Lee",
+      "pos": "PG",
+      "from": "Free Agent",
+      "to": "Zalgiris Kaunas",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-16",
+      "source_url": "https://www.eurohoops.net/en/euroleague/1981092/saben-lee-signs-with-zalgiris-euroleague/",
+      "source_name": "Eurohoops",
+      "id": "ai-804f9bdb7f12"
     },
     {
       "player": "Jalyn McCreary",
@@ -4518,6 +4686,18 @@
       "source_url": "https://starsporttv.be/content/bnxt-league-kortrijk-haalt-nederlandse-international-troy-koehler",
       "source_name": "Starsporttv.be",
       "id": "ai-0ac747da2687"
+    },
+    {
+      "player": "John Petrucelli",
+      "pos": "SF",
+      "from": "Galatasaray",
+      "to": "Napoli Basket",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-01",
+      "source_url": "https://www.eurobasket.com/Italy/news/993389/John-Petrucelli-ex-Galatasaray-agreed-terms-with-Napoli",
+      "source_name": "Eurobasket",
+      "id": "ai-9fe1b8c901e8"
     },
     {
       "player": "Mattias Palinckx",
