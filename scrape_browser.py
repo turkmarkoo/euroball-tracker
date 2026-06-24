@@ -59,7 +59,7 @@ def save_archive(archive: dict) -> None:
 
 def save_new(new_items: list, archive: dict) -> None:
     cutoff = (datetime.now(timezone.utc) - timedelta(days=14)).strftime("%Y-%m-%d")
-    recent = [i for i in archive.values() if i.get("date", "") >= cutoff]
+    recent = [i for i in archive.values() if i.get("date", "") >= cutoff and not i.get("_visited")]
     merged = {i["id"]: i for i in recent}
     merged.update({i["id"]: i for i in new_items})
     items = sorted(merged.values(), key=lambda x: x.get("date", ""), reverse=True)
