@@ -41,7 +41,6 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
-
       - name: Commit updated JSON files
         run: |
           git config user.name  "EuroBall Scraper Bot"
