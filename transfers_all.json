@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T10:40:17.654946+00:00",
-  "count": 388,
+  "generated_at": "2026-06-24T16:38:00.299311+00:00",
+  "count": 399,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -350,6 +350,42 @@
       "source_url": "https://www.eurohoops.net/en/eurocup/1983896/zac-seljaas-to-napoli-eurocup/",
       "source_name": "Eurohoops",
       "id": "ai-5c30f0440acf"
+    },
+    {
+      "player": "Erik Quintela",
+      "pos": "PG",
+      "from": "Río Breogán",
+      "to": "Río Breogán",
+      "status": "extended",
+      "league": "ACB",
+      "date": "2026-06-24",
+      "source_url": "https://www.acb.com/es/liga/noticias/erik-quintela-renueva-con-el-rio-breogan-145409",
+      "source_name": "ACB.com",
+      "id": "ai-dedbc8dc8d09"
+    },
+    {
+      "player": "Chris Jones",
+      "pos": "PG",
+      "from": "Hapoel IBI Tel Aviv",
+      "to": "Crvena Zvezda",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-24",
+      "source_url": "https://www.eurohoops.net/en/euroleague/1984120/chris-jones-signs-with-crvena-zvezda-euroleague/",
+      "source_name": "Eurohoops",
+      "id": "ai-26f0319b350b"
+    },
+    {
+      "player": "Xavier Tillman",
+      "pos": "C",
+      "from": "Charlotte Hornets",
+      "to": "Trabzonspor",
+      "status": "signed",
+      "league": "BSL",
+      "date": "2026-06-24",
+      "source_url": "https://sportando.basketball/en/xavier-tillman-begins-new-chapter-with-trabzonspor/",
+      "source_name": "Sportando",
+      "id": "ai-8b851d416833"
     },
     {
       "id": "ai-00001e83ee30",
@@ -940,6 +976,42 @@
       "id": "ai-a9ad8229bbd1"
     },
     {
+      "player": "Álex Reyes",
+      "pos": "SF",
+      "from": "Kids&Us Manresa",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "ACB",
+      "date": "2026-06-22",
+      "source_url": "https://www.acb.com/es/liga/noticias/reyes-no-seguira-en-el-kidsus-manresa-145395",
+      "source_name": "ACB.com",
+      "id": "ai-5a250ada6fd8"
+    },
+    {
+      "player": "Matthew Strazel",
+      "pos": "PG",
+      "from": "AS Monaco",
+      "to": "Anadolu Efes",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-22",
+      "source_url": "https://sportando.basketball/en/monaco-set-for-strazel-and-hayes-exits-mirotic-could-be-next/",
+      "source_name": "Sportando",
+      "id": "ai-594710476978"
+    },
+    {
+      "player": "Kevarrius Hayes",
+      "pos": "C",
+      "from": "AS Monaco",
+      "to": "Partizan Belgrade",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-22",
+      "source_url": "https://sportando.basketball/en/monaco-set-for-strazel-and-hayes-exits-mirotic-could-be-next/",
+      "source_name": "Sportando",
+      "id": "ai-5192b1994e61"
+    },
+    {
       "player": "Zeljko Obradovic",
       "pos": "coach",
       "from": "Free Agent",
@@ -1058,6 +1130,18 @@
       "source_url": "https://sportando.basketball/en/panathinaikos-announce-zeljko-obradovic-s-return/",
       "source_name": "Sportando",
       "id": "ai-42471f6ee1f0"
+    },
+    {
+      "player": "Željko Obradović",
+      "pos": "coach",
+      "from": "Partizan Belgrade",
+      "to": "Panathinaikos",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-21",
+      "source_url": "https://en.wikipedia.org/wiki/%C5%BDeljko_Obradovi%C4%87",
+      "source_name": "Wikipedia",
+      "id": "ai-8dfe0321c4a6"
     },
     {
       "player": "Ezra Manjon",
@@ -1190,6 +1274,18 @@
       "source_url": "https://www.eurohoops.net/en/euroleague/1982556/marius-grigonis-signs-with-zalgiris-euroleague/",
       "source_name": "Eurohoops",
       "id": "ai-0867bdbd7c25"
+    },
+    {
+      "player": "Stipe Modrić",
+      "pos": "coach",
+      "from": "Ilirija",
+      "to": "KK Zadar",
+      "status": "signed",
+      "league": "HKL",
+      "date": "2026-06-20",
+      "source_url": "https://www.eurobasket.com/Croatia/news/997281/Stipe-Modric-Named-New-Head-Coach-of-Zadar",
+      "source_name": "Eurobasket",
+      "id": "ai-e3611ba7d092"
     },
     {
       "id": "aba-54914",
@@ -3456,6 +3552,30 @@
       "id": "ai-22dc7292246e"
     },
     {
+      "player": "Alex Mumbrù",
+      "pos": "coach",
+      "from": "Germany National Team",
+      "to": "Virtus Bologna",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-19",
+      "source_url": "https://www.bolognabasket.org/news/241859726854/ufficiale-alex-mumbr-il-nuovo-allenatore-della-virtus",
+      "source_name": "Virtus Bologna official",
+      "id": "ai-fa83af9901c1"
+    },
+    {
+      "player": "Ezra Manjon",
+      "pos": "PG",
+      "from": "Bertram Derthona",
+      "to": "Kolossos Rhodes",
+      "status": "signed",
+      "league": "Greek Basket League",
+      "date": "2026-06-19",
+      "source_url": "https://sportando.basketball/en/kolossos-rhodes-sign-ezra-manjon-payton-willis/",
+      "source_name": "Sportando",
+      "id": "ai-5bc5bf4befbd"
+    },
+    {
       "id": "sp-kolossos-rhodes-sign-ezra-manjon-payton-",
       "player": "Kolossos Rhodes Sign Ezra Manjon, Payton Willis",
       "pos": "?",
@@ -3866,6 +3986,18 @@
       "source_url": "https://acb.com/es/liga/noticias",
       "source_name": "ACB",
       "id": "ai-ed95133e3665"
+    },
+    {
+      "player": "Payton Willis",
+      "pos": "PG",
+      "from": "Bertram Derthona",
+      "to": "Kolossos Rhodes",
+      "status": "signed",
+      "league": "Greek Basket League",
+      "date": "2026-06-18",
+      "source_url": "https://sportando.basketball/en/kolossos-rhodes-sign-ezra-manjon-payton-willis/",
+      "source_name": "Sportando",
+      "id": "ai-ab2248aee71f"
     },
     {
       "id": "sp-new-york-knicks-keeping-close-eye-on-ser",
