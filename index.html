@@ -1648,8 +1648,20 @@ sortT();
 document.getElementById('initPr').style.display='none';
 loadSeen();
 initApiKeyUI();
-renderT();        // Auto-load latest scraped transfers on every page open
-        fetchAll();
+renderT();        // Auto-load latest scraped transfers on every page open (JSON only, no site scraping)
+        (async () => {
+          try {
+            const resp = await fetch('https://raw.githubusercontent.com/turkmarkoo/euroball-tracker/main/transfers_new.json?nc=' + Date.now());
+            if (!resp.ok) return;
+            const data = await resp.json();
+            const items = (data.items || []).filter(t => t.league !== 'News' && !(t.pos==='?'&&t.from==='?'&&t.to==='?'));
+            let changed = false;
+            for (const item of items) {
+              if (!allT.find(e => e.id === item.id)) { allT.push(item); changed = true; }
+            }
+            if (changed) { dedup(); sortT(); renderT(); }
+          } catch(e) { /* silent fail */ }
+        })();
 
 renderT();
 renderT();
