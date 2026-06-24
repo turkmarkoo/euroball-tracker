@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T06:05:33.592222+00:00",
-  "count": 333,
+  "generated_at": "2026-06-24T08:49:21.399658+00:00",
+  "count": 349,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -311,6 +311,47 @@
       "date": "2026-06-24"
     },
     {
+      "id": "br-a3c51c5ea4c8",
+      "player": "Noël Coleman",
+      "pos": "PG",
+      "from": "House of Talents Kortrijk Spurs",
+      "to": "Windrose Giants Antwerp",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-24",
+      "source_url": "https://bnxtleague.com/en/newsvideo/noel-coleman-joins-windrose-giants-antwerp",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-79cb4b3fa679",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
+      "player": "Kadin Shedrick",
+      "pos": "C",
+      "from": "Hapoel Gilat Telecom Haemek",
+      "to": "JL Bourg",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-24",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1983896/zac-seljaas-to-napoli-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-38f74b11562e"
+    },
+    {
+      "player": "Noah Kirkwood",
+      "pos": "SG",
+      "from": "Slask Wroclaw",
+      "to": "Cedevita Olimpija",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-24",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1983896/zac-seljaas-to-napoli-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-5c30f0440acf"
+    },
+    {
       "id": "ai-00001e83ee30",
       "player": "Malcolm Hill",
       "pos": "SF",
@@ -515,6 +556,66 @@
       "id": "ai-f13cf200da14"
     },
     {
+      "player": "Shaquille Harrison",
+      "pos": "SG",
+      "from": "?",
+      "to": "Trabzonspor",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-23",
+      "source_url": "https://sportando.basketball/en/",
+      "source_name": "Sportando",
+      "id": "ai-0e39a6fa297b"
+    },
+    {
+      "player": "Zac Seljaas",
+      "pos": "SF",
+      "from": "LDLC ASVEL Villeurbanne",
+      "to": "Napoli Basketball",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-23",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1983896/zac-seljaas-to-napoli-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-11765e7f7510"
+    },
+    {
+      "player": "Isaiah Bigelow",
+      "pos": "PF",
+      "from": "?",
+      "to": "Dolomiti Energia Trentino",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-23",
+      "source_url": "https://sportando.basketball/en/",
+      "source_name": "Sportando",
+      "id": "ai-6a53a88b54da"
+    },
+    {
+      "player": "Alec Peters",
+      "pos": "PF",
+      "from": "Olympiacos Piraeus",
+      "to": "Olimpia Milano",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-23",
+      "source_url": "https://sportando.basketball/en/stavropoulos-alec-peters-has-signed-a-multi-year-contract-with-milano-and-will-be-a-key-player/",
+      "source_name": "Sportando",
+      "id": "ai-ff1a0219787b"
+    },
+    {
+      "player": "TJ Shorts",
+      "pos": "PG",
+      "from": "Panathinaikos",
+      "to": "Valencia Basket",
+      "status": "signed",
+      "league": "ACB",
+      "date": "2026-06-23",
+      "source_url": "https://sportando.basketball/en/panathinaikos-officially-part-ways-with-tj-shorts-valencia-deal-expected/",
+      "source_name": "Sportando",
+      "id": "ai-6b5c14d8ceb4"
+    },
+    {
       "id": "ai-00005d955797",
       "player": "DeVante Jones",
       "pos": "PG",
@@ -695,6 +796,42 @@
       "id": "ai-6fe09101aaa6"
     },
     {
+      "player": "Alex Reyes",
+      "pos": "SF",
+      "from": "Kids&Us Manresa",
+      "to": "Joventut",
+      "status": "left",
+      "league": "ACB",
+      "date": "2026-06-22",
+      "source_url": "https://www.acb.com/es/liga/noticias/reyes-no-seguira-en-el-kidsus-manresa-145395",
+      "source_name": "ACB",
+      "id": "ai-be1d98f36010"
+    },
+    {
+      "player": "Adam Atamna",
+      "pos": "PG",
+      "from": "LDLC ASVEL Villeurbanne",
+      "to": "ratiopharm Ulm",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-22",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1983338/berk-ugurlu-stays-with-besiktas-adam-atamna-to-ulm-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-e1b793588430"
+    },
+    {
+      "player": "Berk Ugurlu",
+      "pos": "PG",
+      "from": "Besiktas",
+      "to": "Besiktas",
+      "status": "extended",
+      "league": "EuroCup",
+      "date": "2026-06-22",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1983338/berk-ugurlu-stays-with-besiktas-adam-atamna-to-ulm-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-174b1d7fd797"
+    },
+    {
       "player": "Zeljko Obradovic",
       "pos": "coach",
       "from": "Free Agent",
@@ -801,6 +938,18 @@
       "source_url": "https://www.legabasket.it/",
       "source_name": "legabasket.it",
       "id": "ai-44000f67485b"
+    },
+    {
+      "player": "Zeljko Obradovic",
+      "pos": "coach",
+      "from": "?",
+      "to": "Panathinaikos",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-21",
+      "source_url": "https://sportando.basketball/en/panathinaikos-announce-zeljko-obradovic-s-return/",
+      "source_name": "Sportando",
+      "id": "ai-42471f6ee1f0"
     },
     {
       "player": "Ezra Manjon",
@@ -3175,6 +3324,18 @@
       "id": "ai-8f42f6d99853"
     },
     {
+      "player": "Marcus Bingham Jr.",
+      "pos": "C",
+      "from": "UNICS Kazan",
+      "to": "Fenerbahçe Beko",
+      "status": "signed",
+      "league": "BSL",
+      "date": "2026-06-19",
+      "source_url": "https://www.eurohoops.net/en/euroleague/1982400/fenerbahce-strengthens-its-frontcourt-rotation-with-marcus-bingham/",
+      "source_name": "Eurohoops",
+      "id": "ai-22dc7292246e"
+    },
+    {
       "id": "sp-kolossos-rhodes-sign-ezra-manjon-payton-",
       "player": "Kolossos Rhodes Sign Ezra Manjon, Payton Willis",
       "pos": "?",
@@ -3573,6 +3734,18 @@
       "source_url": "https://basket.co.il/?lang=en",
       "source_name": "Israel Basketball Super League",
       "id": "ai-d2b2d3a50f8c"
+    },
+    {
+      "player": "Txus Vidorreta",
+      "pos": "coach",
+      "from": "La Laguna Tenerife",
+      "to": "Unicaja Málaga",
+      "status": "signed",
+      "league": "ACB",
+      "date": "2026-06-18",
+      "source_url": "https://acb.com/es/liga/noticias",
+      "source_name": "ACB",
+      "id": "ai-ed95133e3665"
     },
     {
       "id": "sp-new-york-knicks-keeping-close-eye-on-ser",
@@ -4093,6 +4266,30 @@
       "id": "ai-9de9c8ad2085"
     },
     {
+      "player": "Dragan Milosavljević",
+      "pos": "SG",
+      "from": "Igokea m:tel",
+      "to": "Igokea m:tel",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-15",
+      "source_url": "https://www.aba-liga.com/news/54908/dragan-milosavljevic-continues-career-at-igokea-m-tel/",
+      "source_name": "ABA League",
+      "id": "ai-2c592030b948"
+    },
+    {
+      "player": "Ranko Simović",
+      "pos": "SF",
+      "from": "Voždovac",
+      "to": "Borac Mozzart",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-15",
+      "source_url": "https://www.aba-liga.com/news/54903/ranko-simovic-is-the-first-reinforcement-of-borac-mozzart/",
+      "source_name": "ABA League",
+      "id": "ai-73228797610b"
+    },
+    {
       "player": "Bogdan Nicolescu",
       "pos": "PG",
       "from": "CSM CSU Oradea",
@@ -4261,18 +4458,6 @@
       "source_url": "https://focus-wtv.be/sport/kortrijk-spurs-haalt-amerikaan-jacquez-yow-naar-bnxt-league",
       "source_name": "Focus WTV",
       "id": "ai-2b7561faabdb"
-    },
-    {
-      "player": "Dejan Davidovac",
-      "pos": "SG",
-      "from": "Crvena zvezda MeridianBet",
-      "to": "Crvena zvezda MeridianBet",
-      "status": "extended",
-      "league": "ABA League",
-      "date": "2026-06-09",
-      "source_url": "https://www.aba-liga.com/news/54888/davidovac-signs-new-two-year-extension-with-crvena-zvezda/",
-      "source_name": "ABA League",
-      "id": "ai-09fd6eaff172"
     }
   ]
 }
