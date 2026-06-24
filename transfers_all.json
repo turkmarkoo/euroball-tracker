@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-24T16:38:00.299311+00:00",
-  "count": 399,
+  "generated_at": "2026-06-24T16:42:11.836633+00:00",
+  "count": 403,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -386,6 +386,23 @@
       "source_url": "https://sportando.basketball/en/xavier-tillman-begins-new-chapter-with-trabzonspor/",
       "source_name": "Sportando",
       "id": "ai-8b851d416833"
+    },
+    {
+      "id": "br-75822a420884",
+      "player": "Bryan Antoine",
+      "pos": "PG",
+      "from": "Den Helder Suns",
+      "to": "Donar Groningen",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-24",
+      "source_url": "https://bnxtleague.com/en/newsvideo/donar-signs-bryan-antoine",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-30c0c91c1549",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "ai-00001e83ee30",
@@ -3998,6 +4015,30 @@
       "source_url": "https://sportando.basketball/en/kolossos-rhodes-sign-ezra-manjon-payton-willis/",
       "source_name": "Sportando",
       "id": "ai-ab2248aee71f"
+    },
+    {
+      "player": "Txus Vidorreta",
+      "pos": "coach",
+      "from": "La Laguna Tenerife",
+      "to": "Unicaja",
+      "status": "signed",
+      "league": "ACB",
+      "date": "2026-06-18",
+      "source_url": "https://www.eurobasket.com/Spain/news/996823/Unicaja-inks-coach-Txus-Vidorreta",
+      "source_name": "eurobasket.com",
+      "id": "ai-21985482e89e"
+    },
+    {
+      "player": "Tony Snell",
+      "pos": "SF",
+      "from": "Boulazac",
+      "to": "Cholet",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-18",
+      "source_url": "https://en.wikipedia.org/wiki/Tony_Snell",
+      "source_name": "Wikipedia",
+      "id": "ai-0caad8dc9932"
     },
     {
       "id": "sp-new-york-knicks-keeping-close-eye-on-ser",
