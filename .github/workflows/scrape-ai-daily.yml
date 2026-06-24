@@ -1,0 +1,37 @@
+name: EuroBall Moves — Daily AI Transfer Search
+
+on:
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ai-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run AI web-search (ACB, Lega Basket, BSL, LKL, BCL + others)
+        run: python scrape.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit updated JSON files
+        run: |
+          git config user.name  "EuroBall Scraper Bot"
+          git config user.email "scraper@euroball.moves"
+          git add transfers_all.json transfers_new.json
+          git diff --cached --quiet || git commit -m "AI search sweep $(date -u '+%Y-%m-%d')"
+          git push
+
