@@ -355,6 +355,79 @@ async def scrape_bnxt(page, archive: dict) -> list[dict]:
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+async def scrape_lega_basket(page, archive: dict) -> list[dict]:
+    """Lega Basket Serie A — filters by MERCATO tag, checks pages 1-2."""
+    new_items = []
+    try:
+        for page_num in [1, 2]:
+            url = ("https://www.legabasket.it/news?page=" + str(page_num)
+                   if page_num > 1 else "https://www.legabasket.it/news")
+            print(f"  Navigating to legabasket.it/news (page {page_num})")
+            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            await page.wait_for_timeout(3000)
+
+            links = await page.evaluate("""() => {
+                const seen = new Set();
+                const results = [];
+                document.querySelectorAll('a').forEach(a => {
+                    const url = a.href;
+                    if (!url.match(/legabasket\\.it\\/news\\/\\d{5,}/) || seen.has(url)) return;
+                    seen.add(url);
+                    let el = a;
+                    for (let i = 0; i < 5; i++) {
+                        el = el.parentElement;
+                        if (!el) break;
+                        if ((el.innerText || '').length > 20) break;
+                    }
+                    const text = (el?.innerText || '').trim().replace(/\\n+/g, ' | ');
+                    if (!text.toUpperCase().includes('MERCATO')) return;
+                    const dm = text.match(/(\\d{2})\\/(\\d{2})\\/(\\d{4})/);
+                    const date = dm ? (dm[3] + '-' + dm[2] + '-' + dm[1]) : '';
+                    results.push({ url, date, text: text.substring(0, 200) });
+                });
+                return results;
+            }""")
+
+            print(f"  Lega Basket page {page_num}: {len(links)} MERCATO articles")
+            found_new = False
+
+            for link in links:
+                article_url = link["url"]
+                slug_id = "lega-seen-" + hashlib.md5(article_url.encode()).hexdigest()[:12]
+                if slug_id in archive:
+                    continue
+
+                found_new = True
+                slug_label = article_url.rstrip("/").split("/")[-1][:55]
+                print(f"  NEW [Lega Basket]: {slug_label}")
+                await page.goto(article_url, wait_until="domcontentloaded", timeout=20000)
+                await page.wait_for_timeout(2000)
+
+                title = await page.title()
+                body  = await page.evaluate("() => document.body.innerText")
+
+                extracted = haiku_extract(title, body, article_url, "Lega Basket")
+                items = build_items(extracted, article_url, "Lega Basket Official",
+                                    "Lega Basket", link.get("date", TODAY))
+
+                for item in items:
+                    if item["id"] not in archive:
+                        archive[item["id"]] = item
+                        new_items.append(item)
+                        print(f"    \u2713 {item['player']} \u2192 {item['to']} ({item['status']})")
+
+                archive[slug_id] = {"id": slug_id, "_visited": True, "date": link.get("date", TODAY)}
+                await page.wait_for_timeout(400)
+
+            if not found_new:
+                break   # page 2 has nothing new — stop early
+
+    except Exception as e:
+        print(f"  Lega Basket error: {e}")
+
+    return new_items
+
+
 async def main():
     from playwright.async_api import async_playwright
 
@@ -386,6 +459,7 @@ async def main():
                 "EuroLeague Official", "EuroLeague", archive)),
             ("ABA Liga",   lambda: scrape_aba_liga(page, archive)),
             ("BNXT",       lambda: scrape_bnxt(page, archive)),
+            ("Lega Basket", lambda: scrape_lega_basket(page, archive)),
         ]
 
         for name, scrape_fn in sources:
