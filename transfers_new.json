@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T12:17:14.022Z",
-  "count": 381,
+  "generated_at": "2026-06-25T16:42:02.816222+00:00",
+  "count": 418,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -141,6 +141,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-350f04089092",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
       "id": "aba-00007d171327",
       "player": "Marko Ramljak",
       "pos": "?",
@@ -225,6 +230,90 @@
       "source_name": "Lega Basket Official"
     },
     {
+      "player": "Skylar Spencer",
+      "pos": "C",
+      "from": "APU Udine",
+      "to": "APU Udine",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://www.backdoorpodcast.com/aggiornamenti-mercato-del-25-giugno-2026/",
+      "source_name": "Backdoor Podcast",
+      "id": "ai-6197df6cd0e5"
+    },
+    {
+      "player": "Leonardo Okeke",
+      "pos": "C",
+      "from": "Pallacanestro Cantù",
+      "to": "Pallacanestro Cantù",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://www.legabasket.it/news/139043/guerri-napoli-ufficiale-marco-spissu",
+      "source_name": "Lega Basket",
+      "id": "ai-c682ddc9c351"
+    },
+    {
+      "player": "Andrej Jakimovski",
+      "pos": "SF",
+      "from": "Dolomiti Energia Trentino",
+      "to": "Guerri Napoli",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://www.legabasket.it/news/139044/guerri-napoli-andrej-jakimovski-nuovo-colpo",
+      "source_name": "Lega Basket",
+      "id": "ai-d381d6c6cea7"
+    },
+    {
+      "player": "Shavon Shields",
+      "pos": "SF",
+      "from": "Olimpia Milano",
+      "to": "Fenerbahce",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-25",
+      "source_url": "https://sportando.basketball/en/shavon-shields-expected-to-join-fenerbahce-after-six-years-with-olimpia-milano/",
+      "source_name": "Sportando",
+      "id": "ai-72c9b6631577"
+    },
+    {
+      "player": "Nico Mannion",
+      "pos": "PG",
+      "from": "Olimpia Milano",
+      "to": "BC Roma SPQR",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://sportando.basketball/en/nico-mannion-becomes-first-signing-of-luka-doncics-bc-roma-spqr/",
+      "source_name": "Sportando",
+      "id": "ai-d3de47dfceb9"
+    },
+    {
+      "player": "JD Notae",
+      "pos": "PG",
+      "from": "Trapani",
+      "to": "Trabzonspor",
+      "status": "signed",
+      "league": "BSL",
+      "date": "2026-06-25",
+      "source_url": "https://sportando.basketball/en/jd-notae-joins-trabzonspor-after-his-stint-with-trapani/",
+      "source_name": "Sportando",
+      "id": "ai-b201cab4cb4e"
+    },
+    {
+      "player": "Alec Peters",
+      "pos": "SF",
+      "from": "Olympiacos",
+      "to": "Olimpia Milano",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-25",
+      "source_url": "https://www.corrieredellosport.it/news/basket/serie-a/2026/06/25-149457176/alec_peters_un_nuovo_giocatore_dell_olimpia_milano",
+      "source_name": "Corriere dello Sport",
+      "id": "ai-77df914d618a"
+    },
+    {
       "id": "br-4d0ef889102c",
       "player": "Joris Metz",
       "pos": "SG",
@@ -235,6 +324,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/heroes-den-bosch-signs-youth-international",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-8fac546c5405",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-d4340e84fddf",
@@ -249,6 +343,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-ea0b9d62d122",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-3eda159cd637",
       "player": "Sai Witt",
       "pos": "C",
@@ -259,6 +358,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/cb-liege-signs-sai-witt",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-7a34ecd7c8f4",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-8ed9ead1870a",
@@ -273,6 +377,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-5ed21b1726d8",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-206de379aa55",
       "player": "Jason Dourisseau",
       "pos": "coach",
@@ -283,6 +392,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/dourisseau-signs-two-year-contract-extension-with-donar-groningen",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-259c9269ddd9",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-d9bbb3d50d50",
@@ -297,6 +411,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-0346c89dc3fb",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-c0287fae4c91",
       "player": "Jonathan Beagle",
       "pos": "?",
@@ -307,6 +426,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/zorg-en-zekerheid-leiden-signs-jonathan-beagle",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-7a852a90adbe",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-ae827e19b460",
@@ -333,6 +457,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-554f56e4ce53",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-e35111d7f065",
       "player": "Jeroen van Vugt",
       "pos": "coach",
@@ -343,6 +472,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/jeroen-van-vugt-named-new-coach-of-rotterdam-city-basketball",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-674213f32d82",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-36357f42c9a9",
@@ -357,6 +491,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-517bd3ef9ec7",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-a3c51c5ea4c8",
       "player": "Noël Coleman",
       "pos": "PG",
@@ -367,6 +506,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/noel-coleman-joins-windrose-giants-antwerp",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-79cb4b3fa679",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "player": "Kadin Shedrick",
@@ -441,6 +585,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-30c0c91c1549",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "aba-0000219dc97d",
       "player": "Chris Jones",
       "pos": "PG",
@@ -475,6 +624,66 @@
       "date": "2026-06-24",
       "source_url": "https://www.legabasket.it/news/139057/skylar-spencer-udine",
       "source_name": "Lega Basket Official"
+    },
+    {
+      "player": "Marco Spissu",
+      "pos": "PG",
+      "from": "Casademont Zaragoza",
+      "to": "Guerri Napoli",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-24",
+      "source_url": "https://www.legabasket.it/news/139043/guerri-napoli-ufficiale-marco-spissu",
+      "source_name": "Lega Basket",
+      "id": "ai-dbdd083a6921"
+    },
+    {
+      "player": "Howard Sant-Roos",
+      "pos": "SF",
+      "from": "UCAM Murcia",
+      "to": "UCAM Murcia",
+      "status": "extended",
+      "league": "ACB",
+      "date": "2026-06-24",
+      "source_url": "https://www.ucamdeportes.com/ucamcb/noticias/howard-sant-roos-continua-en-el-ucam-murcia-cb",
+      "source_name": "ACB",
+      "id": "ai-16c65282d01f"
+    },
+    {
+      "player": "Moustapha Fall",
+      "pos": "C",
+      "from": "Olympiacos",
+      "to": "Panathinaikos",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-24",
+      "source_url": "https://sportando.basketball/en/moustapha-fall-signs-multi-year-deal-with-panathinaikos/",
+      "source_name": "Sportando",
+      "id": "ai-58305bc34bfd"
+    },
+    {
+      "player": "Marcquise Reed",
+      "pos": "SG",
+      "from": "Trabzonspor",
+      "to": "Bahcesehir Koleji",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-24",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1984384/marcquise-reed-to-bahcesehir-koleji-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-bde5291d78a4"
+    },
+    {
+      "player": "Jonas Valanciunas",
+      "pos": "C",
+      "from": "Denver Nuggets",
+      "to": "Zalgiris Kaunas",
+      "status": "rumor",
+      "league": "EuroLeague",
+      "date": "2026-06-24",
+      "source_url": "https://basketnews.com/news-250406-jonas-valanciunas-zalgiris-nba-future-euroleague.html",
+      "source_name": "BasketNews",
+      "id": "ai-b33885a3a41c"
     },
     {
       "id": "ai-00001e83ee30",
@@ -861,6 +1070,18 @@
       "source_name": "Lega Basket Official"
     },
     {
+      "player": "Balša Živanović",
+      "pos": "SG",
+      "from": "Sutjeska",
+      "to": "Borac Mozzart",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-23",
+      "source_url": "https://www.aba-liga.com/news/54927/balsa-zivanovic-is-the-new-borac-mozzart-player/",
+      "source_name": "ABA Liga",
+      "id": "ai-fb5ba88f6ce0"
+    },
+    {
       "id": "ai-00005d955797",
       "player": "DeVante Jones",
       "pos": "PG",
@@ -1137,6 +1358,78 @@
       "id": "ai-5192b1994e61"
     },
     {
+      "player": "Aleksandar Lazić",
+      "pos": "SF",
+      "from": "Igokea m:tel",
+      "to": "Igokea m:tel",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-22",
+      "source_url": "https://www.aba-liga.com/news/54922/lazic-stays-kovacevic-arrives-as-igokea-m-tel-strengthen-frontcourt/",
+      "source_name": "ABA Liga",
+      "id": "ai-913cd293223c"
+    },
+    {
+      "player": "Petar Kovačević",
+      "pos": "PF",
+      "from": "Bosna",
+      "to": "Igokea m:tel",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-22",
+      "source_url": "https://www.aba-liga.com/news/54922/lazic-stays-kovacevic-arrives-as-igokea-m-tel-strengthen-frontcourt/",
+      "source_name": "ABA Liga",
+      "id": "ai-ff1cdccff30e"
+    },
+    {
+      "player": "Igor Drobnjak",
+      "pos": "?",
+      "from": "Spartak Office Shoes",
+      "to": "Spartak Office Shoes",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-22",
+      "source_url": "https://www.aba-liga.com/news/54920",
+      "source_name": "ABA Liga",
+      "id": "ai-449741cdbbd5"
+    },
+    {
+      "player": "Jalon Pipkins",
+      "pos": "SG",
+      "from": "?",
+      "to": "Spartak Office Shoes",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-22",
+      "source_url": "https://www.aba-liga.com/news/54920",
+      "source_name": "ABA Liga",
+      "id": "ai-46f4df2808f5"
+    },
+    {
+      "player": "Alonzo Gaffney",
+      "pos": "PF",
+      "from": "?",
+      "to": "Spartak Office Shoes",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-22",
+      "source_url": "https://www.aba-liga.com/news/54920",
+      "source_name": "ABA Liga",
+      "id": "ai-241f3b022b85"
+    },
+    {
+      "player": "Terrell Carter II",
+      "pos": "C",
+      "from": "?",
+      "to": "Tofas",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-22",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1983338/berk-ugurlu-stays-with-besiktas-adam-atamna-to-ulm-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-b97ea62395bf"
+    },
+    {
       "player": "Zeljko Obradovic",
       "pos": "coach",
       "from": "Free Agent",
@@ -1267,6 +1560,30 @@
       "source_url": "https://en.wikipedia.org/wiki/%C5%BDeljko_Obradovi%C4%87",
       "source_name": "Wikipedia",
       "id": "ai-8dfe0321c4a6"
+    },
+    {
+      "player": "Stipe Modrić",
+      "pos": "coach",
+      "from": "Ilirija",
+      "to": "Zadar",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-21",
+      "source_url": "https://www.aba-liga.com/news/54915",
+      "source_name": "ABA Liga",
+      "id": "ai-a7000f278294"
+    },
+    {
+      "player": "Mindaugas Girdziunas",
+      "pos": "PG",
+      "from": "Neptunas",
+      "to": "Neptunas",
+      "status": "extended",
+      "league": "EuroCup",
+      "date": "2026-06-21",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1984384/marcquise-reed-to-bahcesehir-koleji-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-b6e286cdd0a4"
     },
     {
       "player": "Ezra Manjon",
@@ -1411,6 +1728,18 @@
       "source_url": "https://www.eurobasket.com/Croatia/news/997281/Stipe-Modric-Named-New-Head-Coach-of-Zadar",
       "source_name": "Eurobasket",
       "id": "ai-e3611ba7d092"
+    },
+    {
+      "player": "Marcus Foster",
+      "pos": "SG",
+      "from": "?",
+      "to": "PAOK",
+      "status": "signed",
+      "league": "EuroCup",
+      "date": "2026-06-20",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1976263/marcus-foster-signs-with-paok-eurocup/",
+      "source_name": "Eurohoops",
+      "id": "ai-2beed653eafd"
     },
     {
       "id": "aba-54914",
@@ -3725,6 +4054,18 @@
       "source_name": "Lega Basket Official"
     },
     {
+      "player": "Moses Wright",
+      "pos": "C",
+      "from": "Zalgiris Kaunas",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "EuroLeague",
+      "date": "2026-06-19",
+      "source_url": "https://basketnews.com/news-250008-zalgiris-confirm-departures-of-moses-wright-and-two-other-players.html",
+      "source_name": "BasketNews",
+      "id": "ai-80bd0bead2ca"
+    },
+    {
       "id": "sp-kolossos-rhodes-sign-ezra-manjon-payton-",
       "player": "Kolossos Rhodes Sign Ezra Manjon, Payton Willis",
       "pos": "?",
@@ -4907,6 +5248,18 @@
       "source_url": "https://www.aba-liga.com/news/54899/fmp-pen-deal-with-jamiya-neal/",
       "source_name": "ABA League",
       "id": "ai-ee4913590535"
+    },
+    {
+      "player": "Carsen Edwards",
+      "pos": "SG",
+      "from": "Virtus Bologna",
+      "to": "Zalgiris Kaunas",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-12",
+      "source_url": "https://basketnews.com/news-249548-zalgiris-nearing-agreement-with-one-of-euroleagues-best-scorers.html",
+      "source_name": "BasketNews",
+      "id": "ai-1ddab8733983"
     },
     {
       "player": "Sam Hofman",
