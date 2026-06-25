@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T11:52:12.592Z",
-  "count": 410,
+  "generated_at": "2026-06-25T12:17:14.022Z",
+  "count": 420,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -168,6 +168,66 @@
       "date": "2026-06-25",
       "source_url": "https://www.aba-liga.com/news/54931/marko-josilo-signs-new-two-year-deal-with-borac-mozzart/",
       "source_name": "ABA Liga Official"
+    },
+    {
+      "id": "lega-00002a0d2cad",
+      "player": "Mouhamet Diouf",
+      "pos": "C",
+      "from": "Virtus Bologna",
+      "to": "Virtus Bologna",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://www.legabasket.it/news/139065/virtus-bologna-mouhamet-diouf-rimane",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-00007bf45ad0",
+      "player": "El Hadji Deme",
+      "pos": "C",
+      "from": "Pallacanestro Reggiana",
+      "to": "RSR Sebastiani Rieti",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://www.legabasket.it/news/139064/reggio-emilia-el-hadji-deme",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-00004afc9030",
+      "player": "Alec Peters",
+      "pos": "PF",
+      "from": "Olympiacos Pireo",
+      "to": "Armani Olimpia Milano",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://www.legabasket.it/news/139063/armani-olimpia-milano-ufficiale-alec-peters",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-00000f9c328a",
+      "player": "Andrej Jakimovski",
+      "pos": "SF",
+      "from": "Free Agent",
+      "to": "Guerri Napoli",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://www.legabasket.it/news/139044/guerri-napoli-andrej-jakimovski-nuovo-colpo",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-000068441e97",
+      "player": "Alessandro Ramagli",
+      "pos": "coach",
+      "from": "Tezenis Verona",
+      "to": "Tezenis Verona",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-25",
+      "source_url": "https://www.legabasket.it/news/139061/tezenis-verona-coach-alessandro-ramagli-resta",
+      "source_name": "Lega Basket Official"
     },
     {
       "id": "br-4d0ef889102c",
@@ -468,6 +528,18 @@
       "date": "2026-06-24",
       "source_url": "https://www.aba-liga.com/news/54929/roman-penn-is-the-new-reinforcement-of-igokea-m-tel/",
       "source_name": "ABA Liga Official"
+    },
+    {
+      "id": "lega-000062bdf02f",
+      "player": "Skylar Spencer",
+      "pos": "C",
+      "from": "APU Old Wild West Udine",
+      "to": "APU Old Wild West Udine",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-24",
+      "source_url": "https://www.legabasket.it/news/139057/skylar-spencer-udine",
+      "source_name": "Lega Basket Official"
     },
     {
       "id": "ai-00001e83ee30",
@@ -828,6 +900,30 @@
       "date": "2026-06-23",
       "source_url": "https://www.aba-liga.com/news/54927/balsa-zivanovic-is-the-new-borac-mozzart-player/",
       "source_name": "ABA Liga Official"
+    },
+    {
+      "id": "lega-00005e6e0e20",
+      "player": "Stefan Nikolić",
+      "pos": "SF",
+      "from": "Umana Reyer Venezia",
+      "to": "Openjobmetis Varese",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-23",
+      "source_url": "https://www.legabasket.it/news/139045/venezia-varese-stefan-nikolic",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-00000e40810b",
+      "player": "Isaiah Bigelow",
+      "pos": "SF",
+      "from": "Arconic-Alba Fehérvár",
+      "to": "Dolomiti Energia Trento",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-23",
+      "source_url": "https://www.legabasket.it/news/139041/isaiah-bigelow-trento",
+      "source_name": "Lega Basket Official"
     },
     {
       "id": "ai-00005d955797",
@@ -3668,6 +3764,30 @@
       "source_url": "https://sportando.basketball/en/kolossos-rhodes-sign-ezra-manjon-payton-willis/",
       "source_name": "Sportando",
       "id": "ai-5bc5bf4befbd"
+    },
+    {
+      "id": "lega-0000492cdd3e",
+      "player": "Riccardo Moraschini",
+      "pos": "SG",
+      "from": "Acqua S.Bernardo Cantù",
+      "to": "Acqua S.Bernardo Cantù",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-19",
+      "source_url": "https://www.legabasket.it/news/139008/pallacanestroo-cantu-rinnovo-riccardo-moraschini-2028",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-0000144e6490",
+      "player": "Andrea De Nicolao",
+      "pos": "PG",
+      "from": "Acqua S.Bernardo Cantù",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "Lega Basket",
+      "date": "2026-06-19",
+      "source_url": "https://www.legabasket.it/news/139013/pallacanestro-cantu-saluta-e-ringrazia-andrea-de-nicolao",
+      "source_name": "Lega Basket Official"
     },
     {
       "id": "sp-kolossos-rhodes-sign-ezra-manjon-payton-",
