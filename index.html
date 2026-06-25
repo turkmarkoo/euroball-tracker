@@ -1658,6 +1658,13 @@ renderT();        // Auto-load latest scraped transfers on every page open (JSON
               if (!allT.find(e => e.id === item.id)) { allT.push(item); changed = true; }
             }
             if (changed) { dedup(); sortT(); renderT(); }
+            // Show last scrape time instead of "Not yet fetched"
+            const updEl = document.getElementById('lastUpd');
+            if (updEl && data.generated_at) {
+              const t = new Date(data.generated_at);
+              const fmt = t.toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'UTC'});
+              updEl.textContent = 'Updated ' + fmt + ' UTC';
+            }
           } catch(e) { /* silent fail */ }
         })();
 
