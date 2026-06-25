@@ -285,9 +285,7 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
     <div class="live-pill"><div class="live-dot"></div>Live</div>
     <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:800;color:var(--text)">Transfer Tracker</div>
     <div class="last-upd" id="lastUpd">Not yet fetched</div>
-    <button class="fetch-btn" id="fetchBtn" onclick="fetchAll()">
-      <span id="fetchIco">↻</span>&nbsp;Fetch Latest
-    </button>
+    
   </div>
 
   <!-- ticker -->
@@ -305,7 +303,7 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
   </div></div></div>
   <div class="src-bar" id="srcBar">
     <span style="font-family:var(--mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px">Live sources:</span>
-    <span id="scrapeStatus" style="font-family:var(--mono);font-size:10px;color:var(--text3)">Scraping URL database…</span>
+    
     <span class="src-item"><span class="src-dot" id="d-national_supp"></span>Lega+BBL+ACB</span>
     <span class="src-item"><span class="src-dot" id="d-gbl_supp"></span>Greek+Israeli</span>
     <span class="src-item"><span class="src-dot" id="d-turkey_supp"></span>Turkish+BNXT</span>
@@ -940,8 +938,8 @@ async function fetchAll() {
 
   const btn = document.getElementById('fetchBtn');
   const ico = document.getElementById('fetchIco');
-  btn.disabled = true;
-  ico.classList.add('spin');
+  if(btn) btn.disabled = true;
+  if(ico) ico.classList.add('spin');
 
   document.getElementById('initPr').style.display = 'none';
   document.getElementById('loadingEl').style.display = 'block';
@@ -1421,8 +1419,8 @@ async function fetchAll() {
     document.getElementById('errEl').innerHTML = '<div style="background:var(--yellow-bg);border:1px solid rgba(200,135,10,.3);border-radius:8px;padding:8px 16px;margin:8px 24px;font-size:11px;color:var(--yellow);font-family:var(--mono)">ℹ️ Showing ' + SEED_DATA.length + ' verified transfers. Live API calls could not be completed — showing cached data from Sportando / TalkBasket / Eurohoops.</div>';
   }
 
-  btn.disabled = false;
-  ico.classList.remove('spin');
+  if(btn) btn.disabled = false;
+  if(ico) ico.classList.remove('spin');
   fetching = false;
 }
 
