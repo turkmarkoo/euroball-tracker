@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T21:58:32.686651+00:00",
+  "generated_at": "2026-06-25T09:59:56.084209+00:00",
   "count": 366,
   "items": [
     {
@@ -127,6 +127,18 @@
       "source_name": "Eurohoops",
       "source_url": "https://www.eurohoops.net/en/euroleague/1981544/barca-and-baskonia-forced-to-reach-an-understanding-regarding-xevi-pujol-and-mike-james/",
       "_isNew": true
+    },
+    {
+      "id": "br-f17ccc35bde1",
+      "player": "Stan van den Elzen",
+      "pos": "SG",
+      "from": "Zorg en Zekerheid Leiden",
+      "to": "Brussels Basketball",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-25",
+      "source_url": "https://bnxtleague.com/en/newsvideo/stan-van-den-elzen-joins-brussels-basketball",
+      "source_name": "BNXT League Official"
     },
     {
       "id": "br-4d0ef889102c",
@@ -4727,18 +4739,6 @@
       "source_url": "https://www.eurobasket.com/Belgium/news/995152/Charleroi-adds-Hofman",
       "source_name": "Eurobasket.com",
       "id": "ai-de1aee161689"
-    },
-    {
-      "player": "Jacquez Yow",
-      "pos": "SF",
-      "from": "BC Plovdiv",
-      "to": "Kortrijk Spurs",
-      "status": "signed",
-      "league": "BNXT",
-      "date": "2026-06-10",
-      "source_url": "https://focus-wtv.be/sport/kortrijk-spurs-haalt-amerikaan-jacquez-yow-naar-bnxt-league",
-      "source_name": "Focus WTV",
-      "id": "ai-2b7561faabdb"
     }
   ]
 }
