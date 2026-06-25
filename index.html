@@ -1662,8 +1662,8 @@ renderT();        // Auto-load latest scraped transfers on every page open (JSON
             const updEl = document.getElementById('lastUpd');
             if (updEl && data.generated_at) {
               const t = new Date(data.generated_at);
-              const fmt = t.toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'UTC'});
-              updEl.textContent = 'Updated ' + fmt + ' UTC';
+              const fmt = t.toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Europe/Ljubljana',timeZoneName:'short'});
+              updEl.textContent = 'Updated ' + fmt;
             }
           } catch(e) { /* silent fail */ }
         })();
