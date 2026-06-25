@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T10:30:19.533577+00:00",
-  "count": 405,
+  "generated_at": "2026-06-25T11:52:12.592Z",
+  "count": 410,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -144,6 +144,30 @@
       "id": "bnxt-seen-350f04089092",
       "_visited": true,
       "date": "2026-06-25"
+    },
+    {
+      "id": "aba-00007d171327",
+      "player": "Marko Ramljak",
+      "pos": "?",
+      "from": "KK Zadar",
+      "to": "KK Zadar",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-25",
+      "source_url": "https://www.aba-liga.com/news/54932/zadar-keep-their-captain-as-ramljak-signs-two-year-extension/",
+      "source_name": "ABA Liga Official"
+    },
+    {
+      "id": "aba-00006c78cd9d",
+      "player": "Marko Jošilo",
+      "pos": "PF",
+      "from": "Borac Mozzart",
+      "to": "Borac Mozzart",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-25",
+      "source_url": "https://www.aba-liga.com/news/54931/marko-josilo-signs-new-two-year-deal-with-borac-mozzart/",
+      "source_name": "ABA Liga Official"
     },
     {
       "id": "br-4d0ef889102c",
@@ -420,6 +444,30 @@
       "id": "bnxt-seen-30c0c91c1549",
       "_visited": true,
       "date": "2026-06-24"
+    },
+    {
+      "id": "aba-0000219dc97d",
+      "player": "Chris Jones",
+      "pos": "PG",
+      "from": "Free Agent",
+      "to": "Crvena zvezda Meridianbet",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-24",
+      "source_url": "https://www.aba-liga.com/news/54930/chris-jones-becomes-first-summer-signing-for-crvena-zvezda-meridianbet/",
+      "source_name": "ABA Liga Official"
+    },
+    {
+      "id": "aba-000015b483b2",
+      "player": "Roman Penn",
+      "pos": "PG",
+      "from": "Rapid Bucharest",
+      "to": "Igokea m:tel",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-24",
+      "source_url": "https://www.aba-liga.com/news/54929/roman-penn-is-the-new-reinforcement-of-igokea-m-tel/",
+      "source_name": "ABA Liga Official"
     },
     {
       "id": "ai-00001e83ee30",
@@ -768,6 +816,18 @@
       "source_url": "https://plk.pl/aktualnosci/27228/garrison-zostaje-w-zielonej-gorze",
       "source_name": "plk.pl",
       "id": "ai-5d5f65c197d5"
+    },
+    {
+      "id": "aba-00004355dfe5",
+      "player": "Balša Živanović",
+      "pos": "SG",
+      "from": "Budćnost VOLI",
+      "to": "Borac Mozzart",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-23",
+      "source_url": "https://www.aba-liga.com/news/54927/balsa-zivanovic-is-the-new-borac-mozzart-player/",
+      "source_name": "ABA Liga Official"
     },
     {
       "id": "ai-00005d955797",

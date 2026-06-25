@@ -28,7 +28,8 @@ TRANSFER_KW = [
     "part ways", "recruit", "welcom", "new deal", "hires", "appoint",
     "quintet", " duo ", " trio ", " four ", " five ", "bolster",
     "confirm", "announce", "add to", "brings", "comes to", "coming to",
-    "stays", "remains", "renew",
+    "stays", "remains", "renew", "reinforcement", "new player",
+    "summer signing", "new signing", "first signing", "new addition",
 ]
 
 def is_transfer(text: str) -> bool:
@@ -226,7 +227,7 @@ async def scrape_aba_liga(page, archive: dict) -> list[dict]:
     new_items = []
     try:
         print("  Navigating to aba-liga.com/news")
-        await page.goto("https://www.aba-liga.com/news/", wait_until="domcontentloaded", timeout=30000)
+        await page.goto("https://www.aba-liga.com/newslist/News/1/", wait_until="domcontentloaded", timeout=30000)
         await page.wait_for_timeout(3000)
 
         links = await page.evaluate("""() => {
