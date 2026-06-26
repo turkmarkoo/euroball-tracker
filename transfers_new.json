@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T10:40:24.047267+00:00",
-  "count": 437,
+  "generated_at": "2026-06-26T11:19:40.619489+00:00",
+  "count": 438,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -199,6 +199,21 @@
       "date": "2026-06-26",
       "source_url": "https://www.legabasket.it/news/139070/jt-thor-reggio-emilia",
       "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "br-06064de2ed39",
+      "player": "Tommaso Baldasso",
+      "pos": "?",
+      "from": "Derthona Tortona",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "Lega Basket",
+      "date": "2026-06-26",
+      "source_url": "https://www.legabasket.it/news/138901/derthona-tortona-addio-tommaso-baldasso",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "nationality": "IT",
+      "birth_year": null
     },
     {
       "id": "br-f17ccc35bde1",
