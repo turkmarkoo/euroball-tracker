@@ -258,6 +258,20 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
   .stats-strip{flex-wrap:wrap}
   .stat-cell{min-width:50%}
 }
+.tf,.tt{cursor:pointer;transition:color .12s}.tf:hover,.tt:hover{color:var(--accent);text-decoration:underline}
+#teamPage{position:fixed;top:57px;left:0;right:0;bottom:0;background:var(--bg);z-index:180;overflow-y:auto;display:none;animation:tpIn .18s ease}
+@keyframes tpIn{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
+.team-pg-hd{padding:16px 24px;background:var(--bg2);border-bottom:2px solid var(--border);position:sticky;top:0;z-index:10;display:flex;flex-direction:column;gap:8px}
+.tp-back{background:none;border:1.5px solid var(--border);color:var(--text2);border-radius:6px;padding:5px 14px;cursor:pointer;font-size:12px;width:fit-content;font-family:var(--mono);letter-spacing:.5px}
+.tp-back:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tp-title{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tp-name{font-size:20px;font-weight:800;font-family:'Syne',sans-serif;color:var(--text)}
+.tp-badge{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:1px;background:var(--accent);color:#fff;padding:2px 9px;border-radius:4px;white-space:nowrap}
+.tp-stats{display:flex;gap:8px;flex-wrap:wrap}
+.tp-stat{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:3px 11px;font-size:11px;color:var(--text2);white-space:nowrap}
+.tp-cards{padding:16px 24px 60px}
+#backToTop{position:fixed;bottom:28px;right:24px;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:18px;display:none;align-items:center;justify-content:center;z-index:300;box-shadow:0 2px 12px rgba(0,0,0,.25);transition:opacity .2s,transform .2s}
+#backToTop:hover{transform:translateY(-2px);opacity:.9}
 </style>
 </head>
 <body>
@@ -1858,10 +1872,10 @@ function cardHTML(t) {
     <div class="av">${esc(ini)}</div>
     <div>
       <div class="tp">${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${newBadge}</div>
-      <div class="tmv"><span class="tf">${esc(t.from)}</span><span class="ta">→</span><span class="tt">${esc(t.to)}</span></div>
+      <div class="tmv"><span class="tf" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.from)}</span><span class="ta">→</span><span class="tt" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
     </div>
-    <span class="tleague">${esc(t.league)}</span>
+    <span class="tleague" onclick="var l=this.textContent.trim().split('/')[0].trim();document.getElementById('fLeague').value=l;renderT()" style="cursor:pointer" title="Filter by league">${esc(t.league)}</span>
     ${pill}
     <div class="tmeta">
       <div class="tdate">${fmtDate}</div>
@@ -1945,6 +1959,46 @@ function toggleTheme() {
   document.getElementById('themeIcon').textContent = isDark ? '🌙' : '☀️';
   document.getElementById('themeLabel').textContent = isDark ? 'Dark' : 'Light';
 }
+</script>
+<div id="teamPage">
+  <div class="team-pg-hd">
+    <button class="tp-back" onclick="hideTeamPage()">← All transfers</button>
+    <div class="tp-title"><span class="tp-name" id="tpName"></span><span class="tp-badge" id="tpLeague"></span></div>
+    <div class="tp-stats" id="tpStats"></div>
+  </div>
+  <div class="tp-cards" id="tpCards"></div>
+</div>
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+<script>
+function showTeamPage(club) {
+  if (!club || club==='?' || club==='-') return;
+  var moves = allT.filter(function(t){ return t.from===club||t.to===club; });
+  if (!moves.length) return;
+  var ls={}; moves.forEach(function(t){ if(t.league) ls[t.league.split('/')[0].trim()]=1; });
+  var leagues=Object.keys(ls).slice(0,2).join(' · ');
+  var inn=moves.filter(function(t){return t.to===club&&t.status==='signed';}).length;
+  var out=moves.filter(function(t){return t.from===club&&t.to!==club&&t.status!=='extended';}).length;
+  var ext=moves.filter(function(t){return t.status==='extended';}).length;
+  var rum=moves.filter(function(t){return t.status==='rumor';}).length;
+  document.getElementById('tpName').textContent=club;
+  document.getElementById('tpLeague').textContent=leagues;
+  document.getElementById('tpStats').innerHTML=
+    (inn?'<span class="tp-stat">✅ '+inn+' signed in</span>':'')+
+    (out?'<span class="tp-stat">🚪 '+out+' departed</span>':'')+
+    (ext?'<span class="tp-stat">📋 '+ext+' extended</span>':'')+
+    (rum?'<span class="tp-stat">💬 '+rum+' rumored</span>':'')+
+    '<span class="tp-stat">📊 '+moves.length+' total</span>';
+  document.getElementById('tpCards').innerHTML=moves
+    .sort(function(a,b){return(b.date||'').localeCompare(a.date||'');})
+    .map(function(t){return cardHTML(t);}).join('');
+  var tp=document.getElementById('teamPage'); tp.style.display='block'; tp.scrollTop=0;
+}
+function hideTeamPage(){document.getElementById('teamPage').style.display='none';}
+window.addEventListener('scroll',function(){
+  var btn=document.getElementById('backToTop');
+  if(!btn)return;
+  btn.style.display=window.scrollY>300?'flex':'none';
+});
 </script>
 </body>
 </html>
