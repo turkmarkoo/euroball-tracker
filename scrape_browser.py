@@ -24,12 +24,14 @@ TODAY        = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 # Headline keywords that suggest a transfer / signing article
 TRANSFER_KW = [
-    "sign", "join", "contract", "extend", "arriv", "depart", "leav",
+    "sign", "join", "contract", "extend", "extensi", "arriv", "depart", "leav",
     "part ways", "recruit", "welcom", "new deal", "hires", "appoint",
     "quintet", " duo ", " trio ", " four ", " five ", "bolster",
     "confirm", "announce", "add to", "brings", "comes to", "coming to",
     "stays", "remains", "renew", "reinforcement", "new player",
     "summer signing", "new signing", "first signing", "new addition",
+    "lands", "snags", "acquires", "secures", "penned", "agreement",
+    "inks", "released", "freed", "waived", "loan", "heads to", "move to",
 ]
 
 def is_transfer(text: str) -> bool:
@@ -187,7 +189,7 @@ async def scrape_euroleague_site(page, base_url: str, source_name: str,
             gen_url = a.get("generatedUrl", "")
             if not gen_url:
                 continue
-            title      = a.get("title", "")
+            title      = (a.get("articleMetadata") or {}).get("title") or a.get("title") or a.get("headline") or a.get("slug","")
             date       = (a.get("publishDate", "") or TODAY)[:10]
             full_url   = "https://www.euroleaguebasketball.net" + gen_url
 
