@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T23:02:33.651929+00:00",
-  "count": 432,
+  "generated_at": "2026-06-26T10:40:24.047267+00:00",
+  "count": 437,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -127,6 +127,78 @@
       "source_name": "Eurohoops",
       "source_url": "https://www.eurohoops.net/en/euroleague/1981544/barca-and-baskonia-forced-to-reach-an-understanding-regarding-xevi-pujol-and-mike-james/",
       "_isNew": true
+    },
+    {
+      "id": "br-9ce26b28478f",
+      "player": "Joel Murray",
+      "pos": "PG",
+      "from": "Windrose Giants Antwerp",
+      "to": "Windrose Giants Antwerp",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-26",
+      "source_url": "https://bnxtleague.com/en/newsvideo/joel-murray-extends-contract-with-windrose-giants-antwerp",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "br-617ae3ec076a",
+      "player": "Eric Boone",
+      "pos": "PG",
+      "from": "Lucenec",
+      "to": "Brussels Basketball",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-26",
+      "source_url": "https://bnxtleague.com/en/newsvideo/eric-boone-returns-to-brussels-basketball",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "br-c6aebb6bace1",
+      "player": "Menno Dijkstra",
+      "pos": "C",
+      "from": "Heroes Den Bosch",
+      "to": "Heroes Den Bosch",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-26",
+      "source_url": "https://bnxtleague.com/en/newsvideo/dijkstra-and-van-bree-commit-their-future-to-heroes-den-bosch",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "br-a06f3a7b3eb4",
+      "player": "Luuk van Bree",
+      "pos": "PF",
+      "from": "Heroes Den Bosch",
+      "to": "Heroes Den Bosch",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-26",
+      "source_url": "https://bnxtleague.com/en/newsvideo/dijkstra-and-van-bree-commit-their-future-to-heroes-den-bosch",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "br-1fa76555e6f2",
+      "player": "Hunter Hale",
+      "pos": "PG",
+      "from": "?",
+      "to": "Pallacanestro Varese",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-26",
+      "source_url": "https://www.legabasket.it/news/139071/varese-hunter-hale",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "br-e3c8e8ac6140",
+      "player": "JT Thor",
+      "pos": "?",
+      "from": "Pallacanestro Reggiana",
+      "to": "Pallacanestro Reggiana",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-26",
+      "source_url": "https://www.legabasket.it/news/139070/jt-thor-reggio-emilia",
+      "source_name": "Lega Basket Official"
     },
     {
       "id": "br-f17ccc35bde1",
@@ -5519,18 +5591,6 @@
       "source_url": "https://basketnews.com/news-249548-zalgiris-nearing-agreement-with-one-of-euroleagues-best-scorers.html",
       "source_name": "BasketNews",
       "id": "ai-1ddab8733983"
-    },
-    {
-      "player": "Sam Hofman",
-      "pos": "SF",
-      "from": "Free Agent",
-      "to": "Spirou Charleroi",
-      "status": "signed",
-      "league": "BNXT",
-      "date": "2026-06-11",
-      "source_url": "https://www.eurobasket.com/Belgium/news/995152/Charleroi-adds-Hofman",
-      "source_name": "Eurobasket.com",
-      "id": "ai-de1aee161689"
     }
   ]
 }

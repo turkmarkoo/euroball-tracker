@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T23:02:33.646773+00:00",
-  "count": 499,
+  "generated_at": "2026-06-26T10:40:24.041417+00:00",
+  "count": 510,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -127,6 +127,103 @@
       "source_name": "Eurohoops",
       "source_url": "https://www.eurohoops.net/en/euroleague/1981544/barca-and-baskonia-forced-to-reach-an-understanding-regarding-xevi-pujol-and-mike-james/",
       "_isNew": true
+    },
+    {
+      "id": "br-9ce26b28478f",
+      "player": "Joel Murray",
+      "pos": "PG",
+      "from": "Windrose Giants Antwerp",
+      "to": "Windrose Giants Antwerp",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-26",
+      "source_url": "https://bnxtleague.com/en/newsvideo/joel-murray-extends-contract-with-windrose-giants-antwerp",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-f2941c8082cc",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
+      "id": "br-617ae3ec076a",
+      "player": "Eric Boone",
+      "pos": "PG",
+      "from": "Lucenec",
+      "to": "Brussels Basketball",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-26",
+      "source_url": "https://bnxtleague.com/en/newsvideo/eric-boone-returns-to-brussels-basketball",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-f6236240ff2d",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
+      "id": "br-c6aebb6bace1",
+      "player": "Menno Dijkstra",
+      "pos": "C",
+      "from": "Heroes Den Bosch",
+      "to": "Heroes Den Bosch",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-26",
+      "source_url": "https://bnxtleague.com/en/newsvideo/dijkstra-and-van-bree-commit-their-future-to-heroes-den-bosch",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "br-a06f3a7b3eb4",
+      "player": "Luuk van Bree",
+      "pos": "PF",
+      "from": "Heroes Den Bosch",
+      "to": "Heroes Den Bosch",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-26",
+      "source_url": "https://bnxtleague.com/en/newsvideo/dijkstra-and-van-bree-commit-their-future-to-heroes-den-bosch",
+      "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-b64a981427cb",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
+      "id": "br-1fa76555e6f2",
+      "player": "Hunter Hale",
+      "pos": "PG",
+      "from": "?",
+      "to": "Pallacanestro Varese",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-26",
+      "source_url": "https://www.legabasket.it/news/139071/varese-hunter-hale",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-seen-b4896733aac9",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
+      "id": "br-e3c8e8ac6140",
+      "player": "JT Thor",
+      "pos": "?",
+      "from": "Pallacanestro Reggiana",
+      "to": "Pallacanestro Reggiana",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-26",
+      "source_url": "https://www.legabasket.it/news/139070/jt-thor-reggio-emilia",
+      "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-seen-584f632b788d",
+      "_visited": true,
+      "date": "2026-06-26"
     },
     {
       "id": "br-f17ccc35bde1",
