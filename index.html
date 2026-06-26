@@ -1876,8 +1876,7 @@ function cardHTML(t) {
       <div class="tp">${esc(t.player)}${t.birth_year?' <span class="tby">\''+String(t.birth_year).slice(2)+'</span>':''} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}</div>
       <div class="tmv"><span class="tf" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.from)}</span><span class="ta">→</span><span class="tt" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
-    ${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}
-     </div>
+         </div>
     <span class="tleague" onclick="var l=this.textContent.trim().split('/')[0].trim();document.getElementById('fLeague').value=l;renderT()" style="cursor:pointer" title="Filter by league">${esc(t.league)}</span>
     ${pill}
     <div class="tmeta">
