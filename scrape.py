@@ -391,7 +391,7 @@ def ai_web_search_transfers(api_key: str) -> list[dict]:
         '"from":"Previous club or Free Agent or ?","to":"New club or Free Agent or ?",'
         '"status":"signed|rumor|left|extended",'
         '"league":"EuroLeague|EuroCup|ACB|ABA League|Lega Basket|BSL|BNXT|LKL|BCL|?","date":"YYYY-MM-DD",'
-        '"source_url":"https://...","source_name":"Site Name","contract":"1 year or 2+1 or null","nationality":"ISO-2 e.g. US HR SI or null","birth_year":"YYYY integer or null"} '
+        '"source_url":"https://...","source_name":"Site Name","contract":"1 year or 2+1 or null","birth_year":"YYYY integer or null"} '
         "Rules: real player/coach names only; YYYY-MM-DD dates; no duplicates; "
         "return ONLY the JSON array, no markdown, no explanation."
     )
@@ -468,7 +468,6 @@ def ai_extract(headline: str, url: str, api_key: str) -> dict:
         "BSL | BCL | LKL | or other European league, or \"?\"\n\n"
         f"Headline: {headline}\nURL: {url}\n\n"
         "  contract: e.g. 1 year or 2+1 or 3 years or null if not mentioned\n"
-        "  nationality: 2-letter ISO country code e.g. US HR SI RS or null\n"
         "  birth_year: YYYY integer or null (if age X mentioned, use current year minus X)\n"
         "Return only the JSON object — no markdown, no explanation."
     )

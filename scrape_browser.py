@@ -84,7 +84,7 @@ def haiku_extract(title: str, body: str, url: str, league_hint: str) -> list[dic
         f"Today is {TODAY}. Extract ALL European basketball transfer events "
         f"mentioned in this article. One article can mention multiple players.\n\n"
         f"Return a JSON array. Each element:\n"
-        f'{{"player":"Full name","pos":"PG|SG|SF|PF|C|coach|?","from":"Previous club or Free Agent or ?","to":"New club or Free Agent or ?","status":"signed|rumor|left|extended","league":"{league_hint} or the correct league","date":"YYYY-MM-DD","contract":"e.g. 1 year or 2+1 or 3 years or null","nationality":"2-letter ISO code e.g. US HR SI RS or null","birth_year":"YYYY integer or null (if age X mentioned, use current year minus X)"}}\n\n'
+        f'{{"player":"Full name","pos":"PG|SG|SF|PF|C|coach|?","from":"Previous club or Free Agent or ?","to":"New club or Free Agent or ?","status":"signed|rumor|left|extended","league":"{league_hint} or the correct league","date":"YYYY-MM-DD","contract":"e.g. 1 year or 2+1 or 3 years or null","birth_year":"YYYY integer or null (if age X mentioned, use current year minus X)"}}\n\n'
         f"Article title: {title}\n"
         f"Article text: {body[:900]}\n"
         f"Source URL: {url}\n\n"
@@ -150,7 +150,6 @@ def build_items(extracted: list, article_url: str, source_name: str,
             "source_url":  article_url,
             "source_name": source_name,
             "contract":    e.get("contract") or None,
-            "nationality": e.get("nationality") or None,
             "birth_year":  int(e["birth_year"]) if e.get("birth_year") else None,
         }
         result.append(item)
