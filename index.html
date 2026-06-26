@@ -273,7 +273,6 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 #backToTop{position:fixed;bottom:28px;right:24px;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;border:none;cursor:pointer;font-size:18px;display:none;align-items:center;justify-content:center;z-index:300;box-shadow:0 2px 12px rgba(0,0,0,.25);transition:opacity .2s,transform .2s}
 #backToTop:hover{transform:translateY(-2px);opacity:.9}
 .tby{font-size:11px;color:var(--text3);font-family:var(--mono);margin-left:2px}
-.tnat{font-size:15px;line-height:1;margin-right:4px}
 .tctr{font-size:10px;font-family:var(--mono);background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:1px 7px;color:var(--text2);white-space:nowrap}
 </style>
 </head>
@@ -1878,8 +1877,7 @@ function cardHTML(t) {
       <div class="tmv"><span class="tf" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.from)}</span><span class="ta">→</span><span class="tt" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
     ${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}
-    ${t.nationality?`<span class="tnat">${flag(t.nationality)}</span>`:''}
-    </div>
+     </div>
     <span class="tleague" onclick="var l=this.textContent.trim().split('/')[0].trim();document.getElementById('fLeague').value=l;renderT()" style="cursor:pointer" title="Filter by league">${esc(t.league)}</span>
     ${pill}
     <div class="tmeta">
@@ -1975,7 +1973,6 @@ function toggleTheme() {
 </div>
 <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
 <script>
-function flag(c){if(!c||c.length!==2)return'';return String.fromCodePoint(...[...c.toUpperCase()].map(function(ch){return 0x1F1E6-65+ch.charCodeAt(0);}));}
 function showTeamPage(club) {
   if (!club || club==='?' || club==='-') return;
   var moves = allT.filter(function(t){ return t.from===club||t.to===club; });
