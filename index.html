@@ -218,12 +218,12 @@ nav{display:flex;align-items:center;gap:12px;padding:12px 24px;border-bottom:1px
 .exp-btn:hover{border-color:var(--accent);color:var(--accent)}
 .exp-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .exp-btn.primary:hover{background:var(--accent2)}
-.db-stats{display:flex;gap:16px;padding:10px 24px;background:var(--bg3);border-bottom:1px solid var(--border);flex-wrap:wrap}
+.db-stats{display:flex;gap:16px;padding:10px 24px;background:var(--bg3);border-bottom:1px solid var(--border);flex-wrap:wrap;position:sticky;top:57px;z-index:100}
 .db-stat{font-family:var(--mono);font-size:11px;color:var(--text3)}
 .db-stat span{color:var(--accent);font-weight:600}
 table{width:100%;border-collapse:collapse}
 .tbl-wrap{overflow-x:auto;padding:0 24px 60px}
-thead th{text-align:left;padding:10px 12px;font-family:var(--mono);font-size:9px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;border-bottom:1.5px solid var(--border);white-space:nowrap;cursor:pointer}
+thead th{text-align:left;padding:10px 12px;font-family:var(--mono);font-size:9px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;border-bottom:1.5px solid var(--border);white-space:nowrap;cursor:pointer;position:sticky;top:96px;z-index:90;background:var(--bg2)}
 thead th:hover{color:var(--text)}
 tbody tr{border-bottom:1px solid var(--border);transition:background .1s}
 tbody tr:hover{background:var(--bg2)}
@@ -599,6 +599,7 @@ const DB = [
   {cat:'Lega Basket', league:'Lega Basket', name:'Vanoli Basket Cremona', url:'https://www.vanolibasket.it', path:'/news/', diff:'Medium ⭐⭐'},
   {cat:'Lega Basket', league:'Lega Basket', name:'Tezenis Verona', url:'https://tezenis-verona.it', path:'/news/', diff:'Medium ⭐⭐'},
   {cat:'Lega Basket', league:'Lega Basket', name:'Guerri Napoli', url:'https://www.napolibasketball.com/en', path:'/en/news/', diff:'Medium ⭐⭐'},
+  {cat:'BBL',  league:'BBL',  name:'BBL Official',  url:'https://www.easycredit-bbl.de',  path:'/presse/pressespiegel',  diff:'Easy ⭐'},
   {cat:'BBL', league:'BBL', name:'ALBA Berlin', url:'https://www.albaberlin.de/startseite', path:'/news/', diff:'Medium ⭐⭐'},
   {cat:'BBL', league:'BBL', name:'Basketball Löwen Braunschweig', url:'https://www.basketball-loewen.de', path:'/news/', diff:'Medium ⭐⭐'},
   {cat:'BBL', league:'BBL', name:'BMA365 Bamberg Baskets', url:'https://bamberg.basketball', path:'/news/', diff:'Medium ⭐⭐'},
