@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T12:17:54.704869+00:00",
-  "count": 457,
+  "generated_at": "2026-06-27T12:56:51.758353+00:00",
+  "count": 410,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -159,6 +159,62 @@
       "id": "ai-e9c566140098"
     },
     {
+      "id": "br-beb1d03da0e7",
+      "player": "Alonso Meana",
+      "pos": "PG",
+      "from": "Lliria",
+      "to": "Rotterdam City Basketball",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-27",
+      "source_url": "https://bnxtleague.com/en/newsvideo/spanish-point-guard-joins-rotterdam-city-basketball",
+      "source_name": "BNXT League Official",
+      "contract": null,
+      "birth_year": 2000
+    },
+    {
+      "id": "br-452c055ec12d",
+      "player": "Derek Ogbeide",
+      "pos": "C",
+      "from": "?",
+      "to": "UNA Hotels Reggio Emilia",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/139079/derek-ogbeide-reggio-emilia",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "br-b59682d1ac75",
+      "player": "Diego Monaldi",
+      "pos": "?",
+      "from": "Tezenis Verona",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/139080/verona-diego-monaldi",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "br-13a7431d3210",
+      "player": "Eimantas Bendzius",
+      "pos": "?",
+      "from": "APU Old Wild West Udine",
+      "to": "APU Old Wild West Udine",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/139081/udine-eimantas-bendzius",
+      "source_name": "Lega Basket Official",
+      "contract": "1 year",
+      "birth_year": null
+    },
+    {
       "id": "br-9ce26b28478f",
       "player": "Joel Murray",
       "pos": "PG",
@@ -171,11 +227,6 @@
       "source_name": "BNXT League Official"
     },
     {
-      "id": "bnxt-seen-f2941c8082cc",
-      "_visited": true,
-      "date": "2026-06-26"
-    },
-    {
       "id": "br-617ae3ec076a",
       "player": "Eric Boone",
       "pos": "PG",
@@ -186,11 +237,6 @@
       "date": "2026-06-26",
       "source_url": "https://bnxtleague.com/en/newsvideo/eric-boone-returns-to-brussels-basketball",
       "source_name": "BNXT League Official"
-    },
-    {
-      "id": "bnxt-seen-f6236240ff2d",
-      "_visited": true,
-      "date": "2026-06-26"
     },
     {
       "id": "br-c6aebb6bace1",
@@ -217,16 +263,6 @@
       "source_name": "BNXT League Official"
     },
     {
-      "id": "bnxt-seen-b64a981427cb",
-      "_visited": true,
-      "date": "2026-06-26"
-    },
-    {
-      "id": "lega-seen-b4896733aac9",
-      "_visited": true,
-      "date": "2026-06-26"
-    },
-    {
       "id": "br-e3c8e8ac6140",
       "player": "JT Thor",
       "pos": "?",
@@ -239,11 +275,6 @@
       "source_name": "Lega Basket Official",
       "contract": "1 year",
       "birth_year": null
-    },
-    {
-      "id": "lega-seen-584f632b788d",
-      "_visited": true,
-      "date": "2026-06-26"
     },
     {
       "id": "br-06064de2ed39",
@@ -259,11 +290,6 @@
       "contract": null,
       "nationality": "IT",
       "birth_year": null
-    },
-    {
-      "id": "lega-seen-ba597ea9e8cf",
-      "_visited": true,
-      "date": "2026-06-26"
     },
     {
       "player": "Ferran Bassas",
@@ -308,16 +334,6 @@
       "birth_year": 1997
     },
     {
-      "id": "bnxt-seen-b4a8b31963d8",
-      "_visited": true,
-      "date": "2026-06-26"
-    },
-    {
-      "id": "bnxt-seen-934b694ab78e",
-      "_visited": true,
-      "date": "2026-06-26"
-    },
-    {
       "id": "br-6fd515453cb2",
       "player": "Michele Serpilli",
       "pos": "?",
@@ -332,11 +348,6 @@
       "birth_year": null
     },
     {
-      "id": "lega-seen-144b33a8412e",
-      "_visited": true,
-      "date": "2026-06-26"
-    },
-    {
       "id": "br-2203cec044e4",
       "player": "Neven Spahija",
       "pos": "coach",
@@ -349,11 +360,6 @@
       "source_name": "Lega Basket Official",
       "contract": null,
       "birth_year": null
-    },
-    {
-      "id": "lega-seen-e9a9adfcc290",
-      "_visited": true,
-      "date": "2026-06-26"
     },
     {
       "player": "Ferran Bassas",
@@ -478,11 +484,6 @@
       "date": "2026-06-25",
       "source_url": "https://bnxtleague.com/en/newsvideo/stan-van-den-elzen-joins-brussels-basketball",
       "source_name": "BNXT League Official"
-    },
-    {
-      "id": "bnxt-seen-350f04089092",
-      "_visited": true,
-      "date": "2026-06-25"
     },
     {
       "id": "aba-00007d171327",
@@ -623,21 +624,6 @@
       "birth_year": 1995
     },
     {
-      "id": "aba-seen-d28e82187c1e",
-      "_visited": true,
-      "date": "2026-06-25"
-    },
-    {
-      "id": "aba-seen-1be872442ceb",
-      "_visited": true,
-      "date": "2026-06-25"
-    },
-    {
-      "id": "aba-seen-fff5770ffcb5",
-      "_visited": true,
-      "date": "2026-06-25"
-    },
-    {
       "id": "br-2f201783f705",
       "player": "Niccolò Mannion",
       "pos": "?",
@@ -648,36 +634,6 @@
       "date": "2026-06-25",
       "source_url": "https://www.legabasket.it/news/139068/olimpia-milano-saluta-e-ringrazia-niccolo-mannion",
       "source_name": "Lega Basket Official"
-    },
-    {
-      "id": "lega-seen-0af4b48ea3f6",
-      "_visited": true,
-      "date": "2026-06-25"
-    },
-    {
-      "id": "lega-seen-a8cc4cb322da",
-      "_visited": true,
-      "date": "2026-06-25"
-    },
-    {
-      "id": "lega-seen-fbdf78022228",
-      "_visited": true,
-      "date": "2026-06-25"
-    },
-    {
-      "id": "lega-seen-52fd27796117",
-      "_visited": true,
-      "date": "2026-06-25"
-    },
-    {
-      "id": "lega-seen-8debfc3cb52c",
-      "_visited": true,
-      "date": "2026-06-25"
-    },
-    {
-      "id": "lega-seen-ae860f7af554",
-      "_visited": true,
-      "date": "2026-06-25"
     },
     {
       "id": "br-73dad4845d9a",
@@ -878,11 +834,6 @@
       "source_name": "BNXT League Official"
     },
     {
-      "id": "bnxt-seen-8fac546c5405",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
       "id": "br-d4340e84fddf",
       "player": "Julius Mims",
       "pos": "C",
@@ -893,11 +844,6 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/american-center-joins-hubo-limburg-united",
       "source_name": "BNXT League Official"
-    },
-    {
-      "id": "bnxt-seen-ea0b9d62d122",
-      "_visited": true,
-      "date": "2026-06-24"
     },
     {
       "id": "br-3eda159cd637",
@@ -912,11 +858,6 @@
       "source_name": "BNXT League Official"
     },
     {
-      "id": "bnxt-seen-7a34ecd7c8f4",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
       "id": "br-8ed9ead1870a",
       "player": "Ali Sow",
       "pos": "PG",
@@ -927,11 +868,6 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/cb-liege-adds-ali-sow-to-its-roster",
       "source_name": "BNXT League Official"
-    },
-    {
-      "id": "bnxt-seen-5ed21b1726d8",
-      "_visited": true,
-      "date": "2026-06-24"
     },
     {
       "id": "br-206de379aa55",
@@ -946,11 +882,6 @@
       "source_name": "BNXT League Official"
     },
     {
-      "id": "bnxt-seen-259c9269ddd9",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
       "id": "br-d9bbb3d50d50",
       "player": "Lucas Kruithof",
       "pos": "?",
@@ -963,11 +894,6 @@
       "source_name": "BNXT League Official"
     },
     {
-      "id": "bnxt-seen-0346c89dc3fb",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
       "id": "br-c0287fae4c91",
       "player": "Jonathan Beagle",
       "pos": "?",
@@ -978,11 +904,6 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/zorg-en-zekerheid-leiden-signs-jonathan-beagle",
       "source_name": "BNXT League Official"
-    },
-    {
-      "id": "bnxt-seen-7a852a90adbe",
-      "_visited": true,
-      "date": "2026-06-24"
     },
     {
       "id": "br-ae827e19b460",
@@ -1009,11 +930,6 @@
       "source_name": "BNXT League Official"
     },
     {
-      "id": "bnxt-seen-554f56e4ce53",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
       "id": "br-e35111d7f065",
       "player": "Jeroen van Vugt",
       "pos": "coach",
@@ -1024,11 +940,6 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/jeroen-van-vugt-named-new-coach-of-rotterdam-city-basketball",
       "source_name": "BNXT League Official"
-    },
-    {
-      "id": "bnxt-seen-674213f32d82",
-      "_visited": true,
-      "date": "2026-06-24"
     },
     {
       "id": "br-36357f42c9a9",
@@ -1043,11 +954,6 @@
       "source_name": "BNXT League Official"
     },
     {
-      "id": "bnxt-seen-517bd3ef9ec7",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
       "id": "br-a3c51c5ea4c8",
       "player": "Noël Coleman",
       "pos": "PG",
@@ -1058,11 +964,6 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/noel-coleman-joins-windrose-giants-antwerp",
       "source_name": "BNXT League Official"
-    },
-    {
-      "id": "bnxt-seen-79cb4b3fa679",
-      "_visited": true,
-      "date": "2026-06-24"
     },
     {
       "player": "Kadin Shedrick",
@@ -1125,11 +1026,6 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/donar-signs-bryan-antoine",
       "source_name": "BNXT League Official"
-    },
-    {
-      "id": "bnxt-seen-30c0c91c1549",
-      "_visited": true,
-      "date": "2026-06-24"
     },
     {
       "id": "aba-0000219dc97d",
@@ -1233,41 +1129,6 @@
       "source_url": "https://basketnews.com/news-250406-jonas-valanciunas-zalgiris-nba-future-euroleague.html",
       "source_name": "BasketNews",
       "id": "ai-b33885a3a41c"
-    },
-    {
-      "id": "aba-seen-7061293c7d6e",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
-      "id": "aba-seen-68d872b13e0b",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
-      "id": "lega-seen-8670207dedb3",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
-      "id": "lega-seen-6d53a4017e98",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
-      "id": "lega-seen-5127a62bf4e4",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
-      "id": "lega-seen-a8428a752285",
-      "_visited": true,
-      "date": "2026-06-24"
-    },
-    {
-      "id": "lega-seen-7a02e55b358d",
-      "_visited": true,
-      "date": "2026-06-24"
     },
     {
       "player": "Daniel Hackett",
@@ -1598,11 +1459,6 @@
       "source_name": "Lega Basket Official"
     },
     {
-      "id": "aba-seen-7db275d05fd2",
-      "_visited": true,
-      "date": "2026-06-23"
-    },
-    {
       "id": "br-83ac63eb8709",
       "player": "Noah Kirkwood",
       "pos": "?",
@@ -1615,31 +1471,6 @@
       "source_name": "ABA Liga Official",
       "contract": "1 year",
       "birth_year": 1999
-    },
-    {
-      "id": "aba-seen-99baa75768e1",
-      "_visited": true,
-      "date": "2026-06-23"
-    },
-    {
-      "id": "aba-seen-e172bb7a9251",
-      "_visited": true,
-      "date": "2026-06-23"
-    },
-    {
-      "id": "lega-seen-991234bcfe7a",
-      "_visited": true,
-      "date": "2026-06-23"
-    },
-    {
-      "id": "lega-seen-c95c67b607af",
-      "_visited": true,
-      "date": "2026-06-23"
-    },
-    {
-      "id": "lega-seen-a31cfeee6575",
-      "_visited": true,
-      "date": "2026-06-23"
     },
     {
       "id": "ai-00005d955797",
@@ -1963,16 +1794,6 @@
       "id": "ai-b97ea62395bf"
     },
     {
-      "id": "aba-seen-3ca6815e4eb9",
-      "_visited": true,
-      "date": "2026-06-22"
-    },
-    {
-      "id": "aba-seen-0f5708b7eca3",
-      "_visited": true,
-      "date": "2026-06-22"
-    },
-    {
       "id": "br-e2106df0d8ed",
       "player": "Emir Hadžibegović",
       "pos": "?",
@@ -1984,21 +1805,6 @@
       "source_url": "https://www.aba-liga.com/news/54921/emir-hadzibegovic-is-coming-to-buducnost-voli/",
       "source_name": "ABA Liga Official",
       "contract": "2 years"
-    },
-    {
-      "id": "aba-seen-dc6f2e0c2f98",
-      "_visited": true,
-      "date": "2026-06-22"
-    },
-    {
-      "id": "lega-seen-9dbe927abaf4",
-      "_visited": true,
-      "date": "2026-06-22"
-    },
-    {
-      "id": "lega-seen-b0bee935b351",
-      "_visited": true,
-      "date": "2026-06-22"
     },
     {
       "player": "Zeljko Obradovic",
@@ -2272,11 +2078,6 @@
       "source_url": "https://www.eurohoops.net/en/eurocup/1976263/marcus-foster-signs-with-paok-eurocup/",
       "source_name": "Eurohoops",
       "id": "ai-2beed653eafd"
-    },
-    {
-      "id": "lega-seen-073e101ef6b3",
-      "_visited": true,
-      "date": "2026-06-20"
     },
     {
       "id": "aba-54914",

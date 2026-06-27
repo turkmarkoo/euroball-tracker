@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T12:17:54.699845+00:00",
-  "count": 495,
+  "generated_at": "2026-06-27T12:56:51.753154+00:00",
+  "count": 503,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -157,6 +157,82 @@
       "contract": "2+1",
       "birth_year": 1997,
       "id": "ai-e9c566140098"
+    },
+    {
+      "id": "br-beb1d03da0e7",
+      "player": "Alonso Meana",
+      "pos": "PG",
+      "from": "Lliria",
+      "to": "Rotterdam City Basketball",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-27",
+      "source_url": "https://bnxtleague.com/en/newsvideo/spanish-point-guard-joins-rotterdam-city-basketball",
+      "source_name": "BNXT League Official",
+      "contract": null,
+      "birth_year": 2000
+    },
+    {
+      "id": "bnxt-seen-259fc908a145",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
+      "id": "br-452c055ec12d",
+      "player": "Derek Ogbeide",
+      "pos": "C",
+      "from": "?",
+      "to": "UNA Hotels Reggio Emilia",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/139079/derek-ogbeide-reggio-emilia",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-5adfa35ea947",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
+      "id": "br-b59682d1ac75",
+      "player": "Diego Monaldi",
+      "pos": "?",
+      "from": "Tezenis Verona",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/139080/verona-diego-monaldi",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-509a41fb8eef",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
+      "id": "br-13a7431d3210",
+      "player": "Eimantas Bendzius",
+      "pos": "?",
+      "from": "APU Old Wild West Udine",
+      "to": "APU Old Wild West Udine",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/139081/udine-eimantas-bendzius",
+      "source_name": "Lega Basket Official",
+      "contract": "1 year",
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-25998edce33f",
+      "_visited": true,
+      "date": "2026-06-27"
     },
     {
       "id": "br-9ce26b28478f",
