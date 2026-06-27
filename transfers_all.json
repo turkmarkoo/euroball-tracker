@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T12:56:51.753154+00:00",
-  "count": 503,
+  "generated_at": "2026-06-27T16:48:34.746912+00:00",
+  "count": 509,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -231,6 +231,63 @@
     },
     {
       "id": "lega-seen-25998edce33f",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
+      "id": "br-20e2252a3312",
+      "player": "Liam Udom",
+      "pos": "?",
+      "from": "?",
+      "to": "Pallacanestro Cantù",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/138826/cantu-liam-udom",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-8fed87c93a8f",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
+      "id": "br-4eb51fbc97ed",
+      "player": "Mezie Offurum",
+      "pos": "SF",
+      "from": "?",
+      "to": "Givova Scafati",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/139082/givova-scafati-offurum",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-7b3e683e25ce",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
+      "id": "br-97e964cb89aa",
+      "player": "Brekkott Chapman",
+      "pos": "?",
+      "from": "Bertram Derthona Tortona",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "Lega Basket",
+      "date": "2026-06-27",
+      "source_url": "https://www.legabasket.it/news/139083/brekkott-chapman-tortona",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-29d61f4d7606",
       "_visited": true,
       "date": "2026-06-27"
     },
