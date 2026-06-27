@@ -121,6 +121,38 @@ def fetch(url: str, timeout: int = 15) -> str | None:
         return None
 
 
+
+# Club name canonicalization
+CLUB_ALIASES = {
+    "varese": "Pallacanestro Varese", "openjobmetis varese": "Pallacanestro Varese",
+    "olimpia milano": "Olimpia Milano", "armani olimpia milano": "Olimpia Milano",
+    "ea7 olimpia milano": "Olimpia Milano", "armani milan": "Olimpia Milano",
+    "virtus": "Virtus Bologna", "virtus segafredo bologna": "Virtus Bologna",
+    "aquila trento": "Dolomiti Energia Trento", "dolomiti energia trentino": "Dolomiti Energia Trento",
+    "guerri napoli": "Napoli Basket", "napolibasket": "Napoli Basket",
+    "scaligera verona": "Tezenis Verona", "scaligera basket verona": "Tezenis Verona",
+    "pallacanestro reggiana": "UNA Hotels Reggio Emilia", "reggio emilia": "UNA Hotels Reggio Emilia",
+    "nutribullet treviso": "NutriBullet Treviso Basket", "treviso basket": "NutriBullet Treviso Basket",
+    "dinamo sassari": "Banco di Sardegna Sassari", "sassari": "Banco di Sardegna Sassari",
+    "barca basket": "FC Barcelona", "real madrid baloncesto": "Real Madrid",
+    "saski baskonia": "Baskonia", "td systems baskonia": "Baskonia",
+    "crvena zvezda": "Crvena zvezda Meridianbet", "red star belgrade": "Crvena zvezda Meridianbet", "red star": "Crvena zvezda Meridianbet",
+    "partizan": "Partizan Mozzart Bet Belgrade", "partizan belgrade": "Partizan Mozzart Bet Belgrade",
+    "u-bt cluj-napoca": "UBT Cluj-Napoca", "u-banca transilvania": "UBT Cluj-Napoca", "u cluj": "UBT Cluj-Napoca",
+    "budocnost": "Budćnost Voli", "buducnost": "Budćnost Voli",
+    "olympiacos pireo": "Olympiacos Piraeus", "olympiacos bc": "Olympiacos Piraeus", "olympiacos": "Olympiacos Piraeus",
+    "panathinaikos aktor": "Panathinaikos Athens", "panathinaikos": "Panathinaikos Athens",
+    "fenerbahce": "Fenerbahce Beko Istanbul", "fenerbahce beko": "Fenerbahce Beko Istanbul",
+    "efes": "Anadolu Efes",
+    "maccabi tel aviv": "Maccabi Rapyd Tel Aviv", "maccabi": "Maccabi Rapyd Tel Aviv",
+    "zalgiris": "Žalgiris Kaunas", "as monaco basket": "AS Monaco",
+}
+
+def normalize_club(name):
+    if not name or name in ("?", "Free Agent"):
+        return name
+    return CLUB_ALIASES.get(name.lower().strip(), name)
+
 def make_id(url: str) -> str:
     return hashlib.md5(url.encode()).hexdigest()[:12]
 
@@ -566,6 +598,10 @@ def main():
                 if result:
                     item.update(result)
                     archive[item["id"]].update(result)
+                    item["from"] = normalize_club(item.get("from") or "?")
+                    item["to"]   = normalize_club(item.get("to") or "?")
+                    archive[item["id"]]["from"] = item["from"]
+                    archive[item["id"]]["to"]   = item["to"]
                     enriched_count += 1
                 time.sleep(0.3)
             print(f"  → {enriched_count}/{len(need_enrich)} items enriched")
