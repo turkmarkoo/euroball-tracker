@@ -1872,7 +1872,7 @@ function cardHTML(t) {
   return `<div class="tc s-${t.status}">
     <div class="av">${esc(ini)}</div>
     <div>
-      <div class="tp">${esc(t.player)}${t.birth_year?' <span class="tby">\''+String(t.birth_year).slice(2)+'</span>':''} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}</div>
+      <div class="tp">${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}</div>
       <div class="tmv"><span class="tf" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.from)}</span><span class="ta">→</span><span class="tt" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
          </div>
