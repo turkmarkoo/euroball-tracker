@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T20:42:13.138081+00:00",
+  "generated_at": "2026-06-28T08:34:57.315482+00:00",
   "count": 413,
   "items": [
     {
@@ -129,6 +129,34 @@
       "source_name": "Eurohoops",
       "source_url": "https://www.eurohoops.net/en/euroleague/1981544/barca-and-baskonia-forced-to-reach-an-understanding-regarding-xevi-pujol-and-mike-james/",
       "_isNew": true
+    },
+    {
+      "id": "br-523dbfa378ad",
+      "player": "Boyd van der Vuurst de Vries",
+      "pos": "PG",
+      "from": "Landstede Hammers",
+      "to": "Landstede Hammers",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-28",
+      "source_url": "https://bnxtleague.com/en/newsvideo/boyd-van-der-vuurst-de-vries-stays-with-landstede-hammers",
+      "source_name": "BNXT League Official",
+      "contract": null,
+      "birth_year": 2000
+    },
+    {
+      "id": "br-f4e3ae516e7a",
+      "player": "Devin Whitfield",
+      "pos": "?",
+      "from": "Landstede Hammers",
+      "to": "Landstede Hammers",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-28",
+      "source_url": "https://bnxtleague.com/en/newsvideo/boyd-van-der-vuurst-de-vries-stays-with-landstede-hammers",
+      "source_name": "BNXT League Official",
+      "contract": null,
+      "birth_year": null
     },
     {
       "player": "Alex Antetokounmpo",
@@ -5460,30 +5488,6 @@
       "source_name": "ABA League",
       "id": "ai-73228797610b",
       "contract": "1 year"
-    },
-    {
-      "player": "Bogdan Nicolescu",
-      "pos": "PG",
-      "from": "CSM CSU Oradea",
-      "to": "UBT Cluj-Napoca",
-      "status": "signed",
-      "league": "BCL",
-      "date": "2026-06-13",
-      "source_url": "https://baschetromania.ro/",
-      "source_name": "BaschetRomania",
-      "id": "ai-b1eb2b142fa8"
-    },
-    {
-      "player": "Grant Anticevich",
-      "pos": "PF",
-      "from": "KK Split",
-      "to": "Okapi Aalst",
-      "status": "signed",
-      "league": "BNXT",
-      "date": "2026-06-13",
-      "source_url": "https://www.okapiaalst.be/okapi-aalst-versterkt-zich-met-de-komst-van-grant-anticevich",
-      "source_name": "Okapi Aalst Official",
-      "id": "ai-9abc85c07ace"
     }
   ]
 }

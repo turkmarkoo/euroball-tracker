@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T20:42:13.132837+00:00",
-  "count": 509,
+  "generated_at": "2026-06-28T08:34:57.310100+00:00",
+  "count": 512,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -129,6 +129,39 @@
       "source_name": "Eurohoops",
       "source_url": "https://www.eurohoops.net/en/euroleague/1981544/barca-and-baskonia-forced-to-reach-an-understanding-regarding-xevi-pujol-and-mike-james/",
       "_isNew": true
+    },
+    {
+      "id": "br-523dbfa378ad",
+      "player": "Boyd van der Vuurst de Vries",
+      "pos": "PG",
+      "from": "Landstede Hammers",
+      "to": "Landstede Hammers",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-28",
+      "source_url": "https://bnxtleague.com/en/newsvideo/boyd-van-der-vuurst-de-vries-stays-with-landstede-hammers",
+      "source_name": "BNXT League Official",
+      "contract": null,
+      "birth_year": 2000
+    },
+    {
+      "id": "br-f4e3ae516e7a",
+      "player": "Devin Whitfield",
+      "pos": "?",
+      "from": "Landstede Hammers",
+      "to": "Landstede Hammers",
+      "status": "extended",
+      "league": "BNXT",
+      "date": "2026-06-28",
+      "source_url": "https://bnxtleague.com/en/newsvideo/boyd-van-der-vuurst-de-vries-stays-with-landstede-hammers",
+      "source_name": "BNXT League Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "bnxt-seen-853e64f8eab8",
+      "_visited": true,
+      "date": "2026-06-28"
     },
     {
       "player": "Alex Antetokounmpo",
