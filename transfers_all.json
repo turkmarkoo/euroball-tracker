@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T08:34:57.310100+00:00",
-  "count": 512,
+  "generated_at": "2026-06-28T10:14:13.669702+00:00",
+  "count": 514,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -160,6 +160,25 @@
     },
     {
       "id": "bnxt-seen-853e64f8eab8",
+      "_visited": true,
+      "date": "2026-06-28"
+    },
+    {
+      "id": "br-71cd33d99dd4",
+      "player": "Justin Johnson",
+      "pos": "?",
+      "from": "Tezenis Verona",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "Lega Basket",
+      "date": "2026-06-28",
+      "source_url": "https://www.legabasket.it/news/139087/verona-justin-johnson",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-139942b105a5",
       "_visited": true,
       "date": "2026-06-28"
     },
