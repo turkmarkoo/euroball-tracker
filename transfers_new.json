@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T10:14:13.675211+00:00",
-  "count": 414,
+  "generated_at": "2026-06-28T12:22:32.374934+00:00",
+  "count": 498,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -159,6 +159,11 @@
       "birth_year": null
     },
     {
+      "id": "bnxt-seen-853e64f8eab8",
+      "_visited": true,
+      "date": "2026-06-28"
+    },
+    {
       "id": "br-71cd33d99dd4",
       "player": "Justin Johnson",
       "pos": "?",
@@ -171,6 +176,39 @@
       "source_name": "Lega Basket Official",
       "contract": null,
       "birth_year": null
+    },
+    {
+      "id": "lega-seen-139942b105a5",
+      "_visited": true,
+      "date": "2026-06-28"
+    },
+    {
+      "player": "Dewayne Stewart Jr",
+      "pos": "SF",
+      "from": "Cedevita Olimpija",
+      "to": "Kosner Baskonia",
+      "status": "signed",
+      "league": "ACB",
+      "date": "2026-06-28",
+      "source_url": "https://acb.com/es/liga/noticias/dewayne-stewart-jr-primera-pieza-del-kosner-baskonia-26-27-145460",
+      "source_name": "acb.com",
+      "contract": null,
+      "birth_year": 2000,
+      "id": "ai-a9f8268bec23"
+    },
+    {
+      "player": "Glynn Watson",
+      "pos": "PG",
+      "from": "ASVEL Villeurbanne",
+      "to": "Umana Reyer Venezia",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-28",
+      "source_url": "https://sportando.basketball/en/reyer-venezia-reportedly-close-to-signing-glynn-watson/",
+      "source_name": "Sportando",
+      "contract": null,
+      "birth_year": 1997,
+      "id": "ai-1bf167240096"
     },
     {
       "player": "Alex Antetokounmpo",
@@ -215,6 +253,11 @@
       "birth_year": 2000
     },
     {
+      "id": "bnxt-seen-259fc908a145",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
       "id": "br-452c055ec12d",
       "player": "Derek Ogbeide",
       "pos": "C",
@@ -227,6 +270,11 @@
       "source_name": "Lega Basket Official",
       "contract": null,
       "birth_year": null
+    },
+    {
+      "id": "lega-seen-5adfa35ea947",
+      "_visited": true,
+      "date": "2026-06-27"
     },
     {
       "id": "br-b59682d1ac75",
@@ -243,6 +291,11 @@
       "birth_year": null
     },
     {
+      "id": "lega-seen-509a41fb8eef",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
       "id": "br-13a7431d3210",
       "player": "Eimantas Bendzius",
       "pos": "?",
@@ -255,6 +308,11 @@
       "source_name": "Lega Basket Official",
       "contract": "1 year",
       "birth_year": null
+    },
+    {
+      "id": "lega-seen-25998edce33f",
+      "_visited": true,
+      "date": "2026-06-27"
     },
     {
       "id": "br-20e2252a3312",
@@ -271,6 +329,11 @@
       "birth_year": null
     },
     {
+      "id": "lega-seen-8fed87c93a8f",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
       "id": "br-4eb51fbc97ed",
       "player": "Mezie Offurum",
       "pos": "SF",
@@ -283,6 +346,11 @@
       "source_name": "Lega Basket Official",
       "contract": null,
       "birth_year": null
+    },
+    {
+      "id": "lega-seen-7b3e683e25ce",
+      "_visited": true,
+      "date": "2026-06-27"
     },
     {
       "id": "br-97e964cb89aa",
@@ -299,6 +367,165 @@
       "birth_year": null
     },
     {
+      "id": "lega-seen-29d61f4d7606",
+      "_visited": true,
+      "date": "2026-06-27"
+    },
+    {
+      "player": "Jonathan Kasibabu",
+      "pos": "C",
+      "from": "Fuenlabrada",
+      "to": "Río Breogán",
+      "status": "signed",
+      "league": "ACB",
+      "date": "2026-06-27",
+      "source_url": "https://acb.com/es/liga/noticias/jonathan-kasibabu-intensidad-y-energia-para-rio-breogan-145457",
+      "source_name": "acb.com",
+      "contract": null,
+      "birth_year": 1996,
+      "id": "ai-576d9fa17288"
+    },
+    {
+      "player": "Trent Forrest",
+      "pos": "PG",
+      "from": "Kosner Baskonia",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "ACB",
+      "date": "2026-06-27",
+      "source_url": "https://acb.com/es/liga/noticias/el-kosner-baskonia-anuncia-cinco-bajas-145458",
+      "source_name": "acb.com",
+      "contract": null,
+      "birth_year": 1998,
+      "id": "ai-7cad7fe16e71"
+    },
+    {
+      "player": "Markquis Nowell",
+      "pos": "PG",
+      "from": "Kosner Baskonia",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "ACB",
+      "date": "2026-06-27",
+      "source_url": "https://acb.com/es/liga/noticias/el-kosner-baskonia-anuncia-cinco-bajas-145458",
+      "source_name": "acb.com",
+      "contract": null,
+      "birth_year": 1996,
+      "id": "ai-816df850e492"
+    },
+    {
+      "player": "Eugene Omoruyi",
+      "pos": "PF",
+      "from": "Kosner Baskonia",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "ACB",
+      "date": "2026-06-27",
+      "source_url": "https://acb.com/es/liga/noticias/el-kosner-baskonia-anuncia-cinco-bajas-145458",
+      "source_name": "acb.com",
+      "contract": null,
+      "birth_year": 1997,
+      "id": "ai-5bac562dc750"
+    },
+    {
+      "player": "Gytis Radzevicius",
+      "pos": "PF",
+      "from": "Kosner Baskonia",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "ACB",
+      "date": "2026-06-27",
+      "source_url": "https://acb.com/es/liga/noticias/el-kosner-baskonia-anuncia-cinco-bajas-145458",
+      "source_name": "acb.com",
+      "contract": null,
+      "birth_year": 1992,
+      "id": "ai-43da3a3fde24"
+    },
+    {
+      "player": "Jesse Edwards",
+      "pos": "C",
+      "from": "Kosner Baskonia",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "ACB",
+      "date": "2026-06-27",
+      "source_url": "https://acb.com/es/liga/noticias/el-kosner-baskonia-anuncia-cinco-bajas-145458",
+      "source_name": "acb.com",
+      "contract": null,
+      "birth_year": 2002,
+      "id": "ai-2745f1f71c6d"
+    },
+    {
+      "player": "Jilson Bango",
+      "pos": "PF",
+      "from": "Fenerbahçe Beko",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "BSL",
+      "date": "2026-06-27",
+      "source_url": "https://www.sporx.com/fenerbahce-beko-da-4-ayrilik-SXHBQ1167024SXQ",
+      "source_name": "Sporx",
+      "contract": null,
+      "birth_year": 1996,
+      "id": "ai-583f42b96522"
+    },
+    {
+      "player": "Brandon Boston Jr",
+      "pos": "SG",
+      "from": "Fenerbahçe Beko",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "BSL",
+      "date": "2026-06-27",
+      "source_url": "https://www.sporx.com/fenerbahce-beko-da-4-ayrilik-SXHBQ1167024SXQ",
+      "source_name": "Sporx",
+      "contract": null,
+      "birth_year": 2001,
+      "id": "ai-d90033fc8576"
+    },
+    {
+      "player": "Armando Bacot Jr",
+      "pos": "C",
+      "from": "Fenerbahçe Beko",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "BSL",
+      "date": "2026-06-27",
+      "source_url": "https://www.sporx.com/fenerbahce-beko-da-4-ayrilik-SXHBQ1167024SXQ",
+      "source_name": "Sporx",
+      "contract": null,
+      "birth_year": 2000,
+      "id": "ai-7423f984d0d5"
+    },
+    {
+      "player": "Arturs Zagars",
+      "pos": "C",
+      "from": "Fenerbahçe Beko",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "BSL",
+      "date": "2026-06-27",
+      "source_url": "https://www.sporx.com/fenerbahce-beko-da-4-ayrilik-SXHBQ1167024SXQ",
+      "source_name": "Sporx",
+      "contract": null,
+      "birth_year": 1992,
+      "id": "ai-4fd914ee6368"
+    },
+    {
+      "player": "Daniel Theis",
+      "pos": "C",
+      "from": "AS Monaco",
+      "to": "ASVEL Villeurbanne",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-27",
+      "source_url": "https://sportando.basketball/en/asvel-villeurbanne-signs-daniel-theis/",
+      "source_name": "Sportando",
+      "contract": null,
+      "birth_year": 1992,
+      "id": "ai-e3ae7daedd2c"
+    },
+    {
       "id": "br-9ce26b28478f",
       "player": "Joel Murray",
       "pos": "PG",
@@ -311,6 +538,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-f2941c8082cc",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
       "id": "br-617ae3ec076a",
       "player": "Eric Boone",
       "pos": "PG",
@@ -321,6 +553,11 @@
       "date": "2026-06-26",
       "source_url": "https://bnxtleague.com/en/newsvideo/eric-boone-returns-to-brussels-basketball",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-f6236240ff2d",
+      "_visited": true,
+      "date": "2026-06-26"
     },
     {
       "id": "br-c6aebb6bace1",
@@ -347,6 +584,16 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-b64a981427cb",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
+      "id": "lega-seen-b4896733aac9",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
       "id": "br-e3c8e8ac6140",
       "player": "JT Thor",
       "pos": "?",
@@ -359,6 +606,11 @@
       "source_name": "Lega Basket Official",
       "contract": "1 year",
       "birth_year": null
+    },
+    {
+      "id": "lega-seen-584f632b788d",
+      "_visited": true,
+      "date": "2026-06-26"
     },
     {
       "id": "br-06064de2ed39",
@@ -374,6 +626,11 @@
       "contract": null,
       "nationality": "IT",
       "birth_year": null
+    },
+    {
+      "id": "lega-seen-ba597ea9e8cf",
+      "_visited": true,
+      "date": "2026-06-26"
     },
     {
       "player": "Ferran Bassas",
@@ -418,6 +675,16 @@
       "birth_year": 1997
     },
     {
+      "id": "bnxt-seen-b4a8b31963d8",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
+      "id": "bnxt-seen-934b694ab78e",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
       "id": "br-6fd515453cb2",
       "player": "Michele Serpilli",
       "pos": "?",
@@ -432,6 +699,11 @@
       "birth_year": null
     },
     {
+      "id": "lega-seen-144b33a8412e",
+      "_visited": true,
+      "date": "2026-06-26"
+    },
+    {
       "id": "br-2203cec044e4",
       "player": "Neven Spahija",
       "pos": "coach",
@@ -444,6 +716,11 @@
       "source_name": "Lega Basket Official",
       "contract": null,
       "birth_year": null
+    },
+    {
+      "id": "lega-seen-e9a9adfcc290",
+      "_visited": true,
+      "date": "2026-06-26"
     },
     {
       "player": "Ferran Bassas",
@@ -558,6 +835,34 @@
       "id": "ai-0b1cb7beb638"
     },
     {
+      "player": "Cedi Osman",
+      "pos": "PF",
+      "from": "Panathinaikos",
+      "to": "Anadolu Efes",
+      "status": "signed",
+      "league": "BSL",
+      "date": "2026-06-26",
+      "source_url": "https://www.fanatik.com.tr/basketbol/cedi-osman-yuvaya-donuyor-basketbol-super-liginde-yilin-bombasi-2628443",
+      "source_name": "Fanatik",
+      "contract": null,
+      "birth_year": 1995,
+      "id": "ai-a743958c681e"
+    },
+    {
+      "player": "Branko Bandic",
+      "pos": "SG",
+      "from": "?",
+      "to": "Panathinaikos",
+      "status": "rumor",
+      "league": "EuroLeague",
+      "date": "2026-06-26",
+      "source_url": "https://www.sport24.gr/basket/euroleague-basketball/panathinaikos-aktor-to-mithiko-deal-gia-na-ntisei-ton-bantio-sta-prasina/",
+      "source_name": "Sport24",
+      "contract": "3",
+      "birth_year": 1999,
+      "id": "ai-df208a4ddac4"
+    },
+    {
       "id": "br-f17ccc35bde1",
       "player": "Stan van den Elzen",
       "pos": "SG",
@@ -568,6 +873,11 @@
       "date": "2026-06-25",
       "source_url": "https://bnxtleague.com/en/newsvideo/stan-van-den-elzen-joins-brussels-basketball",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-350f04089092",
+      "_visited": true,
+      "date": "2026-06-25"
     },
     {
       "id": "aba-00007d171327",
@@ -708,6 +1018,21 @@
       "birth_year": 1995
     },
     {
+      "id": "aba-seen-d28e82187c1e",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
+      "id": "aba-seen-1be872442ceb",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
+      "id": "aba-seen-fff5770ffcb5",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
       "id": "br-2f201783f705",
       "player": "Niccolò Mannion",
       "pos": "?",
@@ -718,6 +1043,36 @@
       "date": "2026-06-25",
       "source_url": "https://www.legabasket.it/news/139068/olimpia-milano-saluta-e-ringrazia-niccolo-mannion",
       "source_name": "Lega Basket Official"
+    },
+    {
+      "id": "lega-seen-0af4b48ea3f6",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
+      "id": "lega-seen-a8cc4cb322da",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
+      "id": "lega-seen-fbdf78022228",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
+      "id": "lega-seen-52fd27796117",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
+      "id": "lega-seen-8debfc3cb52c",
+      "_visited": true,
+      "date": "2026-06-25"
+    },
+    {
+      "id": "lega-seen-ae860f7af554",
+      "_visited": true,
+      "date": "2026-06-25"
     },
     {
       "id": "br-73dad4845d9a",
@@ -906,6 +1261,34 @@
       "id": "ai-6f9b9d44e644"
     },
     {
+      "player": "Shane Larkin",
+      "pos": "PG",
+      "from": "Anadolu Efes",
+      "to": "Fenerbahçe Beko",
+      "status": "signed",
+      "league": "BSL",
+      "date": "2026-06-25",
+      "source_url": "https://www.fanatik.com.tr/basketbol/cedi-osman-yuvaya-donuyor-basketbol-super-liginde-yilin-bombasi-2628443",
+      "source_name": "Fanatik",
+      "contract": null,
+      "birth_year": 1988,
+      "id": "ai-0550a9b8122f"
+    },
+    {
+      "player": "Jean Montero",
+      "pos": "PG",
+      "from": "Valencia",
+      "to": "Olympiacos",
+      "status": "rumor",
+      "league": "EuroLeague",
+      "date": "2026-06-25",
+      "source_url": "http://www.blogdebasket.com/en/2026/06/25/jean-montero-kicks-valencia-basket-to-join-olympiacos-for-the-money",
+      "source_name": "Blogdebasket",
+      "contract": null,
+      "birth_year": 2003,
+      "id": "ai-b98e96da5dac"
+    },
+    {
       "id": "br-4d0ef889102c",
       "player": "Joris Metz",
       "pos": "SG",
@@ -916,6 +1299,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/heroes-den-bosch-signs-youth-international",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-8fac546c5405",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-d4340e84fddf",
@@ -930,6 +1318,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-ea0b9d62d122",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-3eda159cd637",
       "player": "Sai Witt",
       "pos": "C",
@@ -940,6 +1333,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/cb-liege-signs-sai-witt",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-7a34ecd7c8f4",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-8ed9ead1870a",
@@ -954,6 +1352,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-5ed21b1726d8",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-206de379aa55",
       "player": "Jason Dourisseau",
       "pos": "coach",
@@ -964,6 +1367,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/dourisseau-signs-two-year-contract-extension-with-donar-groningen",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-259c9269ddd9",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-d9bbb3d50d50",
@@ -978,6 +1386,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-0346c89dc3fb",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-c0287fae4c91",
       "player": "Jonathan Beagle",
       "pos": "?",
@@ -988,6 +1401,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/zorg-en-zekerheid-leiden-signs-jonathan-beagle",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-7a852a90adbe",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-ae827e19b460",
@@ -1014,6 +1432,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-554f56e4ce53",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-e35111d7f065",
       "player": "Jeroen van Vugt",
       "pos": "coach",
@@ -1024,6 +1447,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/jeroen-van-vugt-named-new-coach-of-rotterdam-city-basketball",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-674213f32d82",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "br-36357f42c9a9",
@@ -1038,6 +1466,11 @@
       "source_name": "BNXT League Official"
     },
     {
+      "id": "bnxt-seen-517bd3ef9ec7",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "id": "br-a3c51c5ea4c8",
       "player": "Noël Coleman",
       "pos": "PG",
@@ -1048,6 +1481,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/noel-coleman-joins-windrose-giants-antwerp",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-79cb4b3fa679",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "player": "Kadin Shedrick",
@@ -1110,6 +1548,11 @@
       "date": "2026-06-24",
       "source_url": "https://bnxtleague.com/en/newsvideo/donar-signs-bryan-antoine",
       "source_name": "BNXT League Official"
+    },
+    {
+      "id": "bnxt-seen-30c0c91c1549",
+      "_visited": true,
+      "date": "2026-06-24"
     },
     {
       "id": "aba-0000219dc97d",
@@ -1215,6 +1658,41 @@
       "id": "ai-b33885a3a41c"
     },
     {
+      "id": "aba-seen-7061293c7d6e",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
+      "id": "aba-seen-68d872b13e0b",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
+      "id": "lega-seen-8670207dedb3",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
+      "id": "lega-seen-6d53a4017e98",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
+      "id": "lega-seen-5127a62bf4e4",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
+      "id": "lega-seen-a8428a752285",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
+      "id": "lega-seen-7a02e55b358d",
+      "_visited": true,
+      "date": "2026-06-24"
+    },
+    {
       "player": "Daniel Hackett",
       "pos": "PG",
       "from": "Virtus Bologna",
@@ -1227,6 +1705,48 @@
       "contract": "1",
       "birth_year": 1986,
       "id": "ai-7bf1bed958a0"
+    },
+    {
+      "player": "Chris Jones",
+      "pos": "PG",
+      "from": "Hapoel IBI Tel Aviv",
+      "to": "Crvena Zvezda Meridianbet Belgrade",
+      "status": "signed",
+      "league": "EuroLeague",
+      "date": "2026-06-24",
+      "source_url": "https://www.euroleaguebasketball.net/en/euroleague/news/crvena-zvezda-puts-chris-jones-at-point-guard/",
+      "source_name": "Euroleague Basketball",
+      "contract": "2 years",
+      "birth_year": 1993,
+      "id": "ai-b0870b1b2a5d"
+    },
+    {
+      "player": "Chris Jones",
+      "pos": "PG",
+      "from": "Free Agent",
+      "to": "Crvena zvezda Meridianbet",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-24",
+      "source_url": "https://www.aba-liga.com/news/54930/chris-jones-becomes-first-summer-signing-for-crvena-zvezda-meridianbet/",
+      "source_name": "ABA League",
+      "contract": "2 years",
+      "birth_year": 1993,
+      "id": "ai-09407cea56e8"
+    },
+    {
+      "player": "Kostas Antetokounmpo",
+      "pos": "C",
+      "from": "Olympiacos",
+      "to": "Aris Betsson",
+      "status": "rumor",
+      "league": "EuroCup",
+      "date": "2026-06-24",
+      "source_url": "https://www.eurohoops.net/en/eurocup/1984344/kostas-antetokuonmpo-close-to-signing-21-contract-with-aris/",
+      "source_name": "Eurohoops",
+      "contract": "2+1",
+      "birth_year": 1998,
+      "id": "ai-998beec0d02c"
     },
     {
       "id": "ai-00001e83ee30",
@@ -1543,6 +2063,11 @@
       "source_name": "Lega Basket Official"
     },
     {
+      "id": "aba-seen-7db275d05fd2",
+      "_visited": true,
+      "date": "2026-06-23"
+    },
+    {
       "id": "br-83ac63eb8709",
       "player": "Noah Kirkwood",
       "pos": "?",
@@ -1555,6 +2080,45 @@
       "source_name": "ABA Liga Official",
       "contract": "1 year",
       "birth_year": 1999
+    },
+    {
+      "id": "aba-seen-99baa75768e1",
+      "_visited": true,
+      "date": "2026-06-23"
+    },
+    {
+      "id": "aba-seen-e172bb7a9251",
+      "_visited": true,
+      "date": "2026-06-23"
+    },
+    {
+      "id": "lega-seen-991234bcfe7a",
+      "_visited": true,
+      "date": "2026-06-23"
+    },
+    {
+      "id": "lega-seen-c95c67b607af",
+      "_visited": true,
+      "date": "2026-06-23"
+    },
+    {
+      "id": "lega-seen-a31cfeee6575",
+      "_visited": true,
+      "date": "2026-06-23"
+    },
+    {
+      "player": "Balša Živanović",
+      "pos": "SG",
+      "from": "Sutjeska",
+      "to": "Borac Mozzart",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-23",
+      "source_url": "https://www.aba-liga.com/news/54927/balsa-zivanovic-is-the-new-borac-mozzart-player/",
+      "source_name": "ABA League",
+      "contract": null,
+      "birth_year": 2001,
+      "id": "ai-fb5ba88f6ce0"
     },
     {
       "id": "ai-00005d955797",
@@ -1878,6 +2442,16 @@
       "id": "ai-b97ea62395bf"
     },
     {
+      "id": "aba-seen-3ca6815e4eb9",
+      "_visited": true,
+      "date": "2026-06-22"
+    },
+    {
+      "id": "aba-seen-0f5708b7eca3",
+      "_visited": true,
+      "date": "2026-06-22"
+    },
+    {
       "id": "br-e2106df0d8ed",
       "player": "Emir Hadžibegović",
       "pos": "?",
@@ -1889,6 +2463,49 @@
       "source_url": "https://www.aba-liga.com/news/54921/emir-hadzibegovic-is-coming-to-buducnost-voli/",
       "source_name": "ABA Liga Official",
       "contract": "2 years"
+    },
+    {
+      "id": "aba-seen-dc6f2e0c2f98",
+      "_visited": true,
+      "date": "2026-06-22"
+    },
+    {
+      "id": "lega-seen-9dbe927abaf4",
+      "_visited": true,
+      "date": "2026-06-22"
+    },
+    {
+      "id": "lega-seen-b0bee935b351",
+      "_visited": true,
+      "date": "2026-06-22"
+    },
+    {
+      "player": "Eimantas Bendzius",
+      "pos": "SF",
+      "from": "APU Old Wild West Udine",
+      "to": "APU Old Wild West Udine",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-22",
+      "source_url": "https://www.legabasket.it/",
+      "source_name": "legabasket.it",
+      "contract": null,
+      "birth_year": 1990,
+      "id": "ai-2a3a42ea5df8"
+    },
+    {
+      "player": "Derek Ogbeide",
+      "pos": "C",
+      "from": "RBR Rimini",
+      "to": "UNA Hotels Reggio Emilia",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-22",
+      "source_url": "https://www.legabasket.it/",
+      "source_name": "legabasket.it",
+      "contract": null,
+      "birth_year": 1995,
+      "id": "ai-388271a9909c"
     },
     {
       "player": "Zeljko Obradovic",
@@ -2162,6 +2779,11 @@
       "source_url": "https://www.eurohoops.net/en/eurocup/1976263/marcus-foster-signs-with-paok-eurocup/",
       "source_name": "Eurohoops",
       "id": "ai-2beed653eafd"
+    },
+    {
+      "id": "lega-seen-073e101ef6b3",
+      "_visited": true,
+      "date": "2026-06-20"
     },
     {
       "id": "aba-54914",
@@ -5350,6 +5972,20 @@
       "source_url": "https://www.aba-liga.com/news/54906/official-zadar-parts-ways-with-danijel-jusup/",
       "source_name": "ABA League",
       "id": "ai-ce79d35e3176"
+    },
+    {
+      "player": "Ranko Simović",
+      "pos": "?",
+      "from": "Free Agent",
+      "to": "Borac Mozzart",
+      "status": "signed",
+      "league": "ABA League",
+      "date": "2026-06-17",
+      "source_url": "https://www.aba-liga.com/news/54903/ranko-simovic-is-the-first-reinforcement-of-borac-mozzart/",
+      "source_name": "ABA League",
+      "contract": "1 year",
+      "birth_year": 1999,
+      "id": "ai-8de682cd7edd"
     },
     {
       "player": "Dario Saric",
