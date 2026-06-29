@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T00:12:26.951030+00:00",
-  "count": 538,
+  "generated_at": "2026-06-29T10:27:50.177272+00:00",
+  "count": 548,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -131,6 +131,96 @@
       "_isNew": true
     },
     {
+      "id": "br-24f460cf1d53",
+      "player": "Vladimir Mihailović",
+      "pos": "?",
+      "from": "Zadar",
+      "to": "Zadar",
+      "status": "extended",
+      "league": "ABA League",
+      "date": "2026-06-29",
+      "source_url": "https://www.aba-liga.com/news/54935/vladimir-mihailovic-extended-with-zadar-for-two-more-seasons/",
+      "source_name": "ABA Liga Official",
+      "contract": "2 years",
+      "birth_year": null
+    },
+    {
+      "id": "aba-seen-537edfee9eb8",
+      "_visited": true,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "br-0ee8e645e949",
+      "player": "Jehloni James",
+      "pos": "SF",
+      "from": "Lahti",
+      "to": "Windrose Giants Antwerp",
+      "status": "signed",
+      "league": "BNXT",
+      "date": "2026-06-29",
+      "source_url": "https://bnxtleague.com/en/newsvideo/jehloni-james-joins-windrose-giants-antwerp",
+      "source_name": "BNXT League Official",
+      "contract": "1 year",
+      "birth_year": 2002
+    },
+    {
+      "id": "bnxt-seen-11dd32813ee0",
+      "_visited": true,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "br-0b7094ec1dbe",
+      "player": "Tyrus McGee",
+      "pos": "?",
+      "from": "Tezenis Verona",
+      "to": "Free Agent",
+      "status": "left",
+      "league": "Lega Basket",
+      "date": "2026-06-29",
+      "source_url": "https://www.legabasket.it/news/139092/verona-tyrus-mcgee",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-dd32167bbff0",
+      "_visited": true,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "br-a958e811b11f",
+      "player": "Marcelo Nicola",
+      "pos": "coach",
+      "from": "NutriBullet Treviso Basket",
+      "to": "NutriBullet Treviso Basket",
+      "status": "extended",
+      "league": "Lega Basket",
+      "date": "2026-06-29",
+      "source_url": "https://www.legabasket.it/news/139089/treviso-marcelo-nicola",
+      "source_name": "Lega Basket Official",
+      "contract": "2 years",
+      "birth_year": null
+    },
+    {
+      "id": "br-f31c2d5565f5",
+      "player": "Brekkott Chapman",
+      "pos": "SF",
+      "from": "?",
+      "to": "NutriBullet Treviso Basket",
+      "status": "signed",
+      "league": "Lega Basket",
+      "date": "2026-06-29",
+      "source_url": "https://www.legabasket.it/news/139091/treviso-brekkott-chapman",
+      "source_name": "Lega Basket Official",
+      "contract": null,
+      "birth_year": null
+    },
+    {
+      "id": "lega-seen-a6225bd32004",
+      "_visited": true,
+      "date": "2026-06-29"
+    },
+    {
       "id": "br-523dbfa378ad",
       "player": "Boyd van der Vuurst de Vries",
       "pos": "PG",
@@ -209,6 +299,11 @@
       "contract": null,
       "birth_year": 1997,
       "id": "ai-1bf167240096"
+    },
+    {
+      "id": "lega-seen-fee7822e9a1b",
+      "_visited": true,
+      "date": "2026-06-28"
     },
     {
       "player": "Alex Antetokounmpo",
