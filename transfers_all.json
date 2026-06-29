@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T12:40:59.984744+00:00",
-  "count": 566,
+  "generated_at": "2026-06-29T14:34:22.645096+00:00",
+  "count": 568,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -233,6 +233,16 @@
       "contract": "3",
       "birth_year": 1997,
       "id": "ai-d6d51a383743"
+    },
+    {
+      "id": "lega-seen-c59972ae6647",
+      "_visited": true,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "lega-seen-a8b16f6690e8",
+      "_visited": true,
+      "date": "2026-06-29"
     },
     {
       "id": "br-523dbfa378ad",
