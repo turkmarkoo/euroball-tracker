@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-30T11:14:58.221419+00:00",
-  "count": 569,
+  "generated_at": "2026-06-30T11:46:56.475177+00:00",
+  "count": 571,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -131,6 +131,11 @@
       "_isNew": true
     },
     {
+      "id": "lega-seen-ee53c665ff5a",
+      "_visited": true,
+      "date": "2026-06-30"
+    },
+    {
       "id": "br-24f460cf1d53",
       "player": "Vladimir Mihailović",
       "pos": "?",
@@ -246,6 +251,11 @@
     },
     {
       "id": "lega-seen-8fe6e21634dc",
+      "_visited": true,
+      "date": "2026-06-29"
+    },
+    {
+      "id": "lega-seen-e316d796e3b6",
       "_visited": true,
       "date": "2026-06-29"
     },
