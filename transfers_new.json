@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-29T23:56:50.960911+00:00",
-  "count": 461,
+  "generated_at": "2026-06-30T02:54:45.940573+00:00",
+  "count": 456,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -6097,69 +6097,6 @@
       "source_url": "https://www.eurohoops.net/en/euroleague/1981092/saben-lee-signs-with-zalgiris-euroleague/",
       "source_name": "Eurohoops",
       "id": "ai-804f9bdb7f12"
-    },
-    {
-      "player": "Jalyn McCreary",
-      "pos": "PF",
-      "from": "HKK Široki",
-      "to": "UBT Cluj-Napoca",
-      "status": "signed",
-      "league": "ABA League",
-      "date": "2026-06-15",
-      "source_url": "https://www.aba-liga.com/news/54904/u-bt-cluj-napoca-sign-with-jalyn-mccreary/",
-      "source_name": "ABA League",
-      "id": "ai-0b3f55ec1172",
-      "birth_year": 2000
-    },
-    {
-      "player": "Dušan Beslać",
-      "pos": "PF",
-      "from": "BC Avtodor Saratov",
-      "to": "UBT Cluj-Napoca",
-      "status": "signed",
-      "league": "ABA League",
-      "date": "2026-06-15",
-      "source_url": "https://www.aba-liga.com/news/54905",
-      "source_name": "ABA League",
-      "id": "ai-6859546e7d90",
-      "birth_year": 1999
-    },
-    {
-      "player": "Otis Livingston II",
-      "pos": "PG",
-      "from": "Bàsquet Girona",
-      "to": "UBT Cluj-Napoca",
-      "status": "signed",
-      "league": "ABA League",
-      "date": "2026-06-15",
-      "source_url": "https://www.aba-liga.com/news/54904/u-bt-cluj-napoca-sign-with-jalyn-mccreary/",
-      "source_name": "ABA League",
-      "id": "ai-9de9c8ad2085"
-    },
-    {
-      "player": "Dragan Milosavljević",
-      "pos": "SG",
-      "from": "Igokea m:tel",
-      "to": "Igokea m:tel",
-      "status": "extended",
-      "league": "ABA League",
-      "date": "2026-06-15",
-      "source_url": "https://www.aba-liga.com/news/54908/dragan-milosavljevic-continues-career-at-igokea-m-tel/",
-      "source_name": "ABA League",
-      "id": "ai-2c592030b948"
-    },
-    {
-      "player": "Ranko Simović",
-      "pos": "SF",
-      "from": "Voždovac",
-      "to": "Borac Mozzart",
-      "status": "signed",
-      "league": "ABA League",
-      "date": "2026-06-15",
-      "source_url": "https://www.aba-liga.com/news/54903/ranko-simovic-is-the-first-reinforcement-of-borac-mozzart/",
-      "source_name": "ABA League",
-      "id": "ai-73228797610b",
-      "contract": "1 year"
     }
   ]
 }
