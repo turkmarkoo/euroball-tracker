@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-30T23:43:46.702477+00:00",
-  "count": 456,
+  "generated_at": "2026-07-01T03:00:15.552234+00:00",
+  "count": 449,
   "items": [
     {
       "id": "gen-tony-parker-talks-asvel-future-victor-we",
@@ -6008,95 +6008,6 @@
       "contract": "1 year",
       "birth_year": 1999,
       "id": "ai-8de682cd7edd"
-    },
-    {
-      "player": "Dario Saric",
-      "pos": "PF",
-      "from": "Free Agent",
-      "to": "Anadolu Efes",
-      "status": "signed",
-      "league": "EuroLeague",
-      "date": "2026-06-16",
-      "source_url": "https://www.talkbasket.net/219784-anadolu-efes-brings-back-dario-saric",
-      "source_name": "TalkBasket.net",
-      "id": "ai-f4fb9dbe421b",
-      "contract": "2+1",
-      "birth_year": null
-    },
-    {
-      "player": "Jordan Loyd",
-      "pos": "SG",
-      "from": "Anadolu Efes",
-      "to": "Anadolu Efes",
-      "status": "extended",
-      "league": "EuroLeague",
-      "date": "2026-06-16",
-      "source_url": "https://www.talkbasket.net/219784-anadolu-efes-brings-back-dario-saric",
-      "source_name": "TalkBasket.net",
-      "id": "ai-53ec0290e324",
-      "contract": "2+1",
-      "birth_year": null
-    },
-    {
-      "player": "Malachi Flynn",
-      "pos": "PG",
-      "from": "Bahçeşehir Koleji",
-      "to": "Bahçeşehir Koleji",
-      "status": "extended",
-      "league": "BSL",
-      "date": "2026-06-16",
-      "source_url": "https://www.tbf.org.tr/",
-      "source_name": "tbf.org.tr",
-      "id": "ai-84c3dd6b209f"
-    },
-    {
-      "player": "Payton Willis",
-      "pos": "SG",
-      "from": "La Laguna Tenerife",
-      "to": "Kolossos Rodou BC",
-      "status": "signed",
-      "league": "BCL",
-      "date": "2026-06-16",
-      "source_url": "https://sportando.basketball/en/kolossos-rhodes-sign-ezra-manjon-payton-willis/",
-      "source_name": "Sportando",
-      "id": "ai-4f83deeb44b6"
-    },
-    {
-      "player": "Alec Peters",
-      "pos": "PF",
-      "from": "Olympiacos Piraeus",
-      "to": "Free Agent",
-      "status": "left",
-      "league": "EuroLeague",
-      "date": "2026-06-16",
-      "source_url": "https://www.euroleaguebasketball.net/en/euroleague/news/alec-peters-announces-his-departure-from-olympiacos/",
-      "source_name": "EuroLeague Basketball",
-      "id": "ai-9f9fe1ccff9f"
-    },
-    {
-      "player": "Josh Heath",
-      "pos": "PG",
-      "from": "Free Agent",
-      "to": "Spirou Charleroi",
-      "status": "signed",
-      "league": "BNXT",
-      "date": "2026-06-16",
-      "source_url": "https://www.eurobasket.com/Belgium/news/994649/Charleroi-welcomes-back-Heath",
-      "source_name": "Eurobasket.com",
-      "id": "ai-8cb40cf88814",
-      "birth_year": 1995
-    },
-    {
-      "player": "Saben Lee",
-      "pos": "PG",
-      "from": "Free Agent",
-      "to": "Zalgiris Kaunas",
-      "status": "signed",
-      "league": "EuroLeague",
-      "date": "2026-06-16",
-      "source_url": "https://www.eurohoops.net/en/euroleague/1981092/saben-lee-signs-with-zalgiris-euroleague/",
-      "source_name": "Eurohoops",
-      "id": "ai-804f9bdb7f12"
     }
   ]
 }
