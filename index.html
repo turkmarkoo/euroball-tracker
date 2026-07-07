@@ -300,6 +300,42 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 .fetch-note b{color:var(--yellow)}
 @media(max-width:520px){.fetch-btn-label{display:none}.fetch-btn{padding:6px 9px}}
 
+
+/* ── Edit / manual-add UI ── */
+.add-btn{display:flex;align-items:center;gap:5px;padding:5px 11px;border-radius:20px;border:1.5px solid var(--green);background:var(--green-bg);cursor:pointer;font-family:inherit;font-size:12px;font-weight:600;color:var(--green);transition:all .15s;white-space:nowrap}
+.add-btn:hover{background:var(--green);color:#fff;transform:translateY(-1px)}
+.tc-edit{position:absolute;top:8px;right:8px;width:24px;height:24px;border-radius:7px;border:1px solid var(--border);background:var(--bg2);color:var(--text2);cursor:pointer;font-size:12px;display:none;align-items:center;justify-content:center;transition:all .15s;padding:0}
+.tc{position:relative}
+.tc:hover .tc-edit{display:flex}
+.tc-edit:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tc.incomplete{border-left:3px solid var(--yellow)}
+.inc-flag{display:inline-block;background:var(--yellow-bg);color:var(--yellow);font-size:8px;font-weight:700;padding:1px 5px;border-radius:4px;letter-spacing:.5px;margin-left:5px;vertical-align:middle;border:1px solid var(--yellow)}
+.ed-bg{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:320;display:none;align-items:flex-start;justify-content:center;padding:60px 16px 16px;overflow-y:auto}
+.ed-modal{background:var(--card);border:1.5px solid var(--border2);border-radius:16px;max-width:520px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,.25);animation:fmIn .2s ease}
+.ed-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1.5px solid var(--border)}
+.ed-head h2{margin:0;font-size:16px;font-weight:700;color:var(--text);display:flex;align-items:center;gap:8px}
+.ed-close{background:var(--bg2);border:1.5px solid var(--border);border-radius:8px;width:30px;height:30px;cursor:pointer;font-size:15px;color:var(--text2);display:flex;align-items:center;justify-content:center}
+.ed-close:hover{background:var(--red-bg);color:var(--red);border-color:var(--red)}
+.ed-body{padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ed-field{display:flex;flex-direction:column;gap:4px}
+.ed-field.full{grid-column:1/-1}
+.ed-field label{font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.4px}
+.ed-field input,.ed-field select,.ed-field textarea{font-family:inherit;font-size:13px;padding:8px 10px;border:1.5px solid var(--border);border-radius:8px;background:var(--bg2);color:var(--text);outline:none;transition:border-color .15s}
+.ed-field input:focus,.ed-field select:focus,.ed-field textarea:focus{border-color:var(--accent)}
+.ed-field textarea{resize:vertical;min-height:52px}
+.ed-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 20px;border-top:1.5px solid var(--border);flex-wrap:wrap}
+.ed-foot-l{display:flex;gap:8px}
+.ed-btn{font-family:inherit;font-size:13px;font-weight:600;padding:8px 16px;border-radius:9px;cursor:pointer;border:1.5px solid var(--border2);background:var(--bg2);color:var(--text);transition:all .15s}
+.ed-btn:hover{background:var(--bg3)}
+.ed-btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.ed-btn.primary:hover{background:var(--accent2)}
+.ed-btn.danger{color:var(--red);border-color:var(--red)}
+.ed-btn.danger:hover{background:var(--red);color:#fff}
+.ed-note{font-size:11px;color:var(--text2);padding:0 20px 14px;line-height:1.5}
+.ed-note b{color:var(--text)}
+.local-badge{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:8px;font-weight:700;padding:1px 5px;border-radius:4px;letter-spacing:.5px;margin-left:5px;vertical-align:middle;border:1px solid var(--accent)}
+@media(max-width:520px){.ed-body{grid-template-columns:1fr}.add-btn-label{display:none}}
+
 </style>
 </head>
 <body>
@@ -311,6 +347,9 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
     <button class="tab" onclick="showPage('db',this)">📋 URL Database</button>
   </div>
   <div class="nav-right">
+    <button class="add-btn" onclick="openEditor(null)" id="addBtn" title="Add a transfer manually">
+      <span>+</span><span class="add-btn-label">Add</span>
+    </button>
     <button class="fetch-btn" onclick="openFetchModal()" id="fetchBtn" title="How to refresh transfer data">
       <span>🔄</span><span class="fetch-btn-label">Fetch</span>
     </button>
@@ -1695,7 +1734,8 @@ const NON_TRANSFER_TITLES = new Set([
 function dedup() {
   const seen = new Set();
   // Strip article headlines and entries with no transfer data
-  allT = allT.filter(t => !t._visited && t.player && t.league !== 'News' && !(t.pos==='?'&&t.from==='?'&&t.to==='?'));
+  allT = allT.filter(t => !t._visited && t.player && t.league !== 'News');
+  allT.forEach(t => { t._incomplete = (t.pos==='?'&&t.from==='?'&&t.to==='?'); });
   allT = allT.filter(t => {
     // Remove known non-transfer articles
     if (NON_TRANSFER_TITLES.has(t.player)) return false;
@@ -1846,7 +1886,7 @@ renderT();        // Auto-load latest scraped transfers on every page open (JSON
             for (const item of items) {
               if (!allT.find(e => e.id === item.id)) { allT.push(item); changed = true; }
             }
-            if (changed) { dedup(); sortT(); renderT(); }
+            applyLocalOverlay(); dedup(); sortT(); renderT(); updateStats();
             // Show last scrape time instead of "Not yet fetched"
             const updEl = document.getElementById('lastUpd');
             if (updEl && data.generated_at) {
@@ -1901,10 +1941,13 @@ function cardHTML(t) {
   const fmtDate = (() => { try { return new Date(t.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short'}); } catch { return t.date||''; } })();
   const isToday = t.date === new Date().toISOString().slice(0,10);
   const newBadge = isNew(t) ? '<span style="background:#e53;color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;letter-spacing:.5px;margin-left:5px;vertical-align:middle">NEW</span>' : '';
-  return `<div class="tc s-${t.status}">
+  const _incFlag = t._incomplete ? '<span class="inc-flag">NEEDS INFO</span>' : '';
+  const _locFlag = (t._local||t._edited) ? '<span class="local-badge">LOCAL</span>' : '';
+  return `<div class="tc s-${t.status}${t._incomplete?' incomplete':''}">
+    <button class="tc-edit" onclick="event.stopPropagation();openEditor('${t.id}')" title="Edit">&#9998;</button>
     <div class="av">${esc(ini)}</div>
     <div>
-      <div class="tp">${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}</div>
+      <div class="tp">${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}${_incFlag}${_locFlag}</div>
       <div class="tmv"><span class="tf" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.from)}</span><span class="ta">→</span><span class="tt" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
          </div>
@@ -2038,6 +2081,127 @@ function closeFetchModal(){document.getElementById('fetchModalBg').style.display
 function copyFetchPrompt(){var t=document.getElementById('fetchPromptText').innerText;navigator.clipboard.writeText(t).then(function(){var b=document.querySelector('.fetch-copy');var o=b.innerText;b.innerText='Copied!';setTimeout(function(){b.innerText=o;},1400);});}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeFetchModal();});
 
+
+// ── Local edits & manual additions (localStorage-backed overlay) ──
+const LS_EDITS = 'euroball_local_edits';     // { id: {patch...} }  edits to existing records
+const LS_ADDS  = 'euroball_local_adds';      // [ {record...} ]     manually added records
+function loadLocal(key, def){ try { return JSON.parse(localStorage.getItem(key)) || def; } catch { return def; } }
+function saveLocal(key, val){ try { localStorage.setItem(key, JSON.stringify(val)); } catch(e){ alert('Could not save locally: '+e.message); } }
+function getEdits(){ return loadLocal(LS_EDITS, {}); }
+function getAdds(){ return loadLocal(LS_ADDS, []); }
+
+// Apply local overlay onto allT (called after every data load)
+function applyLocalOverlay(){
+  const edits = getEdits();
+  allT.forEach(t => { if (edits[t.id]) { Object.assign(t, edits[t.id]); t._edited = true; } });
+  const adds = getAdds();
+  const have = new Set(allT.map(t => t.id));
+  adds.forEach(r => { if (!have.has(r.id)) { allT.push({...r, _local:true}); have.add(r.id); } });
+}
+
+const LEAGUE_OPTIONS = ['EuroLeague','EuroCup','ABA League','BCL','BBL','ACB','Lega Basket','Pro A','Turkish BSL','GBL','Israeli BSL','LKL','BNXT','PLK','Romanian LNB','Hungarian NB1','HKL'];
+function ensureLeagueOptions(){
+  const sel = document.getElementById('edLeague');
+  if (sel && !sel.options.length){ LEAGUE_OPTIONS.forEach(l => { const o=document.createElement('option'); o.value=l; o.textContent=l; sel.appendChild(o); }); }
+}
+function localId(){ return 'br-loc-' + Date.now().toString(36) + Math.random().toString(36).slice(2,6); }
+
+let _editingId = null;
+function openEditor(id){
+  ensureLeagueOptions();
+  _editingId = id;
+  const rec = id ? allT.find(t => t.id === id) : null;
+  document.getElementById('edTitle').textContent = id ? 'Edit transfer' : 'Add transfer';
+  document.getElementById('edPlayer').value = rec ? (rec.player||'') : '';
+  document.getElementById('edPos').value = rec ? (rec.pos||'?') : '?';
+  document.getElementById('edStatus').value = rec ? (rec.status||'signed') : 'signed';
+  document.getElementById('edFrom').value = rec ? (rec.from||'') : '';
+  document.getElementById('edTo').value = rec ? (rec.to||'') : '';
+  document.getElementById('edLeague').value = rec ? (rec.league||'EuroLeague') : 'EuroLeague';
+  document.getElementById('edContract').value = rec && rec.contract ? rec.contract : '';
+  document.getElementById('edDate').value = rec ? (rec.date||'') : new Date().toISOString().slice(0,10);
+  document.getElementById('edSummary').value = rec ? (rec.summary||'') : '';
+  document.getElementById('edSource').value = rec ? (rec.source_url||'') : '';
+  document.getElementById('edDelete').style.display = (id && String(id).startsWith('br-loc-')) ? 'block' : 'none';
+  document.getElementById('edBg').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeEditor(){ document.getElementById('edBg').style.display='none'; document.body.style.overflow=''; _editingId=null; }
+
+function saveEditor(){
+  const g = id => document.getElementById(id).value.trim();
+  const player = g('edPlayer');
+  if (!player){ alert('Player name is required.'); return; }
+  const rec = {
+    player,
+    pos: g('edPos')||'?',
+    from: g('edFrom')||'?',
+    to: g('edTo')||'?',
+    league: g('edLeague'),
+    status: g('edStatus'),
+    contract: g('edContract')||null,
+    date: g('edDate')||new Date().toISOString().slice(0,10),
+    summary: g('edSummary')||`${player} - ${g('edTo')||'?'} (${g('edStatus')}).`,
+    source_url: g('edSource')||'',
+    source_name: g('edSource') ? (()=>{try{return new URL(g('edSource')).hostname.replace('www.','');}catch{return 'Manual';}})() : 'Manual entry',
+  };
+  if (_editingId){
+    const existing = allT.find(t => t.id === _editingId);
+    if (existing && String(_editingId).startsWith('br-loc-')){
+      // locally-added record: update the adds array
+      const adds = getAdds();
+      const i = adds.findIndex(r => r.id === _editingId);
+      rec.id = _editingId;
+      if (i>=0) adds[i] = rec; else adds.push(rec);
+      saveLocal(LS_ADDS, adds);
+    } else {
+      // edit to an archive record: store as a patch by id
+      const edits = getEdits();
+      edits[_editingId] = rec;
+      saveLocal(LS_EDITS, edits);
+    }
+  } else {
+    // brand new manual record
+    rec.id = localId();
+    const adds = getAdds();
+    adds.push(rec);
+    saveLocal(LS_ADDS, adds);
+  }
+  // Rebuild allT from scratch to reflect changes cleanly
+  reloadWithLocal();
+  closeEditor();
+}
+
+function deleteLocalRecord(){
+  if (!_editingId || !String(_editingId).startsWith('br-loc-')) return;
+  if (!confirm('Delete this manually-added transfer?')) return;
+  const adds = getAdds().filter(r => r.id !== _editingId);
+  saveLocal(LS_ADDS, adds);
+  reloadWithLocal();
+  closeEditor();
+}
+
+// Re-apply overlay and re-render without a full network reload
+function reloadWithLocal(){
+  // strip previously-applied local adds, then re-overlay
+  allT = allT.filter(t => !t._local);
+  applyLocalOverlay();
+  dedup(); sortT(); renderT(); updateStats(); updateTicker();
+}
+
+// Export local changes as JSON for committing
+function exportLocalChanges(){
+  const edits = getEdits(); const adds = getAdds();
+  const payload = { edits, adds, exported_at: new Date().toISOString() };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'euroball_local_changes.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+document.addEventListener('keydown', e => { if (e.key==='Escape') closeEditor(); });
+
 </script>
 
 <!-- Fetch instructions modal -->
@@ -2065,8 +2229,45 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeFetchMo
         <div class="fetch-step-num">3</div>
         <div class="fetch-step-txt">Claude drives the browser, extracts signings, and commits <code>transfers_all.json</code> + <code>transfers_new.json</code>. This page updates automatically once the commit lands.</div>
       </div>
+      <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><button class="ed-btn" onclick="exportLocalChanges()" style="font-size:12px">&#11015; Export my local changes (JSON)</button></div>
       <div class="fetch-note"><b>Note:</b> Scheduled auto-scraping is turned off to save cost. Fetch runs only when you ask for one.</div>
     </div>
+  </div>
+</div>
+
+
+<!-- Edit / add transfer modal -->
+<div class="ed-bg" id="edBg" onclick="if(event.target===this)closeEditor()">
+  <div class="ed-modal">
+    <div class="ed-head">
+      <h2><span id="edTitle">Add transfer</span></h2>
+      <button class="ed-close" onclick="closeEditor()">&#10005;</button>
+    </div>
+    <div class="ed-body">
+      <div class="ed-field full"><label>Player</label><input id="edPlayer" placeholder="e.g. John Smith"></div>
+      <div class="ed-field"><label>Position</label>
+        <select id="edPos"><option value="?">?</option><option>PG</option><option>SG</option><option>G</option><option>SF</option><option>PF</option><option>F</option><option>C</option><option value="coach">coach</option></select></div>
+      <div class="ed-field"><label>Status</label>
+        <select id="edStatus"><option value="signed">signed</option><option value="extended">extended</option><option value="left">left</option><option value="rumor">rumor</option></select></div>
+      <div class="ed-field"><label>From club</label><input id="edFrom" placeholder="? if unknown"></div>
+      <div class="ed-field"><label>To club</label><input id="edTo" placeholder="new club"></div>
+      <div class="ed-field"><label>League</label>
+        <select id="edLeague"></select></div>
+      <div class="ed-field"><label>Contract</label><input id="edContract" placeholder="e.g. 2 years"></div>
+      <div class="ed-field full"><label>Date</label><input id="edDate" type="date"></div>
+      <div class="ed-field full"><label>Summary</label><textarea id="edSummary" placeholder="Short description (optional)"></textarea></div>
+      <div class="ed-field full"><label>Source URL</label><input id="edSource" placeholder="https://... (optional)"></div>
+    </div>
+    <div class="ed-foot">
+      <div class="ed-foot-l">
+        <button class="ed-btn danger" id="edDelete" onclick="deleteLocalRecord()" style="display:none">Delete</button>
+      </div>
+      <div class="ed-foot-l">
+        <button class="ed-btn" onclick="closeEditor()">Cancel</button>
+        <button class="ed-btn primary" onclick="saveEditor()">Save</button>
+      </div>
+    </div>
+    <div class="ed-note"><b>Note:</b> Edits and manual additions are saved in <b>this browser only</b>. Use <b>Export changes</b> (in the Fetch menu) to get a JSON you can commit so everyone sees them.</div>
   </div>
 </div>
 
