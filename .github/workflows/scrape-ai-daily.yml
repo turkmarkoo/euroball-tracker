@@ -1,8 +1,7 @@
 name: EuroBall Moves — Daily AI Transfer Search
 
 on:
-  schedule:
-    - cron: "0 8 * * *"
+  # Scheduled AI scraping disabled — fetching is now on-demand via browser.
   workflow_dispatch:
 
 permissions:

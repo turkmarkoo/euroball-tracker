@@ -1,11 +1,7 @@
 name: EuroBall Moves — Scrape Transfers
 
 on:
-  schedule:
-    # Every 30 minutes during peak transfer hours (06:00–23:00 UTC)
-    - cron: "*/30 6-23 * * *"
-    # Every 2 hours overnight (00:00–05:00 UTC)
-    - cron: "0 0-5 * * *"
+  # Scheduled scraping disabled — fetching is now on-demand via browser.
   workflow_dispatch:
 
 permissions:
