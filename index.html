@@ -358,6 +358,13 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 /* ── Rumor-confirmed badge ── */
 .pred-flag{display:inline-block;background:var(--green-bg);color:var(--green);font-size:8px;font-weight:700;padding:1px 5px;border-radius:4px;letter-spacing:.5px;margin-left:5px;vertical-align:middle;border:1px solid var(--green)}
 
+
+/* RSS + share buttons */
+.hdr-icon-btn{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;border:1.5px solid var(--border);background:var(--bg2);color:var(--text2);cursor:pointer;font-size:14px;transition:all .15s;text-decoration:none;padding:0}
+.hdr-icon-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.share-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--card);padding:10px 18px;border-radius:10px;font-size:13px;font-weight:600;z-index:400;opacity:0;transition:all .25s;pointer-events:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
 </style>
 </head>
 <body>
@@ -369,6 +376,8 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
     <button class="tab" onclick="showPage('db',this)">📋 URL Database</button>
   </div>
   <div class="nav-right">
+    <a class="hdr-icon-btn" href="rss.xml" target="_blank" title="RSS feed" rel="noopener">📡</a>
+    <button class="hdr-icon-btn" onclick="shareTracker()" title="Share this tracker">🔗</button>
     <button class="add-btn" onclick="openEditor(null)" id="addBtn" title="Add a transfer manually">
       <span>+</span><span class="add-btn-label">Add</span>
     </button>
@@ -2376,6 +2385,28 @@ function tagPredicted(){
       }
     }
   });
+}
+
+
+// Share
+function shareTracker(){
+  const url = 'https://turkmarkoo.github.io/euroball-tracker/';
+  const title = 'EuroBall Moves - European Basketball Transfer Tracker';
+  if(navigator.share){
+    navigator.share({title, url}).catch(()=>{});
+  } else if(navigator.clipboard){
+    navigator.clipboard.writeText(url).then(()=>showShareToast('Link copied to clipboard')).catch(()=>showShareToast(url));
+  } else {
+    showShareToast(url);
+  }
+}
+function showShareToast(msg){
+  let el = document.getElementById('shareToast');
+  if(!el){ el = document.createElement('div'); el.id='shareToast'; el.className='share-toast'; document.body.appendChild(el); }
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(window._toastT);
+  window._toastT = setTimeout(()=>el.classList.remove('show'), 2200);
 }
 
 </script>
