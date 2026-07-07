@@ -1881,7 +1881,8 @@ renderT();        // Auto-load latest scraped transfers on every page open (JSON
             if (!resp.ok) return;
             const data = await resp.json();
             const _cutN = new Date(Date.now()-14*24*60*60*1000).toISOString().slice(0,10);
-            const items = (data.items || []).filter(t => t.league !== 'News' && !(t.pos==='?'&&t.from==='?'&&t.to==='?')).map(t => ({...t, _isNew: (t.date||'') >= _cutN}));
+            const _yOK = t => { const y=(t.date||'').slice(0,4); return y>='2020' && y<='2027'; };
+            const items = (data.items || []).filter(t => t.league !== 'News' && _yOK(t)).map(t => ({...t, _isNew: (t.date||'') >= _cutN}));
             let changed = false;
             for (const item of items) {
               if (!allT.find(e => e.id === item.id)) { allT.push(item); changed = true; }
