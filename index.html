@@ -2004,6 +2004,7 @@ function getF() {
       if (!clubH.includes(c)) return false;
     }
     if (q) {
+      if ((!t.from || t.from === '?') && (!t.to || t.to === '?')) return false;
       const h = normStr(`${t.player} ${t.from} ${t.to} ${t.league} ${t.summary}`);
       if (!h.includes(q)) return false;
     }
