@@ -381,6 +381,19 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 .pl-link{color:inherit;text-decoration:none;border-bottom:1px dashed transparent;transition:border-color .15s}
 .pl-link:hover{border-bottom-color:var(--accent);color:var(--accent)}
 
+
+/* Club page tabs */
+.tp-tabs{display:flex;gap:8px;margin-bottom:18px;border-bottom:2px solid var(--border2)}
+.tp-tab{background:none;border:none;padding:10px 16px;font-size:14px;font-weight:700;color:var(--text2);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px;display:flex;align-items:center;gap:6px}
+.tp-tab:hover{color:var(--text)}
+.tp-tab.on{color:var(--accent);border-bottom-color:var(--accent)}
+.tp-tab-n{background:var(--bg3);color:var(--text2);font-size:11px;padding:1px 7px;border-radius:10px;font-weight:700}
+.tp-tab.on .tp-tab-n{background:var(--accent-soft);color:var(--accent)}
+.tp-tabview{display:none}
+.tp-tabview.on{display:block}
+.tp-sec-hd.rumors{color:var(--yellow)}
+.tp-empty{padding:30px;text-align:center;color:var(--text3);font-size:14px}
+
 </style>
 </head>
 <body>
@@ -1986,7 +1999,7 @@ initApiKeyUI();
             for (const item of items) {
               if (!allT.find(e => e.id === item.id)) { allT.push(item); changed = true; }
             }
-            applyLocalOverlay(); dedup(); tagPredicted(); sortT(); renderT(); updateStats();
+            applyLocalOverlay(); normalizeAllClubs(); dedup(); tagPredicted(); sortT(); renderT(); updateStats();
             // Show last scrape time instead of "Not yet fetched"
             const updEl = document.getElementById('lastUpd');
             if (updEl && data.generated_at) {
@@ -2153,14 +2166,15 @@ function showTeamPage(club) {
   if (!moves.length) return;
   var ls={}; moves.forEach(function(t){ if(t.league) ls[t.league.split('/')[0].trim()]=1; });
   var leagues=Object.keys(ls).slice(0,2).join(' \u00b7 ');
-  // categorize
-  var arrivals = moves.filter(function(t){return t.to===club && (t.status==='signed'||t.status==='rumor') && t.from!==club;});
-  var departures = moves.filter(function(t){return t.from===club && t.to!==club && t.status!=='extended';});
+  // CONFIRMED categories (exclude rumors)
+  var arrivals = moves.filter(function(t){return t.to===club && t.status==='signed' && t.from!==club;});
+  var departures = moves.filter(function(t){return t.from===club && t.to!==club && t.status!=='extended' && t.status!=='rumor';});
   var extensions = moves.filter(function(t){return t.status==='extended' && t.to===club;});
-  // roster = confirmed players currently AT the club (signed arrivals + extensions), excluding rumors
+  // RUMORS (in or out)
+  var rumors = moves.filter(function(t){return t.status==='rumor';});
+  // roster = confirmed players currently AT the club
   var roster = moves.filter(function(t){return t.to===club && (t.status==='signed'||t.status==='extended');});
-  var inn=arrivals.filter(function(t){return t.status==='signed';}).length;
-  var out=departures.length, ext=extensions.length, rum=moves.filter(function(t){return t.status==='rumor';}).length;
+  var inn=arrivals.length, out=departures.length, ext=extensions.length, rum=rumors.length;
 
   document.getElementById('tpName').textContent=club;
   document.getElementById('tpLeague').textContent=leagues;
@@ -2170,7 +2184,6 @@ function showTeamPage(club) {
     (ext?'<span class="tp-stat">\ud83d\udd04 '+ext+' extended</span>':'')+
     (rum?'<span class="tp-stat">\ud83d\udcac '+rum+' rumored</span>':'')+
     '<span class="tp-stat">\ud83d\udcca '+moves.length+' total</span>';
-  // logo
   var logoEl=document.getElementById('tpLogo');
   if(logoEl) logoEl.innerHTML=clubCrest(club,52);
 
@@ -2182,7 +2195,7 @@ function showTeamPage(club) {
       arr.sort(byDate).map(function(t){return cardHTML(t);}).join('')+
       '</div>';
   }
-  // roster list (compact, names only, deduped by player keeping latest)
+  // roster
   var seen={}, rosterU=[];
   roster.sort(byDate).forEach(function(t){var p=(t.player||'').toLowerCase();if(p&&!seen[p]){seen[p]=1;rosterU.push(t);}});
   var rosterHTML = rosterU.length ? '<div class="tp-section">'+
@@ -2193,13 +2206,34 @@ function showTeamPage(club) {
           (t.contract?' <span class="tctr">'+esc(t.contract)+'</span>':'')+'</div>';
       }).join('')+'</div></div>' : '';
 
-  document.getElementById('tpCards').innerHTML=
-    rosterHTML+
+  // Build the two views
+  var confirmedHTML = rosterHTML+
     section('Arrivals','\u2705',arrivals,'arrivals')+
     section('Departures','\u2708\ufe0f',departures,'departures')+
     section('Extensions','\ud83d\udd04',extensions,'extensions');
+  if(!confirmedHTML) confirmedHTML='<div class="tp-empty">No confirmed moves yet.</div>';
+  var rumorsHTML = rum ? section('Rumors','\ud83d\udcac',rumors,'rumors')
+    : '<div class="tp-empty">No rumors right now.</div>';
+
+  // Tabs
+  var tabsHTML='<div class="tp-tabs">'+
+    '<button class="tp-tab on" onclick="switchTpTab(this,\'confirmed\')">Confirmed'+((inn+out+ext)?' <span class="tp-tab-n">'+(inn+out+ext)+'</span>':'')+'</button>'+
+    '<button class="tp-tab" onclick="switchTpTab(this,\'rumors\')">\ud83d\udcac Rumors'+(rum?' <span class="tp-tab-n">'+rum+'</span>':'')+'</button>'+
+    '</div>';
+
+  document.getElementById('tpCards').innerHTML=
+    tabsHTML+
+    '<div id="tpConfirmed" class="tp-tabview on">'+confirmedHTML+'</div>'+
+    '<div id="tpRumors" class="tp-tabview">'+rumorsHTML+'</div>';
   var tp=document.getElementById('teamPage'); tp.style.display='block'; tp.scrollTop=0;
 }
+function switchTpTab(btn, which){
+  document.querySelectorAll('.tp-tab').forEach(function(b){b.classList.remove('on');});
+  btn.classList.add('on');
+  document.getElementById('tpConfirmed').classList.toggle('on', which==='confirmed');
+  document.getElementById('tpRumors').classList.toggle('on', which==='rumors');
+}
+
 function hideTeamPage(){document.getElementById('teamPage').style.display='none';}
 window.addEventListener('scroll',function(){
   var btn=document.getElementById('backToTop');
@@ -2502,10 +2536,7 @@ function initNatCombo(){
 function proballersUrl(name){
   return 'https://www.proballers.com/basketball/players?search=' + encodeURIComponent(name||'');
 }
-function playerLink(name){
-  const safe = esc(name);
-  return '<a class="pl-link" href="'+proballersUrl(name)+'" target="_blank" rel="noopener" title="View '+safe+' on Proballers" onclick="event.stopPropagation()">'+safe+'</a>';
-}
+function playerLink(name){ return esc(name); }
 
 
 // ── Club logo (initials crest) ──
@@ -2515,6 +2546,17 @@ function clubCrest(club, size){
   // deterministic hue from name
   let h=0; for(let i=0;i<(club||'').length;i++){ h=(h*31+club.charCodeAt(i))%360; }
   return '<span class="club-crest" style="width:'+size+'px;height:'+size+'px;font-size:'+(size*0.36)+'px;background:hsl('+h+',42%,88%);color:hsl('+h+',55%,32%);border-color:hsl('+h+',40%,78%)">'+esc(initials)+'</span>';
+}
+
+
+// ── Client-side club-name normalization (collapses seed/archive/overlay variants) ──
+const CLUB_NORM = {"Žalgiris Kaunas": "Zalgiris Kaunas", "Zalgiris": "Zalgiris Kaunas", "Partizan": "Partizan Mozzart Bet Belgrade", "EA7 Olimpia Milano": "Olimpia Milano", "Bahcesehir": "Bahcesehir Koleji", "ASVEL": "LDLC ASVEL", "Tenerife": "La Laguna Tenerife", "Zadar": "KK Zadar", "Kangoeroes Basket Mechelen": "Kangoeroes Mechelen", "BMA365 Bamberg": "Bamberg Baskets", "Veolia Towers Hamburg": "Hamburg Towers", "Bertram Derthona": "Derthona Tortona", "Beşiktaş": "Besiktas", "U-BT Cluj-Napoca": "UBT Cluj-Napoca", "Türk Telekom": "Turk Telekom", "Lietkabelis": "Lietkabelis Panevezys", "Twarde Pierniki Toruń": "Twarde Pierniki Torun", "Val-Dieu Spirou Charleroi": "Spirou Charleroi", "Fenerbahce": "Fenerbahce Beko", "Promitheas": "Promitheas Patras", "Surne Bilbao": "Surne Bilbao Basket", "Unicaja": "Unicaja Malaga", "Leyma Coruña": "Leyma Coruna", "Crvena Zvezda": "Crvena zvezda", "TOFAŞ": "Tofas", "Ilirija": "KK Ilirija", "RASTA Vechta": "Rasta Vechta", "Hyères-Toulon": "Hyeres-Toulon Var Basket"};
+function normalizeClub(c){ return (c && CLUB_NORM[c]) ? CLUB_NORM[c] : c; }
+function normalizeAllClubs(){
+  allT.forEach(function(t){
+    if(t.from) t.from = normalizeClub(t.from);
+    if(t.to) t.to = normalizeClub(t.to);
+  });
 }
 
 </script>
