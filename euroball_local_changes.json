@@ -1,0 +1,84 @@
+{
+  "edits": {
+    "br-377896869218": {
+      "player": "Martynas Arlauskas",
+      "pos": "G",
+      "from": "CSM Galati",
+      "to": "Jonava Hipocredit",
+      "league": "LKL",
+      "status": "signed",
+      "contract": "1 year",
+      "date": "2026-07-07",
+      "summary": "Martynas Arlauskas returns to Jonava Hipocredit after a year away.",
+      "source_url": "https://www.basketnews.lt/news-251510-martynas-arlauskas-vel-zais-lkl.html",
+      "source_name": "basketnews.lt"
+    },
+    "br-bd2c1683ef7f": {
+      "player": "Sterling Brown",
+      "pos": "SG",
+      "from": "Partizan Mozzart Bet Belgrade",
+      "to": "Žalgiris Kaunas",
+      "league": "EuroLeague",
+      "status": "signed",
+      "contract": "1+1",
+      "date": "2026-07-07",
+      "summary": "Kaunas Žalgiris signs Sterling Brown (ex-Partizan) on a 1+1 deal through the 2027-28 season.",
+      "source_url": "https://www.basketnews.lt/news-251508-zalgiris-oficialiai-pristate-susitarima-su-brownu.html",
+      "source_name": "basketnews.lt"
+    },
+    "br-5cece9756fb8": {
+      "player": "Darius Thompson",
+      "pos": "PG",
+      "from": "Valencia Basket",
+      "to": "Olimpia Milano",
+      "league": "EuroLeague",
+      "status": "signed",
+      "contract": "3 years",
+      "date": "2026-07-07",
+      "summary": "Olimpia Milano signs playmaker Darius Thompson on a three-year contract.",
+      "source_url": "https://sportando.basketball/darius-thompson-olimpia-milano-contratto-triennale/",
+      "source_name": "sportando.basketball"
+    },
+    "br-b3e225854667": {
+      "player": "DJ Steward",
+      "pos": "SG",
+      "from": "Dolomiti Energia Trento",
+      "to": "Baskonia",
+      "league": "EuroLeague",
+      "status": "rumor",
+      "contract": null,
+      "date": "2026-07-07",
+      "summary": "DJ Steward leaves Trento via contract buyout; Baskonia set as his next destination.",
+      "source_url": "https://sportando.basketball/dj-steward-trento-baskonia-uscita-contratto/",
+      "source_name": "sportando.basketball"
+    },
+    "br-c2c3a8ffe9dd": {
+      "player": "Yves Pons",
+      "pos": "PF",
+      "from": "MoraBanc Andorra",
+      "to": "LDLC ASVEL",
+      "league": "EuroLeague",
+      "status": "signed",
+      "contract": null,
+      "date": "2026-07-07",
+      "summary": "LDLC ASVEL announces the return of French forward Yves Pons for 2026-27 (No. 35).",
+      "source_url": "https://sportando.basketball/yves-pons-asvel-ritorno-2026-27/",
+      "source_name": "sportando.basketball"
+    },
+    "br-7f3083a9cccd": {
+      "player": "Federico Poser",
+      "pos": "PF",
+      "from": "Tezenis Verona",
+      "to": "Tezenis Verona",
+      "league": "Lega Basket",
+      "status": "extended",
+      "contract": null,
+      "date": "2026-07-07",
+      "summary": "Federico Poser - Tezenis Verona (extended).",
+      "source_url": "https://www.legabasket.it/news/tezenis-verona-federico-poser",
+      "source_name": "legabasket.it"
+    }
+  },
+  "adds": [],
+  "exported_at": "2026-07-07T12:38:25.034Z"
+}
