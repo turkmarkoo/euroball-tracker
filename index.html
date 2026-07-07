@@ -349,6 +349,11 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 .club-opt.co-new{color:var(--text2);font-style:italic}
 .club-opt.co-new .co-hi{color:var(--green)}
 
+
+/* ── Nationality flag ── */
+.nat-flag{font-size:14px;margin-right:3px;vertical-align:middle;line-height:1}
+.ed-field .nat-hint{font-size:10px;color:var(--text2);margin-top:2px}
+
 </style>
 </head>
 <body>
@@ -2014,7 +2019,7 @@ function cardHTML(t) {
     <button class="tc-edit" onclick="event.stopPropagation();openEditor('${t.id}')" title="Edit">&#9998;</button>
     <div class="av">${esc(ini)}</div>
     <div>
-      <div class="tp">${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}${_incFlag}${_locFlag}</div>
+      <div class="tp">${flagFor(t.nationality)}${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}${_incFlag}${_locFlag}</div>
       <div class="tmv"><span class="tf" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.from)}</span><span class="ta">→</span><span class="tt" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
          </div>
@@ -2186,6 +2191,7 @@ function openEditor(id){
   document.getElementById('edTo').value = rec ? (rec.to||'') : '';
   document.getElementById('edLeague').value = rec ? (rec.league||'EuroLeague') : 'EuroLeague';
   document.getElementById('edContract').value = rec && rec.contract ? rec.contract : '';
+  document.getElementById('edNationality').value = rec && rec.nationality ? rec.nationality : '';
   document.getElementById('edDate').value = rec ? (rec.date||'') : new Date().toISOString().slice(0,10);
   document.getElementById('edSummary').value = rec ? (rec.summary||'') : '';
   document.getElementById('edSource').value = rec ? (rec.source_url||'') : '';
@@ -2207,6 +2213,7 @@ function saveEditor(){
     league: g('edLeague'),
     status: g('edStatus'),
     contract: g('edContract')||null,
+    nationality: g('edNationality')||null,
     date: g('edDate')||new Date().toISOString().slice(0,10),
     summary: g('edSummary')||`${player} - ${g('edTo')||'?'} (${g('edStatus')}).`,
     source_url: g('edSource')||'',
@@ -2335,6 +2342,15 @@ function initClubCombo(inputId){
   }
 })();
 
+
+// ── Nationality flags ──
+const NAT_FLAGS = {"USA": "🇺🇸", "United States": "🇺🇸", "American": "🇺🇸", "Spain": "🇪🇸", "Spanish": "🇪🇸", "France": "🇫🇷", "French": "🇫🇷", "Serbia": "🇷🇸", "Serbian": "🇷🇸", "Germany": "🇩🇪", "German": "🇩🇪", "Italy": "🇮🇹", "Italian": "🇮🇹", "Greece": "🇬🇷", "Greek": "🇬🇷", "Lithuania": "🇱🇹", "Lithuanian": "🇱🇹", "Turkey": "🇹🇷", "Turkish": "🇹🇷", "Israel": "🇮🇱", "Israeli": "🇮🇱", "Slovenia": "🇸🇮", "Slovenian": "🇸🇮", "Croatia": "🇭🇷", "Croatian": "🇭🇷", "Poland": "🇵🇱", "Polish": "🇵🇱", "Latvia": "🇱🇻", "Montenegro": "🇲🇪", "Bosnia": "🇧🇦", "Russia": "🇷🇺", "Ukraine": "🇺🇦", "Georgia": "🇬🇪", "Finland": "🇫🇮", "Belgium": "🇧🇪", "Netherlands": "🇳🇱", "Dutch": "🇳🇱", "UK": "🇬🇧", "United Kingdom": "🇬🇧", "Britain": "🇬🇧", "British": "🇬🇧", "Czech": "🇨🇿", "Czechia": "🇨🇿", "Romania": "🇷🇴", "Romanian": "🇷🇴", "Hungary": "🇭🇺", "Bulgaria": "🇧🇬", "Estonia": "🇪🇪", "Sweden": "🇸🇪", "Portugal": "🇵🇹", "Austria": "🇦🇹", "Switzerland": "🇨🇭", "Canada": "🇨🇦", "Canadian": "🇨🇦", "Australia": "🇦🇺", "Australian": "🇦🇺", "Brazil": "🇧🇷", "Argentina": "🇦🇷", "North Macedonia": "🇲🇰", "Macedonia": "🇲🇰", "Nigeria": "🇳🇬", "Senegal": "🇸🇳", "Cameroon": "🇨🇲", "Dominican Republic": "🇩🇴", "Puerto Rico": "🇵🇷", "Mexico": "🇲🇽", "Japan": "🇯🇵", "Iceland": "🇮🇸", "Kosovo": "🇽🇰", "Cape Verde": "🇨🇻", "New Zealand": "🇳🇿", "Ireland": "🇮🇪", "Denmark": "🇩🇰", "Norway": "🇳🇴", "Angola": "🇦🇴", "DR Congo": "🇨🇩", "Congo": "🇨🇩"};
+function flagFor(nat){
+  if(!nat) return '';
+  const f = NAT_FLAGS[nat] || NAT_FLAGS[nat.trim()] || '';
+  return f ? '<span class="nat-flag" title="'+nat.replace(/"/g,'&quot;')+'">'+f+'</span> ' : '';
+}
+
 </script>
 
 <!-- Fetch instructions modal -->
@@ -2387,6 +2403,7 @@ function initClubCombo(inputId){
       <div class="ed-field"><label>League</label>
         <select id="edLeague"></select></div>
       <div class="ed-field"><label>Contract</label><input id="edContract" placeholder="e.g. 2 years"></div>
+      <div class="ed-field"><label>Nationality</label><input id="edNationality" placeholder="e.g. USA, Spain, France"></div>
       <div class="ed-field full"><label>Date</label><input id="edDate" type="date"></div>
       <div class="ed-field full"><label>Summary</label><textarea id="edSummary" placeholder="Short description (optional)"></textarea></div>
       <div class="ed-field full"><label>Source URL</label><input id="edSource" placeholder="https://... (optional)"></div>
