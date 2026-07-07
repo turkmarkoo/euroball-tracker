@@ -1158,11 +1158,12 @@ async function fetchAll() {
   // Raw GitHub files allow CORS — works directly from browser
   setLD('Fetching latest from scraper…');
   try {
-    const RAW = 'https://raw.githubusercontent.com/turkmarkoo/euroball-tracker/main/transfers_new.json';
+    const RAW = 'https://raw.githubusercontent.com/turkmarkoo/euroball-tracker/main/transfers_all.json';
     const r = await fetch(RAW + '?t=' + Date.now()); // cache-bust
     if (r.ok) {
       const data = await r.json();
-      const items = (data.items || []).map(t => ({...t, _isNew: true}));
+      const _cut = new Date(Date.now()-14*24*60*60*1000).toISOString().slice(0,10);
+      const items = (data.items || []).map(t => ({...t, _isNew: (t.date||"") >= _cut}));
       const before = allT.length;
       allT.push(...items);
       dedup(); sortT();
