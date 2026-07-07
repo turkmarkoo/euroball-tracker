@@ -1874,7 +1874,8 @@ sortT();
 document.getElementById('initPr').style.display='none';
 loadSeen();
 initApiKeyUI();
-renderT();        // Auto-load latest scraped transfers on every page open (JSON only, no site scraping)
+// Skip initial seed-only render to avoid a 211->full flicker; show a loader until the archive lands.
+(function(){ var _te=document.getElementById('transfersEl'); if(_te) _te.innerHTML='<div style="text-align:center;padding:48px 16px;color:var(--text2);font-size:14px">Loading transfers…</div>'; })();        // Auto-load latest scraped transfers on every page open (JSON only, no site scraping)
         (async () => {
           try {
             const resp = await fetch('transfers_all.json?nc=' + Date.now());
@@ -1895,7 +1896,7 @@ renderT();        // Auto-load latest scraped transfers on every page open (JSON
               const fmt = t.toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
               updEl.textContent = 'Updated ' + fmt;
             }
-          } catch(e) { /* silent fail */ }
+          } catch(e) { if (!allT.length || allT.length===SEED_DATA.length) renderT(); }
         })();
 
 renderT();
