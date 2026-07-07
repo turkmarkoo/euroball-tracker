@@ -365,6 +365,22 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 .share-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--card);padding:10px 18px;border-radius:10px;font-size:13px;font-weight:600;z-index:400;opacity:0;transition:all .25s;pointer-events:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
+
+/* Club page enhancements */
+.club-crest{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-weight:800;border:2px solid;flex-shrink:0;letter-spacing:-.5px}
+.tp-title-row{display:flex;align-items:center;gap:14px;margin-bottom:4px}
+.tp-section{margin-bottom:22px}
+.tp-sec-hd{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;padding:8px 2px;margin-bottom:8px;border-bottom:2px solid var(--border2);color:var(--text)}
+.tp-sec-hd.arrivals{color:var(--green)}
+.tp-sec-hd.departures{color:var(--red)}
+.tp-sec-hd.extensions{color:var(--accent)}
+.tp-sec-hd.roster{color:var(--text)}
+.tp-sec-n{background:var(--bg3);color:var(--text2);font-size:11px;padding:1px 8px;border-radius:10px;font-weight:700}
+.tp-roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
+.tp-rost-item{display:flex;align-items:center;gap:6px;padding:8px 11px;background:var(--card);border:1px solid var(--border);border-radius:8px;font-size:13px;font-weight:600}
+.pl-link{color:inherit;text-decoration:none;border-bottom:1px dashed transparent;transition:border-color .15s}
+.pl-link:hover{border-bottom-color:var(--accent);color:var(--accent)}
+
 </style>
 </head>
 <body>
@@ -2032,7 +2048,7 @@ function cardHTML(t) {
     <button class="tc-edit" onclick="event.stopPropagation();openEditor('${t.id}')" title="Edit">&#9998;</button>
     <div class="av">${esc(ini)}</div>
     <div>
-      <div class="tp">${flagFor(t.nationality)}${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}${_predFlag}${_incFlag}${_locFlag}</div>
+      <div class="tp">${flagFor(t.nationality)}${playerLink(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}${_predFlag}${_incFlag}${_locFlag}</div>
       <div class="tmv"><span class="tf" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.from)}</span><span class="ta">→</span><span class="tt" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
          </div>
@@ -2124,7 +2140,7 @@ function toggleTheme() {
 <div id="teamPage">
   <div class="team-pg-hd">
     <button class="tp-back" onclick="hideTeamPage()">← All transfers</button>
-    <div class="tp-title"><span class="tp-name" id="tpName"></span><span class="tp-badge" id="tpLeague"></span></div>
+    <div class="tp-title-row"><span id="tpLogo"></span><div><div class="tp-title"><span class="tp-name" id="tpName"></span><span class="tp-badge" id="tpLeague"></span></div></div></div>
     <div class="tp-stats" id="tpStats"></div>
   </div>
   <div class="tp-cards" id="tpCards"></div>
@@ -2136,22 +2152,52 @@ function showTeamPage(club) {
   var moves = allT.filter(function(t){ return t.from===club||t.to===club; });
   if (!moves.length) return;
   var ls={}; moves.forEach(function(t){ if(t.league) ls[t.league.split('/')[0].trim()]=1; });
-  var leagues=Object.keys(ls).slice(0,2).join(' · ');
-  var inn=moves.filter(function(t){return t.to===club&&t.status==='signed';}).length;
-  var out=moves.filter(function(t){return t.from===club&&t.to!==club&&t.status!=='extended';}).length;
-  var ext=moves.filter(function(t){return t.status==='extended';}).length;
-  var rum=moves.filter(function(t){return t.status==='rumor';}).length;
+  var leagues=Object.keys(ls).slice(0,2).join(' \u00b7 ');
+  // categorize
+  var arrivals = moves.filter(function(t){return t.to===club && (t.status==='signed'||t.status==='rumor') && t.from!==club;});
+  var departures = moves.filter(function(t){return t.from===club && t.to!==club && t.status!=='extended';});
+  var extensions = moves.filter(function(t){return t.status==='extended' && t.to===club;});
+  // roster = confirmed players currently AT the club (signed arrivals + extensions), excluding rumors
+  var roster = moves.filter(function(t){return t.to===club && (t.status==='signed'||t.status==='extended');});
+  var inn=arrivals.filter(function(t){return t.status==='signed';}).length;
+  var out=departures.length, ext=extensions.length, rum=moves.filter(function(t){return t.status==='rumor';}).length;
+
   document.getElementById('tpName').textContent=club;
   document.getElementById('tpLeague').textContent=leagues;
   document.getElementById('tpStats').innerHTML=
-    (inn?'<span class="tp-stat">✅ '+inn+' signed in</span>':'')+
-    (out?'<span class="tp-stat">🚪 '+out+' departed</span>':'')+
-    (ext?'<span class="tp-stat">📋 '+ext+' extended</span>':'')+
-    (rum?'<span class="tp-stat">💬 '+rum+' rumored</span>':'')+
-    '<span class="tp-stat">📊 '+moves.length+' total</span>';
-  document.getElementById('tpCards').innerHTML=moves
-    .sort(function(a,b){return(b.date||'').localeCompare(a.date||'');})
-    .map(function(t){return cardHTML(t);}).join('');
+    (inn?'<span class="tp-stat">\u2705 '+inn+' in</span>':'')+
+    (out?'<span class="tp-stat">\u2708\ufe0f '+out+' out</span>':'')+
+    (ext?'<span class="tp-stat">\ud83d\udd04 '+ext+' extended</span>':'')+
+    (rum?'<span class="tp-stat">\ud83d\udcac '+rum+' rumored</span>':'')+
+    '<span class="tp-stat">\ud83d\udcca '+moves.length+' total</span>';
+  // logo
+  var logoEl=document.getElementById('tpLogo');
+  if(logoEl) logoEl.innerHTML=clubCrest(club,52);
+
+  function byDate(a,b){return (b.date||'').localeCompare(a.date||'');}
+  function section(title, icon, arr, cls){
+    if(!arr.length) return '';
+    return '<div class="tp-section">'+
+      '<div class="tp-sec-hd '+cls+'">'+icon+' '+title+' <span class="tp-sec-n">'+arr.length+'</span></div>'+
+      arr.sort(byDate).map(function(t){return cardHTML(t);}).join('')+
+      '</div>';
+  }
+  // roster list (compact, names only, deduped by player keeping latest)
+  var seen={}, rosterU=[];
+  roster.sort(byDate).forEach(function(t){var p=(t.player||'').toLowerCase();if(p&&!seen[p]){seen[p]=1;rosterU.push(t);}});
+  var rosterHTML = rosterU.length ? '<div class="tp-section">'+
+      '<div class="tp-sec-hd roster">\ud83c\udfc0 Current Roster <span class="tp-sec-n">'+rosterU.length+'</span></div>'+
+      '<div class="tp-roster">'+rosterU.map(function(t){
+        return '<div class="tp-rost-item">'+flagFor(t.nationality)+playerLink(t.player)+
+          (t.pos&&t.pos!=='?'?' <span class="tpos">'+esc(t.pos)+'</span>':'')+
+          (t.contract?' <span class="tctr">'+esc(t.contract)+'</span>':'')+'</div>';
+      }).join('')+'</div></div>' : '';
+
+  document.getElementById('tpCards').innerHTML=
+    rosterHTML+
+    section('Arrivals','\u2705',arrivals,'arrivals')+
+    section('Departures','\u2708\ufe0f',departures,'departures')+
+    section('Extensions','\ud83d\udd04',extensions,'extensions');
   var tp=document.getElementById('teamPage'); tp.style.display='block'; tp.scrollTop=0;
 }
 function hideTeamPage(){document.getElementById('teamPage').style.display='none';}
@@ -2449,6 +2495,26 @@ function initNatCombo(){
   });
   menu.addEventListener('mousedown', e=>{ const o=e.target.closest('.club-opt'); if(o){e.preventDefault();choose(o.getAttribute('data-val'));} });
   document.addEventListener('click', e=>{ if(!wrap.contains(e.target)) menu.classList.remove('open'); });
+}
+
+
+// ── Proballers profile link ──
+function proballersUrl(name){
+  return 'https://www.proballers.com/basketball/players?search=' + encodeURIComponent(name||'');
+}
+function playerLink(name){
+  const safe = esc(name);
+  return '<a class="pl-link" href="'+proballersUrl(name)+'" target="_blank" rel="noopener" title="View '+safe+' on Proballers" onclick="event.stopPropagation()">'+safe+'</a>';
+}
+
+
+// ── Club logo (initials crest) ──
+function clubCrest(club, size){
+  size = size || 44;
+  const initials = (club||'?').split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+  // deterministic hue from name
+  let h=0; for(let i=0;i<(club||'').length;i++){ h=(h*31+club.charCodeAt(i))%360; }
+  return '<span class="club-crest" style="width:'+size+'px;height:'+size+'px;font-size:'+(size*0.36)+'px;background:hsl('+h+',42%,88%);color:hsl('+h+',55%,32%);border-color:hsl('+h+',40%,78%)">'+esc(initials)+'</span>';
 }
 
 </script>
