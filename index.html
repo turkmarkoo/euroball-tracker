@@ -2224,7 +2224,7 @@ document.addEventListener('keydown', e => { if (e.key==='Escape') closeEditor();
       </div>
       <div class="fetch-prompt-box">
         <button class="fetch-copy" onclick="copyFetchPrompt()">Copy</button>
-        <code id="fetchPromptText">Run a fresh EuroBall Moves fetch: scrape the last 14 days of transfers from the league news sites in my URL Database, dedupe against transfers_all.json, and commit the new signings to turkmarkoo/euroball-tracker.</code>
+        <code id="fetchPromptText">Run a fresh EuroBall Moves fetch: check transfers_all.json for the most recent transfer date, then scrape the league news sites in my URL Database for any new signings, extensions, departures, or loans since then. Dedupe against transfers_all.json and commit the new ones to turkmarkoo/euroball-tracker. (If the archive looks far out of date, fall back to the last 14 days.)</code>
       </div>
       <div class="fetch-step" style="margin-top:16px">
         <div class="fetch-step-num">3</div>
