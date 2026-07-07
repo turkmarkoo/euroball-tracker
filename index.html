@@ -376,8 +376,6 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
     <button class="tab" onclick="showPage('db',this)">📋 URL Database</button>
   </div>
   <div class="nav-right">
-    <a class="hdr-icon-btn" href="rss.xml" target="_blank" title="RSS feed" rel="noopener">📡</a>
-    <button class="hdr-icon-btn" onclick="shareTracker()" title="Share this tracker">🔗</button>
     <button class="add-btn" onclick="openEditor(null)" id="addBtn" title="Add a transfer manually">
       <span>+</span><span class="add-btn-label">Add</span>
     </button>
@@ -582,6 +580,7 @@ function showPage(id, btn) {
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
   document.getElementById('p-' + id).classList.add('on');
   btn.classList.add('on');
+  if(id==='db' && typeof filterDB==='function') filterDB();
 }
 
 // ═══════════════════════════════════════════════════════
@@ -2352,6 +2351,7 @@ function initClubCombo(inputId){
       _origOpen(id);
       initClubCombo('edFrom');
       initClubCombo('edTo');
+      initNatCombo();
     };
   }
 })();
@@ -2407,6 +2407,48 @@ function showShareToast(msg){
   el.classList.add('show');
   clearTimeout(window._toastT);
   window._toastT = setTimeout(()=>el.classList.remove('show'), 2200);
+}
+
+
+// ── Nationality dropdown ──
+const NATION_LIST = ["Angola", "Argentina", "Australia", "Austria", "Belgium", "Bosnia", "Brazil", "Bulgaria", "Cameroon", "Canada", "Cape Verde", "Croatia", "Czechia", "DR Congo", "Denmark", "Dominican Republic", "Estonia", "Finland", "France", "Georgia", "Germany", "Greece", "Hungary", "Iceland", "Ireland", "Israel", "Italy", "Japan", "Kosovo", "Latvia", "Lithuania", "Mexico", "Montenegro", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Poland", "Portugal", "Puerto Rico", "Romania", "Russia", "Senegal", "Serbia", "Slovenia", "Spain", "Sweden", "Switzerland", "Turkey", "USA", "Ukraine", "United Kingdom"];
+function initNatCombo(){
+  const input = document.getElementById('edNationality');
+  if(!input || input._natInit) return;
+  input._natInit = true;
+  input.setAttribute('autocomplete','off');
+  const wrap = document.createElement('div'); wrap.className='club-combo';
+  input.parentNode.insertBefore(wrap, input); wrap.appendChild(input);
+  const menu = document.createElement('div'); menu.className='club-menu'; wrap.appendChild(menu);
+  let activeIdx = -1;
+  function nrm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  function render(){
+    const q = nrm(input.value.trim());
+    let matches = !q ? NATION_LIST.slice() : NATION_LIST.filter(c => nrm(c).includes(q));
+    if(q) matches.sort((a,b)=>{ const as=nrm(a).startsWith(q)?0:1, bs=nrm(b).startsWith(q)?0:1; return as-bs || a.localeCompare(b); });
+    let html = matches.map((c,i)=>{
+      const fl = (typeof flagFor==='function') ? flagFor(c) : '';
+      return '<div class="club-opt'+(i===activeIdx?' active':'')+'" data-val="'+c.replace(/"/g,'&quot;')+'">'+fl+c+'</div>';
+    }).join('');
+    const exact = NATION_LIST.some(c => nrm(c)===q);
+    if(input.value.trim() && !exact){
+      html += '<div class="club-opt co-new" data-val="'+input.value.trim().replace(/"/g,'&quot;')+'">Use "<span class="co-hi">'+input.value.trim()+'</span>"</div>';
+    }
+    menu.innerHTML = html;
+    menu.classList.toggle('open', html.length>0);
+  }
+  function choose(v){ input.value=v; menu.classList.remove('open'); activeIdx=-1; }
+  input.addEventListener('focus', render);
+  input.addEventListener('input', ()=>{ activeIdx=-1; render(); });
+  input.addEventListener('keydown', e=>{
+    const opts=[...menu.querySelectorAll('.club-opt')];
+    if(e.key==='ArrowDown'){e.preventDefault();activeIdx=Math.min(activeIdx+1,opts.length-1);render();}
+    else if(e.key==='ArrowUp'){e.preventDefault();activeIdx=Math.max(activeIdx-1,0);render();}
+    else if(e.key==='Enter'){if(activeIdx>=0&&opts[activeIdx]){e.preventDefault();choose(opts[activeIdx].getAttribute('data-val'));}}
+    else if(e.key==='Escape'){menu.classList.remove('open');}
+  });
+  menu.addEventListener('mousedown', e=>{ const o=e.target.closest('.club-opt'); if(o){e.preventDefault();choose(o.getAttribute('data-val'));} });
+  document.addEventListener('click', e=>{ if(!wrap.contains(e.target)) menu.classList.remove('open'); });
 }
 
 </script>
