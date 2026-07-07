@@ -354,6 +354,10 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 .nat-flag{font-size:14px;margin-right:3px;vertical-align:middle;line-height:1}
 .ed-field .nat-hint{font-size:10px;color:var(--text2);margin-top:2px}
 
+
+/* ── Rumor-confirmed badge ── */
+.pred-flag{display:inline-block;background:var(--green-bg);color:var(--green);font-size:8px;font-weight:700;padding:1px 5px;border-radius:4px;letter-spacing:.5px;margin-left:5px;vertical-align:middle;border:1px solid var(--green)}
+
 </style>
 </head>
 <body>
@@ -1958,7 +1962,7 @@ initApiKeyUI();
             for (const item of items) {
               if (!allT.find(e => e.id === item.id)) { allT.push(item); changed = true; }
             }
-            applyLocalOverlay(); dedup(); sortT(); renderT(); updateStats();
+            applyLocalOverlay(); dedup(); tagPredicted(); sortT(); renderT(); updateStats();
             // Show last scrape time instead of "Not yet fetched"
             const updEl = document.getElementById('lastUpd');
             if (updEl && data.generated_at) {
@@ -2014,12 +2018,13 @@ function cardHTML(t) {
   const isToday = t.date === new Date().toISOString().slice(0,10);
   const newBadge = isNew(t) ? '<span style="background:#e53;color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;letter-spacing:.5px;margin-left:5px;vertical-align:middle">NEW</span>' : '';
   const _incFlag = t._incomplete ? '<span class="inc-flag">NEEDS INFO</span>' : '';
+  const _predFlag = t._wasPredicted ? '<span class="pred-flag" title="This move was reported as a rumor before being confirmed">✓ CALLED</span>' : '';
   const _locFlag = (t._local||t._edited) ? '<span class="local-badge">LOCAL</span>' : '';
   return `<div class="tc s-${t.status}${t._incomplete?' incomplete':''}">
     <button class="tc-edit" onclick="event.stopPropagation();openEditor('${t.id}')" title="Edit">&#9998;</button>
     <div class="av">${esc(ini)}</div>
     <div>
-      <div class="tp">${flagFor(t.nationality)}${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}${_incFlag}${_locFlag}</div>
+      <div class="tp">${flagFor(t.nationality)}${esc(t.player)} <span class="tpos">${esc(t.pos)}</span>${t.contract?`<span class="tctr">${esc(t.contract)}</span>`:''}${newBadge}${_predFlag}${_incFlag}${_locFlag}</div>
       <div class="tmv"><span class="tf" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.from)}</span><span class="ta">→</span><span class="tt" onclick="showTeamPage(this.textContent.trim())" title="View team moves">${esc(t.to)}</span></div>
       ${t.summary?`<div class="tsum">${esc(t.summary)}</div>`:''}
          </div>
@@ -2349,6 +2354,28 @@ function flagFor(nat){
   if(!nat) return '';
   const f = NAT_FLAGS[nat] || NAT_FLAGS[nat.trim()] || '';
   return f ? '<span class="nat-flag" title="'+nat.replace(/"/g,'&quot;')+'">'+f+'</span> ' : '';
+}
+
+
+// ── Rumor -> confirmed tracking ──
+function tagPredicted(){
+  // Build map of players who had a 'rumor' status, with the earliest rumor date
+  const rumors = {};
+  allT.forEach(t => {
+    if(t.status==='rumor' && t.player){
+      const p = t.player.toLowerCase().trim();
+      if(!rumors[p] || (t.date||'') < rumors[p]) rumors[p] = t.date||'';
+    }
+  });
+  // Tag signed/extended records whose player had an earlier (or same-day) rumor
+  allT.forEach(t => {
+    if((t.status==='signed'||t.status==='extended') && t.player){
+      const p = t.player.toLowerCase().trim();
+      if(rumors[p] !== undefined && (rumors[p] === '' || (t.date||'') >= rumors[p])){
+        t._wasPredicted = true;
+      }
+    }
+  });
 }
 
 </script>
