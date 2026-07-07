@@ -394,6 +394,14 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 .tp-sec-hd.rumors{color:var(--yellow)}
 .tp-empty{padding:30px;text-align:center;color:var(--text3);font-size:14px}
 
+
+/* URL Database method badges */
+.mbadge{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:700;padding:2px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.3px}
+.m-rss{background:#fde8d4;color:#b8560f}
+.m-nextdata{background:#d9ecff;color:#1560b0}
+.m-dom{background:#e6e6ea;color:#555}
+.mok{color:var(--green);font-weight:800;margin-left:5px;font-size:12px}
+
 </style>
 </head>
 <body>
@@ -594,6 +602,7 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
       <th onclick="sortDB('name')">Club / Source ↕</th>
       <th>Official Website</th>
       <th>News / Transfers Path</th>
+      <th onclick="sortDB('method')">Method ↕</th>
       <th onclick="sortDB('diff')">Difficulty ↕</th>
     </tr></thead>
     <tbody id="dbBody"></tbody>
@@ -622,7 +631,10 @@ const DB = [
     "name": "EuroLeague Official News",
     "url": "https://www.euroleaguebasketball.net/euroleague/news/",
     "path": "/euroleague/news/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "nextdata",
+    "feed": "",
+    "verified": true
   },
   {
     "cat": "EuroCup",
@@ -630,7 +642,10 @@ const DB = [
     "name": "EuroCup Official News",
     "url": "https://www.euroleaguebasketball.net/eurocup/news/",
     "path": "/eurocup/news/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "nextdata",
+    "feed": "",
+    "verified": true
   },
   {
     "cat": "ABA League",
@@ -638,7 +653,10 @@ const DB = [
     "name": "ABA League Official",
     "url": "https://www.aba-liga.com/newslist/News/1/",
     "path": "/newslist/News/1/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": true
   },
   {
     "cat": "ACB",
@@ -646,7 +664,10 @@ const DB = [
     "name": "ACB Official News",
     "url": "https://www.acb.com/es/liga/noticias",
     "path": "/es/liga/noticias",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "nextdata",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "ACB",
@@ -654,7 +675,10 @@ const DB = [
     "name": "AS.com Baloncesto ACB",
     "url": "https://as.com/baloncesto/acb/",
     "path": "/baloncesto/acb/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/rss/",
+    "verified": false
   },
   {
     "cat": "ACB",
@@ -662,7 +686,10 @@ const DB = [
     "name": "Gigantes Liga Endesa",
     "url": "https://www.gigantes.com/liga-endesa/",
     "path": "/liga-endesa/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/feed/",
+    "verified": true
   },
   {
     "cat": "BBL",
@@ -670,7 +697,10 @@ const DB = [
     "name": "easyCredit BBL Newscenter",
     "url": "https://www.easycredit-bbl.de/newscenter",
     "path": "/newscenter",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "BBL",
@@ -678,7 +708,10 @@ const DB = [
     "name": "basketball-world.news BBL",
     "url": "https://www.basketball-world.news/aktuelles/bbl",
     "path": "/aktuelles/bbl",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": true
   },
   {
     "cat": "Lega",
@@ -686,7 +719,10 @@ const DB = [
     "name": "Lega Basket Official News",
     "url": "https://www.legabasket.it/news",
     "path": "/news",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "Lega",
@@ -694,7 +730,10 @@ const DB = [
     "name": "Pianeta Basket LBA",
     "url": "https://www.pianetabasket.com/legabasket-serie-a",
     "path": "/legabasket-serie-a",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "Pro A",
@@ -702,7 +741,10 @@ const DB = [
     "name": "bebasket.fr Betclic ELITE",
     "url": "https://www.bebasket.fr/ligue/betclic-elite",
     "path": "/ligue/betclic-elite",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/rss/feed.xml",
+    "verified": true
   },
   {
     "cat": "Pro A",
@@ -710,7 +752,10 @@ const DB = [
     "name": "bebasket.fr Transfer Table",
     "url": "https://www.bebasket.fr/ligue/betclic-elite/tableau-transferts",
     "path": "/ligue/betclic-elite/tableau-transferts",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "Turkish BSL",
@@ -718,7 +763,10 @@ const DB = [
     "name": "basketbolig.com BSL",
     "url": "https://basketbolig.com/kategori/basketbol-super-ligi",
     "path": "/kategori/basketbol-super-ligi",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "Turkish BSL",
@@ -726,7 +774,10 @@ const DB = [
     "name": "basketfaul.com.tr BSL",
     "url": "https://basketfaul.com.tr/category/turkiye/bsl/",
     "path": "/category/turkiye/bsl/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/feed/",
+    "verified": false
   },
   {
     "cat": "GBL",
@@ -734,7 +785,10 @@ const DB = [
     "name": "sport24.gr Basket League",
     "url": "https://www.sport24.gr/tag/basket-league/",
     "path": "/tag/basket-league/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "GBL",
@@ -742,7 +796,10 @@ const DB = [
     "name": "allstarbasket.gr GBL Transfers",
     "url": "https://www.allstarbasket.gr/ellada/greek-basketball-league/transfer-market-oi-kiniseis-ton-14-omadon-tis-gbl",
     "path": "/ellada/greek-basketball-league/transfer-market-oi-kiniseis-ton-14-omadon-tis-gbl",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "PLK",
@@ -750,7 +807,10 @@ const DB = [
     "name": "PLK Official News",
     "url": "https://plk.pl/aktualnosci",
     "path": "/aktualnosci",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "PLK",
@@ -758,7 +818,10 @@ const DB = [
     "name": "super-basket.pl PLK",
     "url": "https://super-basket.pl/plk/",
     "path": "/plk/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/feed/",
+    "verified": true
   },
   {
     "cat": "Hungarian NB1",
@@ -766,7 +829,10 @@ const DB = [
     "name": "bball1.hu Transfers 2026",
     "url": "https://bball1.hu/atigazolasi-hirosszefoglalo-2026/",
     "path": "/atigazolasi-hirosszefoglalo-2026/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/feed/",
+    "verified": true
   },
   {
     "cat": "Israeli BSL",
@@ -774,7 +840,10 @@ const DB = [
     "name": "Winners League Archive",
     "url": "https://basket.co.il/archive.asp?typeID=1&lang=en",
     "path": "/archive.asp?typeID=1&lang=en",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "BNXT",
@@ -782,7 +851,10 @@ const DB = [
     "name": "BNXT League News",
     "url": "https://bnxtleague.com/en/news",
     "path": "/en/news",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": true
   },
   {
     "cat": "Romanian LNB",
@@ -790,7 +862,10 @@ const DB = [
     "name": "Baschet Romania (LNBM)",
     "url": "https://baschetromania.ro/",
     "path": "/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/feed/",
+    "verified": true
   },
   {
     "cat": "LKL",
@@ -798,7 +873,10 @@ const DB = [
     "name": "BasketNews LKL Summer Market",
     "url": "https://www.basketnews.lt/news-248448-basketnews-lkl-vasaros-turgus-atnaujinta-0707.html",
     "path": "/news-248448-basketnews-lkl-vasaros-turgus-atnaujinta-0707.html",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "VTB",
@@ -806,7 +884,10 @@ const DB = [
     "name": "VTB League Newsfeed",
     "url": "https://vtb-league.com/ru/newsfeed/",
     "path": "/ru/newsfeed/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "HKL",
@@ -814,7 +895,10 @@ const DB = [
     "name": "Basketball.hr (Croatia)",
     "url": "https://basketball.hr/",
     "path": "/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "HKL",
@@ -822,7 +906,10 @@ const DB = [
     "name": "Jutarnji Croatian League",
     "url": "https://www.jutarnji.hr/sportske/kosarka/hrvatska-liga",
     "path": "/sportske/kosarka/hrvatska-liga",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "dom",
+    "feed": "",
+    "verified": false
   },
   {
     "cat": "News",
@@ -830,7 +917,10 @@ const DB = [
     "name": "Sportando",
     "url": "https://sportando.basketball/en/",
     "path": "/en/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/feed/",
+    "verified": true
   },
   {
     "cat": "News",
@@ -838,7 +928,10 @@ const DB = [
     "name": "Eurohoops",
     "url": "https://www.eurohoops.net/en/",
     "path": "/en/",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/en/feed/",
+    "verified": true
   },
   {
     "cat": "News",
@@ -846,7 +939,10 @@ const DB = [
     "name": "TalkBasket Transfers",
     "url": "https://www.talkbasket.net/transfers",
     "path": "/transfers",
-    "diff": "⭐"
+    "diff": "⭐",
+    "method": "rss",
+    "feed": "/feed",
+    "verified": true
   }
 ];
 
@@ -897,6 +993,7 @@ function filterDB() {
       <td><div class="cn">${esc(r.name)}</div>${r.city ? `<div class="cc">${esc(r.city)}</div>` : ''}</td>
       <td><a class="url-a" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.url.replace(/^https?:\/\//,''))}</a></td>
       <td><span class="spath">${esc(r.path)}</span></td>
+      <td><span class="mbadge m-${r.method||'dom'}">${r.method||'dom'}</span>${r.verified?'<span class=\'mok\' title=\'Feed verified working\'>\u2713</span>':''}</td>
       <td><span class="diff ${diffCls(r.diff)}">${esc(r.diff)}</span></td>
     </tr>
   `).join('');
