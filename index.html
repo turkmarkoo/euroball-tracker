@@ -402,12 +402,17 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 .m-dom{background:#e6e6ea;color:#555}
 .mok{color:var(--green);font-weight:800;margin-left:5px;font-size:12px}
 
+
+/* Club page coaching section */
+.tp-sec-hd.coaching{color:#8b5cf6}
+.tp-coach-dir{color:var(--text2);font-size:12px}
+
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="logo">Euro<span>Ball</span> Moves</div>
+  <div class="logo" onclick="goHome()" style="cursor:pointer" title="Back to tracker">Euro<span>Ball</span> Moves</div>
   <div class="tabs">
     <button class="tab on" onclick="showPage('tracker',this)">🔴 Live Tracker</button>
     <button class="tab" onclick="showPage('db',this)">📋 URL Database</button>
@@ -579,10 +584,7 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
       <option value="Lithuania">Lithuania</option>
       <option value="News">News</option>
     </select>
-    <select class="db-fsel" id="dbDiffF" onchange="filterDB()">
-      <option value="">All difficulties</option>
-      <option>Easy</option><option>Medium</option><option>Hard</option>
-    </select>
+    
     <div class="db-export">
       <button class="exp-btn primary" onclick="exportJSON()">⬇ JSON</button>
       <button class="exp-btn" onclick="exportCSV()">⬇ CSV</button>
@@ -592,9 +594,6 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
   <div class="db-stats">
     <span class="db-stat">Total entries: <span id="dbTotal">0</span></span>
     <span class="db-stat">Showing: <span id="dbVisible">0</span></span>
-    <span class="db-stat">Easy: <span id="dbEasy">0</span></span>
-    <span class="db-stat">Medium: <span id="dbMed">0</span></span>
-    <span class="db-stat">Hard: <span id="dbHard">0</span></span>
   </div>
   <div class="tbl-wrap"><table id="dbTable">
     <thead><tr>
@@ -603,7 +602,6 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
       <th>Official Website</th>
       <th>News / Transfers Path</th>
       <th onclick="sortDB('method')">Method ↕</th>
-      <th onclick="sortDB('diff')">Difficulty ↕</th>
     </tr></thead>
     <tbody id="dbBody"></tbody>
   </table></div>
@@ -972,13 +970,10 @@ function sortDB(col) {
 function filterDB() {
   const q = document.getElementById('dbSearch').value.toLowerCase();
   const lf = document.getElementById('dbLeagueF').value;
-  const df = document.getElementById('dbDiffF').value;
-
-  const filtered = DB.filter(r => {
+    const filtered = DB.filter(r => {
     const txt = (r.name + r.league + r.cat + r.url + (r.city||'')).toLowerCase();
     if (q && !txt.includes(q)) return false;
     if (lf && r.cat !== lf) return false;
-    if (df && !r.diff.startsWith(df)) return false;
     return true;
   }).sort((a, b) => {
     const av = (a[dbSort.col]||'').toLowerCase();
@@ -994,15 +989,13 @@ function filterDB() {
       <td><a class="url-a" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.url.replace(/^https?:\/\//,''))}</a></td>
       <td><span class="spath">${esc(r.path)}</span></td>
       <td><span class="mbadge m-${r.method||'dom'}">${r.method||'dom'}</span>${r.verified?'<span class=\'mok\' title=\'Feed verified working\'>\u2713</span>':''}</td>
-      <td><span class="diff ${diffCls(r.diff)}">${esc(r.diff)}</span></td>
+      
     </tr>
   `).join('');
 
   document.getElementById('dbTotal').textContent = DB.length;
   document.getElementById('dbVisible').textContent = filtered.length;
-  document.getElementById('dbEasy').textContent = filtered.filter(r=>r.diff.startsWith('Easy')).length;
-  document.getElementById('dbMed').textContent = filtered.filter(r=>r.diff.startsWith('Medium')).length;
-  document.getElementById('dbHard').textContent = filtered.filter(r=>r.diff.startsWith('Hard')).length;
+
 }
 
 // Export
@@ -2191,7 +2184,10 @@ function updateStats(f) {
 
 function updateTicker() {
   if (!allT.length) return;
-  const items = allT.slice(0,12).map(t => {
+  const recent = allT.filter(t => t.player && t.player.length < 35 && t.to && t.to !== '?' && t.date)
+    .slice().sort((a,b) => (b.date||'').localeCompare(a.date||''))
+    .slice(0,15);
+  const items = recent.map(t => {
     const cls = t.status==='signed'?'ts':t.status==='rumor'?'tr':'tl';
     const v = {signed:'signs with',rumor:'linked to',left:'leaves',extended:'extends at'}[t.status];
     return `<span class="ti"><b>${esc(t.player)}</b> <span class="${cls}">${v}</span> ${esc(t.to)} · ${esc(t.league)}</span>`;
@@ -2246,6 +2242,14 @@ function toggleTheme() {
   document.getElementById('themeIcon').textContent = isDark ? '🌙' : '☀️';
   document.getElementById('themeLabel').textContent = isDark ? 'Dark' : 'Light';
 }
+
+function goHome(){
+  if(typeof hideTeamPage==='function') hideTeamPage();
+  var trackerBtn = document.querySelector('.tab');
+  if(typeof showPage==='function' && trackerBtn) showPage('tracker', trackerBtn);
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
 </script>
 <div id="teamPage">
   <div class="team-pg-hd">
@@ -2264,13 +2268,15 @@ function showTeamPage(club) {
   var ls={}; moves.forEach(function(t){ if(t.league) ls[t.league.split('/')[0].trim()]=1; });
   var leagues=Object.keys(ls).slice(0,2).join(' \u00b7 ');
   // CONFIRMED categories (exclude rumors)
-  var arrivals = moves.filter(function(t){return t.to===club && t.status==='signed' && t.from!==club;});
-  var departures = moves.filter(function(t){return t.from===club && t.to!==club && t.status!=='extended' && t.status!=='rumor';});
-  var extensions = moves.filter(function(t){return t.status==='extended' && t.to===club;});
+  var arrivals = moves.filter(function(t){return t.to===club && t.status==='signed' && t.from!==club && t.pos!=='Coach';});
+  var departures = moves.filter(function(t){return t.from===club && t.to!==club && t.status!=='extended' && t.status!=='rumor' && t.pos!=='Coach';});
+  var extensions = moves.filter(function(t){return t.status==='extended' && t.to===club && t.pos!=='Coach';});
+  var coaches = moves.filter(function(t){return t.pos==='Coach' && t.status!=='rumor';});
   // RUMORS (in or out)
   var rumors = moves.filter(function(t){return t.status==='rumor';});
   // roster = confirmed players currently AT the club
-  var roster = moves.filter(function(t){return t.to===club && (t.status==='signed'||t.status==='extended');});
+  var lefts={}; moves.filter(function(t){return t.from===club && (t.status==='left'||t.status==='signed') && t.to!==club && t.pos!=='Coach';}).forEach(function(t){var p=(t.player||'').toLowerCase(); if(!lefts[p]||t.date>lefts[p]) lefts[p]=t.date||'';});
+  var roster = moves.filter(function(t){var p=(t.player||'').toLowerCase(); return t.to===club && (t.status==='signed'||t.status==='extended') && t.pos!=='Coach' && !(lefts[p] && lefts[p]>(t.date||''));});
   var inn=arrivals.length, out=departures.length, ext=extensions.length, rum=rumors.length;
 
   document.getElementById('tpName').textContent=club;
@@ -2304,7 +2310,13 @@ function showTeamPage(club) {
       }).join('')+'</div></div>' : '';
 
   // Build the two views
-  var confirmedHTML = rosterHTML+
+  var coachHTML = coaches.length ? '<div class="tp-section">'+
+      '<div class="tp-sec-hd coaching">\ud83c\udf9b\ufe0f Coaching Staff <span class="tp-sec-n">'+coaches.length+'</span></div>'+
+      coaches.sort(byDate).map(function(t){
+        var dir = (t.to===club) ? ('\u2192 joins as head coach'+(t.from&&t.from!=='?'&&t.from!==club?' (from '+esc(t.from)+')':'')) : '\u2190 leaves';
+        return '<div class="tp-rost-item"><b>'+esc(t.player)+'</b> <span class="tpos">Coach</span> <span class="tp-coach-dir">'+dir+'</span>'+(t.contract?' <span class="tctr">'+esc(t.contract)+'</span>':'')+'</div>';
+      }).join('')+'</div>' : '';
+  var confirmedHTML = rosterHTML+coachHTML+
     section('Arrivals','\u2705',arrivals,'arrivals')+
     section('Departures','\u2708\ufe0f',departures,'departures')+
     section('Extensions','\ud83d\udd04',extensions,'extensions');
