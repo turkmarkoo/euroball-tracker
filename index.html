@@ -336,6 +336,19 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 .local-badge{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:8px;font-weight:700;padding:1px 5px;border-radius:4px;letter-spacing:.5px;margin-left:5px;vertical-align:middle;border:1px solid var(--accent)}
 @media(max-width:520px){.ed-body{grid-template-columns:1fr}.add-btn-label{display:none}}
 
+
+/* ── Club combobox (searchable dropdown) ── */
+.club-combo{position:relative}
+.club-combo input{width:100%}
+.club-menu{position:absolute;top:100%;left:0;right:0;z-index:30;background:var(--card);border:1.5px solid var(--border2);border-top:none;border-radius:0 0 8px 8px;max-height:220px;overflow-y:auto;box-shadow:0 8px 20px rgba(0,0,0,.18);display:none}
+.club-menu.open{display:block}
+.club-opt{padding:8px 11px;font-size:13px;color:var(--text);cursor:pointer;border-bottom:1px solid var(--border)}
+.club-opt:last-child{border-bottom:none}
+.club-opt:hover,.club-opt.active{background:var(--accent-soft);color:var(--accent)}
+.club-opt .co-hi{font-weight:700;color:var(--accent)}
+.club-opt.co-new{color:var(--text2);font-style:italic}
+.club-opt.co-new .co-hi{color:var(--green)}
+
 </style>
 </head>
 <body>
@@ -2255,6 +2268,72 @@ function exportLocalChanges(){
   URL.revokeObjectURL(url);
 }
 document.addEventListener('keydown', e => { if (e.key==='Escape') closeEditor(); });
+
+const CLUB_LIST = ["Acqua S.Bernardo Cantù","ALBA Berlin","Alimerka Oviedo","Anadolu Efes","Anadolu Efes Istanbul","Anwil Wloclawek","Apollo Amsterdam","Apollon Patras","APU Udine","Arconic-Alba Fehérvár","Aris","Aris Betsson","Aris Thessaloniki","Arka Gdynia","AS Monaco","Bahcesehir Koleji","Bamberg Baskets","Baskonia","Basquet Girona","BAXI Manresa","BC Avtodor Saratov","BC CSU Sibiu","BC Plovdiv","BC Roma SPQR","Besiktas","BG Göttingen","BK Iskra Svit","Borac Mozzart","Bosna","Boulazac Basket Dordogne","Brussels Basketball","Budćnost VOLI","Budućnost VOLI","Casademont Zaragoza","CB Liege","Cedevita Olimpija","Charlotte Hornets","Cholet Basket","Crvena zvezda","CS Municipal Galati","CS Targu Mures","CSM CSU Oradea","Czarni Słupsk","Delaware Blue Coats","Den Helder Suns","Denain ASC Voltaire","Denver Nuggets","Derthona Tortona","Dolomiti Energia Trento","Donar Groningen","Dreamland Gran Canaria","Dubai Basketball","EA7 Emporio Armani Milan","Elan Bearnais Pau-Lacq-Orthez","Elan Chalon","Energa Trefl Sopot","Enisey Krasnoyarsk","Esenler Erokspor","Estra Pistoia","FC Arges Basketball","FC Arges Pitesti","FC Barcelona","FC Bayern Munich","Fenerbahce Beko","Filou Oostende","FMP","FMP Meridian","Força Lleida","Frankfurt Skyliners","Fuenlabrada","Galatasaray","Germani Brescia","Germany National Team","GET United","Giants Antwerp","Gladiators Trier","Górnik Wałbrzych","GTK Gliwice","Hapoel Galil Elion","Hapoel Gilat Telecom Haemek","Hapoel Jerusalem","Hapoel Tel Aviv","Heroes Den Bosch","Hiopos Lleida","HKK Široki","Hubo Limburg United","Hyeres-Toulon Var Basket","Igokea m:tel","Iraklis Saloniki","JL Bourg","Jonava Hipocredit","Joventut Badalona","Kangoeroes Basket Mechelen","Kangoeroes Mechelen","Kids&Us Manresa","KK Dubrava Zagreb","KK Ilirija","KK Jahorina","KK Sombor","KK Split","KK Zadar","Kolossos Rhodes","Kortrijk Spurs","Krka Novo Mesto","La Laguna Tenerife","Lahti","Landstede Hammers","LDLC ASVEL","Le Mans Sarthe","Legia Warszawa","Leuven Bears","Leyma Coruna","Lietkabelis Panevezys","Limoges CSP","Lliria","London Lions","Lucenec","Maccabi Ramat Gan","Maccabi Tel Aviv","Mega Superbet","Mersin","MHP Riesen Ludwigsburg","Milwaukee Bucks","MKS Dabrowa Gornicza","MoraBanc Andorra","Mykonos Betsson","Napoli Basket","Napoli Basketball","Neptunas Klaipeda","New Mexico State","NINERS Chemnitz","Nutribullet Treviso","Okapi Aalst","Olimpia Milano","Olympiacos","Openjobmetis Varese","ORLEN Zastal Zielona Góra","Pallacanestro Cantù","Pallacanestro Forlì","Pallacanestro Varese","Panathinaikos","PAOK","Paris Basketball","Partizan Mozzart Bet Belgrade","PGE Start Lublin","Promitheas Patras","Rapid Bucharest","Rasta Vechta","ratiopharm Ulm","RBR Rimini","Real Madrid","Reyer Venezia","Río Breogán","Rotterdam City Basketball","RSR Sebastiani Rieti","Rytas Vilnius","San Pablo Burgos","SC Derby","Scafati Basket","SCM Politehnica Timisoara","SIG Strasbourg","Slask Wroclaw","Spartak Office Shoes","Spirou Basket","Spirou Charleroi","Stal Ostrow Wielkopolski","Surne Bilbao Basket","Szolnoki Olaj","SZTE-Szedeak Szeged","Tartu Ulikool Maks&Moorits","Telekom Baskets Bonn","Tezenis Verona","Tofas","Trabzonspor","Trapani","Trefl Sopot","Turk Telekom","Twarde Pierniki Torun","U-Banca Transilvania Cluj-Napoca","UBT Cluj-Napoca","UCAM Murcia","UNA Hotels Reggio Emilia","Unicaja Malaga","UNICS Kazan","Union Mons-Hainaut","Valencia Basket","Vanoli Cremona","Veolia Towers Hamburg","Virtus Bologna","VL Pesaro","Voždovac","Windrose Giants Antwerp","Young Harris College","Zalgiris Kaunas","Zorg en Zekerheid Leiden","ZZ Leiden"];
+
+// ── Searchable club combobox ──
+// CLUB_LIST is injected below this block at build time.
+function _clubNorm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+function initClubCombo(inputId){
+  const input = document.getElementById(inputId);
+  if(!input || input._comboInit) return;
+  input._comboInit = true;
+  input.setAttribute('autocomplete','off');
+  const wrap = document.createElement('div'); wrap.className='club-combo';
+  input.parentNode.insertBefore(wrap, input); wrap.appendChild(input);
+  const menu = document.createElement('div'); menu.className='club-menu'; wrap.appendChild(menu);
+  let activeIdx = -1, current = [];
+  function render(){
+    const q = _clubNorm(input.value.trim());
+    let matches = !q ? CLUB_LIST.slice(0,50)
+      : CLUB_LIST.filter(c => _clubNorm(c).includes(q)).slice(0,50);
+    // rank: startsWith first
+    if(q) matches.sort((a,b)=>{
+      const as=_clubNorm(a).startsWith(q)?0:1, bs=_clubNorm(b).startsWith(q)?0:1;
+      return as-bs || a.localeCompare(b);
+    });
+    current = matches;
+    let html = matches.map((c,i)=>{
+      const idx = _clubNorm(c).indexOf(q);
+      let label = c;
+      if(q && idx>=0){ label = c.slice(0,idx)+'<span class="co-hi">'+c.slice(idx,idx+q.length)+'</span>'+c.slice(idx+q.length); }
+      return '<div class="club-opt'+(i===activeIdx?' active':'')+'" data-val="'+c.replace(/"/g,'&quot;')+'">'+label+'</div>';
+    }).join('');
+    // Offer the typed value as a NEW club if it doesn't exactly match
+    const exact = CLUB_LIST.some(c => _clubNorm(c)===q);
+    if(input.value.trim() && !exact){
+      html += '<div class="club-opt co-new" data-val="'+input.value.trim().replace(/"/g,'&quot;')+'">Use "<span class="co-hi">'+input.value.trim()+'</span>" (new club)</div>';
+    }
+    menu.innerHTML = html;
+    menu.classList.toggle('open', html.length>0);
+  }
+  function choose(val){ input.value = val; menu.classList.remove('open'); activeIdx=-1; }
+  input.addEventListener('focus', render);
+  input.addEventListener('input', ()=>{ activeIdx=-1; render(); });
+  input.addEventListener('keydown', e=>{
+    const opts = [...menu.querySelectorAll('.club-opt')];
+    if(e.key==='ArrowDown'){ e.preventDefault(); activeIdx=Math.min(activeIdx+1,opts.length-1); render(); }
+    else if(e.key==='ArrowUp'){ e.preventDefault(); activeIdx=Math.max(activeIdx-1,0); render(); }
+    else if(e.key==='Enter'){ if(activeIdx>=0&&opts[activeIdx]){ e.preventDefault(); choose(opts[activeIdx].getAttribute('data-val')); } }
+    else if(e.key==='Escape'){ menu.classList.remove('open'); }
+  });
+  menu.addEventListener('mousedown', e=>{
+    const opt = e.target.closest('.club-opt');
+    if(opt){ e.preventDefault(); choose(opt.getAttribute('data-val')); }
+  });
+  document.addEventListener('click', e=>{ if(!wrap.contains(e.target)) menu.classList.remove('open'); });
+}
+// Hook into the editor open: initialize combos for from/to when the modal opens
+(function(){
+  const _origOpen = window.openEditor;
+  if(typeof _origOpen==='function'){
+    window.openEditor = function(id){
+      _origOpen(id);
+      initClubCombo('edFrom');
+      initClubCombo('edTo');
+    };
+  }
+})();
 
 </script>
 
