@@ -1158,7 +1158,7 @@ async function fetchAll() {
   // Raw GitHub files allow CORS — works directly from browser
   setLD('Fetching latest from scraper…');
   try {
-    const RAW = 'https://raw.githubusercontent.com/turkmarkoo/euroball-tracker/main/transfers_all.json';
+    const RAW = 'transfers_all.json';
     const r = await fetch(RAW + '?t=' + Date.now()); // cache-bust
     if (r.ok) {
       const data = await r.json();
