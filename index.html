@@ -2155,6 +2155,8 @@ function flagFor(nat){
   return f ? '<span class="nat-flag" title="'+nat.replace(/"/g,'&quot;')+'">'+f+'</span> ' : '';
 }
 
+function playerLink(name){ return typeof esc==='function' ? esc(name) : String(name||''); }
+
 function cardHTML(t) {
   const ini = t.player.split(' ').filter(w=>w.length>1).slice(0,2).map(w=>w[0]).join('').toUpperCase()||'?';
   const pill = {signed:'<span class="tpill p-signed">✓ SIGNED</span>',rumor:'<span class="tpill p-rumor">💬 RUMOR</span>',left:'<span class="tpill p-left">↩ LEFT</span>',extended:'<span class="tpill p-extended">⟳ EXTENDED</span>'}[t.status];
