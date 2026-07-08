@@ -2369,7 +2369,7 @@ function applyLocalOverlay(){
   adds.forEach(r => { if (!have.has(r.id)) { allT.push({...r, _local:true}); have.add(r.id); } });
 }
 
-const LEAGUE_OPTIONS = ['EuroLeague','EuroCup','ABA League','BCL','BBL','ACB','Lega Basket','Pro A','Turkish BSL','GBL','Israeli BSL','LKL','BNXT','PLK','Romanian LNB','Hungarian NB1','HKL'];
+const LEAGUE_OPTIONS = ['EuroLeague','EuroCup','ABA League','BCL','BBL','ACB','Lega Basket','Pro A','Turkish BSL','GBL','Israeli BSL','LKL','BNXT','VTB','PLK','Romanian LNB','Hungarian NB1','HKL'];
 function ensureLeagueOptions(){
   const sel = document.getElementById('edLeague');
   if (sel && !sel.options.length){ LEAGUE_OPTIONS.forEach(l => { const o=document.createElement('option'); o.value=l; o.textContent=l; sel.appendChild(o); }); }
