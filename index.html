@@ -456,14 +456,7 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
     <span class="ti"><span class="ts">SIGNED</span> Ibi Watson → Ulm · <span class="ts">SIGNED</span> Jaylen Sims → Ulm · <span class="ts">SIGNED</span> Alex Richardson → Chemnitz · <span class="ts">SIGNED</span> Ranko Simović → Borac · <span class="ts">SIGNED</span> Jamiya Neal → FMP · <span class="ts">SIGNED</span> Marko Kovačević → FMP</span>
     <span class="ti"><span class="tr">RUMOR</span> Partizan targeting Kevarrius Hayes · <span class="tr">RUMOR</span> Bayern Munich eyeing Bamberg coach Gavel · <span class="tr">RUMOR</span> Sasha Djordjevic close to Bahcesehir · <span class="tr">RUMOR</span> Ergin Ataman leaves Panathinaikos</span>
   </div></div></div>
-  <div class="src-bar" id="srcBar">
-    <span style="font-family:var(--mono);font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1px">Live sources:</span>
-    
-    <span class="src-item"><span class="src-dot" id="d-national_supp"></span>Lega+BBL+ACB</span>
-    <span class="src-item"><span class="src-dot" id="d-gbl_supp"></span>Greek+Israeli</span>
-    <span class="src-item"><span class="src-dot" id="d-turkey_supp"></span>Turkish+BNXT</span>
-    <span class="src-item"><span class="src-dot" id="d-other_supp"></span>PLK+LKL+More</span>
-  </div>
+  
 
   <div class="prog-wrap" id="progWrap"><div class="prog-bar" id="progBar"></div></div>
 
@@ -2101,7 +2094,7 @@ initApiKeyUI();
             for (const item of items) {
               if (!allT.find(e => e.id === item.id)) { allT.push(item); changed = true; }
             }
-            applyLocalOverlay(); normalizeAllClubs(); normalizeCoaches(); dedup(); tagPredicted(); sortT(); renderT(); updateStats();
+            applyLocalOverlay(); normalizeAllClubs(); normalizeCoaches(); dedup(); tagPredicted(); sortT(); renderT(); updateStats(); updateTicker();
             // Show last scrape time instead of "Not yet fetched"
             const updEl = document.getElementById('lastUpd');
             if (updEl && data.generated_at) {
