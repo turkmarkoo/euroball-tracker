@@ -445,16 +445,7 @@ td{padding:10px 12px;vertical-align:middle;font-size:13px;color:var(--text)}
 
   <!-- ticker -->
   <div class="ticker"><div class="ticker-lbl">Latest</div><div class="ticker-track"><div class="ticker-inner" id="ticker">
-    <span class="ti"><span class="ts">SIGNED</span> Saben Lee → Zalgiris · <span class="ts">SIGNED</span> Maxwell Lewis → Zalgiris · <span class="ts">SIGNED</span> Nick Calathes → PAOK · <span class="ts">SIGNED</span> Jaleen Smith → Hapoel Jerusalem · <span class="ts">SIGNED</span> Mike James → Barcelona · <span class="ts">SIGNED</span> Matthew Hurt stays at Cedevita Olimpija</span>
-    <span class="ti"><span class="tl">LEFT</span> Alec Peters departs Olympiacos · <span class="tl">LEFT</span> Duane Washington leaves Partizan · <span class="tl">LEFT</span> Devon Daniels leaves Hamburg · <span class="tl">LEFT</span> Sid-Marlon Theis departs Rostock after 6 years · <span class="tl">LEFT</span> Danijel Jusup exits Zadar</span>
-    <span class="ti"><span class="ts">EXTENDED</span> Jordan Loyd stays at Efes · <span class="ts">EXTENDED</span> Kobi Simmons at Baskonia through 2028 · <span class="ts">EXTENDED</span> Dragan Milosavljević at Igokea · <span class="ts">EXTENDED</span> Paul Zipser stays at Heidelberg · <span class="ts">EXTENDED</span> Axel Bouteille at Budućnost</span>
-    <span class="ti"><span class="ts">SIGNED</span> Ibi Watson → Ulm · <span class="ts">SIGNED</span> Jaylen Sims → Ulm · <span class="ts">SIGNED</span> Alex Richardson → Chemnitz · <span class="ts">SIGNED</span> Ranko Simović → Borac · <span class="ts">SIGNED</span> Jamiya Neal → FMP · <span class="ts">SIGNED</span> Marko Kovačević → FMP</span>
-    <span class="ti"><span class="tr">RUMOR</span> Partizan targeting Kevarrius Hayes · <span class="tr">RUMOR</span> Bayern Munich eyeing Bamberg coach Gavel · <span class="tr">RUMOR</span> Sasha Djordjevic close to Bahcesehir · <span class="tr">RUMOR</span> Ergin Ataman leaves Panathinaikos</span>
-    <span class="ti"><span class="ts">SIGNED</span> Saben Lee → Zalgiris · <span class="ts">SIGNED</span> Maxwell Lewis → Zalgiris · <span class="ts">SIGNED</span> Nick Calathes → PAOK · <span class="ts">SIGNED</span> Jaleen Smith → Hapoel Jerusalem · <span class="ts">SIGNED</span> Mike James → Barcelona · <span class="ts">SIGNED</span> Matthew Hurt stays at Cedevita Olimpija</span>
-    <span class="ti"><span class="tl">LEFT</span> Alec Peters departs Olympiacos · <span class="tl">LEFT</span> Duane Washington leaves Partizan · <span class="tl">LEFT</span> Devon Daniels leaves Hamburg · <span class="tl">LEFT</span> Sid-Marlon Theis departs Rostock after 6 years · <span class="tl">LEFT</span> Danijel Jusup exits Zadar</span>
-    <span class="ti"><span class="ts">EXTENDED</span> Jordan Loyd stays at Efes · <span class="ts">EXTENDED</span> Kobi Simmons at Baskonia through 2028 · <span class="ts">EXTENDED</span> Dragan Milosavljević at Igokea · <span class="ts">EXTENDED</span> Paul Zipser stays at Heidelberg · <span class="ts">EXTENDED</span> Axel Bouteille at Budućnost</span>
-    <span class="ti"><span class="ts">SIGNED</span> Ibi Watson → Ulm · <span class="ts">SIGNED</span> Jaylen Sims → Ulm · <span class="ts">SIGNED</span> Alex Richardson → Chemnitz · <span class="ts">SIGNED</span> Ranko Simović → Borac · <span class="ts">SIGNED</span> Jamiya Neal → FMP · <span class="ts">SIGNED</span> Marko Kovačević → FMP</span>
-    <span class="ti"><span class="tr">RUMOR</span> Partizan targeting Kevarrius Hayes · <span class="tr">RUMOR</span> Bayern Munich eyeing Bamberg coach Gavel · <span class="tr">RUMOR</span> Sasha Djordjevic close to Bahcesehir · <span class="tr">RUMOR</span> Ergin Ataman leaves Panathinaikos</span>
+    <span class="ti" style="color:var(--text3)">Loading latest moves…</span>
   </div></div></div>
   
 
@@ -2072,12 +2063,6 @@ function markVisibleAsSeen() {
 allT = [...SEED_DATA];
 sortT();
 document.getElementById('initPr').style.display='none';
-allT = [...SEED_DATA];
-sortT();
-document.getElementById('initPr').style.display='none';
-allT = [...SEED_DATA];
-sortT();
-document.getElementById('initPr').style.display='none';
 loadSeen();
 initApiKeyUI();
 // Skip initial seed-only render to avoid a 211->full flicker; show a loader until the archive lands.
@@ -2104,9 +2089,6 @@ initApiKeyUI();
             }
           } catch(e) { if (!allT.length || allT.length===SEED_DATA.length) renderT(); }
         })();
-
-renderT();
-renderT();
 
 function renderT() {
   const f = getF();
