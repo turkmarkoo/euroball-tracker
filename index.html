@@ -2090,7 +2090,7 @@ initApiKeyUI();
             for (const item of items) {
               if (!allT.find(e => e.id === item.id)) { allT.push(item); changed = true; }
             }
-            applyLocalOverlay(); normalizeAllClubs(); dedup(); tagPredicted(); sortT(); renderT(); updateStats();
+            applyLocalOverlay(); normalizeAllClubs(); normalizeCoaches(); dedup(); tagPredicted(); sortT(); renderT(); updateStats();
             // Show last scrape time instead of "Not yet fetched"
             const updEl = document.getElementById('lastUpd');
             if (updEl && data.generated_at) {
@@ -2136,6 +2136,12 @@ function fmtGroupDate(d) {
     if (diff<7) return `${diff} days ago`;
     return dt.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
   } catch { return d; }
+}
+
+function flagFor(nat){
+  if(!nat || typeof NAT_FLAGS==='undefined') return '';
+  const f = NAT_FLAGS[nat] || NAT_FLAGS[nat.trim()] || '';
+  return f ? '<span class="nat-flag" title="'+nat.replace(/"/g,'&quot;')+'">'+f+'</span> ' : '';
 }
 
 function cardHTML(t) {
@@ -2266,7 +2272,8 @@ function showTeamPage(club) {
   if (!club || club==='?' || club==='-') return;
   var moves = allT.filter(function(t){ return t.from===club||t.to===club; });
   if (!moves.length) return;
-  var ls={}; moves.forEach(function(t){ if(t.league) ls[t.league.split('/')[0].trim()]=1; });
+  var lsMoves = moves.filter(function(t){return t.to===club;}); if(!lsMoves.length) lsMoves=moves;
+  var ls={}; lsMoves.forEach(function(t){ if(t.league) ls[t.league.split('/')[0].trim()]=1; });
   var leagues=Object.keys(ls).slice(0,2).join(' \u00b7 ');
   // CONFIRMED categories (exclude rumors)
   var arrivals = moves.filter(function(t){return t.to===club && t.status==='signed' && t.from!==club && t.pos!=='Coach';});
@@ -2662,6 +2669,17 @@ function clubCrest(club, size){
 // ── Client-side club-name normalization (collapses seed/archive/overlay variants) ──
 const CLUB_NORM = {"Žalgiris Kaunas": "Zalgiris Kaunas", "Zalgiris": "Zalgiris Kaunas", "Partizan": "Partizan Mozzart Bet Belgrade", "EA7 Olimpia Milano": "Olimpia Milano", "Bahcesehir": "Bahcesehir Koleji", "ASVEL": "LDLC ASVEL", "Tenerife": "La Laguna Tenerife", "Zadar": "KK Zadar", "Kangoeroes Basket Mechelen": "Kangoeroes Mechelen", "BMA365 Bamberg": "Bamberg Baskets", "Veolia Towers Hamburg": "Hamburg Towers", "Bertram Derthona": "Derthona Tortona", "Beşiktaş": "Besiktas", "U-BT Cluj-Napoca": "UBT Cluj-Napoca", "Türk Telekom": "Turk Telekom", "Lietkabelis": "Lietkabelis Panevezys", "Twarde Pierniki Toruń": "Twarde Pierniki Torun", "Val-Dieu Spirou Charleroi": "Spirou Charleroi", "Fenerbahce": "Fenerbahce Beko", "Promitheas": "Promitheas Patras", "Surne Bilbao": "Surne Bilbao Basket", "Unicaja": "Unicaja Malaga", "Leyma Coruña": "Leyma Coruna", "Crvena Zvezda": "Crvena zvezda", "TOFAŞ": "Tofas", "Ilirija": "KK Ilirija", "RASTA Vechta": "Rasta Vechta", "Hyères-Toulon": "Hyeres-Toulon Var Basket"};
 function normalizeClub(c){ return (c && CLUB_NORM[c]) ? CLUB_NORM[c] : c; }
+
+function normalizeCoaches(){
+  allT.forEach(function(t){
+    if(t.pos==='Coach') return;
+    if(t.pos==='HC' || t.pos==='Head Coach'){ t.pos='Coach'; return; }
+    if((!t.pos || t.pos==='?' || t.pos==='') && /(head|new|as|is the) coach|head-coach|глав\w* трен|coaching (change|staff)|named coach|appointed.*coach|coach of the team/i.test((t.summary||'')+' '+(t.player||''))){
+      t.pos='Coach';
+    }
+  });
+}
+
 function normalizeAllClubs(){
   allT.forEach(function(t){
     if(t.from) t.from = normalizeClub(t.from);
