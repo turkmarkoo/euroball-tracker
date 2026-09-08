@@ -1,19 +1,8 @@
+import {canonicalClub,clubSearchNames} from './club-identities.mjs?v=20260908-identities1';
 export const STATUS = {signed:'Signed',rumor:'Rumor',left:'Departure',extended:'Extension'};
-export const norm = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[đĐ]/g,'d').replace(/[łŁ]/g,'l').toLowerCase().trim();
-const aliases = {
- 'fc barcelona':'Barcelona','partizan belgrade':'Partizan Mozzart Bet Belgrade','cholet basket':'Cholet','energa trefl sopot':'Trefl Sopot','wks slask wroclaw':'Slask Wroclaw','denizli basket':'Yukatel Denizli',
- 'partizan':'Partizan Mozzart Bet Belgrade','zalgiris':'Zalgiris Kaunas','asvel':'LDLC ASVEL',
- 'fc bayern munich':'Bayern Munich','bayern munchen':'Bayern Munich','fenerbahce':'Fenerbahce Beko',
- 'borac cacak':'Borac Mozzart','rotterdam city':'Rotterdam City','zeeuw & zeeuw rotterdam':'Rotterdam City',
- 'zeeuw & zeeuw rotterdam city':'Rotterdam City','u-bt cluj-napoca':'UBT Cluj-Napoca',
- 'tuerk telekom':'Turk Telekom','twarde pierniki torun':'Twarde Pierniki Torun',
- 'frankfurt skyliners':'Skyliners Frankfurt','filou oostende':'Coretec Oostende',
- 'csu sibiu':'CSU Sibiu','bc csu sibiu':'CSU Sibiu','kk krka':'Krka',
- 'baskonia':'Baskonia','kosner baskonia':'Baskonia','tofas':'Tofas',
- 'crvena zvezda meridianbet':'Crvena zvezda','crvena zvezda':'Crvena zvezda'
-};
+export const norm = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[đĐ]/g,'d').replace(/[łŁ]/g,'l').replace(/ı/g,'i').toLowerCase().replace(/\s+/g,' ').trim();
 const leagues = {'greek basket league':'GBL','israeli winner league':'Israeli BSL','turkish bsl':'BSL','pro a':'Betclic Elite','lega':'Lega Basket','greek a1':'GBL','vtb united league':'VTB','croatian hkl':'HKL','ht liga':'HKL','croatian htl':'HKL','nbia hungary':'Hungarian NB1'};
-export const clubName = name => aliases[norm(name)] || String(name ?? '').trim();
+export const clubName = canonicalClub;
 export const competitions = value => [...new Set(String(value || '').split('/').map(x=>leagues[norm(x)]||x.trim()).filter(x=>x&&x!=='?'))];
 export const unknown = value => !value || ['?','unknown','null'].includes(norm(value));
 export const safeURL = value => {try {const url = new URL(value);return ['http:','https:'].includes(url.protocol)?url.href:'';}catch{return '';}};
@@ -24,7 +13,7 @@ export function normalize(record) {
  t.pos=/^(coach|hc|head coach)$/i.test(t.pos||'')?'coach':String(t.pos||'?').toUpperCase();
  t.leagues=competitions(t.league); t.league=t.leagues.join(' / '); t.status=norm(t.status);
  t.source_url=safeURL(t.source_url);
- t.search=norm([t.player,t.from,t.to,t.league,t.summary].join(' '));
+ t.search=norm([t.player,clubSearchNames(t.from),clubSearchNames(t.to),t.league,t.summary].join(' '));
  return t;
 }
 const personKey = t => norm(t.player).replace(/\bjr\.?$/,'').replace(/[^a-z0-9]/g,'');
@@ -48,7 +37,7 @@ export function deduplicate(records) {
  return [...seen.values()].sort((a,b)=>b.date.localeCompare(a.date)||a.player.localeCompare(b.player));
 }
 export function filterTransfers(items,f={}) {
- const q=norm(f.q), team=norm(f.team);
+ const q=norm(f.q), team=norm(clubName(f.team));
  return items.filter(t=>(!q||t.search.includes(q)) && (!team||norm(t.from)===team||norm(t.to)===team)
   &&(!f.league||t.leagues.includes(f.league))&&(!f.pos||(t.pos.split(/[\/,-]/).map(p=>p.trim()).includes(f.pos)||(f.pos==='G'&&/PG|SG/.test(t.pos))||(f.pos==='F'&&/SF|PF/.test(t.pos))))
   &&(!f.status||t.status===f.status)&&(!f.from||t.date>=f.from)&&(!f.until||t.date<=f.until));

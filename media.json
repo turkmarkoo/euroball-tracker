@@ -1,6 +1,6 @@
 {
   "reviewed_on": "2026-09-08",
-  "note": "Official remote media. Portraits can show a previous season uniform. Images do not establish a player’s current team. Unmatched names use initials.",
+  "note": "Images from public league, club and player profile pages. Portraits may show older uniforms; they do not establish current team membership. Unmatched or unavailable images use initials. Every image carries its source and provider.",
   "clubs": {
     "anadolu efes istanbul": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
@@ -22,17 +22,7 @@
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "ea7 emporio armani milan": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
     "olimpia milano": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "armani milan": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
@@ -87,22 +77,12 @@
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "fenerbahce beko istanbul": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "hapoel ibi tel aviv": {
+    "hapoel tel aviv": {
       "url": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
     },
     "hapoel tlv": {
-      "url": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "hapoel tel aviv": {
       "url": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
@@ -122,27 +102,17 @@
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "ldlc asvel villeurbanne": {
-      "url": "https://media-cdn.incrowdsports.com/e33c6d1a-95ca-4dbc-b8cb-0201812104cc.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
     "ldlc asvel": {
       "url": "https://media-cdn.incrowdsports.com/e33c6d1a-95ca-4dbc-b8cb-0201812104cc.png",
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "maccabi rapyd tel aviv": {
+    "maccabi tel aviv": {
       "url": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
     },
     "maccabi": {
-      "url": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "maccabi tel aviv": {
       "url": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
@@ -202,11 +172,6 @@
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "valencia": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
     "virtus bologna": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvk/a92d4c3b-9f9c-4163-8a10-bcf8fc15893e.png",
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
@@ -218,11 +183,6 @@
       "provider": "Euroleague Basketball"
     },
     "aris thessaloniki": {
-      "url": "https://media-cdn.cortextech.io/77e0fd97-1489-4e3c-8e70-ca39075460c0.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "aris": {
       "url": "https://media-cdn.cortextech.io/77e0fd97-1489-4e3c-8e70-ca39075460c0.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -242,7 +202,7 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "bahcesehir": {
+    "bahcesehir koleji": {
       "url": "https://media-cdn.incrowdsports.com/1d3274d8-da86-4d21-9e97-6810ab88babe.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -272,17 +232,12 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "bosna": {
+    "bosna bh telecom": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOJl/0024f0d4-55d9-4ed0-be41-68c0e90c41d5.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
     "bosna sarajevo": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOJl/0024f0d4-55d9-4ed0-be41-68c0e90c41d5.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "bosna bh telecom": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOJl/0024f0d4-55d9-4ed0-be41-68c0e90c41d5.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -322,17 +277,12 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "cosea jl bourg-en-bresse": {
+    "jl bourg": {
       "url": "https://media-cdn.incrowdsports.com/d4225e1b-7c1b-4382-98d4-ca8511c64441.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
     "cosea jl bourg": {
-      "url": "https://media-cdn.incrowdsports.com/d4225e1b-7c1b-4382-98d4-ca8511c64441.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "jl bourg": {
       "url": "https://media-cdn.incrowdsports.com/d4225e1b-7c1b-4382-98d4-ca8511c64441.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -357,27 +307,17 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "hapoel  midtown jerusalem": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvp/6d6e8da8-550f-4d1f-8a06-4611227e0c31.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
     "hapoel jerusalem": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvp/6d6e8da8-550f-4d1f-8a06-4611227e0c31.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "kids&us manresa": {
+    "baxi manresa": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/06792bed-0383-4de2-80b9-95ecca3fd973.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
     "k&u manresa": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/06792bed-0383-4de2-80b9-95ecca3fd973.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "baxi manresa": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/06792bed-0383-4de2-80b9-95ecca3fd973.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -407,11 +347,6 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "lietkabelis panevezys": {
-      "url": "https://media-cdn.cortextech.io/ffcb6e37-31f4-48f6-91c2-a8c9a6f791a9.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
     "lietkabelis": {
       "url": "https://media-cdn.cortextech.io/ffcb6e37-31f4-48f6-91c2-a8c9a6f791a9.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
@@ -432,7 +367,7 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "napoli basketball": {
+    "napoli basket": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/c2de1d20-72f4-4453-95de-b4534db6d57f.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -442,17 +377,7 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "napoli basket": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/c2de1d20-72f4-4453-95de-b4534db6d57f.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
     "neptunas klaipeda": {
-      "url": "https://media-cdn.cortextech.io/ed0df5cd-c9e4-4387-bcd4-3606270cd255.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "neptunas": {
       "url": "https://media-cdn.cortextech.io/ed0df5cd-c9e4-4387-bcd4-3606270cd255.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -492,17 +417,12 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "recoletas salud san pablo burgos": {
+    "san pablo burgos": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/40c97670-177e-4c74-9f5f-76b528a0da86.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
     "burgos": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/40c97670-177e-4c74-9f5f-76b528a0da86.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "san pablo burgos": {
       "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/40c97670-177e-4c74-9f5f-76b528a0da86.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -557,11 +477,6 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "skyliners": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/6afb32b8-e6dc-4f79-b14a-2d99fdb34cde.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
     "slask wroclaw": {
       "url": "https://media-cdn.incrowdsports.com/0415061b-5374-4a0d-bc04-8fcbc8ad0bb3.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
@@ -569,11 +484,6 @@
     },
     "slask": {
       "url": "https://media-cdn.incrowdsports.com/0415061b-5374-4a0d-bc04-8fcbc8ad0bb3.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "tofas bursa": {
-      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/72e5c4e0-abe1-43ce-bfb7-dcb025bb4adc.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
@@ -602,17 +512,12 @@
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
-    "umana reyer venice": {
+    "reyer venezia": {
       "url": "https://media-cdn.incrowdsports.com/104f5074-9f23-47da-a21f-f2078db8244c.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
     },
     "reyer venice": {
-      "url": "https://media-cdn.incrowdsports.com/104f5074-9f23-47da-a21f-f2078db8244c.png",
-      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
-      "provider": "Euroleague Basketball"
-    },
-    "reyer venezia": {
       "url": "https://media-cdn.incrowdsports.com/104f5074-9f23-47da-a21f-f2078db8244c.png",
       "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
       "provider": "Euroleague Basketball"
@@ -682,7 +587,7 @@
       "source": "https://www.aba-liga.com/",
       "provider": "ABA League"
     },
-    "hkk siroki tt kabeli": {
+    "siroki tt kabeli": {
       "url": "https://www.aba-liga.com/images/club/50x50/6.png?v=2026-08-28v1",
       "source": "https://www.aba-liga.com/",
       "provider": "ABA League"
@@ -721,6 +626,882 @@
       "url": "https://www.aba-liga.com/images/club/150x150/101.png?v=2026-08-28v1",
       "source": "https://www.aba-liga.com/",
       "provider": "ABA League"
+    },
+    "as monaco": {
+      "url": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "hamburg towers": {
+      "url": "https://media-cdn.incrowdsports.com/5ef8be01-ad71-42c2-aa02-d5c7a9495258.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "alba berlin": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/413",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "bamberg baskets": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/420",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "telekom baskets bonn": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/415",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "rasta vechta": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/541",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "gladiators trier": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/414",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "mhp riesen ludwigsburg": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/433",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "ewe baskets oldenburg": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/430",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "science city jena": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/483",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "joventut badalona": {
+      "url": "https://static.acb.com/img/www/clubes2026/202526AsisaJoventutLogoPosisitvo.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "casademont zaragoza": {
+      "url": "https://static.acb.com/img/www/clubes2024/2425CasademontZaragoza.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "basquet girona": {
+      "url": "https://static.acb.com/img/www/clubes2026/202627FIATCGironaLogoPositivo.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "forca lleida": {
+      "url": "https://static.acb.com/img/www/clubes2026/202526IlernaLleidaLogoPositivo.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "leyma coruna": {
+      "url": "https://static.acb.com/img/www/clubes2026/202627LeymaCorunaLogoPositivoOK.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "morabanc andorra": {
+      "url": "https://static.acb.com/img/www/clubes2026/20252026MorabancAndorraLogoPositivoOK.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "surne bilbao basket": {
+      "url": "https://static.acb.com/img/www/clubes2022/logo_surnebb_pos.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "ucam murcia": {
+      "url": "https://static.acb.com/img/www/clubes2026/202627ucamcblogoverticalcolor.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "unicaja malaga": {
+      "url": "https://static.acb.com/img/www/clubes2024/2324UnicajaLogo.png",
+      "source": "https://acb.com/es/liga/equipos/kidsandus-manresa-10",
+      "provider": "ACB"
+    },
+    "legia warszawa": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s29/300-300/11.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "trefl sopot": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s28/300-300/112.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "dziki warszawa": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s28/300-300/11257.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "orlen zastal zielona gora": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s23/300-300/769.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "czarni slupsk": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s24/300-300/8607.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "twarde pierniki torun": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s24/300-300/101.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "pge start lublin": {
+      "url": "https://s1.static.esor.pzkosz.pl/internalfiles/image/kluby_www_crop/22.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "stal ostrow wielkopolski": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s28/300-300/11309.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "mks dabrowa": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s29/300-300/1490.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "arka gdynia": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s29/300-300/121.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "anwil wloclawek": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s22/300-300/33.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "gornik walbrzych": {
+      "url": "https://esor.pzkosz.pl/internalfiles/image/kluby/s27/300-300/11296.png",
+      "source": "https://plk.pl/druzyny",
+      "provider": "Polska Liga Koszykówki"
+    },
+    "jonava hipocredit": {
+      "url": "https://en.lkl.lt/media/teams/svg/cExP0PVSuiRrENAHoUtVmnfyRPfb3mp4x2hJzu7h.svg",
+      "source": "https://en.lkl.lt/komandos",
+      "provider": "LKL"
+    },
+    "juventus utena": {
+      "url": "https://en.lkl.lt/media/teams/svg/mhb3G6WvSBlYOhKmDeBtzWp7lOTSXjO5BMpWoyYY.svg",
+      "source": "https://en.lkl.lt/komandos",
+      "provider": "LKL"
+    },
+    "rytas vilnius": {
+      "url": "https://en.lkl.lt/media/teams/svg/9HeCOlpWX1ZZmvNBSKRV9od4akkVpxGhqUJANCwR.svg",
+      "source": "https://en.lkl.lt/komandos",
+      "provider": "LKL"
+    },
+    "mitteldeutscher bc": {
+      "url": "https://api.basketball-bundesliga.de/images/teams/logo/2026/428",
+      "source": "https://www.easycredit-bbl.de/saison/unsere-spieler",
+      "provider": "easyCredit BBL"
+    },
+    "avtodor saratov": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/23-24/avtodor/logo-avtodor-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "enisey krasnoyarsk": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/25-26/enisey/logo-enisey-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "zenit st. petersburg": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/23-24/zenit/logo-zenit-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "lokomotiv kuban": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/23-24/lokomotiv-kuban/logo-loko-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "mba moscow": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/23-24/mba/logo-mba-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "parma": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/25-26/parma/logo-parma-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "samara": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/23-24/samara/logo-samara-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "unics kazan": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/23-24/unics/logo-unics-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "uralmash": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/23-24/uralmash/logo-uralmash-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "cska moscow": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/23-24/cska/logo-cska-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "brooklyn nets": {
+      "url": "https://cdn.nba.com/logos/nba/1610612751/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "philadelphia 76ers": {
+      "url": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "cleveland cavaliers": {
+      "url": "https://cdn.nba.com/logos/nba/1610612739/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "indiana pacers": {
+      "url": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "milwaukee bucks": {
+      "url": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "charlotte hornets": {
+      "url": "https://cdn.nba.com/logos/nba/1610612766/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "denver nuggets": {
+      "url": "https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "phoenix suns": {
+      "url": "https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "dallas mavericks": {
+      "url": "https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "houston rockets": {
+      "url": "https://cdn.nba.com/logos/nba/1610612745/primary/L/logo.svg",
+      "source": "https://www.nba.com/teams",
+      "provider": "NBA"
+    },
+    "windrose giants antwerp": {
+      "url": "https://scoutbasketball.com/img/teams/images/Antwerp-Giants_1719334793.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "coretec oostende": {
+      "url": "https://scoutbasketball.com/img/teams/images/Bc-Telenet-Oostende_1719335357.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "okapi aalst": {
+      "url": "https://scoutbasketball.com/img/teams/images/Okapi-Bc-Aalstar_1719334758.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "hubo limburg united": {
+      "url": "https://scoutbasketball.com/img/teams/images/Limburg-United_1719335614.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "kortrijk spurs": {
+      "url": "https://scoutbasketball.com/img/teams/images/Kotrijk-Spurs_1719337164.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "zz leiden": {
+      "url": "https://scoutbasketball.com/img/teams/images/Zorg-En-Zekerheid-Leiden_1719335238.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "landstede hammers": {
+      "url": "https://scoutbasketball.com/img/teams/images/Landstede-Basketball_1719335577.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "donar groningen": {
+      "url": "https://scoutbasketball.com/img/teams/images/Donar-Groningen_1719335101.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "heroes den bosch": {
+      "url": "https://scoutbasketball.com/img/teams/images/Basketball-Den-Bosch_1719335029.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "kangoeroes mechelen": {
+      "url": "https://scoutbasketball.com/img/teams/images/Kangoeroes_1719335181.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "brussels basketball": {
+      "url": "https://scoutbasketball.com/img/teams/images/Brussels-Basketball_1751791684.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "den helder suns": {
+      "url": "https://scoutbasketball.com/img/teams/images/Den-Helder-Suns_1719335030.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "spirou charleroi": {
+      "url": "https://scoutbasketball.com/img/teams/images/Spirou-Basket-Club_1719334871.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "leuven bears": {
+      "url": "https://scoutbasketball.com/img/teams/images/Leuven-Bears_1719335241.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "union mons-hainaut": {
+      "url": "https://scoutbasketball.com/img/teams/images/Mons-Hainaut_1751791637.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "rotterdam city": {
+      "url": "https://scoutbasketball.com/img/teams/images/Rotterdam-City-Basketbal_1754045687.png",
+      "source": "https://scoutbasketball.com/competition/bnxt-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "pallacanestro cantu": {
+      "url": "https://static.legapallacanestro.com/sites/default/files/styles/255_x/public/team_logo/3.jpg?itok=BW_oyJVj",
+      "source": "https://www.legapallacanestro.com/acqua-sbernardo-cant%C3%B9",
+      "provider": "Lega Nazionale Pallacanestro"
+    },
+    "aek athens": {
+      "url": "https://www.esake.gr/dat/esaketeam/00000010/photo_new_2BF3BBDA.png",
+      "source": "https://www.esake.gr/",
+      "provider": "Greek Basketball League"
+    },
+    "iraklis saloniki": {
+      "url": "https://www.esake.gr/dat/esaketeam/00000011/photo_new_212846DF.png",
+      "source": "https://www.esake.gr/",
+      "provider": "Greek Basketball League"
+    },
+    "karditsa": {
+      "url": "https://www.esake.gr/dat/esaketeam/B742845D/photo_new_04E98281.png",
+      "source": "https://www.esake.gr/",
+      "provider": "Greek Basketball League"
+    },
+    "kolossos rhodes": {
+      "url": "https://www.esake.gr/dat/esaketeam/0000000A/photo_new_5DC7EFBA.png",
+      "source": "https://www.esake.gr/",
+      "provider": "Greek Basketball League"
+    },
+    "mykonos betsson": {
+      "url": "https://www.esake.gr/dat/esaketeam/BB4B460F/photo_new_62684735.png",
+      "source": "https://www.esake.gr/",
+      "provider": "Greek Basketball League"
+    },
+    "peristeri": {
+      "url": "https://www.esake.gr/dat/esaketeam/0000000D/photo_new_30338F54.png",
+      "source": "https://www.esake.gr/",
+      "provider": "Greek Basketball League"
+    },
+    "promitheas patras": {
+      "url": "https://www.esake.gr/dat/esaketeam/2A25C696/photo_new_4BF0C19C.png",
+      "source": "https://www.esake.gr/",
+      "provider": "Greek Basketball League"
+    },
+    "galatasaray": {
+      "url": "https://scoutbasketball.com/img/teams/images/Galatasaray_1750788964_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=John%20Meeks",
+      "provider": "ScoutBasketball"
+    },
+    "cso voluntari": {
+      "url": "https://scoutbasketball.com/img/teams/images/Cso-Voluntari_1719336065_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Mike%20Caffey",
+      "provider": "ScoutBasketball"
+    },
+    "elitzur netanya": {
+      "url": "https://scoutbasketball.com/img/teams/images/Elitzur-Netanya_1728983354_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Diante%20Baldwin",
+      "provider": "ScoutBasketball"
+    },
+    "vaqueros de bayamon": {
+      "url": "https://scoutbasketball.com/img/teams/images/Vaqueros-De-Bayamon_1751814144_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Damian%20Jones",
+      "provider": "ScoutBasketball"
+    },
+    "deac debrecen": {
+      "url": "https://scoutbasketball.com/img/teams/images/Deac_1719336118_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marcus%20Tyus",
+      "provider": "ScoutBasketball"
+    },
+    "south eastern louisiana": {
+      "url": "https://scoutbasketball.com/img/teams/images/Southeastern-Louisiana_1719335449_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Isaiah%20Gaines",
+      "provider": "ScoutBasketball"
+    },
+    "csm galati": {
+      "url": "https://scoutbasketball.com/img/teams/images/csm-galati_1777912906_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Robert%20David%20Stan",
+      "provider": "ScoutBasketball"
+    },
+    "vef riga": {
+      "url": "https://scoutbasketball.com/img/teams/images/Vef-Riga_1719335550_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Brandon%20Huffman",
+      "provider": "ScoutBasketball"
+    },
+    "gonzaga": {
+      "url": "https://scoutbasketball.com/img/teams/images/Gonzaga_1719335116_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Adam%20Miller",
+      "provider": "ScoutBasketball"
+    },
+    "apu udine": {
+      "url": "https://scoutbasketball.com/img/teams/images/Apu-Udine_1719335764_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Anthony%20Hickey",
+      "provider": "ScoutBasketball"
+    },
+    "scm politehnica timisoara": {
+      "url": "https://scoutbasketball.com/img/teams/images/scm-politehnica-timisoara_1777912907_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=George%20Blaj-Voinescu",
+      "provider": "ScoutBasketball"
+    },
+    "split": {
+      "url": "https://scoutbasketball.com/img/teams/images/Kk-Split_1751994558_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Andrej%20Bjelic",
+      "provider": "ScoutBasketball"
+    },
+    "limoges csp": {
+      "url": "https://scoutbasketball.com/img/teams/images/Limoges-Csp_1719335247_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nikola%20Jovanovic",
+      "provider": "ScoutBasketball"
+    },
+    "bk iskra svit": {
+      "url": "https://scoutbasketball.com/img/teams/images/Bk-Iskra-Svit_1719334887_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=R%C3%B3bert%20Ro%C5%BE%C3%A1nek",
+      "provider": "ScoutBasketball"
+    },
+    "delaware blue coats": {
+      "url": "https://scoutbasketball.com/img/teams/images/Delaware-Blue-Coats_1751536283_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tyrese%20Martin",
+      "provider": "ScoutBasketball"
+    },
+    "esenler erokspor": {
+      "url": "https://scoutbasketball.com/img/teams/images/Esenler-Erokspor_1719337188_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jermaine%20Love",
+      "provider": "ScoutBasketball"
+    },
+    "hapoel holon": {
+      "url": "https://scoutbasketball.com/img/teams/images/Hapoel-Holon_1719335130_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jordan%20Wright",
+      "provider": "ScoutBasketball"
+    },
+    "derthona tortona": {
+      "url": "https://scoutbasketball.com/img/teams/images/Derthona-Basket_1750789082_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Justin%20Gorham",
+      "provider": "ScoutBasketball"
+    },
+    "new mexico state": {
+      "url": "https://scoutbasketball.com/img/teams/images/New-Mexico-State_1719335318_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Julius%20Mims",
+      "provider": "ScoutBasketball"
+    },
+    "cholet": {
+      "url": "https://scoutbasketball.com/img/teams/images/Cholet-Basket_1719334990_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jamuni%20McNeace",
+      "provider": "ScoutBasketball"
+    },
+    "csu sibiu": {
+      "url": "https://scoutbasketball.com/img/teams/images/Csu-Sibiu_1719335018_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Monyea%20Pratt",
+      "provider": "ScoutBasketball"
+    },
+    "cb zamora": {
+      "url": "https://scoutbasketball.com/img/teams/images/cb-zamora_1777283448_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Josep%20Peris",
+      "provider": "ScoutBasketball"
+    },
+    "pallacanestro varese": {
+      "url": "https://scoutbasketball.com/img/teams/images/Pallacanestro-Varese_1721731766_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nate%20Renfro",
+      "provider": "ScoutBasketball"
+    },
+    "hyeres-toulon": {
+      "url": "https://scoutbasketball.com/img/teams/images/Hyeres-Toulon_1726253474_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Elwin%20Ndjock",
+      "provider": "ScoutBasketball"
+    },
+    "nanterre 92": {
+      "url": "https://scoutbasketball.com/img/teams/images/Jsf-Nanterre_1719335320.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "sig strasbourg": {
+      "url": "https://scoutbasketball.com/img/teams/images/Strasbourg-Ig_1760248674.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "elan chalon": {
+      "url": "https://scoutbasketball.com/img/teams/images/Elan-Chalon_1719334979.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "jda dijon": {
+      "url": "https://scoutbasketball.com/img/teams/images/Jda-Dijon-Basket_1721733053.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "bc gravelines-dunkerque": {
+      "url": "https://scoutbasketball.com/img/teams/images/Bcm-Gravelines_1747993009.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "arconic-alba fehervar": {
+      "url": "https://scoutbasketball.com/img/teams/images/Alba-Fehervar_1719334777.png",
+      "source": "https://scoutbasketball.com/competition/hungary-nb1a-division/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "pallacanestro trieste": {
+      "url": "https://scoutbasketball.com/img/teams/images/Pallacanestro-Trieste_1721774983.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "una hotels reggio emilia": {
+      "url": "https://scoutbasketball.com/img/teams/images/Pallacanestro-Reggiana_1719335122.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "tezenis verona": {
+      "url": "https://scoutbasketball.com/img/teams/images/Scaligera-Basket-Verona_1719335508.jpg",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a2-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "scafati basket": {
+      "url": "https://scoutbasketball.com/img/teams/images/Scafati-Basket_1721731695.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a2-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "vermont": {
+      "url": "https://scoutbasketball.com/img/teams/images/Vermont_1719335684.png",
+      "source": "https://scoutbasketball.com/competition/ncaa/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "arizona state": {
+      "url": "https://scoutbasketball.com/img/teams/images/Arizona-State_1719334803.png",
+      "source": "https://scoutbasketball.com/competition/ncaa/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "benfica": {
+      "url": "https://scoutbasketball.com/img/teams/images/Benfica_1719334873.png",
+      "source": "https://scoutbasketball.com/competition/portugal-lpb/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "porto": {
+      "url": "https://scoutbasketball.com/img/teams/images/Fc-Porto_1719335392.png",
+      "source": "https://scoutbasketball.com/competition/portugal-lpb/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "csm csu oradea": {
+      "url": "https://scoutbasketball.com/img/teams/images/Csm-Oradea_1719335015.png",
+      "source": "https://scoutbasketball.com/competition/romania-liga-nationala/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "fc arges pitesti": {
+      "url": "https://scoutbasketball.com/img/teams/images/Fc-Arges-Pitesti_1719334868.jpeg",
+      "source": "https://scoutbasketball.com/competition/romania-liga-nationala/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "rio breogan": {
+      "url": "https://scoutbasketball.com/img/teams/images/Cb-Breogan_1719334914.png",
+      "source": "https://scoutbasketball.com/competition/spain-acb/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "gran canaria": {
+      "url": "https://scoutbasketball.com/img/teams/images/Cb-Gran-Canaria_1719334955.png",
+      "source": "https://scoutbasketball.com/competition/spain-acb/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "trabzonspor": {
+      "url": "https://scoutbasketball.com/img/teams/images/Trabzonspor_1751995733.png",
+      "source": "https://scoutbasketball.com/competition/turkey-bsl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "rilski sportist": {
+      "url": "https://scoutbasketball.com/img/teams/images/Bc-Rilski-Sportist_1719335418.png",
+      "source": "https://scoutbasketball.com/competition/bulgaria-nbl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "spartak pleven": {
+      "url": "https://scoutbasketball.com/img/teams/images/Bc-Spartak-Pleven_1719335479.png",
+      "source": "https://scoutbasketball.com/competition/bulgaria-nbl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "boulazac basket dordogne": {
+      "url": "https://scoutbasketball.com/img/teams/images/Boulazac-Basket_1719334909.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "elan bearnais pau-lacq-orthez": {
+      "url": "https://scoutbasketball.com/img/teams/images/Pau-Lacq-Orthez_1726253382.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-b-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "nantes": {
+      "url": "https://scoutbasketball.com/img/teams/images/Hermine-Nantes_1719335321.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-b-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "denain asc voltaire": {
+      "url": "https://scoutbasketball.com/img/teams/images/Asc-Denain_1719335030.png",
+      "source": "https://scoutbasketball.com/competition/france-lnb-pro-b-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "falco szombathely": {
+      "url": "https://scoutbasketball.com/img/teams/images/Falco-Kc_1719335074.png",
+      "source": "https://scoutbasketball.com/competition/hungary-nb1a-division/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "atomeromu se": {
+      "url": "https://scoutbasketball.com/img/teams/images/Atomeromu_1719334817.jpeg",
+      "source": "https://scoutbasketball.com/competition/hungary-nb1a-division/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "kecskemet": {
+      "url": "https://scoutbasketball.com/img/teams/images/Kte-Duna_1719335223.jpeg",
+      "source": "https://scoutbasketball.com/competition/hungary-nb1a-division/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "germani brescia": {
+      "url": "https://scoutbasketball.com/img/teams/images/basket-leonessa-brescia_1781653000.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "vanoli cremona": {
+      "url": "https://scoutbasketball.com/img/teams/images/Vanoli-Basket-Cremona_1721731663.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "nutribullet treviso": {
+      "url": "https://scoutbasketball.com/img/teams/images/Treviso-Basket_1719335516.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "trapani": {
+      "url": "https://scoutbasketball.com/img/teams/images/Pallacanestro-Trapani_1719335513.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "rbr rimini": {
+      "url": "https://scoutbasketball.com/img/teams/images/Rinascita-Basket-Rimini_1719336199.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a2-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "vl pesaro": {
+      "url": "https://scoutbasketball.com/img/teams/images/Victoria-Libertas-Pesaro_1721731742.jpeg",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a2-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "estra pistoia": {
+      "url": "https://scoutbasketball.com/img/teams/images/Pistoia-Basket_1719335110.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a2-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "roseto": {
+      "url": "https://scoutbasketball.com/img/teams/images/Liofilchem-Roseto_1760250897.png",
+      "source": "https://scoutbasketball.com/competition/italy-serie-a2-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "richmond athletics (college)": {
+      "url": "https://scoutbasketball.com/img/teams/images/Richmond_1719335415.png",
+      "source": "https://scoutbasketball.com/competition/ncaa/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "loyola university chicago": {
+      "url": "https://scoutbasketball.com/img/teams/images/Loyola-Chicago_1719335836.png",
+      "source": "https://scoutbasketball.com/competition/ncaa/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "dinamo bucuresti": {
+      "url": "https://scoutbasketball.com/img/teams/images/Cs-Dinamo-Bucaresti_1719335037.jpeg",
+      "source": "https://scoutbasketball.com/competition/romania-liga-nationala/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "rapid bucharest": {
+      "url": "https://scoutbasketball.com/img/teams/images/Cs-Rapid-Bucuresti_1721773948.png",
+      "source": "https://scoutbasketball.com/competition/romania-liga-nationala/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "lucenec": {
+      "url": "https://scoutbasketball.com/img/teams/images/Bkm-Lucenec_1719335766.png",
+      "source": "https://scoutbasketball.com/competition/slovakia-extraliga/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "alimerka oviedo": {
+      "url": "https://scoutbasketball.com/img/teams/images/Oviedo-Baloncesto_1719334833.jpeg",
+      "source": "https://scoutbasketball.com/competition/spain-primera-feb-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "fuenlabrada": {
+      "url": "https://scoutbasketball.com/img/teams/images/Baloncesto-Fuenlabrada_1721732169.jpg",
+      "source": "https://scoutbasketball.com/competition/spain-primera-feb-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "yukatel denizli": {
+      "url": "https://scoutbasketball.com/img/teams/images/Merkezefendi-Belediyesi_1750788999.png",
+      "source": "https://scoutbasketball.com/competition/turkey-bsl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "manisa": {
+      "url": "https://scoutbasketball.com/img/teams/images/Manisa-Buyuksehir-Belediye_1751990065.png",
+      "source": "https://scoutbasketball.com/competition/turkey-bsl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "karsiyaka": {
+      "url": "https://scoutbasketball.com/img/teams/images/Karsiyaka-Sk_1719335186.png",
+      "source": "https://scoutbasketball.com/competition/turkey-bsl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "mersin": {
+      "url": "https://scoutbasketball.com/img/teams/images/Mersin-Bsb_1719335286.jpeg",
+      "source": "https://scoutbasketball.com/competition/turkey-bsl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "aliaga petkimspor": {
+      "url": "https://scoutbasketball.com/img/teams/images/Petkimspor_1726822085.jpg",
+      "source": "https://scoutbasketball.com/competition/turkey-bsl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "onvo buyukcekmece": {
+      "url": "https://scoutbasketball.com/img/teams/images/Demir-Insaat_1719334926.png",
+      "source": "https://scoutbasketball.com/competition/turkey-bsl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "cayirova": {
+      "url": "https://scoutbasketball.com/img/teams/images/Cayirova-Belediye_1719337189.png",
+      "source": "https://scoutbasketball.com/competition/turkey-tbl-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "aek larnaca": {
+      "url": "https://scoutbasketball.com/img/teams/images/Aek-Larnaca_1750789178.png",
+      "source": "https://scoutbasketball.com/competition/cyprus-division-a/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "wurzburg baskets": {
+      "url": "https://scoutbasketball.com/img/teams/images/Soliver-Baskets_1721735152.png",
+      "source": "https://scoutbasketball.com/competition/germany-bbl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "fribourg olympic": {
+      "url": "https://scoutbasketball.com/img/teams/images/Fribourg-Olympic_1750789145.png",
+      "source": "https://scoutbasketball.com/competition/switzerland-lna/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "vojvodina": {
+      "url": "https://scoutbasketball.com/img/teams/images/Kk-Vojvodina-Novi-Sad_1719335208.png",
+      "source": "https://scoutbasketball.com/competition/aba-league-2/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "ottawa blackjacks": {
+      "url": "https://scoutbasketball.com/img/teams/images/Ottawa-Blackjack_1719336260.png",
+      "source": "https://scoutbasketball.com/competition/canada-cebl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "beijing royal fighters": {
+      "url": "https://scoutbasketball.com/img/teams/images/Beijing-Beikong_1719334869.jpeg",
+      "source": "https://scoutbasketball.com/competition/china-cba/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "slavia prague": {
+      "url": "https://scoutbasketball.com/img/teams/images/Sk-Slavia-Praha_1719336811.png",
+      "source": "https://scoutbasketball.com/competition/czech-republic-nbl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "academics heidelberg": {
+      "url": "https://scoutbasketball.com/img/teams/images/Mlp-Academics-Heidelberg_1719335303.png",
+      "source": "https://scoutbasketball.com/competition/germany-bbl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "eisbaren bremerhaven": {
+      "url": "https://scoutbasketball.com/img/teams/images/Eisbaeren-Bremerhaven_1719334914.png",
+      "source": "https://scoutbasketball.com/competition/germany-pro-a-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "bg gottingen": {
+      "url": "https://scoutbasketball.com/img/teams/images/Sartorius-Juniors_1771749487.webp",
+      "source": "https://scoutbasketball.com/competition/germany-pro-a-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "hapoel galil elion": {
+      "url": "https://scoutbasketball.com/img/teams/images/Hapoel-Upper-Galilee-Safed_1719336960.jpg",
+      "source": "https://scoutbasketball.com/competition/israel-winner-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "tartu ulikool maks&moorits": {
+      "url": "https://scoutbasketball.com/img/teams/images/Tartu-Ulikool_1719336843.png",
+      "source": "https://scoutbasketball.com/competition/latvian-estonian-bl/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "young harris college": {
+      "url": "https://scoutbasketball.com/img/teams/images/Young-Harris_1719336422.jpeg",
+      "source": "https://scoutbasketball.com/competition/ncaa-div-ii/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "atleticos san german": {
+      "url": "https://scoutbasketball.com/img/teams/images/atleticos-de-san-german_1779432652.png",
+      "source": "https://scoutbasketball.com/competition/puerto-rico-bsn/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "nizhny novgorod": {
+      "url": "https://scoutbasketball.com/img/teams/images/Bc-Nizhny-Novgorod_1762974127.png",
+      "source": "https://scoutbasketball.com/competition/vtb-united-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "gießen": {
+      "url": "https://scoutbasketball.com/img/teams/images/Giessen-46ers_1719335261.png",
+      "source": "https://scoutbasketball.com/competition/germany-pro-a-2nd-div/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "maccabi ramat gan": {
+      "url": "https://scoutbasketball.com/img/teams/images/Ironi-Kfar-Hamaccabia-Ramat-Gan_1721731584.jpg",
+      "source": "https://scoutbasketball.com/competition/israel-winner-league/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "patrioti levice": {
+      "url": "https://scoutbasketball.com/img/teams/images/Bk-Levicki_1719334890.png",
+      "source": "https://scoutbasketball.com/competition/slovakia-extraliga/2025-2026",
+      "provider": "ScoutBasketball"
+    },
+    "dinamo vladivostok": {
+      "url": "https://vtb-league.com/app/themes/mbt/img/clubs/26-27/dynamo/logo-dynamo-en.png",
+      "source": "https://vtb-league.com/en/",
+      "provider": "VTB United League"
+    },
+    "pallacanestro forli": {
+      "url": "https://www.pallacanestroforli2015.it/wp-content/uploads/2024/10/logo-pf2015-ridotto.png",
+      "source": "https://www.pallacanestroforli2015.it/",
+      "provider": "Pallacanestro Forlì 2.015"
+    },
+    "astana": {
+      "url": "https://astanabasket.kz/_templates/3/page/img/logo-top-new.png",
+      "source": "https://astanabasket.kz/",
+      "provider": "BC Astana"
+    },
+    "krka youth": {
+      "url": "https://www.aba-liga.com/images/club/50x50/10.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League",
+      "note": "Parent club crest; youth activity remains a separate team identity."
     }
   },
   "players": {
@@ -2013,6 +2794,2646 @@
       "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
       "provider": "Euroleague Basketball",
       "season": "E2025"
+    },
+    "jilson bango": {
+      "url": "https://media-cdn.incrowdsports.com/a1c2af65-727f-417b-afa4-2719a0ad9d83.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "marial shayok": {
+      "url": "https://media-cdn.incrowdsports.com/db6a9efd-d952-4520-b941-c99adf08eec9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "chimezie metu": {
+      "url": "https://media-cdn.incrowdsports.com/987ca277-8334-4862-a166-c8dd1a20ad4b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "paris lee": {
+      "url": "https://media-cdn.incrowdsports.com/05e68cf9-0a9c-4f03-a465-b109bea28982.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "dyshawn pierre": {
+      "url": "https://media-cdn.incrowdsports.com/7f04a6d9-d458-47c5-a453-b089904b8992.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "furkan korkmaz": {
+      "url": "https://media-cdn.incrowdsports.com/7cab4747-9fd8-4e4b-abec-083e04e61665.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "martin hermannsson": {
+      "url": "https://media-cdn.incrowdsports.com/4032c082-43d3-42a6-aaad-00ff98c2a756.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "javonte smart": {
+      "url": "https://media-cdn.incrowdsports.com/d3eadca7-a291-45d6-9c3e-e5b43a07b102.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "lucas mari": {
+      "url": "https://media-cdn.incrowdsports.com/095d6a17-b7a5-42df-9675-36d880286d9c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "james webb iii": {
+      "url": "https://media-cdn.incrowdsports.com/5db88293-4b27-4ff9-883f-ef8cc7bae695.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "guerschon yabusele": {
+      "url": "https://media-cdn.incrowdsports.com/7836b84b-e952-47c7-9683-4f8645eea386.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "kassius robertson": {
+      "url": "https://media-cdn.incrowdsports.com/c7b9d101-3765-4929-9882-297e70d1091a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "john egbunu": {
+      "url": "https://media-cdn.incrowdsports.com/043e4d46-656c-4047-900e-be24b2fb0d7f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "johannes thiemann": {
+      "url": "https://media-cdn.incrowdsports.com/8d67d189-5722-4ac9-918c-70c114ff40d9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "devontae cacok": {
+      "url": "https://media-cdn.incrowdsports.com/3c2f2d94-6aaa-4620-b3eb-2e99843a8373.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "aleksander balcerowski": {
+      "url": "https://media-cdn.incrowdsports.com/298ad210-3711-48dd-9826-c7e7a7af8a37.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "adam hanga": {
+      "url": "https://media-cdn.incrowdsports.com/53fbe79b-21dc-4d05-8e36-004bcd17fe34.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "stefan lazarevic": {
+      "url": "https://media-cdn.incrowdsports.com/ae23bbbe-9a8b-44dc-8ac6-dc99ce56be59.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "erten gazi": {
+      "url": "https://media-cdn.incrowdsports.com/714ae09c-4d14-4a17-bf53-c041d094d084.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "max heidegger": {
+      "url": "https://media-cdn.incrowdsports.com/b95002b6-f51e-4fc8-a071-fb65e59bdeb4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "gora camara": {
+      "url": "https://media-cdn.incrowdsports.com/9f5dc0c9-a51c-4b77-8bb2-a71786922ec2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "arturs kurucs": {
+      "url": "https://media-cdn.incrowdsports.com/b98c88da-6556-46e0-981a-106d466b7a22.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "jonah radebaugh": {
+      "url": "https://media-cdn.incrowdsports.com/149681b6-ef7b-43a6-b8e9-9e951e846251.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "tommaso baldasso": {
+      "url": "https://media-cdn.incrowdsports.com/a83a935a-aed7-4ea6-99d2-7978cd47e914.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "nikola ivanovic": {
+      "url": "https://media-cdn.incrowdsports.com/098c56e1-f92f-4534-9606-dea562a629bf.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "paul zipser": {
+      "url": "https://media-cdn.incrowdsports.com/b49a4766-4b4e-48d2-acdf-4d2fd232a562.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "corey walden": {
+      "url": "https://media-cdn.incrowdsports.com/0535f39e-246e-42b4-8196-509a33f8424a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "yves pons": {
+      "url": "https://media-cdn.incrowdsports.com/069f9181-a23b-49bd-b633-c27494755f50.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "danilo tasic": {
+      "url": "https://media-cdn.incrowdsports.com/62528b3c-9533-44c4-ac8d-c3d6e89ac9ff.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "marcus bingham jr.": {
+      "url": "https://media-cdn.cortextech.io/84ec1f61-94b3-4909-981b-0f9342806fbf.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "nahiem alleyne": {
+      "url": "https://media-cdn.incrowdsports.com/e4af255e-4909-4a73-aa4e-f89f86d0bb60.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "patrick beverley": {
+      "url": "https://media-cdn.incrowdsports.com/a3e7f9e7-684d-4c5b-9afd-ce01ba8f190c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "marek blazevic": {
+      "url": "https://media-cdn.incrowdsports.com/e3c0623a-0b8a-4f1b-8f01-cb70c9a64873.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "tre'shawn thurman": {
+      "url": "https://media-cdn.incrowdsports.com/808d1e7c-37ed-4ac5-bd8e-8a1d948d56b6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "anthony cowan": {
+      "url": "https://media-cdn.incrowdsports.com/4c959f62-fd8e-4002-98cc-4a3d2fb7587b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "keondre kennedy": {
+      "url": "https://media-cdn.incrowdsports.com/5ee43750-62e7-4da5-9860-83f1e1891ca4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "ethan happ": {
+      "url": "https://media-cdn.incrowdsports.com/09f83299-6d6a-471d-9ea3-3bda202c3a66.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "davide casarin": {
+      "url": "https://media-cdn.incrowdsports.com/f3615b58-07f0-46cb-91e2-b99be06fe4ad.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "javon bess": {
+      "url": "https://media-cdn.incrowdsports.com/3d6ee03a-fabf-486f-9160-f744af18e2a5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "isaiah roby": {
+      "url": "https://media-cdn.incrowdsports.com/c284da52-5bbb-461f-bb26-d5efc9471a52.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "marcus foster": {
+      "url": "https://media-cdn.incrowdsports.com/109bd6d0-cc37-4e4e-9fc4-6be18d520003.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "andrew albicy": {
+      "url": "https://media-cdn.incrowdsports.com/7d12b702-a1a1-45d7-8257-225fbada577d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "andrea pecchia": {
+      "url": "https://media-cdn.incrowdsports.com/ebd1041c-b76f-40f2-9c7f-b8f16507ae23.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "xavier castaneda": {
+      "url": "https://media-cdn.incrowdsports.com/6493fe4c-ce48-4d65-b9cd-fdf35df60a7b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "derek ogbeide": {
+      "url": "https://media-cdn.incrowdsports.com/6efa074c-b496-4a92-8a8b-be978cf5dcdf.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "bine prepelic": {
+      "url": "https://media-cdn.incrowdsports.com/aca02c89-1884-408b-9052-5ec329d8e638.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "devin robinson": {
+      "url": "https://media-cdn.incrowdsports.com/02ab1a96-d41d-4801-a1ab-78eccc7a86b9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "aleksa ilic": {
+      "url": "https://media-cdn.incrowdsports.com/7148adb7-6055-4361-8e9e-95321f68448b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "emanuel terry": {
+      "url": "https://media-cdn.incrowdsports.com/59385d87-4f80-4d20-b578-a618e611ea02.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "cj massinburg": {
+      "url": "https://media-cdn.incrowdsports.com/ff5e8a3e-8f27-4137-80fb-56c0735d78d2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "marko pecarski": {
+      "url": "https://media-cdn.incrowdsports.com/cfd92183-5d2f-4337-b241-148b976ecb2f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2024/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2024/25"
+    },
+    "roberto gallinat": {
+      "url": "https://media-cdn.incrowdsports.com/3df2c465-3415-4bf3-ab06-48641fc50954.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "marcus carr": {
+      "url": "https://media-cdn.incrowdsports.com/053c5357-7dfe-4a4e-ba63-577b17316963.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "marco spissu": {
+      "url": "https://media-cdn.incrowdsports.com/e7ca6dcc-f7b7-4e2c-84fc-4de1019bd19d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "angel delgado": {
+      "url": "https://media-cdn.incrowdsports.com/beb6511a-34a9-478a-bfd3-c43555fa2732.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "vladimir mihailovic": {
+      "url": "https://media-cdn.incrowdsports.com/1cf42151-431f-45a8-b1f6-7dc971b1edbb.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "petar popovic": {
+      "url": "https://media-cdn.incrowdsports.com/2f38cf71-be5b-454a-82b3-c04a08ba775a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "ivan tkachenko": {
+      "url": "https://media-cdn.incrowdsports.com/509bd443-56d1-46fb-bacf-28c00416c315.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "justin cobbs": {
+      "url": "https://media-cdn.incrowdsports.com/729795c0-ea87-46a0-927b-bcc2f89d16a9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "lukasz kolenda": {
+      "url": "https://media-cdn.incrowdsports.com/10231f33-0efc-4119-b5e5-9ee1dd1d8eb7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "prentiss hubb": {
+      "url": "https://media-cdn.incrowdsports.com/18aeed0d-b5ed-4140-8c5e-5ee1fbe97729.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "andrea de nicolao": {
+      "url": "https://media-cdn.incrowdsports.com/1e9b99ad-bec3-4455-8500-cba513505c2c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2023/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2023/24"
+    },
+    "kodi justice": {
+      "url": "https://media-cdn.incrowdsports.com/f60e1ead-8cef-42b7-ac9a-3765fd46e258.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "tony taylor": {
+      "url": "https://media-cdn.incrowdsports.com/38728876-005b-484b-a2a0-0d94b377d47e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "jeremiah martin": {
+      "url": "https://media-cdn.incrowdsports.com/eaa3a094-dab9-4efc-99b6-4844d0187f75.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "amedeo della valle": {
+      "url": "https://media-cdn.incrowdsports.com/affd5641-c387-4877-bac7-b825d023cf6f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "marko jeremic": {
+      "url": "https://media-cdn.incrowdsports.com/2dad4d17-ae19-449a-84bf-5e9808e9e3d0.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "darion atkins": {
+      "url": "https://media-cdn.incrowdsports.com/4cd50e34-f809-4f9d-8273-2bc72f195152.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "marko radovanovic": {
+      "url": "https://media-cdn.incrowdsports.com/4cd11187-d319-4482-b4e2-ef5ff177faa5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "igor drobnjak": {
+      "url": "https://media-cdn.incrowdsports.com/67da0acd-a1f1-47d1-b199-37f4514fca37.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "aleksandar lazic": {
+      "url": "https://media-cdn.incrowdsports.com/8d141165-b962-4d19-8ee7-824d3f38c8e2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "edin atic": {
+      "url": "https://media-cdn.incrowdsports.com/5fdb74e7-8c6f-465f-a50f-07ce7167a87a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "riccardo moraschini": {
+      "url": "https://media-cdn.incrowdsports.com/c77b3799-4122-452e-9a8a-f783be53decf.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2022/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "2022/23"
+    },
+    "sid-marlon theis": {
+      "url": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2004489",
+      "source": "https://www.easycredit-bbl.de/spieler/2004489",
+      "provider": "easyCredit BBL",
+      "season": "2026/27"
+    },
+    "amari kelly": {
+      "url": "https://scoutbasketball.com/img/players/images/Amari-Kelly_1609982046_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Amari%20Kelly",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nicolas batum": {
+      "url": "https://cdn.nba.com/headshots/nba/latest/260x190/201587.png",
+      "source": "https://www.nba.com/players",
+      "provider": "NBA",
+      "season": "Profile photo"
+    },
+    "bogdan bogdanovic": {
+      "url": "https://cdn.nba.com/headshots/nba/latest/260x190/203992.png",
+      "source": "https://www.nba.com/players",
+      "provider": "NBA",
+      "season": "Profile photo"
+    },
+    "ade adebayo": {
+      "url": "https://scoutbasketball.com/img/players/images/Ade-Adebayo_1610055835_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ade%20Adebayo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "isaiah richards": {
+      "url": "https://scoutbasketball.com/img/players/images/Isaiah-Richards_1612898290_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Isaiah%20Richards",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jackson stormo": {
+      "url": "https://scoutbasketball.com/img/players/images/Jackson-Stormo_1610045725_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jackson%20Stormo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "joe toussaint": {
+      "url": "https://scoutbasketball.com/img/players/images/Joe-Toussaint_1610139841_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Joe%20Toussaint",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "john meeks": {
+      "url": "https://scoutbasketball.com/img/players/images/John-Meeks_1610878445_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=John%20Meeks",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "konstantin toshkov": {
+      "url": "https://scoutbasketball.com/img/players/images/Konstantin-Toshkov_1593773466_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Konstantin%20Toshkov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "malik johnson": {
+      "url": "https://scoutbasketball.com/img/players/images/malik-johnson_1776177931_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Malik%20Johnson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "martin yordanov": {
+      "url": "https://scoutbasketball.com/img/players/images/Martin-Yordanov_1593773469_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Martin%20Yordanov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "mike caffey": {
+      "url": "https://scoutbasketball.com/img/players/images/Mike-Caffey_1594154304_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Mike%20Caffey",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "mustapha amzil": {
+      "url": "https://scoutbasketball.com/img/players/images/Mustapha-Amzil_1593773536_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Mustapha%20Amzil",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sam iorio": {
+      "url": "https://scoutbasketball.com/img/players/images/Sam-Iorio_1610045976_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sam%20Iorio",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tyler stevenson": {
+      "url": "https://scoutbasketball.com/img/players/images/Tyler-Stevenson_1610143176_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tyler%20Stevenson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "diante baldwin": {
+      "url": "https://scoutbasketball.com/img/players/images/Diante-Baldwin_1594154762_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Diante%20Baldwin",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "reggie perry": {
+      "url": "https://scoutbasketball.com/img/players/images/Reggie-Perry_1594155144_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Reggie%20Perry",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ivan karacic": {
+      "url": "https://scoutbasketball.com/img/players/images/Ivan-Karacic_1600856969_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ivan%20Kara%C4%8Di%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sean flood": {
+      "url": "https://scoutbasketball.com/img/players/images/Sean-Flood_1604891122_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sean%20Flood",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sekou doumbouya": {
+      "url": "https://scoutbasketball.com/img/players/images/Sekou-Doumbouya_1594154643_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sekou%20Doumbouya",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "isaih moore": {
+      "url": "https://scoutbasketball.com/img/players/images/Isaih-Moore_1610143338_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Isaih%20Moore",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "urban kroflic": {
+      "url": "https://scoutbasketball.com/img/players/images/urban-kroflic_1776171606_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Urban%20Krofli%C4%8D",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "justin minaya": {
+      "url": "https://scoutbasketball.com/img/players/images/Justin-Minaya_1593768412_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Justin%20Minaya",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "osayi osifo": {
+      "url": "https://scoutbasketball.com/img/players/images/Osayi-Osifo_1609983673_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Osayi%20Osifo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "perttu blomgren": {
+      "url": "https://scoutbasketball.com/img/players/images/Perttu-Blomgren_1593773535_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Perttu%20Blomgren",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "damian jones": {
+      "url": "https://scoutbasketball.com/img/players/images/Damian-Jones_1594155150_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Damian%20Jones",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "noah freidel": {
+      "url": "https://scoutbasketball.com/img/players/images/Noah-Freidel_1610046576_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Noah%20Freidel",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "anthony roy": {
+      "url": "https://scoutbasketball.com/img/players/images/Anthony-Roy_1610142770_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Anthony%20Roy",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "federico bonacini": {
+      "url": "https://scoutbasketball.com/img/players/images/Federico-Bonacini_1593765331_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Federico%20Bonacini",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jassel perez": {
+      "url": "https://scoutbasketball.com/img/players/images/jassel-perez_1776175218_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jassel%20P%C3%A9rez",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "kalif young": {
+      "url": "https://scoutbasketball.com/img/players/images/Kalif-Young_1593768364_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kalif%20Young",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marcus tyus": {
+      "url": "https://scoutbasketball.com/img/players/images/Marcus-Tyus_1594154776_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marcus%20Tyus",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "caleb daniels": {
+      "url": "https://scoutbasketball.com/img/players/images/Caleb-Daniels_1610145220_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Caleb%20Daniels",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "malcolm cazalon": {
+      "url": "https://scoutbasketball.com/img/players/images/Malcolm-Cazalon_1594154867_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Malcolm%20Cazalon",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "timotej balazic": {
+      "url": "https://scoutbasketball.com/img/players/images/Timotej-Balazic_1698579017_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Timotej%20Bala%C5%BEi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tyty washington": {
+      "url": "https://scoutbasketball.com/img/players/images/tyty-washington-jr_1776144815_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=TyTy%20Washington",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "aleksandre merkviladze": {
+      "url": "https://scoutbasketball.com/img/players/images/Aleksandre-Merkviladze_1593773482_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Aleksandre%20Merkviladze",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tremont waters": {
+      "url": "https://scoutbasketball.com/img/players/images/Tremont-Waters_1594148202_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tremont%20Waters",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "brandon huffman": {
+      "url": "https://scoutbasketball.com/img/players/images/Brandon-Huffman_1646839882_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Brandon%20Huffman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "eral penn": {
+      "url": "https://scoutbasketball.com/img/players/images/Eral-Penn_1610027432_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Eral%20Penn",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jared kimbrough": {
+      "url": "https://scoutbasketball.com/img/players/images/Jared-Kimbrough_1609991421_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jared%20Kimbrough",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "vernon carey jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/Vernon-Carey-Jr_1594155189_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Vernon%20Carey%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "vince hunter": {
+      "url": "https://scoutbasketball.com/img/players/images/Vince-Hunter_1594154934_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Vince%20Hunter",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "catalin baciu": {
+      "url": "https://scoutbasketball.com/img/players/images/Catalin-Baciu_1594151146_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=C%C4%83t%C4%83lin%20Baciu",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "kendall munson": {
+      "url": "https://scoutbasketball.com/img/players/images/Kendall-Munson_1610037215_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kendall%20Munson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "anthony hickey": {
+      "url": "https://scoutbasketball.com/img/players/images/Anthony-Hickey-Jr_1594154419_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Anthony%20Hickey",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jairo van den berg": {
+      "url": "https://scoutbasketball.com/img/players/images/Jairo-Van-Den-Berg_1752335856_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jairo%20van%20den%20Berg",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marcus dockery": {
+      "url": "https://scoutbasketball.com/img/players/images/Marcus-Dockery_1609993915_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marcus%20Dockery",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "trae taylor": {
+      "url": "https://scoutbasketball.com/img/players/images/trae-taylor_1775798826_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Trae%20Taylor",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "aaron holiday": {
+      "url": "https://scoutbasketball.com/img/players/images/Aaron-Holiday_1594155168_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Aaron%20Holiday",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "javante mccoy": {
+      "url": "https://scoutbasketball.com/img/players/images/Javante-Mccoy_1609974718_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Javante%20McCoy",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ryan arcidiacono": {
+      "url": "https://scoutbasketball.com/img/players/images/ryan-arcidiacono_1775358755_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ryan%20Arcidiacono",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "henri drell": {
+      "url": "https://scoutbasketball.com/img/players/images/henri-drell_1775530349_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Henri%20Drell",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "pavlin ivanov": {
+      "url": "https://scoutbasketball.com/img/players/images/Pavlin-Ivanov_1593712671_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Pavlin%20Ivanov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "fatts russell": {
+      "url": "https://scoutbasketball.com/img/players/images/Fatts-Russell_1646841297_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Fatts%20Russell",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "domagoj vukovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Domagoj-Vukovic_1593713051_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Domagoj%20Vukovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ethan thompson": {
+      "url": "https://scoutbasketball.com/img/players/images/Ethan-Thompson_1594155197_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ethan%20Thompson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "grigory motovilov": {
+      "url": "https://scoutbasketball.com/img/players/images/Grigory-Motovilov_1594156025_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Grigory%20Motovilov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "klavs cavars": {
+      "url": "https://scoutbasketball.com/img/players/images/Klavs-Cavars_1593725606_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Klavs%20Cavars",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marko pavicevic": {
+      "url": "https://scoutbasketball.com/img/players/images/Marko-Pavicevic_1593765540_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marko%20Pavi%C4%87evi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "vladimir semenchenko": {
+      "url": "https://scoutbasketball.com/img/players/images/Vladimir-Semenchenko_1594668817_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Vladimir%20Semenchenko",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "briante weber": {
+      "url": "https://scoutbasketball.com/img/players/images/Briante-Weber_1594147562_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Briante%20Weber",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "elias valtonen": {
+      "url": "https://scoutbasketball.com/img/players/images/Elias-Valtonen_1594154542_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Elias%20Valtonen",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alex reese": {
+      "url": "https://scoutbasketball.com/img/players/images/Alex-Reese_1609971261_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alex%20Reese",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ben shungu": {
+      "url": "https://scoutbasketball.com/img/players/images/Ben-Shungu_1610061941_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ben%20Shungu",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "giovanni veronesi": {
+      "url": "https://scoutbasketball.com/img/players/images/Giovanni-Veronesi_1593762475_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Giovanni%20Veronesi",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ivan alipiev": {
+      "url": "https://scoutbasketball.com/img/players/images/Ivan-Alipiev_1594154611_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ivan%20Alipiev",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "patty mills": {
+      "url": "https://scoutbasketball.com/img/players/images/Patty-Mills_1594151809_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Patty%20Mills",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "wendell green": {
+      "url": "https://scoutbasketball.com/img/players/images/Wendell-Green-Jr_1608819679_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Wendell%20Green",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "xavi rabaseda": {
+      "url": "https://scoutbasketball.com/img/players/images/Xavi-Rabaseda_1594150956_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Xavi%20Rabaseda",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "stefan djordjevic": {
+      "url": "https://scoutbasketball.com/img/players/images/Stefan-Djordjevic_1593763952_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Stefan%20Djordjevic",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "touko tainamo": {
+      "url": "https://scoutbasketball.com/img/players/images/Touko-Tainamo_1593772681_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Touko%20Tainamo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jj harper": {
+      "url": "https://scoutbasketball.com/img/players/images/jj-harper_1775979674_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=JJ%20Harper",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "oumar ballo": {
+      "url": "https://scoutbasketball.com/img/players/images/Oumar-Ballo_1594154874_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Oumar%20Ballo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "damion baugh": {
+      "url": "https://scoutbasketball.com/img/players/images/Damion-Baugh_1610140164_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Damion%20Baugh",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "mac mcclung": {
+      "url": "https://scoutbasketball.com/img/players/images/Mac-Mcclung_1636475236_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Mac%20McClung",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "muhaymin mustafa": {
+      "url": "https://scoutbasketball.com/img/players/images/Muhaymin-Mustafa_1593717959_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Muhaymin%20Mustafa",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "petar radovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Petar-Radovic-0_1725788324_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Petar%20Radovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "aleksa kovacevic": {
+      "url": "https://scoutbasketball.com/img/players/images/Aleksa-Kovacevic_1594153799_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Aleksa%20Kovacevic",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alexandros nikolaidis": {
+      "url": "https://scoutbasketball.com/img/players/images/Alexandros-Nikolaidis_1593768847_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alexandros%20Nikolaidis",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "austin luke": {
+      "url": "https://scoutbasketball.com/img/players/images/Austin-Luke_1594155012_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Austin%20Luke",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "brandon johns jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/Brandon-Johns-Jr_1610140213_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Brandon%20Johns%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "brandon slater": {
+      "url": "https://scoutbasketball.com/img/players/images/Brandon-Slater_1646842105_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Brandon%20Slater",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "c.j. harris": {
+      "url": "https://scoutbasketball.com/img/players/images/Cj-Harris_1594151196_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=C.J.%20Harris",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "childe dundao": {
+      "url": "https://scoutbasketball.com/img/players/images/Childe-Dundao_1593773254_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Childe%20Dundao",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "chuba ohams": {
+      "url": "https://scoutbasketball.com/img/players/images/Chuba-Ohams_1698786891_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Chuba%20Ohams",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "david duke jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/David-Duke_1636474566_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=David%20Duke%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "grant sherfield": {
+      "url": "https://scoutbasketball.com/img/players/images/Grant-Sherfield_1646840803_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Grant%20Sherfield",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "hason ward": {
+      "url": "https://scoutbasketball.com/img/players/images/Hason-Ward_1646842091_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Hason%20Ward",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "isaac abidde": {
+      "url": "https://scoutbasketball.com/img/players/images/Isaac-Abidde_1669200938_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Isaac%20Abidde",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "j'wan roberts": {
+      "url": "https://scoutbasketball.com/img/players/images/Jwan-Roberts_1609987727_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=J'Wan%20Roberts",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jordan sears": {
+      "url": "https://scoutbasketball.com/img/players/images/Jordan-Sears_1609985086_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jordan%20Sears",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "juwan gray": {
+      "url": "https://scoutbasketball.com/img/players/images/Juwan-Gray_1610143950_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Juwan%20Gray",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "michael christmas": {
+      "url": "https://scoutbasketball.com/img/players/images/Michael-Christmas_1610139906_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Michael%20Christmas",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "michael devoe": {
+      "url": "https://scoutbasketball.com/img/players/images/Michael-Devoe_1726357096_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Michael%20Devoe",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nana owusu-anane": {
+      "url": "https://scoutbasketball.com/img/players/images/Nana-Owusu-Anane_1644424235_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nana%20Owusu-Anane",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nijel pack": {
+      "url": "https://scoutbasketball.com/img/players/images/Nijel-Pack_1610139928_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nijel%20Pack",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nikola jovanovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Nikola-Jovanovic_1594154286_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nikola%20Jovanovic",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "patrick samoura": {
+      "url": "https://scoutbasketball.com/img/players/images/Patrick-Samoura_1594152923_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Patrick%20Samoura",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sergey zotkin": {
+      "url": "https://scoutbasketball.com/img/players/images/Sergey-Zotkin_1594155721_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sergey%20Zotkin",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tevian jones": {
+      "url": "https://scoutbasketball.com/img/players/images/Tevian-Jones_1610143203_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tevian%20Jones",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "travis harper ii": {
+      "url": "https://scoutbasketball.com/img/players/images/travis-harper-ii_1775975219_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Travis%20Harper%20II",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ty nichols": {
+      "url": "https://scoutbasketball.com/img/players/images/Ty-Nichols_1597345281_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ty%20Nichols",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "will carius": {
+      "url": "https://scoutbasketball.com/img/players/images/Will-Carius_1617988651_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Will%20Carius",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "xeyrius williams": {
+      "url": "https://scoutbasketball.com/img/players/images/Xeyrius-Williams_1594155460_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Xeyrius%20Williams",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "zach freemantle": {
+      "url": "https://scoutbasketball.com/img/players/images/Zach-Freemantle_1610145402_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Zach%20Freemantle",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "miro bilan": {
+      "url": "https://scoutbasketball.com/img/players/images/Miro-Bilan_1636463885_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Miro%20Bilan",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dola adebayo": {
+      "url": "https://scoutbasketball.com/img/players/images/Dola-Adebayo_1668203135_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dola%20Adebayo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jahmi'us ramsey": {
+      "url": "https://scoutbasketball.com/img/players/images/Jahmius-Ramsey_1756023865_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jahmi'us%20Ramsey",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "james banks iii": {
+      "url": "https://scoutbasketball.com/img/players/images/James-Banks-Iii_1594155196_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=James%20Banks%20III",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "kirill elatontsev": {
+      "url": "https://scoutbasketball.com/img/players/images/Kirill-Elatontsev_1594155509_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kirill%20Elatontsev",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "trevelin queen": {
+      "url": "https://scoutbasketball.com/img/players/images/Trevelin-Queen_1615323397_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Trevelin%20Queen",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jakobi heady": {
+      "url": "https://scoutbasketball.com/img/players/images/jakobi-heady_1775966477_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jakobi%20Heady",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marcus domask": {
+      "url": "https://scoutbasketball.com/img/players/images/Marcus-Domask_1610143119_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marcus%20Domask",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alize johnson": {
+      "url": "https://scoutbasketball.com/img/players/images/Alize-Johnson_1594148289_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alize%20Johnson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "aron stazic": {
+      "url": "https://scoutbasketball.com/img/players/images/Aron-Stazic_1764578016_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Aron%20Stazi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "christian bishop": {
+      "url": "https://scoutbasketball.com/img/players/images/Christian-Bishop_1646839452_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Christian%20Bishop",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "elijah stewart": {
+      "url": "https://scoutbasketball.com/img/players/images/Elijah-Stewart_1594147690_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Elijah%20Stewart",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "robert rozanek": {
+      "url": "https://scoutbasketball.com/img/players/images/Robert-Rozanek_1593717852_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=R%C3%B3bert%20Ro%C5%BE%C3%A1nek",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "colby jones": {
+      "url": "https://scoutbasketball.com/img/players/images/Colby-Jones_1646842256_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Colby%20Jones",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "johnny juzang": {
+      "url": "https://scoutbasketball.com/img/players/images/Johnny-Juzang_1646841974_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Johnny%20Juzang",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "rj gunn": {
+      "url": "https://scoutbasketball.com/img/players/images/Rj-Gunn_1641735865_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=RJ%20Gunn",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tosan evbuomwan": {
+      "url": "https://scoutbasketball.com/img/players/images/Tosan-Evbuomwan_1593768820_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tosan%20Evbuomwan",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "aj lawson": {
+      "url": "https://scoutbasketball.com/img/players/images/Aj-Lawson-1997_1610140140_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=AJ%20Lawson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "aleksa novakovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Aleksa-Novakovic_1594154812_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Aleksa%20Novakovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alija islamovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Alija-Islamovic_1768613525_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alija%20Islamovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "speedy smith": {
+      "url": "https://scoutbasketball.com/img/players/images/Speedy-Smith_1594147583_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Speedy%20Smith",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "gal cop": {
+      "url": "https://scoutbasketball.com/img/players/images/Gal-Cop_1723892713_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Gal%20%C4%8Cop",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sebastian thomas": {
+      "url": "https://scoutbasketball.com/img/players/images/Sebastian-Thomas_1644425323_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sebastian%20Thomas",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tyrese martin": {
+      "url": "https://scoutbasketball.com/img/players/images/Tyrese-Martin_1610139301_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tyrese%20Martin",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "brady skeens": {
+      "url": "https://scoutbasketball.com/img/players/images/Brady-Skeens_1646830079_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Brady%20Skeens",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "darius brown ii": {
+      "url": "https://scoutbasketball.com/img/players/images/Darius-Brown-Ii_1610140553_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Darius%20Brown%20II",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "darrion trammell": {
+      "url": "https://scoutbasketball.com/img/players/images/Darrion-Trammell_1610135391_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Darrion%20Trammell",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "j'lynn counter": {
+      "url": "https://scoutbasketball.com/img/players/images/Jlynn-Counter_1668195379_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=J'Lynn%20Counter",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "javian mccollum": {
+      "url": "https://scoutbasketball.com/img/players/images/Javian-Mccollum_1641746549_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Javian%20McCollum",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "matej bosnjak": {
+      "url": "https://scoutbasketball.com/img/players/images/Matej-Bosnjak_1594150879_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Matej%20Bo%C5%A1njak",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "olivier sarr": {
+      "url": "https://scoutbasketball.com/img/players/images/olivier-sarr_1775444389_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Olivier%20Sarr",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jordan gainey": {
+      "url": "https://scoutbasketball.com/img/players/images/Jordan-Gainey_1641745869_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jordan%20Gainey",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "trent frazier": {
+      "url": "https://scoutbasketball.com/img/players/images/Trent-Frazier_1763683869_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Trent%20Frazier",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "charlie brown jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/Charlie-Brown_1594148180_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Charlie%20Brown%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "malik thomas": {
+      "url": "https://scoutbasketball.com/img/players/images/Malik-Thomas_1639070765_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Malik%20Thomas",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "adin vrabac": {
+      "url": "https://scoutbasketball.com/img/players/images/Adin-Vrabac_1600860172_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Adin%20Vrabac",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ansley almonor": {
+      "url": "https://scoutbasketball.com/img/players/images/Ansley-Almonor_1639070974_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ansley%20Almonor",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dante maddox jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/Dante-Maddox-Jr_1608821380_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dante%20Maddox%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "hunter dean": {
+      "url": "https://scoutbasketball.com/img/players/images/Hunter-Dean_1609985441_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Hunter%20Dean",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jeff dowtin": {
+      "url": "https://scoutbasketball.com/img/players/images/Jeff-Dowtin_1732315381_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jeff%20Dowtin",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "malik newman": {
+      "url": "https://scoutbasketball.com/img/players/images/Malik-Newman_1594148174_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Malik%20Newman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "oleg akramov": {
+      "url": "https://scoutbasketball.com/img/players/images/Oleg-Akramov_1601368987_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Oleg%20Akramov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "savion flagg": {
+      "url": "https://scoutbasketball.com/img/players/images/Savion-Flagg_1610052129_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Savion%20Flagg",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "symir torrence": {
+      "url": "https://scoutbasketball.com/img/players/images/Symir-Torrence_1609993641_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Symir%20Torrence",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tj bamba": {
+      "url": "https://scoutbasketball.com/img/players/images/Tj-Bamba_1610063602_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=TJ%20Bamba",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "antonio jordano": {
+      "url": "https://scoutbasketball.com/img/players/images/Antonio-Jordano_1593717929_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Antonio%20Jordano",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "patrick baldwin jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/patrick-baldwin-jr_1776135735_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Patrick%20Baldwin%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "chris duarte": {
+      "url": "https://scoutbasketball.com/img/players/images/Chris-Duarte_1594155422_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Chris%20Duarte",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alexander gudumak": {
+      "url": "https://scoutbasketball.com/img/players/images/Alexander-Gudumak_1594156092_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alexander%20Gudumak",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "elias lasisi": {
+      "url": "https://scoutbasketball.com/img/players/images/Elias-Lasisi_1593713236_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Elias%20Lasisi",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jan copot": {
+      "url": "https://scoutbasketball.com/img/players/images/Jan-Copot_1593768043_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jan%20Copot",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jeremiah robinson-earl": {
+      "url": "https://scoutbasketball.com/img/players/images/Jeremiah-Robinson-Earl_1594155145_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jeremiah%20Robinson-Earl",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tyson etienne": {
+      "url": "https://scoutbasketball.com/img/players/images/Tyson-Etienne_1646842355_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tyson%20Etienne",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "uros sikanic": {
+      "url": "https://scoutbasketball.com/img/players/images/Uros-Sikanic_1600859758_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Uro%C5%A1%20%C5%A0ikani%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ignas sargiunas": {
+      "url": "https://scoutbasketball.com/img/players/images/Ignas-Sargiunas_1594154605_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ignas%20Sargiunas",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "enoch boakye": {
+      "url": "https://scoutbasketball.com/img/players/images/Enoch-Boakye_1593773307_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Enoch%20Boakye",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jaylen nowell": {
+      "url": "https://scoutbasketball.com/img/players/images/Jaylen-Nowell_1594148249_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jaylen%20Nowell",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "joel armotrading": {
+      "url": "https://scoutbasketball.com/img/players/images/joel-armotrading_1775966528_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Joel%20Armotrading",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jon dolnicar": {
+      "url": "https://scoutbasketball.com/img/players/images/Jon-Dolnicar_1727345831_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jon%20Dolni%C4%8Dar",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "lenart sirc": {
+      "url": "https://scoutbasketball.com/img/players/images/Lenart-Sirc_1593768141_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Lenart%20Sirc",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "olivier nkamhoua": {
+      "url": "https://scoutbasketball.com/img/players/images/Oliver-Nkamhoua_1594154634_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Olivier%20Nkamhoua",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alex steen": {
+      "url": "https://scoutbasketball.com/img/players/images/alex-steen_1775979807_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alex%20Steen",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "daquan jeffries": {
+      "url": "https://scoutbasketball.com/img/players/images/Daquan-Jeffries_1594148225_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=DaQuan%20Jeffries",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "emir sulejmanovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Emir-Sulejmanovic_1594154287_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Emir%20Sulejmanovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "garrison mathews": {
+      "url": "https://scoutbasketball.com/img/players/images/Garrison-Mathews_1594148464_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Garrison%20Mathews",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "mihailo boskovic": {
+      "url": "https://scoutbasketball.com/img/players/images/mihailo-boskovic_1776140414_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Mihailo%20Bo%C5%A1kovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "niko sare": {
+      "url": "https://scoutbasketball.com/img/players/images/Niko-Sare_1593772433_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Niko%20%C5%A0are",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "yannick franke": {
+      "url": "https://scoutbasketball.com/img/players/images/Yannick-Franke_1593717848_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Yannick%20Franke",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "a.j. clayton": {
+      "url": "https://scoutbasketball.com/img/players/images/Aj-Clayton_1641745838_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=A.J.%20Clayton",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "amir coffey": {
+      "url": "https://scoutbasketball.com/img/players/images/Amir-Coffey_1594148492_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Amir%20Coffey",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dakota leffew": {
+      "url": "https://scoutbasketball.com/img/players/images/Dakota-Leffew_1610029433_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dakota%20Leffew",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "david dileo": {
+      "url": "https://scoutbasketball.com/img/players/images/David-Dileo_1600740095_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=David%20DiLeo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "galin smith": {
+      "url": "https://scoutbasketball.com/img/players/images/Galin-Smith_1610140133_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Galin%20Smith",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jamie bergens": {
+      "url": "https://scoutbasketball.com/img/players/images/Jamie-Bergens_1593765446_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jamie%20Bergens",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "luukas vaara": {
+      "url": "https://scoutbasketball.com/img/players/images/Luukas-Vaara_1593773537_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Luukas%20Vaara",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "mateusz szlachetka": {
+      "url": "https://scoutbasketball.com/img/players/images/Mateusz-Szlachetka_1593763894_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Mateusz%20Szlachetka",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "patrick tape": {
+      "url": "https://scoutbasketball.com/img/players/images/Patrick-Tape_1741448129_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Patrick%20Tape",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "andre wesson": {
+      "url": "https://scoutbasketball.com/img/players/images/Andre-Wesson_1594155424_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Andre%20Wesson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "blake bowman": {
+      "url": "https://scoutbasketball.com/img/players/images/blake-bowman_1776175290_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Blake%20Bowman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "blaz mahkovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Blaz-Mahkovic_1594153993_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Bla%C5%BE%20Mahkovic",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "douglas ntesa": {
+      "url": "https://scoutbasketball.com/img/players/images/Douglas-Ntesa_1593768832_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Douglas%20Ntesa",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "haris delalic": {
+      "url": "https://scoutbasketball.com/img/players/images/Haris-Delalic_1593718916_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Haris%20Delali%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "urban oman": {
+      "url": "https://scoutbasketball.com/img/players/images/Urban-Oman_1600859623_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Urban%20Oman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alexey shved": {
+      "url": "https://scoutbasketball.com/img/players/images/Alexey-Shved_1594151220_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alexey%20Shved",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "andrey zubkov": {
+      "url": "https://scoutbasketball.com/img/players/images/Andrey-Zubkov_1594156058_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Andrey%20Zubkov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "bj johnson": {
+      "url": "https://scoutbasketball.com/img/players/images/Bj-Johnson_1594155182_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=BJ%20Johnson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "chris clemons": {
+      "url": "https://scoutbasketball.com/img/players/images/Chris-Clemons_1594148215_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Chris%20Clemons",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "cj bryce": {
+      "url": "https://scoutbasketball.com/img/players/images/Cj-Bryce_1763684147_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=CJ%20Bryce",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "daan pieters": {
+      "url": "https://scoutbasketball.com/img/players/images/Daan-Pieters_1753622189_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Daan%20Pieters",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "demond robinson": {
+      "url": "https://scoutbasketball.com/img/players/images/Demond-Robinson_1610140381_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Demond%20Robinson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dmitry kulagin": {
+      "url": "https://scoutbasketball.com/img/players/images/Dmitry-Kulagin_1593712611_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dmitry%20Kulagin",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "federico poser": {
+      "url": "https://scoutbasketball.com/img/players/images/Federico-Poser_1594154648_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Federico%20Poser",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "gleb firsov": {
+      "url": "https://scoutbasketball.com/img/players/images/Gleb-Firsov_1594158016_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Gleb%20Firsov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "igor volkhin": {
+      "url": "https://scoutbasketball.com/img/players/images/Igor-Volkhin_1594156003_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Igor%20Volkhin",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ilya karpenkov": {
+      "url": "https://scoutbasketball.com/img/players/images/Ilya-Karpenkov_1594662564_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ilya%20Karpenkov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jack white": {
+      "url": "https://scoutbasketball.com/img/players/images/jack-white_1775443535_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jack%20White",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jermaine love": {
+      "url": "https://scoutbasketball.com/img/players/images/Jermaine-Love_1670214296_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jermaine%20Love",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "julius bohmer": {
+      "url": "https://scoutbasketball.com/img/players/images/Julius-Bohmer_1594153820_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Julius%20B%C3%B6hmer",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "lovell cabbil jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/Lovell-Cabbil-Jr_1594148299_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Lovell%20Cabbil%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "maksim barashkov": {
+      "url": "https://scoutbasketball.com/img/players/images/Maksim-Barashkov_1763683951_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Maksim%20Barashkov",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "martynas arlauskas": {
+      "url": "https://scoutbasketball.com/img/players/images/Martynas-Arlauskas_1594154632_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Martynas%20Arlauskas",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "mikhail kulagin": {
+      "url": "https://scoutbasketball.com/img/players/images/Mikhail-Kulagin_1594155979_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Mikhail%20Kulagin",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "rasir bolton": {
+      "url": "https://scoutbasketball.com/img/players/images/Rasir-Bolton_1727496252_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Rasir%20Bolton",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "william mcdowell-white": {
+      "url": "https://scoutbasketball.com/img/players/images/William-Mcdowell-White_1594154568_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=William%20McDowell-White",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "austin crowley": {
+      "url": "https://scoutbasketball.com/img/players/images/Austin-Crowley_1610141966_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Austin%20Crowley",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "chad brown": {
+      "url": "https://scoutbasketball.com/img/players/images/Chad-Brown_1594148151_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Chad%20Brown",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "elvar fridriksson": {
+      "url": "https://scoutbasketball.com/img/players/images/Elvar-Fridriksson_1593717692_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Elvar%20Fridriksson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jaylen barford": {
+      "url": "https://scoutbasketball.com/img/players/images/Jaylen-Barford_1594147584_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jaylen%20Barford",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jerrick harding": {
+      "url": "https://scoutbasketball.com/img/players/images/Jerrick-Harding_1599996540_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jerrick%20Harding",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jordan wright": {
+      "url": "https://scoutbasketball.com/img/players/images/Jordan-Wright_1608814281_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jordan%20Wright",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "justin vander baan": {
+      "url": "https://scoutbasketball.com/img/players/images/Justin-Vander-Baan_1608820007_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Justin%20Vander%20Baan",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "krsevan klarica": {
+      "url": "https://scoutbasketball.com/img/players/images/Krsevan-Klarica_1594150914_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kr%C5%A1evan%20Klarica",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marcus santos-silva": {
+      "url": "https://scoutbasketball.com/img/players/images/Marcus-Santos-Silva_1646841815_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marcus%20Santos-Silva",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "michael forrest": {
+      "url": "https://scoutbasketball.com/img/players/images/Michael-Forrest_1610139526_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Michael%20Forrest",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nick ongenda": {
+      "url": "https://scoutbasketball.com/img/players/images/Nick-Ongenda_1610139358_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nick%20Ongenda",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jaime echenique": {
+      "url": "https://scoutbasketball.com/img/players/images/Jaime-Echenique_1594155055_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jaime%20Echenique",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "kresimir ljubicic": {
+      "url": "https://scoutbasketball.com/img/players/images/Kresimir-Ljubicic_1593763919_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kre%C5%A1imir%20Ljubi%C4%8Di%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "siem uijtendaal": {
+      "url": "https://scoutbasketball.com/img/players/images/Siem-Uijtendaal_1593773552_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Siem%20Uijtendaal",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "strahinja gavrilovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Strahinja-Gavrilovic_1594154235_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Strahinja%20Gavrilovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "armin hrstic": {
+      "url": "https://scoutbasketball.com/img/players/images/Armin-Hrstic_1593768818_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Armin%20Hr%C5%A1ti%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dominic green": {
+      "url": "https://scoutbasketball.com/img/players/images/Dominic-Green_1594155291_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dominic%20Green",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "filip rebraca": {
+      "url": "https://scoutbasketball.com/img/players/images/Filip-Rebraca_1594155414_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Filip%20Rebra%C4%8Da",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "gonzalo corbalan": {
+      "url": "https://scoutbasketball.com/img/players/images/Gonzalo-Corbalan_1755955086_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Gonzalo%20Corbalan",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "justin kier": {
+      "url": "https://scoutbasketball.com/img/players/images/Justin-Kier_1609985694_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Justin%20Kier",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "kenny goins": {
+      "url": "https://scoutbasketball.com/img/players/images/Kenny-Goins_1594147720_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kenny%20Goins",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "mady sissoko": {
+      "url": "https://scoutbasketball.com/img/players/images/Mady-Sissoko_1610140226_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Mady%20Sissoko",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "anrijs miska": {
+      "url": "https://scoutbasketball.com/img/players/images/anrijs-miska_1775531819_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Anrijs%20Miska",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "cobe williams": {
+      "url": "https://scoutbasketball.com/img/players/images/Cobe-Williams_1597442547_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Cobe%20Williams",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dwayne koroma": {
+      "url": "https://scoutbasketball.com/img/players/images/Dwayne-Koroma_1608820757_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dwayne%20Koroma",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "lovro buljevic": {
+      "url": "https://scoutbasketball.com/img/players/images/Lovro-Buljevic_1593717402_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Lovro%20Buljevi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dominik olejniczak": {
+      "url": "https://scoutbasketball.com/img/players/images/Dominik-Olejniczak_1599820236_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dominik%20Olejniczak",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "justin gorham": {
+      "url": "https://scoutbasketball.com/img/players/images/Justin-Gorham_1610139750_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Justin%20Gorham",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "maksymilian wilczek": {
+      "url": "https://scoutbasketball.com/img/players/images/Maksymilian-Wilczek_1594150846_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Maksymilian%20Wilczek",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "markus ilver": {
+      "url": "https://scoutbasketball.com/img/players/images/Markus-Ilver_1593773479_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Markus%20Ilver",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tucker richardson": {
+      "url": "https://scoutbasketball.com/img/players/images/Tucker-Richardson_1609979343_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tucker%20Richardson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "max klesmit": {
+      "url": "https://scoutbasketball.com/img/players/images/Max-Klesmit_1610145386_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Max%20Klesmit",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "brekkott chapman": {
+      "url": "https://scoutbasketball.com/img/players/images/Brekkott-Chapman_1594147511_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Brekkott%20Chapman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jehloni james": {
+      "url": "https://scoutbasketball.com/img/players/images/Jehloni-James_1609986105_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jehloni%20James",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nolan adekunle": {
+      "url": "https://scoutbasketball.com/img/players/images/Nolan-Adekunle_1594153732_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nolan%20Adekunle",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tyrus mcgee": {
+      "url": "https://scoutbasketball.com/img/players/images/Tyrus-Mcgee_1594151933_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tyrus%20McGee",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "devin whitfield": {
+      "url": "https://scoutbasketball.com/img/players/images/Devin-Whitefield_1625847081_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Devin%20Whitfield",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alex antetokounmpo": {
+      "url": "https://scoutbasketball.com/img/players/images/Alex-Antetokounmpo_1623260095_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alex%20Antetokounmpo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "brandon boston jr": {
+      "url": "https://scoutbasketball.com/img/players/images/Brandon-Boston_1636467250_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Brandon%20Boston%20Jr",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "diego monaldi": {
+      "url": "https://scoutbasketball.com/img/players/images/Diego-Monaldi_1593712679_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Diego%20Monaldi",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "eimantas bendzius": {
+      "url": "https://scoutbasketball.com/img/players/images/Eimantas-Bendzius_1594151123_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Eimantas%20Bendzius",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jesse edwards": {
+      "url": "https://scoutbasketball.com/img/players/images/Jesse-Edwards_1610050629_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jesse%20Edwards",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "kylen milton": {
+      "url": "https://scoutbasketball.com/img/players/images/Kylen-Milton_1610064928_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kylen%20Milton",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "liam udom": {
+      "url": "https://scoutbasketball.com/img/players/images/liam-udom_1776139268_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Liam%20Udom",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "davids viksne": {
+      "url": "https://scoutbasketball.com/img/players/images/Davids-Viksne_1593713715_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=D%C4%81vids%20V%C4%ABksne",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "joel murray": {
+      "url": "https://scoutbasketball.com/img/players/images/Joel-Murray_1641736234_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Joel%20Murray",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jt thor": {
+      "url": "https://scoutbasketball.com/img/players/images/Jt-Thor_1636472245_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=JT%20Thor",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "luuk van bree": {
+      "url": "https://scoutbasketball.com/img/players/images/Luuk-Van-Bree_1594154681_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Luuk%20van%20Bree",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "michele serpilli": {
+      "url": "https://scoutbasketball.com/img/players/images/Michele-Serpilli_1593764528_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Michele%20Serpilli",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sigfredo casero-ortiz": {
+      "url": "https://scoutbasketball.com/img/players/images/Sigfredo-Casero-Ortiz_1593713532_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sigfredo%20Casero-Ortiz",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jd notae": {
+      "url": "https://scoutbasketball.com/img/players/images/Jd-Notae_1646839185_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=JD%20Notae",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "josiah strong": {
+      "url": "https://scoutbasketball.com/img/players/images/Josiah-Strong_1610139790_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Josiah%20Strong",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "karlis silins": {
+      "url": "https://scoutbasketball.com/img/players/images/Karlis-Silins_1594154590_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Karlis%20Silins",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marko josilo": {
+      "url": "https://scoutbasketball.com/img/players/images/Marko-Josilo_1593712873_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marko%20Jo%C5%A1ilo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marko ramljak": {
+      "url": "https://scoutbasketball.com/img/players/images/Marko-Ramljak_1594154412_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marko%20Ramljak",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "semaj christon": {
+      "url": "https://scoutbasketball.com/img/players/images/Semaj-Christon_1594154378_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Semaj%20Christon",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "skylar spencer": {
+      "url": "https://scoutbasketball.com/img/players/images/Skylar-Spencer_1594155011_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Skylar%20Spencer",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "stan van den elzen": {
+      "url": "https://scoutbasketball.com/img/players/images/Stan-Van-Den-Elzen_1593773138_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Stan%20van%20den%20Elzen",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "zac seljaas": {
+      "url": "https://scoutbasketball.com/img/players/images/Zac-Seljaas_1603074456_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Zac%20Seljaas",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "bryan antoine": {
+      "url": "https://scoutbasketball.com/img/players/images/Bryan-Antoine_1646842818_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Bryan%20Antoine",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "grant anticevich": {
+      "url": "https://scoutbasketball.com/img/players/images/Grant-Anticevich_1593768405_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Grant%20Anticevich",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "howard sant-roos": {
+      "url": "https://scoutbasketball.com/img/players/images/Howard-Sant-Roos_1732317917_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Howard%20Sant-Roos",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jonas valanciunas": {
+      "url": "https://scoutbasketball.com/img/players/images/jonas-valanciunas_1775358735_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jonas%20Valanciunas",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "julius mims": {
+      "url": "https://scoutbasketball.com/img/players/images/julius-mims_1775966902_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Julius%20Mims",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "kadin shedrick": {
+      "url": "https://scoutbasketball.com/img/players/images/Kadin-Shedrick_1610145240_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kadin%20Shedrick",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marcquise reed": {
+      "url": "https://scoutbasketball.com/img/players/images/Marcquise-Reed_1594147553_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marcquise%20Reed",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "noel coleman": {
+      "url": "https://scoutbasketball.com/img/players/images/Noel-Coleman_1593765258_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=No%C3%ABl%20Coleman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "roman penn": {
+      "url": "https://scoutbasketball.com/img/players/images/Roman-Penn_1609981420_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Roman%20Penn",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "xavier tillman": {
+      "url": "https://scoutbasketball.com/img/players/images/xavier-tillman_1776137203_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Xavier%20Tillman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "balsa zivanovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Balsa-Zivanovic_1593773549_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Bal%C5%A1a%20%C5%BDivanovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "conley garrison": {
+      "url": "https://scoutbasketball.com/img/players/images/Conley-Garrison_1641735707_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Conley%20Garrison",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "isaiah bigelow": {
+      "url": "https://scoutbasketball.com/img/players/images/Isaiah-Bigelow_1636552496_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Isaiah%20Bigelow",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jonathan beagle": {
+      "url": "https://scoutbasketball.com/img/players/images/Jonathan-Beagle_1667924287_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jonathan%20Beagle",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "lucas kruithof": {
+      "url": "https://scoutbasketball.com/img/players/images/lucas-kruithof_1776158988_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Lucas%20Kruithof",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "malcolm hill": {
+      "url": "https://scoutbasketball.com/img/players/images/Malcolm-Hill_1594154765_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Malcolm%20Hill",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alonzo gaffney": {
+      "url": "https://scoutbasketball.com/img/players/images/Alonzo-Gaffney_1646845341_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alonzo%20Gaffney",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "emir hadzibegovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Emir-Hadzibegovic_1600857204_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Emir%20Had%C5%BEibegovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "gabriel olaseni": {
+      "url": "https://scoutbasketball.com/img/players/images/Gabriel-Olaseni_1594151176_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Gabriel%20Olaseni",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jalon pipkins": {
+      "url": "https://scoutbasketball.com/img/players/images/Jalon-Pipkins_1664666610_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jalon%20Pipkins",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "marcus bingham": {
+      "url": "https://scoutbasketball.com/img/players/images/marcus-bingham-jr_1776134249_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Marcus%20Bingham",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "petar kovacevic": {
+      "url": "https://scoutbasketball.com/img/players/images/Petar-Kovacevic_1593772642_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Petar%20Kova%C4%8Devi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "terrell carter ii": {
+      "url": "https://scoutbasketball.com/img/players/images/Terrell-Carter-Ii_1594151196_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Terrell%20Carter%20II",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "lorenzo bucarelli": {
+      "url": "https://scoutbasketball.com/img/players/images/Lorenzo-Bucarelli_1593713535_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Lorenzo%20Bucarelli",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sitraka raharimanantoanina": {
+      "url": "https://scoutbasketball.com/img/players/images/Sitraka-Raharimanantoanina_1594154159_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sitraka%20Raharimanantoanina",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ezra manjon": {
+      "url": "https://scoutbasketball.com/img/players/images/Ezra-Manjon_1610055753_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ezra%20Manjon",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "alonzo verge jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/Alonzo-Verge-Jr_1646843878_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Alonzo%20Verge%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "brandon murray": {
+      "url": "https://scoutbasketball.com/img/players/images/Brandon-Murray-2002_1639071019_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Brandon%20Murray",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "demetre rivers": {
+      "url": "https://scoutbasketball.com/img/players/images/Demetre-Rivers_1594147582_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Demetre%20Rivers",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dovydas romancenko": {
+      "url": "https://scoutbasketball.com/img/players/images/Dovydas-Romancenko_1593767390_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dovydas%20Roman%C4%8Denko",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jamuni mcneace": {
+      "url": "https://scoutbasketball.com/img/players/images/Jamuni-Mcneace_1594147695_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jamuni%20McNeace",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jeff dowtin jr.": {
+      "url": "https://scoutbasketball.com/img/players/images/Jeff-Dowtin_1732315381_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jeff%20Dowtin%20Jr.",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jon axel gudmundsson": {
+      "url": "https://scoutbasketball.com/img/players/images/Jon-Axel-Gudmundsson_1594154688_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jon%20Axel%20Gudmundsson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "luca nastrut": {
+      "url": "https://scoutbasketball.com/img/players/images/Luca-Nastrut_1616739799_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Luca%20Nastrut",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nate darling": {
+      "url": "https://scoutbasketball.com/img/players/images/Nate-Darling_1594154716_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nate%20Darling",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "noah locke": {
+      "url": "https://scoutbasketball.com/img/players/images/Noah-Locke_1710876780_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Noah%20Locke",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ronaldo segu": {
+      "url": "https://scoutbasketball.com/img/players/images/Ronaldo-Segu_1726358178_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ronaldo%20Segu",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tevin brown": {
+      "url": "https://scoutbasketball.com/img/players/images/Tevin-Brown_1646840645_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tevin%20Brown",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tony snell": {
+      "url": "https://scoutbasketball.com/img/players/images/Tony-Snell_1732438982_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tony%20Snell",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "zahir porter": {
+      "url": "https://scoutbasketball.com/img/players/images/Zahir-Porter_1608797539_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Zahir%20Porter",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "adam somogyi": {
+      "url": "https://scoutbasketball.com/img/players/images/Adam-Somogyi_1593764450_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Adam%20Somogyi",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "artur konontsuk": {
+      "url": "https://scoutbasketball.com/img/players/images/Artur-Konontsuk_1594154813_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Artur%20Konontsuk",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "erikas venskus": {
+      "url": "https://scoutbasketball.com/img/players/images/Erikas-Venskus_1593764114_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Erikas%20Venskus",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "keeshawn kellman": {
+      "url": "https://scoutbasketball.com/img/players/images/Keeshawn-Kellman_1641746394_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Keeshawn%20Kellman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "lazar stefanovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Lazar-Stefanovic_1593771715_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Lazar%20Stefanovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "monyea pratt": {
+      "url": "https://scoutbasketball.com/img/players/images/Monyea-Pratt_1605085146_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Monyea%20Pratt",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "payton willis": {
+      "url": "https://scoutbasketball.com/img/players/images/Payton-Willis_1725792131_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Payton%20Willis",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tauras jogela": {
+      "url": "https://scoutbasketball.com/img/players/images/Tauras-Jogela_1594154383_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tauras%20Jogela",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ben burnham": {
+      "url": "https://scoutbasketball.com/img/players/images/Ben-Burnham_1641746315_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ben%20Burnham",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "chibuzo agbo": {
+      "url": "https://scoutbasketball.com/img/players/images/Chibuzo-Agbo_1610135449_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Chibuzo%20Agbo",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dewayne russell": {
+      "url": "https://scoutbasketball.com/img/players/images/Dewayne-Russell_1594154810_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=DeWayne%20Russell",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dragan milosavljevic": {
+      "url": "https://scoutbasketball.com/img/players/images/Dragan-Milosavljevic_1594151246_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dragan%20Milosavljevi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ej liddell": {
+      "url": "https://scoutbasketball.com/img/players/images/Ej-Liddell_1646841110_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=EJ%20Liddell",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "karl-johan lips": {
+      "url": "https://scoutbasketball.com/img/players/images/Karl-Johan-Lips_1603221376_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Karl-Johan%20Lips",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "luka sakota": {
+      "url": "https://scoutbasketball.com/img/players/images/Luka-Sakota_1594154872_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Luka%20Sakota",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "matija belic": {
+      "url": "https://scoutbasketball.com/img/players/images/Matija-Belic_1593773612_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Matija%20Beli%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "maurice ndour": {
+      "url": "https://scoutbasketball.com/img/players/images/Maurice-Ndour_1594154522_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Maurice%20Ndour",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "maxwell lewis": {
+      "url": "https://scoutbasketball.com/img/players/images/maxwell-lewis_1776149851_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Maxwell%20Lewis",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "michele vitali": {
+      "url": "https://scoutbasketball.com/img/players/images/Michele-Vitali_1732343298_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Michele%20Vitali",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "moritz krimmer": {
+      "url": "https://scoutbasketball.com/img/players/images/Moritz-Krimmer_1593768552_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Moritz%20Krimmer",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "raequan battle": {
+      "url": "https://scoutbasketball.com/img/players/images/Raequan-Battle_1610145280_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=RaeQuan%20Battle",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tudor fometescu": {
+      "url": "https://scoutbasketball.com/img/players/images/Tudor-Fometescu_1593773150_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tudor%20Fometescu",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dario saric": {
+      "url": "https://scoutbasketball.com/img/players/images/dario-saric_1775358766_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Dario%20Saric",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "gabe brown": {
+      "url": "https://scoutbasketball.com/img/players/images/Gabe-Brown_1646840597_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Gabe%20Brown",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jason burnell": {
+      "url": "https://scoutbasketball.com/img/players/images/Jason-Burnell_1594147587_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jason%20Burnell",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nate renfro": {
+      "url": "https://scoutbasketball.com/img/players/images/Nate-Renfro_1613065752_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nate%20Renfro",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "arturs strautins": {
+      "url": "https://scoutbasketball.com/img/players/images/arturs-strautins_1775356578_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Arturs%20Strautins",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "dusan beslac": {
+      "url": "https://scoutbasketball.com/img/players/images/Dusan-Beslac_1600858910_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Du%C5%A1an%20Besla%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jalyn mccreary": {
+      "url": "https://scoutbasketball.com/img/players/images/Jalyn-Mccreary_1610046115_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jalyn%20McCreary",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "lewis sullivan": {
+      "url": "https://scoutbasketball.com/img/players/images/Lewis-Sullivan_1594147635_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Lewis%20Sullivan",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "otis livingston ii": {
+      "url": "https://scoutbasketball.com/img/players/images/Otis-Livingston-Ii_1594148520_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Otis%20Livingston%20II",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ranko simovic": {
+      "url": "https://scoutbasketball.com/img/players/images/Ranko-Simovic_1594154065_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ranko%20Simovi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sam hofman": {
+      "url": "https://scoutbasketball.com/img/players/images/Sam-Hofman_1594154634_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sam%20Hofman",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jaylen sims": {
+      "url": "https://scoutbasketball.com/img/players/images/Jaylen-Sims_1610058871_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jaylen%20Sims",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "frank bartley": {
+      "url": "https://scoutbasketball.com/img/players/images/Frank-Bartley_1594155218_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Frank%20Bartley",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ibi watson": {
+      "url": "https://scoutbasketball.com/img/players/images/Ibi-Watson_1609980262_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ibi%20Watson",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "aljaz kunc": {
+      "url": "https://scoutbasketball.com/img/players/images/Aljaz-Kunc_1594154668_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Aljaz%20Kunc",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "devon daniels": {
+      "url": "https://scoutbasketball.com/img/players/images/Devon-Daniels_1610140977_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Devon%20Daniels",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "elwin ndjock": {
+      "url": "https://scoutbasketball.com/img/players/images/Elwin-Ndjock_1593768497_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Elwin%20Ndjock",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jamiya neal": {
+      "url": "https://scoutbasketball.com/img/players/images/Jamiya-Neal_1636541996_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jamiya%20Neal",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "le'tre darthard": {
+      "url": "https://scoutbasketball.com/img/players/images/Letre-Darthard_1618001780_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Le'Tre%20Darthard",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nenad dimitrijevic": {
+      "url": "https://scoutbasketball.com/img/players/images/Nenad-Dimitrijevic_1593765857_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nenad%20Dimitrijevi%C4%87",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "raiquan gray": {
+      "url": "https://scoutbasketball.com/img/players/images/Raiquan-Gray_1732315473_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=RaiQuan%20Gray",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "tajion jones": {
+      "url": "https://scoutbasketball.com/img/players/images/Tajion-Jones_1610058395_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Tajion%20Jones",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nicolae bogdan nicolescu": {
+      "url": "https://scoutbasketball.com/img/players/images/Nicolae-Bogdan-Nicolescu_1593761702_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nicolae%20Bogdan%20Nicolescu",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "peter hemschemeier": {
+      "url": "https://scoutbasketball.com/img/players/images/Peter-Hemschemeier_1594153598_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Peter%20Hemschemeier",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "jokubas rudaitis": {
+      "url": "https://scoutbasketball.com/img/players/images/Jokubas-Rudaitis_1722781710_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Jokubas%20Rudaitis",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "ron curry": {
+      "url": "https://scoutbasketball.com/img/players/images/Ron-Curry_1594154216_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Ron%20Curry",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "trevor hudgins": {
+      "url": "https://scoutbasketball.com/img/players/images/Trevor-Hudgins_1652100917_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Trevor%20Hudgins",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "vince t'joncke": {
+      "url": "https://scoutbasketball.com/img/players/images/Vince-Tjoncke_1753622249_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Vince%20T'Joncke",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "filip barna": {
+      "url": "https://scoutbasketball.com/img/players/images/Filip-Barna_1623252027_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Filip%20Barna",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "martynas echodas": {
+      "url": "https://scoutbasketball.com/img/players/images/Martynas-Echodas_1593764669_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Martynas%20Echodas",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nazareth mitrou-long": {
+      "url": "https://scoutbasketball.com/img/players/images/Nazareth-Mitrou-Long_1594154701_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nazareth%20Mitrou-Long",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "nikola djurisic": {
+      "url": "https://scoutbasketball.com/img/players/images/Nikola-Djurisic_1593773609_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nikola%20Djurisic",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "sandy cohen iii": {
+      "url": "https://scoutbasketball.com/img/players/images/Sandy-Cohen-Iii_1594147939_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Sandy%20Cohen%20III",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "warren washington": {
+      "url": "https://scoutbasketball.com/img/players/images/Warren-Washington_1610141002_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Warren%20Washington",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
+    },
+    "troy koehler": {
+      "url": "https://scoutbasketball.com/img/players/images/Troy-Koehler_1593765453_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Troy%20Koehler",
+      "provider": "ScoutBasketball",
+      "season": "Profile photo"
     }
   }
 }
