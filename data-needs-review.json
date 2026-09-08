@@ -1,0 +1,18 @@
+{
+  "reason": "Invalid status or date. Excluded from the public feed pending source verification.",
+  "items": [
+    {
+      "id": "br-b67d13dc44ac",
+      "player": "Kristof Michiels",
+      "pos": "coach",
+      "from": "?",
+      "to": "Leuven Bears",
+      "status": "?",
+      "league": "BNXT",
+      "date": "2026-06-24",
+      "source_url": "https://bnxtleague.com/en/newsvideo/leuven-bears-sign-carl-cleveland",
+      "source_name": "BNXT League Official",
+      "nationality": "Belgium"
+    }
+  ]
+}

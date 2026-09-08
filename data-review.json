@@ -1,6 +1,11 @@
 {
-  "generated_at": "2026-09-08T12:00:00Z",
-  "count": 38,
+  "reviewed_on": "2026-09-08",
+  "coverage": "30 listed source endpoints inspected or attempted, plus club announcements and other public reporting. Targeted backfill, not exhaustive; some pages blocked or cached.",
+  "added": 37,
+  "updated": 1,
+  "quarantined": 1,
+  "public_records": 1078,
+  "report_date_records": 19,
   "items": [
     {
       "id": "review-20260908-0",

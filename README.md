@@ -1,59 +1,36 @@
-EuroBall Moves — Scraper
-Automatically scrapes 36 European basketball news sources every 30 minutes and writes structured JSON that the EuroBall Moves tracker reads live.
+# EuroBall Moves
 
-Files
-File	Purpose
-scrape.py	Main scraper — fetches all sources, parses articles, writes JSON
-transfers_new.json	Only entries found since last run (read by the HTML tracker)
-transfers_all.json	Full archive of every entry ever scraped
-.github/workflows/scrape.yml	GitHub Actions schedule (every 30 min)
-How it works
-GitHub Actions triggers scrape.py every 30 minutes
-The scraper fetches all 36 sites in the URL database
-New articles (not seen before) are written to transfers_new.json
-The workflow commits the updated JSON back to the repo
-The EuroBall Moves HTML page fetches transfers_new.json on "Fetch Latest"
-Setup (one-time)
-1. Add this to your existing EB-scrape repo
-```bash
+European basketball transfer news on GitHub Pages. The September 2026 update implements the approved Clear Court (design A) direction with responsive transfer rows, mobile filters, team browsing and a source directory.
 
-Copy scrape.py and the workflow file into your repo
-cp scrape.py /path/to/EB-scrape/ cp -r .github /path/to/EB-scrape/ cd /path/to/EB-scrape git add scrape.py .github/ git commit -m "Add EuroBall Moves scraper" git push ```
+## Files
 
-2. Enable GitHub Actions
-Go to your repo → Actions tab → enable workflows if prompted.
+- `index.html`, `styles.css`, `app.mjs`: static, dependency-free UI.
+- `data-core.mjs`: normalization, event deduplication and filtering.
+- `transfers_all.json`: public records plus preserved `_visited` crawler markers. `count` includes markers; `public_count` excludes them. Rendering always excludes markers and invalid entries.
+- `transfers_new.json`: latest reviewed batch.
+- `sources.json`: source directory and review coverage notes.
+- `data-review.json`: latest source-review date and import log.
+- `data-needs-review.json`: quarantined malformed entries, retained for correction.
+- `rss.xml`: recent transfer feed.
 
-3. Connect the HTML tracker to this repo
-In euroball-verified-targets.html, the "Fetch Latest" button will read from:
+## Preview and verify
 
-https://raw.githubusercontent.com/blazerculj-max/EB-scrape/main/transfers_new.json
+Serve this directory using a static HTTP server (ES modules cannot load through `file://`). For example, run `python -m http.server 8000` and visit `http://localhost:8000`.
 
-This URL always returns the latest scraped data, no authentication needed (public repo).
+Run `node --test data-core.test.mjs` (Node 18+).
 
-4. Test manually
-bash python scrape.py
+## Data policy
 
-Or trigger from GitHub: Actions → EuroBall Moves Scrape → Run workflow
+Keep direct article URLs, event dates, status and source name. A `verified_at` date means the cited transfer story was checked on that date. It does not mean the whole historical archive was reverified. When only a retrospective report date is available, set `date_basis: "report_date"`; the UI labels it Reported. Unknown origin, position or contract details remain unspecified.
 
-Parsers
-Parser	Sites	Method
-nextdata	EuroLeague, EuroCup	Extracts __NEXT_DATA__ JSON from Next.js pages — gets full article list with dates/teasers
-aba	ABA Liga (3 pages)	Regex on /news/NNNNN/ link patterns in HTML
-sportando	Sportando	Regex on <h2><a href> patterns + date extraction from DD/MM/YYYY text
-generic	All other 29 sites	General <h2>/<h3>/<div> article link parser with multilingual status keywords (English, Serbian, Croatian, Polish, Romanian, Greek, Turkish)
-Output format (transfers_new.json)
-json { "generated_at": "2026-06-19T14:30:00+00:00", "count": 5, "items": [ { "id": "nd-marek-blazevic-rejoins-zalgiri", "player": "Marek Blazevic rejoins Zalgiris after four years away", "pos": "?", "from": "?", "to": "?", "league": "EuroLeague", "status": "signed", "date": "2026-06-19", "summary": "Marek Blazevic rejoins Zalgiris after four years away", "source_name": "EuroLeague Official", "source_url": "https://www.euroleaguebasketball.net/en/euroleague/news/marek-blazevic-rejoins-zalgiris-after-four-years-away/", "_isNew": true } ] }
+Distinct dates and statuses are separate events. Same-player/destination/status/date duplicates merge source links and retain alias IDs. A confirmed signing can retain its previous rumor in `history`. Team pages show news activity, not guaranteed current rosters.
 
-Note: player, from, to contain the article headline until a more advanced NLP step parses them — the HTML tracker displays the full headline as-is for scraped entries, which is already useful for navigation.
+## Local edits
 
-Scheduling
-Default schedule: - Every 30 minutes from 06:00–23:00 UTC (peak transfer announcement hours) - Every 2 hours overnight (00:00–06:00 UTC)
+More → Add a transfer locally or open a player → Edit locally. Changes stay in browser storage and are labeled Local edit. More → Export local changes downloads the edits/additions for review and publication; it does not update GitHub automatically. Existing local edits/additions from the previous interface remain supported.
 
-To change, edit .github/workflows/scrape.yml → cron expressions.
+## Publishing and updates
 
-Extending
-To add a new source, add one dict to SOURCES in scrape.py:
+GitHub Pages serves this repository. The existing Python scripts and manual GitHub Actions workflows remain available. Scheduled scraping is disabled. Reload published data re-downloads the published JSON; it does not search external websites. Source pages may block scraping, so review scraped output before publishing. Update `data-review.json` only after a human/source review, independently of scraper timestamps.
 
-python {"name": "New Site Name", "url": "https://example.com/news/", "league": "EuroLeague", "parser": "generic"},
-
-Then push to GitHub — it'll be picked up on the next scheduled run.
+Source sweep on 8 September 2026: 37 additions and one rumor-to-signing update. Nineteen entries use clearly labeled report dates. Coverage spans the 30 listed endpoints plus direct club sources; some endpoints were inaccessible or returned older cached content. This is a targeted backfill, not a claim of exhaustive coverage.
