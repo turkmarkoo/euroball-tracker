@@ -34,3 +34,7 @@ More → Add a transfer locally or open a player → Edit locally. Changes stay 
 GitHub Pages serves this repository. The existing Python scripts and manual GitHub Actions workflows remain available. Scheduled scraping is disabled. Reload published data re-downloads the published JSON; it does not search external websites. Source pages may block scraping, so review scraped output before publishing. Update `data-review.json` only after a human/source review, independently of scraper timestamps.
 
 Source sweep on 8 September 2026: 37 additions and one rumor-to-signing update. Nineteen entries use clearly labeled report dates. Coverage spans the 30 listed endpoints plus direct club sources; some endpoints were inaccessible or returned older cached content. This is a targeted backfill, not a claim of exhaustive coverage.
+
+## Compact table and media update
+
+Header and column headings stick while scrolling. Brand remains a homepage link without hover underlining. Desktop transfer rows are about 60px tall, with separate From and To columns; mobile uses compact stacked rows. `media.json` maps normalized names to 73 official remote club crests and 215 player portraits. Names without a reliable match use initials, as do failed image requests. Portraits can depict previous-season uniforms and are not evidence of current club membership. Media sources and seasons are retained in the registry. No new public hosting address was created.

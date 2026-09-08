@@ -1,0 +1,2018 @@
+{
+  "reviewed_on": "2026-09-08",
+  "note": "Official remote media. Portraits can show a previous season uniform. Images do not establish a player’s current team. Unmatched names use initials.",
+  "clubs": {
+    "anadolu efes istanbul": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "anadolu efes": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "armani olimpia milan": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "milan": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "ea7 emporio armani milan": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "olimpia milano": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "armani milan": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "besiktas istanbul": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/b05e3c54-e672-4b31-9f86-c91e9de7715c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "besiktas": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/b05e3c54-e672-4b31-9f86-c91e9de7715c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "crvena zvezda meridianbet belgrade": {
+      "url": "https://media-cdn.incrowdsports.com/d2eef4a8-62df-4fdd-9076-276004268515.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "crvena zvezda": {
+      "url": "https://media-cdn.incrowdsports.com/d2eef4a8-62df-4fdd-9076-276004268515.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "dubai basketball": {
+      "url": "https://media-cdn.incrowdsports.com/1efae090-16e2-4963-ae47-4b94f249c244.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "dubai": {
+      "url": "https://media-cdn.incrowdsports.com/1efae090-16e2-4963-ae47-4b94f249c244.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "barcelona": {
+      "url": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bayern munich": {
+      "url": "https://media-cdn.incrowdsports.com/817b0e58-d595-4b09-ab0b-1e7cc26249ff.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "fenerbahce tarfin istanbul": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "fenerbahce beko": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "fenerbahce beko istanbul": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "hapoel ibi tel aviv": {
+      "url": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "hapoel tlv": {
+      "url": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "hapoel tel aviv": {
+      "url": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "kosner baskonia vitoria-gasteiz": {
+      "url": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "baskonia": {
+      "url": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "saski baskonia": {
+      "url": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "ldlc asvel villeurbanne": {
+      "url": "https://media-cdn.incrowdsports.com/e33c6d1a-95ca-4dbc-b8cb-0201812104cc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "ldlc asvel": {
+      "url": "https://media-cdn.incrowdsports.com/e33c6d1a-95ca-4dbc-b8cb-0201812104cc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "maccabi rapyd tel aviv": {
+      "url": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "maccabi": {
+      "url": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "maccabi tel aviv": {
+      "url": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "olympiacos piraeus": {
+      "url": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "olympiacos": {
+      "url": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "olympiacos bc": {
+      "url": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "panathinaikos aktor athens": {
+      "url": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "panathinaikos": {
+      "url": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "panathinaikos bc": {
+      "url": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "paris basketball": {
+      "url": "https://media-cdn.incrowdsports.com/a033e5b3-0de7-48a3-98d9-d9a4b9df1f39.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "paris": {
+      "url": "https://media-cdn.incrowdsports.com/a033e5b3-0de7-48a3-98d9-d9a4b9df1f39.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "partizan mozzart bet belgrade": {
+      "url": "https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "real madrid": {
+      "url": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "valencia basket": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "valencia": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "virtus bologna": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvk/a92d4c3b-9f9c-4163-8a10-bcf8fc15893e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "zalgiris kaunas": {
+      "url": "https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "aris thessaloniki": {
+      "url": "https://media-cdn.cortextech.io/77e0fd97-1489-4e3c-8e70-ca39075460c0.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "aris": {
+      "url": "https://media-cdn.cortextech.io/77e0fd97-1489-4e3c-8e70-ca39075460c0.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "baglietto derthona tortona": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrc/19eaac50-84b7-4716-8de7-fbd0980abfc3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "derthona": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrc/19eaac50-84b7-4716-8de7-fbd0980abfc3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bahcesehir college istanbul": {
+      "url": "https://media-cdn.incrowdsports.com/1d3274d8-da86-4d21-9e97-6810ab88babe.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bahcesehir": {
+      "url": "https://media-cdn.incrowdsports.com/1d3274d8-da86-4d21-9e97-6810ab88babe.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bahcesehir koleji istanbul": {
+      "url": "https://media-cdn.incrowdsports.com/1d3274d8-da86-4d21-9e97-6810ab88babe.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "balkan botevgrad": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/ba6e2d99-3ea9-4730-a0ce-830cccca4657.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "balkan": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/ba6e2d99-3ea9-4730-a0ce-830cccca4657.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bc balkan botevgrad": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/ba6e2d99-3ea9-4730-a0ce-830cccca4657.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bosna bh telecom sarajevo": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOJl/0024f0d4-55d9-4ed0-be41-68c0e90c41d5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bosna": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOJl/0024f0d4-55d9-4ed0-be41-68c0e90c41d5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bosna sarajevo": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOJl/0024f0d4-55d9-4ed0-be41-68c0e90c41d5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "bosna bh telecom": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOJl/0024f0d4-55d9-4ed0-be41-68c0e90c41d5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "buducnost voli podgorica": {
+      "url": "https://media-cdn.incrowdsports.com/47161285-94b3-4266-9d23-b722e8600945.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "buducnost voli": {
+      "url": "https://media-cdn.incrowdsports.com/47161285-94b3-4266-9d23-b722e8600945.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "kk buducnost": {
+      "url": "https://media-cdn.incrowdsports.com/47161285-94b3-4266-9d23-b722e8600945.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "cedevita olimpija ljubljana": {
+      "url": "https://media-cdn.incrowdsports.com/73b33d13-570e-4e49-a9cb-fe806831eaa7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "cedevita olimp": {
+      "url": "https://media-cdn.incrowdsports.com/73b33d13-570e-4e49-a9cb-fe806831eaa7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "kk cedevita olimpija": {
+      "url": "https://media-cdn.incrowdsports.com/73b33d13-570e-4e49-a9cb-fe806831eaa7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "cedevita olimpija": {
+      "url": "https://media-cdn.incrowdsports.com/73b33d13-570e-4e49-a9cb-fe806831eaa7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "cosea jl bourg-en-bresse": {
+      "url": "https://media-cdn.incrowdsports.com/d4225e1b-7c1b-4382-98d4-ca8511c64441.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "cosea jl bourg": {
+      "url": "https://media-cdn.incrowdsports.com/d4225e1b-7c1b-4382-98d4-ca8511c64441.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "jl bourg": {
+      "url": "https://media-cdn.incrowdsports.com/d4225e1b-7c1b-4382-98d4-ca8511c64441.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "dolomiti energia trento": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCcz1CG/e4ce6137-6d3f-4072-9480-c0b9a9cd617d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "trento": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCcz1CG/e4ce6137-6d3f-4072-9480-c0b9a9cd617d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "hapoel midtown jerusalem": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvp/6d6e8da8-550f-4d1f-8a06-4611227e0c31.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "hapoel jlm": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvp/6d6e8da8-550f-4d1f-8a06-4611227e0c31.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "hapoel  midtown jerusalem": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvp/6d6e8da8-550f-4d1f-8a06-4611227e0c31.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "hapoel jerusalem": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezvp/6d6e8da8-550f-4d1f-8a06-4611227e0c31.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "kids&us manresa": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/06792bed-0383-4de2-80b9-95ecca3fd973.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "k&u manresa": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/06792bed-0383-4de2-80b9-95ecca3fd973.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "baxi manresa": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/06792bed-0383-4de2-80b9-95ecca3fd973.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "la laguna tenerife": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/59bf7582-6c0b-4e14-bce6-1380aad90f34.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "ll tenerife": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/59bf7582-6c0b-4e14-bce6-1380aad90f34.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "club baloncesto canarias": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/59bf7582-6c0b-4e14-bce6-1380aad90f34.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "le mans sarthe basket": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/b8ec3298-5030-4865-8469-722a21b471c3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "le mans sarthe": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/b8ec3298-5030-4865-8469-722a21b471c3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "lietkabelis panevezys": {
+      "url": "https://media-cdn.cortextech.io/ffcb6e37-31f4-48f6-91c2-a8c9a6f791a9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "lietkabelis": {
+      "url": "https://media-cdn.cortextech.io/ffcb6e37-31f4-48f6-91c2-a8c9a6f791a9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "london lions": {
+      "url": "https://media-cdn.cortextech.io/102de468-9e41-4b8e-b44d-23bebb9e916f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "london": {
+      "url": "https://media-cdn.cortextech.io/102de468-9e41-4b8e-b44d-23bebb9e916f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "maxima roma": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/f1547a87-c0bf-41ab-bf7e-a0001649430d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "napoli basketball": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/c2de1d20-72f4-4453-95de-b4534db6d57f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "napoli": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/c2de1d20-72f4-4453-95de-b4534db6d57f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "napoli basket": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/c2de1d20-72f4-4453-95de-b4534db6d57f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "neptunas klaipeda": {
+      "url": "https://media-cdn.cortextech.io/ed0df5cd-c9e4-4387-bcd4-3606270cd255.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "neptunas": {
+      "url": "https://media-cdn.cortextech.io/ed0df5cd-c9e4-4387-bcd4-3606270cd255.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "niners chemnitz": {
+      "url": "https://media-cdn.cortextech.io/75ae96be-69f9-4e48-b5bd-b1056842db57.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "chemnitz": {
+      "url": "https://media-cdn.cortextech.io/75ae96be-69f9-4e48-b5bd-b1056842db57.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "paok thessaloniki": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/0506e7c4-ec4b-460a-bc59-b033ad9e336c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "paok": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/0506e7c4-ec4b-460a-bc59-b033ad9e336c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "paok bc": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/0506e7c4-ec4b-460a-bc59-b033ad9e336c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "ratiopharm ulm": {
+      "url": "https://media-cdn.cortextech.io/5750bc8b-dd63-48e4-8586-10d4e5e2b4e2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "ulm": {
+      "url": "https://media-cdn.cortextech.io/5750bc8b-dd63-48e4-8586-10d4e5e2b4e2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "recoletas salud san pablo burgos": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/40c97670-177e-4c74-9f5f-76b528a0da86.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "burgos": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/40c97670-177e-4c74-9f5f-76b528a0da86.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "san pablo burgos": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/40c97670-177e-4c74-9f5f-76b528a0da86.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "riga zelli": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/0ab8fe2a-5972-48c5-bdff-f5159ca0abe7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "rigas zelli": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/0ab8fe2a-5972-48c5-bdff-f5159ca0abe7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "roma basketball": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/3641df7e-23f2-40d4-8273-27947903a3f7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "roma": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/3641df7e-23f2-40d4-8273-27947903a3f7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "basketball club roma": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/3641df7e-23f2-40d4-8273-27947903a3f7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "rostock seawolves": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/de14cdb9-c0f7-485f-84ac-f305ace44723.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "rostock": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/de14cdb9-c0f7-485f-84ac-f305ace44723.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "siauliai basketball": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/55a49aa3-e91f-45cc-88d0-670896ce5825.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "siauliai": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/55a49aa3-e91f-45cc-88d0-670896ce5825.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "skyliners frankfurt": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/6afb32b8-e6dc-4f79-b14a-2d99fdb34cde.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "skyliners": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCpC/6afb32b8-e6dc-4f79-b14a-2d99fdb34cde.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "slask wroclaw": {
+      "url": "https://media-cdn.incrowdsports.com/0415061b-5374-4a0d-bc04-8fcbc8ad0bb3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "slask": {
+      "url": "https://media-cdn.incrowdsports.com/0415061b-5374-4a0d-bc04-8fcbc8ad0bb3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "tofas bursa": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/72e5c4e0-abe1-43ce-bfb7-dcb025bb4adc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "tofas": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/72e5c4e0-abe1-43ce-bfb7-dcb025bb4adc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "turk telekom ankara": {
+      "url": "https://media-cdn.incrowdsports.com/4ba35608-54ca-4800-a59c-f2571e6f8e13.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "turk telekom": {
+      "url": "https://media-cdn.incrowdsports.com/4ba35608-54ca-4800-a59c-f2571e6f8e13.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "ubt cluj-napoca": {
+      "url": "https://media-cdn.incrowdsports.com/ae3e2844-0615-41bb-a788-a4f0d54b8d5e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "u-bt cluj": {
+      "url": "https://media-cdn.incrowdsports.com/ae3e2844-0615-41bb-a788-a4f0d54b8d5e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "umana reyer venice": {
+      "url": "https://media-cdn.incrowdsports.com/104f5074-9f23-47da-a21f-f2078db8244c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "reyer venice": {
+      "url": "https://media-cdn.incrowdsports.com/104f5074-9f23-47da-a21f-f2078db8244c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "reyer venezia": {
+      "url": "https://media-cdn.incrowdsports.com/104f5074-9f23-47da-a21f-f2078db8244c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/clubs",
+      "provider": "Euroleague Basketball"
+    },
+    "mega superbet": {
+      "url": "https://www.aba-liga.com/images/club/50x50/33.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "fmp": {
+      "url": "https://www.aba-liga.com/images/club/50x50/17.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "dynamic vip pay": {
+      "url": "https://www.aba-liga.com/images/club/50x50/42.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "igokea m:tel": {
+      "url": "https://www.aba-liga.com/images/club/50x50/30.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "vienna": {
+      "url": "https://www.aba-liga.com/images/club/50x50/101.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "vrsac meridianbet": {
+      "url": "https://www.aba-liga.com/images/club/50x50/21.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "spartak office shoes": {
+      "url": "https://www.aba-liga.com/images/club/50x50/91.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "krka": {
+      "url": "https://www.aba-liga.com/images/club/50x50/10.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "slovan bratislava": {
+      "url": "https://www.aba-liga.com/images/club/50x50/110.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "sc derby": {
+      "url": "https://www.aba-liga.com/images/club/50x50/74.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "perspektiva ilirija": {
+      "url": "https://www.aba-liga.com/images/club/50x50/92.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "borac mozzart": {
+      "url": "https://www.aba-liga.com/images/club/50x50/43.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "cibona": {
+      "url": "https://www.aba-liga.com/images/club/50x50/2.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "hkk siroki tt kabeli": {
+      "url": "https://www.aba-liga.com/images/club/50x50/6.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "sutjeska elektroprivreda": {
+      "url": "https://www.aba-liga.com/images/club/50x50/37.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "zadar": {
+      "url": "https://www.aba-liga.com/images/club/50x50/3.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "partizan mozzart bet": {
+      "url": "https://www.aba-liga.com/images/club/50x50/22.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "mladost maxbet": {
+      "url": "https://www.aba-liga.com/images/club/50x50/73.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "vojvodina mts": {
+      "url": "https://www.aba-liga.com/images/club/50x50/82.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "szolnoki olaj": {
+      "url": "https://www.aba-liga.com/images/club/50x50/31.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    },
+    "bc vienna": {
+      "url": "https://www.aba-liga.com/images/club/150x150/101.png?v=2026-08-28v1",
+      "source": "https://www.aba-liga.com/",
+      "provider": "ABA League"
+    }
+  },
+  "players": {
+    "sertac sanli": {
+      "url": "https://media-cdn.cortextech.io/4211f238-7df7-4b33-bd67-74448868f59f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "matthew hurt": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqcfx/889557fe-0b7c-4d37-8414-1a843a0acf59.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "jordan ford": {
+      "url": "https://media-cdn.cortextech.io/de19c455-2e49-461d-9a3b-acd0c6f194e9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "eli brooks": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqck7/74c52ff3-f9c1-4a9b-a928-95b9fa00b257.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "ferran bassas": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqck7/5cda44b7-3931-4539-970b-b21102ffaf19.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "ross williams": {
+      "url": "https://media-cdn.cortextech.io/118599b6-7824-4ee3-a6c7-82b0a87141ae.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "kyle alexander": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqcoH/47a0fad4-39c0-4eb8-b242-472eccd796bd.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "zoran nikolic": {
+      "url": "https://media-cdn.cortextech.io/47a6e42c-b192-4b56-b358-952ceaca9c78.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "karolis lukosiunas": {
+      "url": "https://media-cdn.cortextech.io/231bf007-4a03-4e84-9f8b-a05a5acddc56.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "aaryn rai": {
+      "url": "https://media-cdn.cortextech.io/da2cb0b3-7142-4d52-aa6c-3f05f84e6545.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "shavar reynolds": {
+      "url": "https://media-cdn.cortextech.io/3672c9d4-d1c8-4a37-bf20-49f9e04162e4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "mo soluade": {
+      "url": "https://media-cdn.cortextech.io/395887be-d1b8-483f-9e60-289a7b05ad5f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "amin adamu": {
+      "url": "https://media-cdn.cortextech.io/cccb2693-6575-4ab3-b161-c37aa1f3bd83.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "kyle allman": {
+      "url": "https://media-cdn.cortextech.io/583dedf2-2233-4942-9e4b-36c8e895c382.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "khalif battle": {
+      "url": "https://media-cdn.cortextech.io/c7c9bb2a-2792-418c-bf76-477b06e6e031.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "benedikt turudic": {
+      "url": "https://media-cdn.cortextech.io/2602f0b7-5e20-4c89-b6a9-8b6d5c2a842a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "kyle wiltjer": {
+      "url": "https://media-cdn.cortextech.io/c5ac1d3b-f835-48b3-8d8a-d38f74b503aa.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "kris bankston": {
+      "url": "https://media-cdn.cortextech.io/7f4860d7-6420-45c3-afe5-a00b52b5187c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "tyler cavanaugh": {
+      "url": "https://media-cdn.cortextech.io/6b0b660e-c01a-419f-bfa3-e03ccb6f7dcf.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "nathan mensah": {
+      "url": "https://media-cdn.cortextech.io/11a6db2e-4364-4e6f-82c8-8e1137f184a5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "dusan miletic": {
+      "url": "https://media-cdn.cortextech.io/6e7b25a3-f096-4e25-8f5b-48f00b42c9f4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "alessandro lever": {
+      "url": "https://media-cdn.cortextech.io/59e1f236-4e6d-4d40-80a9-f2b9a3431468.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "carlos stewart": {
+      "url": "https://media-cdn.cortextech.io/411f47d4-55bf-4f3a-9b06-dbb5d317570d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "kristian kullamae": {
+      "url": "https://media-cdn.cortextech.io/deb840ef-fa0a-4e39-a936-2a1e7664eba6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "denzel valentine": {
+      "url": "https://media-cdn.cortextech.io/9c5c30b9-a525-4d6e-8d2a-d01c09346efd.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "stefan nikolic": {
+      "url": "https://media-cdn.cortextech.io/758df4ca-9087-4a82-9254-a42ae16f638b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "rj cole": {
+      "url": "https://media-cdn.cortextech.io/ed90e95e-6fc6-4d32-aee4-d093561ab10b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "iverson molinar": {
+      "url": "https://media-cdn.cortextech.io/fc6290e3-0b14-41fe-b114-3860f50b7d90.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "yavuz gultekin": {
+      "url": "https://media-cdn.cortextech.io/e560a883-4606-43b2-ac06-0a70c6e526ab.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "dogus ozdemiroglu": {
+      "url": "https://media-cdn.cortextech.io/5f00f0a8-1923-4c3f-906a-d86332a23c05.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "jaleen smith": {
+      "url": "https://media-cdn.cortextech.io/4a008cf5-4e42-49aa-ad32-2dcc12ae9565.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "emircan kosut": {
+      "url": "https://media-cdn.cortextech.io/5218bcb0-85ed-46b2-b9e4-0e207eeed179.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "noah kirkwood": {
+      "url": "https://media-cdn.cortextech.io/3f405e82-c885-4461-a85f-0bcca165cfb4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "tobias jensen": {
+      "url": "https://media-cdn.cortextech.io/8673a96f-5198-405a-8061-c9af14d84d04.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "hunter hale": {
+      "url": "https://media-cdn.cortextech.io/c23ade59-8fc4-4404-81bd-38edde758bb1.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "malachi flynn": {
+      "url": "https://media-cdn.cortextech.io/060edd55-3e00-452a-b13e-ac2d0c506807.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "balsa koprivica": {
+      "url": "https://media-cdn.cortextech.io/c6a7ff2f-a4da-4ac0-9a7c-3236f143336a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "caleb homesley": {
+      "url": "https://media-cdn.cortextech.io/0d3640a2-d499-462b-8d27-02fac053abfc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "anthony lamb": {
+      "url": "https://media-cdn.cortextech.io/e8fa2ffe-1a82-4209-b67c-a0ac065ef59f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "cassius winston": {
+      "url": "https://media-cdn.cortextech.io/5557d8ff-48d9-4f0e-b51b-4860cfadbae7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "austin wiley": {
+      "url": "https://media-cdn.cortextech.io/aeb8cb54-ca92-4b6b-b827-9c217bf9bb47.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "jared harper": {
+      "url": "https://media-cdn.cortextech.io/9556b515-a1de-44cb-8995-98a907f07051.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "justin smith": {
+      "url": "https://media-cdn.cortextech.io/7b350b03-177c-4bd6-860e-25d25e1c7026.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "both gach": {
+      "url": "https://media-cdn.cortextech.io/39d31483-be50-4741-afe4-d0ab3bfb2967.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "mindaugas girdziunas": {
+      "url": "https://media-cdn.cortextech.io/e4c99d99-0ccf-4839-85ad-dfb5c513dea7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "gabrielius maldunas": {
+      "url": "https://media-cdn.cortextech.io/11b230d7-ea27-45cf-84a3-ae27c92f8c39.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "andrej jakimovski": {
+      "url": "https://media-cdn.cortextech.io/b279a163-79cf-4567-943f-5e4e470f2cbc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "selom mawugbe": {
+      "url": "https://media-cdn.cortextech.io/79ed8fdb-8a1e-44e8-a029-89346606551f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "devante jones": {
+      "url": "https://media-cdn.cortextech.io/73a6da90-93bb-438e-b0e8-6db8cfa650c9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "dj steward": {
+      "url": "https://media-cdn.cortextech.io/8163227a-e1a5-4219-907b-196214ad7637.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "adam mokoka": {
+      "url": "https://media-cdn.cortextech.io/22cefa56-3c5f-48f5-bd5d-005dd5cf2866.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "nikos chougkaz": {
+      "url": "https://media-cdn.cortextech.io/27bceeea-19d0-4350-81a6-27761475858c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "aleksej nikolic": {
+      "url": "https://media-cdn.cortextech.io/f5a6caf4-351c-42e7-8cdd-d87f436778db.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "joseph girard iii": {
+      "url": "https://media-cdn.cortextech.io/44c3e441-0c60-4898-90db-07b51a963e45.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "umoja gibson": {
+      "url": "https://media-cdn.cortextech.io/be7ac987-733b-4c31-b7d0-a679cc9bf90e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "d.j. stewart jr.": {
+      "url": "https://media-cdn.cortextech.io/dd9bcf27-807d-4de7-8797-5b659b95eb0a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "axel bouteille": {
+      "url": "https://media-cdn.cortextech.io/567525ba-cd28-466c-ab18-f1904605c35f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "jerry boutsiele": {
+      "url": "https://media-cdn.cortextech.io/ca9c54d3-1fa1-47ec-baa0-dbe93f5bf429.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "nikola tanaskovic": {
+      "url": "https://media-cdn.cortextech.io/1cd19615-a232-496a-bb56-c71fcb881178.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "fletcher magee": {
+      "url": "https://media-cdn.cortextech.io/db107d82-1a19-45e2-b69c-a26574d7fc69.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "yigit arslan": {
+      "url": "https://media-cdn.cortextech.io/1d14fb49-4cc6-4e34-9181-cc092a0d4570.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "berk ugurlu": {
+      "url": "https://media-cdn.cortextech.io/2102941b-eb57-41e1-9907-a05a2db5615b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "jonah mathews": {
+      "url": "https://media-cdn.cortextech.io/86da3efe-fd63-4792-a3ed-2821caf91ae6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "trevion williams": {
+      "url": "https://media-cdn.cortextech.io/d7e5006a-fc34-42fb-a7c3-44db1e52fd05.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "ismet akpinar": {
+      "url": "https://media-cdn.cortextech.io/eddcba30-cc4f-45e5-bebc-74c170ed48b1.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "alex reyes": {
+      "url": "https://media-cdn.cortextech.io/6acde398-de85-4c56-8317-dfbc14e15424.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "kaodirichi akobundu-ehiogu": {
+      "url": "https://media-cdn.cortextech.io/35f8fde6-0d7e-44e2-8a4d-c240fd7c691c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "U2025"
+    },
+    "moustapha fall": {
+      "url": "https://media-cdn.cortextech.io/bc0bef29-4444-425d-97f1-cdb9ae9acb5d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "levi randolph": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqcoI/16190676-90cb-4922-a4bd-1902762ce308.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "kessler edwards": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqcoI/c4e6ee39-c037-4d5e-be9f-0ddde3bc2b0e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "nigel hayes-davis": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqcoH/2db79cc7-9c4d-4bf2-99ea-d118e1487a69.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "aleksa radanov": {
+      "url": "https://media-cdn.cortextech.io/553d0176-6b7e-4148-a1ce-1e4e256fd4f2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "cory joseph": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqcg1/2ad13ec2-c725-47bc-ae8a-4c0e366905ff.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "braian angola": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCaiEI5/8a77bddd-1d92-4ec1-b784-9b71ba9cea1a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "bruno caboclo": {
+      "url": "https://media-cdn.cortextech.io/f1198866-de1c-410e-b783-c8fb34720bff.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "tyrique jones": {
+      "url": "https://media-cdn.cortextech.io/a0a652d8-20c4-47b0-a673-b10abc48fff4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "tonye jekiri": {
+      "url": "https://media-cdn.cortextech.io/995f6e1a-5ce1-46cf-a462-48e2ab5234e5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "chris silva": {
+      "url": "https://media-cdn.cortextech.io/282b162d-60f8-401c-a735-7bd7fc990efc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "neno dimitrijevic": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCbqcoI/d0eaec8a-4e8d-4c13-b312-b4597ffbc2a9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "paul eboua": {
+      "url": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCaiEI5/35a1208a-b3d4-415c-9c87-2e475552904e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "saben lee": {
+      "url": "https://media-cdn.cortextech.io/6209b937-6f46-4469-b227-5a07d79d8348.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "cameron payne": {
+      "url": "https://media-cdn.cortextech.io/c607d57e-0d0a-44b1-9664-4b16dceeec30.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "eugene omoruyi": {
+      "url": "https://media-cdn.cortextech.io/22e77d9a-90d9-49f1-9121-a7063fa9c19d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "vincent poirier": {
+      "url": "https://media-cdn.cortextech.io/bce92ebe-03e1-4588-9235-65b7e965b4e4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "gytis radzevicius": {
+      "url": "https://media-cdn.cortextech.io/7745b1f2-e6a5-462d-8d7c-54ae6f3bbc8b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "iffe lundberg": {
+      "url": "https://media-cdn.cortextech.io/f0599430-9879-413d-962e-8c7aed154fa2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "matt ryan": {
+      "url": "https://media-cdn.cortextech.io/65a24105-fb31-48cd-829f-8a6f3526d91e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "kenneth faried": {
+      "url": "https://media-cdn.cortextech.io/fbabd4a4-b08e-456e-b82a-c31a44ca371a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "alex len": {
+      "url": "https://media-cdn.cortextech.io/4f3880c6-6b3b-4af7-bc52-2d721c68372e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "braxton key": {
+      "url": "https://media-cdn.cortextech.io/88b953f4-530b-4ccb-8032-d25471bdc2b4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "jared butler": {
+      "url": "https://media-cdn.cortextech.io/926f8dbb-c1ff-46cc-a86e-3a68f78a11f9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "nick calathes": {
+      "url": "https://media-cdn.cortextech.io/55e7d560-4582-4f48-b8ff-28c18b539d34.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "bruno fernando": {
+      "url": "https://media-cdn.cortextech.io/d2aed2b2-b9ec-49dc-b00b-9df25e84a2f7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "boogie ellis": {
+      "url": "https://media-cdn.cortextech.io/b2638a60-244f-4304-9294-16a4b3ecd667.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "kobi simmons": {
+      "url": "https://media-cdn.cortextech.io/61bf398e-c801-4969-b965-7f0d3eba8c63.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "taran armstrong": {
+      "url": "https://media-cdn.cortextech.io/e45ca935-cc1b-4cc3-b538-5e1b7e81243e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "yago dos santos": {
+      "url": "https://media-cdn.cortextech.io/e0f72d56-5553-431c-8cb8-b5db06684356.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "frank ntilikina": {
+      "url": "https://media-cdn.cortextech.io/fc66f2ff-ec65-46a3-9321-f451825c4990.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "joel parra": {
+      "url": "https://media-cdn.cortextech.io/f7ed6b45-8416-4bfc-8d40-51b9635dae75.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "will clyburn": {
+      "url": "https://media-cdn.cortextech.io/26d7203d-d138-432c-8d49-16af75d6895e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "dario brizuela": {
+      "url": "https://media-cdn.cortextech.io/eaddc1f6-0aec-49e2-8c65-e0a3b8b2cfe3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "ike iroegbu": {
+      "url": "https://media-cdn.cortextech.io/8f22edf5-41f6-4579-a0db-707de7ab4862.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "mike james": {
+      "url": "https://media-cdn.cortextech.io/feff360e-eb96-423c-9538-cc5845b0bdc7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "ismael bako": {
+      "url": "https://media-cdn.cortextech.io/dda3acbe-edea-49ad-b244-5629d32faec4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "adam atamna": {
+      "url": "https://media-cdn.cortextech.io/c2ae0573-091b-4682-8a19-806b6fdc655f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "talen horton-tucker": {
+      "url": "https://media-cdn.cortextech.io/286f23c5-49f8-4ae7-b54d-c9bbe5e3f3e0.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "isaac bonga": {
+      "url": "https://media-cdn.cortextech.io/a838b518-6e96-4482-b67f-90f52f979588.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "tamir blatt": {
+      "url": "https://media-cdn.cortextech.io/780f9309-2c9f-4a43-be7f-9f7a7182d133.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "mikael jantunen": {
+      "url": "https://media-cdn.cortextech.io/7c7134c0-946e-495e-8c01-6952b2129796.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "markquis nowell": {
+      "url": "https://media-cdn.cortextech.io/02c8c710-f160-471e-b241-e0c0e3a976a8.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "jordan loyd": {
+      "url": "https://media-cdn.cortextech.io/f21f9f12-b440-41a3-87d7-aa3bbe6a36f3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "kostas antetokounmpo": {
+      "url": "https://media-cdn.cortextech.io/a79388a1-3448-4d34-96a8-0edbb5bece72.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "darius thompson": {
+      "url": "https://media-cdn.cortextech.io/881d7dbd-8ffa-4eef-ba14-e0ea68c1be29.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "arturs zagars": {
+      "url": "https://media-cdn.cortextech.io/b730ece6-d4b7-409a-84d6-398b9bc1315c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "shavon shields": {
+      "url": "https://media-cdn.cortextech.io/fb96bfde-ab98-4253-9fd6-d3ea23b536fa.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "vit hrabar": {
+      "url": "https://media-cdn.cortextech.io/ce59f392-8eaa-4724-b610-50461f933031.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "laurynas birutis": {
+      "url": "https://media-cdn.cortextech.io/ec9e23f4-7618-42d7-9ccd-05bb89fe2e4b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "azuolas tubelis": {
+      "url": "https://media-cdn.cortextech.io/c7627328-e2bd-4989-9dd1-2abcaddf021d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "sylvain francisco": {
+      "url": "https://media-cdn.cortextech.io/bab9d21f-1fbd-401a-8b26-f9b350a4c47d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "alen smailagic": {
+      "url": "https://media-cdn.cortextech.io/ae9cae56-3e7e-4f67-ad21-e0926b9f159b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "david kramer": {
+      "url": "https://media-cdn.cortextech.io/b6d2f733-3fda-4c65-a49b-aeee571c65c7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "yakuba ouattara": {
+      "url": "https://media-cdn.cortextech.io/7a130397-0f2a-47a2-adc3-eed775bcbf37.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "cedi osman": {
+      "url": "https://media-cdn.cortextech.io/dd9f197a-73d3-4d91-a3d5-63b9d7fe0bcc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "yam madar": {
+      "url": "https://media-cdn.cortextech.io/5b639f39-81be-45fe-bf5e-2428814980fd.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "ish wainright": {
+      "url": "https://media-cdn.cortextech.io/ea9bc969-944b-4ba3-bfc9-e337bf5db497.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "leon kratzer": {
+      "url": "https://media-cdn.cortextech.io/cc0faa1e-389e-4a0a-b03a-20dfdde91bf1.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "ousmane diop": {
+      "url": "https://media-cdn.cortextech.io/a4d81cad-3c3a-4e1a-946b-37e9cc06b35b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "stefano tonut": {
+      "url": "https://media-cdn.cortextech.io/b7367896-700a-4f7e-9a0b-a1425632b23b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "quinn ellis": {
+      "url": "https://media-cdn.cortextech.io/52c3b65f-2faf-4727-9931-a53b8607a412.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "sehmus hazer": {
+      "url": "https://media-cdn.cortextech.io/4ddb1fa4-97c7-4e34-9d0b-eaf23f9bf632.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "kai jones": {
+      "url": "https://media-cdn.cortextech.io/522b9410-d389-464c-9af6-be0e1c7e5111.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "tyler dorsey": {
+      "url": "https://media-cdn.cortextech.io/bc74ec12-71a8-425e-9ff8-e50eefec1f62.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "kostas papanikolaou": {
+      "url": "https://media-cdn.cortextech.io/92915bcc-f8c5-44d0-87c0-6fed89e69b69.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "daniel theis": {
+      "url": "https://media-cdn.cortextech.io/b5d71c9e-747c-45b6-9543-ac4fa79b35e2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "erkan yilmaz": {
+      "url": "https://media-cdn.cortextech.io/e977e837-fa39-4c82-bc35-7053d75b6c18.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "isiaha mike": {
+      "url": "https://media-cdn.cortextech.io/ecbfbe3b-017a-4082-b76b-5ad895a1b047.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "stefan jovic": {
+      "url": "https://media-cdn.cortextech.io/8f6a1334-5d45-4d52-bd52-665090df1438.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "alessandro pajola": {
+      "url": "https://media-cdn.cortextech.io/ccc6aac9-c905-4988-a055-0a0bc8b13010.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "dylan osetkowski": {
+      "url": "https://media-cdn.cortextech.io/d5277fb5-a978-453b-bfcb-731c5704609c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "sergio de larrea": {
+      "url": "https://media-cdn.cortextech.io/5c52e29f-09dd-45b3-ae82-a839d68146f7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "matthew strazel": {
+      "url": "https://media-cdn.cortextech.io/62264af8-6ced-4c06-9917-b872092fe532.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "kevarrius hayes": {
+      "url": "https://media-cdn.cortextech.io/f8b50ed9-1f5a-4e02-9046-4ec6bd379217.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "jaron blossomgame": {
+      "url": "https://media-cdn.cortextech.io/47740cf2-cdbf-4529-9cbe-3954f423f542.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "elie okobo": {
+      "url": "https://media-cdn.cortextech.io/945e4816-92ca-4aa8-a1bc-cae52d78eb78.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "nate mason": {
+      "url": "https://media-cdn.cortextech.io/931fcbfa-74c9-454d-bbe8-e3c3d90c1624.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "mfiondu kabengele": {
+      "url": "https://media-cdn.cortextech.io/b1711af0-81eb-4312-8f7b-606494930466.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "dwayne bacon": {
+      "url": "https://media-cdn.cortextech.io/820ff618-bd11-4b19-be2a-41f9c427c44f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "jasiel rivero": {
+      "url": "https://media-cdn.cortextech.io/c001336b-1258-48de-a38e-6bf07fd88b0b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "dejan davidovac": {
+      "url": "https://media-cdn.cortextech.io/1f3790c6-a754-4e43-b322-9c50695d71d5.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "uros plavsic": {
+      "url": "https://media-cdn.cortextech.io/0537e3d7-d4e8-415c-9a69-8811e5e4b682.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "codi miller-mcintyre": {
+      "url": "https://media-cdn.cortextech.io/be4091ef-8325-4cc1-b7f9-d8e71b0f732d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "timothe luwawu-cabarrot": {
+      "url": "https://media-cdn.cortextech.io/96750db7-50f9-49bb-9fcc-56ed731ccce3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "luka samanic": {
+      "url": "https://media-cdn.cortextech.io/f7d0ab59-0c76-4125-a864-cce8c4b24906.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "khalifa diop": {
+      "url": "https://media-cdn.cortextech.io/d78b882f-2f17-4f2a-8685-55cd7f75be1b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "trent forrest": {
+      "url": "https://media-cdn.cortextech.io/a329afc2-80e5-4cee-a08d-34c5d734cb3e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "pj dozier": {
+      "url": "https://media-cdn.cortextech.io/ac43e15a-c08d-42ed-a896-599ef9c4c3fc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "rolands smits": {
+      "url": "https://media-cdn.cortextech.io/d4e2115d-e8a8-497e-9522-f11f7d7d0336.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "nick weiler-babb": {
+      "url": "https://media-cdn.cortextech.io/e23682a9-5374-4706-b343-36f49f61236d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "shane larkin": {
+      "url": "https://media-cdn.incrowdsports.com/012e431c-3640-40a4-ae27-ba8b67a784e3.jpeg",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2026"
+    },
+    "josh nebo": {
+      "url": "https://media-cdn.cortextech.io/2d5f84ef-ad28-4415-96b2-685be51d4a2f.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "zach leday": {
+      "url": "https://media-cdn.cortextech.io/2ba1fc70-da04-4497-83bc-7ff3bc0f3c08.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "armoni brooks": {
+      "url": "https://media-cdn.cortextech.io/8c4d5e17-01aa-4f77-99b1-207d7c82d195.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "niccolo mannion": {
+      "url": "https://media-cdn.cortextech.io/048cb7be-4aed-42bc-8d85-ad6b8ad271da.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "andreas obst": {
+      "url": "https://media-cdn.cortextech.io/d3d714e5-0b66-497b-afbd-2587ac9e856c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "vladimir lucic": {
+      "url": "https://media-cdn.cortextech.io/c1901dfd-8e25-4833-a576-ac4ab82d75a6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "xavier rathan-mayes": {
+      "url": "https://media-cdn.cortextech.io/be33c25c-a375-46b0-8fa6-b978b93ac5f0.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "khem birch": {
+      "url": "https://media-cdn.cortextech.io/07341c6e-b835-4434-bf94-87314dea546b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "bonzie colson": {
+      "url": "https://media-cdn.cortextech.io/3fa1da27-0721-4274-9d43-26910bec0f2d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "tarik biberovic": {
+      "url": "https://media-cdn.cortextech.io/f62a393b-7a2e-4ba8-a90f-8f7b1d56570c.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "brandon boston": {
+      "url": "https://media-cdn.cortextech.io/e0c8086d-9ea8-43da-8292-7fc4c3889762.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "melih mahmutoglu": {
+      "url": "https://media-cdn.cortextech.io/f3c95ee0-c4ac-4f3a-ae7a-fb6dfd3723b9.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "nicolo melli": {
+      "url": "https://media-cdn.cortextech.io/101176a1-0695-40e3-a635-b6ed80d17e6e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "scottie wilbekin": {
+      "url": "https://media-cdn.cortextech.io/cded951a-8867-4298-b0f2-38bbff80dbd6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "metecan birsen": {
+      "url": "https://media-cdn.cortextech.io/b901a276-9bce-4d94-9dba-3ed59eb7e670.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "armando bacot jr": {
+      "url": "https://media-cdn.cortextech.io/b0477ee7-8ebb-4140-b641-fa3e33f99abd.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "dan oturu": {
+      "url": "https://media-cdn.cortextech.io/3bdc3cf1-638b-4095-8b2b-099d31ce686b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "tai odiase": {
+      "url": "https://media-cdn.cortextech.io/1dbd2b81-9620-4bf4-97ff-0a51c5322a30.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "collin malcolm": {
+      "url": "https://media-cdn.cortextech.io/936958b4-089b-4ba9-a797-8b0d1a117b7d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "chris jones": {
+      "url": "https://media-cdn.cortextech.io/62f1e81b-7c88-4cb1-9eb8-9054a68c2625.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "johnathan motley": {
+      "url": "https://media-cdn.cortextech.io/0a172ed5-656d-4894-811a-8794788bf5f2.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "armel traore": {
+      "url": "https://media-cdn.cortextech.io/e9db529b-bdba-4c4f-8248-c52e6bf7c438.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "bastien vautier": {
+      "url": "https://media-cdn.cortextech.io/b33e8226-0dfc-4169-b7db-4e5c81590d55.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "glynn watson": {
+      "url": "https://media-cdn.cortextech.io/8b123b47-d7a0-47ea-b91d-1514ef1e87b0.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "mbaye ndiaye": {
+      "url": "https://media-cdn.cortextech.io/f5a73145-a679-43f2-992b-3caaeb9ac9cc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "shaquille harrison": {
+      "url": "https://media-cdn.cortextech.io/3b994fa6-5da8-4559-ac9a-6c6400e3fd99.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "john dibartolomeo": {
+      "url": "https://media-cdn.cortextech.io/8d21b46c-77f3-4241-834a-c819a514fc58.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "alec peters": {
+      "url": "https://media-cdn.cortextech.io/8feddbf2-03c1-4130-95fe-246f938a74d6.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "keenan evans": {
+      "url": "https://media-cdn.cortextech.io/e2db3a5f-1bc5-41f2-97a3-d640801e477e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "thomas walkup": {
+      "url": "https://media-cdn.cortextech.io/5a798730-2697-4550-b3b3-df119a860b18.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "juancho hernangomez": {
+      "url": "https://media-cdn.cortextech.io/12459ba1-e2c3-4832-95de-3fbe43770024.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "marius grigonis": {
+      "url": "https://media-cdn.cortextech.io/d97b2774-a6c8-41bb-b3bb-4963d81f79eb.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "tj shorts": {
+      "url": "https://media-cdn.cortextech.io/c0323c00-43ae-41c3-ba0a-cffbb4e3854b.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "derek willis": {
+      "url": "https://media-cdn.cortextech.io/82d66d17-bc9a-4994-8a8f-c59b5db9df70.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "lamar stevens": {
+      "url": "https://media-cdn.cortextech.io/0556266b-a9d6-4504-95d9-777c3a069690.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "justin robinson": {
+      "url": "https://media-cdn.cortextech.io/37224ff3-e0d3-48a2-b1a0-fb72065b24f8.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "jabari parker": {
+      "url": "https://media-cdn.cortextech.io/a3dfef1d-7e92-483c-9de7-0cd252e015fe.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "sterling brown": {
+      "url": "https://media-cdn.cortextech.io/7e089e46-481e-44e5-9fa0-192215101609.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "aleksej pokusevski": {
+      "url": "https://media-cdn.cortextech.io/48c507e4-5d3d-45fa-8178-80cfacc0fdcc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "vanja marinkovic": {
+      "url": "https://media-cdn.cortextech.io/ac54fafe-cc49-4d7d-b908-d18b7ddc38b3.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "duane washington": {
+      "url": "https://media-cdn.cortextech.io/0a809d60-836f-43a3-b73e-646935e87e78.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "shake milton": {
+      "url": "https://media-cdn.cortextech.io/913386b0-4099-4b7c-9b5f-40d18c8c023a.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "sergio llull": {
+      "url": "https://media-cdn.cortextech.io/38500d8f-02b6-40a7-a6b7-c9fb901a0f6e.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "izan almansa": {
+      "url": "https://media-cdn.cortextech.io/94899581-0587-4377-bc88-feee33359afc.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "jean montero": {
+      "url": "https://media-cdn.cortextech.io/1f77a5c9-ccef-4bda-b0e8-11e4f1a8d9d8.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "jaime pradilla": {
+      "url": "https://media-cdn.cortextech.io/8030bf2e-bd4a-4d04-9cb4-44d44653b5c7.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "brancou badio": {
+      "url": "https://media-cdn.cortextech.io/24556d2c-01db-4a9c-a2d0-e2607a4fae52.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "nicola akele": {
+      "url": "https://media-cdn.cortextech.io/917bb62a-9e27-4933-b04c-6da52dc877ee.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "mouhamet diouf": {
+      "url": "https://media-cdn.cortextech.io/b66cdc05-d0ad-4ffd-9cc7-11a8748b1768.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "karim jallow": {
+      "url": "https://media-cdn.cortextech.io/537c45ba-7d81-47df-aa8d-900ecf79b2b4.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "daniel hackett": {
+      "url": "https://media-cdn.cortextech.io/923cef2e-6352-41a8-8db1-791d21db3100.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "abramo canka": {
+      "url": "https://media-cdn.cortextech.io/934607d9-3271-4824-b8da-95cbeaf95362.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "carsen edwards": {
+      "url": "https://media-cdn.cortextech.io/1f0da376-0fcd-4071-88cc-d7dc6ac40243.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "luca vildoza": {
+      "url": "https://media-cdn.cortextech.io/45cd50c3-c3b7-4cf6-92ee-f7955216e2da.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "ignas brazdeikis": {
+      "url": "https://media-cdn.cortextech.io/32aea757-dc80-4848-82f4-525b77e0eb0d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    },
+    "moses wright": {
+      "url": "https://media-cdn.cortextech.io/9c4e7b10-e94e-4335-bec1-99979d42f096.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people?personType=J&limit=1000",
+      "provider": "Euroleague Basketball",
+      "season": "E2025"
+    }
+  }
+}
