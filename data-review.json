@@ -638,7 +638,8 @@
           "summary": "Rebić returns to FMP after playing for Spartak last season. Contract duration was not specified.",
           "date": "2026-09-08",
           "date_basis": "report_date",
-          "verified_at": "2026-09-09"
+          "verified_at": "2026-09-09",
+          "added_at": "2026-09-09T07:56:37.822Z"
         },
         {
           "id": "maintenance-20260908-nelson-weidemann-vechta",
@@ -654,7 +655,8 @@
           "summary": "Short-term signing ahead of the BCL qualifying tournament.",
           "date": "2026-09-08",
           "date_basis": "report_date",
-          "verified_at": "2026-09-09"
+          "verified_at": "2026-09-09",
+          "added_at": "2026-09-09T07:56:37.822Z"
         },
         {
           "id": "maintenance-20260908-kihei-clark-vechta",
@@ -670,7 +672,8 @@
           "summary": "Clark joins Vechta after a season with Kortrijk Spurs.",
           "date": "2026-09-08",
           "date_basis": "report_date",
-          "verified_at": "2026-09-09"
+          "verified_at": "2026-09-09",
+          "added_at": "2026-09-09T07:56:37.822Z"
         },
         {
           "id": "maintenance-20260908-kuany-atem-kuany-maroussi",
@@ -686,7 +689,8 @@
           "summary": "Maroussi announced the signing of the South Sudanese-Australian forward born on 27 March 2000. Waverley Falcons was his most recent club.",
           "date": "2026-09-08",
           "date_basis": "report_date",
-          "verified_at": "2026-09-09"
+          "verified_at": "2026-09-09",
+          "added_at": "2026-09-09T07:56:37.822Z"
         },
         {
           "id": "maintenance-20260908-beau-beech-zastal",
@@ -708,7 +712,8 @@
               "url": "https://sportando.basketball/en/beau-beech-joins-zastal-zielona-gora/",
               "name": "Sportando (club contract announcement)"
             }
-          ]
+          ],
+          "added_at": "2026-09-09T07:56:37.822Z"
         },
         {
           "id": "maintenance-20260908-david-mccormack-unics",
@@ -724,7 +729,8 @@
           "summary": "UNICS announced a contract for the 2026/27 season. Immediate previous club was not specified in the reviewed report.",
           "date": "2026-09-08",
           "date_basis": "report_date",
-          "verified_at": "2026-09-09"
+          "verified_at": "2026-09-09",
+          "added_at": "2026-09-09T07:56:37.822Z"
         },
         {
           "id": "maintenance-20260908-langston-galloway-trieste",
@@ -740,7 +746,8 @@
           "summary": "Reported agreement in principle, citing Il Piccolo; an official club announcement is still awaited.",
           "date": "2026-09-08",
           "date_basis": "report_date",
-          "verified_at": "2026-09-09"
+          "verified_at": "2026-09-09",
+          "added_at": "2026-09-09T07:56:37.822Z"
         },
         {
           "id": "maintenance-20260908-giannoulis-larentzakis-aek",
@@ -756,7 +763,8 @@
           "summary": "Bartzokas confirmed Larentzakis will not remain on the Olympiacos roster. AEK have a reported verbal agreement; termination paperwork with Olympiacos is still being completed.",
           "date": "2026-09-08",
           "date_basis": "report_date",
-          "verified_at": "2026-09-09"
+          "verified_at": "2026-09-09",
+          "added_at": "2026-09-09T07:56:37.822Z"
         }
       ]
     }

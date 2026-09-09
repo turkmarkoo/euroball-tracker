@@ -32,3 +32,11 @@ test('empty results reset every count',()=>assert.deepEqual(counts(filterTransfe
 test('same event merges sources, separate dated moves and rumors survive',()=>{const rows=deduplicate([record,{...record,id:'b',source_url:'https://example.com/confirmed',verified_at:'2026-09-08'},{...record,id:'c',date:'2026-09-05',status:'rumor'},{...record,id:'d',date:'2026-09-04'}]);assert.equal(rows.length,3);assert.equal(rows[0].id,'b');assert.ok(rows[0].alias_ids.includes('a'))});
 test('invalid dates and unsafe URLs are rejected without crashing',()=>{for(const d of ['2026-13-01','2026-02-30','bad',null])assert.equal(dateValid(d),false);assert.equal(safeURL('javascript:alert(1)'), '');assert.equal(deduplicate([{...record,date:'bad'},{...record,status:'?'}]).length,0)});
 test('database has unique public IDs and complete review provenance',()=>{const db=JSON.parse(fs.readFileSync(new URL('./transfers_all.json',import.meta.url))).items;const rows=deduplicate(db);assert.equal(new Set(rows.map(t=>t.id)).size,rows.length);assert.equal(rows.some(t=>t._visited),false);const updates=JSON.parse(fs.readFileSync(new URL('./data-review.json',import.meta.url))).items;assert.equal(updates.length,38);for(const t of updates){assert.ok(dateValid(t.date));assert.ok(safeURL(t.source_url));assert.equal(t.verified_at,'2026-09-08')}assert.equal(rows.find(t=>t.id==='sc-81293d3a').history[0].status,'rumor')});
+
+import {isNewTransfer} from './data-core.mjs';
+test('new badges use insertion time, expire after 72 hours and reject invalid or future times',()=>{
+ const now=Date.parse('2026-09-09T12:00:00Z');
+ assert.equal(isNewTransfer({date:'2020-01-01',added_at:'2026-09-09T10:00:00Z'},now),true);
+ for(const added_at of [undefined,'bad','2026-09-10T00:00:00Z','2026-09-06T12:00:00Z'])assert.equal(isNewTransfer({added_at},now),false);
+ assert.equal(isNewTransfer({verified_at:'2026-09-09'},now),false);
+});

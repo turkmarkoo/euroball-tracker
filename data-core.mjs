@@ -43,3 +43,8 @@ export function filterTransfers(items,f={}) {
   &&(!f.status||t.status===f.status)&&(!f.from||t.date>=f.from)&&(!f.until||t.date<=f.until));
 }
 export function counts(items){return {all:items.length,...Object.fromEntries(Object.keys(STATUS).map(s=>[s,items.filter(t=>t.status===s).length]))};}
+
+export function isNewTransfer(record, now=Date.now()) {
+ const added=Date.parse(record.added_at);
+ return Number.isFinite(added) && added<=now && now-added<72*60*60*1000;
+}
