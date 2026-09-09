@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T12:00:00Z",
-  "count": 1199,
+  "generated_at": "2026-09-09T07:56:37.822Z",
+  "count": 1207,
   "items": [
     {
       "id": "review-20260908-36",
@@ -16871,7 +16871,141 @@
       "id": "lega-seen-073e101ef6b3",
       "_visited": true,
       "date": "2026-06-20"
+    },
+    {
+      "id": "maintenance-20260908-nikola-rebic-fmp",
+      "player": "Nikola Rebić",
+      "from": "Spartak Office Shoes",
+      "to": "FMP",
+      "status": "signed",
+      "pos": "PG",
+      "league": "ABA League",
+      "contract": null,
+      "source_url": "https://www.aba-liga.com/news/55134/two-time-aba-league-champion-nikola-rebic-returns-to-fmp/",
+      "source_name": "ABA League",
+      "summary": "Rebić returns to FMP after playing for Spartak last season. Contract duration was not specified.",
+      "date": "2026-09-08",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-09"
+    },
+    {
+      "id": "maintenance-20260908-nelson-weidemann-vechta",
+      "player": "Nelson Weidemann",
+      "from": "ratiopharm Ulm",
+      "to": "RASTA Vechta",
+      "status": "signed",
+      "pos": "SG",
+      "league": "BBL / BCL",
+      "contract": "3 months, with exit clause",
+      "source_url": "https://sportando.basketball/en/rasta-vechta-strengthen-roster-with-nelson-weidemann-and-kihei-clark/",
+      "source_name": "Sportando / club press release",
+      "summary": "Short-term signing ahead of the BCL qualifying tournament.",
+      "date": "2026-09-08",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-09"
+    },
+    {
+      "id": "maintenance-20260908-kihei-clark-vechta",
+      "player": "Kihei Clark",
+      "from": "Kortrijk Spurs",
+      "to": "RASTA Vechta",
+      "status": "signed",
+      "pos": "PG",
+      "league": "BBL / BCL",
+      "contract": "3 months, without exit clause",
+      "source_url": "https://sportando.basketball/en/rasta-vechta-strengthen-roster-with-nelson-weidemann-and-kihei-clark/",
+      "source_name": "Sportando / club press release",
+      "summary": "Clark joins Vechta after a season with Kortrijk Spurs.",
+      "date": "2026-09-08",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-09"
+    },
+    {
+      "id": "maintenance-20260908-kuany-atem-kuany-maroussi",
+      "player": "Kuany Atem Kuany",
+      "from": "Waverley Falcons",
+      "to": "Maroussi",
+      "status": "signed",
+      "pos": "PF",
+      "league": "GBL",
+      "contract": null,
+      "source_url": "https://sportando.basketball/en/kuany-atem-kuany-joins-maroussi/",
+      "source_name": "Sportando / club announcement",
+      "summary": "Maroussi announced the signing of the South Sudanese-Australian forward born on 27 March 2000. Waverley Falcons was his most recent club.",
+      "date": "2026-09-08",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-09"
+    },
+    {
+      "id": "maintenance-20260908-beau-beech-zastal",
+      "player": "Beau Beech",
+      "from": "Zadar",
+      "to": "ORLEN Zastal Zielona Góra",
+      "status": "signed",
+      "pos": "F",
+      "league": "PLK",
+      "contract": "Through 2026/27",
+      "source_url": "https://plk.pl/aktualnosci/27401/beau-beech-wraca-do-plk",
+      "source_name": "Polska Liga Koszykówki",
+      "summary": "Beech returns to Poland after playing for Zadar. The club announcement reproduced by Sportando specifies a contract through the end of the season.",
+      "date": "2026-09-08",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-09",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/beau-beech-joins-zastal-zielona-gora/",
+          "name": "Sportando (club contract announcement)"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20260908-david-mccormack-unics",
+      "player": "David McCormack",
+      "from": "?",
+      "to": "UNICS Kazan",
+      "status": "signed",
+      "pos": "C",
+      "league": "VTB",
+      "contract": "2026/27 season",
+      "source_url": "https://sportando.basketball/en/david-mccormack-joins-unics-kazan/",
+      "source_name": "Sportando",
+      "summary": "UNICS announced a contract for the 2026/27 season. Immediate previous club was not specified in the reviewed report.",
+      "date": "2026-09-08",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-09"
+    },
+    {
+      "id": "maintenance-20260908-langston-galloway-trieste",
+      "player": "Langston Galloway",
+      "from": "?",
+      "to": "Pallacanestro Trieste",
+      "status": "rumor",
+      "pos": "G",
+      "league": "Lega Basket",
+      "contract": null,
+      "source_url": "https://backdoorpodcast.com/trieste-accordo-langston-galloway/",
+      "source_name": "Backdoor Podcast",
+      "summary": "Reported agreement in principle, citing Il Piccolo; an official club announcement is still awaited.",
+      "date": "2026-09-08",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-09"
+    },
+    {
+      "id": "maintenance-20260908-giannoulis-larentzakis-aek",
+      "player": "Giannoulis Larentzakis",
+      "from": "Olympiacos",
+      "to": "AEK Athens",
+      "status": "rumor",
+      "pos": "G",
+      "league": "GBL / BCL",
+      "contract": "Reported: 2 years plus option for 1 more",
+      "source_url": "https://www.eurohoops.net/en/euroleague/2005761/giorgos-bartzokas-talks-giannoulis-larentzakis-olympiacos-aek-euroleague/",
+      "source_name": "Eurohoops",
+      "summary": "Bartzokas confirmed Larentzakis will not remain on the Olympiacos roster. AEK have a reported verbal agreement; termination paperwork with Olympiacos is still being completed.",
+      "date": "2026-09-08",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-09"
     }
   ],
-  "public_count": 1078
+  "public_count": 1082
 }

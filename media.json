@@ -1502,6 +1502,12 @@
       "source": "https://www.aba-liga.com/",
       "provider": "ABA League",
       "note": "Parent club crest; youth activity remains a separate team identity."
+    },
+    "maroussi": {
+      "url": "https://www.esake.gr/dat/esaketeam/0000000F/photo_new_FC6AF74E.png",
+      "source": "https://www.esake.gr/el/action/EsaketeamView?idteam=0000000F&mode=1",
+      "provider": "ESAKE",
+      "verified_at": "2026-09-09"
     }
   },
   "players": {
@@ -5434,6 +5440,48 @@
       "source": "https://scoutbasketball.com/players?name=Troy%20Koehler",
       "provider": "ScoutBasketball",
       "season": "Profile photo"
+    },
+    "david mccormack": {
+      "url": "https://media-cdn.cortextech.io/e6d83e1c-82df-4d7b-8d94-6a7f0a037e60.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people",
+      "provider": "Euroleague Basketball",
+      "verified_at": "2026-09-09"
+    },
+    "giannoulis larentzakis": {
+      "url": "https://media-cdn.cortextech.io/2737aa5a-4f3e-475f-b590-9d4a8aa3e069.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/E/seasons/E2025/people",
+      "provider": "Euroleague Basketball",
+      "verified_at": "2026-09-09"
+    },
+    "nelson weidemann": {
+      "url": "https://media-cdn.cortextech.io/5d288681-88e6-4740-a0c0-e9c70641b17d.png",
+      "source": "https://api-live.euroleague.net/v2/competitions/U/seasons/U2025/people",
+      "provider": "Euroleague Basketball",
+      "verified_at": "2026-09-09"
+    },
+    "nikola rebic": {
+      "url": "https://scoutbasketball.com/img/players/images/Nikola-Rebic_1594154357_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Nikola%20Rebic",
+      "provider": "ScoutBasketball",
+      "verified_at": "2026-09-09"
+    },
+    "kihei clark": {
+      "url": "https://scoutbasketball.com/img/players/images/Kihei-Clark_1729157352_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Kihei%20Clark",
+      "provider": "ScoutBasketball",
+      "verified_at": "2026-09-09"
+    },
+    "langston galloway": {
+      "url": "https://scoutbasketball.com/img/players/images/Langston-Galloway_1594151713_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Langston%20Galloway",
+      "provider": "ScoutBasketball",
+      "verified_at": "2026-09-09"
+    },
+    "beau beech": {
+      "url": "https://scoutbasketball.com/img/players/images/Beau-Beech_1594154882_thumb.jpg",
+      "source": "https://scoutbasketball.com/players?name=Beau%20Beech",
+      "provider": "ScoutBasketball",
+      "verified_at": "2026-09-09"
     }
   }
 }
