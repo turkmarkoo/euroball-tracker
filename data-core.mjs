@@ -46,5 +46,5 @@ export function counts(items){return {all:items.length,...Object.fromEntries(Obj
 
 export function isNewTransfer(record, now=Date.now()) {
  const added=Date.parse(record.added_at);
- return Number.isFinite(added) && added<=now && now-added<72*60*60*1000;
+ return Number.isFinite(added) && added<=now && now-added<24*60*60*1000;
 }
