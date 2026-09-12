@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-10T07:36:38.891Z",
-  "count": 1213,
+  "generated_at": "2026-09-12T17:59:55.753Z",
+  "count": 1223,
   "items": [
     {
       "id": "review-20260908-36",
@@ -17031,15 +17031,15 @@
       "status": "signed",
       "pos": "G",
       "league": "GBL / BCL",
-      "contract": null,
+      "contract": "3 years, through summer 2029",
       "source_url": "https://www.eurohoops.net/en/fiba-champions-league/2006083/giannoulis-larentzakis-to-aek-basketball-champions-league/",
       "source_name": "Eurohoops",
-      "summary": "Larentzakis completed his return to AEK after leaving Olympiacos. The reviewed confirmation does not specify contract terms; the earlier reported terms remain in the story history.",
+      "summary": "Larentzakis returned to AEK after leaving Olympiacos. Sportando reports a three-year contract through summer 2029.",
       "date": "2026-09-09",
       "date_basis": "report_date",
-      "verified_at": "2026-09-10",
+      "verified_at": "2026-09-12",
       "added_at": "2026-09-09T07:56:37.822Z",
-      "updated_at": "2026-09-10T07:36:38.891Z",
+      "updated_at": "2026-09-12T17:59:55.753Z",
       "history": [
         {
           "id": "maintenance-20260908-giannoulis-larentzakis-aek",
@@ -17057,12 +17057,59 @@
           "date_basis": "report_date",
           "verified_at": "2026-09-09",
           "added_at": "2026-09-09T07:56:37.822Z"
+        },
+        {
+          "id": "maintenance-20260908-giannoulis-larentzakis-aek",
+          "player": "Giannoulis Larentzakis",
+          "from": "Olympiacos",
+          "to": "AEK Athens",
+          "status": "signed",
+          "pos": "G",
+          "league": "GBL / BCL",
+          "contract": null,
+          "source_url": "https://www.eurohoops.net/en/fiba-champions-league/2006083/giannoulis-larentzakis-to-aek-basketball-champions-league/",
+          "source_name": "Eurohoops",
+          "summary": "Larentzakis completed his return to AEK after leaving Olympiacos. The reviewed confirmation does not specify contract terms; the earlier reported terms remain in the story history.",
+          "date": "2026-09-09",
+          "date_basis": "report_date",
+          "verified_at": "2026-09-10",
+          "added_at": "2026-09-09T07:56:37.822Z",
+          "updated_at": "2026-09-10T07:36:38.891Z",
+          "history": [
+            {
+              "id": "maintenance-20260908-giannoulis-larentzakis-aek",
+              "player": "Giannoulis Larentzakis",
+              "from": "Olympiacos",
+              "to": "AEK Athens",
+              "status": "rumor",
+              "pos": "G",
+              "league": "GBL / BCL",
+              "contract": "Reported: 2 years plus option for 1 more",
+              "source_url": "https://www.eurohoops.net/en/euroleague/2005761/giorgos-bartzokas-talks-giannoulis-larentzakis-olympiacos-aek-euroleague/",
+              "source_name": "Eurohoops",
+              "summary": "Bartzokas confirmed Larentzakis will not remain on the Olympiacos roster. AEK have a reported verbal agreement; termination paperwork with Olympiacos is still being completed.",
+              "date": "2026-09-08",
+              "date_basis": "report_date",
+              "verified_at": "2026-09-09",
+              "added_at": "2026-09-09T07:56:37.822Z"
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.eurohoops.net/en/euroleague/2005761/giorgos-bartzokas-talks-giannoulis-larentzakis-olympiacos-aek-euroleague/",
+              "name": "Eurohoops (earlier rumor report)"
+            }
+          ]
         }
       ],
       "sources": [
         {
           "url": "https://www.eurohoops.net/en/euroleague/2005761/giorgos-bartzokas-talks-giannoulis-larentzakis-olympiacos-aek-euroleague/",
           "name": "Eurohoops (earlier rumor report)"
+        },
+        {
+          "url": "https://sportando.basketball/en/aek-officially-brings-back-giannoulis-larentzakis-through-2029/",
+          "name": "Sportando (contract terms)"
         }
       ]
     },
@@ -17179,7 +17226,195 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-10",
       "added_at": "2026-09-10T07:36:38.891Z"
+    },
+    {
+      "id": "maintenance-20260912-sotirov-balkan",
+      "player": "Martin Sotirov",
+      "from": "Spartak Pleven",
+      "to": "Balkan Botevgrad",
+      "status": "signed",
+      "pos": "G",
+      "league": "EuroCup / Bulgarian NBL",
+      "date": "2026-09-10",
+      "contract": null,
+      "source_url": "https://sportando.basketball/en/martin-sotirov-returns-to-balkan/",
+      "source_name": "Sportando",
+      "summary": "Balkan confirmed Sotirov’s return after his spell with Spartak Pleven.",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z"
+    },
+    {
+      "id": "maintenance-20260912-vuurst-erokspor",
+      "player": "Keye van der Vuurst",
+      "from": "Joventut Badalona",
+      "to": "Esenler Erokspor",
+      "status": "signed",
+      "pos": "PG",
+      "league": "Turkish BSL",
+      "date": "2026-09-10",
+      "contract": null,
+      "source_url": "https://sportando.basketball/en/keye-van-der-vuurst-signs-with-esenler-erokspor/",
+      "source_name": "Sportando",
+      "summary": "Agreement with Erokspor following termination of his Joventut contract. He spent 2025/26 on loan at Büyükçekmece.",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z"
+    },
+    {
+      "id": "maintenance-20260912-vuurst-joventut-departure",
+      "player": "Keye van der Vuurst",
+      "from": "Joventut Badalona",
+      "to": "?",
+      "status": "left",
+      "pos": "PG",
+      "league": "ACB",
+      "date": "2026-09-10",
+      "contract": null,
+      "source_url": "https://sportando.basketball/en/asisa-joventut-and-keye-van-der-vuurst-agree-to-terminate-contract/",
+      "source_name": "Sportando",
+      "summary": "Joventut and the guard agreed to terminate their contract. His Erokspor signing is tracked separately.",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z"
+    },
+    {
+      "id": "maintenance-20260912-ray-brindisi",
+      "player": "Kendrick Ray",
+      "from": "Edmonton Stingers",
+      "to": "Brindisi",
+      "status": "signed",
+      "pos": "G",
+      "league": "Italian Serie A2",
+      "date": "2026-09-10",
+      "contract": null,
+      "source_url": "https://sportando.basketball/en/valtur-brindisi-signs-kendrick-ray/",
+      "source_name": "Sportando",
+      "summary": "Brindisi announced an agreement; arrival awaits visa procedures. Ray played at Mykonos last season and then four games with Edmonton this summer.",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z"
+    },
+    {
+      "id": "maintenance-20260912-dejulius-besiktas",
+      "player": "David DeJulius",
+      "from": "UCAM Murcia",
+      "to": "Beşiktaş",
+      "status": "signed",
+      "pos": "PG",
+      "league": "Turkish BSL",
+      "date": "2026-09-12",
+      "contract": "Loan: 1 season",
+      "source_url": "https://www.eurohoops.net/en/fiba-champions-league/2007172/ucam-murcia-confirms-dejuliuss-contract-with-the-club-and-his-loan-to-besiktas/",
+      "source_name": "Eurohoops (UCAM statement)",
+      "summary": "Murcia confirmed the resolution of the contract dispute and a one-season loan to Beşiktaş, retaining contractual rights.",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/david-dejulius-joins-besiktas-on-loan-as-murcia-agreement-is-finalized/",
+          "name": "Sportando (same club statement)"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20260912-kopp-chalon-departure",
+      "player": "Miller Kopp",
+      "from": "Élan Chalon",
+      "to": "?",
+      "status": "left",
+      "pos": "?",
+      "league": "Pro A",
+      "date": "2026-09-12",
+      "contract": null,
+      "source_url": "https://sportando.basketball/en/miller-kopp-and-elan-chalon-part-ways-by-mutual-agreement/",
+      "source_name": "Sportando",
+      "summary": "Kopp and Chalon mutually ended their collaboration for personal reasons. No next club was announced.",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z"
+    },
+    {
+      "id": "maintenance-20260912-ndiaye-joventut",
+      "player": "Eli John Ndiaye",
+      "from": "Real Madrid",
+      "to": "Joventut Badalona",
+      "status": "signed",
+      "pos": "F",
+      "league": "ACB / BCL",
+      "date": "2026-09-11",
+      "contract": "Loan through 2026/27",
+      "source_url": "https://www.realmadrid.com/es-ES/noticias/club/comunicados/comunicado-oficial-ndiaye-11-09-2026",
+      "source_name": "Real Madrid",
+      "summary": "Real Madrid announced a loan to Joventut until the end of the 2026/27 season.",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z",
+      "sources": [
+        {
+          "url": "https://www.eurohoops.net/en/fiba-champions-league/2006766/eli-ndiaye-to-joventut-basketball-champions-league/",
+          "name": "Eurohoops"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20260912-green-venezia",
+      "player": "Erick Green",
+      "from": "Pallacanestro Cantù",
+      "to": "Reyer Venezia",
+      "status": "signed",
+      "pos": "G",
+      "league": "Lega Basket / EuroCup",
+      "date": "2026-09-11",
+      "contract": null,
+      "source_url": "https://www.reyer.it/news/maschile/2026-09-11/umana-reyer-esperienza-e-talento-per-il-reparto-esterni-firmato-erick-green/",
+      "source_name": "Reyer Venezia",
+      "summary": "Reyer announced Green’s signing following Rice’s injury. Green played last season at Cantù.",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z",
+      "sources": [
+        {
+          "url": "https://www.eurohoops.net/en/eurocup/2006674/erick-green-to-venice-eurocup/",
+          "name": "Eurohoops"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20260912-smith-madrid-rumor",
+      "player": "Nick Smith Jr.",
+      "from": "Los Angeles Lakers",
+      "to": "Real Madrid",
+      "status": "rumor",
+      "pos": "G",
+      "league": "EuroLeague / ACB",
+      "date": "2026-09-12",
+      "contract": null,
+      "source_url": "https://www.eurohoops.net/en/euroleague/2007269/nick-smith-jr-nears-deal-with-real-madrid-euroleague/",
+      "source_name": "Eurohoops (citing Chema de Lucas)",
+      "summary": "Reported close to an agreement; not officially signed. Previously with the Lakers, Smith became a free agent this summer.",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z"
+    },
+    {
+      "id": "maintenance-20260912-len-baskonia-rumor",
+      "player": "Alex Len",
+      "from": "Real Madrid",
+      "to": "Baskonia",
+      "status": "rumor",
+      "pos": "C",
+      "league": "EuroLeague / ACB",
+      "date": "2026-09-11",
+      "contract": null,
+      "source_url": "https://www.eurohoops.net/en/euroleague/2006697/alex-len-link-to-baskonia-euroleague/",
+      "source_name": "Eurohoops (citing El Correo)",
+      "summary": "Baskonia reportedly contacted Len and negotiations were progressing. No signing confirmed.",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-12",
+      "added_at": "2026-09-12T17:59:55.753Z"
     }
   ],
-  "public_count": 1088
+  "public_count": 1098
 }
