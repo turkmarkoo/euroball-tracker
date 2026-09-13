@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-12T17:59:55.753Z",
-  "count": 1223,
+  "generated_at": "2026-09-13T07:30:58.052Z",
+  "count": 1224,
   "items": [
     {
       "id": "review-20260908-36",
@@ -17390,13 +17390,43 @@
       "pos": "G",
       "league": "EuroLeague / ACB",
       "date": "2026-09-12",
-      "contract": null,
+      "contract": "Reported: 1 year",
       "source_url": "https://www.eurohoops.net/en/euroleague/2007269/nick-smith-jr-nears-deal-with-real-madrid-euroleague/",
       "source_name": "Eurohoops (citing Chema de Lucas)",
-      "summary": "Reported close to an agreement; not officially signed. Previously with the Lakers, Smith became a free agent this summer.",
+      "summary": "Sportando and AS report that Smith accepted a one-year offer, citing Michael Scotto and the player’s agents. Official club confirmation has not been verified; status remains rumor.",
       "date_basis": "report_date",
-      "verified_at": "2026-09-12",
-      "added_at": "2026-09-12T17:59:55.753Z"
+      "verified_at": "2026-09-13",
+      "added_at": "2026-09-12T17:59:55.753Z",
+      "history": [
+        {
+          "id": "maintenance-20260912-smith-madrid-rumor",
+          "player": "Nick Smith Jr.",
+          "from": "Los Angeles Lakers",
+          "to": "Real Madrid",
+          "status": "rumor",
+          "pos": "G",
+          "league": "EuroLeague / ACB",
+          "date": "2026-09-12",
+          "contract": null,
+          "source_url": "https://www.eurohoops.net/en/euroleague/2007269/nick-smith-jr-nears-deal-with-real-madrid-euroleague/",
+          "source_name": "Eurohoops (citing Chema de Lucas)",
+          "summary": "Reported close to an agreement; not officially signed. Previously with the Lakers, Smith became a free agent this summer.",
+          "date_basis": "report_date",
+          "verified_at": "2026-09-12",
+          "added_at": "2026-09-12T17:59:55.753Z"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/nick-smith-jr-agrees-to-join-real-madrid/",
+          "name": "Sportando (citing Michael Scotto)"
+        },
+        {
+          "url": "https://as.com/baloncesto/acb/el-real-madrid-va-a-por-nick-smith-f202609-n/",
+          "name": "AS (same agent report)"
+        }
+      ],
+      "updated_at": "2026-09-13T07:30:58.052Z"
     },
     {
       "id": "maintenance-20260912-len-baskonia-rumor",
@@ -17414,7 +17444,24 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-12",
       "added_at": "2026-09-12T17:59:55.753Z"
+    },
+    {
+      "id": "maintenance-20260913-ethan-wright-szedeak",
+      "player": "Ethan Wright",
+      "from": "Caledonia Gladiators",
+      "to": "Délút-SZTE-Szedeák",
+      "status": "signed",
+      "pos": "G",
+      "league": "Hungarian NB1",
+      "date": "2026-09-09",
+      "date_basis": "report_date",
+      "contract": "Short-term, until Andrew Henderson recovers",
+      "source_url": "https://bball1.hu/amerikai-hatveddel-kotott-rovid-tavu-szerzodest-a-szedeak/",
+      "source_name": "BB1.hu",
+      "summary": "Szedeák agreed a temporary deal with Wright while Henderson recovers. The guard most recently played for Caledonia Gladiators; arrival and medical examinations were pending in the report.",
+      "verified_at": "2026-09-13",
+      "added_at": "2026-09-13T07:30:58.052Z"
     }
   ],
-  "public_count": 1098
+  "public_count": 1099
 }
