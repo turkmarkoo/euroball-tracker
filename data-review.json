@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-13",
-  "coverage": "Targeted 11–13 September overlap plus older unresolved follow-ups: Sportando current index, BB1 transfer roundup and direct Coulibaly/Hawkins articles, Basketball.hr index and full Zagreb report, original Fribourg Mbala announcement. Eurohoops and BeBasket indexes opened but not fully audited. Frapp and Radio Lac secondary pages unavailable. Other sources not checked; older verification dates preserved.",
+  "reviewed_on": "2026-09-15",
+  "coverage": "Targeted overlapping review from 11 September: Sportando, Eurohoops, ABA League and AS ACB current news indexes; full Pullen, Brown, Mirotic, Kleber, Vranes and Len articles; original Sport5 Brown report and official ABA Vranes report. Baskonia original website and social links unavailable; Len supported by full Eurohoops article reproducing club announcement plus AS. Pullen original Instagram unavailable; full Sportando report read. Stein original Kleber article paywalled; Eurohoops attribution retained. Remaining sources not fully checked; older verification dates preserved.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1105,
+  "public_records": 1110,
   "report_date_records": 19,
   "items": [
     {
@@ -1453,6 +1453,155 @@
           "date_basis": "report_date",
           "verified_at": "2026-09-13",
           "added_at": "2026-09-13T16:03:31.403Z"
+        }
+      ]
+    },
+    {
+      "id": "20260915-morning",
+      "checked_at": "2026-09-15T07:21:22.136Z",
+      "window_from": "2026-09-11",
+      "coverage": "Targeted overlapping review from 11 September: Sportando, Eurohoops, ABA League and AS ACB current news indexes; full Pullen, Brown, Mirotic, Kleber, Vranes and Len articles; original Sport5 Brown report and official ABA Vranes report. Baskonia original website and social links unavailable; Len supported by full Eurohoops article reproducing club announcement plus AS. Pullen original Instagram unavailable; full Sportando report read. Stein original Kleber article paywalled; Eurohoops attribution retained. Remaining sources not fully checked; older verification dates preserved.",
+      "added": 5,
+      "updated": 1,
+      "public_records": 1110,
+      "items": [
+        {
+          "id": "maintenance-20260915-pullen-mamak",
+          "player": "Jacob Pullen",
+          "from": "Ankaragucu Mamak",
+          "to": "Ankaragucu Mamak",
+          "pos": "G",
+          "league": "Turkish TBL",
+          "date": "2026-09-13",
+          "contract": null,
+          "source_url": "https://sportando.basketball/en/jacob-pullen-re-signs-with-ankaragucu-mamak/",
+          "source_name": "Sportando",
+          "summary": "Pullen renewed with Ankaragucu Mamak, according to Sportando reporting the club announcement. Contract duration was not specified.",
+          "status": "extended",
+          "date_basis": "report_date",
+          "verified_at": "2026-09-15",
+          "added_at": "2026-09-15T07:21:22.136Z"
+        },
+        {
+          "id": "maintenance-20260915-brown-jerusalem-rumor",
+          "player": "Lorenzo Brown",
+          "from": "Olimpia Milano",
+          "to": "Hapoel Jerusalem",
+          "pos": "G",
+          "league": "EuroCup / Israeli BSL",
+          "date": "2026-09-14",
+          "contract": null,
+          "source_url": "https://www.sport5.co.il/articles.aspx?FolderID=274&docID=560660",
+          "source_name": "Sport5",
+          "summary": "Jerusalem is considering Brown while his Milan contract exit remains unresolved. No official offer has been made.",
+          "status": "rumor",
+          "date_basis": "report_date",
+          "verified_at": "2026-09-15",
+          "added_at": "2026-09-15T07:21:22.136Z",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/lorenzo-brown-reportedly-on-hapoel-jerusalems-radar/",
+              "name": "Sportando (repeating Sport5 report)"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20260915-mirotic-buducnost-rumor",
+          "player": "Nikola Mirotić",
+          "from": "Monaco",
+          "to": "Buducnost VOLI",
+          "pos": "?",
+          "league": "ABA League",
+          "date": "2026-09-14",
+          "contract": null,
+          "source_url": "https://sportando.basketball/en/buducnost-open-the-door-to-nikola-mirotic/",
+          "source_name": "Sportando (citing SportKlub)",
+          "summary": "Club president Dragan Bokan discussed the possibility with free agent Mirotić, previously at Monaco. No formal offer or concrete negotiations; the player prioritizes the EuroLeague.",
+          "status": "rumor",
+          "date_basis": "report_date",
+          "verified_at": "2026-09-15",
+          "added_at": "2026-09-15T07:21:22.136Z"
+        },
+        {
+          "id": "maintenance-20260915-kleber-roma-rumor",
+          "player": "Maxi Kleber",
+          "from": "Los Angeles Lakers",
+          "to": "BC Roma SPQR",
+          "pos": "?",
+          "league": "EuroCup / Lega Basket",
+          "date": "2026-09-15",
+          "contract": null,
+          "source_url": "https://www.eurohoops.net/en/eurocup/2008083/maxi-kleber-link-to-roma-luka-doncic-eurocup/",
+          "source_name": "Eurohoops (citing Marc Stein)",
+          "summary": "BC Roma is reportedly exploring a deal for free agent Kleber, most recently with the Lakers. No agreement confirmed; original Stein report is paywalled.",
+          "status": "rumor",
+          "date_basis": "report_date",
+          "verified_at": "2026-09-15",
+          "added_at": "2026-09-15T07:21:22.136Z"
+        },
+        {
+          "id": "maintenance-20260915-vranes-zadar",
+          "player": "Ivan Vraneš",
+          "from": "Juventus Utena",
+          "to": "Zadar",
+          "pos": "C",
+          "league": "ABA League",
+          "date": "2026-09-12",
+          "contract": "Through 2026/27",
+          "source_url": "https://www.aba-liga.com/news/55140/ivan-vranes-returns-to-zadar/",
+          "source_name": "ABA League",
+          "summary": "Zadar signed Vraneš through the end of 2026/27 after he joined practice as a free agent. Previously played for Juventus Utena.",
+          "status": "signed",
+          "date_basis": "report_date",
+          "verified_at": "2026-09-15",
+          "added_at": "2026-09-15T07:21:22.136Z"
+        },
+        {
+          "id": "maintenance-20260912-len-baskonia-rumor",
+          "player": "Alex Len",
+          "from": "Real Madrid",
+          "to": "Baskonia",
+          "status": "signed",
+          "pos": "C",
+          "league": "EuroLeague / ACB",
+          "date": "2026-09-14",
+          "contract": "2 years, through 2028",
+          "source_url": "https://www.eurohoops.net/en/euroleague/2007842/alex-len-to-baskonia-euroleague/",
+          "source_name": "Eurohoops",
+          "summary": "Baskonia announced Len on a two-year contract through 2028. Eurohoops reproduces the club announcement; AS also reports the signing. Previously at Real Madrid, which he left in July.",
+          "date_basis": "report_date",
+          "verified_at": "2026-09-15",
+          "added_at": "2026-09-12T17:59:55.753Z",
+          "updated_at": "2026-09-15T07:21:22.136Z",
+          "history": [
+            {
+              "id": "maintenance-20260912-len-baskonia-rumor",
+              "player": "Alex Len",
+              "from": "Real Madrid",
+              "to": "Baskonia",
+              "status": "rumor",
+              "pos": "C",
+              "league": "EuroLeague / ACB",
+              "date": "2026-09-11",
+              "contract": null,
+              "source_url": "https://www.eurohoops.net/en/euroleague/2006697/alex-len-link-to-baskonia-euroleague/",
+              "source_name": "Eurohoops (citing El Correo)",
+              "summary": "Baskonia reportedly contacted Len and negotiations were progressing. No signing confirmed.",
+              "date_basis": "report_date",
+              "verified_at": "2026-09-12",
+              "added_at": "2026-09-12T17:59:55.753Z"
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://www.eurohoops.net/en/euroleague/2006697/alex-len-link-to-baskonia-euroleague/",
+              "name": "Eurohoops (citing El Correo)"
+            },
+            {
+              "url": "https://as.com/baloncesto/acb/alex-len-jugara-en-el-baskonia-f202609-n/",
+              "name": "AS"
+            }
+          ]
         }
       ]
     }
