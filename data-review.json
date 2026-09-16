@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-15",
-  "coverage": "Targeted 13–15 September overlap: Sportando and Eurohoops current news indexes and full Mirotic, Tarczewski, Heckel and Agee reports; original Valencia and Ulm club announcements read. Sportando Tarczewski club press release read by HTTP after web-reader failure. Napoli website dynamic news unavailable; Sabah original Facebook embed unavailable, quoted club press release in Eurohoops used. BeBasket 14–15 September news index inspected, no additional verified transfer added. Other sources and unresolved queue not fully rechecked; no blanket freshness claim.",
+  "reviewed_on": "2026-09-16",
+  "coverage": "Targeted 13–16 September overlap: Sportando and Eurohoops current indexes, full Jones and Heurtel reports; original ABA League Jones announcement and SDNA Heurtel report read. ABA index cached through 14 September; direct newer Jones article found via search and opened. PLK index inspected through 14 September, no newer transfer verified. Ilirija club URL unavailable; official league source used. Other sources and older unresolved queue not fully checked. No media change: ABA Jones story has a mismatched coach image caption, so it was not used as a portrait.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1114,
+  "public_records": 1116,
   "report_date_records": 19,
   "items": [
     {
@@ -1746,6 +1746,67 @@
               "name": "Valencia Basket (subsequent signing elsewhere)"
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "20260916-morning",
+      "checked_at": "2026-09-16T07:39:56.176Z",
+      "window_from": "2026-09-13",
+      "coverage": "Targeted 13–16 September overlap: Sportando and Eurohoops current indexes, full Jones and Heurtel reports; original ABA League Jones announcement and SDNA Heurtel report read. ABA index cached through 14 September; direct newer Jones article found via search and opened. PLK index inspected through 14 September, no newer transfer verified. Ilirija club URL unavailable; official league source used. Other sources and older unresolved queue not fully checked. No media change: ABA Jones story has a mismatched coach image caption, so it was not used as a portrait.",
+      "added": 2,
+      "updated": 0,
+      "public_records": 1116,
+      "items": [
+        {
+          "id": "maintenance-20260916-jones-ilirija",
+          "player": "Jemel Jones",
+          "from": "?",
+          "to": "Perspektiva Ilirija",
+          "pos": "G",
+          "league": "ABA League",
+          "date": "2026-09-15",
+          "contract": null,
+          "status": "signed",
+          "source_url": "https://www.aba-liga.com/news/55148/jemel-jones-is-the-new-perspektiva-ilirija-player/",
+          "source_name": "ABA League",
+          "summary": "Ilirija added Jones, who played college basketball at Cal State Bakersfield and New Mexico State. Immediate previous team and contract duration were not specified in the announcement.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/jemel-jones-joins-kk-perspektiva-ilirija/",
+              "name": "Sportando (club press release)"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-16",
+          "added_at": "2026-09-16T07:39:56.176Z"
+        },
+        {
+          "id": "maintenance-20260916-heurtel-aek-rumor",
+          "player": "Thomas Heurtel",
+          "from": "LDLC ASVEL",
+          "to": "AEK Athens",
+          "pos": "G",
+          "league": "BCL / GBL",
+          "date": "2026-09-15",
+          "contract": null,
+          "status": "rumor",
+          "source_url": "https://www.sdna.gr/mpasket/1467561_prospathei-tin-apoktisi-toy-ertel-i-aek",
+          "source_name": "SDNA",
+          "summary": "AEK and Heurtel are reportedly discussing a move, with financial terms not agreed. The guard played last season for ASVEL. No signing confirmed.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/aek-athens-reportedly-in-talks-to-sign-thomas-heurtel/",
+              "name": "Sportando (citing SDNA)"
+            },
+            {
+              "url": "https://www.eurohoops.net/en/fiba-champions-league/2008392/aek-make-first-move-for-thomas-heurtel/",
+              "name": "Eurohoops (Greek reports)"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-16",
+          "added_at": "2026-09-16T07:39:56.176Z"
         }
       ]
     }

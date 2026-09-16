@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T16:05:08.588Z",
-  "count": 1239,
+  "generated_at": "2026-09-16T07:39:56.176Z",
+  "count": 1241,
   "items": [
     {
       "id": "review-20260908-36",
@@ -17800,7 +17800,57 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-15",
       "added_at": "2026-09-15T16:05:08.588Z"
+    },
+    {
+      "id": "maintenance-20260916-jones-ilirija",
+      "player": "Jemel Jones",
+      "from": "?",
+      "to": "Perspektiva Ilirija",
+      "pos": "G",
+      "league": "ABA League",
+      "date": "2026-09-15",
+      "contract": null,
+      "status": "signed",
+      "source_url": "https://www.aba-liga.com/news/55148/jemel-jones-is-the-new-perspektiva-ilirija-player/",
+      "source_name": "ABA League",
+      "summary": "Ilirija added Jones, who played college basketball at Cal State Bakersfield and New Mexico State. Immediate previous team and contract duration were not specified in the announcement.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/jemel-jones-joins-kk-perspektiva-ilirija/",
+          "name": "Sportando (club press release)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-16",
+      "added_at": "2026-09-16T07:39:56.176Z"
+    },
+    {
+      "id": "maintenance-20260916-heurtel-aek-rumor",
+      "player": "Thomas Heurtel",
+      "from": "LDLC ASVEL",
+      "to": "AEK Athens",
+      "pos": "G",
+      "league": "BCL / GBL",
+      "date": "2026-09-15",
+      "contract": null,
+      "status": "rumor",
+      "source_url": "https://www.sdna.gr/mpasket/1467561_prospathei-tin-apoktisi-toy-ertel-i-aek",
+      "source_name": "SDNA",
+      "summary": "AEK and Heurtel are reportedly discussing a move, with financial terms not agreed. The guard played last season for ASVEL. No signing confirmed.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/aek-athens-reportedly-in-talks-to-sign-thomas-heurtel/",
+          "name": "Sportando (citing SDNA)"
+        },
+        {
+          "url": "https://www.eurohoops.net/en/fiba-champions-league/2008392/aek-make-first-move-for-thomas-heurtel/",
+          "name": "Eurohoops (Greek reports)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-16",
+      "added_at": "2026-09-16T07:39:56.176Z"
     }
   ],
-  "public_count": 1114
+  "public_count": 1116
 }

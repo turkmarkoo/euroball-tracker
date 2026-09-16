@@ -1,139 +1,56 @@
 {
-  "generated_at": "2026-09-15T16:05:08.588Z",
-  "count": 5,
+  "generated_at": "2026-09-16T07:39:56.176Z",
+  "count": 2,
   "items": [
     {
-      "id": "maintenance-20260915-mirotic-valencia",
-      "player": "Nikola Mirotić",
-      "from": "Monaco",
-      "to": "Valencia Basket",
-      "pos": "?",
-      "league": "EuroLeague / ACB",
-      "date": "2026-09-15",
-      "contract": "Through 2026/27",
-      "source_url": "https://www.valenciabasket.com/valencia-basket-incorpora-a-nikola-mirotic-para-la-proxima-temporada",
-      "source_name": "Valencia Basket",
-      "summary": "Valencia announced Mirotić for 2026/27. He joins as a free agent after leaving Monaco.",
-      "status": "signed",
-      "date_basis": "report_date",
-      "verified_at": "2026-09-15",
-      "added_at": "2026-09-15T16:05:08.588Z",
-      "sources": [
-        {
-          "url": "https://www.eurohoops.net/en/euroleague/2008113/nikola-mirotic-to-valenca-euroleague/",
-          "name": "Eurohoops (club press release)"
-        },
-        {
-          "url": "https://sportando.basketball/en/valencia-officially-signs-nikola-mirotic/",
-          "name": "Sportando"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20260915-tarczewski-napoli",
-      "player": "Kaleb Tarczewski",
-      "from": "Yokohama B-Corsairs",
-      "to": "Napoli Basket",
-      "pos": "C",
-      "league": "EuroCup / Lega Basket",
-      "date": "2026-09-15",
-      "contract": "Through 2026/27",
-      "source_url": "https://sportando.basketball/en/napoli-basketball-signs-kaleb-tarczewski/",
-      "source_name": "Sportando (club press release)",
-      "summary": "Napoli announced Tarczewski for 2026/27. He played last season with Yokohama B-Corsairs.",
-      "status": "signed",
-      "date_basis": "report_date",
-      "verified_at": "2026-09-15",
-      "added_at": "2026-09-15T16:05:08.588Z",
-      "sources": [
-        {
-          "url": "https://www.eurohoops.net/en/eurocup/2008237/kaleb-tarczewski-to-napoli-marvin-heckel-to-ulm-eurocup/",
-          "name": "Eurohoops"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20260915-heckel-ulm",
-      "player": "Marvin Heckel",
-      "from": "Bochum 3x3",
-      "to": "ratiopharm Ulm",
+      "id": "maintenance-20260916-jones-ilirija",
+      "player": "Jemel Jones",
+      "from": "?",
+      "to": "Perspektiva Ilirija",
       "pos": "G",
-      "league": "EuroCup / BBL",
+      "league": "ABA League",
       "date": "2026-09-15",
       "contract": null,
-      "source_url": "https://ratiopharmulm.com/news/erfahrung-fuer-den-backcourt-2951/",
-      "source_name": "ratiopharm Ulm",
-      "summary": "Ulm signed Heckel after preseason appearances. He returns to five-on-five basketball from Bochum’s 3x3 team; contract duration was not stated.",
       "status": "signed",
-      "date_basis": "report_date",
-      "verified_at": "2026-09-15",
-      "added_at": "2026-09-15T16:05:08.588Z",
+      "source_url": "https://www.aba-liga.com/news/55148/jemel-jones-is-the-new-perspektiva-ilirija-player/",
+      "source_name": "ABA League",
+      "summary": "Ilirija added Jones, who played college basketball at Cal State Bakersfield and New Mexico State. Immediate previous team and contract duration were not specified in the announcement.",
       "sources": [
         {
-          "url": "https://www.eurohoops.net/en/eurocup/2008237/kaleb-tarczewski-to-napoli-marvin-heckel-to-ulm-eurocup/",
-          "name": "Eurohoops"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20260915-agee-sabah",
-      "player": "Tajuan Agee",
-      "from": "JL Bourg",
-      "to": "Sabah",
-      "pos": "F/C",
-      "league": "BCL",
-      "date": "2026-09-15",
-      "contract": "Through 2026/27",
-      "source_url": "https://www.eurohoops.net/en/fiba-champions-league/2008106/tajuan-agee-to-sabah-basketball-champions-league/",
-      "source_name": "Eurohoops (club press release)",
-      "summary": "Sabah signed Agee until the end of the season after his spell with JL Bourg. Eurohoops reports the announcement was made on 14 September; this entry uses the 15 September report date.",
-      "status": "signed",
-      "date_basis": "report_date",
-      "verified_at": "2026-09-15",
-      "added_at": "2026-09-15T16:05:08.588Z"
-    },
-    {
-      "id": "maintenance-20260915-mirotic-buducnost-rumor",
-      "player": "Nikola Mirotić",
-      "from": "Monaco",
-      "to": "Buducnost VOLI",
-      "pos": "?",
-      "league": "ABA League",
-      "date": "2026-09-14",
-      "contract": null,
-      "source_url": "https://sportando.basketball/en/buducnost-open-the-door-to-nikola-mirotic/",
-      "source_name": "Sportando (citing SportKlub)",
-      "summary": "Club president Dragan Bokan discussed the possibility with free agent Mirotić, previously at Monaco. No formal offer or concrete negotiations; the player prioritizes the EuroLeague. Update 15 September: Mirotić signed with Valencia. This entry preserves the earlier unconfirmed Buducnost interest.",
-      "status": "rumor",
-      "date_basis": "report_date",
-      "verified_at": "2026-09-15",
-      "added_at": "2026-09-15T07:21:22.136Z",
-      "history": [
-        {
-          "id": "maintenance-20260915-mirotic-buducnost-rumor",
-          "player": "Nikola Mirotić",
-          "from": "Monaco",
-          "to": "Buducnost VOLI",
-          "pos": "?",
-          "league": "ABA League",
-          "date": "2026-09-14",
-          "contract": null,
-          "source_url": "https://sportando.basketball/en/buducnost-open-the-door-to-nikola-mirotic/",
-          "source_name": "Sportando (citing SportKlub)",
-          "summary": "Club president Dragan Bokan discussed the possibility with free agent Mirotić, previously at Monaco. No formal offer or concrete negotiations; the player prioritizes the EuroLeague.",
-          "status": "rumor",
-          "date_basis": "report_date",
-          "verified_at": "2026-09-15",
-          "added_at": "2026-09-15T07:21:22.136Z"
+          "url": "https://sportando.basketball/en/jemel-jones-joins-kk-perspektiva-ilirija/",
+          "name": "Sportando (club press release)"
         }
       ],
-      "updated_at": "2026-09-15T16:05:08.588Z",
+      "date_basis": "report_date",
+      "verified_at": "2026-09-16",
+      "added_at": "2026-09-16T07:39:56.176Z"
+    },
+    {
+      "id": "maintenance-20260916-heurtel-aek-rumor",
+      "player": "Thomas Heurtel",
+      "from": "LDLC ASVEL",
+      "to": "AEK Athens",
+      "pos": "G",
+      "league": "BCL / GBL",
+      "date": "2026-09-15",
+      "contract": null,
+      "status": "rumor",
+      "source_url": "https://www.sdna.gr/mpasket/1467561_prospathei-tin-apoktisi-toy-ertel-i-aek",
+      "source_name": "SDNA",
+      "summary": "AEK and Heurtel are reportedly discussing a move, with financial terms not agreed. The guard played last season for ASVEL. No signing confirmed.",
       "sources": [
         {
-          "url": "https://www.valenciabasket.com/valencia-basket-incorpora-a-nikola-mirotic-para-la-proxima-temporada",
-          "name": "Valencia Basket (subsequent signing elsewhere)"
+          "url": "https://sportando.basketball/en/aek-athens-reportedly-in-talks-to-sign-thomas-heurtel/",
+          "name": "Sportando (citing SDNA)"
+        },
+        {
+          "url": "https://www.eurohoops.net/en/fiba-champions-league/2008392/aek-make-first-move-for-thomas-heurtel/",
+          "name": "Eurohoops (Greek reports)"
         }
-      ]
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-16",
+      "added_at": "2026-09-16T07:39:56.176Z"
     }
   ]
 }
