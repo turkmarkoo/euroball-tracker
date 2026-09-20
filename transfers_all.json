@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-20T07:05:39.981Z",
-  "count": 1245,
+  "generated_at": "2026-09-20T16:02:25.379Z",
+  "count": 1247,
   "items": [
     {
       "id": "review-20260908-36",
@@ -17950,7 +17950,57 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-20",
       "added_at": "2026-09-20T07:05:39.981Z"
+    },
+    {
+      "id": "maintenance-20260920-skladanowski-jena",
+      "player": "Christian Skladanowski",
+      "from": "Würzburg Baskets",
+      "to": "Science City Jena",
+      "pos": "F",
+      "league": "BBL",
+      "date": "2026-09-18",
+      "contract": "One season with return option",
+      "status": "signed",
+      "source_url": "https://www.baskets-jena.de/news/tickets/verstaerkung-kurz-vor-dem-saisonauftakt-science-city-verpflichtet-christian-skladanowski-aus-wuerzburg",
+      "source_name": "Science City Jena",
+      "summary": "Science City Jena signed Skladanowski from Würzburg for one season with a return option, to cover Robin Christen’s injury.",
+      "sources": [
+        {
+          "url": "https://www.baskets-jena.de/news/tickets/verstaerkung-kurz-vor-dem-saisonauftakt-science-city-verpflichtet-christian-skladanowski-aus-wuerzburg",
+          "name": "Science City Jena (official)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-20",
+      "added_at": "2026-09-20T16:02:25.379Z"
+    },
+    {
+      "id": "maintenance-20260920-valtonen-valencia-exit",
+      "player": "Elias Valtonen",
+      "from": "Valencia Basket",
+      "to": "?",
+      "pos": "F",
+      "league": "ACB / EuroLeague",
+      "date": "2026-09-18",
+      "contract": "Contract terminated",
+      "status": "left",
+      "source_url": "https://www.valenciabasket.com/en/valencia-basket-part-ways-with-elias-valtonen",
+      "source_name": "Valencia Basket",
+      "summary": "Valencia Basket terminated Valtonen’s non-guaranteed contract with immediate effect; he is no longer part of the club.",
+      "sources": [
+        {
+          "url": "https://www.valenciabasket.com/en/valencia-basket-part-ways-with-elias-valtonen",
+          "name": "Valencia Basket (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/valencia-basket-part-ways-with-elias-valtonen/",
+          "name": "Sportando"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-20",
+      "added_at": "2026-09-20T16:02:25.379Z"
     }
   ],
-  "public_count": 1120
+  "public_count": 1122
 }
