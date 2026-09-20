@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-16",
-  "coverage": "Targeted 13–16 September overlap: Sportando and Eurohoops current indexes, full Jones and Heurtel reports; original ABA League Jones announcement and SDNA Heurtel report read. ABA index cached through 14 September; direct newer Jones article found via search and opened. PLK index inspected through 14 September, no newer transfer verified. Ilirija club URL unavailable; official league source used. Other sources and older unresolved queue not fully checked. No media change: ABA Jones story has a mismatched coach image caption, so it was not used as a portrait.",
+  "reviewed_on": "2026-09-20",
+  "coverage": "Targeted 16–20 September overlap: Sportando, Eurohoops and ABA indexes; direct Sportando reports for Horne and Johnson; official BCM announcement for Martin; Superbasket and BasketMarche for Tyson; RealGM transaction list used as a secondary Johnson check. No media changes.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1116,
+  "public_records": 1120,
   "report_date_records": 19,
   "items": [
     {
@@ -1807,6 +1807,117 @@
           "date_basis": "report_date",
           "verified_at": "2026-09-16",
           "added_at": "2026-09-16T07:39:56.176Z"
+        }
+      ]
+    },
+    {
+      "id": "20260920-morning",
+      "checked_at": "2026-09-20T07:05:39.981Z",
+      "window_from": "2026-09-16",
+      "coverage": "Targeted 16–20 September overlap: Sportando, Eurohoops and ABA indexes; direct Sportando reports for Horne and Johnson; official BCM announcement for Martin; Superbasket and BasketMarche for Tyson; RealGM transaction list used as a secondary Johnson check. No media changes.",
+      "added": 4,
+      "updated": 0,
+      "public_records": 1120,
+      "items": [
+        {
+          "id": "maintenance-20260920-horne-chalon",
+          "player": "Jeriah Horne",
+          "from": "?",
+          "to": "Elan Chalon",
+          "pos": "F",
+          "league": "Betclic Elite / FIBA Europe Cup",
+          "date": "2026-09-19",
+          "contract": "2026-27 season",
+          "status": "signed",
+          "source_url": "https://sportando.basketball/en/jeriah-horne-officially-joins-elan-chalon/",
+          "source_name": "Sportando",
+          "summary": "Elan Chalon officially added Horne to its 2026-27 roster after he impressed as a practice player; the report does not identify his previous club.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/jeriah-horne-officially-joins-elan-chalon/",
+              "name": "Sportando (club announcement)"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-20",
+          "added_at": "2026-09-20T07:05:39.981Z"
+        },
+        {
+          "id": "maintenance-20260920-johnson-split",
+          "player": "Nick Johnson",
+          "from": "Saint-Quentin",
+          "to": "Split",
+          "pos": "G",
+          "league": "Croatia / ABA League",
+          "date": "2026-09-19",
+          "contract": null,
+          "status": "signed",
+          "source_url": "https://sportando.basketball/en/nick-johnson-joins-kk-split/",
+          "source_name": "Sportando",
+          "summary": "KK Split announced Johnson as a new player. He arrives from Saint-Quentin after leading Betclic Elite in assists last season.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/nick-johnson-joins-kk-split/",
+              "name": "Sportando (club announcement)"
+            },
+            {
+              "url": "https://basketball.realgm.com/international/transactions",
+              "name": "RealGM international transactions"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-20",
+          "added_at": "2026-09-20T07:05:39.981Z"
+        },
+        {
+          "id": "maintenance-20260920-martin-gravelines",
+          "player": "Hassan Martin",
+          "from": "Manisa",
+          "to": "BCM Gravelines-Dunkerque",
+          "pos": "F/C",
+          "league": "Betclic Elite",
+          "date": "2026-09-17",
+          "contract": "Medical replacement through mid-November",
+          "status": "signed",
+          "source_url": "https://www.bcmbasket.com/blog/show/hassan-martin-rejoint-le-bcm-comme-pigiste-medical",
+          "source_name": "BCM Gravelines-Dunkerque",
+          "summary": "BCM Gravelines-Dunkerque signed Martin as Neal Quinn’s medical replacement through mid-November; Martin played for Manisa last season.",
+          "sources": [
+            {
+              "url": "https://www.bcmbasket.com/blog/show/hassan-martin-rejoint-le-bcm-comme-pigiste-medical",
+              "name": "BCM Gravelines-Dunkerque (official)"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-20",
+          "added_at": "2026-09-20T07:05:39.981Z"
+        },
+        {
+          "id": "maintenance-20260920-tyson-maxima-rumor",
+          "player": "Hunter Tyson",
+          "from": "Gigantes de Carolina",
+          "to": "Maxima Roma",
+          "pos": "F",
+          "league": "Lega Basket Serie A",
+          "date": "2026-09-18",
+          "contract": null,
+          "status": "rumor",
+          "source_url": "https://www.superbasket.eu/events/62516/hunter-tyson-in-arrivo-alla-maxima-roma",
+          "source_name": "Superbasket",
+          "summary": "Superbasket reports that Maxima Roma reached an agreement with Tyson to replace Vernon Carey; the move was still reported as pending arrival and is therefore unconfirmed.",
+          "sources": [
+            {
+              "url": "https://www.superbasket.eu/events/62516/hunter-tyson-in-arrivo-alla-maxima-roma",
+              "name": "Superbasket"
+            },
+            {
+              "url": "https://www.basketmarche.it/2026/09/18/serie-girone-unico/rumors-maxima-roma-vicina-fumata-bianca-ala-grande-hunter-tyson/145939",
+              "name": "BasketMarche (citing Superbasket)"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-20",
+          "added_at": "2026-09-20T07:05:39.981Z"
         }
       ]
     }
