@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T08:33:13.008Z",
-  "count": 1250,
+  "generated_at": "2026-09-21T16:02:42.097Z",
+  "count": 1254,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18073,7 +18073,103 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-21",
       "added_at": "2026-09-21T08:33:13.008Z"
+    },
+    {
+      "id": "maintenance-20260921-tyson-maxima-signed",
+      "player": "Hunter Tyson",
+      "from": "Gigantes de Carolina",
+      "to": "Maxima Roma",
+      "pos": "F",
+      "league": "Lega Basket Serie A",
+      "date": "2026-09-21",
+      "contract": null,
+      "status": "signed",
+      "source_url": "https://sportando.basketball/en/maxima-roma-signs-former-denver-nuggets-forward-hunter-tyson/",
+      "source_name": "Sportando",
+      "summary": "Maxima Roma officially announced Tyson after the earlier agreement report; he arrives following his Puerto Rico stint with Gigantes de Carolina.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/maxima-roma-signs-former-denver-nuggets-forward-hunter-tyson/",
+          "name": "Sportando (club announcement)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-21",
+      "added_at": "2026-09-21T16:02:42.097Z"
+    },
+    {
+      "id": "maintenance-20260921-andronikashvili-andorra",
+      "player": "Rati Andronikashvili",
+      "from": "?",
+      "to": "MoraBanc Andorra",
+      "pos": "G",
+      "league": "ACB",
+      "date": "2026-09-21",
+      "contract": "Temporary deal for two months",
+      "status": "signed",
+      "source_url": "https://sportando.basketball/en/morabanc-andorra-signs-rati-andronikashvili-on-a-temporary-deal/",
+      "source_name": "Sportando",
+      "summary": "MoraBanc Andorra signed Georgian point guard Andronikashvili on a two-month temporary deal to strengthen its backcourt.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/morabanc-andorra-signs-rati-andronikashvili-on-a-temporary-deal/",
+          "name": "Sportando (club announcement)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-21",
+      "added_at": "2026-09-21T16:02:42.097Z"
+    },
+    {
+      "id": "maintenance-20260921-jones-trieste",
+      "player": "Lajae Jones",
+      "from": "?",
+      "to": "Pallacanestro Trieste",
+      "pos": "F",
+      "league": "Lega Basket Serie A",
+      "date": "2026-09-21",
+      "contract": "2026-27 season",
+      "status": "signed",
+      "source_url": "https://sportando.basketball/en/pallacanestro-trieste-officially-signs-lajae-jones/",
+      "source_name": "Sportando",
+      "summary": "Pallacanestro Trieste announced Jones for the 2026-27 roster after his NCAA career at Florida State.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/pallacanestro-trieste-officially-signs-lajae-jones/",
+          "name": "Sportando (club announcement)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-21",
+      "added_at": "2026-09-21T16:02:42.097Z"
+    },
+    {
+      "id": "maintenance-20260921-dunn-denizli",
+      "player": "Jhonathan Dunn",
+      "from": "FC Porto",
+      "to": "Yukatel Denizli Basket",
+      "pos": "G",
+      "league": "BSL / FIBA Europe Cup",
+      "date": "2026-09-21",
+      "contract": null,
+      "status": "signed",
+      "source_url": "https://www.mbb.org.tr/hos-geldin-jhonathan-dunn/73/75/",
+      "source_name": "Yukatel Merkezefendi Belediyesi Basket",
+      "summary": "Yukatel Denizli Basket reached an agreement with Dunn after his season at FC Porto; the club cites his Portuguese League and FIBA Europe Cup production.",
+      "sources": [
+        {
+          "url": "https://www.mbb.org.tr/hos-geldin-jhonathan-dunn/73/75/",
+          "name": "Yukatel Denizli Basket (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/yukatel-denizli-basket-sign-jhonathan-dunn/",
+          "name": "Sportando"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-21",
+      "added_at": "2026-09-21T16:02:42.097Z"
     }
   ],
-  "public_count": 1125
+  "public_count": 1129
 }
