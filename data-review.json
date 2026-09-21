@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-20",
-  "coverage": "Evening overlap: Sportando latest European feed plus official Science City Jena and Valencia Basket announcements; both moves verified, no media changes.",
+  "reviewed_on": "2026-09-21",
+  "coverage": "Targeted 16–21 September overlap: Sportando latest European feed and linked club announcements for BC Slovan, Maccabi Ramat Gan and Zadar; no media changes.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1122,
+  "public_records": 1125,
   "report_date_records": 19,
   "items": [
     {
@@ -1979,6 +1979,90 @@
           "date_basis": "report_date",
           "verified_at": "2026-09-20",
           "added_at": "2026-09-20T16:02:25.379Z"
+        }
+      ]
+    },
+    {
+      "id": "20260921-morning",
+      "checked_at": "2026-09-21T08:33:13.008Z",
+      "window_from": "2026-09-18",
+      "coverage": "Targeted 16–21 September overlap: Sportando latest European feed and linked club announcements for BC Slovan, Maccabi Ramat Gan and Zadar; no media changes.",
+      "added": 3,
+      "updated": 0,
+      "public_records": 1125,
+      "items": [
+        {
+          "id": "maintenance-20260921-dreznjak-slovan",
+          "player": "Mateo Drežnjak",
+          "from": "SC Derby",
+          "to": "BC Slovan",
+          "pos": "G",
+          "league": "ABA League / Slovakia",
+          "date": "2026-09-20",
+          "contract": null,
+          "status": "signed",
+          "source_url": "https://sportando.basketball/en/mateo-dreznjak-is-the-new-addition-to-bc-slovan/",
+          "source_name": "Sportando",
+          "summary": "BC Slovan announced Croatian guard Drežnjak; he arrives after last season with SC Derby.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/mateo-dreznjak-is-the-new-addition-to-bc-slovan/",
+              "name": "Sportando (club announcement)"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-21",
+          "added_at": "2026-09-21T08:33:13.008Z"
+        },
+        {
+          "id": "maintenance-20260921-adams-ramat-gan",
+          "player": "Jaylen Adams",
+          "from": "?",
+          "to": "Maccabi Ramat Gan",
+          "pos": "G",
+          "league": "Israeli Basketball League",
+          "date": "2026-09-20",
+          "contract": null,
+          "status": "signed",
+          "source_url": "https://sportando.basketball/en/maccabi-ramat-gan-jaylen-adams-joins-as-the-fifth-foreign-player/",
+          "source_name": "Sportando",
+          "summary": "Maccabi Ramat Gan officially announced Adams as its fifth foreign player.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/maccabi-ramat-gan-jaylen-adams-joins-as-the-fifth-foreign-player/",
+              "name": "Sportando (club announcement)"
+            },
+            {
+              "url": "https://x.com/IroniGan/status/1967925367376717925",
+              "name": "Maccabi Ironi Ramat-Gan official X announcement"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-21",
+          "added_at": "2026-09-21T08:33:13.008Z"
+        },
+        {
+          "id": "maintenance-20260921-ogden-zadar",
+          "player": "Mark Anthony Ogden Jr.",
+          "from": "Dole Basket Rimini",
+          "to": "Zadar",
+          "pos": "F/C",
+          "league": "ABA League / Croatia",
+          "date": "2026-09-16",
+          "contract": "Through end of 2026-27 season",
+          "status": "signed",
+          "source_url": "https://sportando.basketball/en/mark-anthony-ogden-jr-joins-zadar/",
+          "source_name": "Sportando",
+          "summary": "Zadar announced Ogden on a contract through the end of 2026-27 after his season with Dole Basket Rimini.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/mark-anthony-ogden-jr-joins-zadar/",
+              "name": "Sportando (club announcement)"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-21",
+          "added_at": "2026-09-21T08:33:13.008Z"
         }
       ]
     }
