@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-21",
-  "coverage": "Evening overlap: Sportando latest European feed and official club announcements for Maxima Roma, MoraBanc Andorra, Trieste and Denizli; Hunter Tyson status upgraded with official signing. No media changes.",
+  "reviewed_on": "2026-09-22",
+  "coverage": "Targeted 18–22 September overlap: Sportando latest European feed and full Treviso announcement for Christopher Ike Anigbogu; no media changes.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1129,
+  "public_records": 1130,
   "report_date_records": 19,
   "items": [
     {
@@ -2170,6 +2170,40 @@
           "date_basis": "report_date",
           "verified_at": "2026-09-21",
           "added_at": "2026-09-21T16:02:42.097Z"
+        }
+      ]
+    },
+    {
+      "id": "20260922-morning",
+      "checked_at": "2026-09-22T07:37:11.097Z",
+      "window_from": "2026-09-19",
+      "coverage": "Targeted 18–22 September overlap: Sportando latest European feed and full Treviso announcement for Christopher Ike Anigbogu; no media changes.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1130,
+      "items": [
+        {
+          "id": "maintenance-20260922-anigbogu-treviso",
+          "player": "Christopher Ike Anigbogu",
+          "from": "Vanoli Basket Cremona",
+          "to": "Nutribullet Treviso Basket",
+          "pos": "C",
+          "league": "Lega Basket Serie A",
+          "date": "2026-09-21",
+          "contract": "Through end of 2026-27 season",
+          "status": "signed",
+          "source_url": "https://sportando.basketball/en/nutribullet-treviso-basket-signs-christopher-ike-anigbogu/",
+          "source_name": "Sportando",
+          "summary": "Nutribullet Treviso signed Anigbogu through the end of the season after his breakout European season with Cremona.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/nutribullet-treviso-basket-signs-christopher-ike-anigbogu/",
+              "name": "Sportando (club announcement)"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-22",
+          "added_at": "2026-09-22T07:37:11.097Z"
         }
       ]
     }

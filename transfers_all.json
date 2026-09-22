@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T16:02:42.097Z",
-  "count": 1254,
+  "generated_at": "2026-09-22T07:37:11.097Z",
+  "count": 1255,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18169,7 +18169,30 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-21",
       "added_at": "2026-09-21T16:02:42.097Z"
+    },
+    {
+      "id": "maintenance-20260922-anigbogu-treviso",
+      "player": "Christopher Ike Anigbogu",
+      "from": "Vanoli Basket Cremona",
+      "to": "Nutribullet Treviso Basket",
+      "pos": "C",
+      "league": "Lega Basket Serie A",
+      "date": "2026-09-21",
+      "contract": "Through end of 2026-27 season",
+      "status": "signed",
+      "source_url": "https://sportando.basketball/en/nutribullet-treviso-basket-signs-christopher-ike-anigbogu/",
+      "source_name": "Sportando",
+      "summary": "Nutribullet Treviso signed Anigbogu through the end of the season after his breakout European season with Cremona.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/nutribullet-treviso-basket-signs-christopher-ike-anigbogu/",
+          "name": "Sportando (club announcement)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-22",
+      "added_at": "2026-09-22T07:37:11.097Z"
     }
   ],
-  "public_count": 1129
+  "public_count": 1130
 }
