@@ -1,10 +1,10 @@
 {
   "reviewed_on": "2026-09-22",
-  "coverage": "Targeted 18–22 September overlap: Sportando latest European feed and full Treviso announcement for Christopher Ike Anigbogu; no media changes.",
+  "coverage": "Evening overlap: Sportando latest European feed and full Lorenzo Brown report citing Sport5; move remains a clearly labelled rumor. No media changes.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1130,
+  "public_records": 1131,
   "report_date_records": 19,
   "items": [
     {
@@ -2204,6 +2204,44 @@
           "date_basis": "report_date",
           "verified_at": "2026-09-22",
           "added_at": "2026-09-22T07:37:11.097Z"
+        }
+      ]
+    },
+    {
+      "id": "20260922-evening",
+      "checked_at": "2026-09-22T18:19:39.716Z",
+      "window_from": "2026-09-20",
+      "coverage": "Evening overlap: Sportando latest European feed and full Lorenzo Brown report citing Sport5; move remains a clearly labelled rumor. No media changes.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1131,
+      "items": [
+        {
+          "id": "maintenance-20260922-brown-jerusalem-nearing",
+          "player": "Lorenzo Brown",
+          "from": "Olimpia Milano",
+          "to": "Hapoel Jerusalem",
+          "pos": "G",
+          "league": "EuroCup / Israeli BSL",
+          "date": "2026-09-22",
+          "contract": "Reported one-year deal; possible early exit clause",
+          "status": "rumor",
+          "source_url": "https://sportando.basketball/en/lorenzo-brown-nearing-a-move-to-hapoel-jerusalem/",
+          "source_name": "Sportando",
+          "summary": "Sportando, citing Sport5, reports Brown is close to a one-year Hapoel Jerusalem deal, with a possible early termination clause; no signing is confirmed.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/lorenzo-brown-nearing-a-move-to-hapoel-jerusalem/",
+              "name": "Sportando (citing Sport5)"
+            },
+            {
+              "url": "https://www.sport5.co.il/articles.aspx?FolderID=274&docID=560660",
+              "name": "Sport5"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-22",
+          "added_at": "2026-09-22T18:19:39.716Z"
         }
       ]
     }
