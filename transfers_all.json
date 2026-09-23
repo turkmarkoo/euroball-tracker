@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T18:19:39.716Z",
-  "count": 1256,
+  "generated_at": "2026-09-23T07:51:56.647Z",
+  "count": 1257,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18219,7 +18219,38 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-22",
       "added_at": "2026-09-22T18:19:39.716Z"
+    },
+    {
+      "id": "maintenance-20260923-omic-spartak",
+      "player": "Alen Omić",
+      "from": "Yukatel Denizli Basket",
+      "to": "Spartak Office Shoes",
+      "pos": "C",
+      "league": "ABA League",
+      "date": "2026-09-22",
+      "contract": "One year",
+      "status": "signed",
+      "source_url": "https://www.aba-liga.com/news/55176/alen-omic-new-spartak-office-shoes-player/",
+      "source_name": "ABA League",
+      "summary": "Spartak Office Shoes agreed cooperation with experienced center Alen Omić after his season with Merkezefendi in Turkey; Delo reports a one-year contract.",
+      "sources": [
+        {
+          "url": "https://www.aba-liga.com/news/55176/alen-omic-new-spartak-office-shoes-player/",
+          "name": "ABA League (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/alen-omic-joins-spartak-office-shoes/",
+          "name": "Sportando"
+        },
+        {
+          "url": "https://www.delo.si/sport/kosarka/alen-omic-kariero-nadaljuje-v-subotici/",
+          "name": "Delo"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-23",
+      "added_at": "2026-09-23T07:51:56.647Z"
     }
   ],
-  "public_count": 1131
+  "public_count": 1132
 }

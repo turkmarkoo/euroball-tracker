@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-22",
-  "coverage": "Evening overlap: Sportando latest European feed and full Lorenzo Brown report citing Sport5; move remains a clearly labelled rumor. No media changes.",
+  "reviewed_on": "2026-09-23",
+  "coverage": "Morning overlap: Sportando latest feed plus ABA League official announcement, with Sportando and Delo corroboration for Alen Omić joining Spartak Office Shoes. No media changes.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1131,
+  "public_records": 1132,
   "report_date_records": 19,
   "items": [
     {
@@ -2242,6 +2242,48 @@
           "date_basis": "report_date",
           "verified_at": "2026-09-22",
           "added_at": "2026-09-22T18:19:39.716Z"
+        }
+      ]
+    },
+    {
+      "id": "20260923-morning",
+      "checked_at": "2026-09-23T07:51:56.647Z",
+      "window_from": "2026-09-21",
+      "coverage": "Morning overlap: Sportando latest feed plus ABA League official announcement, with Sportando and Delo corroboration for Alen Omić joining Spartak Office Shoes. No media changes.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1132,
+      "items": [
+        {
+          "id": "maintenance-20260923-omic-spartak",
+          "player": "Alen Omić",
+          "from": "Yukatel Denizli Basket",
+          "to": "Spartak Office Shoes",
+          "pos": "C",
+          "league": "ABA League",
+          "date": "2026-09-22",
+          "contract": "One year",
+          "status": "signed",
+          "source_url": "https://www.aba-liga.com/news/55176/alen-omic-new-spartak-office-shoes-player/",
+          "source_name": "ABA League",
+          "summary": "Spartak Office Shoes agreed cooperation with experienced center Alen Omić after his season with Merkezefendi in Turkey; Delo reports a one-year contract.",
+          "sources": [
+            {
+              "url": "https://www.aba-liga.com/news/55176/alen-omic-new-spartak-office-shoes-player/",
+              "name": "ABA League (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/alen-omic-joins-spartak-office-shoes/",
+              "name": "Sportando"
+            },
+            {
+              "url": "https://www.delo.si/sport/kosarka/alen-omic-kariero-nadaljuje-v-subotici/",
+              "name": "Delo"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-23",
+          "added_at": "2026-09-23T07:51:56.647Z"
         }
       ]
     }
