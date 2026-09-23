@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-23T07:51:56.647Z",
-  "count": 1257,
+  "generated_at": "2026-09-23T16:02:13.348Z",
+  "count": 1258,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18250,7 +18250,38 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-23",
       "added_at": "2026-09-23T07:51:56.647Z"
+    },
+    {
+      "id": "maintenance-20260923-wicks-holon",
+      "player": "Skylar Wicks",
+      "from": "?",
+      "to": "Hapoel Holon",
+      "pos": "G",
+      "league": "BCL / Israeli BSL",
+      "date": "2026-09-23",
+      "contract": "Three years",
+      "status": "signed",
+      "source_url": "https://bsl.org.il/news.asp?id=86645",
+      "source_name": "Israeli Basketball Super League",
+      "summary": "Hapoel Holon announced Skylar Wicks on a three-season contract; the guard begins his professional career in Israel after college.",
+      "sources": [
+        {
+          "url": "https://bsl.org.il/news.asp?id=86645",
+          "name": "Israeli Basketball Super League"
+        },
+        {
+          "url": "https://sportando.basketball/en/hapoel-holon-sign-skylar-wicks-to-three-year-deal/",
+          "name": "Sportando"
+        },
+        {
+          "url": "https://sites.one.co.il/Mobile/Article/534053.html",
+          "name": "ONE"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-23",
+      "added_at": "2026-09-23T16:02:13.348Z"
     }
   ],
-  "public_count": 1132
+  "public_count": 1133
 }

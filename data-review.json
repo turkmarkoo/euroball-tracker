@@ -1,10 +1,10 @@
 {
   "reviewed_on": "2026-09-23",
-  "coverage": "Morning overlap: Sportando latest feed plus ABA League official announcement, with Sportando and Delo corroboration for Alen Omić joining Spartak Office Shoes. No media changes.",
+  "coverage": "Evening overlap: Sportando Europe feed plus Israeli Basketball Super League, Sportando and ONE corroboration for Skylar Wicks joining Hapoel Holon on a three-year contract. No media changes.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1132,
+  "public_records": 1133,
   "report_date_records": 19,
   "items": [
     {
@@ -2284,6 +2284,48 @@
           "date_basis": "report_date",
           "verified_at": "2026-09-23",
           "added_at": "2026-09-23T07:51:56.647Z"
+        }
+      ]
+    },
+    {
+      "id": "20260923-evening",
+      "checked_at": "2026-09-23T16:02:13.348Z",
+      "window_from": "2026-09-22",
+      "coverage": "Evening overlap: Sportando Europe feed plus Israeli Basketball Super League, Sportando and ONE corroboration for Skylar Wicks joining Hapoel Holon on a three-year contract. No media changes.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1133,
+      "items": [
+        {
+          "id": "maintenance-20260923-wicks-holon",
+          "player": "Skylar Wicks",
+          "from": "?",
+          "to": "Hapoel Holon",
+          "pos": "G",
+          "league": "BCL / Israeli BSL",
+          "date": "2026-09-23",
+          "contract": "Three years",
+          "status": "signed",
+          "source_url": "https://bsl.org.il/news.asp?id=86645",
+          "source_name": "Israeli Basketball Super League",
+          "summary": "Hapoel Holon announced Skylar Wicks on a three-season contract; the guard begins his professional career in Israel after college.",
+          "sources": [
+            {
+              "url": "https://bsl.org.il/news.asp?id=86645",
+              "name": "Israeli Basketball Super League"
+            },
+            {
+              "url": "https://sportando.basketball/en/hapoel-holon-sign-skylar-wicks-to-three-year-deal/",
+              "name": "Sportando"
+            },
+            {
+              "url": "https://sites.one.co.il/Mobile/Article/534053.html",
+              "name": "ONE"
+            }
+          ],
+          "date_basis": "report_date",
+          "verified_at": "2026-09-23",
+          "added_at": "2026-09-23T16:02:13.348Z"
         }
       ]
     }

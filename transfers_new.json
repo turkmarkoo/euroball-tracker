@@ -1,37 +1,37 @@
 {
-  "generated_at": "2026-09-23T07:51:56.647Z",
+  "generated_at": "2026-09-23T16:02:13.348Z",
   "count": 1,
   "items": [
     {
-      "id": "maintenance-20260923-omic-spartak",
-      "player": "Alen Omić",
-      "from": "Yukatel Denizli Basket",
-      "to": "Spartak Office Shoes",
-      "pos": "C",
-      "league": "ABA League",
-      "date": "2026-09-22",
-      "contract": "One year",
+      "id": "maintenance-20260923-wicks-holon",
+      "player": "Skylar Wicks",
+      "from": "?",
+      "to": "Hapoel Holon",
+      "pos": "G",
+      "league": "BCL / Israeli BSL",
+      "date": "2026-09-23",
+      "contract": "Three years",
       "status": "signed",
-      "source_url": "https://www.aba-liga.com/news/55176/alen-omic-new-spartak-office-shoes-player/",
-      "source_name": "ABA League",
-      "summary": "Spartak Office Shoes agreed cooperation with experienced center Alen Omić after his season with Merkezefendi in Turkey; Delo reports a one-year contract.",
+      "source_url": "https://bsl.org.il/news.asp?id=86645",
+      "source_name": "Israeli Basketball Super League",
+      "summary": "Hapoel Holon announced Skylar Wicks on a three-season contract; the guard begins his professional career in Israel after college.",
       "sources": [
         {
-          "url": "https://www.aba-liga.com/news/55176/alen-omic-new-spartak-office-shoes-player/",
-          "name": "ABA League (official)"
+          "url": "https://bsl.org.il/news.asp?id=86645",
+          "name": "Israeli Basketball Super League"
         },
         {
-          "url": "https://sportando.basketball/en/alen-omic-joins-spartak-office-shoes/",
+          "url": "https://sportando.basketball/en/hapoel-holon-sign-skylar-wicks-to-three-year-deal/",
           "name": "Sportando"
         },
         {
-          "url": "https://www.delo.si/sport/kosarka/alen-omic-kariero-nadaljuje-v-subotici/",
-          "name": "Delo"
+          "url": "https://sites.one.co.il/Mobile/Article/534053.html",
+          "name": "ONE"
         }
       ],
       "date_basis": "report_date",
       "verified_at": "2026-09-23",
-      "added_at": "2026-09-23T07:51:56.647Z"
+      "added_at": "2026-09-23T16:02:13.348Z"
     }
   ]
 }
