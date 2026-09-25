@@ -1,37 +1,98 @@
 {
-  "generated_at": "2026-09-23T16:02:13.348Z",
-  "count": 1,
+  "generated_at": "2026-09-25T07:13:36.514Z",
+  "count": 4,
   "items": [
     {
-      "id": "maintenance-20260923-wicks-holon",
-      "player": "Skylar Wicks",
-      "from": "?",
-      "to": "Hapoel Holon",
-      "pos": "G",
-      "league": "BCL / Israeli BSL",
-      "date": "2026-09-23",
-      "contract": "Three years",
+      "id": "maintenance-20260925-alibegovic-derthona",
+      "player": "Amar Alibegović",
+      "from": "Coviran Granada",
+      "to": "Derthona Tortona",
+      "pos": "F",
+      "league": "EuroCup / Italian Serie A",
+      "date": "2026-09-24",
+      "contract": "Multi-year",
       "status": "signed",
-      "source_url": "https://bsl.org.il/news.asp?id=86645",
-      "source_name": "Israeli Basketball Super League",
-      "summary": "Hapoel Holon announced Skylar Wicks on a three-season contract; the guard begins his professional career in Israel after college.",
+      "source_url": "https://www.bhbasket.ba/amar-alibegovic-ima-novi-klub-3/",
+      "source_name": "BH Basket",
+      "summary": "Derthona agreed a multi-year deal with Amar Alibegović after his season with Coviran Granada.",
       "sources": [
         {
-          "url": "https://bsl.org.il/news.asp?id=86645",
-          "name": "Israeli Basketball Super League"
-        },
-        {
-          "url": "https://sportando.basketball/en/hapoel-holon-sign-skylar-wicks-to-three-year-deal/",
-          "name": "Sportando"
-        },
-        {
-          "url": "https://sites.one.co.il/Mobile/Article/534053.html",
-          "name": "ONE"
+          "url": "https://www.bhbasket.ba/amar-alibegovic-ima-novi-klub-3/",
+          "name": "BH Basket"
         }
       ],
       "date_basis": "report_date",
-      "verified_at": "2026-09-23",
-      "added_at": "2026-09-23T16:02:13.348Z"
+      "verified_at": "2026-09-25",
+      "added_at": "2026-09-25T07:13:36.514Z"
+    },
+    {
+      "id": "maintenance-20260925-aramburu-avellino-release",
+      "player": "Jon Ander Aramburu",
+      "from": "Scandone Avellino",
+      "to": "Free Agent",
+      "pos": "F",
+      "league": "Serie B",
+      "date": "2026-09-24",
+      "contract": "Mutual termination",
+      "status": "left",
+      "source_url": "https://felicescandone.it/2026/09/24/risoluzione-consensuale-con-jon-ander-aramburu/",
+      "source_name": "Scandone Avellino",
+      "summary": "Scandone Avellino and Jon Ander Aramburu mutually terminated their sporting relationship after preseason.",
+      "sources": [
+        {
+          "url": "https://felicescandone.it/2026/09/24/risoluzione-consensuale-con-jon-ander-aramburu/",
+          "name": "Scandone Avellino (official)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-25",
+      "added_at": "2026-09-25T07:13:36.514Z"
+    },
+    {
+      "id": "maintenance-20260925-len-baskonia-release",
+      "player": "Alex Len",
+      "from": "Baskonia",
+      "to": "Free Agent",
+      "pos": "C",
+      "league": "EuroLeague / ACB",
+      "date": "2026-09-23",
+      "contract": "Mutual termination",
+      "status": "left",
+      "source_url": "https://acb.com/es/liga/noticias/saski-baskonia-y-alex-len-han-acordado-de-mutuo-acuerdo-rescindir-el-contrato-que-vinculaba-a-ambas-partes-146098",
+      "source_name": "ACB",
+      "summary": "Baskonia and Alex Len mutually agreed to terminate his contract after foot discomfort following his first training session.",
+      "sources": [
+        {
+          "url": "https://acb.com/es/liga/noticias/saski-baskonia-y-alex-len-han-acordado-de-mutuo-acuerdo-rescindir-el-contrato-que-vinculaba-a-ambas-partes-146098",
+          "name": "ACB (official)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-25",
+      "added_at": "2026-09-25T07:13:36.514Z"
+    },
+    {
+      "id": "maintenance-20260925-lomazs-cedevita",
+      "player": "Rihards Lomažs",
+      "from": "Neptunas Klaipeda",
+      "to": "Cedevita Olimpija",
+      "pos": "G",
+      "league": "EuroCup / ABA League",
+      "date": "2026-09-23",
+      "contract": "One season",
+      "status": "signed",
+      "source_url": "https://cedevita.olimpija.com/novice/izkuseni-latvijski-reprezentant-rihards-lomazs-je-novi-zmaj/",
+      "source_name": "Cedevita Olimpija",
+      "summary": "Cedevita Olimpija announced Latvia captain Rihards Lomažs from Neptūnas on a one-season contract.",
+      "sources": [
+        {
+          "url": "https://cedevita.olimpija.com/novice/izkuseni-latvijski-reprezentant-rihards-lomazs-je-novi-zmaj/",
+          "name": "Cedevita Olimpija (official)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-25",
+      "added_at": "2026-09-25T07:13:36.514Z"
     }
   ]
 }

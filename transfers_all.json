@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-23T16:02:13.348Z",
-  "count": 1258,
+  "generated_at": "2026-09-25T07:13:36.514Z",
+  "count": 1262,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18281,7 +18281,99 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-23",
       "added_at": "2026-09-23T16:02:13.348Z"
+    },
+    {
+      "id": "maintenance-20260925-alibegovic-derthona",
+      "player": "Amar Alibegović",
+      "from": "Coviran Granada",
+      "to": "Derthona Tortona",
+      "pos": "F",
+      "league": "EuroCup / Italian Serie A",
+      "date": "2026-09-24",
+      "contract": "Multi-year",
+      "status": "signed",
+      "source_url": "https://www.bhbasket.ba/amar-alibegovic-ima-novi-klub-3/",
+      "source_name": "BH Basket",
+      "summary": "Derthona agreed a multi-year deal with Amar Alibegović after his season with Coviran Granada.",
+      "sources": [
+        {
+          "url": "https://www.bhbasket.ba/amar-alibegovic-ima-novi-klub-3/",
+          "name": "BH Basket"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-25",
+      "added_at": "2026-09-25T07:13:36.514Z"
+    },
+    {
+      "id": "maintenance-20260925-aramburu-avellino-release",
+      "player": "Jon Ander Aramburu",
+      "from": "Scandone Avellino",
+      "to": "Free Agent",
+      "pos": "F",
+      "league": "Serie B",
+      "date": "2026-09-24",
+      "contract": "Mutual termination",
+      "status": "left",
+      "source_url": "https://felicescandone.it/2026/09/24/risoluzione-consensuale-con-jon-ander-aramburu/",
+      "source_name": "Scandone Avellino",
+      "summary": "Scandone Avellino and Jon Ander Aramburu mutually terminated their sporting relationship after preseason.",
+      "sources": [
+        {
+          "url": "https://felicescandone.it/2026/09/24/risoluzione-consensuale-con-jon-ander-aramburu/",
+          "name": "Scandone Avellino (official)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-25",
+      "added_at": "2026-09-25T07:13:36.514Z"
+    },
+    {
+      "id": "maintenance-20260925-len-baskonia-release",
+      "player": "Alex Len",
+      "from": "Baskonia",
+      "to": "Free Agent",
+      "pos": "C",
+      "league": "EuroLeague / ACB",
+      "date": "2026-09-23",
+      "contract": "Mutual termination",
+      "status": "left",
+      "source_url": "https://acb.com/es/liga/noticias/saski-baskonia-y-alex-len-han-acordado-de-mutuo-acuerdo-rescindir-el-contrato-que-vinculaba-a-ambas-partes-146098",
+      "source_name": "ACB",
+      "summary": "Baskonia and Alex Len mutually agreed to terminate his contract after foot discomfort following his first training session.",
+      "sources": [
+        {
+          "url": "https://acb.com/es/liga/noticias/saski-baskonia-y-alex-len-han-acordado-de-mutuo-acuerdo-rescindir-el-contrato-que-vinculaba-a-ambas-partes-146098",
+          "name": "ACB (official)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-25",
+      "added_at": "2026-09-25T07:13:36.514Z"
+    },
+    {
+      "id": "maintenance-20260925-lomazs-cedevita",
+      "player": "Rihards Lomažs",
+      "from": "Neptunas Klaipeda",
+      "to": "Cedevita Olimpija",
+      "pos": "G",
+      "league": "EuroCup / ABA League",
+      "date": "2026-09-23",
+      "contract": "One season",
+      "status": "signed",
+      "source_url": "https://cedevita.olimpija.com/novice/izkuseni-latvijski-reprezentant-rihards-lomazs-je-novi-zmaj/",
+      "source_name": "Cedevita Olimpija",
+      "summary": "Cedevita Olimpija announced Latvia captain Rihards Lomažs from Neptūnas on a one-season contract.",
+      "sources": [
+        {
+          "url": "https://cedevita.olimpija.com/novice/izkuseni-latvijski-reprezentant-rihards-lomazs-je-novi-zmaj/",
+          "name": "Cedevita Olimpija (official)"
+        }
+      ],
+      "date_basis": "report_date",
+      "verified_at": "2026-09-25",
+      "added_at": "2026-09-25T07:13:36.514Z"
     }
   ],
-  "public_count": 1133
+  "public_count": 1137
 }
