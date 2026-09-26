@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-26T09:57:37.649Z",
-  "count": 1263,
+  "generated_at": "2026-09-26T16:02:33.194Z",
+  "count": 1264,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18404,7 +18404,34 @@
       "date_basis": "announcement_date",
       "verified_at": "2026-09-26",
       "added_at": "2026-09-26T09:57:37.649Z"
+    },
+    {
+      "id": "maintenance-20260926-brown-jerusalem-loan",
+      "player": "Lorenzo Brown",
+      "from": "Olimpia Milano",
+      "to": "Hapoel Jerusalem",
+      "pos": "G",
+      "league": "EuroCup / Israeli BSL",
+      "date": "2026-09-25",
+      "contract": "Loan through end of 2026-27 season",
+      "status": "signed",
+      "source_url": "https://hapoel.co.il/news?NewsId=34621",
+      "source_name": "Hapoel Jerusalem",
+      "summary": "Hapoel Jerusalem announced Lorenzo Brown on loan from Olimpia Milano through the end of the 2026-27 season, converting the earlier report into a confirmed move.",
+      "sources": [
+        {
+          "url": "https://hapoel.co.il/news?NewsId=34621",
+          "name": "Hapoel Jerusalem (official)"
+        },
+        {
+          "url": "https://www.basketinside.com/europe-basketball/mercato-europe-basketball/ufficiale-lorenzo-brown-lascia-milano-e-va-in-prestito-allhapoel-gerusalemme/",
+          "name": "Basketinside"
+        }
+      ],
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-26",
+      "added_at": "2026-09-26T16:02:33.194Z"
     }
   ],
-  "public_count": 1138
+  "public_count": 1139
 }

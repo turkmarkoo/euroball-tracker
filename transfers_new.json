@@ -1,37 +1,33 @@
 {
-  "generated_at": "2026-09-26T09:57:37.649Z",
+  "generated_at": "2026-09-26T16:02:33.194Z",
   "count": 1,
   "items": [
     {
-      "id": "maintenance-20260926-brajkovic-trieste",
-      "player": "Luka Brajković",
-      "from": "Cedevita Olimpija",
-      "to": "Pallacanestro Trieste",
-      "pos": "C",
-      "league": "EuroCup / Italian Serie A",
+      "id": "maintenance-20260926-brown-jerusalem-loan",
+      "player": "Lorenzo Brown",
+      "from": "Olimpia Milano",
+      "to": "Hapoel Jerusalem",
+      "pos": "G",
+      "league": "EuroCup / Israeli BSL",
       "date": "2026-09-25",
-      "contract": null,
+      "contract": "Loan through end of 2026-27 season",
       "status": "signed",
-      "source_url": "https://www.pallacanestrotrieste.it/news/19597266438/luka-brajkovi-il-nuovo-centro-della-pallacanestro-trieste",
-      "source_name": "Pallacanestro Trieste",
-      "summary": "Pallacanestro Trieste officially announced center Luka Brajković from Cedevita Olimpija, where he won the Slovenian championship.",
+      "source_url": "https://hapoel.co.il/news?NewsId=34621",
+      "source_name": "Hapoel Jerusalem",
+      "summary": "Hapoel Jerusalem announced Lorenzo Brown on loan from Olimpia Milano through the end of the 2026-27 season, converting the earlier report into a confirmed move.",
       "sources": [
         {
-          "url": "https://www.pallacanestrotrieste.it/news/19597266438/luka-brajkovi-il-nuovo-centro-della-pallacanestro-trieste",
-          "name": "Pallacanestro Trieste (official)"
+          "url": "https://hapoel.co.il/news?NewsId=34621",
+          "name": "Hapoel Jerusalem (official)"
         },
         {
-          "url": "https://sportando.basketball/en/pallacanestro-trieste-officially-signs-luka-brajkovic/",
-          "name": "Sportando"
-        },
-        {
-          "url": "https://www.rainews.it/amp/tgr/fvg/articoli/2026/09/pallacanestro-trieste-ecco-luka-brajkovic-ce8747ae-e6c3-4e9e-9783-51f998e85051.html",
-          "name": "Rai TGR FVG"
+          "url": "https://www.basketinside.com/europe-basketball/mercato-europe-basketball/ufficiale-lorenzo-brown-lascia-milano-e-va-in-prestito-allhapoel-gerusalemme/",
+          "name": "Basketinside"
         }
       ],
       "date_basis": "announcement_date",
       "verified_at": "2026-09-26",
-      "added_at": "2026-09-26T09:57:37.649Z"
+      "added_at": "2026-09-26T16:02:33.194Z"
     }
   ]
 }
