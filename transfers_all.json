@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T07:13:36.514Z",
-  "count": 1262,
+  "generated_at": "2026-09-26T09:57:37.649Z",
+  "count": 1263,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18373,7 +18373,38 @@
       "date_basis": "report_date",
       "verified_at": "2026-09-25",
       "added_at": "2026-09-25T07:13:36.514Z"
+    },
+    {
+      "id": "maintenance-20260926-brajkovic-trieste",
+      "player": "Luka Brajković",
+      "from": "Cedevita Olimpija",
+      "to": "Pallacanestro Trieste",
+      "pos": "C",
+      "league": "EuroCup / Italian Serie A",
+      "date": "2026-09-25",
+      "contract": null,
+      "status": "signed",
+      "source_url": "https://www.pallacanestrotrieste.it/news/19597266438/luka-brajkovi-il-nuovo-centro-della-pallacanestro-trieste",
+      "source_name": "Pallacanestro Trieste",
+      "summary": "Pallacanestro Trieste officially announced center Luka Brajković from Cedevita Olimpija, where he won the Slovenian championship.",
+      "sources": [
+        {
+          "url": "https://www.pallacanestrotrieste.it/news/19597266438/luka-brajkovi-il-nuovo-centro-della-pallacanestro-trieste",
+          "name": "Pallacanestro Trieste (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/pallacanestro-trieste-officially-signs-luka-brajkovic/",
+          "name": "Sportando"
+        },
+        {
+          "url": "https://www.rainews.it/amp/tgr/fvg/articoli/2026/09/pallacanestro-trieste-ecco-luka-brajkovic-ce8747ae-e6c3-4e9e-9783-51f998e85051.html",
+          "name": "Rai TGR FVG"
+        }
+      ],
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-26",
+      "added_at": "2026-09-26T09:57:37.649Z"
     }
   ],
-  "public_count": 1137
+  "public_count": 1138
 }

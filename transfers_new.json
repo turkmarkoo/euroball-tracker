@@ -1,98 +1,37 @@
 {
-  "generated_at": "2026-09-25T07:13:36.514Z",
-  "count": 4,
+  "generated_at": "2026-09-26T09:57:37.649Z",
+  "count": 1,
   "items": [
     {
-      "id": "maintenance-20260925-alibegovic-derthona",
-      "player": "Amar Alibegović",
-      "from": "Coviran Granada",
-      "to": "Derthona Tortona",
-      "pos": "F",
-      "league": "EuroCup / Italian Serie A",
-      "date": "2026-09-24",
-      "contract": "Multi-year",
-      "status": "signed",
-      "source_url": "https://www.bhbasket.ba/amar-alibegovic-ima-novi-klub-3/",
-      "source_name": "BH Basket",
-      "summary": "Derthona agreed a multi-year deal with Amar Alibegović after his season with Coviran Granada.",
-      "sources": [
-        {
-          "url": "https://www.bhbasket.ba/amar-alibegovic-ima-novi-klub-3/",
-          "name": "BH Basket"
-        }
-      ],
-      "date_basis": "report_date",
-      "verified_at": "2026-09-25",
-      "added_at": "2026-09-25T07:13:36.514Z"
-    },
-    {
-      "id": "maintenance-20260925-aramburu-avellino-release",
-      "player": "Jon Ander Aramburu",
-      "from": "Scandone Avellino",
-      "to": "Free Agent",
-      "pos": "F",
-      "league": "Serie B",
-      "date": "2026-09-24",
-      "contract": "Mutual termination",
-      "status": "left",
-      "source_url": "https://felicescandone.it/2026/09/24/risoluzione-consensuale-con-jon-ander-aramburu/",
-      "source_name": "Scandone Avellino",
-      "summary": "Scandone Avellino and Jon Ander Aramburu mutually terminated their sporting relationship after preseason.",
-      "sources": [
-        {
-          "url": "https://felicescandone.it/2026/09/24/risoluzione-consensuale-con-jon-ander-aramburu/",
-          "name": "Scandone Avellino (official)"
-        }
-      ],
-      "date_basis": "report_date",
-      "verified_at": "2026-09-25",
-      "added_at": "2026-09-25T07:13:36.514Z"
-    },
-    {
-      "id": "maintenance-20260925-len-baskonia-release",
-      "player": "Alex Len",
-      "from": "Baskonia",
-      "to": "Free Agent",
+      "id": "maintenance-20260926-brajkovic-trieste",
+      "player": "Luka Brajković",
+      "from": "Cedevita Olimpija",
+      "to": "Pallacanestro Trieste",
       "pos": "C",
-      "league": "EuroLeague / ACB",
-      "date": "2026-09-23",
-      "contract": "Mutual termination",
-      "status": "left",
-      "source_url": "https://acb.com/es/liga/noticias/saski-baskonia-y-alex-len-han-acordado-de-mutuo-acuerdo-rescindir-el-contrato-que-vinculaba-a-ambas-partes-146098",
-      "source_name": "ACB",
-      "summary": "Baskonia and Alex Len mutually agreed to terminate his contract after foot discomfort following his first training session.",
-      "sources": [
-        {
-          "url": "https://acb.com/es/liga/noticias/saski-baskonia-y-alex-len-han-acordado-de-mutuo-acuerdo-rescindir-el-contrato-que-vinculaba-a-ambas-partes-146098",
-          "name": "ACB (official)"
-        }
-      ],
-      "date_basis": "report_date",
-      "verified_at": "2026-09-25",
-      "added_at": "2026-09-25T07:13:36.514Z"
-    },
-    {
-      "id": "maintenance-20260925-lomazs-cedevita",
-      "player": "Rihards Lomažs",
-      "from": "Neptunas Klaipeda",
-      "to": "Cedevita Olimpija",
-      "pos": "G",
-      "league": "EuroCup / ABA League",
-      "date": "2026-09-23",
-      "contract": "One season",
+      "league": "EuroCup / Italian Serie A",
+      "date": "2026-09-25",
+      "contract": null,
       "status": "signed",
-      "source_url": "https://cedevita.olimpija.com/novice/izkuseni-latvijski-reprezentant-rihards-lomazs-je-novi-zmaj/",
-      "source_name": "Cedevita Olimpija",
-      "summary": "Cedevita Olimpija announced Latvia captain Rihards Lomažs from Neptūnas on a one-season contract.",
+      "source_url": "https://www.pallacanestrotrieste.it/news/19597266438/luka-brajkovi-il-nuovo-centro-della-pallacanestro-trieste",
+      "source_name": "Pallacanestro Trieste",
+      "summary": "Pallacanestro Trieste officially announced center Luka Brajković from Cedevita Olimpija, where he won the Slovenian championship.",
       "sources": [
         {
-          "url": "https://cedevita.olimpija.com/novice/izkuseni-latvijski-reprezentant-rihards-lomazs-je-novi-zmaj/",
-          "name": "Cedevita Olimpija (official)"
+          "url": "https://www.pallacanestrotrieste.it/news/19597266438/luka-brajkovi-il-nuovo-centro-della-pallacanestro-trieste",
+          "name": "Pallacanestro Trieste (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/pallacanestro-trieste-officially-signs-luka-brajkovic/",
+          "name": "Sportando"
+        },
+        {
+          "url": "https://www.rainews.it/amp/tgr/fvg/articoli/2026/09/pallacanestro-trieste-ecco-luka-brajkovic-ce8747ae-e6c3-4e9e-9783-51f998e85051.html",
+          "name": "Rai TGR FVG"
         }
       ],
-      "date_basis": "report_date",
-      "verified_at": "2026-09-25",
-      "added_at": "2026-09-25T07:13:36.514Z"
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-26",
+      "added_at": "2026-09-26T09:57:37.649Z"
     }
   ]
 }
