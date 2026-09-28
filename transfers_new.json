@@ -1,33 +1,106 @@
 {
-  "generated_at": "2026-09-26T16:02:33.194Z",
-  "count": 1,
+  "generated_at": "2026-09-28T07:43:52.139Z",
+  "count": 4,
   "items": [
     {
-      "id": "maintenance-20260926-brown-jerusalem-loan",
-      "player": "Lorenzo Brown",
-      "from": "Olimpia Milano",
-      "to": "Hapoel Jerusalem",
-      "pos": "G",
-      "league": "EuroCup / Israeli BSL",
-      "date": "2026-09-25",
-      "contract": "Loan through end of 2026-27 season",
+      "id": "maintenance-20260928-nicholson-siauliai",
+      "player": "Kassim Nicholson",
+      "from": "Rostock Seawolves",
+      "to": "Siauliai",
+      "pos": "F",
+      "league": "EuroCup / LKL",
+      "date": "2026-09-27",
+      "contract": null,
       "status": "signed",
-      "source_url": "https://hapoel.co.il/news?NewsId=34621",
-      "source_name": "Hapoel Jerusalem",
-      "summary": "Hapoel Jerusalem announced Lorenzo Brown on loan from Olimpia Milano through the end of the 2026-27 season, converting the earlier report into a confirmed move.",
+      "source_url": "https://sportando.basketball/kassim-nicholson-firma-con-il-siauliai-alla-vigilia-dellesordio-in-eurocup/",
+      "source_name": "Sportando",
+      "summary": "Siauliai announced Kassim Nicholson ahead of its 2026-27 EuroCup campaign after his season with Rostock Seawolves.",
       "sources": [
         {
-          "url": "https://hapoel.co.il/news?NewsId=34621",
-          "name": "Hapoel Jerusalem (official)"
+          "url": "https://sportando.basketball/kassim-nicholson-firma-con-il-siauliai-alla-vigilia-dellesordio-in-eurocup/",
+          "name": "Sportando"
         },
         {
-          "url": "https://www.basketinside.com/europe-basketball/mercato-europe-basketball/ufficiale-lorenzo-brown-lascia-milano-e-va-in-prestito-allhapoel-gerusalemme/",
+          "url": "https://www.lrt.lt/naujienos/sportas/10/3065039/siauliu-ekipa-papilde-vokietijoje-praejusi-sezona-praleides-puolejas",
+          "name": "LRT"
+        }
+      ],
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-28",
+      "added_at": "2026-09-28T07:43:52.139Z"
+    },
+    {
+      "id": "maintenance-20260928-christopher-ness-ziona",
+      "player": "Josh Christopher",
+      "from": "Shenzhen Leopards",
+      "to": "Ironi Ness Ziona",
+      "pos": "G",
+      "league": "Israeli BSL",
+      "date": "2026-09-27",
+      "contract": "2026-27 season",
+      "status": "signed",
+      "source_url": "https://sportando.basketball/en/josh-christopher-signs-with-ironi-ness-ziona/",
+      "source_name": "Sportando",
+      "summary": "Ironi Ness Ziona announced Josh Christopher after he passed his medical tests; he joins following last season’s G League and Shenzhen stint.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/josh-christopher-signs-with-ironi-ness-ziona/",
+          "name": "Sportando (club release)"
+        }
+      ],
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-28",
+      "added_at": "2026-09-28T07:43:52.139Z"
+    },
+    {
+      "id": "maintenance-20260928-keene-trabzonspor",
+      "player": "Marcus Keene",
+      "from": "SIG Strasbourg",
+      "to": "Trabzonspor",
+      "pos": "PG",
+      "league": "BSL / Basketball Champions League",
+      "date": "2026-09-26",
+      "contract": null,
+      "status": "signed",
+      "source_url": "https://sportando.basketball/en/marcus-keene-joins-trabzonspor-as-turkish-club-bolsters-backcourt/",
+      "source_name": "Sportando",
+      "summary": "Trabzonspor officially announced American point guard Marcus Keene from SIG Strasbourg.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/marcus-keene-joins-trabzonspor-as-turkish-club-bolsters-backcourt/",
+          "name": "Sportando"
+        },
+        {
+          "url": "https://www.basketinside.com/europe-basketball/mercato-europe-basketball/ufficiale-trabzonspor-firma-marcus-keene-il-play-americano-arriva-da-strasburgo/",
           "name": "Basketinside"
         }
       ],
       "date_basis": "announcement_date",
-      "verified_at": "2026-09-26",
-      "added_at": "2026-09-26T16:02:33.194Z"
+      "verified_at": "2026-09-28",
+      "added_at": "2026-09-28T07:43:52.139Z"
+    },
+    {
+      "id": "maintenance-20260928-thomas-unicaja",
+      "player": "Matt Thomas",
+      "from": "Beşiktaş",
+      "to": "Unicaja Malaga",
+      "pos": "SG",
+      "league": "EuroCup / ACB",
+      "date": "2026-09-26",
+      "contract": "Two months, option through end of season; subject to medical",
+      "status": "signed",
+      "source_url": "https://www.unicajabaloncesto.com/noticia/ver/id/344411/titulo/matt-thomas-refuerzo-para-el-perimetro-malagueno.html",
+      "source_name": "Unicaja Malaga",
+      "summary": "Unicaja agreed to add Matt Thomas for two months with an option through the end of the season, pending a medical, after his 2025-26 season with Beşiktaş.",
+      "sources": [
+        {
+          "url": "https://www.unicajabaloncesto.com/noticia/ver/id/344411/titulo/matt-thomas-refuerzo-para-el-perimetro-malagueno.html",
+          "name": "Unicaja Malaga (official)"
+        }
+      ],
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-28",
+      "added_at": "2026-09-28T07:43:52.139Z"
     }
   ]
 }
