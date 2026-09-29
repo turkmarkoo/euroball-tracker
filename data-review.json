@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-28",
-  "coverage": "Morning overlap: Sportando official feed and club/news sources for Kassim Nicholson to Siauliai, Josh Christopher to Ironi Ness Ziona, Marcus Keene to Trabzonspor, and Matt Thomas to Unicaja Malaga. No media changes.",
+  "reviewed_on": "2026-09-29",
+  "coverage": "Morning overlap: official Olympiacos and Fribourg Olympic announcements, cross-checked with Sportando and BeBasket. Added Bryant Dunston and Adrien Moerman; no other new moves met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1143,
+  "public_records": 1145,
   "report_date_records": 19,
   "items": [
     {
@@ -2620,6 +2620,71 @@
           "date_basis": "announcement_date",
           "verified_at": "2026-09-28",
           "added_at": "2026-09-28T07:43:52.139Z"
+        }
+      ]
+    },
+    {
+      "id": "20260929-morning",
+      "checked_at": "2026-09-29T07:50:01.107Z",
+      "window_from": "2026-09-26",
+      "coverage": "Morning overlap: official Olympiacos and Fribourg Olympic announcements, cross-checked with Sportando and BeBasket. Added Bryant Dunston and Adrien Moerman; no other new moves met the confirmation threshold.",
+      "added": 2,
+      "updated": 0,
+      "public_records": 1145,
+      "items": [
+        {
+          "id": "maintenance-20260929-dunston-olympiacos",
+          "player": "Bryant Dunston",
+          "from": "Olimpia Milano",
+          "to": "Olympiacos Piraeus",
+          "pos": "C",
+          "league": "EuroLeague / Greek Basket League",
+          "date": "2026-09-28",
+          "contract": "One year",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-09-29",
+          "added_at": "2026-09-29T07:50:01.107Z",
+          "source_url": "https://www.olympiacosbc.gr/en/news/announcements/19754-dunston-returns-to-olympiacos.html",
+          "source_name": "Olympiacos BC",
+          "summary": "Olympiacos announced the return of center Bryant Dunston on a one-year contract after his 2025-26 season with Olimpia Milano.",
+          "sources": [
+            {
+              "url": "https://www.olympiacosbc.gr/en/news/announcements/19754-dunston-returns-to-olympiacos.html",
+              "name": "Olympiacos BC (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/olympiacos-officially-brings-bryant-dunston-back/",
+              "name": "Sportando"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20260929-moerman-fribourg",
+          "player": "Adrien Moerman",
+          "from": "Chorale de Roanne",
+          "to": "Fribourg Olympic",
+          "pos": "PF",
+          "league": "Swiss SB League / FIBA Europe Cup",
+          "date": "2026-09-22",
+          "contract": "Three months, through 23 December 2026",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-09-29",
+          "added_at": "2026-09-29T07:50:01.107Z",
+          "source_url": "https://fribourg-olympic.ch/en/adrien-moerman-verstaerkt-fribourg-olympic-basket/",
+          "source_name": "Fribourg Olympic Basket",
+          "summary": "Fribourg Olympic announced Adrien Moerman on a three-month contract through 23 December 2026; he joins after his 2025-26 season with Chorale de Roanne.",
+          "sources": [
+            {
+              "url": "https://fribourg-olympic.ch/en/adrien-moerman-verstaerkt-fribourg-olympic-basket/",
+              "name": "Fribourg Olympic Basket (official)"
+            },
+            {
+              "url": "https://www.bebasket.fr/adrien-moerman-a-la-decouverte-dun-nouveau-championnat-etranger",
+              "name": "BeBasket"
+            }
+          ]
         }
       ]
     }

@@ -1,106 +1,60 @@
 {
-  "generated_at": "2026-09-28T07:43:52.139Z",
-  "count": 4,
+  "generated_at": "2026-09-29T07:50:01.107Z",
+  "count": 2,
   "items": [
     {
-      "id": "maintenance-20260928-nicholson-siauliai",
-      "player": "Kassim Nicholson",
-      "from": "Rostock Seawolves",
-      "to": "Siauliai",
-      "pos": "F",
-      "league": "EuroCup / LKL",
-      "date": "2026-09-27",
-      "contract": null,
+      "id": "maintenance-20260929-dunston-olympiacos",
+      "player": "Bryant Dunston",
+      "from": "Olimpia Milano",
+      "to": "Olympiacos Piraeus",
+      "pos": "C",
+      "league": "EuroLeague / Greek Basket League",
+      "date": "2026-09-28",
+      "contract": "One year",
       "status": "signed",
-      "source_url": "https://sportando.basketball/kassim-nicholson-firma-con-il-siauliai-alla-vigilia-dellesordio-in-eurocup/",
-      "source_name": "Sportando",
-      "summary": "Siauliai announced Kassim Nicholson ahead of its 2026-27 EuroCup campaign after his season with Rostock Seawolves.",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-29",
+      "added_at": "2026-09-29T07:50:01.107Z",
+      "source_url": "https://www.olympiacosbc.gr/en/news/announcements/19754-dunston-returns-to-olympiacos.html",
+      "source_name": "Olympiacos BC",
+      "summary": "Olympiacos announced the return of center Bryant Dunston on a one-year contract after his 2025-26 season with Olimpia Milano.",
       "sources": [
         {
-          "url": "https://sportando.basketball/kassim-nicholson-firma-con-il-siauliai-alla-vigilia-dellesordio-in-eurocup/",
-          "name": "Sportando"
+          "url": "https://www.olympiacosbc.gr/en/news/announcements/19754-dunston-returns-to-olympiacos.html",
+          "name": "Olympiacos BC (official)"
         },
         {
-          "url": "https://www.lrt.lt/naujienos/sportas/10/3065039/siauliu-ekipa-papilde-vokietijoje-praejusi-sezona-praleides-puolejas",
-          "name": "LRT"
-        }
-      ],
-      "date_basis": "announcement_date",
-      "verified_at": "2026-09-28",
-      "added_at": "2026-09-28T07:43:52.139Z"
-    },
-    {
-      "id": "maintenance-20260928-christopher-ness-ziona",
-      "player": "Josh Christopher",
-      "from": "Shenzhen Leopards",
-      "to": "Ironi Ness Ziona",
-      "pos": "G",
-      "league": "Israeli BSL",
-      "date": "2026-09-27",
-      "contract": "2026-27 season",
-      "status": "signed",
-      "source_url": "https://sportando.basketball/en/josh-christopher-signs-with-ironi-ness-ziona/",
-      "source_name": "Sportando",
-      "summary": "Ironi Ness Ziona announced Josh Christopher after he passed his medical tests; he joins following last season’s G League and Shenzhen stint.",
-      "sources": [
-        {
-          "url": "https://sportando.basketball/en/josh-christopher-signs-with-ironi-ness-ziona/",
-          "name": "Sportando (club release)"
-        }
-      ],
-      "date_basis": "announcement_date",
-      "verified_at": "2026-09-28",
-      "added_at": "2026-09-28T07:43:52.139Z"
-    },
-    {
-      "id": "maintenance-20260928-keene-trabzonspor",
-      "player": "Marcus Keene",
-      "from": "SIG Strasbourg",
-      "to": "Trabzonspor",
-      "pos": "PG",
-      "league": "BSL / Basketball Champions League",
-      "date": "2026-09-26",
-      "contract": null,
-      "status": "signed",
-      "source_url": "https://sportando.basketball/en/marcus-keene-joins-trabzonspor-as-turkish-club-bolsters-backcourt/",
-      "source_name": "Sportando",
-      "summary": "Trabzonspor officially announced American point guard Marcus Keene from SIG Strasbourg.",
-      "sources": [
-        {
-          "url": "https://sportando.basketball/en/marcus-keene-joins-trabzonspor-as-turkish-club-bolsters-backcourt/",
+          "url": "https://sportando.basketball/en/olympiacos-officially-brings-bryant-dunston-back/",
           "name": "Sportando"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20260929-moerman-fribourg",
+      "player": "Adrien Moerman",
+      "from": "Chorale de Roanne",
+      "to": "Fribourg Olympic",
+      "pos": "PF",
+      "league": "Swiss SB League / FIBA Europe Cup",
+      "date": "2026-09-22",
+      "contract": "Three months, through 23 December 2026",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-29",
+      "added_at": "2026-09-29T07:50:01.107Z",
+      "source_url": "https://fribourg-olympic.ch/en/adrien-moerman-verstaerkt-fribourg-olympic-basket/",
+      "source_name": "Fribourg Olympic Basket",
+      "summary": "Fribourg Olympic announced Adrien Moerman on a three-month contract through 23 December 2026; he joins after his 2025-26 season with Chorale de Roanne.",
+      "sources": [
+        {
+          "url": "https://fribourg-olympic.ch/en/adrien-moerman-verstaerkt-fribourg-olympic-basket/",
+          "name": "Fribourg Olympic Basket (official)"
         },
         {
-          "url": "https://www.basketinside.com/europe-basketball/mercato-europe-basketball/ufficiale-trabzonspor-firma-marcus-keene-il-play-americano-arriva-da-strasburgo/",
-          "name": "Basketinside"
+          "url": "https://www.bebasket.fr/adrien-moerman-a-la-decouverte-dun-nouveau-championnat-etranger",
+          "name": "BeBasket"
         }
-      ],
-      "date_basis": "announcement_date",
-      "verified_at": "2026-09-28",
-      "added_at": "2026-09-28T07:43:52.139Z"
-    },
-    {
-      "id": "maintenance-20260928-thomas-unicaja",
-      "player": "Matt Thomas",
-      "from": "Beşiktaş",
-      "to": "Unicaja Malaga",
-      "pos": "SG",
-      "league": "EuroCup / ACB",
-      "date": "2026-09-26",
-      "contract": "Two months, option through end of season; subject to medical",
-      "status": "signed",
-      "source_url": "https://www.unicajabaloncesto.com/noticia/ver/id/344411/titulo/matt-thomas-refuerzo-para-el-perimetro-malagueno.html",
-      "source_name": "Unicaja Malaga",
-      "summary": "Unicaja agreed to add Matt Thomas for two months with an option through the end of the season, pending a medical, after his 2025-26 season with Beşiktaş.",
-      "sources": [
-        {
-          "url": "https://www.unicajabaloncesto.com/noticia/ver/id/344411/titulo/matt-thomas-refuerzo-para-el-perimetro-malagueno.html",
-          "name": "Unicaja Malaga (official)"
-        }
-      ],
-      "date_basis": "announcement_date",
-      "verified_at": "2026-09-28",
-      "added_at": "2026-09-28T07:43:52.139Z"
+      ]
     }
   ]
 }
