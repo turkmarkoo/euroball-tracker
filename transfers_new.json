@@ -1,58 +1,35 @@
 {
-  "generated_at": "2026-09-29T07:50:01.107Z",
-  "count": 2,
+  "generated_at": "2026-09-30T07:58:32.305Z",
+  "count": 1,
   "items": [
     {
-      "id": "maintenance-20260929-dunston-olympiacos",
-      "player": "Bryant Dunston",
-      "from": "Olimpia Milano",
-      "to": "Olympiacos Piraeus",
+      "id": "maintenance-20260930-marcio-santos-baskonia",
+      "player": "Márcio Santos",
+      "from": "Maccabi Tel Aviv",
+      "to": "Baskonia",
       "pos": "C",
-      "league": "EuroLeague / Greek Basket League",
-      "date": "2026-09-28",
-      "contract": "One year",
+      "league": "EuroLeague / ACB",
+      "date": "2026-09-29",
+      "contract": "Two seasons, through 2028",
       "status": "signed",
       "date_basis": "announcement_date",
-      "verified_at": "2026-09-29",
-      "added_at": "2026-09-29T07:50:01.107Z",
-      "source_url": "https://www.olympiacosbc.gr/en/news/announcements/19754-dunston-returns-to-olympiacos.html",
-      "source_name": "Olympiacos BC",
-      "summary": "Olympiacos announced the return of center Bryant Dunston on a one-year contract after his 2025-26 season with Olimpia Milano.",
+      "verified_at": "2026-09-30",
+      "added_at": "2026-09-30T07:58:32.305Z",
+      "source_url": "https://acb.com/es/liga/tabla-mercado/2026-27",
+      "source_name": "ACB",
+      "summary": "Kosner Baskonia announced Márcio Santos on a two-season deal through 2028 after his 2025-26 EuroLeague season with Maccabi Tel Aviv.",
       "sources": [
         {
-          "url": "https://www.olympiacosbc.gr/en/news/announcements/19754-dunston-returns-to-olympiacos.html",
-          "name": "Olympiacos BC (official)"
+          "url": "https://acb.com/es/liga/tabla-mercado/2026-27",
+          "name": "ACB Liga Endesa (official market table)"
         },
         {
-          "url": "https://sportando.basketball/en/olympiacos-officially-brings-bryant-dunston-back/",
-          "name": "Sportando"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20260929-moerman-fribourg",
-      "player": "Adrien Moerman",
-      "from": "Chorale de Roanne",
-      "to": "Fribourg Olympic",
-      "pos": "PF",
-      "league": "Swiss SB League / FIBA Europe Cup",
-      "date": "2026-09-22",
-      "contract": "Three months, through 23 December 2026",
-      "status": "signed",
-      "date_basis": "announcement_date",
-      "verified_at": "2026-09-29",
-      "added_at": "2026-09-29T07:50:01.107Z",
-      "source_url": "https://fribourg-olympic.ch/en/adrien-moerman-verstaerkt-fribourg-olympic-basket/",
-      "source_name": "Fribourg Olympic Basket",
-      "summary": "Fribourg Olympic announced Adrien Moerman on a three-month contract through 23 December 2026; he joins after his 2025-26 season with Chorale de Roanne.",
-      "sources": [
-        {
-          "url": "https://fribourg-olympic.ch/en/adrien-moerman-verstaerkt-fribourg-olympic-basket/",
-          "name": "Fribourg Olympic Basket (official)"
+          "url": "https://cadenaser.com/euskadi/2026/09/29/el-baskonia-ficha-al-interior-marcio-santos-ser-vitoria/",
+          "name": "Cadena SER"
         },
         {
-          "url": "https://www.bebasket.fr/adrien-moerman-a-la-decouverte-dun-nouveau-championnat-etranger",
-          "name": "BeBasket"
+          "url": "https://kirolakeitb.eus/es/baloncesto/equipos/baskonia/2026/09/29/baskonia-fichaje-marcio-santos/",
+          "name": "EITB"
         }
       ]
     }

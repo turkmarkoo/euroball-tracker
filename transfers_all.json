@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T07:50:01.107Z",
-  "count": 1270,
+  "generated_at": "2026-09-30T07:58:32.305Z",
+  "count": 1271,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18585,7 +18585,38 @@
           "name": "BeBasket"
         }
       ]
+    },
+    {
+      "id": "maintenance-20260930-marcio-santos-baskonia",
+      "player": "Márcio Santos",
+      "from": "Maccabi Tel Aviv",
+      "to": "Baskonia",
+      "pos": "C",
+      "league": "EuroLeague / ACB",
+      "date": "2026-09-29",
+      "contract": "Two seasons, through 2028",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-30",
+      "added_at": "2026-09-30T07:58:32.305Z",
+      "source_url": "https://acb.com/es/liga/tabla-mercado/2026-27",
+      "source_name": "ACB",
+      "summary": "Kosner Baskonia announced Márcio Santos on a two-season deal through 2028 after his 2025-26 EuroLeague season with Maccabi Tel Aviv.",
+      "sources": [
+        {
+          "url": "https://acb.com/es/liga/tabla-mercado/2026-27",
+          "name": "ACB Liga Endesa (official market table)"
+        },
+        {
+          "url": "https://cadenaser.com/euskadi/2026/09/29/el-baskonia-ficha-al-interior-marcio-santos-ser-vitoria/",
+          "name": "Cadena SER"
+        },
+        {
+          "url": "https://kirolakeitb.eus/es/baloncesto/equipos/baskonia/2026/09/29/baskonia-fichaje-marcio-santos/",
+          "name": "EITB"
+        }
+      ]
     }
   ],
-  "public_count": 1145
+  "public_count": 1146
 }

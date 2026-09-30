@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-29",
-  "coverage": "Morning overlap: official Olympiacos and Fribourg Olympic announcements, cross-checked with Sportando and BeBasket. Added Bryant Dunston and Adrien Moerman; no other new moves met the confirmation threshold.",
+  "reviewed_on": "2026-09-30",
+  "coverage": "Morning overlap: ACB market table and Baskonia announcement coverage cross-checked with Cadena SER and EITB. Added Márcio Santos to Kosner Baskonia; no other newly discovered move met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1145,
+  "public_records": 1146,
   "report_date_records": 19,
   "items": [
     {
@@ -2683,6 +2683,48 @@
             {
               "url": "https://www.bebasket.fr/adrien-moerman-a-la-decouverte-dun-nouveau-championnat-etranger",
               "name": "BeBasket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20260930-morning",
+      "checked_at": "2026-09-30T07:58:32.305Z",
+      "window_from": "2026-09-28",
+      "coverage": "Morning overlap: ACB market table and Baskonia announcement coverage cross-checked with Cadena SER and EITB. Added Márcio Santos to Kosner Baskonia; no other newly discovered move met the confirmation threshold.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1146,
+      "items": [
+        {
+          "id": "maintenance-20260930-marcio-santos-baskonia",
+          "player": "Márcio Santos",
+          "from": "Maccabi Tel Aviv",
+          "to": "Baskonia",
+          "pos": "C",
+          "league": "EuroLeague / ACB",
+          "date": "2026-09-29",
+          "contract": "Two seasons, through 2028",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-09-30",
+          "added_at": "2026-09-30T07:58:32.305Z",
+          "source_url": "https://acb.com/es/liga/tabla-mercado/2026-27",
+          "source_name": "ACB",
+          "summary": "Kosner Baskonia announced Márcio Santos on a two-season deal through 2028 after his 2025-26 EuroLeague season with Maccabi Tel Aviv.",
+          "sources": [
+            {
+              "url": "https://acb.com/es/liga/tabla-mercado/2026-27",
+              "name": "ACB Liga Endesa (official market table)"
+            },
+            {
+              "url": "https://cadenaser.com/euskadi/2026/09/29/el-baskonia-ficha-al-interior-marcio-santos-ser-vitoria/",
+              "name": "Cadena SER"
+            },
+            {
+              "url": "https://kirolakeitb.eus/es/baloncesto/equipos/baskonia/2026/09/29/baskonia-fichaje-marcio-santos/",
+              "name": "EITB"
             }
           ]
         }
