@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T07:58:32.305Z",
-  "count": 1271,
+  "generated_at": "2026-09-30T16:01:56.938Z",
+  "count": 1272,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18616,7 +18616,34 @@
           "name": "EITB"
         }
       ]
+    },
+    {
+      "id": "maintenance-20260930-matt-rogers-vef-riga",
+      "player": "Matt Rogers",
+      "from": "Slask Wroclaw",
+      "to": "VEF Riga",
+      "pos": "C",
+      "league": "Latvian-Estonian League / EuroCup",
+      "date": "2026-09-30",
+      "contract": null,
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-09-30",
+      "added_at": "2026-09-30T16:01:56.938Z",
+      "source_url": "https://sportando.basketball/en/vef-riga-signs-matt-rogers/",
+      "source_name": "Sportando",
+      "summary": "VEF Riga announced the signing of American center Matt Rogers after he opened the season with Śląsk Wrocław.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/vef-riga-signs-matt-rogers/",
+          "name": "Sportando (club announcement)"
+        },
+        {
+          "url": "https://sportacentrs.com/basketbols/lbl/30092026-vakar_atbrivoja_vienu_sodien_vieta_cits_v",
+          "name": "Sportacentrs"
+        }
+      ]
     }
   ],
-  "public_count": 1146
+  "public_count": 1147
 }

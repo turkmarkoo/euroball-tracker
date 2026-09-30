@@ -1,10 +1,10 @@
 {
   "reviewed_on": "2026-09-30",
-  "coverage": "Morning overlap: ACB market table and Baskonia announcement coverage cross-checked with Cadena SER and EITB. Added Márcio Santos to Kosner Baskonia; no other newly discovered move met the confirmation threshold.",
+  "coverage": "Evening overlap: Sportando and Sportacentrs coverage of VEF Riga’s official Matt Rogers announcement. Added one confirmed move; no other new announcement met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1146,
+  "public_records": 1147,
   "report_date_records": 19,
   "items": [
     {
@@ -2725,6 +2725,44 @@
             {
               "url": "https://kirolakeitb.eus/es/baloncesto/equipos/baskonia/2026/09/29/baskonia-fichaje-marcio-santos/",
               "name": "EITB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20260930-evening",
+      "checked_at": "2026-09-30T16:01:56.938Z",
+      "window_from": "2026-09-28",
+      "coverage": "Evening overlap: Sportando and Sportacentrs coverage of VEF Riga’s official Matt Rogers announcement. Added one confirmed move; no other new announcement met the confirmation threshold.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1147,
+      "items": [
+        {
+          "id": "maintenance-20260930-matt-rogers-vef-riga",
+          "player": "Matt Rogers",
+          "from": "Slask Wroclaw",
+          "to": "VEF Riga",
+          "pos": "C",
+          "league": "Latvian-Estonian League / EuroCup",
+          "date": "2026-09-30",
+          "contract": null,
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-09-30",
+          "added_at": "2026-09-30T16:01:56.938Z",
+          "source_url": "https://sportando.basketball/en/vef-riga-signs-matt-rogers/",
+          "source_name": "Sportando",
+          "summary": "VEF Riga announced the signing of American center Matt Rogers after he opened the season with Śląsk Wrocław.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/vef-riga-signs-matt-rogers/",
+              "name": "Sportando (club announcement)"
+            },
+            {
+              "url": "https://sportacentrs.com/basketbols/lbl/30092026-vakar_atbrivoja_vienu_sodien_vieta_cits_v",
+              "name": "Sportacentrs"
             }
           ]
         }
