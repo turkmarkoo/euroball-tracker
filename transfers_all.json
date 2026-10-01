@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-01T07:02:37.887Z",
-  "count": 1274,
+  "generated_at": "2026-10-01T16:03:54.784Z",
+  "count": 1277,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18697,7 +18697,88 @@
           "name": "BeBasket"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261001-flood-sassari",
+      "player": "Sean Flood",
+      "from": "Mitteldeutscher BC",
+      "to": "Dinamo Sassari",
+      "pos": "G",
+      "league": "Italian LBA",
+      "date": "2026-10-01",
+      "contract": null,
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-01",
+      "added_at": "2026-10-01T16:03:54.784Z",
+      "source_url": "https://www.dinamobasket.com/blog/cabina-di-regia-arriva-sean-flood",
+      "source_name": "Dinamo Sassari",
+      "summary": "Dinamo Banco di Sardegna announced an agreement with Irish point guard Sean Flood after his stint with Mitteldeutscher BC.",
+      "sources": [
+        {
+          "url": "https://www.dinamobasket.com/blog/cabina-di-regia-arriva-sean-flood",
+          "name": "Dinamo Sassari (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/dinamo-sassari-signs-sean-flood/",
+          "name": "Sportando"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261001-mbengue-burgos",
+      "player": "Code Mbengue",
+      "from": "Gran Canaria",
+      "to": "San Pablo Burgos",
+      "pos": null,
+      "league": "ACB / EuroCup",
+      "date": "2026-10-01",
+      "contract": "Next season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-01",
+      "added_at": "2026-10-01T16:03:54.784Z",
+      "source_url": "https://cbgrancanaria.net/news/code-mbengue-es-traspasado-al-recoletas-salud-san-pablo-burgos/",
+      "source_name": "CB Gran Canaria",
+      "summary": "CB Gran Canaria announced an economic transfer sending Senegalese prospect Code Mbengue to Recoletas Salud San Pablo Burgos for next season.",
+      "sources": [
+        {
+          "url": "https://cbgrancanaria.net/news/code-mbengue-es-traspasado-al-recoletas-salud-san-pablo-burgos/",
+          "name": "CB Gran Canaria (official)"
+        },
+        {
+          "url": "https://cadenaser.com/canarias/2026/10/01/el-gran-canaria-traspasa-al-canterano-code-mbengue-al-san-pablo-burgos-ser-las-palmas/",
+          "name": "Cadena SER"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261001-arms-promitheas",
+      "player": "Adonis Arms",
+      "from": "Free Agent",
+      "to": "Promitheas Patras",
+      "pos": "G/F",
+      "league": "Greek Basket League / FIBA Europe Cup",
+      "date": "2026-10-01",
+      "contract": "2026-27 season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-01",
+      "added_at": "2026-10-01T16:03:54.784Z",
+      "source_url": "https://promitheasbc.gr/paiktis-tou-promithea-vikos-cola-o-adonis-arms/",
+      "source_name": "Promitheas Patras BC",
+      "summary": "Promitheas Patras announced Adonis Arms for the 2026-27 season, describing him as a guard/forward.",
+      "sources": [
+        {
+          "url": "https://promitheasbc.gr/paiktis-tou-promithea-vikos-cola-o-adonis-arms/",
+          "name": "Promitheas Patras BC (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/promitheas-signs-adonis-arms-for-the-2026-27-season/",
+          "name": "Sportando"
+        }
+      ]
     }
   ],
-  "public_count": 1149
+  "public_count": 1152
 }

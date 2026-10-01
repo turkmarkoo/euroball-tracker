@@ -1,10 +1,10 @@
 {
   "reviewed_on": "2026-10-01",
-  "coverage": "Morning overlap: official Elan Chalon and Promitheas announcements, cross-checked with Sportando, Info-Chalon and BeBasket. Added Jacob Grandison and Jake Forrester; no other new move met the confirmation threshold.",
+  "coverage": "Evening overlap: official Dinamo Sassari, CB Gran Canaria and Promitheas announcements, cross-checked with Sportando and Cadena SER. Added Sean Flood, Code Mbengue and Adonis Arms; no other new move met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1149,
+  "public_records": 1152,
   "report_date_records": 19,
   "items": [
     {
@@ -2828,6 +2828,98 @@
             {
               "url": "https://www.bebasket.fr/evince-par-strasbourg-jake-forrester-a-deja-un-nouveau-club",
               "name": "BeBasket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261001-evening",
+      "checked_at": "2026-10-01T16:03:54.784Z",
+      "window_from": "2026-09-29",
+      "coverage": "Evening overlap: official Dinamo Sassari, CB Gran Canaria and Promitheas announcements, cross-checked with Sportando and Cadena SER. Added Sean Flood, Code Mbengue and Adonis Arms; no other new move met the confirmation threshold.",
+      "added": 3,
+      "updated": 0,
+      "public_records": 1152,
+      "items": [
+        {
+          "id": "maintenance-20261001-flood-sassari",
+          "player": "Sean Flood",
+          "from": "Mitteldeutscher BC",
+          "to": "Dinamo Sassari",
+          "pos": "G",
+          "league": "Italian LBA",
+          "date": "2026-10-01",
+          "contract": null,
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-01",
+          "added_at": "2026-10-01T16:03:54.784Z",
+          "source_url": "https://www.dinamobasket.com/blog/cabina-di-regia-arriva-sean-flood",
+          "source_name": "Dinamo Sassari",
+          "summary": "Dinamo Banco di Sardegna announced an agreement with Irish point guard Sean Flood after his stint with Mitteldeutscher BC.",
+          "sources": [
+            {
+              "url": "https://www.dinamobasket.com/blog/cabina-di-regia-arriva-sean-flood",
+              "name": "Dinamo Sassari (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/dinamo-sassari-signs-sean-flood/",
+              "name": "Sportando"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20261001-mbengue-burgos",
+          "player": "Code Mbengue",
+          "from": "Gran Canaria",
+          "to": "San Pablo Burgos",
+          "pos": null,
+          "league": "ACB / EuroCup",
+          "date": "2026-10-01",
+          "contract": "Next season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-01",
+          "added_at": "2026-10-01T16:03:54.784Z",
+          "source_url": "https://cbgrancanaria.net/news/code-mbengue-es-traspasado-al-recoletas-salud-san-pablo-burgos/",
+          "source_name": "CB Gran Canaria",
+          "summary": "CB Gran Canaria announced an economic transfer sending Senegalese prospect Code Mbengue to Recoletas Salud San Pablo Burgos for next season.",
+          "sources": [
+            {
+              "url": "https://cbgrancanaria.net/news/code-mbengue-es-traspasado-al-recoletas-salud-san-pablo-burgos/",
+              "name": "CB Gran Canaria (official)"
+            },
+            {
+              "url": "https://cadenaser.com/canarias/2026/10/01/el-gran-canaria-traspasa-al-canterano-code-mbengue-al-san-pablo-burgos-ser-las-palmas/",
+              "name": "Cadena SER"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20261001-arms-promitheas",
+          "player": "Adonis Arms",
+          "from": "Free Agent",
+          "to": "Promitheas Patras",
+          "pos": "G/F",
+          "league": "Greek Basket League / FIBA Europe Cup",
+          "date": "2026-10-01",
+          "contract": "2026-27 season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-01",
+          "added_at": "2026-10-01T16:03:54.784Z",
+          "source_url": "https://promitheasbc.gr/paiktis-tou-promithea-vikos-cola-o-adonis-arms/",
+          "source_name": "Promitheas Patras BC",
+          "summary": "Promitheas Patras announced Adonis Arms for the 2026-27 season, describing him as a guard/forward.",
+          "sources": [
+            {
+              "url": "https://promitheasbc.gr/paiktis-tou-promithea-vikos-cola-o-adonis-arms/",
+              "name": "Promitheas Patras BC (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/promitheas-signs-adonis-arms-for-the-2026-27-season/",
+              "name": "Sportando"
             }
           ]
         }
