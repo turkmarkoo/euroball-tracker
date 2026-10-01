@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-09-30",
-  "coverage": "Evening overlap: Sportando and Sportacentrs coverage of VEF Riga’s official Matt Rogers announcement. Added one confirmed move; no other new announcement met the confirmation threshold.",
+  "reviewed_on": "2026-10-01",
+  "coverage": "Morning overlap: official Elan Chalon and Promitheas announcements, cross-checked with Sportando, Info-Chalon and BeBasket. Added Jacob Grandison and Jake Forrester; no other new move met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1147,
+  "public_records": 1149,
   "report_date_records": 19,
   "items": [
     {
@@ -2763,6 +2763,71 @@
             {
               "url": "https://sportacentrs.com/basketbols/lbl/30092026-vakar_atbrivoja_vienu_sodien_vieta_cits_v",
               "name": "Sportacentrs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261001-morning",
+      "checked_at": "2026-10-01T07:02:37.887Z",
+      "window_from": "2026-09-29",
+      "coverage": "Morning overlap: official Elan Chalon and Promitheas announcements, cross-checked with Sportando, Info-Chalon and BeBasket. Added Jacob Grandison and Jake Forrester; no other new move met the confirmation threshold.",
+      "added": 2,
+      "updated": 0,
+      "public_records": 1149,
+      "items": [
+        {
+          "id": "maintenance-20261001-grandison-chalon",
+          "player": "Jacob Grandison",
+          "from": "Free Agent",
+          "to": "Elan Chalon",
+          "pos": "SF",
+          "league": "Betclic Élite",
+          "date": "2026-09-30",
+          "contract": "Through end of 2026 (medical replacement)",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-01",
+          "added_at": "2026-10-01T07:02:37.887Z",
+          "source_url": "https://sportando.basketball/en/jacob-grandison-joins-elan-chalon-through-the-end-of-2026/",
+          "source_name": "Sportando",
+          "summary": "Elan Chalon announced Jacob Grandison as a medical replacement for Klark Riethauser through the end of 2026.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/jacob-grandison-joins-elan-chalon-through-the-end-of-2026/",
+              "name": "Sportando (club release)"
+            },
+            {
+              "url": "https://www.info-chalon.com/articles/2026/09/30/114159/basket-betclic-elite-l-ailier-americain-jacob-grandison-arrive-a-l-elan-chalon/",
+              "name": "Info-Chalon"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20261001-forrester-promitheas",
+          "player": "Jake Forrester",
+          "from": "SIG Strasbourg",
+          "to": "Promitheas Patras",
+          "pos": "C",
+          "league": "Greek Basket League / FIBA Europe Cup",
+          "date": "2026-09-30",
+          "contract": "2026-27 season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-01",
+          "added_at": "2026-10-01T07:02:37.887Z",
+          "source_url": "https://promitheasbc.gr/enischysi-stous-psilous-me-tzeik-forester/",
+          "source_name": "Promitheas Patras BC",
+          "summary": "Promitheas Patras announced Jake Forrester for the 2026-27 season after his release from SIG Strasbourg.",
+          "sources": [
+            {
+              "url": "https://promitheasbc.gr/enischysi-stous-psilous-me-tzeik-forester/",
+              "name": "Promitheas Patras BC (official)"
+            },
+            {
+              "url": "https://www.bebasket.fr/evince-par-strasbourg-jake-forrester-a-deja-un-nouveau-club",
+              "name": "BeBasket"
             }
           ]
         }

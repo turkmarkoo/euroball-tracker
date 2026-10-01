@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T16:01:56.938Z",
-  "count": 1272,
+  "generated_at": "2026-10-01T07:02:37.887Z",
+  "count": 1274,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18643,7 +18643,61 @@
           "name": "Sportacentrs"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261001-grandison-chalon",
+      "player": "Jacob Grandison",
+      "from": "Free Agent",
+      "to": "Elan Chalon",
+      "pos": "SF",
+      "league": "Betclic Élite",
+      "date": "2026-09-30",
+      "contract": "Through end of 2026 (medical replacement)",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-01",
+      "added_at": "2026-10-01T07:02:37.887Z",
+      "source_url": "https://sportando.basketball/en/jacob-grandison-joins-elan-chalon-through-the-end-of-2026/",
+      "source_name": "Sportando",
+      "summary": "Elan Chalon announced Jacob Grandison as a medical replacement for Klark Riethauser through the end of 2026.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/jacob-grandison-joins-elan-chalon-through-the-end-of-2026/",
+          "name": "Sportando (club release)"
+        },
+        {
+          "url": "https://www.info-chalon.com/articles/2026/09/30/114159/basket-betclic-elite-l-ailier-americain-jacob-grandison-arrive-a-l-elan-chalon/",
+          "name": "Info-Chalon"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261001-forrester-promitheas",
+      "player": "Jake Forrester",
+      "from": "SIG Strasbourg",
+      "to": "Promitheas Patras",
+      "pos": "C",
+      "league": "Greek Basket League / FIBA Europe Cup",
+      "date": "2026-09-30",
+      "contract": "2026-27 season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-01",
+      "added_at": "2026-10-01T07:02:37.887Z",
+      "source_url": "https://promitheasbc.gr/enischysi-stous-psilous-me-tzeik-forester/",
+      "source_name": "Promitheas Patras BC",
+      "summary": "Promitheas Patras announced Jake Forrester for the 2026-27 season after his release from SIG Strasbourg.",
+      "sources": [
+        {
+          "url": "https://promitheasbc.gr/enischysi-stous-psilous-me-tzeik-forester/",
+          "name": "Promitheas Patras BC (official)"
+        },
+        {
+          "url": "https://www.bebasket.fr/evince-par-strasbourg-jake-forrester-a-deja-un-nouveau-club",
+          "name": "BeBasket"
+        }
+      ]
     }
   ],
-  "public_count": 1147
+  "public_count": 1149
 }
