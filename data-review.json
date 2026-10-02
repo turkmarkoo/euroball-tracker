@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-01",
-  "coverage": "Evening overlap: official Dinamo Sassari, CB Gran Canaria and Promitheas announcements, cross-checked with Sportando and Cadena SER. Added Sean Flood, Code Mbengue and Adonis Arms; no other new move met the confirmation threshold.",
+  "reviewed_on": "2026-10-02",
+  "coverage": "Evening overlap: official BCM Gravelines-Dunkerque announcement cross-checked with Sportando. Added RJ Nembhard Jr as a medical replacement; no other new move met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1152,
+  "public_records": 1153,
   "report_date_records": 19,
   "items": [
     {
@@ -2919,6 +2919,44 @@
             },
             {
               "url": "https://sportando.basketball/en/promitheas-signs-adonis-arms-for-the-2026-27-season/",
+              "name": "Sportando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261002-evening",
+      "checked_at": "2026-10-02T16:03:41.328Z",
+      "window_from": "2026-09-30",
+      "coverage": "Evening overlap: official BCM Gravelines-Dunkerque announcement cross-checked with Sportando. Added RJ Nembhard Jr as a medical replacement; no other new move met the confirmation threshold.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1153,
+      "items": [
+        {
+          "id": "maintenance-20261002-nembhard-gravelines",
+          "player": "RJ Nembhard Jr",
+          "from": "Free Agent",
+          "to": "BCM Gravelines-Dunkerque",
+          "pos": "G",
+          "league": "Betclic Élite",
+          "date": "2026-10-01",
+          "contract": "Medical replacement",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-02",
+          "added_at": "2026-10-02T16:03:41.328Z",
+          "source_url": "https://www.bcmbasket.com/blog/show/rj-nembhard-jr-rejoint-le-bcm",
+          "source_name": "BCM Gravelines-Dunkerque",
+          "summary": "BCM Gravelines-Dunkerque announced RJ Nembhard Jr as a medical replacement for L.J. Thorpe; the 27-year-old American combo guard joins the professional roster.",
+          "sources": [
+            {
+              "url": "https://www.bcmbasket.com/blog/show/rj-nembhard-jr-rejoint-le-bcm",
+              "name": "BCM Gravelines-Dunkerque (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/rj-nembhard-jr-joins-bcm-gravelines-dunkerque-as-l-j-thorpes-medical-replacement/",
               "name": "Sportando"
             }
           ]

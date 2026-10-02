@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-01T16:03:54.784Z",
-  "count": 1277,
+  "generated_at": "2026-10-02T16:03:41.328Z",
+  "count": 1278,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18778,7 +18778,34 @@
           "name": "Sportando"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261002-nembhard-gravelines",
+      "player": "RJ Nembhard Jr",
+      "from": "Free Agent",
+      "to": "BCM Gravelines-Dunkerque",
+      "pos": "G",
+      "league": "Betclic Élite",
+      "date": "2026-10-01",
+      "contract": "Medical replacement",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-02",
+      "added_at": "2026-10-02T16:03:41.328Z",
+      "source_url": "https://www.bcmbasket.com/blog/show/rj-nembhard-jr-rejoint-le-bcm",
+      "source_name": "BCM Gravelines-Dunkerque",
+      "summary": "BCM Gravelines-Dunkerque announced RJ Nembhard Jr as a medical replacement for L.J. Thorpe; the 27-year-old American combo guard joins the professional roster.",
+      "sources": [
+        {
+          "url": "https://www.bcmbasket.com/blog/show/rj-nembhard-jr-rejoint-le-bcm",
+          "name": "BCM Gravelines-Dunkerque (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/rj-nembhard-jr-joins-bcm-gravelines-dunkerque-as-l-j-thorpes-medical-replacement/",
+          "name": "Sportando"
+        }
+      ]
     }
   ],
-  "public_count": 1152
+  "public_count": 1153
 }
