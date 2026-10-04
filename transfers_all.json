@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-02T16:03:41.328Z",
-  "count": 1278,
+  "generated_at": "2026-10-04T06:33:18.182Z",
+  "count": 1281,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18805,7 +18805,88 @@
           "name": "Sportando"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261004-payne-anadolu-efes",
+      "player": "Cameron Payne",
+      "from": "Partizan Mozzart Bet Belgrade",
+      "to": "Anadolu Efes",
+      "pos": "G",
+      "league": "EuroLeague / Turkish BSL",
+      "date": "2026-10-03",
+      "contract": "Through end of 2026-27 season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-04",
+      "added_at": "2026-10-04T06:33:18.182Z",
+      "source_url": "https://anadoluefessk.org/tr",
+      "source_name": "Anadolu Efes",
+      "summary": "Anadolu Efes announced Cameron Payne through the end of the 2026-27 season after his previous EuroLeague stint with Partizan.",
+      "sources": [
+        {
+          "url": "https://anadoluefessk.org/tr",
+          "name": "Anadolu Efes (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/anadolu-efes-officially-signs-cameron-payne/",
+          "name": "Sportando"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261004-gilmore-trefl-sopot",
+      "player": "Carter Gilmore",
+      "from": "Den Helder Suns",
+      "to": "Trefl Sopot",
+      "pos": "PF",
+      "league": "Polish Basket League",
+      "date": "2026-10-01",
+      "contract": "Through end of 2026-27 season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-04",
+      "added_at": "2026-10-04T06:33:18.182Z",
+      "source_url": "https://treflsopot.pl/posts/carter-gilmore-nowym-zawodnikiem-energi-trefla-sopot/2426",
+      "source_name": "Energa Trefl Sopot",
+      "summary": "Energa Trefl Sopot announced Carter Gilmore from Den Helder Suns on a contract through the end of the 2026-27 season.",
+      "sources": [
+        {
+          "url": "https://treflsopot.pl/posts/carter-gilmore-nowym-zawodnikiem-energi-trefla-sopot/2426",
+          "name": "Energa Trefl Sopot (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/trefl-sopot-signs-carter-gilmore/",
+          "name": "Sportando"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261004-olynyk-bc-roma",
+      "player": "Kelly Olynyk",
+      "from": "San Antonio Spurs",
+      "to": "BC Roma",
+      "pos": "C",
+      "league": "Italian LBA / EuroCup",
+      "date": "2026-10-03",
+      "contract": null,
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-04",
+      "added_at": "2026-10-04T06:33:18.182Z",
+      "source_url": "https://www.officialbcroma.com/news/bc-roma-ufficiale-l-arrivo-di-kelly-olynyk",
+      "source_name": "BC Roma",
+      "summary": "BC Roma announced Kelly Olynyk, who joins after his last NBA season with San Antonio and will wear number 22.",
+      "sources": [
+        {
+          "url": "https://www.officialbcroma.com/news/bc-roma-ufficiale-l-arrivo-di-kelly-olynyk",
+          "name": "BC Roma (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/bc-roma-kelly-olynyk-signing-officially-announced/",
+          "name": "Sportando"
+        }
+      ]
     }
   ],
-  "public_count": 1153
+  "public_count": 1156
 }

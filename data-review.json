@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-02",
-  "coverage": "Evening overlap: official BCM Gravelines-Dunkerque announcement cross-checked with Sportando. Added RJ Nembhard Jr as a medical replacement; no other new move met the confirmation threshold.",
+  "reviewed_on": "2026-10-04",
+  "coverage": "Morning overlap: official Anadolu Efes, Energa Trefl Sopot and BC Roma announcements, cross-checked with Sportando. Added Cameron Payne, Carter Gilmore and Kelly Olynyk; no other new move met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1153,
+  "public_records": 1156,
   "report_date_records": 19,
   "items": [
     {
@@ -2957,6 +2957,98 @@
             },
             {
               "url": "https://sportando.basketball/en/rj-nembhard-jr-joins-bcm-gravelines-dunkerque-as-l-j-thorpes-medical-replacement/",
+              "name": "Sportando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261004-morning",
+      "checked_at": "2026-10-04T06:33:18.182Z",
+      "window_from": "2026-10-02",
+      "coverage": "Morning overlap: official Anadolu Efes, Energa Trefl Sopot and BC Roma announcements, cross-checked with Sportando. Added Cameron Payne, Carter Gilmore and Kelly Olynyk; no other new move met the confirmation threshold.",
+      "added": 3,
+      "updated": 0,
+      "public_records": 1156,
+      "items": [
+        {
+          "id": "maintenance-20261004-payne-anadolu-efes",
+          "player": "Cameron Payne",
+          "from": "Partizan Mozzart Bet Belgrade",
+          "to": "Anadolu Efes",
+          "pos": "G",
+          "league": "EuroLeague / Turkish BSL",
+          "date": "2026-10-03",
+          "contract": "Through end of 2026-27 season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-04",
+          "added_at": "2026-10-04T06:33:18.182Z",
+          "source_url": "https://anadoluefessk.org/tr",
+          "source_name": "Anadolu Efes",
+          "summary": "Anadolu Efes announced Cameron Payne through the end of the 2026-27 season after his previous EuroLeague stint with Partizan.",
+          "sources": [
+            {
+              "url": "https://anadoluefessk.org/tr",
+              "name": "Anadolu Efes (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/anadolu-efes-officially-signs-cameron-payne/",
+              "name": "Sportando"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20261004-gilmore-trefl-sopot",
+          "player": "Carter Gilmore",
+          "from": "Den Helder Suns",
+          "to": "Trefl Sopot",
+          "pos": "PF",
+          "league": "Polish Basket League",
+          "date": "2026-10-01",
+          "contract": "Through end of 2026-27 season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-04",
+          "added_at": "2026-10-04T06:33:18.182Z",
+          "source_url": "https://treflsopot.pl/posts/carter-gilmore-nowym-zawodnikiem-energi-trefla-sopot/2426",
+          "source_name": "Energa Trefl Sopot",
+          "summary": "Energa Trefl Sopot announced Carter Gilmore from Den Helder Suns on a contract through the end of the 2026-27 season.",
+          "sources": [
+            {
+              "url": "https://treflsopot.pl/posts/carter-gilmore-nowym-zawodnikiem-energi-trefla-sopot/2426",
+              "name": "Energa Trefl Sopot (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/trefl-sopot-signs-carter-gilmore/",
+              "name": "Sportando"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20261004-olynyk-bc-roma",
+          "player": "Kelly Olynyk",
+          "from": "San Antonio Spurs",
+          "to": "BC Roma",
+          "pos": "C",
+          "league": "Italian LBA / EuroCup",
+          "date": "2026-10-03",
+          "contract": null,
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-04",
+          "added_at": "2026-10-04T06:33:18.182Z",
+          "source_url": "https://www.officialbcroma.com/news/bc-roma-ufficiale-l-arrivo-di-kelly-olynyk",
+          "source_name": "BC Roma",
+          "summary": "BC Roma announced Kelly Olynyk, who joins after his last NBA season with San Antonio and will wear number 22.",
+          "sources": [
+            {
+              "url": "https://www.officialbcroma.com/news/bc-roma-ufficiale-l-arrivo-di-kelly-olynyk",
+              "name": "BC Roma (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/bc-roma-kelly-olynyk-signing-officially-announced/",
               "name": "Sportando"
             }
           ]
