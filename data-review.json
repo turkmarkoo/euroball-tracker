@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-04",
-  "coverage": "Morning overlap: official Anadolu Efes, Energa Trefl Sopot and BC Roma announcements, cross-checked with Sportando. Added Cameron Payne, Carter Gilmore and Kelly Olynyk; no other new move met the confirmation threshold.",
+  "reviewed_on": "2026-10-05",
+  "coverage": "Evening overlap: official PAOK announcement plus Sportando official press releases for Hapoel Ironi Eilat and Hapoel Be’er Sheva. Added Donatas Motiejunas, Nuni Omot and Brian Cameron; no other new move met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1156,
+  "public_records": 1159,
   "report_date_records": 19,
   "items": [
     {
@@ -3049,6 +3049,90 @@
             },
             {
               "url": "https://sportando.basketball/en/bc-roma-kelly-olynyk-signing-officially-announced/",
+              "name": "Sportando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261005-evening",
+      "checked_at": "2026-10-05T16:41:54.178Z",
+      "window_from": "2026-10-03",
+      "coverage": "Evening overlap: official PAOK announcement plus Sportando official press releases for Hapoel Ironi Eilat and Hapoel Be’er Sheva. Added Donatas Motiejunas, Nuni Omot and Brian Cameron; no other new move met the confirmation threshold.",
+      "added": 3,
+      "updated": 0,
+      "public_records": 1159,
+      "items": [
+        {
+          "id": "maintenance-20261005-omot-eilat",
+          "player": "Nuni Omot",
+          "from": "Shandong High-Speed Kirin",
+          "to": "Hapoel Ironi Eilat",
+          "pos": "F",
+          "league": "Israeli Winner League",
+          "date": "2026-10-05",
+          "contract": "Through end of season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-05",
+          "added_at": "2026-10-05T16:41:54.178Z",
+          "source_url": "https://sportando.basketball/en/nuni-omot-signs-with-hapoel-ironi-eilat/",
+          "source_name": "Sportando",
+          "summary": "Hapoel Ironi Eilat announced Nuni Omot through the end of the season; he joins from Shandong High-Speed Kirin.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/nuni-omot-signs-with-hapoel-ironi-eilat/",
+              "name": "Sportando (official press release)"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20261005-cameron-beer-sheva",
+          "player": "Brian Cameron",
+          "from": "Ankaragücü",
+          "to": "Hapoel Be'er Sheva",
+          "pos": "G",
+          "league": "Israeli Winner League",
+          "date": "2026-10-05",
+          "contract": null,
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-05",
+          "added_at": "2026-10-05T16:41:54.178Z",
+          "source_url": "https://sportando.basketball/en/hapoel-beer-sheva-signs-brian-cameron-to-replace-amari-bailey/",
+          "source_name": "Sportando",
+          "summary": "Hapoel Be'er Sheva/DIMONA announced Brian Cameron from Ankaragücü as a replacement for injured Amari Bailey.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/hapoel-beer-sheva-signs-brian-cameron-to-replace-amari-bailey/",
+              "name": "Sportando (official press release)"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20261005-motiejunas-paok",
+          "player": "Donatas Motiejunas",
+          "from": "Crvena zvezda",
+          "to": "PAOK",
+          "pos": "C",
+          "league": "Greek Basket League / EuroCup",
+          "date": "2026-10-04",
+          "contract": "Through end of 2026-27 season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-05",
+          "added_at": "2026-10-05T16:41:54.178Z",
+          "source_url": "https://www.paokbc.gr/en/news/team/3730-donatas-motiejunas-joins-paok",
+          "source_name": "PAOK BC",
+          "summary": "PAOK BC announced Lithuanian center Donatas Motiejunas through the end of the 2026-27 season after his previous season with Crvena zvezda.",
+          "sources": [
+            {
+              "url": "https://www.paokbc.gr/en/news/team/3730-donatas-motiejunas-joins-paok",
+              "name": "PAOK BC (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/official-paok-signs-donatas-motiejunas/",
               "name": "Sportando"
             }
           ]

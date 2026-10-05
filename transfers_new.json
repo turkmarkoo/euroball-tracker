@@ -1,84 +1,76 @@
 {
-  "generated_at": "2026-10-04T06:33:18.182Z",
+  "generated_at": "2026-10-05T16:41:54.178Z",
   "count": 3,
   "items": [
     {
-      "id": "maintenance-20261004-payne-anadolu-efes",
-      "player": "Cameron Payne",
-      "from": "Partizan Mozzart Bet Belgrade",
-      "to": "Anadolu Efes",
+      "id": "maintenance-20261005-omot-eilat",
+      "player": "Nuni Omot",
+      "from": "Shandong High-Speed Kirin",
+      "to": "Hapoel Ironi Eilat",
+      "pos": "F",
+      "league": "Israeli Winner League",
+      "date": "2026-10-05",
+      "contract": "Through end of season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-05",
+      "added_at": "2026-10-05T16:41:54.178Z",
+      "source_url": "https://sportando.basketball/en/nuni-omot-signs-with-hapoel-ironi-eilat/",
+      "source_name": "Sportando",
+      "summary": "Hapoel Ironi Eilat announced Nuni Omot through the end of the season; he joins from Shandong High-Speed Kirin.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/nuni-omot-signs-with-hapoel-ironi-eilat/",
+          "name": "Sportando (official press release)"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261005-cameron-beer-sheva",
+      "player": "Brian Cameron",
+      "from": "Ankaragücü",
+      "to": "Hapoel Be'er Sheva",
       "pos": "G",
-      "league": "EuroLeague / Turkish BSL",
-      "date": "2026-10-03",
-      "contract": "Through end of 2026-27 season",
-      "status": "signed",
-      "date_basis": "announcement_date",
-      "verified_at": "2026-10-04",
-      "added_at": "2026-10-04T06:33:18.182Z",
-      "source_url": "https://anadoluefessk.org/tr",
-      "source_name": "Anadolu Efes",
-      "summary": "Anadolu Efes announced Cameron Payne through the end of the 2026-27 season after his previous EuroLeague stint with Partizan.",
-      "sources": [
-        {
-          "url": "https://anadoluefessk.org/tr",
-          "name": "Anadolu Efes (official)"
-        },
-        {
-          "url": "https://sportando.basketball/en/anadolu-efes-officially-signs-cameron-payne/",
-          "name": "Sportando"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20261004-gilmore-trefl-sopot",
-      "player": "Carter Gilmore",
-      "from": "Den Helder Suns",
-      "to": "Trefl Sopot",
-      "pos": "PF",
-      "league": "Polish Basket League",
-      "date": "2026-10-01",
-      "contract": "Through end of 2026-27 season",
-      "status": "signed",
-      "date_basis": "announcement_date",
-      "verified_at": "2026-10-04",
-      "added_at": "2026-10-04T06:33:18.182Z",
-      "source_url": "https://treflsopot.pl/posts/carter-gilmore-nowym-zawodnikiem-energi-trefla-sopot/2426",
-      "source_name": "Energa Trefl Sopot",
-      "summary": "Energa Trefl Sopot announced Carter Gilmore from Den Helder Suns on a contract through the end of the 2026-27 season.",
-      "sources": [
-        {
-          "url": "https://treflsopot.pl/posts/carter-gilmore-nowym-zawodnikiem-energi-trefla-sopot/2426",
-          "name": "Energa Trefl Sopot (official)"
-        },
-        {
-          "url": "https://sportando.basketball/en/trefl-sopot-signs-carter-gilmore/",
-          "name": "Sportando"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20261004-olynyk-bc-roma",
-      "player": "Kelly Olynyk",
-      "from": "San Antonio Spurs",
-      "to": "BC Roma",
-      "pos": "C",
-      "league": "Italian LBA / EuroCup",
-      "date": "2026-10-03",
+      "league": "Israeli Winner League",
+      "date": "2026-10-05",
       "contract": null,
       "status": "signed",
       "date_basis": "announcement_date",
-      "verified_at": "2026-10-04",
-      "added_at": "2026-10-04T06:33:18.182Z",
-      "source_url": "https://www.officialbcroma.com/news/bc-roma-ufficiale-l-arrivo-di-kelly-olynyk",
-      "source_name": "BC Roma",
-      "summary": "BC Roma announced Kelly Olynyk, who joins after his last NBA season with San Antonio and will wear number 22.",
+      "verified_at": "2026-10-05",
+      "added_at": "2026-10-05T16:41:54.178Z",
+      "source_url": "https://sportando.basketball/en/hapoel-beer-sheva-signs-brian-cameron-to-replace-amari-bailey/",
+      "source_name": "Sportando",
+      "summary": "Hapoel Be'er Sheva/DIMONA announced Brian Cameron from Ankaragücü as a replacement for injured Amari Bailey.",
       "sources": [
         {
-          "url": "https://www.officialbcroma.com/news/bc-roma-ufficiale-l-arrivo-di-kelly-olynyk",
-          "name": "BC Roma (official)"
+          "url": "https://sportando.basketball/en/hapoel-beer-sheva-signs-brian-cameron-to-replace-amari-bailey/",
+          "name": "Sportando (official press release)"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261005-motiejunas-paok",
+      "player": "Donatas Motiejunas",
+      "from": "Crvena zvezda",
+      "to": "PAOK",
+      "pos": "C",
+      "league": "Greek Basket League / EuroCup",
+      "date": "2026-10-04",
+      "contract": "Through end of 2026-27 season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-05",
+      "added_at": "2026-10-05T16:41:54.178Z",
+      "source_url": "https://www.paokbc.gr/en/news/team/3730-donatas-motiejunas-joins-paok",
+      "source_name": "PAOK BC",
+      "summary": "PAOK BC announced Lithuanian center Donatas Motiejunas through the end of the 2026-27 season after his previous season with Crvena zvezda.",
+      "sources": [
+        {
+          "url": "https://www.paokbc.gr/en/news/team/3730-donatas-motiejunas-joins-paok",
+          "name": "PAOK BC (official)"
         },
         {
-          "url": "https://sportando.basketball/en/bc-roma-kelly-olynyk-signing-officially-announced/",
+          "url": "https://sportando.basketball/en/official-paok-signs-donatas-motiejunas/",
           "name": "Sportando"
         }
       ]
