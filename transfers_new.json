@@ -1,76 +1,30 @@
 {
-  "generated_at": "2026-10-05T16:41:54.178Z",
-  "count": 3,
+  "generated_at": "2026-10-07T07:42:56.857Z",
+  "count": 1,
   "items": [
     {
-      "id": "maintenance-20261005-omot-eilat",
-      "player": "Nuni Omot",
-      "from": "Shandong High-Speed Kirin",
-      "to": "Hapoel Ironi Eilat",
-      "pos": "F",
-      "league": "Israeli Winner League",
-      "date": "2026-10-05",
+      "id": "maintenance-20261007-robinson-siroki",
+      "player": "Justin Robinson",
+      "from": "Pallacanestro Roseto",
+      "to": "Široki TT Kabeli",
+      "pos": "G",
+      "league": "ABA League / Bosnia and Herzegovina League",
+      "date": "2026-10-04",
       "contract": "Through end of season",
       "status": "signed",
       "date_basis": "announcement_date",
-      "verified_at": "2026-10-05",
-      "added_at": "2026-10-05T16:41:54.178Z",
-      "source_url": "https://sportando.basketball/en/nuni-omot-signs-with-hapoel-ironi-eilat/",
-      "source_name": "Sportando",
-      "summary": "Hapoel Ironi Eilat announced Nuni Omot through the end of the season; he joins from Shandong High-Speed Kirin.",
+      "verified_at": "2026-10-07",
+      "added_at": "2026-10-07T07:42:56.857Z",
+      "source_url": "https://hkksiroki.com/en/news/",
+      "source_name": "HKK Široki TT Kabeli",
+      "summary": "HKK Široki TT Kabeli officially signed American point guard Justin Robinson from Pallacanestro Roseto through the end of the season.",
       "sources": [
         {
-          "url": "https://sportando.basketball/en/nuni-omot-signs-with-hapoel-ironi-eilat/",
-          "name": "Sportando (official press release)"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20261005-cameron-beer-sheva",
-      "player": "Brian Cameron",
-      "from": "Ankaragücü",
-      "to": "Hapoel Be'er Sheva",
-      "pos": "G",
-      "league": "Israeli Winner League",
-      "date": "2026-10-05",
-      "contract": null,
-      "status": "signed",
-      "date_basis": "announcement_date",
-      "verified_at": "2026-10-05",
-      "added_at": "2026-10-05T16:41:54.178Z",
-      "source_url": "https://sportando.basketball/en/hapoel-beer-sheva-signs-brian-cameron-to-replace-amari-bailey/",
-      "source_name": "Sportando",
-      "summary": "Hapoel Be'er Sheva/DIMONA announced Brian Cameron from Ankaragücü as a replacement for injured Amari Bailey.",
-      "sources": [
-        {
-          "url": "https://sportando.basketball/en/hapoel-beer-sheva-signs-brian-cameron-to-replace-amari-bailey/",
-          "name": "Sportando (official press release)"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20261005-motiejunas-paok",
-      "player": "Donatas Motiejunas",
-      "from": "Crvena zvezda",
-      "to": "PAOK",
-      "pos": "C",
-      "league": "Greek Basket League / EuroCup",
-      "date": "2026-10-04",
-      "contract": "Through end of 2026-27 season",
-      "status": "signed",
-      "date_basis": "announcement_date",
-      "verified_at": "2026-10-05",
-      "added_at": "2026-10-05T16:41:54.178Z",
-      "source_url": "https://www.paokbc.gr/en/news/team/3730-donatas-motiejunas-joins-paok",
-      "source_name": "PAOK BC",
-      "summary": "PAOK BC announced Lithuanian center Donatas Motiejunas through the end of the 2026-27 season after his previous season with Crvena zvezda.",
-      "sources": [
-        {
-          "url": "https://www.paokbc.gr/en/news/team/3730-donatas-motiejunas-joins-paok",
-          "name": "PAOK BC (official)"
+          "url": "https://hkksiroki.com/en/news/",
+          "name": "HKK Široki TT Kabeli (official)"
         },
         {
-          "url": "https://sportando.basketball/en/official-paok-signs-donatas-motiejunas/",
+          "url": "https://sportando.basketball/en/hkk-siroki-signs-justin-robinson/",
           "name": "Sportando"
         }
       ]

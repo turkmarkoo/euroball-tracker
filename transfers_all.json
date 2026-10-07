@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T16:41:54.178Z",
-  "count": 1284,
+  "generated_at": "2026-10-07T07:42:56.857Z",
+  "count": 1285,
   "items": [
     {
       "id": "review-20260908-36",
@@ -18959,7 +18959,34 @@
           "name": "Sportando"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261007-robinson-siroki",
+      "player": "Justin Robinson",
+      "from": "Pallacanestro Roseto",
+      "to": "Široki TT Kabeli",
+      "pos": "G",
+      "league": "ABA League / Bosnia and Herzegovina League",
+      "date": "2026-10-04",
+      "contract": "Through end of season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-07",
+      "added_at": "2026-10-07T07:42:56.857Z",
+      "source_url": "https://hkksiroki.com/en/news/",
+      "source_name": "HKK Široki TT Kabeli",
+      "summary": "HKK Široki TT Kabeli officially signed American point guard Justin Robinson from Pallacanestro Roseto through the end of the season.",
+      "sources": [
+        {
+          "url": "https://hkksiroki.com/en/news/",
+          "name": "HKK Široki TT Kabeli (official)"
+        },
+        {
+          "url": "https://sportando.basketball/en/hkk-siroki-signs-justin-robinson/",
+          "name": "Sportando"
+        }
+      ]
     }
   ],
-  "public_count": 1159
+  "public_count": 1160
 }

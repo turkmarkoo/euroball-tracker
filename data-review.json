@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-05",
-  "coverage": "Evening overlap: official PAOK announcement plus Sportando official press releases for Hapoel Ironi Eilat and Hapoel Be’er Sheva. Added Donatas Motiejunas, Nuni Omot and Brian Cameron; no other new move met the confirmation threshold.",
+  "reviewed_on": "2026-10-07",
+  "coverage": "Morning overlap: official HKK Široki TT Kabeli announcement cross-checked with Sportando. Added Justin Robinson; no other new move met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1159,
+  "public_records": 1160,
   "report_date_records": 19,
   "items": [
     {
@@ -3133,6 +3133,44 @@
             },
             {
               "url": "https://sportando.basketball/en/official-paok-signs-donatas-motiejunas/",
+              "name": "Sportando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261007-morning",
+      "checked_at": "2026-10-07T07:42:56.857Z",
+      "window_from": "2026-10-05",
+      "coverage": "Morning overlap: official HKK Široki TT Kabeli announcement cross-checked with Sportando. Added Justin Robinson; no other new move met the confirmation threshold.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1160,
+      "items": [
+        {
+          "id": "maintenance-20261007-robinson-siroki",
+          "player": "Justin Robinson",
+          "from": "Pallacanestro Roseto",
+          "to": "Široki TT Kabeli",
+          "pos": "G",
+          "league": "ABA League / Bosnia and Herzegovina League",
+          "date": "2026-10-04",
+          "contract": "Through end of season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-07",
+          "added_at": "2026-10-07T07:42:56.857Z",
+          "source_url": "https://hkksiroki.com/en/news/",
+          "source_name": "HKK Široki TT Kabeli",
+          "summary": "HKK Široki TT Kabeli officially signed American point guard Justin Robinson from Pallacanestro Roseto through the end of the season.",
+          "sources": [
+            {
+              "url": "https://hkksiroki.com/en/news/",
+              "name": "HKK Široki TT Kabeli (official)"
+            },
+            {
+              "url": "https://sportando.basketball/en/hkk-siroki-signs-justin-robinson/",
               "name": "Sportando"
             }
           ]
