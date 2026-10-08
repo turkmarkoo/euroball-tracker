@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T07:03:11.383Z",
-  "count": 1287,
+  "generated_at": "2026-10-08T16:01:58.166Z",
+  "count": 1288,
   "items": [
     {
       "id": "review-20260908-36",
@@ -19040,7 +19040,38 @@
           "name": "L'Équipe"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261008-holyfield-holon",
+      "player": "T.J. Holyfield",
+      "from": "Lioneers",
+      "to": "Hapoel Holon",
+      "pos": "F-C",
+      "league": "Israeli Basketball Premier League / Basketball Champions League",
+      "date": "2026-10-08",
+      "contract": "Temporary; short-term",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-08",
+      "added_at": "2026-10-08T16:01:58.166Z",
+      "source_url": "https://sportando.basketball/en/hapoel-holon-signs-t-j-holyfield-on-a-temporary-deal/",
+      "source_name": "Sportando",
+      "summary": "Hapoel Holon announced T.J. Holyfield on a temporary contract to cover an injury crisis.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/hapoel-holon-signs-t-j-holyfield-on-a-temporary-deal/",
+          "name": "Sportando (club announcement reported)"
+        },
+        {
+          "url": "https://www.eurohoops.net/en/fiba-champions-league/2017813/t-j-holyfield-to-hapoel-holon-basketball-champions-league/",
+          "name": "Eurohoops"
+        },
+        {
+          "url": "https://basket.co.il/player.asp?PlayerId=28230&lang=en",
+          "name": "Israel Basketball Association roster"
+        }
+      ]
     }
   ],
-  "public_count": 1162
+  "public_count": 1163
 }

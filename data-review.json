@@ -1,10 +1,10 @@
 {
   "reviewed_on": "2026-10-08",
-  "coverage": "Morning overlap: JL Bourg official announcement for Tyger Campbell cross-checked with Sportando; ASVEL announcement for Juhann Begarin cross-checked with Sportando and L'Équipe. Added 2 signed medical-replacement moves; no other new move met the confirmation threshold.",
+  "coverage": "Evening overlap: Hapoel Holon temporary signing of T.J. Holyfield confirmed through Sportando and Eurohoops reports of the club announcement, with the Israeli league roster listing him. Added 1 signed move; other October 8 transaction-list entries lacked a sufficiently clear original announcement.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1162,
+  "public_records": 1163,
   "report_date_records": 19,
   "items": [
     {
@@ -3237,6 +3237,48 @@
             {
               "url": "https://www.lequipe.fr/Basket/Actualites/Dernier-rescape-de-monaco-juhann-begarin-est-engage-un-mois-comme-pigiste-medical-par-l-asvel/1723978",
               "name": "L'Équipe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261008-evening",
+      "checked_at": "2026-10-08T16:01:58.166Z",
+      "window_from": "2026-10-06",
+      "coverage": "Evening overlap: Hapoel Holon temporary signing of T.J. Holyfield confirmed through Sportando and Eurohoops reports of the club announcement, with the Israeli league roster listing him. Added 1 signed move; other October 8 transaction-list entries lacked a sufficiently clear original announcement.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1163,
+      "items": [
+        {
+          "id": "maintenance-20261008-holyfield-holon",
+          "player": "T.J. Holyfield",
+          "from": "Lioneers",
+          "to": "Hapoel Holon",
+          "pos": "F-C",
+          "league": "Israeli Basketball Premier League / Basketball Champions League",
+          "date": "2026-10-08",
+          "contract": "Temporary; short-term",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-08",
+          "added_at": "2026-10-08T16:01:58.166Z",
+          "source_url": "https://sportando.basketball/en/hapoel-holon-signs-t-j-holyfield-on-a-temporary-deal/",
+          "source_name": "Sportando",
+          "summary": "Hapoel Holon announced T.J. Holyfield on a temporary contract to cover an injury crisis.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/en/hapoel-holon-signs-t-j-holyfield-on-a-temporary-deal/",
+              "name": "Sportando (club announcement reported)"
+            },
+            {
+              "url": "https://www.eurohoops.net/en/fiba-champions-league/2017813/t-j-holyfield-to-hapoel-holon-basketball-champions-league/",
+              "name": "Eurohoops"
+            },
+            {
+              "url": "https://basket.co.il/player.asp?PlayerId=28230&lang=en",
+              "name": "Israel Basketball Association roster"
             }
           ]
         }

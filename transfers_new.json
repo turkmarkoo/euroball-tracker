@@ -1,58 +1,35 @@
 {
-  "generated_at": "2026-10-08T07:03:11.383Z",
-  "count": 2,
+  "generated_at": "2026-10-08T16:01:58.166Z",
+  "count": 1,
   "items": [
     {
-      "id": "maintenance-20261008-campbell-jl-bourg",
-      "player": "Tyger Campbell",
-      "from": "Skyliners Frankfurt",
-      "to": "JL Bourg",
-      "pos": "G",
-      "league": "Betclic Elite / EuroCup",
-      "date": "2026-10-06",
-      "contract": "Medical replacement; short-term",
+      "id": "maintenance-20261008-holyfield-holon",
+      "player": "T.J. Holyfield",
+      "from": "Lioneers",
+      "to": "Hapoel Holon",
+      "pos": "F-C",
+      "league": "Israeli Basketball Premier League / Basketball Champions League",
+      "date": "2026-10-08",
+      "contract": "Temporary; short-term",
       "status": "signed",
       "date_basis": "announcement_date",
       "verified_at": "2026-10-08",
-      "added_at": "2026-10-08T07:03:11.383Z",
-      "source_url": "https://www.jlbourg-basket.com/2026/10/06/tyger-campbell-comme-pigiste-medical/",
-      "source_name": "JL Bourg Basket",
-      "summary": "JL Bourg announced Tyger Campbell as a medical replacement for Tyson Walker; the club said he would join for the end of the week.",
-      "sources": [
-        {
-          "url": "https://www.jlbourg-basket.com/2026/10/06/tyger-campbell-comme-pigiste-medical/",
-          "name": "JL Bourg Basket (official)"
-        },
-        {
-          "url": "https://sportando.basketball/jl-bourg-signs-tyger-campbell-as-medical-replacement/",
-          "name": "Sportando"
-        }
-      ]
-    },
-    {
-      "id": "maintenance-20261008-begarin-asvel",
-      "player": "Juhann Begarin",
-      "from": "AS Monaco",
-      "to": "LDLC ASVEL",
-      "pos": "F",
-      "league": "Betclic Elite / EuroLeague",
-      "date": "2026-10-07",
-      "contract": "Initial one-month medical replacement",
-      "status": "signed",
-      "date_basis": "announcement_date",
-      "verified_at": "2026-10-08",
-      "added_at": "2026-10-08T07:03:11.383Z",
-      "source_url": "https://sportando.basketball/asvel-ufficiale-juhann-begarin-con-un-contratto-iniziale-di-un-mese/",
+      "added_at": "2026-10-08T16:01:58.166Z",
+      "source_url": "https://sportando.basketball/en/hapoel-holon-signs-t-j-holyfield-on-a-temporary-deal/",
       "source_name": "Sportando",
-      "summary": "LDLC ASVEL announced Juhann Begarin as a medical replacement for Mathis Dossou-Yovo on an initial one-month deal.",
+      "summary": "Hapoel Holon announced T.J. Holyfield on a temporary contract to cover an injury crisis.",
       "sources": [
         {
-          "url": "https://sportando.basketball/asvel-ufficiale-juhann-begarin-con-un-contratto-iniziale-di-un-mese/",
+          "url": "https://sportando.basketball/en/hapoel-holon-signs-t-j-holyfield-on-a-temporary-deal/",
           "name": "Sportando (club announcement reported)"
         },
         {
-          "url": "https://www.lequipe.fr/Basket/Actualites/Dernier-rescape-de-monaco-juhann-begarin-est-engage-un-mois-comme-pigiste-medical-par-l-asvel/1723978",
-          "name": "L'Équipe"
+          "url": "https://www.eurohoops.net/en/fiba-champions-league/2017813/t-j-holyfield-to-hapoel-holon-basketball-champions-league/",
+          "name": "Eurohoops"
+        },
+        {
+          "url": "https://basket.co.il/player.asp?PlayerId=28230&lang=en",
+          "name": "Israel Basketball Association roster"
         }
       ]
     }
