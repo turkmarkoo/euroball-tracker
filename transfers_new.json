@@ -1,31 +1,58 @@
 {
-  "generated_at": "2026-10-07T07:42:56.857Z",
-  "count": 1,
+  "generated_at": "2026-10-08T07:03:11.383Z",
+  "count": 2,
   "items": [
     {
-      "id": "maintenance-20261007-robinson-siroki",
-      "player": "Justin Robinson",
-      "from": "Pallacanestro Roseto",
-      "to": "Široki TT Kabeli",
+      "id": "maintenance-20261008-campbell-jl-bourg",
+      "player": "Tyger Campbell",
+      "from": "Skyliners Frankfurt",
+      "to": "JL Bourg",
       "pos": "G",
-      "league": "ABA League / Bosnia and Herzegovina League",
-      "date": "2026-10-04",
-      "contract": "Through end of season",
+      "league": "Betclic Elite / EuroCup",
+      "date": "2026-10-06",
+      "contract": "Medical replacement; short-term",
       "status": "signed",
       "date_basis": "announcement_date",
-      "verified_at": "2026-10-07",
-      "added_at": "2026-10-07T07:42:56.857Z",
-      "source_url": "https://hkksiroki.com/en/news/",
-      "source_name": "HKK Široki TT Kabeli",
-      "summary": "HKK Široki TT Kabeli officially signed American point guard Justin Robinson from Pallacanestro Roseto through the end of the season.",
+      "verified_at": "2026-10-08",
+      "added_at": "2026-10-08T07:03:11.383Z",
+      "source_url": "https://www.jlbourg-basket.com/2026/10/06/tyger-campbell-comme-pigiste-medical/",
+      "source_name": "JL Bourg Basket",
+      "summary": "JL Bourg announced Tyger Campbell as a medical replacement for Tyson Walker; the club said he would join for the end of the week.",
       "sources": [
         {
-          "url": "https://hkksiroki.com/en/news/",
-          "name": "HKK Široki TT Kabeli (official)"
+          "url": "https://www.jlbourg-basket.com/2026/10/06/tyger-campbell-comme-pigiste-medical/",
+          "name": "JL Bourg Basket (official)"
         },
         {
-          "url": "https://sportando.basketball/en/hkk-siroki-signs-justin-robinson/",
+          "url": "https://sportando.basketball/jl-bourg-signs-tyger-campbell-as-medical-replacement/",
           "name": "Sportando"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261008-begarin-asvel",
+      "player": "Juhann Begarin",
+      "from": "AS Monaco",
+      "to": "LDLC ASVEL",
+      "pos": "F",
+      "league": "Betclic Elite / EuroLeague",
+      "date": "2026-10-07",
+      "contract": "Initial one-month medical replacement",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-08",
+      "added_at": "2026-10-08T07:03:11.383Z",
+      "source_url": "https://sportando.basketball/asvel-ufficiale-juhann-begarin-con-un-contratto-iniziale-di-un-mese/",
+      "source_name": "Sportando",
+      "summary": "LDLC ASVEL announced Juhann Begarin as a medical replacement for Mathis Dossou-Yovo on an initial one-month deal.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/asvel-ufficiale-juhann-begarin-con-un-contratto-iniziale-di-un-mese/",
+          "name": "Sportando (club announcement reported)"
+        },
+        {
+          "url": "https://www.lequipe.fr/Basket/Actualites/Dernier-rescape-de-monaco-juhann-begarin-est-engage-un-mois-comme-pigiste-medical-par-l-asvel/1723978",
+          "name": "L'Équipe"
         }
       ]
     }

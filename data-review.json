@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-07",
-  "coverage": "Morning overlap: official HKK Široki TT Kabeli announcement cross-checked with Sportando. Added Justin Robinson; no other new move met the confirmation threshold.",
+  "reviewed_on": "2026-10-08",
+  "coverage": "Morning overlap: JL Bourg official announcement for Tyger Campbell cross-checked with Sportando; ASVEL announcement for Juhann Begarin cross-checked with Sportando and L'Équipe. Added 2 signed medical-replacement moves; no other new move met the confirmation threshold.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1160,
+  "public_records": 1162,
   "report_date_records": 19,
   "items": [
     {
@@ -3172,6 +3172,71 @@
             {
               "url": "https://sportando.basketball/en/hkk-siroki-signs-justin-robinson/",
               "name": "Sportando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261008-morning",
+      "checked_at": "2026-10-08T07:03:11.383Z",
+      "window_from": "2026-10-06",
+      "coverage": "Morning overlap: JL Bourg official announcement for Tyger Campbell cross-checked with Sportando; ASVEL announcement for Juhann Begarin cross-checked with Sportando and L'Équipe. Added 2 signed medical-replacement moves; no other new move met the confirmation threshold.",
+      "added": 2,
+      "updated": 0,
+      "public_records": 1162,
+      "items": [
+        {
+          "id": "maintenance-20261008-campbell-jl-bourg",
+          "player": "Tyger Campbell",
+          "from": "Skyliners Frankfurt",
+          "to": "JL Bourg",
+          "pos": "G",
+          "league": "Betclic Elite / EuroCup",
+          "date": "2026-10-06",
+          "contract": "Medical replacement; short-term",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-08",
+          "added_at": "2026-10-08T07:03:11.383Z",
+          "source_url": "https://www.jlbourg-basket.com/2026/10/06/tyger-campbell-comme-pigiste-medical/",
+          "source_name": "JL Bourg Basket",
+          "summary": "JL Bourg announced Tyger Campbell as a medical replacement for Tyson Walker; the club said he would join for the end of the week.",
+          "sources": [
+            {
+              "url": "https://www.jlbourg-basket.com/2026/10/06/tyger-campbell-comme-pigiste-medical/",
+              "name": "JL Bourg Basket (official)"
+            },
+            {
+              "url": "https://sportando.basketball/jl-bourg-signs-tyger-campbell-as-medical-replacement/",
+              "name": "Sportando"
+            }
+          ]
+        },
+        {
+          "id": "maintenance-20261008-begarin-asvel",
+          "player": "Juhann Begarin",
+          "from": "AS Monaco",
+          "to": "LDLC ASVEL",
+          "pos": "F",
+          "league": "Betclic Elite / EuroLeague",
+          "date": "2026-10-07",
+          "contract": "Initial one-month medical replacement",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-08",
+          "added_at": "2026-10-08T07:03:11.383Z",
+          "source_url": "https://sportando.basketball/asvel-ufficiale-juhann-begarin-con-un-contratto-iniziale-di-un-mese/",
+          "source_name": "Sportando",
+          "summary": "LDLC ASVEL announced Juhann Begarin as a medical replacement for Mathis Dossou-Yovo on an initial one-month deal.",
+          "sources": [
+            {
+              "url": "https://sportando.basketball/asvel-ufficiale-juhann-begarin-con-un-contratto-iniziale-di-un-mese/",
+              "name": "Sportando (club announcement reported)"
+            },
+            {
+              "url": "https://www.lequipe.fr/Basket/Actualites/Dernier-rescape-de-monaco-juhann-begarin-est-engage-un-mois-comme-pigiste-medical-par-l-asvel/1723978",
+              "name": "L'Équipe"
             }
           ]
         }
