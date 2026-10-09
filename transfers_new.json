@@ -1,35 +1,62 @@
 {
-  "generated_at": "2026-10-08T16:01:58.166Z",
-  "count": 1,
+  "generated_at": "2026-10-09T07:18:53.477Z",
+  "count": 2,
   "items": [
     {
-      "id": "maintenance-20261008-holyfield-holon",
-      "player": "T.J. Holyfield",
-      "from": "Lioneers",
-      "to": "Hapoel Holon",
-      "pos": "F-C",
-      "league": "Israeli Basketball Premier League / Basketball Champions League",
+      "id": "maintenance-20261009-huntley-hatfield-utena-exit",
+      "player": "Brandon Huntley-Hatfield",
+      "from": "Juventus Utena",
+      "to": "Free Agent",
+      "pos": "F",
+      "league": "LKL / Basketball Champions League",
       "date": "2026-10-08",
-      "contract": "Temporary; short-term",
-      "status": "signed",
+      "contract": "Mutual termination after four games",
+      "status": "left",
       "date_basis": "announcement_date",
-      "verified_at": "2026-10-08",
-      "added_at": "2026-10-08T16:01:58.166Z",
-      "source_url": "https://sportando.basketball/en/hapoel-holon-signs-t-j-holyfield-on-a-temporary-deal/",
+      "verified_at": "2026-10-09",
+      "added_at": "2026-10-09T07:18:53.477Z",
+      "source_url": "https://sportando.basketball/en/juventus-utena-parts-ways-with-brandon-huntley-hatfield-signs-emmanuel-nzekwesi/",
       "source_name": "Sportando",
-      "summary": "Hapoel Holon announced T.J. Holyfield on a temporary contract to cover an injury crisis.",
+      "summary": "Juventus Utena mutually terminated Brandon Huntley-Hatfield’s contract after four games.",
       "sources": [
         {
-          "url": "https://sportando.basketball/en/hapoel-holon-signs-t-j-holyfield-on-a-temporary-deal/",
+          "url": "https://sportando.basketball/en/juventus-utena-parts-ways-with-brandon-huntley-hatfield-signs-emmanuel-nzekwesi/",
           "name": "Sportando (club announcement reported)"
         },
         {
-          "url": "https://www.eurohoops.net/en/fiba-champions-league/2017813/t-j-holyfield-to-hapoel-holon-basketball-champions-league/",
-          "name": "Eurohoops"
+          "url": "https://www.sofascore.com/it/basketball/team/utenos-juventus/49999",
+          "name": "Sofascore roster"
+        }
+      ]
+    },
+    {
+      "id": "maintenance-20261009-nzekwesi-utena",
+      "player": "Emmanuel Nzekwesi",
+      "from": "CSM Oradea",
+      "to": "Juventus Utena",
+      "pos": "F-C",
+      "league": "LKL / Basketball Champions League",
+      "date": "2026-10-08",
+      "contract": "Not stated",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-09",
+      "added_at": "2026-10-09T07:18:53.477Z",
+      "source_url": "https://sportando.basketball/en/juventus-utena-parts-ways-with-brandon-huntley-hatfield-signs-emmanuel-nzekwesi/",
+      "source_name": "Sportando",
+      "summary": "Juventus Utena announced the signing of Dutch big man Emmanuel Nzekwesi from CSM Oradea.",
+      "sources": [
+        {
+          "url": "https://sportando.basketball/en/juventus-utena-parts-ways-with-brandon-huntley-hatfield-signs-emmanuel-nzekwesi/",
+          "name": "Sportando (club announcement reported)"
         },
         {
-          "url": "https://basket.co.il/player.asp?PlayerId=28230&lang=en",
-          "name": "Israel Basketball Association roster"
+          "url": "https://www.sofascore.com/it/basketball/team/utenos-juventus/49999",
+          "name": "Sofascore roster"
+        },
+        {
+          "url": "https://www.fiba.basketball/en/players/237246-emmanuel-nzekwesi",
+          "name": "FIBA Basketball"
         }
       ]
     }
