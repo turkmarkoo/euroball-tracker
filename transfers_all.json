@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09T07:18:53.477Z",
-  "count": 1290,
+  "generated_at": "2026-10-12T08:26:36.094Z",
+  "count": 1291,
   "items": [
     {
       "id": "review-20260908-36",
@@ -19129,7 +19129,34 @@
           "name": "FIBA Basketball"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261012-robinson-juvi",
+      "player": "Justin Robinson",
+      "from": "Široki TT Kabeli",
+      "to": "JuVi Cremona",
+      "pos": "G",
+      "league": "Serie A2",
+      "date": "2026-10-10",
+      "contract": "Not stated",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-12",
+      "added_at": "2026-10-12T08:26:36.094Z",
+      "source_url": "https://www.juvicremona1952.it/news/430148324870/justin-robinson-un-nuovo-giocatore-della-juvi",
+      "source_name": "JuVi Cremona",
+      "summary": "JuVi Cremona officially announced Justin Robinson; the move followed his decision to return to Italy instead of proceeding with the previously announced Široki agreement.",
+      "sources": [
+        {
+          "url": "https://www.juvicremona1952.it/news/430148324870/justin-robinson-un-nuovo-giocatore-della-juvi",
+          "name": "JuVi Cremona (official)"
+        },
+        {
+          "url": "https://sportando.basketball/juvi-cremona-ingaggiato-justin-robinson/",
+          "name": "Sportando"
+        }
+      ]
     }
   ],
-  "public_count": 1165
+  "public_count": 1166
 }

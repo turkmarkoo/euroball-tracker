@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-09",
-  "coverage": "Morning overlap: Juventus Utena contract termination and Emmanuel Nzekwesi signing confirmed through the club announcement reported by Sportando, with the current Juventus roster cross-checked on Sofascore and Nzekwesi identity on FIBA. Added 1 departure and 1 signing; no other new move met the confirmation threshold.",
+  "reviewed_on": "2026-10-12",
+  "coverage": "Morning overlap: JuVi Cremona official announcement for Justin Robinson cross-checked with Sportando. The player chose to return to Italy instead of proceeding with the previously announced Široki agreement; added as a separate dated signed event.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1165,
+  "public_records": 1166,
   "report_date_records": 19,
   "items": [
     {
@@ -3348,6 +3348,44 @@
             {
               "url": "https://www.fiba.basketball/en/players/237246-emmanuel-nzekwesi",
               "name": "FIBA Basketball"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261012-morning",
+      "checked_at": "2026-10-12T08:26:36.094Z",
+      "window_from": "2026-10-10",
+      "coverage": "Morning overlap: JuVi Cremona official announcement for Justin Robinson cross-checked with Sportando. The player chose to return to Italy instead of proceeding with the previously announced Široki agreement; added as a separate dated signed event.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1166,
+      "items": [
+        {
+          "id": "maintenance-20261012-robinson-juvi",
+          "player": "Justin Robinson",
+          "from": "Široki TT Kabeli",
+          "to": "JuVi Cremona",
+          "pos": "G",
+          "league": "Serie A2",
+          "date": "2026-10-10",
+          "contract": "Not stated",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-12",
+          "added_at": "2026-10-12T08:26:36.094Z",
+          "source_url": "https://www.juvicremona1952.it/news/430148324870/justin-robinson-un-nuovo-giocatore-della-juvi",
+          "source_name": "JuVi Cremona",
+          "summary": "JuVi Cremona officially announced Justin Robinson; the move followed his decision to return to Italy instead of proceeding with the previously announced Široki agreement.",
+          "sources": [
+            {
+              "url": "https://www.juvicremona1952.it/news/430148324870/justin-robinson-un-nuovo-giocatore-della-juvi",
+              "name": "JuVi Cremona (official)"
+            },
+            {
+              "url": "https://sportando.basketball/juvi-cremona-ingaggiato-justin-robinson/",
+              "name": "Sportando"
             }
           ]
         }
