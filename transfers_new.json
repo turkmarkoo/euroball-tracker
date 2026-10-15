@@ -1,31 +1,35 @@
 {
-  "generated_at": "2026-10-12T08:26:36.094Z",
+  "generated_at": "2026-10-15T07:05:45.600Z",
   "count": 1,
   "items": [
     {
-      "id": "maintenance-20261012-robinson-juvi",
-      "player": "Justin Robinson",
-      "from": "Široki TT Kabeli",
-      "to": "JuVi Cremona",
+      "id": "maintenance-20261015-howard-zenit",
+      "player": "Markus Howard",
+      "from": "Baskonia",
+      "to": "Zenit Saint Petersburg",
       "pos": "G",
-      "league": "Serie A2",
-      "date": "2026-10-10",
-      "contract": "Not stated",
+      "league": "VTB United League",
+      "date": "2026-10-14",
+      "contract": "Through 2027/28",
       "status": "signed",
       "date_basis": "announcement_date",
-      "verified_at": "2026-10-12",
-      "added_at": "2026-10-12T08:26:36.094Z",
-      "source_url": "https://www.juvicremona1952.it/news/430148324870/justin-robinson-un-nuovo-giocatore-della-juvi",
-      "source_name": "JuVi Cremona",
-      "summary": "JuVi Cremona officially announced Justin Robinson; the move followed his decision to return to Italy instead of proceeding with the previously announced Široki agreement.",
+      "verified_at": "2026-10-15",
+      "added_at": "2026-10-15T07:05:45.600Z",
+      "source_url": "https://bc-zenit.com/",
+      "source_name": "Zenit BC",
+      "summary": "Zenit BC announced Markus Howard after his departure from Baskonia; independent reports state the agreement runs through the end of the 2027/28 season.",
       "sources": [
         {
-          "url": "https://www.juvicremona1952.it/news/430148324870/justin-robinson-un-nuovo-giocatore-della-juvi",
-          "name": "JuVi Cremona (official)"
+          "url": "https://bc-zenit.com/",
+          "name": "Zenit BC (official announcement: “Welcome, Markus!”)"
         },
         {
-          "url": "https://sportando.basketball/juvi-cremona-ingaggiato-justin-robinson/",
+          "url": "https://sportando.basketball/zenit-san-pietroburgo-ufficiale-la-firma-di-markus-howard/",
           "name": "Sportando"
+        },
+        {
+          "url": "https://www.noticiasdealava.eus/baskonia/2026/10/14/markus-howard-vitoria-estara-corazon-baskonia-aficion-11649099.html",
+          "name": "Noticias de Álava"
         }
       ]
     }
