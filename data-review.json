@@ -1,10 +1,10 @@
 {
   "reviewed_on": "2026-10-15",
-  "coverage": "Morning overlap: Zenit BC official announcement (“Welcome, Markus!”) cross-checked with Sportando and Noticias de Álava. Markus Howard left Baskonia for Zenit; the reported contract runs through 2027/28.",
+  "coverage": "Afternoon overlap: Beşiktaş official announcement for Lonnie Walker IV cross-checked with Fotomaç. The club confirmed the guard signing on 15 October; contract length was not stated.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1167,
+  "public_records": 1168,
   "report_date_records": 19,
   "items": [
     {
@@ -3428,6 +3428,44 @@
             {
               "url": "https://www.noticiasdealava.eus/baskonia/2026/10/14/markus-howard-vitoria-estara-corazon-baskonia-aficion-11649099.html",
               "name": "Noticias de Álava"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261015-afternoon",
+      "checked_at": "2026-10-15T16:03:24.262Z",
+      "window_from": "2026-10-13",
+      "coverage": "Afternoon overlap: Beşiktaş official announcement for Lonnie Walker IV cross-checked with Fotomaç. The club confirmed the guard signing on 15 October; contract length was not stated.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1168,
+      "items": [
+        {
+          "id": "maintenance-20261015-walker-besiktas",
+          "player": "Lonnie Walker IV",
+          "from": "Denver Nuggets",
+          "to": "Beşiktaş",
+          "pos": "G",
+          "league": "EuroLeague",
+          "date": "2026-10-15",
+          "contract": "Not stated",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-15",
+          "added_at": "2026-10-15T16:03:24.262Z",
+          "source_url": "https://www.bjk.com.tr/tr/haber/95335/lonnie-walker-iv-besiktasta.html",
+          "source_name": "Beşiktaş JK",
+          "summary": "Beşiktaş officially announced a contract with American scoring guard Lonnie Walker IV. The announcement identifies his recent NBA and EuroLeague background; contract length was not stated.",
+          "sources": [
+            {
+              "url": "https://www.bjk.com.tr/tr/haber/95335/lonnie-walker-iv-besiktasta.html",
+              "name": "Beşiktaş JK (official)"
+            },
+            {
+              "url": "https://www.fotomac.com.tr/euroleague/2026/10/15/lonnie-walker-iv-resmen-besiktasta",
+              "name": "Fotomaç"
             }
           ]
         }

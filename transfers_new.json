@@ -1,35 +1,31 @@
 {
-  "generated_at": "2026-10-15T07:05:45.600Z",
+  "generated_at": "2026-10-15T16:03:24.262Z",
   "count": 1,
   "items": [
     {
-      "id": "maintenance-20261015-howard-zenit",
-      "player": "Markus Howard",
-      "from": "Baskonia",
-      "to": "Zenit Saint Petersburg",
+      "id": "maintenance-20261015-walker-besiktas",
+      "player": "Lonnie Walker IV",
+      "from": "Denver Nuggets",
+      "to": "Beşiktaş",
       "pos": "G",
-      "league": "VTB United League",
-      "date": "2026-10-14",
-      "contract": "Through 2027/28",
+      "league": "EuroLeague",
+      "date": "2026-10-15",
+      "contract": "Not stated",
       "status": "signed",
       "date_basis": "announcement_date",
       "verified_at": "2026-10-15",
-      "added_at": "2026-10-15T07:05:45.600Z",
-      "source_url": "https://bc-zenit.com/",
-      "source_name": "Zenit BC",
-      "summary": "Zenit BC announced Markus Howard after his departure from Baskonia; independent reports state the agreement runs through the end of the 2027/28 season.",
+      "added_at": "2026-10-15T16:03:24.262Z",
+      "source_url": "https://www.bjk.com.tr/tr/haber/95335/lonnie-walker-iv-besiktasta.html",
+      "source_name": "Beşiktaş JK",
+      "summary": "Beşiktaş officially announced a contract with American scoring guard Lonnie Walker IV. The announcement identifies his recent NBA and EuroLeague background; contract length was not stated.",
       "sources": [
         {
-          "url": "https://bc-zenit.com/",
-          "name": "Zenit BC (official announcement: “Welcome, Markus!”)"
+          "url": "https://www.bjk.com.tr/tr/haber/95335/lonnie-walker-iv-besiktasta.html",
+          "name": "Beşiktaş JK (official)"
         },
         {
-          "url": "https://sportando.basketball/zenit-san-pietroburgo-ufficiale-la-firma-di-markus-howard/",
-          "name": "Sportando"
-        },
-        {
-          "url": "https://www.noticiasdealava.eus/baskonia/2026/10/14/markus-howard-vitoria-estara-corazon-baskonia-aficion-11649099.html",
-          "name": "Noticias de Álava"
+          "url": "https://www.fotomac.com.tr/euroleague/2026/10/15/lonnie-walker-iv-resmen-besiktasta",
+          "name": "Fotomaç"
         }
       ]
     }

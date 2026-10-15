@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T07:05:45.600Z",
-  "count": 1292,
+  "generated_at": "2026-10-15T16:03:24.262Z",
+  "count": 1293,
   "items": [
     {
       "id": "review-20260908-36",
@@ -19187,7 +19187,34 @@
           "name": "Noticias de Álava"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261015-walker-besiktas",
+      "player": "Lonnie Walker IV",
+      "from": "Denver Nuggets",
+      "to": "Beşiktaş",
+      "pos": "G",
+      "league": "EuroLeague",
+      "date": "2026-10-15",
+      "contract": "Not stated",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-15",
+      "added_at": "2026-10-15T16:03:24.262Z",
+      "source_url": "https://www.bjk.com.tr/tr/haber/95335/lonnie-walker-iv-besiktasta.html",
+      "source_name": "Beşiktaş JK",
+      "summary": "Beşiktaş officially announced a contract with American scoring guard Lonnie Walker IV. The announcement identifies his recent NBA and EuroLeague background; contract length was not stated.",
+      "sources": [
+        {
+          "url": "https://www.bjk.com.tr/tr/haber/95335/lonnie-walker-iv-besiktasta.html",
+          "name": "Beşiktaş JK (official)"
+        },
+        {
+          "url": "https://www.fotomac.com.tr/euroleague/2026/10/15/lonnie-walker-iv-resmen-besiktasta",
+          "name": "Fotomaç"
+        }
+      ]
     }
   ],
-  "public_count": 1167
+  "public_count": 1168
 }
