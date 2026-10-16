@@ -1,10 +1,10 @@
 {
   "reviewed_on": "2026-10-16",
-  "coverage": "Morning overlap: CSKA Moscow official announcement for Amath M’Baye cross-checked with the VTB United League. The forward returned from Paris Basketball on 6 October under a contract through the end of 2026/27.",
+  "coverage": "Afternoon overlap: ALBA Berlin official announcement for Yankuba Sima cross-checked with Valencia Basket’s official contract-termination notice. Sima joins ALBA through the end of the current season.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1169,
+  "public_records": 1170,
   "report_date_records": 19,
   "items": [
     {
@@ -3504,6 +3504,44 @@
             {
               "url": "https://vtb-league.com/en/news/amath-m-baye-comes-back-to-cska/",
               "name": "VTB United League"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261016-afternoon",
+      "checked_at": "2026-10-16T15:57:33.463Z",
+      "window_from": "2026-10-13",
+      "coverage": "Afternoon overlap: ALBA Berlin official announcement for Yankuba Sima cross-checked with Valencia Basket’s official contract-termination notice. Sima joins ALBA through the end of the current season.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1170,
+      "items": [
+        {
+          "id": "maintenance-20261016-sima-alba",
+          "player": "Yankuba Sima",
+          "from": "Valencia Basket",
+          "to": "ALBA Berlin",
+          "pos": "C",
+          "league": "BBL",
+          "date": "2026-10-16",
+          "contract": "Through end of current season",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-16",
+          "added_at": "2026-10-16T15:57:33.463Z",
+          "source_url": "https://www.albaberlin.de/news/details/spanischer-nationalcenter-fuer-alba-yankuba-sima-wechselt-von-valencia-basket-nach-berlin",
+          "source_name": "ALBA Berlin",
+          "summary": "ALBA Berlin officially announced Yankuba Sima from Valencia Basket on a contract through the end of the current season; Valencia separately confirmed the two clubs had agreed to terminate his existing contract.",
+          "sources": [
+            {
+              "url": "https://www.albaberlin.de/news/details/spanischer-nationalcenter-fuer-alba-yankuba-sima-wechselt-von-valencia-basket-nach-berlin",
+              "name": "ALBA Berlin (official)"
+            },
+            {
+              "url": "https://www.valenciabasket.com/va/yankuba-sima-es-desvincula-de-valencia-basket",
+              "name": "Valencia Basket (official)"
             }
           ]
         }

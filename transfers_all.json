@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T08:02:58.885Z",
-  "count": 1294,
+  "generated_at": "2026-10-16T15:57:33.463Z",
+  "count": 1295,
   "items": [
     {
       "id": "review-20260908-36",
@@ -19241,7 +19241,34 @@
           "name": "VTB United League"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261016-sima-alba",
+      "player": "Yankuba Sima",
+      "from": "Valencia Basket",
+      "to": "ALBA Berlin",
+      "pos": "C",
+      "league": "BBL",
+      "date": "2026-10-16",
+      "contract": "Through end of current season",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-16",
+      "added_at": "2026-10-16T15:57:33.463Z",
+      "source_url": "https://www.albaberlin.de/news/details/spanischer-nationalcenter-fuer-alba-yankuba-sima-wechselt-von-valencia-basket-nach-berlin",
+      "source_name": "ALBA Berlin",
+      "summary": "ALBA Berlin officially announced Yankuba Sima from Valencia Basket on a contract through the end of the current season; Valencia separately confirmed the two clubs had agreed to terminate his existing contract.",
+      "sources": [
+        {
+          "url": "https://www.albaberlin.de/news/details/spanischer-nationalcenter-fuer-alba-yankuba-sima-wechselt-von-valencia-basket-nach-berlin",
+          "name": "ALBA Berlin (official)"
+        },
+        {
+          "url": "https://www.valenciabasket.com/va/yankuba-sima-es-desvincula-de-valencia-basket",
+          "name": "Valencia Basket (official)"
+        }
+      ]
     }
   ],
-  "public_count": 1169
+  "public_count": 1170
 }
