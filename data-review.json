@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-15",
-  "coverage": "Afternoon overlap: Beşiktaş official announcement for Lonnie Walker IV cross-checked with Fotomaç. The club confirmed the guard signing on 15 October; contract length was not stated.",
+  "reviewed_on": "2026-10-16",
+  "coverage": "Morning overlap: CSKA Moscow official announcement for Amath M’Baye cross-checked with the VTB United League. The forward returned from Paris Basketball on 6 October under a contract through the end of 2026/27.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1168,
+  "public_records": 1169,
   "report_date_records": 19,
   "items": [
     {
@@ -3466,6 +3466,44 @@
             {
               "url": "https://www.fotomac.com.tr/euroleague/2026/10/15/lonnie-walker-iv-resmen-besiktasta",
               "name": "Fotomaç"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261016-morning",
+      "checked_at": "2026-10-16T08:02:58.885Z",
+      "window_from": "2026-10-13",
+      "coverage": "Morning overlap: CSKA Moscow official announcement for Amath M’Baye cross-checked with the VTB United League. The forward returned from Paris Basketball on 6 October under a contract through the end of 2026/27.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1169,
+      "items": [
+        {
+          "id": "maintenance-20261016-mbaye-cska",
+          "player": "Amath M’Baye",
+          "from": "Paris Basketball",
+          "to": "CSKA Moscow",
+          "pos": "F",
+          "league": "VTB United League",
+          "date": "2026-10-06",
+          "contract": "Through end of 2026/27",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-16",
+          "added_at": "2026-10-16T08:02:58.885Z",
+          "source_url": "https://cskabasket.com/en/news/n/amath-is-back/",
+          "source_name": "CSKA Moscow",
+          "summary": "CSKA Moscow officially announced Amath M’Baye’s return from Paris Basketball; the club stated that his contract runs through the end of the 2026/27 season.",
+          "sources": [
+            {
+              "url": "https://cskabasket.com/en/news/n/amath-is-back/",
+              "name": "CSKA Moscow (official)"
+            },
+            {
+              "url": "https://vtb-league.com/en/news/amath-m-baye-comes-back-to-cska/",
+              "name": "VTB United League"
             }
           ]
         }

@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-10-15T16:03:24.262Z",
+  "generated_at": "2026-10-16T08:02:58.885Z",
   "count": 1,
   "items": [
     {
-      "id": "maintenance-20261015-walker-besiktas",
-      "player": "Lonnie Walker IV",
-      "from": "Denver Nuggets",
-      "to": "Beşiktaş",
-      "pos": "G",
-      "league": "EuroLeague",
-      "date": "2026-10-15",
-      "contract": "Not stated",
+      "id": "maintenance-20261016-mbaye-cska",
+      "player": "Amath M’Baye",
+      "from": "Paris Basketball",
+      "to": "CSKA Moscow",
+      "pos": "F",
+      "league": "VTB United League",
+      "date": "2026-10-06",
+      "contract": "Through end of 2026/27",
       "status": "signed",
       "date_basis": "announcement_date",
-      "verified_at": "2026-10-15",
-      "added_at": "2026-10-15T16:03:24.262Z",
-      "source_url": "https://www.bjk.com.tr/tr/haber/95335/lonnie-walker-iv-besiktasta.html",
-      "source_name": "Beşiktaş JK",
-      "summary": "Beşiktaş officially announced a contract with American scoring guard Lonnie Walker IV. The announcement identifies his recent NBA and EuroLeague background; contract length was not stated.",
+      "verified_at": "2026-10-16",
+      "added_at": "2026-10-16T08:02:58.885Z",
+      "source_url": "https://cskabasket.com/en/news/n/amath-is-back/",
+      "source_name": "CSKA Moscow",
+      "summary": "CSKA Moscow officially announced Amath M’Baye’s return from Paris Basketball; the club stated that his contract runs through the end of the 2026/27 season.",
       "sources": [
         {
-          "url": "https://www.bjk.com.tr/tr/haber/95335/lonnie-walker-iv-besiktasta.html",
-          "name": "Beşiktaş JK (official)"
+          "url": "https://cskabasket.com/en/news/n/amath-is-back/",
+          "name": "CSKA Moscow (official)"
         },
         {
-          "url": "https://www.fotomac.com.tr/euroleague/2026/10/15/lonnie-walker-iv-resmen-besiktasta",
-          "name": "Fotomaç"
+          "url": "https://vtb-league.com/en/news/amath-m-baye-comes-back-to-cska/",
+          "name": "VTB United League"
         }
       ]
     }

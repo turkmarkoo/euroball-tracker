@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T16:03:24.262Z",
-  "count": 1293,
+  "generated_at": "2026-10-16T08:02:58.885Z",
+  "count": 1294,
   "items": [
     {
       "id": "review-20260908-36",
@@ -19214,7 +19214,34 @@
           "name": "Fotomaç"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261016-mbaye-cska",
+      "player": "Amath M’Baye",
+      "from": "Paris Basketball",
+      "to": "CSKA Moscow",
+      "pos": "F",
+      "league": "VTB United League",
+      "date": "2026-10-06",
+      "contract": "Through end of 2026/27",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-16",
+      "added_at": "2026-10-16T08:02:58.885Z",
+      "source_url": "https://cskabasket.com/en/news/n/amath-is-back/",
+      "source_name": "CSKA Moscow",
+      "summary": "CSKA Moscow officially announced Amath M’Baye’s return from Paris Basketball; the club stated that his contract runs through the end of the 2026/27 season.",
+      "sources": [
+        {
+          "url": "https://cskabasket.com/en/news/n/amath-is-back/",
+          "name": "CSKA Moscow (official)"
+        },
+        {
+          "url": "https://vtb-league.com/en/news/amath-m-baye-comes-back-to-cska/",
+          "name": "VTB United League"
+        }
+      ]
     }
   ],
-  "public_count": 1168
+  "public_count": 1169
 }
