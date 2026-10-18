@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T15:57:33.463Z",
-  "count": 1295,
+  "generated_at": "2026-10-18T07:49:24.629Z",
+  "count": 1296,
   "items": [
     {
       "id": "review-20260908-36",
@@ -19268,7 +19268,34 @@
           "name": "Valencia Basket (official)"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261018-williams-cholet",
+      "player": "Johnathan Williams",
+      "from": "Suwon KT Sonicboom",
+      "to": "Cholet",
+      "pos": "C",
+      "league": "Betclic Elite",
+      "date": "2026-10-16",
+      "contract": "Medical replacement",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-18",
+      "added_at": "2026-10-18T07:49:24.629Z",
+      "source_url": "https://www.cholet-basket.com/news/johnathan-williams-rejoint-cholet-basket-comme-pigiste-medical",
+      "source_name": "Cholet Basket",
+      "summary": "Cholet Basket officially announced Johnathan Williams as a medical replacement for Miralem Halilovic; the club announcement identifies the player and role, while secondary reporting identifies his previous club as Suwon KT.",
+      "sources": [
+        {
+          "url": "https://www.cholet-basket.com/news/johnathan-williams-rejoint-cholet-basket-comme-pigiste-medical",
+          "name": "Cholet Basket (official)"
+        },
+        {
+          "url": "https://www.asia-basket.com/South-Korea/news/1036672/Cholet-signs-Johnathan-Williams-III-ex-Suwon-KT",
+          "name": "Eurobasket / Asia-basket"
+        }
+      ]
     }
   ],
-  "public_count": 1170
+  "public_count": 1171
 }

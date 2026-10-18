@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-16",
-  "coverage": "Afternoon overlap: ALBA Berlin official announcement for Yankuba Sima cross-checked with Valencia Basket’s official contract-termination notice. Sima joins ALBA through the end of the current season.",
+  "reviewed_on": "2026-10-18",
+  "coverage": "Follow-up overlap: Cholet Basket official announcement for Johnathan Williams as a medical replacement, cross-checked with Eurobasket/Asia-basket for his previous Suwon KT club. Contract length was not stated.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1170,
+  "public_records": 1171,
   "report_date_records": 19,
   "items": [
     {
@@ -3542,6 +3542,44 @@
             {
               "url": "https://www.valenciabasket.com/va/yankuba-sima-es-desvincula-de-valencia-basket",
               "name": "Valencia Basket (official)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261018-morning",
+      "checked_at": "2026-10-18T07:49:24.629Z",
+      "window_from": "2026-10-15",
+      "coverage": "Follow-up overlap: Cholet Basket official announcement for Johnathan Williams as a medical replacement, cross-checked with Eurobasket/Asia-basket for his previous Suwon KT club. Contract length was not stated.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1171,
+      "items": [
+        {
+          "id": "maintenance-20261018-williams-cholet",
+          "player": "Johnathan Williams",
+          "from": "Suwon KT Sonicboom",
+          "to": "Cholet",
+          "pos": "C",
+          "league": "Betclic Elite",
+          "date": "2026-10-16",
+          "contract": "Medical replacement",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-18",
+          "added_at": "2026-10-18T07:49:24.629Z",
+          "source_url": "https://www.cholet-basket.com/news/johnathan-williams-rejoint-cholet-basket-comme-pigiste-medical",
+          "source_name": "Cholet Basket",
+          "summary": "Cholet Basket officially announced Johnathan Williams as a medical replacement for Miralem Halilovic; the club announcement identifies the player and role, while secondary reporting identifies his previous club as Suwon KT.",
+          "sources": [
+            {
+              "url": "https://www.cholet-basket.com/news/johnathan-williams-rejoint-cholet-basket-comme-pigiste-medical",
+              "name": "Cholet Basket (official)"
+            },
+            {
+              "url": "https://www.asia-basket.com/South-Korea/news/1036672/Cholet-signs-Johnathan-Williams-III-ex-Suwon-KT",
+              "name": "Eurobasket / Asia-basket"
             }
           ]
         }

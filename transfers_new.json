@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-10-16T15:57:33.463Z",
+  "generated_at": "2026-10-18T07:49:24.629Z",
   "count": 1,
   "items": [
     {
-      "id": "maintenance-20261016-sima-alba",
-      "player": "Yankuba Sima",
-      "from": "Valencia Basket",
-      "to": "ALBA Berlin",
+      "id": "maintenance-20261018-williams-cholet",
+      "player": "Johnathan Williams",
+      "from": "Suwon KT Sonicboom",
+      "to": "Cholet",
       "pos": "C",
-      "league": "BBL",
+      "league": "Betclic Elite",
       "date": "2026-10-16",
-      "contract": "Through end of current season",
+      "contract": "Medical replacement",
       "status": "signed",
       "date_basis": "announcement_date",
-      "verified_at": "2026-10-16",
-      "added_at": "2026-10-16T15:57:33.463Z",
-      "source_url": "https://www.albaberlin.de/news/details/spanischer-nationalcenter-fuer-alba-yankuba-sima-wechselt-von-valencia-basket-nach-berlin",
-      "source_name": "ALBA Berlin",
-      "summary": "ALBA Berlin officially announced Yankuba Sima from Valencia Basket on a contract through the end of the current season; Valencia separately confirmed the two clubs had agreed to terminate his existing contract.",
+      "verified_at": "2026-10-18",
+      "added_at": "2026-10-18T07:49:24.629Z",
+      "source_url": "https://www.cholet-basket.com/news/johnathan-williams-rejoint-cholet-basket-comme-pigiste-medical",
+      "source_name": "Cholet Basket",
+      "summary": "Cholet Basket officially announced Johnathan Williams as a medical replacement for Miralem Halilovic; the club announcement identifies the player and role, while secondary reporting identifies his previous club as Suwon KT.",
       "sources": [
         {
-          "url": "https://www.albaberlin.de/news/details/spanischer-nationalcenter-fuer-alba-yankuba-sima-wechselt-von-valencia-basket-nach-berlin",
-          "name": "ALBA Berlin (official)"
+          "url": "https://www.cholet-basket.com/news/johnathan-williams-rejoint-cholet-basket-comme-pigiste-medical",
+          "name": "Cholet Basket (official)"
         },
         {
-          "url": "https://www.valenciabasket.com/va/yankuba-sima-es-desvincula-de-valencia-basket",
-          "name": "Valencia Basket (official)"
+          "url": "https://www.asia-basket.com/South-Korea/news/1036672/Cholet-signs-Johnathan-Williams-III-ex-Suwon-KT",
+          "name": "Eurobasket / Asia-basket"
         }
       ]
     }
