@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-18T07:49:24.629Z",
-  "count": 1296,
+  "generated_at": "2026-10-19T08:03:46.099Z",
+  "count": 1297,
   "items": [
     {
       "id": "review-20260908-36",
@@ -19295,7 +19295,34 @@
           "name": "Eurobasket / Asia-basket"
         }
       ]
+    },
+    {
+      "id": "maintenance-20261019-koloko-zvezda",
+      "player": "Christian Koloko",
+      "from": "?",
+      "to": "Crvena zvezda",
+      "pos": "C",
+      "league": "EuroLeague",
+      "date": "2026-10-18",
+      "contract": "Not stated",
+      "status": "signed",
+      "date_basis": "announcement_date",
+      "verified_at": "2026-10-19",
+      "added_at": "2026-10-19T08:03:46.099Z",
+      "source_url": "https://kkcrvenazvezda.rs/news/koloko-novi-centar-crvene-zvezde",
+      "source_name": "KK Crvena zvezda",
+      "summary": "KK Crvena zvezda officially announced Christian Koloko as its newest center after medical examinations; the announcement did not state his previous club or contract length.",
+      "sources": [
+        {
+          "url": "https://kkcrvenazvezda.rs/news/koloko-novi-centar-crvene-zvezde",
+          "name": "KK Crvena zvezda (official)"
+        },
+        {
+          "url": "https://www.rts.rs/lat/sport/kosarka/evroliga/6064610/kristijan-koloko-zvanicno-novi-centar-crvene-zvezde.html",
+          "name": "RTS"
+        }
+      ]
     }
   ],
-  "public_count": 1171
+  "public_count": 1172
 }

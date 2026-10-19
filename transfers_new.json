@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-10-18T07:49:24.629Z",
+  "generated_at": "2026-10-19T08:03:46.099Z",
   "count": 1,
   "items": [
     {
-      "id": "maintenance-20261018-williams-cholet",
-      "player": "Johnathan Williams",
-      "from": "Suwon KT Sonicboom",
-      "to": "Cholet",
+      "id": "maintenance-20261019-koloko-zvezda",
+      "player": "Christian Koloko",
+      "from": "?",
+      "to": "Crvena zvezda",
       "pos": "C",
-      "league": "Betclic Elite",
-      "date": "2026-10-16",
-      "contract": "Medical replacement",
+      "league": "EuroLeague",
+      "date": "2026-10-18",
+      "contract": "Not stated",
       "status": "signed",
       "date_basis": "announcement_date",
-      "verified_at": "2026-10-18",
-      "added_at": "2026-10-18T07:49:24.629Z",
-      "source_url": "https://www.cholet-basket.com/news/johnathan-williams-rejoint-cholet-basket-comme-pigiste-medical",
-      "source_name": "Cholet Basket",
-      "summary": "Cholet Basket officially announced Johnathan Williams as a medical replacement for Miralem Halilovic; the club announcement identifies the player and role, while secondary reporting identifies his previous club as Suwon KT.",
+      "verified_at": "2026-10-19",
+      "added_at": "2026-10-19T08:03:46.099Z",
+      "source_url": "https://kkcrvenazvezda.rs/news/koloko-novi-centar-crvene-zvezde",
+      "source_name": "KK Crvena zvezda",
+      "summary": "KK Crvena zvezda officially announced Christian Koloko as its newest center after medical examinations; the announcement did not state his previous club or contract length.",
       "sources": [
         {
-          "url": "https://www.cholet-basket.com/news/johnathan-williams-rejoint-cholet-basket-comme-pigiste-medical",
-          "name": "Cholet Basket (official)"
+          "url": "https://kkcrvenazvezda.rs/news/koloko-novi-centar-crvene-zvezde",
+          "name": "KK Crvena zvezda (official)"
         },
         {
-          "url": "https://www.asia-basket.com/South-Korea/news/1036672/Cholet-signs-Johnathan-Williams-III-ex-Suwon-KT",
-          "name": "Eurobasket / Asia-basket"
+          "url": "https://www.rts.rs/lat/sport/kosarka/evroliga/6064610/kristijan-koloko-zvanicno-novi-centar-crvene-zvezde.html",
+          "name": "RTS"
         }
       ]
     }

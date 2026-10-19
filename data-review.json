@@ -1,10 +1,10 @@
 {
-  "reviewed_on": "2026-10-18",
-  "coverage": "Follow-up overlap: Cholet Basket official announcement for Johnathan Williams as a medical replacement, cross-checked with Eurobasket/Asia-basket for his previous Suwon KT club. Contract length was not stated.",
+  "reviewed_on": "2026-10-19",
+  "coverage": "Morning overlap: KK Crvena zvezda official announcement for Christian Koloko cross-checked with RTS. The center joined after medical examinations; previous club and contract length were not stated.",
   "added": 37,
   "updated": 1,
   "quarantined": 1,
-  "public_records": 1171,
+  "public_records": 1172,
   "report_date_records": 19,
   "items": [
     {
@@ -3580,6 +3580,44 @@
             {
               "url": "https://www.asia-basket.com/South-Korea/news/1036672/Cholet-signs-Johnathan-Williams-III-ex-Suwon-KT",
               "name": "Eurobasket / Asia-basket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20261019-morning",
+      "checked_at": "2026-10-19T08:03:46.099Z",
+      "window_from": "2026-10-16",
+      "coverage": "Morning overlap: KK Crvena zvezda official announcement for Christian Koloko cross-checked with RTS. The center joined after medical examinations; previous club and contract length were not stated.",
+      "added": 1,
+      "updated": 0,
+      "public_records": 1172,
+      "items": [
+        {
+          "id": "maintenance-20261019-koloko-zvezda",
+          "player": "Christian Koloko",
+          "from": "?",
+          "to": "Crvena zvezda",
+          "pos": "C",
+          "league": "EuroLeague",
+          "date": "2026-10-18",
+          "contract": "Not stated",
+          "status": "signed",
+          "date_basis": "announcement_date",
+          "verified_at": "2026-10-19",
+          "added_at": "2026-10-19T08:03:46.099Z",
+          "source_url": "https://kkcrvenazvezda.rs/news/koloko-novi-centar-crvene-zvezde",
+          "source_name": "KK Crvena zvezda",
+          "summary": "KK Crvena zvezda officially announced Christian Koloko as its newest center after medical examinations; the announcement did not state his previous club or contract length.",
+          "sources": [
+            {
+              "url": "https://kkcrvenazvezda.rs/news/koloko-novi-centar-crvene-zvezde",
+              "name": "KK Crvena zvezda (official)"
+            },
+            {
+              "url": "https://www.rts.rs/lat/sport/kosarka/evroliga/6064610/kristijan-koloko-zvanicno-novi-centar-crvene-zvezde.html",
+              "name": "RTS"
             }
           ]
         }
